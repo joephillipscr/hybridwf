@@ -10,16 +10,21 @@ export default function ThemeToggle({ lang }: { lang: Locale }) {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    setDark(document.documentElement.classList.contains('dark'));
+    setDark(!document.documentElement.classList.contains('light'));
     setReady(true);
   }, []);
 
   function toggle() {
-    const next = !dark;
-    setDark(next);
-    document.documentElement.classList.toggle('dark', next);
+    // The class on <html> is the source of truth, not React state: the theme
+    // script sets it before hydration, so reading it here keeps the toggle
+    // correct even when clicks land faster than a re-render.
+    const root = document.documentElement;
+    const nextIsDark = root.classList.contains('light');
+
+    root.classList.toggle('light', !nextIsDark);
+    setDark(nextIsDark);
     try {
-      localStorage.setItem('hwf-theme', next ? 'dark' : 'light');
+      localStorage.setItem('hwf-theme', nextIsDark ? 'dark' : 'light');
     } catch {
       /* private mode — the choice simply does not persist */
     }

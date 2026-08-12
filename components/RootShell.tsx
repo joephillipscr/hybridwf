@@ -3,8 +3,11 @@ import Footer from './Footer';
 import { UI } from '@/lib/i18n';
 import type { Locale } from '@/lib/site';
 
-/** Runs before paint so the theme never flashes. Light is the default. */
-const themeScript = `(function(){try{var s=localStorage.getItem('hwf-theme');var d=s?s==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('dark');}catch(e){}})();`;
+/**
+ * Runs before paint so the theme never flashes. Dark is the default and lives
+ * on :root, so this only ever adds the opt-in light override.
+ */
+const themeScript = `(function(){try{if(localStorage.getItem('hwf-theme')==='light')document.documentElement.classList.add('light');}catch(e){}})();`;
 
 export default function RootShell({
   lang,

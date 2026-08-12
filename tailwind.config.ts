@@ -1,7 +1,9 @@
 import type { Config } from 'tailwindcss';
 
+/* Theming runs entirely on the CSS custom properties in globals.css — dark on
+   :root, light behind a .light class — so there are no `dark:` utilities and
+   no darkMode strategy to configure. */
 const config: Config = {
-  darkMode: 'class',
   content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './lib/**/*.{ts,tsx}'],
   theme: {
     extend: {

@@ -2,40 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Dark is the default, defined on :root rather than behind a class, so the
+   site renders as intended even if the theme script never runs. The .light
+   class is the opt-in override written by the toggle. */
 :root {
-  /* LIGHT — paper with a violet cast, candied purple brand */
-  --bg: 250 249 253;
-  --surface: 255 255 255;
-  --raised: 246 243 252;
-  --fg: 26 18 43;
-  --muted: 106 95 128;
-  --border: 231 226 240;
-  --primary: 88 28 135;   /* purple-900 — fill behind white text */
-  --brand: 107 33 168;    /* purple-800 — text, icons, strokes on page bg */
-  --accent: 147 51 234;   /* purple-600 — candied core */
-  --gloss: 192 132 252;   /* purple-400 — the confitado sheen */
-
-  --universal: 21 128 61;
-  --adapted: 180 83 9;
-  --human: 190 24 93;
-}
-
-.dark {
-  /* DARK — blackberry */
+  /* DARK (default) — blackberry with candied purple */
   --bg: 12 8 20;
   --surface: 22 15 36;
   --raised: 31 21 49;
   --fg: 237 233 245;
   --muted: 162 151 181;
   --border: 47 33 71;
-  --primary: 109 40 217;
-  --brand: 196 165 250;
-  --accent: 168 85 247;
-  --gloss: 216 180 254;
+  --primary: 109 40 217;  /* violet-700 — fill behind white text */
+  --brand: 196 165 250;   /* violet-300 — text, icons, strokes on page bg */
+  --accent: 168 85 247;   /* purple-500 — candied core */
+  --gloss: 216 180 254;   /* purple-300 — the confitado sheen */
 
   --universal: 74 222 128;
   --adapted: 251 191 36;
   --human: 244 114 182;
+
+  color-scheme: dark;
+}
+
+.light {
+  /* LIGHT — paper with a violet cast */
+  --bg: 250 249 253;
+  --surface: 255 255 255;
+  --raised: 246 243 252;
+  --fg: 26 18 43;
+  --muted: 106 95 128;
+  --border: 231 226 240;
+  --primary: 88 28 135;
+  --brand: 107 33 168;
+  --accent: 147 51 234;
+  --gloss: 192 132 252;
+
+  --universal: 21 128 61;
+  --adapted: 180 83 9;
+  --human: 190 24 93;
+
+  color-scheme: light;
 }
 
 * {
