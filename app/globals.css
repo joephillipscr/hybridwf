@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* LIGHT — paper with a violet cast, candied purple brand */
+  --bg: 250 249 253;
+  --surface: 255 255 255;
+  --raised: 246 243 252;
+  --fg: 26 18 43;
+  --muted: 106 95 128;
+  --border: 231 226 240;
+  --primary: 88 28 135;   /* purple-900 — fill behind white text */
+  --brand: 107 33 168;    /* purple-800 — text, icons, strokes on page bg */
+  --accent: 147 51 234;   /* purple-600 — candied core */
+  --gloss: 192 132 252;   /* purple-400 — the confitado sheen */
+
+  --universal: 21 128 61;
+  --adapted: 180 83 9;
+  --human: 190 24 93;
+}
+
+.dark {
+  /* DARK — blackberry */
+  --bg: 12 8 20;
+  --surface: 22 15 36;
+  --raised: 31 21 49;
+  --fg: 237 233 245;
+  --muted: 162 151 181;
+  --border: 47 33 71;
+  --primary: 109 40 217;
+  --brand: 196 165 250;
+  --accent: 168 85 247;
+  --gloss: 216 180 254;
+
+  --universal: 74 222 128;
+  --adapted: 251 191 36;
+  --human: 244 114 182;
+}
+
+* {
+  border-color: rgb(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(var(--bg));
+  color: rgb(var(--fg));
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.018em;
+    color: rgb(var(--fg));
+  }
+  ::selection {
+    background: rgb(var(--accent) / 0.22);
+  }
+  :focus-visible {
+    outline: 2px solid rgb(var(--accent));
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  /* --- Confitado: glossy candied purple ------------------------------- */
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 font-semibold text-white shadow-candy transition;
+    background-image: linear-gradient(
+      175deg,
+      rgb(var(--gloss)) 0%,
+      rgb(var(--accent)) 42%,
+      rgb(var(--primary)) 100%
+    );
+  }
+  .btn-primary:hover {
+    filter: brightness(1.08) saturate(1.05);
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-border bg-surface px-6 py-3 font-semibold text-fg transition hover:border-accent hover:text-brand;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-1.5 font-semibold text-brand transition hover:text-accent;
+  }
+
+  .card {
+    @apply rounded-2xl border border-border bg-surface p-6;
+  }
+  .card-raised {
+    @apply rounded-2xl border border-border bg-raised p-6;
+  }
+
+  .eyebrow {
+    @apply font-mono text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-brand;
+  }
+
+  /* Numbered normative clause — the spec look */
+  .clause-id {
+    @apply shrink-0 rounded-md bg-raised px-2 py-1 font-mono text-xs font-semibold tracking-tight text-brand ring-1 ring-border;
+  }
+
+  .lede {
+    @apply text-lg leading-relaxed text-muted sm:text-xl;
+  }
+
+  .prose-x {
+    @apply max-w-prose text-[1.0625rem] leading-[1.75] text-fg/90;
+  }
+  .prose-x p + p {
+    @apply mt-4;
+  }
+
+  .rule-line {
+    @apply h-px w-full bg-border;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1 text-xs font-semibold text-muted;
+  }
+
+  /* Aurora glow used behind hero + section headers */
+  .aurora {
+    background:
+      radial-gradient(60% 80% at 15% 0%, rgb(var(--accent) / 0.22), transparent 60%),
+      radial-gradient(50% 70% at 90% 10%, rgb(var(--gloss) / 0.18), transparent 65%);
+  }
+
+  .table-x {
+    @apply w-full border-collapse text-left text-sm;
+  }
+  .table-x th {
+    @apply border-b border-border bg-raised px-3 py-2.5 font-semibold text-fg;
+  }
+  .table-x td {
+    @apply border-b border-border px-3 py-2.5 align-top text-muted;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
