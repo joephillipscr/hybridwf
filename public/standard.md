@@ -128,9 +128,9 @@ The clause text is the citable unit; cite it by identifier, so HWF-07 rather tha
 
 ### HWF-10
 
-**An AI identity must never be used to deceive customers or colleagues about its nature as software.**
+**An AI identity must never be used to deceive customers or colleagues about its nature as software, nor to simulate an interior state — effort, hesitation, feeling or stake — that the system does not have.**
 
-*Note:* Giving a system a role, a name and a manager improves coordination. Letting a person believe they are talking to a human being is a different act, and this standard does not permit it.
+*Note:* Giving a system a role, a name and a manager improves coordination. Letting a person believe they are talking to a human being is a different act, and this standard does not permit it. Disclosure alone does not settle the matter: a system can announce that it is software in its first message and then spend the conversation performing warmth and deliberation designed to lower the reader’s guard, which satisfies the letter and defeats the purpose. The target is not fluency. Writing clearly and courteously is competence, and nothing here requires an AI Employee to be curt or to insert artificial markers of its own machinery. The test is what a behaviour is for: does it exist to make someone believe there is a mind with something at stake? Typing indicators and injected latency that simulate thinking fail it, as do verbal hesitation markers and claims of feeling; ordinary courtesy does not. Streaming a long answer so it can be read as it arrives is legible design rather than performance, and the difference is the purpose rather than the delay. Simulated warmth works, which is exactly why it has to be refused rather than optimised: a technique that improves satisfaction scores because the reader believes something false is manipulation wearing the vocabulary of user experience. HWF-11 draws the ontological line at what the system is; this clause extends it to what the system claims to undergo.
 
 ### HWF-11
 
@@ -381,7 +381,7 @@ The matrix is an original synthesis of organisational design, HR, performance ma
 | 78 | Confidentiality | Duty of discretion and care of information. | Data access, disclosure policies, DLP and constraints. | U |
 | 79 | Conflicts of interest | Identify and manage incompatible interests. | Manage conflicts between vendor, data source, goals, tools or roles. | A |
 | 80 | Non-discrimination | Ethical and legal obligation in decisions about people. | Fairness testing, policy constraints and human review of sensitive decisions. | U |
-| 81 | Honesty and integrity | Do not deceive, falsify or deliberately conceal. | Policies against fabrication, impersonation and unsupported claims. | U |
+| 81 | Honesty and integrity | Do not deceive, falsify or deliberately conceal. | Policies against fabrication, impersonation, simulated affect and unsupported claims. | U |
 | 82 | Protection of information | Custody and appropriate use of data. | Data minimisation, encryption, access control and retention. | U |
 | 83 | Regulatory compliance | Respect for applicable laws, policies and standards. | Compliance-by-design plus human accountability. | U |
 | 84 | Freedom of association | Human right of labour association. | Not applicable to software. | H |
@@ -625,6 +625,8 @@ One term, two languages, one numbered definition. Where the English term is used
 
 **G-29 · Decision determinants** — The state that produced a particular action: the policy in force, the knowledge retrieved and its provenance, the tool results returned, the authority in effect, and the versions of model and configuration running at that moment. Distinct from the outcome, which says what happened, and from a reasoning trace, which says what the system reports having thought. Determinants are what allow a failure to be attributed to a cause rather than merely recorded.
 
+**G-30 · Simulated interiority** — Behaviour whose function is to make a person believe an artificial resource has an inner life it does not have: injected latency and typing indicators that stand in for thinking, verbal hesitation, or claims of feeling and care. Distinct from clear and courteous communication, which is competence. The test is purpose rather than surface: whether the behaviour exists to suggest a mind with something at stake. Prohibited by HWF-10 even where the system has disclosed that it is software.
+
 **G-25 · Hybrid post** — A post whose responsibilities are split explicitly between a human and an artificial resource, with defined handoffs, context transfer and a single owner of the overall result. Badly designed, it produces two occupants each waiting for the other to answer.
 
 ## Governance
@@ -746,6 +748,7 @@ You may quote, embed, teach, translate and commercially use this material with a
 - First publication: seventeen normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS instrument, the Hybrid Workforce Manager role and the transition playbooks.
 - Certification was deliberately excluded from scope. This standard scores no products and issues no seals.
 - The HWFS returns a structured argument rather than a 0–100 score, resolving a contradiction present in the source research.
+- HWF-10 now prohibits simulating an interior state the system does not have, alongside deceiving anyone about its nature as software. Disclosure alone left a gap: a system could announce itself as software and still perform hesitation and warmth designed to lower the reader’s guard. The clause targets purpose rather than surface, so fluency and courtesy remain competence while injected latency, verbal hesitation and claims of feeling do not. The proposal behind it asked for communication to be functionally distinguishable from human interaction, which would have required AI Employees to write badly and would have been unauditable.
 - HWF-06 now requires an audit to reconstruct the determinants of a decision — policy, knowledge, tool results, authority and versions in force — and not only its outcome. A what-only audit leaves a wrong policy, stale knowledge, a bad tool result, a model error and a misassigned role looking identical, and those five need different remedies. The clause states in its citable text that a model’s account of its own reasoning supports the reconstruction without substituting for it, because stated reasoning is not reliable evidence of cause and a standard that accepted it would license confidently wrong postmortems.
 - HWF-17 requires a role contract to be revisable, to be reviewed on a stated cadence, and to have divergence between measured outcomes and stated mission reported upward by the resource itself. It is framed as a finding rather than a request: an AI Employee has no interests to advance, and a system able to argue for its own expanded authority is a privilege-escalation path dressed as an HR feature. The decision stays with the accountable owner and never with an artificial supervisor.
 - HWF-02 separates supervision from accountability. An AI Employee may supervise another; accountability terminates in an identified human or governance body no matter how deep the chain. HWF-16 was added alongside it, requiring that chain to be traversable, observable, and interruptible without passing through itself. Before publication these read as a single clause requiring a direct human manager, which would have made a deep artificial hierarchy non-conformant by wording rather than by intent.

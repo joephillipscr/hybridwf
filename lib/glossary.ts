@@ -246,6 +246,14 @@ export const TERMS: Term[] = [
     },
   },
   {
+    id: 'G-30',
+    term: { en: 'Simulated interiority', es: 'Interioridad simulada' },
+    definition: {
+      en: 'Behaviour whose function is to make a person believe an artificial resource has an inner life it does not have: injected latency and typing indicators that stand in for thinking, verbal hesitation, or claims of feeling and care. Distinct from clear and courteous communication, which is competence. The test is purpose rather than surface: whether the behaviour exists to suggest a mind with something at stake. Prohibited by HWF-10 even where the system has disclosed that it is software.',
+      es: 'Conducta cuya función es hacer creer a una persona que un recurso artificial tiene una vida interior que no tiene: latencia inyectada e indicadores de tipeo que hacen de pensamiento, vacilación verbal, o declaraciones de sentimiento y cuidado. Se distingue de la comunicación clara y cortés, que es competencia. La prueba es el propósito y no la superficie: si la conducta existe para sugerir una mente con algo en juego. Prohibida por HWF-10 incluso cuando el sistema haya declarado que es software.',
+    },
+  },
+  {
     id: 'G-25',
     term: { en: 'Hybrid post', es: 'Puesto híbrido' },
     definition: {
