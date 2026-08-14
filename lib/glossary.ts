@@ -238,6 +238,14 @@ export const TERMS: Term[] = [
     },
   },
   {
+    id: 'G-29',
+    term: { en: 'Decision determinants', es: 'Determinantes de la decisión' },
+    definition: {
+      en: 'The state that produced a particular action: the policy in force, the knowledge retrieved and its provenance, the tool results returned, the authority in effect, and the versions of model and configuration running at that moment. Distinct from the outcome, which says what happened, and from a reasoning trace, which says what the system reports having thought. Determinants are what allow a failure to be attributed to a cause rather than merely recorded.',
+      es: 'El estado que produjo una acción concreta: la política vigente, el conocimiento recuperado y su procedencia, los resultados que devolvieron las herramientas, la autoridad en efecto, y las versiones de modelo y configuración corriendo en ese momento. Se distingue del resultado, que dice qué pasó, y de una traza de razonamiento, que dice qué reporta el sistema haber pensado. Los determinantes son lo que permite atribuir una falla a una causa en vez de solo registrarla.',
+    },
+  },
+  {
     id: 'G-25',
     term: { en: 'Hybrid post', es: 'Puesto híbrido' },
     definition: {

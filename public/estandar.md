@@ -104,9 +104,9 @@ El texto de la cláusula es la unidad citable; citala por identificador, o sea H
 
 ### HWF-06
 
-**Toda acción material debe ser auditable.**
+**Toda acción material debe ser auditable, y la auditoría debe reconstruir los determinantes de la decisión además de su resultado: la política, el conocimiento, los resultados de herramientas, la autoridad y las versiones vigentes al momento de ejecutarse la acción. El relato que el propio modelo haga de su razonamiento puede apoyar esa reconstrucción pero nunca la sustituye.**
 
-*Nota:* Actor, input, herramienta, acción, aprobación, resultado y timestamp. Si la secuencia no puede reconstruirse después, la organización no puede aprender de una falla ni demostrar cumplimiento.
+*Nota:* Actor, input, herramienta, acción, aprobación, resultado y timestamp te dicen que algo pasó. No te dicen por qué, y sin el porqué una organización no puede atribuir una falla a su causa: una política equivocada, un conocimiento que envejeció, una herramienta que devolvió datos malos, un modelo que erró, o un rol que nunca debió asignarse a un recurso artificial. Esos cinco exigen remedios distintos y dejan registros idénticos bajo una auditoría de solo-qué. La cláusula que más protege es HWF-09: con solo el resultado ves que el sistema respondió, nunca que debió dudar. El material ya está exigido en buena parte en otro lado — HWF-08 gobierna la procedencia de lo que el recurso sabía, HWF-14 las versiones de modelo, política, herramientas y knowledge base — así que lo que esta cláusula agrega es la obligación de ligarlas a una acción concreta en vez de sostenerlas como inventario general. El razonamiento declarado por un modelo es admisible como evidencia de apoyo y no es prueba de causa: lo que un sistema reporta haber pensado puede no ser lo que produjo su salida, y una organización que tome esa narración por el porqué va a escribir postmortems confiados y equivocados. Cuando se retengan trazas de razonamiento, su alcance, retención y borrado caen bajo HWF-08 como cualquier otra memoria, porque suelen contener datos de clientes recuperados.
 
 ### HWF-07
 
@@ -282,7 +282,7 @@ La matriz es una síntesis propia de prácticas de diseño organizacional, RR. H
 | 4 | Límites del puesto | Debe quedar claro qué no le corresponde. | Acciones, dominios, datos y decisiones prohibidas. | U |
 | 5 | Autoridad definida | Se especifica qué puede decidir sin aprobación. | Se especifican acciones autónomas, umbrales y approvals. | U |
 | 6 | Responsabilidad y autoridad deben estar alineadas | No se exige un resultado sin facultades o recursos suficientes. | No se exige un KPI sin tools, permisos, datos y budget adecuados. | U |
-| 7 | Unidad de mando / accountability claro | Debe existir un manager responsable del desempeño. | Debe existir exactamente un accountable manager, aunque reciba trabajo de varias áreas. | U |
+| 7 | Unidad de mando / accountability claro | Debe existir un manager responsable del desempeño. | Exactamente un accountable owner, aunque reciba trabajo de varias áreas y la supervisión esté delegada. | U |
 | 8 | Cadena de mando y escalamiento conocidos | Sabe a quién escalar una excepción o conflicto. | Escalation tree explícito por tipo, riesgo y urgencia. | U |
 | 9 | Span of control razonable | Un manager no debe tener más reportes de los que puede dirigir efectivamente. | La escala puede ser mayor, pero requiere tooling, dashboards y límites de supervisión. | A |
 | 10 | División del trabajo y especialización | Roles organizados por competencias y resultados. | AI Employees o subagentes especializados por función. | U |
@@ -396,7 +396,7 @@ La matriz es una síntesis propia de prácticas de diseño organizacional, RR. H
 | --- | --- | --- | --- | --- |
 | 89 | Segregación de accesos | Limitar y separar privilegios según rol. | Fundamental: identity, RBAC, scopes y secrets separados. | U |
 | 90 | Auditoría | Revisión independiente de procesos y decisiones. | Logs, traces, event history, evals y reproducibilidad. | U |
-| 91 | Trazabilidad | Saber quién hizo qué, cuándo y bajo qué autoridad. | Actor ID + action + timestamp + context + tool + approval. | U |
+| 91 | Trazabilidad | Saber quién hizo qué, cuándo y bajo qué autoridad. | Actor ID + action + timestamp + context + tool + approval, más la política y versiones vigentes. | U |
 | 92 | Accountability | Debe existir una persona responsable de decisiones y resultados. | Nunca debe quedar huérfano: un humano accountable responde por deployment, authority y outcomes. | U |
 | 93 | Gestión de incidentes | Detectar, contener, investigar y aprender de fallas. | AI incident management con kill switch, rollback, postmortem y remediation. | U |
 | 94 | Protección de datos | Principios de privacidad, acceso, minimización y retención. | Data governance, consent, retrieval filters, retention y deletion. | U |
@@ -623,6 +623,8 @@ Un término, dos idiomas, una definición numerada. Cuando el término inglés s
 
 **G-28 · Divergencia de rol** — La brecha entre lo que un AI Employee realmente produce y la misión, autoridad o KPIs que declara su contrato de rol. El recurso la reporta a su accountable owner como hallazgo, nunca como solicitud: el recurso no tiene intereses que defender, y la decisión de revisar el contrato queda en el humano. La divergencia es la señal de que un contrato envejeció, no la prueba de que el recurso merece más.
 
+**G-29 · Determinantes de la decisión** — El estado que produjo una acción concreta: la política vigente, el conocimiento recuperado y su procedencia, los resultados que devolvieron las herramientas, la autoridad en efecto, y las versiones de modelo y configuración corriendo en ese momento. Se distingue del resultado, que dice qué pasó, y de una traza de razonamiento, que dice qué reporta el sistema haber pensado. Los determinantes son lo que permite atribuir una falla a una causa en vez de solo registrarla.
+
 **G-25 · Puesto híbrido** — Puesto cuyas responsabilidades se reparten explícitamente entre un recurso humano y uno artificial, con handoffs definidos, transferencia de contexto y un único dueño del resultado completo. Mal diseñado, produce dos ocupantes esperando que responda el otro.
 
 ## Gobierno
@@ -744,6 +746,7 @@ Podés citar, embeber, enseñar, traducir y usar comercialmente este material co
 - Primera publicación: diecisiete cláusulas normativas, el test de nueve propiedades, el marco WRM, la matriz de 120 principios, el modelo de madurez, el instrumento HWFS, el rol de Gerente de Fuerza Laboral Híbrida y los playbooks de transición.
 - La certificación se excluyó deliberadamente del alcance. Este estándar no puntúa productos ni emite sellos.
 - El HWFS devuelve un argumento estructurado en lugar de un puntaje 0–100, resolviendo una contradicción presente en la investigación de origen.
+- HWF-06 ahora exige que la auditoría reconstruya los determinantes de una decisión — política, conocimiento, resultados de herramientas, autoridad y versiones vigentes — y no solo su resultado. Una auditoría de solo-qué deja idénticos a una política equivocada, un conocimiento envejecido, un mal resultado de herramienta, un error de modelo y un rol mal asignado, y esos cinco necesitan remedios distintos. La cláusula dice en su texto citable que el relato del modelo sobre su propio razonamiento apoya la reconstrucción sin sustituirla, porque el razonamiento declarado no es evidencia confiable de causa y un estándar que lo aceptara habilitaría postmortems confiados y equivocados.
 - HWF-17 exige que un contrato de rol sea revisable, se revise con cadencia declarada, y que la divergencia entre outcomes medidos y misión declarada la reporte hacia arriba el propio recurso. Está formulada como hallazgo y no como solicitud: un AI Employee no tiene intereses que defender, y un sistema capaz de argumentar a favor de su propia autoridad ampliada es un camino de escalamiento de privilegios vestido de función de RR. HH. La decisión queda en el accountable owner y nunca en un supervisor artificial.
 - HWF-02 separa supervisión de accountability. Un AI Employee puede supervisar a otro; la accountability termina en un humano o cuerpo de gobierno identificado por profunda que sea la cadena. HWF-16 se agregó junto con ella, exigiendo que esa cadena sea recorrible, observable e interrumpible sin pasar por sí misma. Antes de publicar, ambas eran una sola cláusula que exigía manager humano directo, lo que habría vuelto no conforme a una jerarquía artificial profunda por redacción y no por intención.
 

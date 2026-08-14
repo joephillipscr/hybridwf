@@ -104,9 +104,9 @@ The clause text is the citable unit; cite it by identifier, so HWF-07 rather tha
 
 ### HWF-06
 
-**Every material action must be auditable.**
+**Every material action must be auditable, and the audit must reconstruct the determinants of the decision as well as its outcome: the policy, knowledge, tool results, authority and versions in force when the action was taken. A model’s own account of its reasoning may support that reconstruction but never substitutes for it.**
 
-*Note:* Actor, input, tool, action, approval, result and timestamp. If the sequence cannot be reconstructed after the fact, the organisation cannot learn from a failure or demonstrate compliance.
+*Note:* Actor, input, tool, action, approval, result and timestamp tell you that something happened. They do not tell you why, and without the why an organisation cannot attribute a failure to its cause: a policy that was wrong, knowledge that had gone stale, a tool that returned bad data, a model that erred, or a role that should never have been assigned to an artificial resource at all. Those five demand different remedies, and they leave identical records under a what-only audit. The clause it most protects is HWF-09: with outcomes alone you can see that the system answered, never that it should have doubted. The material is largely already required elsewhere — HWF-08 governs the provenance of what the resource knew, HWF-14 the versions of model, policy, tools and knowledge base — so what this clause adds is the obligation to bind them to a specific action rather than hold them as a general inventory. A model’s stated reasoning is admissible as supporting evidence and is not proof of cause: what a system reports having thought may not be what produced its output, and an organisation that treats that narration as the why will write confident and wrong postmortems. Where reasoning traces are retained, their scope, retention and deletion fall under HWF-08 like any other memory, because they routinely contain retrieved customer data.
 
 ### HWF-07
 
@@ -282,7 +282,7 @@ The matrix is an original synthesis of organisational design, HR, performance ma
 | 4 | Limits of the post | It must be clear what does not belong to it. | Prohibited actions, domains, data and decisions. | U |
 | 5 | Defined authority | It is specified what can be decided without approval. | Autonomous actions, thresholds and approvals are specified. | U |
 | 6 | Responsibility and authority must be aligned | No result is demanded without sufficient faculties or resources. | No KPI is demanded without tools, permissions, data and budget. | U |
-| 7 | Unity of command and clear accountability | There must be a manager accountable for performance. | Exactly one accountable manager, even when work comes from several areas. | U |
+| 7 | Unity of command and clear accountability | There must be a manager accountable for performance. | Exactly one accountable owner, even when work comes from several areas and supervision is delegated. | U |
 | 8 | Known chain of command and escalation | Knows whom to escalate an exception or conflict to. | Explicit escalation tree by type, risk and urgency. | U |
 | 9 | Reasonable span of control | A manager should not have more reports than they can effectively direct. | Scale may be larger, but requires tooling, dashboards and supervision limits. | A |
 | 10 | Division of labour and specialisation | Roles organised by competencies and results. | AI Employees or subagents specialised by function. | U |
@@ -396,7 +396,7 @@ The matrix is an original synthesis of organisational design, HR, performance ma
 | --- | --- | --- | --- | --- |
 | 89 | Segregation of access | Limit and separate privileges by role. | Fundamental: identity, RBAC, scopes and separated secrets. | U |
 | 90 | Audit | Independent review of processes and decisions. | Logs, traces, event history, evals and reproducibility. | U |
-| 91 | Traceability | Know who did what, when and under what authority. | Actor ID + action + timestamp + context + tool + approval. | U |
+| 91 | Traceability | Know who did what, when and under what authority. | Actor ID + action + timestamp + context + tool + approval, plus the policy and versions in force. | U |
 | 92 | Accountability | There must be a person responsible for decisions and results. | Never orphaned: an accountable human answers for deployment, authority and outcomes. | U |
 | 93 | Incident management | Detect, contain, investigate and learn from failures. | AI incident management with kill switch, rollback, postmortem and remediation. | U |
 | 94 | Data protection | Privacy, access, minimisation and retention principles. | Data governance, consent, retrieval filters, retention and deletion. | U |
@@ -623,6 +623,8 @@ One term, two languages, one numbered definition. Where the English term is used
 
 **G-28 · Role divergence** — The gap between what an AI Employee actually produces and the mission, authority or KPIs its role contract states. Reported by the resource to its accountable owner as a finding, never as a request: the resource has no interests to advance, and the decision to revise the contract stays with the human. Divergence is the signal that a contract has aged, not evidence that the resource deserves more.
 
+**G-29 · Decision determinants** — The state that produced a particular action: the policy in force, the knowledge retrieved and its provenance, the tool results returned, the authority in effect, and the versions of model and configuration running at that moment. Distinct from the outcome, which says what happened, and from a reasoning trace, which says what the system reports having thought. Determinants are what allow a failure to be attributed to a cause rather than merely recorded.
+
 **G-25 · Hybrid post** — A post whose responsibilities are split explicitly between a human and an artificial resource, with defined handoffs, context transfer and a single owner of the overall result. Badly designed, it produces two occupants each waiting for the other to answer.
 
 ## Governance
@@ -744,6 +746,7 @@ You may quote, embed, teach, translate and commercially use this material with a
 - First publication: seventeen normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS instrument, the Hybrid Workforce Manager role and the transition playbooks.
 - Certification was deliberately excluded from scope. This standard scores no products and issues no seals.
 - The HWFS returns a structured argument rather than a 0–100 score, resolving a contradiction present in the source research.
+- HWF-06 now requires an audit to reconstruct the determinants of a decision — policy, knowledge, tool results, authority and versions in force — and not only its outcome. A what-only audit leaves a wrong policy, stale knowledge, a bad tool result, a model error and a misassigned role looking identical, and those five need different remedies. The clause states in its citable text that a model’s account of its own reasoning supports the reconstruction without substituting for it, because stated reasoning is not reliable evidence of cause and a standard that accepted it would license confidently wrong postmortems.
 - HWF-17 requires a role contract to be revisable, to be reviewed on a stated cadence, and to have divergence between measured outcomes and stated mission reported upward by the resource itself. It is framed as a finding rather than a request: an AI Employee has no interests to advance, and a system able to argue for its own expanded authority is a privilege-escalation path dressed as an HR feature. The decision stays with the accountable owner and never with an artificial supervisor.
 - HWF-02 separates supervision from accountability. An AI Employee may supervise another; accountability terminates in an identified human or governance body no matter how deep the chain. HWF-16 was added alongside it, requiring that chain to be traversable, observable, and interruptible without passing through itself. Before publication these read as a single clause requiring a direct human manager, which would have made a deep artificial hierarchy non-conformant by wording rather than by intent.
 
