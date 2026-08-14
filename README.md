@@ -35,7 +35,7 @@ is `{ en, es }`, so the two language trees cannot drift apart.
 | File | Holds |
 | --- | --- |
 | `lib/site.ts` | Identity, version, routes, navigation, locale counterparts |
-| `lib/standard.ts` | The fifteen normative clauses — the citable text |
+| `lib/standard.ts` | The sixteen normative clauses — the citable text |
 | `lib/definition.ts` | Formal definition, nine-property test, vocabulary ladder |
 | `lib/wrm.ts` | WRM framework: layers, ten domains, lifecycle, ten rules |
 | `lib/principles.ts` | The 120-principle matrix (87 U / 20 A / 13 H) |

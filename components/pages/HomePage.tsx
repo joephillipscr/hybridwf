@@ -29,13 +29,13 @@ const C = {
   is: {
     en: [
       'A test an organisation can run on its own deployment.',
-      'Fifteen normative clauses, cited by identifier.',
+      'Sixteen normative clauses, cited by identifier.',
       'A framework for deciding Human, Artificial or Hybrid before choosing a tool.',
       'Self-declared conformance, published if the organisation chooses.',
     ],
     es: [
       'Un test que una organización puede aplicar a su propio deployment.',
-      'Quince cláusulas normativas, citables por identificador.',
+      'Dieciséis cláusulas normativas, citables por identificador.',
       'Un marco para decidir Humano, Artificial o Híbrido antes de elegir herramienta.',
       'Conformidad autodeclarada, publicable si la organización lo decide.',
     ],
@@ -61,10 +61,10 @@ const C = {
   },
   clausesTitle: { en: 'The standard', es: 'El estándar' },
   clausesLede: {
-    en: 'Fifteen clauses, none of them optional. A short standard that fully binds is more useful than a long one that mostly suggests.',
-    es: 'Quince cláusulas, ninguna opcional. Un estándar corto que obliga del todo es más útil que uno largo que mayormente sugiere.',
+    en: 'Sixteen clauses, none of them optional. A short standard that fully binds is more useful than a long one that mostly suggests.',
+    es: 'Dieciséis cláusulas, ninguna opcional. Un estándar corto que obliga del todo es más útil que uno largo que mayormente sugiere.',
   },
-  allClauses: { en: 'All fifteen clauses', es: 'Las quince cláusulas' },
+  allClauses: { en: 'All sixteen clauses', es: 'Las dieciséis cláusulas' },
   artTitle: { en: 'The framework underneath', es: 'El marco que lo sostiene' },
   artLede: {
     en: 'The standard governs the occupant. WRM governs the work, and the work comes first.',

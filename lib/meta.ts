@@ -14,8 +14,8 @@ const DESCRIPTIONS: Record<RouteKey, Record<Locale, string>> = {
     es: 'Un chatbot responde. Un copiloto ayuda. Un agente actúa. Un AI Employee es responsable de un rol. Un estándar administrativo abierto para diseñar, asignar, gobernar y retirar trabajo entre recursos humanos y artificiales.',
   },
   standard: {
-    en: `The Hybrid Workforce Standard v${STANDARD_VERSION} — fifteen normative clauses that separate a governable work resource from a commercial metaphor.`,
-    es: `El Hybrid Workforce Standard v${STANDARD_VERSION} — quince cláusulas normativas que separan un recurso de trabajo gobernable de una metáfora comercial.`,
+    en: `The Hybrid Workforce Standard v${STANDARD_VERSION} — sixteen normative clauses that separate a governable work resource from a commercial metaphor.`,
+    es: `El Hybrid Workforce Standard v${STANDARD_VERSION} — dieciséis cláusulas normativas que separan un recurso de trabajo gobernable de una metáfora comercial.`,
   },
   definition: {
     en: 'The formal definition of an AI Employee and the nine-property test a system must pass to qualify.',

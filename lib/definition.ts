@@ -94,8 +94,8 @@ export const PROPERTIES: Property[] = [
     n: 9,
     name: { en: 'Human accountability', es: 'Accountability humano' },
     criterion: {
-      en: 'A human owner or manager is responsible for configuration, controls, performance and exceptions.',
-      es: 'Existe un humano propietario o manager responsable de la configuración, controles, desempeño y excepciones.',
+      en: 'An identified human, or human governance body, answers for configuration, controls, performance and exceptions, however many artificial supervisors sit in between.',
+      es: 'Un humano identificado, o cuerpo humano de gobierno, responde por configuración, controles, desempeño y excepciones, sin importar cuántos supervisores artificiales haya en el medio.',
     },
   },
 ];

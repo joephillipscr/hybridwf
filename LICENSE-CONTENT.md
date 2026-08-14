@@ -15,7 +15,7 @@ Everything that constitutes the standard, in both English and Spanish:
 
 | File | Content |
 | --- | --- |
-| `lib/standard.ts` | The fifteen normative clauses and conformance language |
+| `lib/standard.ts` | The sixteen normative clauses and conformance language |
 | `lib/definition.ts` | Definition, nine-property test, vocabulary ladder |
 | `lib/wrm.ts` | WRM framework: layers, domains, lifecycle, non-negotiable rules |
 | `lib/principles.ts` | The 120-principle matrix |

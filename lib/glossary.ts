@@ -41,16 +41,16 @@ export const TERMS: Term[] = [
     id: 'G-03',
     term: { en: 'AI Role Contract', es: 'AI Role Contract' },
     definition: {
-      en: 'The operational contract of an artificial post: mission, responsibilities, results, KPIs, authority, exclusions, tools, access, service level, escalation, suspension criteria and accountable manager. Versioned. The equivalent of a job description plus an explicit operating agreement — a prompt gives instructions, a role contract gives responsibility.',
-      es: 'El contrato operacional de un puesto artificial: misión, responsabilidades, resultados, KPIs, autoridad, exclusiones, herramientas, accesos, nivel de servicio, escalamiento, criterios de suspensión y accountable manager. Versionado. Equivale a una descripción de puesto más un acuerdo explícito de operación — un prompt da instrucciones, un contrato de rol da responsabilidad.',
+      en: 'The operational contract of an artificial post: mission, responsibilities, results, KPIs, authority, exclusions, tools, access, service level, escalation, suspension criteria and accountable owner. Versioned. The equivalent of a job description plus an explicit operating agreement — a prompt gives instructions, a role contract gives responsibility.',
+      es: 'El contrato operacional de un puesto artificial: misión, responsabilidades, resultados, KPIs, autoridad, exclusiones, herramientas, accesos, nivel de servicio, escalamiento, criterios de suspensión y accountable owner. Versionado. Equivale a una descripción de puesto más un acuerdo explícito de operación — un prompt da instrucciones, un contrato de rol da responsabilidad.',
     },
   },
   {
     id: 'G-04',
-    term: { en: 'Accountable Manager', es: 'Accountable Manager' },
+    term: { en: 'Accountable owner', es: 'Accountable owner' },
     definition: {
-      en: 'The single named person who answers for an AI Employee’s configuration, authority, performance and exceptions. Exactly one, even when the resource receives work from several areas.',
-      es: 'La única persona con nombre que responde por la configuración, autoridad, desempeño y excepciones de un AI Employee. Exactamente una, aunque el recurso reciba trabajo de varias áreas.',
+      en: 'The single identified human, or human governance body, that answers for an AI Employee’s configuration, authority, performance and exceptions. Exactly one, even when the resource receives work from several areas and even when its day-to-day supervision has been delegated. Accountability is never delegable to an artificial resource, because answering for an outcome requires the capacity to bear a consequence.',
+      es: 'El único humano identificado, o cuerpo humano de gobierno, que responde por la configuración, autoridad, desempeño y excepciones de un AI Employee. Exactamente uno, aunque el recurso reciba trabajo de varias áreas y aunque su supervisión cotidiana esté delegada. La accountability nunca es delegable a un recurso artificial, porque responder por un resultado exige capacidad de soportar una consecuencia.',
     },
   },
   {
@@ -211,6 +211,22 @@ export const TERMS: Term[] = [
     definition: {
       en: 'The operating mode in which the resource resolves routine work inside its limits and the manager intervenes on deviations and exceptions. Rung 4 of the autonomy ladder.',
       es: 'El modo de operación en que el recurso resuelve la rutina dentro de sus límites y el manager interviene en desviaciones y excepciones. Peldaño 4 de la escalera de autonomía.',
+    },
+  },
+  {
+    id: 'G-26',
+    term: { en: 'Supervisor', es: 'Supervisor' },
+    definition: {
+      en: 'Whoever directs an AI Employee’s work day to day: routing tasks, reviewing output, setting priorities and receiving exceptions. A supervisor may be human or artificial. Distinct from the accountable owner, which is always human — an AI Employee can supervise another and still answer to a person somewhere above it.',
+      es: 'Quien dirige el trabajo cotidiano de un AI Employee: rutear tareas, revisar output, fijar prioridades y recibir excepciones. Un supervisor puede ser humano o artificial. Se distingue del accountable owner, que siempre es humano: un AI Employee puede supervisar a otro y aun así responder ante una persona en algún punto por encima.',
+    },
+  },
+  {
+    id: 'G-27',
+    term: { en: 'Supervision chain', es: 'Cadena de supervisión' },
+    definition: {
+      en: 'The path from an AI Employee upward through each supervisor to the accountable human or governance body. Chains of any depth are permitted, but each must terminate in a human, be traversable and observable end to end, and allow the accountable party to intervene at any point without going through the chain itself. Depth is bounded by span of control rather than by a fixed number: scale may grow only against tooling that makes it governable.',
+      es: 'El recorrido desde un AI Employee hacia arriba, a través de cada supervisor, hasta el humano o cuerpo de gobierno accountable. Se permiten cadenas de cualquier profundidad, pero cada una debe terminar en un humano, ser recorrible y observable de punta a punta, y permitir que quien responde intervenga en cualquier punto sin pasar por la cadena misma. La profundidad la acota el span of control y no un número fijo: la escala puede crecer solo contra tooling que la haga gobernable.',
     },
   },
   {

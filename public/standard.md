@@ -43,7 +43,7 @@ Hybrid Workforce Standard by Master Joe Phillips, https://hybridwf.com/ — lice
 | 6 | Limited authority | Permissions, approval thresholds, budgets, prohibited actions and escalation rules. |
 | 7 | Governed memory | Relevant context across tasks and over time, with provenance, scope and retention. |
 | 8 | Observability | Actions, tool calls, costs, decisions and results are traceable. |
-| 9 | Human accountability | A human owner or manager is responsible for configuration, controls, performance and exceptions. |
+| 9 | Human accountability | An identified human, or human governance body, answers for configuration, controls, performance and exceptions, however many artificial supervisors sit in between. |
 
 A system missing several of these properties may still be an excellent agent or automation. Calling it an AI Employee is then a commercial metaphor rather than a verifiable administrative category.
 
@@ -80,9 +80,9 @@ The clause text is the citable unit; cite it by identifier, so HWF-07 rather tha
 
 ### HWF-02
 
-**There must be exactly one accountable human manager.**
+**Every AI Employee must have exactly one accountable owner. Supervision may be delegated to another AI Employee; accountability may not. Every chain of supervision terminates in an identified human or human governance body.**
 
-*Note:* An AI Employee may receive work from many people, but unity of command still applies. A resource with two owners has none, and a resource with no owner is administratively orphaned no matter how well it is integrated technically.
+*Note:* Supervision and accountability are different jobs and this clause separates them. Supervision directs work: routing, review, prioritising, receiving exceptions. An artificial resource can do that. Accountability means answering for the outcome, which requires the capacity to bear a consequence that is legal, financial or reputational. A chain of responsibility ending in something that cannot bear a consequence has not delegated responsibility; it has lost it. An AI Employee may receive work from many people, but unity of command still applies: a resource with two owners has none, and a resource with no owner is administratively orphaned no matter how well it is integrated technically.
 
 ### HWF-03
 
@@ -162,6 +162,12 @@ The clause text is the citable unit; cite it by identifier, so HWF-07 rather tha
 
 *Note:* This clause is what makes the category worth anything. If the label applies to everything, it distinguishes nothing. An organisation with twenty excellent agents and zero AI Employees has clarity rather than a problem.
 
+### HWF-16
+
+**A supervision chain must be traversable and observable end to end. The accountable human or body must be able to identify every AI Employee beneath it, reconstruct any action taken in its name, and intervene at any point in the chain without passing through it.**
+
+*Note:* Intervening without passing through the chain is the load-bearing part. If stopping an AI Employee three levels down requires asking the one above it, the accountable party holds a request rather than control. Depth is not forbidden and no fixed limit is set here, because the real limit is span of control: a principle this framework classifies as adapted rather than abolished, meaning scale may grow but only against tooling, dashboards and supervision limits that make the growth governable. A single human nominally accountable for a thousand AI Employees across six levels, with no instrument capable of showing what any of them did, has an organisational chart rather than accountability. Describing this architecture is not endorsing it: the standard states what must remain true if an organisation builds one.
+
 ## Maturity model
 
 | Level | Name | Definition |
@@ -182,7 +188,7 @@ The value of the model is the threshold it creates. Not every agent deserves to 
 
 1. Does it act, or only produce output?
 2. Does it hold a recurring role, or only discrete tasks?
-3. Does it have a named accountable manager?
+3. Following its supervision chain upward, does it reach a named human?
 4. Can you reconstruct what it did last Tuesday and under whose authority?
 5. Can it be suspended today, by someone who knows they own that decision?
 
@@ -246,7 +252,7 @@ The founding idea is to separate the post from its occupant. First there is an o
 ### Ten non-negotiable rules
 
 1. Every post must exist before its occupant, with purpose, responsibilities, results and KPIs.
-2. Every work resource must have exactly one accountable manager, even when it collaborates with many people or areas.
+2. Every work resource must have exactly one accountable owner, even when it collaborates with many people or areas and even when its supervision is delegated.
 3. Responsibility and authority must travel together: no result is demanded without granting the necessary faculties.
 4. All authority must be explicit, limited and revocable.
 5. Every resource must know its limits, its handoffs and when to escalate.
@@ -254,7 +260,7 @@ The founding idea is to separate the post from its occupant. First there is an o
 7. Every material action executed by an AI Employee must be traceable and auditable.
 8. Performance is measured by outcomes, quality, risk and cost — not by activity, hours, tokens or message count.
 9. A Human ↔ Artificial transition must remain reversible until stable performance is demonstrated.
-10. Final responsibility for an AI Employee stays with a person or a human governance structure.
+10. Final responsibility for an AI Employee stays with an identified person or human governance body, however many artificial supervisors sit between them.
 
 ## The 120-principle matrix
 
@@ -561,9 +567,9 @@ One term, two languages, one numbered definition. Where the English term is used
 
 **G-02 · WRM — Work Resource Management** — The discipline that designs, assigns, governs and optimises work regardless of whether the resource executing it is human, artificial or hybrid.
 
-**G-03 · AI Role Contract** — The operational contract of an artificial post: mission, responsibilities, results, KPIs, authority, exclusions, tools, access, service level, escalation, suspension criteria and accountable manager. Versioned. The equivalent of a job description plus an explicit operating agreement — a prompt gives instructions, a role contract gives responsibility.
+**G-03 · AI Role Contract** — The operational contract of an artificial post: mission, responsibilities, results, KPIs, authority, exclusions, tools, access, service level, escalation, suspension criteria and accountable owner. Versioned. The equivalent of a job description plus an explicit operating agreement — a prompt gives instructions, a role contract gives responsibility.
 
-**G-04 · Accountable Manager** — The single named person who answers for an AI Employee’s configuration, authority, performance and exceptions. Exactly one, even when the resource receives work from several areas.
+**G-04 · Accountable owner** — The single identified human, or human governance body, that answers for an AI Employee’s configuration, authority, performance and exceptions. Exactly one, even when the resource receives work from several areas and even when its day-to-day supervision has been delegated. Accountability is never delegable to an artificial resource, because answering for an outcome requires the capacity to bear a consequence.
 
 **G-05 · Shadow mode** — A stage in which the artificial resource executes the work but its actions do not affect the operation. Results are compared against a human baseline. The operational equivalent of probation.
 
@@ -604,6 +610,10 @@ One term, two languages, one numbered definition. Where the English term is used
 **G-23 · Total Cost of AI Employment** — Models plus infrastructure plus integrations plus supervision plus error cost plus governance. The artificial analogue of total cost of employment, and the only honest basis for comparison.
 
 **G-24 · Management by exception** — The operating mode in which the resource resolves routine work inside its limits and the manager intervenes on deviations and exceptions. Rung 4 of the autonomy ladder.
+
+**G-26 · Supervisor** — Whoever directs an AI Employee’s work day to day: routing tasks, reviewing output, setting priorities and receiving exceptions. A supervisor may be human or artificial. Distinct from the accountable owner, which is always human — an AI Employee can supervise another and still answer to a person somewhere above it.
+
+**G-27 · Supervision chain** — The path from an AI Employee upward through each supervisor to the accountable human or governance body. Chains of any depth are permitted, but each must terminate in a human, be traversable and observable end to end, and allow the accountable party to intervene at any point without going through the chain itself. Depth is bounded by span of control rather than by a fixed number: scale may grow only against tooling that makes it governable.
 
 **G-25 · Hybrid post** — A post whose responsibilities are split explicitly between a human and an artificial resource, with defined handoffs, context transfer and a single owner of the overall result. Badly designed, it produces two occupants each waiting for the other to answer.
 
@@ -723,8 +733,9 @@ You may quote, embed, teach, translate and commercially use this material with a
 
 ### v1.0 · 2026-08-12 · Proposal — Review Board forming
 
-- First publication: fifteen normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS instrument, the Hybrid Workforce Manager role and the transition playbooks.
+- First publication: sixteen normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS instrument, the Hybrid Workforce Manager role and the transition playbooks.
 - Certification was deliberately excluded from scope. This standard scores no products and issues no seals.
 - The HWFS returns a structured argument rather than a 0–100 score, resolving a contradiction present in the source research.
+- HWF-02 separates supervision from accountability. An AI Employee may supervise another; accountability terminates in an identified human or governance body no matter how deep the chain. HWF-16 was added alongside it, requiring that chain to be traversable, observable, and interruptible without passing through itself. Before publication these read as a single clause requiring a direct human manager, which would have made a deep artificial hierarchy non-conformant by wording rather than by intent.
 
 Clause text changes require a version bump and a Board vote. Notes, examples and commentary may be corrected between versions without amending the standard. Every published version stays at its own permanent address so that a citation made today still resolves in five years.

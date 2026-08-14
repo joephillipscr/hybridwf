@@ -225,8 +225,8 @@ export const RULES: T[] = [
     es: 'Todo puesto debe existir antes que su ocupante, con propósito, responsabilidades, resultados y KPIs.',
   },
   {
-    en: 'Every work resource must have exactly one accountable manager, even when it collaborates with many people or areas.',
-    es: 'Todo recurso de trabajo debe tener exactamente un accountable manager, aunque colabore con múltiples personas o áreas.',
+    en: 'Every work resource must have exactly one accountable owner, even when it collaborates with many people or areas and even when its supervision is delegated.',
+    es: 'Todo recurso de trabajo debe tener exactamente un accountable owner, aunque colabore con múltiples personas o áreas y aunque su supervisión esté delegada.',
   },
   {
     en: 'Responsibility and authority must travel together: no result is demanded without granting the necessary faculties.',
@@ -248,7 +248,7 @@ export const RULES: T[] = [
     es: 'Una transición Human ↔ Artificial debe ser reversible hasta demostrar performance estable.',
   },
   {
-    en: 'Final responsibility for an AI Employee stays with a person or a human governance structure.',
-    es: 'La responsabilidad final sobre un AI Employee permanece en una persona o estructura humana de gobierno.',
+    en: 'Final responsibility for an AI Employee stays with an identified person or human governance body, however many artificial supervisors sit between them.',
+    es: 'La responsabilidad final sobre un AI Employee permanece en una persona identificada o cuerpo humano de gobierno, sin importar cuántos supervisores artificiales haya en el medio.',
   },
 ];

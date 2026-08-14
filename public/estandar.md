@@ -43,7 +43,7 @@ Hybrid Workforce Standard de Master Joe Phillips, https://hybridwf.com/es/ — b
 | 6 | Autoridad limitada | Permisos, umbrales de aprobación, presupuestos, acciones prohibidas y reglas de escalamiento. |
 | 7 | Memoria gobernada | Contexto relevante entre tareas y en el tiempo, con procedencia, alcance y retención. |
 | 8 | Observabilidad | Acciones, tool calls, costos, decisiones y resultados trazables. |
-| 9 | Accountability humano | Existe un humano propietario o manager responsable de la configuración, controles, desempeño y excepciones. |
+| 9 | Accountability humano | Un humano identificado, o cuerpo humano de gobierno, responde por configuración, controles, desempeño y excepciones, sin importar cuántos supervisores artificiales haya en el medio. |
 
 Un sistema que carece de varias de estas propiedades puede seguir siendo un excelente agente o automatización. Llamarlo AI Employee se vuelve entonces una metáfora comercial más que una categoría administrativa verificable.
 
@@ -80,9 +80,9 @@ El texto de la cláusula es la unidad citable; citala por identificador, o sea H
 
 ### HWF-02
 
-**Debe existir exactamente un accountable human manager.**
+**Todo AI Employee debe tener exactamente un accountable owner. La supervisión puede delegarse a otro AI Employee; la accountability no. Toda cadena de supervisión termina en un humano o cuerpo humano de gobierno identificado.**
 
-*Nota:* Un AI Employee puede recibir trabajo de muchas personas, pero la unidad de mando sigue aplicando. Un recurso con dos dueños no tiene ninguno, y un recurso sin dueño queda huérfano administrativamente por bien integrado que esté.
+*Nota:* Supervisión y accountability son trabajos distintos y esta cláusula los separa. La supervisión dirige el trabajo: rutear, revisar, priorizar, recibir excepciones. Un recurso artificial puede hacerlo. La accountability es responder por el resultado, y eso exige capacidad de soportar una consecuencia jurídica, económica o reputacional. Una cadena de responsabilidad que termina en algo incapaz de soportar consecuencia no delegó responsabilidad: la perdió. Un AI Employee puede recibir trabajo de muchas personas, pero la unidad de mando sigue aplicando: un recurso con dos dueños no tiene ninguno, y un recurso sin dueño queda huérfano administrativamente por bien integrado que esté.
 
 ### HWF-03
 
@@ -162,6 +162,12 @@ El texto de la cláusula es la unidad citable; citala por identificador, o sea H
 
 *Nota:* Esta cláusula es lo que le da valor a la categoría. Si la etiqueta aplica a todo, no distingue nada. Una organización con veinte agentes excelentes y cero AI Employees tiene claridad y no un problema.
 
+### HWF-16
+
+**Una cadena de supervisión debe ser recorrible y observable de punta a punta. El humano o cuerpo accountable debe poder identificar a cada AI Employee por debajo suyo, reconstruir cualquier acción ejecutada en su nombre, e intervenir en cualquier punto de la cadena sin pasar por ella.**
+
+*Nota:* Intervenir sin pasar por la cadena es la parte que sostiene todo. Si detener a un AI Employee tres niveles abajo exige pedírselo al que está encima, quien responde tiene una petición y no control. La profundidad no está prohibida ni se fija un límite acá, porque el límite real es el span of control: un principio que este marco clasifica como adaptado y no como abolido, o sea que la escala puede crecer pero solo contra tooling, dashboards y límites de supervisión que hagan gobernable ese crecimiento. Un solo humano nominalmente accountable por mil AI Employees repartidos en seis niveles, sin un instrumento capaz de mostrar qué hizo cada uno, tiene un organigrama y no accountability. Describir esta arquitectura no es endosarla: el estándar dice qué debe seguir siendo cierto si una organización la construye.
+
 ## Modelo de madurez
 
 | Nivel | Nombre | Definición |
@@ -182,7 +188,7 @@ El valor del modelo es el umbral que crea. No todo agente merece llamarse AI Emp
 
 1. ¿Actúa, o solo produce output?
 2. ¿Sostiene un rol recurrente, o solo tareas discretas?
-3. ¿Tiene un accountable manager con nombre?
+3. ¿Siguiendo su cadena de supervisión hacia arriba, se llega a un humano con nombre?
 4. ¿Podés reconstruir qué hizo el martes pasado y bajo qué autoridad?
 5. ¿Puede suspenderse hoy, por alguien que sabe que esa decisión es suya?
 
@@ -246,7 +252,7 @@ La idea fundacional es separar el puesto del ocupante. Primero existe una necesi
 ### Diez reglas no negociables
 
 1. Todo puesto debe existir antes que su ocupante, con propósito, responsabilidades, resultados y KPIs.
-2. Todo recurso de trabajo debe tener exactamente un accountable manager, aunque colabore con múltiples personas o áreas.
+2. Todo recurso de trabajo debe tener exactamente un accountable owner, aunque colabore con múltiples personas o áreas y aunque su supervisión esté delegada.
 3. Responsabilidad y autoridad deben estar alineadas: no se exige un resultado sin entregar las facultades necesarias.
 4. Toda autoridad debe ser explícita, limitada y revocable.
 5. Todo recurso debe conocer sus límites, sus handoffs y cuándo escalar.
@@ -254,7 +260,7 @@ La idea fundacional es separar el puesto del ocupante. Primero existe una necesi
 7. Toda acción material ejecutada por un AI Employee debe ser trazable y auditable.
 8. El desempeño se mide por outcomes, calidad, riesgo y costo; no por actividad, horas, tokens o cantidad de mensajes.
 9. Una transición Human ↔ Artificial debe ser reversible hasta demostrar performance estable.
-10. La responsabilidad final sobre un AI Employee permanece en una persona o estructura humana de gobierno.
+10. La responsabilidad final sobre un AI Employee permanece en una persona identificada o cuerpo humano de gobierno, sin importar cuántos supervisores artificiales haya en el medio.
 
 ## La matriz de 120 principios
 
@@ -561,9 +567,9 @@ Un término, dos idiomas, una definición numerada. Cuando el término inglés s
 
 **G-02 · WRM — Administración de Recursos de Trabajo** — La disciplina que diseña, asigna, gobierna y optimiza el trabajo independientemente de si el recurso que lo ejecuta es humano, artificial o híbrido.
 
-**G-03 · AI Role Contract** — El contrato operacional de un puesto artificial: misión, responsabilidades, resultados, KPIs, autoridad, exclusiones, herramientas, accesos, nivel de servicio, escalamiento, criterios de suspensión y accountable manager. Versionado. Equivale a una descripción de puesto más un acuerdo explícito de operación — un prompt da instrucciones, un contrato de rol da responsabilidad.
+**G-03 · AI Role Contract** — El contrato operacional de un puesto artificial: misión, responsabilidades, resultados, KPIs, autoridad, exclusiones, herramientas, accesos, nivel de servicio, escalamiento, criterios de suspensión y accountable owner. Versionado. Equivale a una descripción de puesto más un acuerdo explícito de operación — un prompt da instrucciones, un contrato de rol da responsabilidad.
 
-**G-04 · Accountable Manager** — La única persona con nombre que responde por la configuración, autoridad, desempeño y excepciones de un AI Employee. Exactamente una, aunque el recurso reciba trabajo de varias áreas.
+**G-04 · Accountable owner** — El único humano identificado, o cuerpo humano de gobierno, que responde por la configuración, autoridad, desempeño y excepciones de un AI Employee. Exactamente uno, aunque el recurso reciba trabajo de varias áreas y aunque su supervisión cotidiana esté delegada. La accountability nunca es delegable a un recurso artificial, porque responder por un resultado exige capacidad de soportar una consecuencia.
 
 **G-05 · Shadow mode** — Etapa en la que el recurso artificial ejecuta el trabajo pero sus acciones no afectan la operación. Los resultados se comparan contra un baseline humano. Equivalente operativo del periodo de prueba.
 
@@ -604,6 +610,10 @@ Un término, dos idiomas, una definición numerada. Cuando el término inglés s
 **G-23 · Total Cost of AI Employment** — Modelos más infraestructura más integraciones más supervisión más costo de errores más governance. El análogo artificial del costo total del empleado, y la única base honesta de comparación.
 
 **G-24 · Management by exception** — El modo de operación en que el recurso resuelve la rutina dentro de sus límites y el manager interviene en desviaciones y excepciones. Peldaño 4 de la escalera de autonomía.
+
+**G-26 · Supervisor** — Quien dirige el trabajo cotidiano de un AI Employee: rutear tareas, revisar output, fijar prioridades y recibir excepciones. Un supervisor puede ser humano o artificial. Se distingue del accountable owner, que siempre es humano: un AI Employee puede supervisar a otro y aun así responder ante una persona en algún punto por encima.
+
+**G-27 · Cadena de supervisión** — El recorrido desde un AI Employee hacia arriba, a través de cada supervisor, hasta el humano o cuerpo de gobierno accountable. Se permiten cadenas de cualquier profundidad, pero cada una debe terminar en un humano, ser recorrible y observable de punta a punta, y permitir que quien responde intervenga en cualquier punto sin pasar por la cadena misma. La profundidad la acota el span of control y no un número fijo: la escala puede crecer solo contra tooling que la haga gobernable.
 
 **G-25 · Puesto híbrido** — Puesto cuyas responsabilidades se reparten explícitamente entre un recurso humano y uno artificial, con handoffs definidos, transferencia de contexto y un único dueño del resultado completo. Mal diseñado, produce dos ocupantes esperando que responda el otro.
 
@@ -723,8 +733,9 @@ Podés citar, embeber, enseñar, traducir y usar comercialmente este material co
 
 ### v1.0 · 2026-08-12 · Propuesta — Review Board en formación
 
-- Primera publicación: quince cláusulas normativas, el test de nueve propiedades, el marco WRM, la matriz de 120 principios, el modelo de madurez, el instrumento HWFS, el rol de Gerente de Fuerza Laboral Híbrida y los playbooks de transición.
+- Primera publicación: dieciséis cláusulas normativas, el test de nueve propiedades, el marco WRM, la matriz de 120 principios, el modelo de madurez, el instrumento HWFS, el rol de Gerente de Fuerza Laboral Híbrida y los playbooks de transición.
 - La certificación se excluyó deliberadamente del alcance. Este estándar no puntúa productos ni emite sellos.
 - El HWFS devuelve un argumento estructurado en lugar de un puntaje 0–100, resolviendo una contradicción presente en la investigación de origen.
+- HWF-02 separa supervisión de accountability. Un AI Employee puede supervisar a otro; la accountability termina en un humano o cuerpo de gobierno identificado por profunda que sea la cadena. HWF-16 se agregó junto con ella, exigiendo que esa cadena sea recorrible, observable e interrumpible sin pasar por sí misma. Antes de publicar, ambas eran una sola cláusula que exigía manager humano directo, lo que habría vuelto no conforme a una jerarquía artificial profunda por redacción y no por intención.
 
 Cambiar el texto de una cláusula exige subir de versión y una votación del Board. Notas, ejemplos y comentario pueden corregirse entre versiones sin enmendar el estándar. Toda versión publicada permanece en su propia dirección permanente para que una cita hecha hoy siga resolviendo en cinco años.
