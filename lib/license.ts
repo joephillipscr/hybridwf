@@ -46,20 +46,20 @@ export const TERMS: { title: T; body: T }[] = [
 
 export const PERMITTED: T[] = [
   {
-    en: 'Quote or cite any clause, by identifier, anywhere — including in commercial work.',
-    es: 'Citar cualquier cláusula, por identificador, donde sea — incluido trabajo comercial.',
+    en: 'Quote or cite any clause, by identifier, anywhere, including in commercial work.',
+    es: 'Citar cualquier cláusula, por identificador, donde sea, incluido trabajo comercial.',
   },
   {
-    en: 'Reproduce the standard inside a larger document — a policy manual, a vendor evaluation, a consulting deliverable. Including this work in a collection does not make the whole collection an adaptation, so ShareAlike does not extend to the rest of your document.',
-    es: 'Reproducir el estándar dentro de un documento mayor — un manual de políticas, una evaluación de proveedores, un entregable de consultoría. Incluir esta obra en una colección no convierte a la colección entera en una adaptación, así que CompartirIgual no se extiende al resto de tu documento.',
+    en: 'Reproduce the standard inside a larger document, such as a policy manual or a vendor evaluation. Including this work in a collection does not make the whole collection an adaptation, so ShareAlike does not reach the rest of your document.',
+    es: 'Reproducir el estándar dentro de un documento mayor, como un manual de políticas o una evaluación de proveedores. Incluir esta obra en una colección no convierte a la colección entera en una adaptación, así que CompartirIgual no alcanza al resto de tu documento.',
   },
   {
-    en: 'Run the HWFS assessment and use its output however you like. Assessment results describe your responsibilities, not ours — they are yours, unencumbered.',
-    es: 'Ejecutar la evaluación HWFS y usar su resultado como quieras. Los resultados describen tus responsabilidades, no las nuestras — son tuyos, sin obligaciones.',
+    en: 'Run the HWFS assessment and use its output however you like. The results describe your responsibilities rather than ours, so they belong to you with no licence obligation attached.',
+    es: 'Ejecutar la evaluación HWFS y usar su resultado como quieras. Los resultados describen tus responsabilidades y no las nuestras, así que son tuyos y no arrastran ninguna obligación de licencia.',
   },
   {
-    en: 'Teach it, train on it, and use it inside a product — commercially, at no cost, with no separate agreement.',
-    es: 'Enseñarlo, entrenar con él y usarlo dentro de un producto — comercialmente, sin costo, sin acuerdo aparte.',
+    en: 'Teach it, train on it, and use it inside a product. Commercial use costs nothing and needs no separate agreement.',
+    es: 'Enseñarlo, entrenar con él y usarlo dentro de un producto. El uso comercial no cuesta nada y no requiere un acuerdo aparte.',
   },
   {
     en: 'Translate it into another language, provided the translation carries the same licence and is marked as an unofficial translation.',
@@ -80,15 +80,15 @@ export const BOUNDARIES: { title: T; body: T }[] = [
   {
     title: { en: 'Conformance is a claim about you', es: 'La conformidad es una afirmación sobre vos' },
     body: {
-      en: 'The licence lets you use the text. It does not let you claim endorsement. Saying “this deployment conforms to the Hybrid Workforce Standard v1.0” is a self-declaration about your own system, which the standard invites. Saying the standard certifies, approves or endorses your product is not permitted — no product is certified here, ever.',
-      es: 'La licencia te permite usar el texto. No te permite afirmar respaldo. Decir «este deployment conforma con el Hybrid Workforce Standard v1.0» es una autodeclaración sobre tu propio sistema, que el estándar invita. Decir que el estándar certifica, aprueba o respalda tu producto no está permitido — acá no se certifica ningún producto, nunca.',
+      en: 'The licence lets you use the text. It does not let you claim endorsement. Saying “this deployment conforms to the Hybrid Workforce Standard v1.0” is a self-declaration about your own system, which the standard invites. Saying the standard certifies, approves or endorses your product is not permitted. No product is certified here.',
+      es: 'La licencia te permite usar el texto. No te permite afirmar respaldo. Decir «este deployment conforma con el Hybrid Workforce Standard v1.0» es una autodeclaración sobre tu propio sistema, que el estándar invita. Decir que el estándar certifica, aprueba o respalda tu producto no está permitido. Acá no se certifica ningún producto.',
     },
   },
   {
     title: { en: 'Site code is separate', es: 'El código del sitio es aparte' },
     body: {
-      en: 'This licence covers the standard and its supporting text — clauses, framework, matrix, glossary, playbooks. The source code that renders this site is licensed separately in the repository. Do not assume one licence from the other.',
-      es: 'Esta licencia cubre el estándar y su texto de apoyo — cláusulas, marco, matriz, glosario, playbooks. El código fuente que renderiza este sitio se licencia por separado en el repositorio. No asumas una licencia a partir de la otra.',
+      en: 'This licence covers the standard and its supporting text: the clauses, the framework, the matrix, the glossary and the playbooks. The source code that renders this site is licensed separately in the repository. Do not assume one licence from the other.',
+      es: 'Esta licencia cubre el estándar y su texto de apoyo: las cláusulas, el marco, la matriz, el glosario y los playbooks. El código fuente que renderiza este sitio se licencia por separado en el repositorio. No asumas una licencia a partir de la otra.',
     },
   },
 ];
@@ -99,16 +99,16 @@ export const RATIONALE: { title: T; body: T[] } = {
   title: { en: 'Why ShareAlike', es: 'Por qué CompartirIgual' },
   body: [
     {
-      en: 'A standard is worth what its adoption is worth, so the licence has to permit almost everything: citation, commercial use, embedding, teaching. All of that is free here and always will be.',
-      es: 'Un estándar vale lo que vale su adopción, así que la licencia tiene que permitir casi todo: citar, uso comercial, embeber, enseñar. Todo eso es libre acá y lo seguirá siendo.',
+      en: 'A standard is worth what its adoption is worth, so the licence has to permit almost everything: citation, commercial use, embedding, teaching. All of that is permitted without cost.',
+      es: 'Un estándar vale lo que vale su adopción, así que la licencia tiene que permitir casi todo: citar, uso comercial, embeber, enseñar. Todo eso está permitido sin costo.',
     },
     {
-      en: 'The one thing worth preventing is a fork that closes. A vendor could take this text, alter the clauses to fit what their product happens to do, and publish the result as a proprietary standard — which is precisely the failure this project exists to avoid. ShareAlike makes that impossible: a modified version must stay as open as this one.',
-      es: 'Lo único que vale la pena impedir es un fork que se cierre. Un proveedor podría tomar este texto, alterar las cláusulas para que encajen con lo que su producto hace, y publicar el resultado como estándar propietario — que es exactamente la falla que este proyecto existe para evitar. CompartirIgual lo hace imposible: una versión modificada debe quedar tan abierta como esta.',
+      en: 'The one thing worth preventing is a fork that closes. A vendor could take this text, alter the clauses to fit what their product happens to do, and publish the result as a proprietary standard. That is the failure this project exists to avoid, and ShareAlike prevents it: a modified version must stay as open as this one.',
+      es: 'Lo único que vale la pena impedir es un fork que se cierre. Un proveedor podría tomar este texto, alterar las cláusulas para que encajen con lo que su producto hace, y publicar el resultado como estándar propietario. Esa es la falla que este proyecto existe para evitar, y CompartirIgual la impide: una versión modificada debe quedar tan abierta como esta.',
     },
     {
-      en: 'The cost is real and worth naming: a third-party translation or adaptation inherits the licence, which some organisations will not accept. We take that trade deliberately. Openness that a competitor can revoke is not openness.',
-      es: 'El costo es real y vale nombrarlo: una traducción o adaptación de terceros hereda la licencia, y algunas organizaciones no lo van a aceptar. Tomamos ese intercambio deliberadamente. Una apertura que un competidor puede revocar no es apertura.',
+      en: 'The cost is real and worth naming: a third-party translation or adaptation inherits the licence, and some organisations will not accept that. We take the trade deliberately, because an openness a competitor could revoke would not be worth much.',
+      es: 'El costo es real y vale nombrarlo: una traducción o adaptación de terceros hereda la licencia, y algunas organizaciones no lo van a aceptar. Tomamos el intercambio deliberadamente, porque una apertura que un competidor pudiera revocar no valdría mucho.',
     },
   ],
 };
@@ -126,6 +126,6 @@ export function attributionPlain(url: string, author: string, lang: 'en' | 'es')
 }
 
 export const ATTRIBUTION_NOTE: T = {
-  en: 'Copy one of these when you reuse the material. Add “Changes were made.” if you modified it — the licence requires you to say so.',
-  es: 'Copiá uno de estos cuando reutilices el material. Agregá «Se hicieron cambios.» si lo modificaste — la licencia exige decirlo.',
+  en: 'Copy one of these when you reuse the material. Add “Changes were made.” if you modified it. The licence requires you to say so.',
+  es: 'Copiá uno de estos cuando reutilices el material. Agregá «Se hicieron cambios.» si lo modificaste. La licencia exige decirlo.',
 };

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, FileText } from 'lucide-react';
 import CiteBox from '../CiteBox';
 import Reveal from '../Reveal';
 import { PageHeader, Section } from '../Section';
@@ -15,6 +15,11 @@ const C = {
     es: 'Quince cláusulas que separan un recurso de trabajo gobernable de una metáfora comercial. La conformidad es autodeclarada: acá no se puntúa ningún producto ni se emite ningún sello.',
   },
   next: { en: 'How the standard is governed', es: 'Cómo se gobierna el estándar' },
+  machineTitle: { en: 'Machine-readable', es: 'Legible por máquinas' },
+  machineBody: {
+    en: 'The whole standard as one Markdown file: every clause, the framework, the 120-principle matrix, the instrument and the glossary. Built for pasting into a model context window or ingesting into a retrieval index.',
+    es: 'El estándar entero en un archivo Markdown: cada cláusula, el marco, la matriz de 120 principios, el instrumento y el glosario. Pensado para pegarlo en la ventana de contexto de un modelo o ingerirlo en un índice de recuperación.',
+  },
 };
 
 export default function StandardPage({ lang }: { lang: Locale }) {
@@ -61,6 +66,21 @@ export default function StandardPage({ lang }: { lang: Locale }) {
             </div>
 
             <CiteBox lang={lang} citation={citation} />
+
+            <div className="card">
+              <h2 className="eyebrow">{C.machineTitle[lang]}</h2>
+              <p className="mt-3 text-sm leading-relaxed text-muted">
+                {C.machineBody[lang]}
+              </p>
+              <a
+                href={lang === 'en' ? '/standard.md' : '/estandar.md'}
+                className="btn-ghost mt-4 text-sm"
+                download
+              >
+                <FileText size={15} />
+                {lang === 'en' ? 'standard.md' : 'estandar.md'}
+              </a>
+            </div>
 
             <div className="card">
               <dl className="space-y-2.5 text-sm">

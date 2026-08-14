@@ -1,0 +1,730 @@
+---
+title: Hybrid Workforce Standard
+version: "1.0"
+status: proposal
+date: 2026-08-12
+language: en
+canonical: https://hybridwf.com/
+author: Master Joe Phillips
+author_url: https://masterjoephillips.com
+license: CC-BY-SA-4.0
+license_url: https://creativecommons.org/licenses/by-sa/4.0/
+attribution: "Hybrid Workforce Standard by Master Joe Phillips, https://hybridwf.com/ — licensed under CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)."
+disclosure: "The author also builds AIEmpl.com, a commercial platform in this category. This standard certifies no products and issues no seals."
+---
+
+# Hybrid Workforce Standard
+
+**A chatbot answers. A copilot helps. An agent acts. An AI Employee is accountable for a role.**
+
+> There are no human posts and AI posts as a starting point. There is work that needs to be done. Then you decide which combination of human and artificial resources produces the best result at the right level of risk, responsibility and control.
+
+## How to cite
+
+Cite clauses by identifier, never by page or section number. The clause text is the citable unit; the notes beneath each clause are commentary and may be revised between versions without amending the standard.
+
+```
+Hybrid Workforce Standard by Master Joe Phillips, https://hybridwf.com/ — licensed under CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/).
+```
+
+## Definition
+
+> An AI Employee is a persistent, role-bound software worker that autonomously executes recurring business responsibilities using organisational knowledge and authorised tools, within explicit policies and limits, maintaining traceable identity, measurable performance, escalation paths and human accountability.
+
+### The nine-property test
+
+| # | Name | Definition |
+| --- | --- | --- |
+| 1 | Persistent identity | Stable operational identity, role, history and per-company isolation. |
+| 2 | Role contract | Mission, responsibilities, results, exclusions and service expectations. |
+| 3 | Organisational context | Knowledge of policies, products, customers, people and relevant past decisions. |
+| 4 | Tools and channels | Authorised access to CRM, ERP, email, calendar, tickets, databases, APIs and communication. |
+| 5 | Autonomy | Can start or continue work without a human prompt at every step. |
+| 6 | Limited authority | Permissions, approval thresholds, budgets, prohibited actions and escalation rules. |
+| 7 | Governed memory | Relevant context across tasks and over time, with provenance, scope and retention. |
+| 8 | Observability | Actions, tool calls, costs, decisions and results are traceable. |
+| 9 | Human accountability | A human owner or manager is responsible for configuration, controls, performance and exceptions. |
+
+A system missing several of these properties may still be an excellent agent or automation. Calling it an AI Employee is then a commercial metaphor rather than a verifiable administrative category.
+
+### The vocabulary ladder
+
+| Term | Core promise | Typical behaviour | Main limit |
+| --- | --- | --- | --- |
+| Chatbot | Conversation | Answers questions | Waits for prompts or inputs |
+| Copilot / assistant | Augment the human | Drafts, summarises, suggests | The human is still the operator |
+| Automation / RPA | Deterministic execution | Runs predefined flows | Brittle against unforeseen cases |
+| AI agent | Goal-directed action | Reasons, uses tools, executes | Usually centred on tasks or objectives |
+| AI teammate / coworker | Collaboration | Shares context and executes work | Organisational semantics vary by vendor |
+| AI Employee | Ownership of a role | Holds recurring work under governance | The category still has no standard — hence this document |
+
+### Task ownership versus role ownership
+
+The conceptual boundary is between task ownership and role ownership. An agent can execute “send these twenty follow-ups”. An AI Employee holding an SDR role must sustain the recurring process within defined limits: identify leads, research, contact, follow up, record, escalate and report performance.
+
+## The normative clauses
+
+### Reading this standard
+
+“Must” marks a requirement: a deployment that fails it does not conform, whatever it is called commercially. There are no optional clauses in version 1.0, because a shorter standard that is fully binding is more useful than a long one that is mostly advisory.
+
+Conformance is self-declared. This standard does not certify products and does not score vendors. It gives an organisation a test it can run on its own deployment and publish if it chooses.
+
+The clause text is the citable unit; cite it by identifier, so HWF-07 rather than a page number. Notes are commentary and may change between versions without amending the standard.
+
+### HWF-01
+
+**An AI Employee must hold a defined role, not merely a persona or a system prompt.**
+
+*Note:* The post exists before its occupant. A name, a tone of voice and a set of instructions describe a persona; a role states what result must be produced, with what authority, measured how.
+
+### HWF-02
+
+**There must be exactly one accountable human manager.**
+
+*Note:* An AI Employee may receive work from many people, but unity of command still applies. A resource with two owners has none, and a resource with no owner is administratively orphaned no matter how well it is integrated technically.
+
+### HWF-03
+
+**Authority must be explicit, limited and revocable.**
+
+*Note:* What the resource may decide without approval has to be written down before it operates, not inferred afterwards from what it happened to do.
+
+### HWF-04
+
+**Access must follow least privilege.**
+
+*Note:* Context is capability, but it is also risk surface. More access is not more competence; it is a larger blast radius.
+
+### HWF-05
+
+**High-risk actions must support human approval.**
+
+*Note:* Proportionality is the rule: the higher the cost of the error and the harder it is to reverse, the more approval the action carries. Separation of duties applies, so whoever initiates need not approve.
+
+### HWF-06
+
+**Every material action must be auditable.**
+
+*Note:* Actor, input, tool, action, approval, result and timestamp. If the sequence cannot be reconstructed after the fact, the organisation cannot learn from a failure or demonstrate compliance.
+
+### HWF-07
+
+**Performance must be measured by outcomes, quality, risk and cost — never by activity, hours, tokens or message volume.**
+
+*Note:* Speed makes activity look like value. A badly designed process that produced ten errors will produce a hundred once automated, and the dashboard will call it throughput.
+
+### HWF-08
+
+**Memory must have provenance, scope, retention and deletion rules.**
+
+*Note:* Remembering improves performance and creates exposure at the same time. An undated policy produces answers that are consistent and wrong; a historical exception should not silently become a rule.
+
+### HWF-09
+
+**The system must know when to escalate rather than improvise.**
+
+*Note:* A resource that produces a convincing answer instead of raising a doubt is more dangerous than a less capable one that is better governed. Every exception needs a destination.
+
+### HWF-10
+
+**An AI identity must never be used to deceive customers or colleagues about its nature as software.**
+
+*Note:* Giving a system a role, a name and a manager improves coordination. Letting a person believe they are talking to a human being is a different act, and this standard does not permit it.
+
+### HWF-11
+
+**Humans and AI Employees may share an operational graph while retaining distinct status and rights.**
+
+*Note:* A shared org chart is an administrative convenience, not an ontological claim. Dignity, health, rest, labour rights and belonging are properties of people. Operational anthropomorphism without ontological confusion.
+
+### HWF-12
+
+**Offboarding must revoke access and transfer or destroy context safely.**
+
+*Note:* Revoke credentials, disable tools, stop schedules and queues, rotate secrets, transfer outstanding work, preserve evidence. Offboarding is as important as onboarding and is almost always skipped.
+
+### HWF-13
+
+**Every Human ↔ Artificial transition must be evaluable against a baseline and carry explicit rollback criteria.**
+
+*Note:* Without a baseline recorded before the change, the organisation can celebrate an improvement it never made. Rollback criteria written after the results are known are not criteria; they are justification.
+
+### HWF-14
+
+**An AI Employee must have an identifiable version of model, policies, tools and knowledge base.**
+
+*Note:* Without versioning it is impossible to say what authority existed at a given moment, or which change produced an improvement or a regression.
+
+### HWF-15
+
+**Not every agent qualifies as an AI Employee. It must clear a threshold of maturity and governance.**
+
+*Note:* This clause is what makes the category worth anything. If the label applies to everything, it distinguishes nothing. An organisation with twenty excellent agents and zero AI Employees has clarity rather than a problem.
+
+## Maturity model
+
+| Level | Name | Definition |
+| --- | --- | --- |
+| 0 | Tool | Generates content or responds. Does not act. |
+| 1 | Assistant | Uses context to help a human. |
+| 2 | Agent | Executes bounded tasks with tools. |
+| 3 | Role agent | Owns the recurring workflows of a defined role. |
+| 4 | AI Employee | Identity, role contract, memory, authority, KPIs, manager and audit. |
+| 5 | AI Team | Multiple AI Employees coordinated with shared context. |
+| 6 | Hybrid Enterprise | Humans and AI Employees under one integrated model of organisation, permissions and governance. |
+
+**Category threshold: 4 — AI Employee.**
+
+The value of the model is the threshold it creates. Not every agent deserves to be called an AI Employee, and the category should be auditable against minimum requirements rather than asserted in a product page. Levels 0 to 3 are legitimate destinations, not failures — a well-placed assistant can produce more value than a supposed AI Employee nobody supervises.
+
+### Self-diagnosis
+
+1. Does it act, or only produce output?
+2. Does it hold a recurring role, or only discrete tasks?
+3. Does it have a named accountable manager?
+4. Can you reconstruct what it did last Tuesday and under whose authority?
+5. Can it be suspended today, by someone who knows they own that decision?
+
+## WRM — the framework
+
+> WRM — Work Resource Management — is the discipline that designs, assigns, governs and optimises work regardless of whether the resource executing it is human, artificial or hybrid.
+
+The founding idea is to separate the post from its occupant. First there is an organisational need; from it a post or responsibility is born, with purpose, ownership, results, KPIs, authority, limits, relationships, tools and escalation. Only then do you decide which resource should fill it.
+
+### Where WRM sits
+
+| Layer | Manages | Outcome |
+| --- | --- | --- |
+| WRM — Work Resource Management | The work, its posts, results, authority and controls | Optimal workforce architecture |
+| Human Resource Management | People who execute work | Performance + rights + human development |
+| Artificial Resource Management | AI systems that execute work | Performance + safety + technical control |
+| Hybrid Workforce Management | Interaction and allocation between both | Coordination, transition and optimisation |
+
+### Three classes of principle
+
+| Class | Count | Meaning |
+| --- | --- | --- |
+| U — Universal | 87 | Principles of work administration that hold regardless of who executes. |
+| A — Adapted | 20 | Human principles that keep an equivalent function but change mechanism. |
+| H — Exclusively human | 13 | Rights, needs and experiences that follow from the human condition. |
+
+**AI does not “need holidays” and does not “feel engagement”. Forcing those analogies degrades the framework. Equivalence must be operational, never anthropomorphic.**
+
+### The ten domains
+
+| # | Domain | Scope |
+| --- | --- | --- |
+| 1 | Organisational and job design | Purpose, responsibilities, authority, ownership, unity of command and interdependencies. |
+| 2 | Selection and allocation | Define the post first, then assess fit, competencies, cost, risk and prior testing. |
+| 3 | Onboarding and enablement | Company knowledge, SOPs, policies, org chart, tools and access. |
+| 4 | Direction, collaboration and communication | Delegation, escalation, handoffs, channels, context and interaction rules. |
+| 5 | Objectives and performance | KPIs, quality standards, feedback, review, underperformance and improvement. |
+| 6 | Learning and development | Gaps, training, updates, memory, knowledge and capability evolution. |
+| 7 | Human experience and rewards | Motivation, compensation, health, rest, rights and labour relations — when the resource is human. |
+| 8 | Governance, security and risk | Least privilege, segregation, auditability, privacy, incidents and compliance. |
+| 9 | Mobility, continuity and exit | Promotion and scope, succession and fallback, transfer, offboarding and knowledge retention. |
+| 10 | Workforce planning and analytics | Capacity, make-vs-buy, human/AI mix, costs, productivity, quality and continuous improvement. |
+
+### Lifecycle of a work resource
+
+| # | Stage | Objective |
+| --- | --- | --- |
+| 1 | Design | Define result, responsibilities, KPIs, authority, limits and risk. |
+| 2 | Allocate | Decide Human / Artificial / Hybrid. |
+| 3 | Select | Person, model, agent, vendor or architecture with demonstrable fit. |
+| 4 | Onboard | Knowledge, SOPs, culture and policies, relationships and escalation. |
+| 5 | Enable | Tools, access, credentials, budget and authority. |
+| 6 | Prove | Probation or shadow mode, simulations, evaluations and intensive approval. |
+| 7 | Operate | Recurring work with observability and management by exception. |
+| 8 | Measure | KPIs, quality, cost, incidents, interventions and outcomes. |
+| 9 | Develop | Coaching or updates to instructions, knowledge, models and tools. |
+| 10 | Reassign | Change scope, move Human ↔ Artificial, redesign the hybrid split. |
+| 11 | Suspend | Stop work or access on risk, incident or unacceptable performance. |
+| 12 | Retire | Offboarding, revocation, knowledge transfer and retention or deletion. |
+
+### Ten non-negotiable rules
+
+1. Every post must exist before its occupant, with purpose, responsibilities, results and KPIs.
+2. Every work resource must have exactly one accountable manager, even when it collaborates with many people or areas.
+3. Responsibility and authority must travel together: no result is demanded without granting the necessary faculties.
+4. All authority must be explicit, limited and revocable.
+5. Every resource must know its limits, its handoffs and when to escalate.
+6. Access is granted under least privilege and is separated from the identity of the model or the prompt.
+7. Every material action executed by an AI Employee must be traceable and auditable.
+8. Performance is measured by outcomes, quality, risk and cost — not by activity, hours, tokens or message count.
+9. A Human ↔ Artificial transition must remain reversible until stable performance is demonstrated.
+10. Final responsibility for an AI Employee stays with a person or a human governance structure.
+
+## The 120-principle matrix
+
+The matrix is an original synthesis of organisational design, HR, performance management, governance, workforce planning and risk practice. It is not a transcription of any single existing standard, and the classification is a working proposal of this framework — administrative doctrine, not a legal claim about the employment of software.
+
+### 1. Work and organisational design
+
+| # | Principle | Human resource | Artificial resource | Class |
+| --- | --- | --- | --- | --- |
+| 1 | Every post must have a purpose | The occupant must understand why the post exists and what value it creates. | The AI Employee must have an explicit, stable operational mission. | U |
+| 2 | Formal job description | Documented job description. | Versioned AI Job Description / Role Contract. | U |
+| 3 | Defined responsibilities | Results and duties assigned with clarity. | Processes, decisions and results under explicit ownership. | U |
+| 4 | Limits of the post | It must be clear what does not belong to it. | Prohibited actions, domains, data and decisions. | U |
+| 5 | Defined authority | It is specified what can be decided without approval. | Autonomous actions, thresholds and approvals are specified. | U |
+| 6 | Responsibility and authority must be aligned | No result is demanded without sufficient faculties or resources. | No KPI is demanded without tools, permissions, data and budget. | U |
+| 7 | Unity of command and clear accountability | There must be a manager accountable for performance. | Exactly one accountable manager, even when work comes from several areas. | U |
+| 8 | Known chain of command and escalation | Knows whom to escalate an exception or conflict to. | Explicit escalation tree by type, risk and urgency. | U |
+| 9 | Reasonable span of control | A manager should not have more reports than they can effectively direct. | Scale may be larger, but requires tooling, dashboards and supervision limits. | A |
+| 10 | Division of labour and specialisation | Roles organised by competencies and results. | AI Employees or subagents specialised by function. | U |
+| 11 | Avoid duplicated ownership | There must not be two ambiguous owners of the same result. | Avoid several AI Employees acting on the same object without coordination or lock. | U |
+| 12 | Explicit interdependencies | Inputs, outputs and dependencies between posts are known. | Handoffs, APIs, humans, other AI Employees and systems identified. | U |
+
+### 2. Selection and onboarding
+
+| # | Principle | Human resource | Artificial resource | Class |
+| --- | --- | --- | --- | --- |
+| 13 | Define the post before selecting the occupant | First design the role; then look for the person. | First design the role; then choose model, agent and configuration. | U |
+| 14 | Select on required competencies | Skills, experience, knowledge and behaviours. | Model, reasoning, tools, memory, context and integrations. | U |
+| 15 | Validate competencies before hiring | Interviews, tests, references and assessment. | Benchmarks, evals, simulations, sandbox and role red-teaming. | U |
+| 16 | Do not pay for capability the post does not need | Avoid costly or poorly used overqualification. | Do not use the most expensive model if a smaller one meets the SLA. | U |
+| 17 | Post–resource fit | Person-job fit and person-organisation fit. | Model/agent-role fit and architecture-role fit. | U |
+| 18 | Probationary period | Probation with supervision and success criteria. | Shadow mode, sandbox or production with reinforced approvals. | U |
+| 19 | Prior verification | Background, references and applicable trust requirements. | Security review, vendor/model evaluation, provenance and supply-chain review. | A |
+| 20 | Induction to the organisation | History, purpose, strategy and structure. | Business context, structure, objectives and policies loaded into the knowledge layer. | U |
+| 21 | Know products and services | Training on offer, customers and value proposition. | Knowledge base / RAG / context on products, pricing, customers and constraints. | U |
+| 22 | Know policies | Handbook, internal policies and obligations. | Policy layer, system policies and compliance rules. | U |
+| 23 | Know procedures | SOPs, checklists and ways of working. | Executable SOPs, instructions and authorised workflows. | U |
+| 24 | Know colleagues and structure | Org chart, stakeholders and responsibilities. | Organisational graph with humans, AI Employees, roles, channels and ownership. | U |
+| 25 | Know the supervisor | Assigned manager and expectations of the relationship. | Accountable manager registered as part of the role. | U |
+| 26 | Know communication channels | Email, Slack/Teams, meetings, tickets and protocols. | Authorised channels, routing, recipients and communication rules. | U |
+| 27 | Receive working tools | Equipment, software, accounts and operational access. | Tools, APIs, credentials, browser, DBs, ERP/CRM and other connectors. | U |
+| 28 | Receive only necessary access | RBAC and least privilege. | RBAC, least privilege, isolated secrets and minimum scopes. | U |
+
+### 3. Objectives, direction and performance
+
+| # | Principle | Human resource | Artificial resource | Class |
+| --- | --- | --- | --- | --- |
+| 29 | Clear objectives | Concrete expectations about what must be achieved. | Explicit, verifiable objectives tied to the Role Contract. | U |
+| 30 | Defined KPIs | Performance metrics for the post. | KPIs, SLAs, quality, cost and risk of the AI Employee. | U |
+| 31 | Align KPIs with business objectives | Avoid vanity metrics or perverse incentives. | Measure outcomes, not tool calls, tokens or valueless activity. | U |
+| 32 | Achievable targets | Realistic targets given resources and capacity. | Realistic targets given model, context, tools and authority. | U |
+| 33 | Frequent feedback | Performance conversations and course correction. | Manager feedback feeds configuration, examples, policies, evals or prompts. | A |
+| 34 | Periodic evaluation | Formal or continuous performance review. | AI Performance Review with metrics, incidents and quality samples. | U |
+| 35 | Evaluate results, not mere activity | Outcome and quality above visible hours. | Outcome and reliability above tokens, messages or steps executed. | U |
+| 36 | Compare result against a standard | Quality bar, SLA or professional standard. | Test sets, golden datasets, thresholds and policy checks. | U |
+| 37 | Responsibility for performance | Employee and manager both participate in the result. | The AI executes; the accountable human retains business and governance responsibility. | A |
+| 38 | Correct underperformance | Coaching, training, PIP or redesign of the post. | Modify instructions, knowledge, model, tools, workflow or scope. | A |
+| 39 | Recognise high performance | Recognition, promotion, compensation or more autonomy. | Wider scope, autonomy, authority limits or assignment to more critical processes. | A |
+| 40 | Supervision proportional to competence and risk | A junior needs more supervision; an expert can receive more autonomy. | Autonomy increases only with evidence of reliability and according to risk class. | U |
+| 41 | Explicit delegation | The manager defines what is delegated and what is retained. | Every delegated decision or action must appear in policy or authority matrix. | U |
+| 42 | Management by exception | The manager intervenes especially on deviations and exceptions. | The AI resolves routine within limits and escalates exceptions. | U |
+| 43 | Defined escalation | Criteria for requesting help or approval. | Confidence/risk thresholds, timers, exception classes and human escalation. | U |
+| 44 | Separation of duties | Reduces fraud, error and undue concentration of power. | The AI that initiates a payment should not approve it; maker/checker roles separated. | U |
+| 45 | Four-eyes principle | Sensitive decisions require additional review. | AI+human, AI+AI+human or other approval proportional to risk. | A |
+| 46 | Do not grant more authority than necessary | Minimum delegation compatible with the work. | Least authority and transactional limits. | U |
+| 47 | Authority must be revocable | Suspension or withdrawal of faculties when risk changes. | Kill switch, revoke credentials, disable tools or downgrade autonomy. | U |
+
+### 4. Development, knowledge and communication
+
+| # | Principle | Human resource | Artificial resource | Class |
+| --- | --- | --- | --- | --- |
+| 48 | Continuous training | Training to maintain and extend capabilities. | Updates to knowledge, tools, model, examples, policies and evals. | U |
+| 49 | Identify competence gaps | Skills gap analysis. | Capability gap from eval failures, incidents and unsupported tasks. | U |
+| 50 | Development plan | Career path and Individual Development Plan. | Capability roadmap and criteria for widening scope or autonomy. | A |
+| 51 | Coaching | The manager helps improve judgement and execution. | Human feedback transforms configuration, context, examples and policy. | A |
+| 52 | Learn from mistakes | Lessons learned and corrective actions. | Postmortems, regression evals, controlled memory and new guardrails. | U |
+| 53 | Knowledge management | Capture and share critical knowledge. | Shared knowledge layer, provenance, versioning and retrieval. | U |
+| 54 | Update on policy change | Retrain when rules, products or context change. | Update policy/context immediately and verify comprehension with evals. | U |
+| 55 | Clear communication of expectations | Reduce ambiguity in objectives and standards. | Unambiguous Role Contract, prompts, policies and definitions of done. | U |
+| 56 | Defined official channels | The organisation determines where each type of communication happens. | Channels and tools authorised by type of interaction. | U |
+| 57 | Sufficient context to decide | The person needs relevant and timely information. | Context engineering, retrieval and memory sufficient, without overexposure. | U |
+| 58 | Right information, right actor | Need-to-know principle. | Need-to-know enforced by RBAC, retrieval filters and data scopes. | U |
+| 59 | Document important decisions | Record for continuity, control and audit. | Structured logs, tool traces and decision records. | U |
+| 60 | Clear handoffs | Explicit transfer between people or teams. | Agent-to-agent and AI-to-human handoffs with state, context and ownership. | U |
+
+### 5. Motivation, experience and compensation
+
+| # | Principle | Human resource | Artificial resource | Class |
+| --- | --- | --- | --- | --- |
+| 61 | Personal sense of purpose | Can affect motivation, commitment and retention. | Does not exist as subjective experience of the software. | H |
+| 62 | Intrinsic motivation | Interest, mastery, autonomy and meaning can drive performance. | Not applicable as a psychological state. | H |
+| 63 | Extrinsic motivation | Pay, recognition, incentives and consequences. | A reward/optimisation function may exist, but is not human motivation. | A |
+| 64 | Engagement | Psychological commitment to work and organisation. | Does not exist as demonstrable subjective experience. | H |
+| 65 | Job satisfaction | Matters for human health, retention and performance. | Not applicable to the artificial resource. | H |
+| 66 | Sense of belonging | Social and psychological relationship with the group. | Not applicable ontologically; can only simulate social conduct. | H |
+| 67 | Salary | Economic consideration for work. | No salary; there are model, SaaS, infrastructure, licence and support costs. | A |
+| 68 | Fair compensation | Internal, external and legal equity. | Economic optimisation applies, but not as a right of the software. | A |
+| 69 | Performance bonuses | Economic incentive tied to results. | No psychological incentive required; technical reward functions may be used. | A |
+| 70 | Benefits | Health, pension, insurance, holidays and other entitlements. | Not applicable to software. | H |
+| 71 | Total cost of the employee | Salary + charges + benefits + equipment + administration. | Total Cost of AI Employment: models + infrastructure + integrations + supervision + errors + governance. | U |
+| 72 | Occupational health | Protection of physical and mental health. | Not applicable as AI wellbeing; operational safety requirements do exist. | H |
+| 73 | Rest | Biological need and labour protection. | Not applicable biologically; replaced by maintenance windows, quotas and capacity management. | A |
+| 74 | Working hours | Human protection over working time. | May operate 24/7 subject to capacity, budget and operating rules. | H |
+| 75 | Burnout | Human risk from sustained stress. | Not a subjective state; degradation, context pollution, saturation or error accumulation do exist. | A |
+| 76 | Psychological safety | Allows speaking, disagreeing and admitting error without undue fear. | Not applicable as AI experience, though it matters for the humans working with it. | H |
+
+### 6. Ethics, conduct and labour relations
+
+| # | Principle | Human resource | Artificial resource | Class |
+| --- | --- | --- | --- | --- |
+| 77 | Code of conduct | Expected standards of behaviour. | Behavioural policies, output constraints and conduct rules. | U |
+| 78 | Confidentiality | Duty of discretion and care of information. | Data access, disclosure policies, DLP and constraints. | U |
+| 79 | Conflicts of interest | Identify and manage incompatible interests. | Manage conflicts between vendor, data source, goals, tools or roles. | A |
+| 80 | Non-discrimination | Ethical and legal obligation in decisions about people. | Fairness testing, policy constraints and human review of sensitive decisions. | U |
+| 81 | Honesty and integrity | Do not deceive, falsify or deliberately conceal. | Policies against fabrication, impersonation and unsupported claims. | U |
+| 82 | Protection of information | Custody and appropriate use of data. | Data minimisation, encryption, access control and retention. | U |
+| 83 | Regulatory compliance | Respect for applicable laws, policies and standards. | Compliance-by-design plus human accountability. | U |
+| 84 | Freedom of association | Human right of labour association. | Not applicable to software. | H |
+| 85 | Collective bargaining | Right of human workers and unions. | Not applicable to software. | H |
+| 86 | Grievance procedure | Channel for a person to contest decisions or conditions. | Not applicable subjectively to the AI; human channels must exist to contest its actions. | H |
+| 87 | Protection against harassment | Human right to an environment free of harassment. | Not applicable to the AI as victim; its outputs must be governed so as not to harass humans. | H |
+| 88 | Due disciplinary process | Human protection against disciplinary measures. | Not a right of software; operationally replaced by incident review and change control. | A |
+
+### 7. Governance, security and risk
+
+| # | Principle | Human resource | Artificial resource | Class |
+| --- | --- | --- | --- | --- |
+| 89 | Segregation of access | Limit and separate privileges by role. | Fundamental: identity, RBAC, scopes and separated secrets. | U |
+| 90 | Audit | Independent review of processes and decisions. | Logs, traces, event history, evals and reproducibility. | U |
+| 91 | Traceability | Know who did what, when and under what authority. | Actor ID + action + timestamp + context + tool + approval. | U |
+| 92 | Accountability | There must be a person responsible for decisions and results. | Never orphaned: an accountable human answers for deployment, authority and outcomes. | U |
+| 93 | Incident management | Detect, contain, investigate and learn from failures. | AI incident management with kill switch, rollback, postmortem and remediation. | U |
+| 94 | Data protection | Privacy, access, minimisation and retention principles. | Data governance, consent, retrieval filters, retention and deletion. | U |
+| 95 | Risk management | Identify, assess, mitigate and monitor exposure. | Risk classification by role, tool, data and action; proportional controls. | U |
+
+### 8. Mobility, continuity and exit
+
+| # | Principle | Human resource | Artificial resource | Class |
+| --- | --- | --- | --- | --- |
+| 96 | Promotion | More responsibility, scope, status or compensation. | More scope, autonomy, budget or authority after evidence. | A |
+| 97 | Post transfer | Change of function or unit. | New Role Contract, tools, context, permissions and manager. | U |
+| 98 | Succession plan | Prepare a replacement for critical talent. | Fallback agent/model/version and replacement runbook. | U |
+| 99 | Cross-training | Develop flexibility to cover other functions. | Multi-capability, backup agents or ensembles, minding separation of duties. | U |
+| 100 | Retention of critical talent and knowledge | Reduce loss of capabilities and know-how. | Reduce vendor/model lock-in; preserve prompts, policies, evals, memory and artifacts. | A |
+| 101 | Termination criteria | Underperformance, restructuring, breach or other causes. | Obsolescence, cost, risk, incidents, underperformance or architecture change. | U |
+| 102 | Offboarding | Recover equipment, access, obligations and responsibilities. | Revoke credentials, disable tools, remove schedules, queues and integrations. | U |
+| 103 | Knowledge transfer | Avoid loss of information on exit. | Export approved memory, context, artifacts, runbooks and outstanding tasks. | U |
+| 104 | Information protection after exit | Confidentiality and closing of access. | Retention/deletion policies, revocation and secret rotation. | U |
+| 105 | Historical record | Employee file and evidence of performance. | Versioned audit/performance record for governance and learning. | U |
+
+### 9. Workforce planning
+
+| # | Principle | Human resource | Artificial resource | Class |
+| --- | --- | --- | --- | --- |
+| 106 | Plan future capacity | Headcount, skills and load required by the strategy. | Human + AI capacity planning, concurrency and workload forecasting. | U |
+| 107 | Make vs. buy | Hire, outsource or develop capability internally. | Build agent vs. SaaS/vendor vs. managed service vs. open source. | U |
+| 108 | Sizing | Number and mix of people required. | Instances, concurrency, model tiers and required capacity. | U |
+| 109 | Design the workforce mix | Full-time, part-time, contractors, outsourcing. | Human, AI and hybrid role allocation by risk, cost and comparative advantage. | U |
+| 110 | Productivity per resource | Output/FTE and value generated. | Outcome/AI Employee, cost per outcome and human review load. | U |
+
+### 10. Analytics and continuous improvement
+
+| # | Principle | Human resource | Artificial resource | Class |
+| --- | --- | --- | --- | --- |
+| 111 | Measure productivity | Quantity or value of output per resource. | Outcomes per unit of cost/time of the AI Employee. | U |
+| 112 | Measure quality | Quality against the standard of the post. | Accuracy, acceptance rate, QA score and policy compliance. | U |
+| 113 | Measure cost | Total and marginal cost of operating the post. | Model + compute + tools + integrations + supervision + error cost. | U |
+| 114 | Measure errors | Error rate, rework and incidents. | Hallucination/error rate, exception rate, incidents and recovery cost. | U |
+| 115 | Measure availability | Attendance and coverage of the human resource. | Uptime, queue readiness, dependency availability. | U |
+| 116 | Measure utilisation | Capacity used versus available. | Runtime/concurrency/tool utilisation and idle capacity. | U |
+| 117 | Measure time to competence | Time-to-productivity of a new hire. | Time-to-autonomy: from instantiation to reliable performance. | U |
+| 118 | Measure turnover and replacement | Turnover and its causes and costs. | Model/agent replacement rate, architecture churn and migration cost. | A |
+| 119 | Benchmarking | Compare performance between people, teams or market. | Compare models, configurations, prompts, agent versions and vendors. | U |
+| 120 | Continuous improvement | Optimise processes and workforce with evidence. | Continuous evals, optimisation, policy iteration and process redesign. | U |
+
+## HWFS — Hybrid Workforce Fit Score
+
+A structured instrument for deciding whether a responsibility should be Human, Artificial or Hybrid. It returns an argument, not a score: an allocation, a risk class, a starting autonomy rung, the answers that decided it, and the conditions that would change it. A numeric score is deliberately not produced, because it would let a decision already taken be laundered through arithmetic.
+
+### The twelve dimensions
+
+| Dimension | Question | Options, least to most suited to an artificial resource |
+| --- | --- | --- |
+| Repeatability | Does the work follow patterns? | Almost every case is different · Loose patterns, frequent variation · Clear patterns with some variation · Highly repetitive, well-defined |
+| Predictability | Are the scenarios known or modellable? | Novel situations constantly appear · Known in outline, unpredictable in detail · Mostly known, documented cases · Fully enumerable inputs and outputs |
+| Data availability | Is there sufficient and authorised context? | The criteria live in people’s heads · Partially documented, scattered · Documented, accessible, needs curation · Complete, current, authorised and queryable |
+| Judgement required | Does it require ambiguous or strategic judgement? | Strategic judgement, competing priorities · Significant contextual judgement · Some judgement inside clear rules · Rule-following, little interpretation |
+| Empathy and trust | Does the human relationship create material value? | The relationship is the product · Trust materially affects the outcome · Courtesy matters, relationship does not decide · Transactional, no relational component |
+| Cost of error | What does a wrong decision cost? | Severe: legal, financial or safety consequences · High: significant customer or money impact · Moderate: rework and some friction · Low: internal and easily absorbed |
+| Reversibility | Can a wrong action be undone? | Irreversible once executed · Reversible at high cost or with damage done · Reversible with effort inside a window · Trivially reversible |
+| Volume | Is there enough repetition to justify automation? | A handful of cases per month · Steady but modest · High, occupies real capacity · Very high, a bottleneck today |
+| Speed and 24/7 | Does continuous availability add value? | No, business hours are fine · Marginally useful · Clearly valuable · Decisive — delay destroys the outcome |
+| Auditability | Can we verify the result? | Quality is a matter of opinion · Verifiable only by sampling · Verifiable against a defined standard · Automatically verifiable, objective criteria |
+| Exception rate | What share of cases leaves the happy path? | Most cases are exceptions · Roughly a third · Around one in ten · Rare, under a few per cent |
+| Economics | Which alternative offers a better cost per correct outcome, including supervision? | Human, clearly · Human, narrowly · Artificial, narrowly · Artificial, clearly |
+
+### The autonomy ladder
+
+| Rung | Name | Detail |
+| --- | --- | --- |
+| 1 | Observe | Records and compares without intervening. Shadow mode against a human baseline. |
+| 2 | Recommend | Proposes the action and shows the evidence used. A human executes. |
+| 3 | Execute on approval | Acts only after explicit human approval, case by case. |
+| 4 | Act by exception | Acts within rules; the manager intervenes on exceptions only. |
+| 5 | Autonomous within limits | Operates autonomously inside defined limits, with traceability and escalation. |
+
+**No responsibility starts above rung 3, whatever the assessment says. Autonomy is earned with evidence of stable performance, never granted because the model appears capable.**
+
+## The role: Hybrid Workforce Manager
+
+### Mission
+
+> Design, balance and optimise the human and artificial workforce, ensuring every responsibility is executed by the resource — human, artificial or hybrid — that produces the best result at the right level of cost, risk, quality and accountability.
+
+In large organisations this can grow into a Director of Hybrid Workforce. It belongs inside HR / People & Workforce, with a strong matrix relationship to the COO and the CIO or CTO. Not every company needs to create the title tomorrow — but any organisation granting role ownership to artificial resources needs someone exercising these functions.
+
+### Responsibilities
+
+1. Maintain human–AI operational harmony: eliminate contradictory ownership, define handoffs and escalation lines.
+2. Periodically reassess which work should be Human, Artificial or Hybrid.
+3. Direct Human → Artificial and Artificial → Human transitions.
+4. Design hybrid posts with an explicit split of responsibilities.
+5. Manage human impact: clarity, communication, reassignment and development.
+6. Guarantee every AI Employee has a Role Contract, manager, KPIs, permissions, limits, audit trail, performance review and kill switch.
+7. Coordinate with IT and Security on access, runtime, observability and incidents.
+8. Stay neutral about resource type: the goal is neither “use more AI” nor “protect posts” — it is to optimise the work.
+9. Report to leadership on cost per outcome, quality, risk, capacity released and workforce performance.
+10. Maintain the official inventory of posts, human and artificial actors, and their maturity state.
+
+### The anti-KPI
+
+**Never measure this role by the number of humans replaced or the percentage of posts converted to AI. Those KPIs create a perverse incentive: they reward conversion rather than results, and they guarantee that the person meant to protect the quality of the decision is paid to prejudge it.**
+
+### Scorecard
+
+| KPI | What it measures |  |
+| --- | --- | --- |
+| Workforce Performance Index | Overall workforce result against objectives. |  |
+| Role Allocation Accuracy | Share of roles whose Human/AI/Hybrid allocation survives review. |  |
+| Transition Success Rate | Transitions meeting their success criteria over total attempted. |  |
+| Time to Stable Performance | Days until KPIs and expected risk level are reached. |  |
+| Post-Transition Performance Delta | Change in performance after the transition. Does the work function better than before? | **to CEO** |
+| Cost per Successful Outcome | Total cost divided by correct, accepted results — supervision and rework included. | **to CEO** |
+| Quality Delta | Change in quality before versus after the transition. |  |
+| AI Exception Rate | Escalated cases over processed cases. |  |
+| Human Intervention Rate | Executions requiring human correction. How much autonomy is real and how much is automation propped up by people. | **to CEO** |
+| Workforce Clarity Score | Clarity of roles, ownership and escalation. |  |
+| Human Capacity Reallocation Rate | Released hours that moved to higher-value work over total released hours. |  |
+| Hybrid Workforce Incident Rate | Incidents attributable to human/AI design. |  |
+| Role Conflict Rate | Ownership conflicts per period. |  |
+| AI Employee SLA Compliance | Compliance with the SLA of the artificial role. |  |
+| Workforce ROI | (Incremental value − workforce cost) / workforce cost. |  |
+
+Three of these belong on an executive dashboard and the rest do not. Does the work function better than before, what does a correct result cost, and how much human help is still holding it up.
+
+### Capacity Elevation Rate
+
+The share of human capacity released by automation that moved to higher-value work. The metric exists to stop “productivity” from hiding what actually happened. Released hours can become analysis, service, innovation, leadership, elimination of waste — or a real headcount reduction. Those are different decisions and must be counted separately. Technology can free hours; it cannot decide what they are for.
+
+## Transitions
+
+### Human → Artificial
+
+The objective is not to “replace a person”. It is to transfer responsibility in a controlled way after demonstrating that the new design produces results equal to or better than the old one, within permitted risk.
+
+| # | Step | Control |
+| --- | --- | --- |
+| 1 | Baseline | Document current performance: quality, cost, time, errors, exceptions and tacit knowledge. |
+| 2 | Decomposition | Split the post into responsibilities and tasks; identify what must stay human. |
+| 3 | Risk mapping | Classify decisions, data, authority and cost of error. |
+| 4 | AI Role Contract | Create job description, KPIs, limits, tools, manager and escalation. |
+| 5 | Knowledge transfer | SOPs, examples, criteria, policies, exceptions and history. |
+| 6 | Shadow mode | The AI Employee executes without affecting production; results are compared against the human. |
+| 7 | Controlled production | Limited authority and frequent approvals. |
+| 8 | Performance gate | Ownership is not transferred until quality, cost and risk thresholds are met. |
+| 9 | Gradual transfer | Increase scope and autonomy; keep reversibility. |
+| 10 | Human reallocation | Move released human capacity toward higher-value work where that makes sense. |
+| 11 | Formal handoff | Update org chart, RACI/ownership, access and communication. |
+| 12 | Post-transition review | Review at 30/60/90 days and revert if performance deteriorates. |
+
+**You do not substitute first and find out afterwards whether it was working. The transition is earned with evidence.**
+
+### Artificial → Human
+
+The framework must be reversible. If the artificial resource produces too much risk, low quality, excessive human intervention, rising cost or relational damage, the work should return partly or entirely to human hands. A mature hybrid organisation does not measure success by the direction of the transition. It measures it by the quality of its architecture.
+
+1. Activate the rollback criterion by KPI or incident.
+2. Freeze or reduce the AI Employee’s authority.
+3. Transfer context, useful memory and backlog to the human.
+4. Reassign ownership and escalation channels.
+5. Revoke artificial access that no longer corresponds.
+6. Run root-cause analysis: model, process, knowledge, tools or bad role allocation.
+7. Decide whether the future of the post is Human or Hybrid — do not assume it must return to being fully human.
+
+Define the return conditions before the pilot, not after the results are known. What error rate is unacceptable? How much human intervention destroys the economics? Which incident forces suspension? Written in advance, these rules reduce the bias of defending an implementation out of pride.
+
+## Glossary
+
+One term, two languages, one numbered definition. Where the English term is used untranslated in Spanish practice, both entries carry the same word — that is a deliberate decision to stop the vocabulary from splitting across the two editions of this standard.
+
+**Acronyms do not translate. WRM, HWFS and the HWF- clause identifiers stay identical in every edition of this standard, present and future; only the words they expand to are localised. A reader who cites WRM or HWF-07 in any language is pointing at the same thing.**
+
+**G-01 · AI Employee** — A persistent, role-bound software worker that autonomously executes recurring business responsibilities within explicit limits, with traceable identity, measurable performance, escalation paths and human accountability.
+
+**G-02 · WRM — Work Resource Management** — The discipline that designs, assigns, governs and optimises work regardless of whether the resource executing it is human, artificial or hybrid.
+
+**G-03 · AI Role Contract** — The operational contract of an artificial post: mission, responsibilities, results, KPIs, authority, exclusions, tools, access, service level, escalation, suspension criteria and accountable manager. Versioned. The equivalent of a job description plus an explicit operating agreement — a prompt gives instructions, a role contract gives responsibility.
+
+**G-04 · Accountable Manager** — The single named person who answers for an AI Employee’s configuration, authority, performance and exceptions. Exactly one, even when the resource receives work from several areas.
+
+**G-05 · Shadow mode** — A stage in which the artificial resource executes the work but its actions do not affect the operation. Results are compared against a human baseline. The operational equivalent of probation.
+
+**G-06 · Context Provisioning** — The onboarding equivalent for an artificial resource. Divided into must know, may consult and must not access — the third category is what keeps “more context” from becoming “more risk”.
+
+**G-07 · Authority Matrix** — The record of what a resource may read, write, decide, spend, communicate or execute, and which of those require approval. Autonomy without an authority matrix is an empty word.
+
+**G-08 · Escalation tree** — The explicit mapping of exception type, risk and urgency to a destination — a person, a team or a fallback rule. Every exception needs a destination.
+
+**G-09 · Governed memory** — Memory with provenance, scope, retention and deletion rules, plus a named owner and an update mechanism. An undated policy produces answers that are consistent and wrong.
+
+**G-10 · Human Intervention Rate** — The proportion of cases or decisions requiring human correction. Reveals how much of the declared autonomy is real and how much is automation quietly propped up by people.
+
+**G-11 · Cost per Successful Outcome** — Total cost of producing a correct, accepted result — including platform, integration, supervision, rework, incidents and residual human operation. Comparing a subscription against a salary is the wrong benchmark.
+
+**G-12 · Post-Transition Performance Delta** — The change in performance after switching resource or configuration. It does not ask whether the agent is fast; it asks whether the post got better. Without a baseline, an organisation can celebrate an improvement that never happened.
+
+**G-13 · HWFS — Hybrid Workforce Fit Score** — A structured instrument for deciding whether a responsibility should be Human, Artificial or Hybrid. It returns an argument, not a number: an allocation, a risk class, a starting autonomy rung and the conditions that would change the answer.
+
+**G-14 · Hybrid Workforce Manager** — The role accountable for ensuring each responsibility is executed by the configuration that produces the best result. Neutral by design: never measured by humans replaced or posts converted.
+
+**G-15 · Capacity Elevation Rate** — The share of released human capacity that moved to higher-value work. Keeps “productivity” from hiding whether hours became analysis, service, innovation, eliminated waste — or a headcount reduction that should be named.
+
+**G-16 · Kill switch** — The technical and procedural ability to suspend an AI Employee immediately. A kill switch without a named owner is only a feature; the role contract must say who may use it and under what condition.
+
+**G-17 · Least privilege / least authority** — Least privilege limits what a resource can access; least authority limits what it can decide or commit. They are separate controls and both are required.
+
+**G-18 · Role ownership vs task ownership** — “Send these twenty follow-ups” is a task. “Manage commercial follow-up for this portfolio” is a role: prioritising, respecting constraints, keeping context, recognising exceptions and escalating. The move from one to the other is what justifies the category.
+
+**G-19 · Remediation plan** — The artificial equivalent of a performance improvement plan: reduce scope, increase approvals, correct configuration or context, and validate again before restoring authority.
+
+**G-20 · Fallback architecture** — The succession plan for an artificial resource: an alternative model, agent or vendor, plus a replacement runbook. Reduces lock-in and makes retirement survivable.
+
+**G-21 · Offboarding / deprovisioning** — Revoke credentials, disable tools, stop schedules and queues, rotate secrets, transfer outstanding work and context, preserve evidence. As important as onboarding and almost always skipped.
+
+**G-22 · Time-to-autonomy** — Days from instantiation to reliable performance at the expected risk level. The artificial counterpart of time-to-productivity for a new hire.
+
+**G-23 · Total Cost of AI Employment** — Models plus infrastructure plus integrations plus supervision plus error cost plus governance. The artificial analogue of total cost of employment, and the only honest basis for comparison.
+
+**G-24 · Management by exception** — The operating mode in which the resource resolves routine work inside its limits and the manager intervenes on deviations and exceptions. Rung 4 of the autonomy ladder.
+
+**G-25 · Hybrid post** — A post whose responsibilities are split explicitly between a human and an artificial resource, with defined handoffs, context transfer and a single owner of the overall result. Badly designed, it produces two occupants each waiting for the other to answer.
+
+## Governance
+
+### Disclosure
+
+This standard was written by Master Joe Phillips, who also builds AIEmpl.com, a commercial platform in this category. That is a real conflict of interest and it is stated here rather than discovered later.
+
+Three commitments follow from it. This standard does not certify products and does not score vendors; conformance is self-declared by the organisation running the deployment. This site is not a funnel, so the link to the platform above is disclosure rather than an offer. The normative text cannot be changed by its author alone.
+
+A standard authored by a vendor and judged by nobody is a specification sheet with a formal name. The mechanism below is what is meant to keep this one from becoming that.
+
+### Editor and Review Board
+
+> The Editor writes, proposes and decides everything editorial. The normative text changes only with a majority of the Board. The Editor’s vote is worth no more than anyone else’s in that vote.
+
+That single rule is what makes the disclosure above worth anything: the author has a commercial interest, and the author cannot move the standard alone.
+
+### The five seats
+
+| # | Seat | Protects | Holder |
+| --- | --- | --- | --- |
+| 1 | HR / People | That the HR-to-AI translation is not a caricature, and that the Human and Adapted layers of the matrix stay honest. | *Open* |
+| 2 | Operations or finance executive who has deployed AI | That the standard is something a real company can actually comply with, not only something elegant to read. | *Open* |
+| 3 | AI engineering | That the nine properties and the controls are technically honest and implementable. | *Open* |
+| 4 | Security and risk | Least privilege, auditability, incident handling and the kill switch: the governance domain. | *Open* |
+| 5 | Legal and labour | The boundary that says this is not an employee in any legal sense. It is the line where the category is most likely to burn. | *Open* |
+
+1. Unpaid. Honorary, credited on this site. The moment there is money, there is a question about whom the Board serves.
+2. At least two of the five seats sit outside the Editor’s commercial orbit, so not customers, employees or suppliers. A board of the author’s friends is detectable in one search.
+3. No member holds a competing platform, the Editor’s included. The Board is not a vendor lobby.
+4. Each member publishes their own disclosure, exactly as the Editor does.
+5. Twelve-month renewable terms, so that leaving is ordinary rather than a scandal.
+6. Changes follow a public process: anyone proposes, the Editor drafts, the Board votes, and the changelog records what happened. Four lines do more work here than ten pages of bylaws would.
+
+### Amendment process
+
+1. Anyone proposes a change, publicly, with the reasoning and the case that motivated it.
+2. The Editor drafts the amended clause text and publishes the draft.
+3. The Board votes. A majority carries; the Editor holds one vote.
+4. The changelog records what changed, who proposed it, how the Board voted and why.
+
+### Current status
+
+Version 1.0 is a proposal by a single author. The Standard Review Board is forming and every seat is currently open. Publishing that honestly is a deliberate choice: a standard that admits to being a proposal is more credible than one that implies an institution it does not yet have. If one of the five seats describes you, the invitation is open.
+
+## Licence
+
+Creative Commons Attribution-ShareAlike 4.0 International (`CC-BY-SA-4.0`) — https://creativecommons.org/licenses/by-sa/4.0/
+
+You may quote, embed, teach, translate and commercially use this material with attribution. A modified version must carry the same licence. The names "Hybrid Workforce Standard", "HybridWF", "WRM" and "HWFS" are reserved and are not licensed: you may state that your work conforms to the standard, but you may not publish a modified version under the same name.
+
+## Sources
+
+### Market and vendors
+
+| ID | Source |
+| --- | --- |
+| S1 | [Lattice — “Leading the Way in Responsible AI Employment” (9 Jul 2024)](https://lattice.com/blog/leading-the-way-in-responsible-ai-employment) |
+| S2 | [SHRM — Lattice scraps plans to treat AI bots as employees after backlash (Jul 2024)](https://www.shrm.org/topics-tools/news/technology/lattice-scraps-plans-to-treat-ai-bots-as-employees-after-backlash) |
+| S3 | [Salesforce — What Is Digital Labor? / Agentforce positioning](https://www.salesforce.com/agentforce/digital-labor/) |
+| S4 | [Microsoft — Six core capabilities to scale agent adoption in 2026](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/6-core-capabilities-to-scale-agent-adoption-in-2026/) |
+| S5 | [Microsoft — Introducing Microsoft Scout / Autopilots, always-on agents (2 Jun 2026)](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/) |
+| S6 | [ianai — AI Employee / role-based authority and persistent digital worker](https://www.ianai.co/) |
+| S7 | [AIEmployee.com — AI Employee platform](https://home.aiemployee.com/) |
+| S8 | [GIZIN — AI collaboration / AI Employees](https://gizin.co.jp/) |
+
+### Standards and institutions
+
+| ID | Source |
+| --- | --- |
+| S9 | [ISO 30414:2025 — Human resource management, HCRD](https://www.iso.org/standard/30414) |
+| S10 | [ISO/TC 260 — Human resource management standards catalogue](https://www.iso.org/committee/628737/x/catalogue/p/1/u/0/w/0/d/0/) |
+| S11 | [CIPD — Performance Management factsheet](https://www.cipd.org/en/knowledge/factsheets/performance-factsheet/) |
+| S12 | [CIPD — Line managers’ role in supporting the people profession](https://www.cipd.org/uk/knowledge/factsheets/line-managers-factsheet/) |
+| S13 | [ILO — Safe and healthy working environment as a fundamental principle and right](https://www.ilo.org/topics-and-sectors/safety-and-health-work/safe-and-healthy-working-environment-fundamental-principle-and-right-work) |
+| S14 | [NIST — AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) |
+| S15 | [NIST — AI RMF Playbook](https://airc.nist.gov/airmf-resources/playbook/) |
+
+### Academic signals
+
+| ID | Source |
+| --- | --- |
+| S16 | [Johnston et al. — The Shift to Agentic AI: Evidence from Codex (2026)](https://arxiv.org/abs/2606.26959) |
+| S17 | [Liu — The Organizational Behavior of Agentic AI (2026)](https://arxiv.org/abs/2606.30986) |
+| S18 | [Agentic Business Process Management: A Research Manifesto (2026)](https://arxiv.org/html/2603.18916v3) |
+| S19 | [Alenezi — Human-AI Collaboration and the Transformation of Software Engineering Work (2026)](https://arxiv.org/abs/2606.03394) |
+| S20 | [Intelligent AI Delegation (2026)](https://arxiv.org/html/2602.11865v1) |
+
+### Books and competing works
+
+| ID | Source |
+| --- | --- |
+| S21 | [GIZIN — AI Employee Starter Book](https://store.gizin.co.jp/en/ai-employee-book) |
+| S22 | [GIZIN — AI Employee Master Book](https://store.gizin.co.jp/en/ai-employee-master) |
+| S23 | [B. Jaiswal — AI EMPLOYEE: How One Person Does the Work of Ten (Jun 2026)](https://play.google.com/store/books/details/B_JAISWAL_AI_EMPLOYEE?id=0w3uEQAAQBAJ) |
+
+### Methodological limits
+
+1. Market research represents a snapshot as of 9 August 2026. Product positioning and capabilities change quickly.
+2. Vendor claims are read as product positioning, not as independent validation of performance. That includes the author’s own platform.
+3. The 120-principle matrix is an original synthesis drawn from HR, management, workforce analytics, security and risk. It does not attribute those principles to any single organisation.
+4. ISO 30414:2025 and the ISO/TC 260 catalogue are used as evidence that human resource management comprises multiple measurable, standardisable areas; CIPD for performance and line management; ILO for the boundaries of human rights; NIST for AI risk governance. None of these bodies endorses this standard.
+5. The arXiv papers are preprints unless otherwise stated, and are used as signals of emerging research rather than settled scientific consensus.
+6. The definition, the nine-property test, the maturity model, the transition playbooks, the HWFS and this standard itself are conceptual proposals developed in this work. They are not official standards of ISO, NIST, the ILO or any cited vendor.
+
+### Conceptual lineage
+
+- Henri Fayol — unity of command, authority and responsibility, division of labour.
+- Peter Drucker — management by objectives, effectiveness and managerial responsibility.
+- W. Edwards Deming — measurement, system, variation and continuous improvement.
+- Dave Ulrich and the modern tradition of human resource management — talent design and organisational capability.
+- Contemporary practice in performance management, organisational design, RBAC, least privilege, segregation of duties and enterprise risk management.
+
+## Changelog
+
+### v1.0 · 2026-08-12 · Proposal — Review Board forming
+
+- First publication: fifteen normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS instrument, the Hybrid Workforce Manager role and the transition playbooks.
+- Certification was deliberately excluded from scope. This standard scores no products and issues no seals.
+- The HWFS returns a structured argument rather than a 0–100 score, resolving a contradiction present in the source research.
+
+Clause text changes require a version bump and a Board vote. Notes, examples and commentary may be corrected between versions without amending the standard. Every published version stays at its own permanent address so that a citation made today still resolves in five years.

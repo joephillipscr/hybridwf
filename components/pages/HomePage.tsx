@@ -13,14 +13,14 @@ import { STANDARD_VERSION, route, type Locale } from '@/lib/site';
 const C = {
   eyebrow: { en: 'Open administrative standard · v', es: 'Estándar administrativo abierto · v' },
   lede: {
-    en: 'The category already exists in the market. What is missing is the administrative layer: what turns an agent into a governable member of the workforce, who is accountable for it, what it may decide, and how anyone can tell the difference between a work resource and a commercial metaphor.',
+    en: 'The category already exists in the market. What is missing is the administrative layer: what turns an agent into a governable member of the workforce, who answers for it, what it may decide, and how anyone can tell a work resource apart from a commercial metaphor.',
     es: 'La categoría ya existe en el mercado. Lo que falta es la capa administrativa: qué convierte a un agente en un miembro gobernable de la fuerza laboral, quién responde por él, qué puede decidir, y cómo distinguir un recurso de trabajo de una metáfora comercial.',
   },
   readStandard: { en: 'Read the standard', es: 'Leer el estándar' },
   runAssessment: { en: 'Run the assessment', es: 'Hacer la evaluación' },
   ladderTitle: { en: 'Where the boundary falls', es: 'Dónde cae la frontera' },
   ladderLede: {
-    en: 'Each rung is a legitimate destination. The category only becomes useful when it stops applying to everything.',
+    en: 'Each rung is a legitimate destination. The category only becomes useful once it stops applying to everything.',
     es: 'Cada peldaño es un destino legítimo. La categoría solo se vuelve útil cuando deja de aplicar a todo.',
   },
   whatTitle: { en: 'What this is, and what it refuses to be', es: 'Qué es esto, y qué se niega a ser' },
@@ -56,23 +56,23 @@ const C = {
   },
   defTitle: { en: 'The definition', es: 'La definición' },
   ninePoints: {
-    en: 'Nine properties. Miss several and it is an agent — which is fine, as long as nobody calls it an employee.',
-    es: 'Nueve propiedades. Si faltan varias es un agente — lo cual está bien, mientras nadie lo llame empleado.',
+    en: 'Nine properties. Miss several and it is an agent, which is fine as long as nobody calls it an employee.',
+    es: 'Nueve propiedades. Si faltan varias es un agente, lo cual está bien mientras nadie lo llame empleado.',
   },
   clausesTitle: { en: 'The standard', es: 'El estándar' },
   clausesLede: {
-    en: 'Fifteen clauses. No optional ones — a short standard that fully binds is more useful than a long one that mostly suggests.',
-    es: 'Quince cláusulas. Ninguna opcional — un estándar corto que obliga del todo es más útil que uno largo que mayormente sugiere.',
+    en: 'Fifteen clauses, none of them optional. A short standard that fully binds is more useful than a long one that mostly suggests.',
+    es: 'Quince cláusulas, ninguna opcional. Un estándar corto que obliga del todo es más útil que uno largo que mayormente sugiere.',
   },
   allClauses: { en: 'All fifteen clauses', es: 'Las quince cláusulas' },
   artTitle: { en: 'The framework underneath', es: 'El marco que lo sostiene' },
   artLede: {
-    en: 'The standard governs the occupant. WRM governs the work — and it comes first.',
-    es: 'El estándar gobierna al ocupante. WRM gobierna el trabajo — y va primero.',
+    en: 'The standard governs the occupant. WRM governs the work, and the work comes first.',
+    es: 'El estándar gobierna al ocupante. WRM gobierna el trabajo, y el trabajo va primero.',
   },
   toolTitle: { en: 'The instrument', es: 'El instrumento' },
   toolLede: {
-    en: 'Twelve dimensions, one responsibility at a time. It returns an argument you can defend in a meeting, not a number you can hide behind.',
+    en: 'Twelve dimensions, one responsibility at a time. It returns an argument you can defend in a meeting rather than a number you can hide behind.',
     es: 'Doce dimensiones, una responsabilidad por vez. Devuelve un argumento que podés defender en una reunión, no un número detrás del cual esconderte.',
   },
   levelNote: { en: 'The category threshold sits at level', es: 'El umbral de la categoría está en el nivel' },

@@ -1,0 +1,32 @@
+# Hybrid Workforce Standard
+
+> An open administrative standard for AI Employees: fifteen normative clauses, a nine-property test, the WRM (Work Resource Management) framework, a 120-principle matrix, a maturity model, and the HWFS decision instrument. Published under CC-BY-SA-4.0. Version 1.0, 2026-08-12.
+
+A chatbot answers. A copilot helps. An agent acts. An AI Employee is accountable for a role.
+
+This standard certifies no products, scores no vendors and issues no seals. Conformance is self-declared by the organisation running the deployment. The author also builds AIEmpl.com, a commercial platform in this category; that interest is disclosed on every page.
+
+## Full text
+
+- [The standard, complete (English)](https://hybridwf.com/standard.md): every clause, framework, matrix, instrument and glossary entry in one file.
+- [El estándar, completo (Spanish)](https://hybridwf.com/estandar.md): the same document in Spanish. Acronyms (WRM, HWFS, HWF-nn) are identical in both editions.
+
+## Pages
+
+- [standard](https://hybridwf.com/standard/)
+- [definition](https://hybridwf.com/definition/)
+- [maturity](https://hybridwf.com/maturity/)
+- [framework](https://hybridwf.com/framework/)
+- [principles](https://hybridwf.com/framework/principles/)
+- [hwfs](https://hybridwf.com/hwfs/)
+- [role](https://hybridwf.com/role/)
+- [transitions](https://hybridwf.com/transitions/)
+- [glossary](https://hybridwf.com/glossary/)
+- [governance](https://hybridwf.com/governance/)
+- [license](https://hybridwf.com/license/)
+- [sources](https://hybridwf.com/sources/)
+- [changelog](https://hybridwf.com/changelog/)
+
+## Citing
+
+Cite clauses by identifier (HWF-07), glossary entries by identifier (G-13) and principles by number (#44). Never cite by page or section number. Clause text is frozen between versions; the notes beneath each clause are commentary and may change without amending the standard.

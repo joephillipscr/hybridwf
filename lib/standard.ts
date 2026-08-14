@@ -66,8 +66,8 @@ export const CLAUSES: Clause[] = [
       es: 'Las acciones de alto riesgo deben soportar aprobación humana.',
     },
     note: {
-      en: 'Proportionality is the rule: the higher the cost of the error and the harder it is to reverse, the more approval the action carries. Separation of duties applies — whoever initiates need not approve.',
-      es: 'La regla es proporcionalidad: a mayor costo del error y menor reversibilidad, más aprobación soporta la acción. Aplica separación de funciones: quien inicia no necesariamente aprueba.',
+      en: 'Proportionality is the rule: the higher the cost of the error and the harder it is to reverse, the more approval the action carries. Separation of duties applies, so whoever initiates need not approve.',
+      es: 'La regla es proporcionalidad: a mayor costo del error y menor reversibilidad, más aprobación soporta la acción. Aplica separación de funciones, así que quien inicia no necesariamente aprueba.',
     },
   },
   {
@@ -176,8 +176,8 @@ export const CLAUSES: Clause[] = [
       es: 'No todo agente califica como AI Employee. Debe superar un umbral de madurez y gobierno.',
     },
     note: {
-      en: 'This clause is what makes the category worth anything. If the label applies to everything, it distinguishes nothing — and an organisation with twenty excellent agents and zero AI Employees has clarity, not failure.',
-      es: 'Esta cláusula es lo que le da valor a la categoría. Si la etiqueta aplica a todo, no distingue nada — y una organización con veinte agentes excelentes y cero AI Employees tiene claridad, no fracaso.',
+      en: 'This clause is what makes the category worth anything. If the label applies to everything, it distinguishes nothing. An organisation with twenty excellent agents and zero AI Employees has clarity rather than a problem.',
+      es: 'Esta cláusula es lo que le da valor a la categoría. Si la etiqueta aplica a todo, no distingue nada. Una organización con veinte agentes excelentes y cero AI Employees tiene claridad y no un problema.',
     },
   },
 ];
@@ -187,16 +187,16 @@ export const CONFORMANCE: { title: T; body: T[] } = {
   title: { en: 'Reading this standard', es: 'Cómo leer este estándar' },
   body: [
     {
-      en: '“Must” marks a requirement: a deployment that fails it does not conform, whatever it is called commercially. There are no optional clauses in version 1.0 — a shorter standard that is fully binding is more useful than a long one that is mostly advisory.',
-      es: '«Debe» marca un requisito: un deployment que lo incumple no conforma, sin importar cómo se lo llame comercialmente. En la versión 1.0 no hay cláusulas opcionales — un estándar corto y enteramente vinculante es más útil que uno largo y mayormente sugerido.',
+      en: '“Must” marks a requirement: a deployment that fails it does not conform, whatever it is called commercially. There are no optional clauses in version 1.0, because a shorter standard that is fully binding is more useful than a long one that is mostly advisory.',
+      es: '«Debe» marca un requisito: un deployment que lo incumple no conforma, sin importar cómo se lo llame comercialmente. En la versión 1.0 no hay cláusulas opcionales, porque un estándar corto y enteramente vinculante es más útil que uno largo y mayormente sugerido.',
     },
     {
       en: 'Conformance is self-declared. This standard does not certify products and does not score vendors. It gives an organisation a test it can run on its own deployment and publish if it chooses.',
       es: 'La conformidad es autodeclarada. Este estándar no certifica productos ni puntúa proveedores. Le da a una organización un test que puede aplicar a su propio deployment y publicar si así lo decide.',
     },
     {
-      en: 'The clause text is the citable unit; cite it by identifier — HWF-07, not a page number. Notes are commentary and may change between versions without amending the standard.',
-      es: 'El texto de la cláusula es la unidad citable; citala por identificador — HWF-07, no por número de página. Las notas son comentario y pueden cambiar entre versiones sin enmendar el estándar.',
+      en: 'The clause text is the citable unit; cite it by identifier, so HWF-07 rather than a page number. Notes are commentary and may change between versions without amending the standard.',
+      es: 'El texto de la cláusula es la unidad citable; citala por identificador, o sea HWF-07 y no un número de página. Las notas son comentario y pueden cambiar entre versiones sin enmendar el estándar.',
     },
   ],
 };

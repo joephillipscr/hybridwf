@@ -10,8 +10,8 @@ export const DISCLOSURE: { title: T; body: T[] } = {
       es: 'Este estándar fue escrito por Master Joe Phillips, quien también construye AIEmpl.com, una plataforma comercial en esta categoría. Eso es un conflicto de interés real y se declara acá en lugar de descubrirse después.',
     },
     {
-      en: 'Three commitments follow from it. This standard does not certify products and does not score vendors — conformance is self-declared by the organisation running the deployment. This site is not a funnel: the link to the platform above is disclosure, not an offer. And the normative text cannot be changed by its author alone.',
-      es: 'De ahí se derivan tres compromisos. Este estándar no certifica productos ni puntúa proveedores — la conformidad la autodeclara la organización que opera el deployment. Este sitio no es un embudo: el enlace a la plataforma es divulgación, no una oferta. Y el texto normativo no puede ser modificado por su autor en solitario.',
+      en: 'Three commitments follow from it. This standard does not certify products and does not score vendors; conformance is self-declared by the organisation running the deployment. This site is not a funnel, so the link to the platform above is disclosure rather than an offer. The normative text cannot be changed by its author alone.',
+      es: 'De ahí se derivan tres compromisos. Este estándar no certifica productos ni puntúa proveedores; la conformidad la autodeclara la organización que opera el deployment. Este sitio no es un embudo, así que el enlace a la plataforma es divulgación y no una oferta. El texto normativo no puede ser modificado por su autor en solitario.',
     },
     {
       en: 'A standard authored by a vendor and judged by nobody is a specification sheet with a formal name. The mechanism below is what is meant to keep this one from becoming that.',
@@ -76,8 +76,8 @@ export const SEATS: Seat[] = [
     n: 4,
     discipline: { en: 'Security and risk', es: 'Seguridad y riesgo' },
     protects: {
-      en: 'Least privilege, auditability, incident handling and the kill switch — the governance domain.',
-      es: 'Least privilege, auditabilidad, manejo de incidentes y kill switch — el dominio de gobierno.',
+      en: 'Least privilege, auditability, incident handling and the kill switch: the governance domain.',
+      es: 'Least privilege, auditabilidad, manejo de incidentes y kill switch: el dominio de gobierno.',
     },
     holder: null,
   },
@@ -85,8 +85,8 @@ export const SEATS: Seat[] = [
     n: 5,
     discipline: { en: 'Legal and labour', es: 'Legal y laboral' },
     protects: {
-      en: 'The boundary that says this is not an employee in any legal sense — the line where the category is most likely to burn.',
-      es: 'La frontera que dice que esto no es un empleado en sentido jurídico — la línea donde la categoría tiene más probabilidad de quemarse.',
+      en: 'The boundary that says this is not an employee in any legal sense. It is the line where the category is most likely to burn.',
+      es: 'La frontera que dice que esto no es un empleado en sentido jurídico. Es la línea donde la categoría tiene más probabilidad de quemarse.',
     },
     holder: null,
   },
@@ -100,12 +100,12 @@ export const RULES: T[] = [
     es: 'Sin pago. Honorífico, con crédito en este sitio. En cuanto hay dinero, hay una pregunta sobre a quién sirve el Board.',
   },
   {
-    en: 'At least two of the five seats sit outside the Editor’s commercial orbit — not customers, not employees, not suppliers. A board of the author’s friends is detectable in one search.',
-    es: 'Al menos dos de los cinco asientos fuera de la órbita comercial del Editor: no clientes, no empleados, no proveedores. Un board de amigos del autor se detecta en una sola búsqueda.',
+    en: 'At least two of the five seats sit outside the Editor’s commercial orbit, so not customers, employees or suppliers. A board of the author’s friends is detectable in one search.',
+    es: 'Al menos dos de los cinco asientos quedan fuera de la órbita comercial del Editor, así que no clientes, empleados ni proveedores. Un board de amigos del autor se detecta en una sola búsqueda.',
   },
   {
-    en: 'No member holds a competing platform. Not the Editor’s, not anyone’s. The Board is not a vendor lobby.',
-    es: 'Ningún miembro tiene una plataforma competidora. Ni la del Editor ni la de nadie. El Board no es un lobby de proveedores.',
+    en: 'No member holds a competing platform, the Editor’s included. The Board is not a vendor lobby.',
+    es: 'Ningún miembro tiene una plataforma competidora, incluida la del Editor. El Board no es un lobby de proveedores.',
   },
   {
     en: 'Each member publishes their own disclosure, exactly as the Editor does.',
@@ -116,8 +116,8 @@ export const RULES: T[] = [
     es: 'Términos de doce meses renovables, para que salir sea algo ordinario y no un escándalo.',
   },
   {
-    en: 'Changes follow a public process: anyone proposes, the Editor drafts, the Board votes, the changelog records. Four lines that are worth more than ten pages of bylaws.',
-    es: 'Los cambios siguen un proceso público: cualquiera propone, el Editor redacta, el Board vota, el changelog registra. Cuatro líneas que valen más que diez páginas de estatutos.',
+    en: 'Changes follow a public process: anyone proposes, the Editor drafts, the Board votes, and the changelog records what happened. Four lines do more work here than ten pages of bylaws would.',
+    es: 'Los cambios siguen un proceso público: cualquiera propone, el Editor redacta, el Board vota y el changelog registra lo que pasó. Cuatro líneas hacen más trabajo acá que diez páginas de estatutos.',
   },
 ];
 
