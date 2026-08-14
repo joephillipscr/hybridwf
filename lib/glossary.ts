@@ -326,6 +326,14 @@ export const TERMS: Term[] = [
     },
   },
   {
+    id: 'G-40',
+    term: { en: 'Derived inference', es: 'Inferencia derivada' },
+    definition: {
+      en: 'Data the deployment manufactures about a person rather than collects from them: a probability of financial distress, an inferred health condition, a predicted intent. Governed under HWF-08 as if collected — purpose, basis, minimisation, deletion — and often more sensitive than anything the person actually provided. An inference the person never handed over is still their data.',
+      es: 'Un dato que el deployment fabrica sobre una persona en vez de recolectarlo de ella: una probabilidad de apuros financieros, una condición de salud inferida, una intención predicha. Gobernado bajo HWF-08 como si se hubiera recolectado — finalidad, base, minimización, eliminación — y con frecuencia más sensible que todo lo que la persona sí entregó. Una inferencia que la persona nunca entregó sigue siendo su dato.',
+    },
+  },
+  {
     id: 'G-25',
     term: { en: 'Hybrid post', es: 'Puesto híbrido' },
     definition: {
