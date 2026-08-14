@@ -5,6 +5,7 @@ import {
   ANTI_KPI,
   CAPACITY_ELEVATION,
   CEO_NOTE,
+  DIRECTION_NOTE,
   KPIS,
   MISSION,
   PLACEMENT,
@@ -107,7 +108,8 @@ export default function RolePage({ lang }: { lang: Locale }) {
           </table>
         </div>
         <Reveal>
-          <p className="prose-x mt-8 max-w-3xl">{CEO_NOTE[lang]}</p>
+          <p className="prose-x mt-8 max-w-3xl border-l-2 border-accent pl-5">{DIRECTION_NOTE[lang]}</p>
+          <p className="prose-x mt-5 max-w-3xl">{CEO_NOTE[lang]}</p>
         </Reveal>
       </Section>
 

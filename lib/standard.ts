@@ -110,8 +110,8 @@ export const CLAUSES: Clause[] = [
       es: 'El sistema debe saber cuándo escalar en vez de improvisar.',
     },
     note: {
-      en: 'A resource that produces a convincing answer instead of raising a doubt is more dangerous than a less capable one that is better governed. Every exception needs a destination.',
-      es: 'Un recurso que produce una respuesta convincente en vez de escalar una duda es más peligroso que uno menos brillante pero mejor gobernado. Toda excepción necesita un destino.',
+      en: 'A resource that produces a convincing answer instead of raising a doubt is more dangerous than a less capable one that is better governed. Every exception needs a destination — and no metric may punish the journey: a system measured on fewer escalations learns silence, so escalation is judged by the missed-versus-unnecessary pair on the Hybrid Workforce Manager’s scorecard, never by volume alone.',
+      es: 'Un recurso que produce una respuesta convincente en vez de escalar una duda es más peligroso que uno menos brillante pero mejor gobernado. Toda excepción necesita un destino — y ninguna métrica puede castigar el viaje: un sistema medido por escalar menos aprende silencio, así que la escalación se juzga por el par perdidas-versus-innecesarias del scorecard del Gerente de Fuerza Laboral Híbrida, nunca por volumen a solas.',
     },
   },
   {

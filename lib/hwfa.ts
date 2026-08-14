@@ -469,8 +469,8 @@ export function evaluate(a: Answers): Result {
 
   /* --- What would change the answer. */
   wouldChange.push({
-    en: 'A rising Human Intervention Rate over the first weeks means the autonomy on paper is not real. Drop a rung and find out why.',
-    es: 'Un Human Intervention Rate creciente en las primeras semanas significa que la autonomía del papel no es real. Bajá un peldaño y averiguá por qué.',
+    en: 'A rising Human Intervention Rate over the first weeks means the autonomy on paper is not real — drop a rung and find out why. A falling one is not automatically good: check the Missed Escalation Rate before celebrating.',
+    es: 'Un Human Intervention Rate creciente en las primeras semanas significa que la autonomía del papel no es real — bajá un peldaño y averiguá por qué. Uno decreciente no es automáticamente bueno: revisá el Missed Escalation Rate antes de celebrar.',
   });
   if (allocation === 'artificial') {
     wouldChange.push({

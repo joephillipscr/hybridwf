@@ -23,7 +23,7 @@ import { LEVELS, MATURITY_NOTE, THRESHOLD, DIAGNOSTIC } from '../lib/maturity';
 import { BOUNDARY_WARNING, DOMAINS, LIFECYCLE, PRINCIPLE_LAYERS, RULES as WRM_RULES, STACK, WRM_DEFINITION, WRM_PREMISE } from '../lib/wrm';
 import { COUNTS, MATRIX_CAVEAT, PRINCIPLES, P_DOMAINS } from '../lib/principles';
 import { AUTONOMY, AUTONOMY_NOTE, DIMENSIONS } from '../lib/hwfa';
-import { ANTI_KPI, CAPACITY_ELEVATION, CEO_NOTE, KPIS, MISSION, PLACEMENT, RESPONSIBILITIES, ROLE_NAME } from '../lib/role';
+import { ANTI_KPI, CAPACITY_ELEVATION, CEO_NOTE, DIRECTION_NOTE, KPIS, MISSION, PLACEMENT, RESPONSIBILITIES, ROLE_NAME } from '../lib/role';
 import { BACK, BACK_INTRO, BACK_NOTE, FORWARD, FORWARD_INTRO, FORWARD_PRECONDITION, FORWARD_RULE } from '../lib/transitions';
 import { ACRONYM_RULE, GLOSSARY_NOTE, TERMS as GLOSSARY_TERMS } from '../lib/glossary';
 import { DISCLOSURE, MODEL, PROCESS, RELEASES, RULES as GOV_RULES, SEATS, STATUS_NOTE, VERSIONING_POLICY } from '../lib/governance';
@@ -271,6 +271,7 @@ function build(lang: Locale): string {
   p(`**${L(ANTI_KPI, lang)}**`);
   h(3, t('scorecard'));
   p(table([t('colKpi'), t('colMeasures'), ''], KPIS.map((k) => [k.name, L(k.measures, lang), k.ceo ? `**${t('toCeo')}**` : ''])));
+  p(`**${L(DIRECTION_NOTE, lang)}**`);
   p(L(CEO_NOTE, lang));
   h(3, L(CAPACITY_ELEVATION.title, lang));
   p(L(CAPACITY_ELEVATION.body, lang));
