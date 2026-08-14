@@ -56,8 +56,8 @@ const C = {
   },
   defTitle: { en: 'The definition', es: 'La definición' },
   ninePoints: {
-    en: 'Nine properties. Miss several and it is an agent, which is fine as long as nobody calls it an employee.',
-    es: 'Nueve propiedades. Si faltan varias es un agente, lo cual está bien mientras nadie lo llame empleado.',
+    en: 'Nine properties. Miss one and it is an agent, which is fine as long as nobody calls it an employee.',
+    es: 'Nueve propiedades. Si falta una es un agente, lo cual está bien mientras nadie lo llame empleado.',
   },
   clausesTitle: { en: 'The standard', es: 'El estándar' },
   clausesLede: {

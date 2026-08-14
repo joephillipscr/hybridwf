@@ -30,7 +30,7 @@ export interface Property {
   criterion: T;
 }
 
-/** The nine-property test. Fail several and it is an agent, not an employee. */
+/** The nine-property test. Conjunctive: fail one and it is an agent, not an employee. */
 export const PROPERTIES: Property[] = [
   {
     n: 1,
@@ -107,8 +107,8 @@ export const PROPERTIES: Property[] = [
 ];
 
 export const PROPERTIES_CAVEAT: T = {
-  en: 'A system missing several of these properties may still be an excellent agent or automation. Calling it an AI Employee is then a commercial metaphor rather than a verifiable administrative category.',
-  es: 'Un sistema que carece de varias de estas propiedades puede seguir siendo un excelente agente o automatización. Llamarlo AI Employee se vuelve entonces una metáfora comercial más que una categoría administrativa verificable.',
+  en: 'The test is conjunctive: a deployment qualifies as an AI Employee only when all nine properties are present. Presence is binary; depth is not — how far each property is developed is measured by the maturity model, not by this test. A system missing any one of them may still be an excellent agent or automation; calling it an AI Employee is a commercial metaphor rather than a verifiable administrative category. Conformance is a separate question: the clauses bind AI Employees, and a deployment that violates them is a non-conformant AI Employee, not a non-AI-Employee — a definition that expelled violators would leave the standard with nothing to bind.',
+  es: 'El test es conjuntivo: un deployment califica como AI Employee solo cuando las nueve propiedades están presentes. La presencia es binaria; la profundidad no — cuánto está desarrollada cada propiedad lo mide el modelo de madurez, no este test. Un sistema al que le falte cualquiera de ellas puede seguir siendo un excelente agente o automatización; llamarlo AI Employee es una metáfora comercial más que una categoría administrativa verificable. La conformidad es una pregunta separada: las cláusulas obligan a los AI Employees, y un deployment que las viola es un AI Employee no conforme, no un no-AI-Employee — una definición que expulsara a los infractores dejaría al estándar sin nada que obligar.',
 };
 
 /* ------------------------------------------------------------------ */

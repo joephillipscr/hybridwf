@@ -17,8 +17,8 @@ const C = {
   eyebrow: { en: 'Definition', es: 'Definición' },
   title: { en: 'What counts as an AI Employee', es: 'Qué califica como AI Employee' },
   lede: {
-    en: 'The category is worth something only if it excludes things. Nine properties, and a system missing several of them is an agent — a perfectly respectable thing to be.',
-    es: 'La categoría vale algo solo si excluye cosas. Nueve propiedades, y un sistema al que le faltan varias es un agente — algo perfectamente respetable.',
+    en: 'The category is worth something only if it excludes things. Nine properties, and a system missing any one of them is an agent — a perfectly respectable thing to be.',
+    es: 'La categoría vale algo solo si excluye cosas. Nueve propiedades, y un sistema al que le falta cualquiera de ellas es un agente — algo perfectamente respetable.',
   },
   testTitle: { en: 'The nine-property test', es: 'El test de nueve propiedades' },
   ladderTitle: { en: 'The vocabulary ladder', es: 'La escalera de vocabulario' },
