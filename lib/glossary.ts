@@ -334,6 +334,14 @@ export const TERMS: Term[] = [
     },
   },
   {
+    id: 'G-41',
+    term: { en: 'Correlated failure', es: 'Falla correlacionada' },
+    definition: {
+      en: 'The failure mode of model monoculture: a hundred humans err in a hundred different ways, while a hundred AI Employees running the same model or vendor stack err identically and simultaneously, sharing blind spots, biases and exploits. The one risk classical administration never had. Mitigated by diversity of models and vendors, fallback resources and succession planning; named as a validation item for AI teams by HWF-27.',
+      es: 'El modo de falla de la monocultura de modelo: cien humanos se equivocan de cien maneras distintas, mientras cien AI Employees corriendo el mismo modelo o stack de proveedor se equivocan idénticamente y a la vez, compartiendo puntos ciegos, sesgos y exploits. El único riesgo que la administración clásica nunca tuvo. Se mitiga con diversidad de modelos y proveedores, recursos de fallback y planes de sucesión; nombrado como ítem de validación para equipos de IA por HWF-27.',
+    },
+  },
+  {
     id: 'G-25',
     term: { en: 'Hybrid post', es: 'Puesto híbrido' },
     definition: {

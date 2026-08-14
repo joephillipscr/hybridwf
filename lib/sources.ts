@@ -39,6 +39,8 @@ export const SOURCES: Source[] = [
   { id: 'S28', label: 'EU — AI Act Article 86: right to explanation of individual decision-making', url: 'https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-86', kind: 'standards' },
   { id: 'S30', label: 'EU — AI Act Article 50: transparency obligations for AI interacting with people (Commission FAQ)', url: 'https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act', kind: 'standards' },
   { id: 'S31', label: 'EU — GDPR Article 5: principles relating to processing of personal data', url: 'https://gdpr-info.eu/art-5-gdpr/', kind: 'standards' },
+  { id: 'S32', label: 'ISO/IEC 42001 — Artificial intelligence management system', url: 'https://www.iso.org/standard/42001', kind: 'standards' },
+  { id: 'S33', label: 'ISO/IEC 42005 — AI system impact assessment', url: 'https://www.iso.org/standard/42005', kind: 'standards' },
 ];
 
 export const KIND_LABEL: Record<Source['kind'], T> = {

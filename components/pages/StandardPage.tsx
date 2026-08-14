@@ -11,8 +11,8 @@ const C = {
   eyebrow: { en: 'Normative text', es: 'Texto normativo' },
   title: { en: 'The Hybrid Workforce Standard', es: 'El Hybrid Workforce Standard' },
   lede: {
-    en: 'Twenty-six clauses that separate a governable work resource from a commercial metaphor. Conformance is self-declared: no product is scored here and no seal is issued.',
-    es: 'Veintiséis cláusulas que separan un recurso de trabajo gobernable de una metáfora comercial. La conformidad es autodeclarada: acá no se puntúa ningún producto ni se emite ningún sello.',
+    en: 'Twenty-seven clauses that separate a governable work resource from a commercial metaphor. Conformance is self-declared: no product is scored here and no seal is issued.',
+    es: 'Veintisiete cláusulas que separan un recurso de trabajo gobernable de una metáfora comercial. La conformidad es autodeclarada: acá no se puntúa ningún producto ni se emite ningún sello.',
   },
   next: { en: 'How the standard is governed', es: 'Cómo se gobierna el estándar' },
   riskTitle: { en: 'Risk classification', es: 'Clasificación de riesgo' },
