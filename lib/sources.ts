@@ -33,6 +33,7 @@ export const SOURCES: Source[] = [
   { id: 'S23', label: 'B. Jaiswal — AI EMPLOYEE: How One Person Does the Work of Ten (Jun 2026)', url: 'https://play.google.com/store/books/details/B_JAISWAL_AI_EMPLOYEE?id=0w3uEQAAQBAJ', kind: 'books' },
   { id: 'S24', label: 'OECD — AI Principles (human-centred values: dignity, autonomy, social justice, labour rights)', url: 'https://oecd.ai/en/ai-principles', kind: 'standards' },
   { id: 'S25', label: 'EU — Artificial Intelligence Act: regulatory framework on AI (risk-based approach)', url: 'https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai', kind: 'standards' },
+  { id: 'S26', label: 'EU — GDPR Article 22: automated individual decision-making', url: 'https://gdpr-info.eu/art-22-gdpr/', kind: 'standards' },
 ];
 
 export const KIND_LABEL: Record<Source['kind'], T> = {

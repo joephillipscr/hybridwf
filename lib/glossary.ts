@@ -294,6 +294,14 @@ export const TERMS: Term[] = [
     },
   },
   {
+    id: 'G-36',
+    term: { en: 'Reserved decision', es: 'Decisión reservada' },
+    definition: {
+      en: 'A decision subject an artificial resource may never take alone, whatever the post’s assessed risk class: material effects on employment, health and safety, credit and essential services, legal rights, use of force, or vulnerable people (HWF-23). The resource may analyse, draft and recommend; a human decides — and only counts as deciding while able to restate the case and decide otherwise. Approval at a throughput that forecloses understanding is a signature, not a decision.',
+      es: 'Un asunto de decisión que un recurso artificial nunca puede tomar solo, sin importar la clase de riesgo evaluada del puesto: efectos materiales sobre empleo, salud y seguridad, crédito y servicios esenciales, derechos legales, uso de la fuerza o personas vulnerables (HWF-23). El recurso puede analizar, redactar y recomendar; un humano decide — y solo cuenta como decidir mientras pueda reformular el caso y decidir distinto. Aprobar a un ritmo que impide entender es una firma, no una decisión.',
+    },
+  },
+  {
     id: 'G-25',
     term: { en: 'Hybrid post', es: 'Puesto híbrido' },
     definition: {
