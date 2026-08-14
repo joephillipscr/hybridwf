@@ -22,8 +22,8 @@ export const CLAUSES: Clause[] = [
       es: 'Un AI Employee debe ocupar un rol definido, no solamente una personalidad o un system prompt.',
     },
     note: {
-      en: 'The post exists before its occupant. A name, a tone of voice and a set of instructions describe a persona; a role states what result must be produced, with what authority, measured how.',
-      es: 'El puesto existe antes que su ocupante. Un nombre, un tono y un conjunto de instrucciones describen una personalidad; un rol establece qué resultado debe producirse, con qué autoridad y medido cómo.',
+      en: 'The post exists before its occupant. A name, a tone of voice and a set of instructions describe a persona; a role states what result must be produced, with what authority, measured how. Before does not mean frozen: a post may be reshaped by whoever holds it — Taylor fixed the person to the box, this standard versions the box — and HWF-17 exists so that the reshaping happens as declared revision rather than tacit drift.',
+      es: 'El puesto existe antes que su ocupante. Un nombre, un tono y un conjunto de instrucciones describen una personalidad; un rol establece qué resultado debe producirse, con qué autoridad y medido cómo. Antes no significa congelado: un puesto puede ser remodelado por quien lo ocupa — Taylor fijaba a la persona a la caja, este estándar versiona la caja — y HWF-17 existe para que la remodelación ocurra como revisión declarada y no como deriva tácita.',
     },
   },
   {
