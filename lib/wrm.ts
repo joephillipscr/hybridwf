@@ -99,8 +99,8 @@ export const PRINCIPLE_LAYERS: PrincipleLayer[] = [
 ];
 
 export const BOUNDARY_WARNING: T = {
-  en: 'AI does not “need holidays” and does not “feel engagement”. Forcing those analogies degrades the framework. Equivalence must be operational, never anthropomorphic.',
-  es: 'La IA no «necesita vacaciones» y no «siente engagement». Forzar esas analogías degrada el framework. La equivalencia debe ser operacional, nunca antropomórfica.',
+  en: 'Analogies like “the AI needs holidays” or “the AI feels engagement” import mechanisms with no operational referent, and forcing them degrades the framework. Equivalence must be operational, never anthropomorphic.',
+  es: 'Analogías como «la IA necesita vacaciones» o «la IA siente engagement» importan mecanismos sin referente operativo, y forzarlas degrada el framework. La equivalencia debe ser operacional, nunca antropomórfica.',
 };
 
 /* --- The ten domains ---------------------------------------------- */
