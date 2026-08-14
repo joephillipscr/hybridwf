@@ -230,8 +230,8 @@ export const MOTIVATION: { label: T; text: T } = {
 export const OBJECTIVE: { label: T; text: T } = {
   label: { en: 'The strategic objective', es: 'El objetivo estratégico' },
   text: {
-    en: 'This standard is the first step toward ending the era of “toy AI”. As it is adopted, it will move companies from a software development model, centred on the tool, to a social architecture model, centred on accountability.',
-    es: 'Este estándar es el primer paso para terminar con la era de la «IA juguetera». Al adoptarse, moverá a las empresas desde un modelo de desarrollo de software, centrado en la herramienta, hacia un modelo de arquitectura social, centrado en la responsabilidad.',
+    en: 'This standard is the first step toward closing the era of “toy AI” and opening the era of the AI Employee. As it is adopted, it will move companies from a software development model, centred on the tool, to a social architecture model, centred on human accountability.',
+    es: 'Este estándar es el primer paso para cerrar la era de la «IA juguetera» y abrir la era del AI Employee. Al adoptarse, moverá a las empresas desde un modelo de desarrollo de software, centrado en la herramienta, hacia un modelo de arquitectura social, centrado en la responsabilidad humana.',
   },
 };
 

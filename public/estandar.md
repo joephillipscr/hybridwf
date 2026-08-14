@@ -21,7 +21,7 @@ disclosure: "The author also builds AIEmpl.com, a commercial platform in this ca
 
 **Por qué existe este estándar.** Este estándar es una declaración de independencia de la organización frente a la anarquía del prompt. Al exigir un contrato de rol, obliga a los líderes a pensar antes de automatizar.
 
-**El objetivo estratégico.** Este estándar es el primer paso para terminar con la era de la «IA juguetera». Al adoptarse, moverá a las empresas desde un modelo de desarrollo de software, centrado en la herramienta, hacia un modelo de arquitectura social, centrado en la responsabilidad. — Master Joe Phillips
+**El objetivo estratégico.** Este estándar es el primer paso para cerrar la era de la «IA juguetera» y abrir la era del AI Employee. Al adoptarse, moverá a las empresas desde un modelo de desarrollo de software, centrado en la herramienta, hacia un modelo de arquitectura social, centrado en la responsabilidad humana. — Master Joe Phillips
 
 ## Cómo citar
 
