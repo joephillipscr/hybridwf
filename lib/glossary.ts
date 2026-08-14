@@ -310,6 +310,14 @@ export const TERMS: Term[] = [
     },
   },
   {
+    id: 'G-38',
+    term: { en: 'Affected person', es: 'Persona afectada' },
+    definition: {
+      en: 'Anyone on whom an AI Employee’s action has material effect — customer, worker or third party. Holder of the seven rights of HWF-25: disclosure of artificial involvement, the responsible organisation, human review with authority to change the outcome, data correction, contest, an actionable explanation of determinants, and redress. The explanation reaches them through human judgement: confidential material may be withheld with a recorded reason, and the duty to explain is never cancelled.',
+      es: 'Cualquiera sobre quien la acción de un AI Employee tiene efecto material — cliente, trabajador o tercero. Titular de los siete derechos de HWF-25: divulgación de la intervención artificial, la organización responsable, revisión humana con autoridad para cambiar el resultado, corrección de datos, impugnación, una explicación accionable de los determinantes, y reparación. La explicación le llega a través de criterio humano: el material confidencial puede retenerse con razón registrada, y el deber de explicar nunca se cancela.',
+    },
+  },
+  {
     id: 'G-25',
     term: { en: 'Hybrid post', es: 'Puesto híbrido' },
     definition: {

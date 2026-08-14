@@ -35,6 +35,7 @@ export const SOURCES: Source[] = [
   { id: 'S25', label: 'EU — Artificial Intelligence Act: regulatory framework on AI (risk-based approach)', url: 'https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai', kind: 'standards' },
   { id: 'S26', label: 'EU — GDPR Article 22: automated individual decision-making', url: 'https://gdpr-info.eu/art-22-gdpr/', kind: 'standards' },
   { id: 'S27', label: 'EU — AI Act Article 26: obligations of deployers of high-risk AI systems (worker information)', url: 'https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-26', kind: 'standards' },
+  { id: 'S28', label: 'EU — AI Act Article 86: right to explanation of individual decision-making', url: 'https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-86', kind: 'standards' },
 ];
 
 export const KIND_LABEL: Record<Source['kind'], T> = {
