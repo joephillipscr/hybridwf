@@ -65,8 +65,8 @@ export const TERMS: Term[] = [
     id: 'G-06',
     term: { en: 'Context Provisioning', es: 'Context Provisioning' },
     definition: {
-      en: 'The onboarding equivalent for an artificial resource. Divided into must know, may consult and must not access. The third category has two legitimate grounds: protecting the information from the resource, and protecting the resource’s judgement from the information (HWF-18); either way, the restriction is recorded, never silent.',
-      es: 'El equivalente al onboarding para un recurso artificial. Se divide en debe saber, puede consultar y no debe acceder. La tercera categoría tiene dos fundamentos legítimos: proteger la información del recurso, y proteger el criterio del recurso de la información (HWF-18); en ambos casos la restricción queda registrada, nunca silenciosa.',
+      en: 'The onboarding equivalent for an artificial resource. Divided into must know, may consult and must not access. The third category has two legitimate grounds: protecting the information from the resource, and protecting the decision from the information (HWF-18); either way, the restriction is recorded, never silent.',
+      es: 'El equivalente al onboarding para un recurso artificial. Se divide en debe saber, puede consultar y no debe acceder. La tercera categoría tiene dos fundamentos legítimos: proteger la información del recurso, y proteger la decisión de la información (HWF-18); en ambos casos la restricción queda registrada, nunca silenciosa.',
     },
   },
   {
@@ -255,18 +255,18 @@ export const TERMS: Term[] = [
   },
   {
     id: 'G-31',
-    term: { en: 'Deliberate opacity', es: 'Opacidad deliberada' },
+    term: { en: 'Context boundary record', es: 'Registro de frontera de contexto' },
     definition: {
-      en: 'A recorded design decision to withhold context from an artificial resource, either to protect the information from the resource or to protect the resource\u2019s judgement from the information: anchoring, confirmation bias, operational overload. It differs from an omission by exactly one property \u2014 it is written in the role contract, versioned and available to the audit. An unrecorded restriction is not opacity but a gap, and responsibility for whatever it degrades lies with whoever withheld the context (HWF-18).',
-      es: 'Una decisi\u00f3n de dise\u00f1o registrada de retenerle contexto a un recurso artificial, sea para proteger la informaci\u00f3n del recurso o para proteger el criterio del recurso de la informaci\u00f3n: anclaje, sesgo de confirmaci\u00f3n, sobrecarga operativa. Se distingue de una omisi\u00f3n por exactamente una propiedad \u2014 est\u00e1 escrita en el contrato de rol, versionada y disponible para la auditor\u00eda. Una restricci\u00f3n sin registro no es opacidad sino un hueco, y la responsabilidad por lo que degrade recae en quien retuvo el contexto (HWF-18).',
+      en: 'The recorded artifact behind every context restriction (HWF-18): what is withheld from an artificial resource, on which of the two legitimate grounds — protecting the information, or preventing measurable degradation of the decision through anchoring, contamination or saturation — decided by whom, and versioned like any other authority. It differs from an omission by exactly one property: it is written. An unrecorded restriction is a gap, and responsibility for whatever it degrades lies with whoever withheld the context.',
+      es: 'El artefacto registrado detrás de toda restricción de contexto (HWF-18): qué se le retiene a un recurso artificial, bajo cuál de los dos fundamentos legítimos — proteger la información, o prevenir la degradación medible de la decisión por anclaje, contaminación o saturación — decidido por quién, y versionado como cualquier otra autoridad. Se distingue de una omisión por exactamente una propiedad: está escrito. Una restricción sin registro es un hueco, y la responsabilidad por lo que degrade recae en quien retuvo el contexto.',
     },
   },
   {
     id: 'G-32',
     term: { en: 'Digital zombie', es: 'Zombi digital' },
     definition: {
-      en: 'An AI Employee whose post has lost its justification but which keeps operating with credentials, data access and standing authority intact. It is what accumulates when nothing forces the existence question: the mechanisms that prune pointless human posts — payroll and attrition — do not apply to a resource that costs little and never resigns. Prevented by the re-justification cadence of HWF-19; dismantled through lifecycle retirement, with offboarding and revocation.',
-      es: 'Un AI Employee cuyo puesto perdió su justificación pero que sigue operando con credenciales, accesos a datos y autoridad vigente intactos. Es lo que se acumula cuando nada fuerza la pregunta de existencia: los mecanismos que podan los puestos humanos sin sentido — payroll y attrition — no aplican a un recurso que cuesta poco y no renuncia jamás. Se previene con la cadencia de re-justificación de HWF-19; se desmonta con el retiro del lifecycle, con offboarding y revocación.',
+      en: 'An AI Employee whose post has lost its justification but which keeps operating with credentials, data access and standing authority intact. It is what accumulates when nothing forces the existence question: even the weak triggers that sometimes prune human posts — a salary line under budget review, a resignation forcing a backfill decision — do not exist for a resource that costs little and never resigns. Prevented by the re-justification cadence of HWF-19; dismantled through lifecycle retirement, with offboarding and revocation.',
+      es: 'Un AI Employee cuyo puesto perdió su justificación pero que sigue operando con credenciales, accesos a datos y autoridad vigente intactos. Es lo que se acumula cuando nada fuerza la pregunta de existencia: hasta los disparadores débiles que a veces podan puestos humanos — una línea de salario bajo revisión de presupuesto, una renuncia que fuerza la decisión de reemplazo — no existen para un recurso que cuesta poco y no renuncia jamás. Se previene con la cadencia de re-justificación de HWF-19; se desmonta con el retiro del lifecycle, con offboarding y revocación.',
     },
   },
   {
