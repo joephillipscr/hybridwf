@@ -64,7 +64,7 @@ const C = {
     en: 'Seventeen clauses, none of them optional. A short standard that fully binds is more useful than a long one that mostly suggests.',
     es: 'Diecisiete cláusulas, ninguna opcional. Un estándar corto que obliga del todo es más útil que uno largo que mayormente sugiere.',
   },
-  allClauses: { en: 'All twenty-three clauses', es: 'Las veintitrés cláusulas' },
+  allClauses: { en: 'All twenty-four clauses', es: 'Las veinticuatro cláusulas' },
   artTitle: { en: 'The framework underneath', es: 'El marco que lo sostiene' },
   artLede: {
     en: 'The standard governs the occupant. WRM governs the work, and the work comes first.',

@@ -10,6 +10,12 @@ export const FORWARD_RULE: T = {
   es: 'No se sustituye primero y se descubre después si funcionaba. La transición se gana con evidencia.',
 };
 
+/** Step zero — the precondition of the playbook (HWF-24). */
+export const FORWARD_PRECONDITION: T = {
+  en: 'Before step one: the human impact assessment of HWF-24, recorded, with affected workers and their representatives informed and consulted. The playbook transfers the work; the assessment governs what the transfer does to people.',
+  es: 'Antes del paso uno: la evaluación de impacto humano de HWF-24, registrada, con los trabajadores afectados y sus representantes informados y consultados. El playbook transfiere el trabajo; la evaluación gobierna lo que la transferencia le hace a la gente.',
+};
+
 export interface Step {
   n: number;
   name: T;
@@ -26,7 +32,7 @@ export const FORWARD: Step[] = [
   { n: 7, name: { en: 'Controlled production', es: 'Producción controlada' }, control: { en: 'Limited authority and frequent approvals.', es: 'Autoridad limitada y aprobaciones frecuentes.' } },
   { n: 8, name: { en: 'Performance gate', es: 'Performance gate' }, control: { en: 'Ownership is not transferred until quality, cost and risk thresholds are met.', es: 'No se transfiere ownership hasta alcanzar umbrales de calidad, costo y riesgo.' } },
   { n: 9, name: { en: 'Gradual transfer', es: 'Transferencia gradual' }, control: { en: 'Increase scope and autonomy; keep reversibility.', es: 'Aumentar scope y autonomía; mantener reversibilidad.' } },
-  { n: 10, name: { en: 'Human reallocation', es: 'Reasignación humana' }, control: { en: 'Move released human capacity toward higher-value work where that makes sense.', es: 'Mover capacidad humana liberada hacia trabajo de mayor valor cuando tenga sentido.' } },
+  { n: 10, name: { en: 'Human reallocation', es: 'Reasignación humana' }, control: { en: 'Move released human capacity toward higher-value work, against the training and reassignment plan recorded in the impact assessment (HWF-24).', es: 'Mover capacidad humana liberada hacia trabajo de mayor valor, contra el plan de capacitación y reasignación registrado en la evaluación de impacto (HWF-24).' } },
   { n: 11, name: { en: 'Formal handoff', es: 'Handoff formal' }, control: { en: 'Update org chart, RACI/ownership, access and communication.', es: 'Actualizar organigrama, RACI/ownership, accesos y comunicación.' } },
   { n: 12, name: { en: 'Post-transition review', es: 'Revisión post-transición' }, control: { en: 'Review at 30/60/90 days and revert if performance deteriorates.', es: 'Revisar a 30/60/90 días y revertir si el desempeño se deteriora.' } },
 ];

@@ -302,6 +302,14 @@ export const TERMS: Term[] = [
     },
   },
   {
+    id: 'G-37',
+    term: { en: 'Human impact assessment', es: 'Evaluación de impacto humano' },
+    definition: {
+      en: 'The recorded assessment HWF-24 requires before any material transformation of a post: who is affected; changes to work, autonomy and surveillance; deskilling; exception load; discrimination and accessibility; displacement and headcount; training and reassignment; effects on customers and third parties. Completed, informed and consulted before the transition begins — not after. It is not obliged to be favourable; it is obliged to be honest. Distinct from the risk-class impact assessment of HWF-22, which protects the operation: this one protects the people.',
+      es: 'La evaluación registrada que HWF-24 exige antes de cualquier transformación material de un puesto: a quiénes afecta; cambios en trabajo, autonomía y vigilancia; deskilling; carga de excepciones; discriminación y accesibilidad; desplazamiento y reducción de personal; capacitación y reasignación; efectos sobre clientes y terceros. Completada, informada y consultada antes de que la transición comience — no después. No está obligada a ser favorable; está obligada a ser honesta. Distinta de la evaluación de impacto por clase de riesgo de HWF-22, que protege la operación: esta protege a las personas.',
+    },
+  },
+  {
     id: 'G-25',
     term: { en: 'Hybrid post', es: 'Puesto híbrido' },
     definition: {

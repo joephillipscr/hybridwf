@@ -24,7 +24,7 @@ import { BOUNDARY_WARNING, DOMAINS, LIFECYCLE, PRINCIPLE_LAYERS, RULES as WRM_RU
 import { COUNTS, MATRIX_CAVEAT, PRINCIPLES, P_DOMAINS } from '../lib/principles';
 import { AUTONOMY, AUTONOMY_NOTE, DIMENSIONS } from '../lib/hwfs';
 import { ANTI_KPI, CAPACITY_ELEVATION, CEO_NOTE, KPIS, MISSION, PLACEMENT, RESPONSIBILITIES, ROLE_NAME } from '../lib/role';
-import { BACK, BACK_INTRO, BACK_NOTE, FORWARD, FORWARD_INTRO, FORWARD_RULE } from '../lib/transitions';
+import { BACK, BACK_INTRO, BACK_NOTE, FORWARD, FORWARD_INTRO, FORWARD_PRECONDITION, FORWARD_RULE } from '../lib/transitions';
 import { ACRONYM_RULE, GLOSSARY_NOTE, TERMS as GLOSSARY_TERMS } from '../lib/glossary';
 import { DISCLOSURE, MODEL, PROCESS, RELEASES, RULES as GOV_RULES, SEATS, STATUS_NOTE, VERSIONING_POLICY } from '../lib/governance';
 import { LICENSE, attributionPlain } from '../lib/license';
@@ -279,6 +279,7 @@ function build(lang: Locale): string {
   h(2, t('transitions'));
   h(3, t('forward'));
   p(L(FORWARD_INTRO, lang));
+  p(`**${L(FORWARD_PRECONDITION, lang)}**`);
   p(table(['#', t('colStep'), t('colControl')], FORWARD.map((s) => [String(s.n), L(s.name, lang), L(s.control, lang)])));
   p(`**${L(FORWARD_RULE, lang)}**`);
   h(3, t('back'));
@@ -353,7 +354,7 @@ function llmsTxt(): string {
   return [
     `# ${SITE_NAME}`,
     '',
-    `> An open administrative standard for AI Employees: twenty-three normative clauses, a nine-property test, the WRM (Work Resource Management) framework, a 120-principle matrix, a maturity model, and the HWFS decision instrument. Published under ${LICENSE.id}. Version ${STANDARD_VERSION}, ${STANDARD_DATE}.`,
+    `> An open administrative standard for AI Employees: twenty-four normative clauses, a nine-property test, the WRM (Work Resource Management) framework, a 120-principle matrix, a maturity model, and the HWFS decision instrument. Published under ${LICENSE.id}. Version ${STANDARD_VERSION}, ${STANDARD_DATE}.`,
     '',
     'A chatbot answers. A copilot helps. An agent executes a task. An AI Employee holds a role. A human answers for it.',
     '',

@@ -234,6 +234,12 @@ Every conformance claim publishes these nine fields (HWF-21). A claim missing an
 
 *Note:* HWF-22 classifies by judgement, and judgement can be motivated: without a floor, an organisation under cost pressure classifies dismissal decisions as Moderate and lets the queue decide. This list is the floor no assessment can lower — the subjects where being wrong lands on a person rather than on a ledger. The second half of the clause exists because human-in-the-loop degenerates by default: an approver facing two hundred recommendations a day, each pre-scored and pre-drafted, approves at a rate that makes understanding impossible, and automation bias does the rest. That is not oversight; it is the ceremony of oversight. The test of a real decision is operational: the human can reconstruct the determinants — HWF-06 exists to hand them the material — has the authority and the time to decide otherwise, and a divergent decision carries no penalty by default. Where approval throughput makes restating the case impossible, the organisation has automated the decision and retained a human signature: responsibility lost rather than delegated, in HWF-02’s terms. The list interoperates with GDPR Article 22 and the EU AI Act’s human-oversight requirements in the same posture as the risk classification — designed to travel, without claiming legal equivalence.
 
+### HWF-24
+
+**No post may be materially transformed — automated, hybridised or returned — without a recorded human impact assessment, completed before the transition begins. The assessment must name who is affected and how: changes to work, autonomy and surveillance; the risk of deskilling; the intensified load on those who absorb the exceptions; discrimination and accessibility; displacement and headcount; training and reassignment; effects on customers and third parties. Affected workers and their representatives must be informed and consulted before the transformation, not after it. The assessment is not required to reach a favourable conclusion; it is required to name, measure and govern the consequences.**
+
+*Note:* This is HWF-20 given an instrument. A hierarchy of constraints means little if nothing checks it at the moment it is tested, and the moment is the transition: the playbook as first written moved from baseline to handoff with people appearing once, as released capacity, in step ten. The assessment runs before step one. Two of its dimensions repay attention because nobody volunteers them. Deskilling is the quiet one: the organisation that automates its junior work stops producing seniors, and discovers it the year the seniors leave. The exception load is the cruel one: automation absorbs the easy cases and leaves humans a stream of nothing but hard ones, then measures them against throughput set in the era of easy cases. Consultation is mandatory and is not consent: this standard grants no veto, and labour law in each jurisdiction may grant more — the clause is a floor, in the same posture toward EU AI Act Article 26 as the rest of the document, designed to travel without claiming legal equivalence. The closing sentence keeps HWF-20’s honesty: an assessment obliged to bless the transition would be theatre, and consequences that are named, measured and governed are the difference between displacement and abuse.
+
 ## Risk classification
 
 A class is judged on inherent risk across seven factors — rights affected, scale of people touched, reversibility, presence of vulnerable people, data sensitivity, adversarial exposure and concentration of power — never on the cost of error alone. Controls lower residual risk; they never lower the class.
@@ -606,6 +612,8 @@ The share of human capacity released by automation that moved to higher-value wo
 
 The objective is not to “replace a person”. It is to transfer responsibility in a controlled way after demonstrating that the new design produces results equal to or better than the old one, within permitted risk.
 
+**Before step one: the human impact assessment of HWF-24, recorded, with affected workers and their representatives informed and consulted. The playbook transfers the work; the assessment governs what the transfer does to people.**
+
 | # | Step | Control |
 | --- | --- | --- |
 | 1 | Baseline | Document current performance: quality, cost, time, errors, exceptions and tacit knowledge. |
@@ -617,7 +625,7 @@ The objective is not to “replace a person”. It is to transfer responsibility
 | 7 | Controlled production | Limited authority and frequent approvals. |
 | 8 | Performance gate | Ownership is not transferred until quality, cost and risk thresholds are met. |
 | 9 | Gradual transfer | Increase scope and autonomy; keep reversibility. |
-| 10 | Human reallocation | Move released human capacity toward higher-value work where that makes sense. |
+| 10 | Human reallocation | Move released human capacity toward higher-value work, against the training and reassignment plan recorded in the impact assessment (HWF-24). |
 | 11 | Formal handoff | Update org chart, RACI/ownership, access and communication. |
 | 12 | Post-transition review | Review at 30/60/90 days and revert if performance deteriorates. |
 
@@ -713,6 +721,8 @@ One term, two languages, one numbered definition. Where the English term is used
 
 **G-36 · Reserved decision** — A decision subject an artificial resource may never take alone, whatever the post’s assessed risk class: material effects on employment, health and safety, credit and essential services, legal rights, use of force, or vulnerable people (HWF-23). The resource may analyse, draft and recommend; a human decides — and only counts as deciding while able to restate the case and decide otherwise. Approval at a throughput that forecloses understanding is a signature, not a decision.
 
+**G-37 · Human impact assessment** — The recorded assessment HWF-24 requires before any material transformation of a post: who is affected; changes to work, autonomy and surveillance; deskilling; exception load; discrimination and accessibility; displacement and headcount; training and reassignment; effects on customers and third parties. Completed, informed and consulted before the transition begins — not after. It is not obliged to be favourable; it is obliged to be honest. Distinct from the risk-class impact assessment of HWF-22, which protects the operation: this one protects the people.
+
 **G-25 · Hybrid post** — A post whose responsibilities are split explicitly between a human and an artificial resource, with defined handoffs, context transfer and a single owner of the overall result. Badly designed, it produces two occupants each waiting for the other to answer.
 
 ## Governance
@@ -794,6 +804,7 @@ You may quote, embed, teach, translate and commercially use this material with a
 | S24 | [OECD — AI Principles (human-centred values: dignity, autonomy, social justice, labour rights)](https://oecd.ai/en/ai-principles) |
 | S25 | [EU — Artificial Intelligence Act: regulatory framework on AI (risk-based approach)](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai) |
 | S26 | [EU — GDPR Article 22: automated individual decision-making](https://gdpr-info.eu/art-22-gdpr/) |
+| S27 | [EU — AI Act Article 26: obligations of deployers of high-risk AI systems (worker information)](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-26) |
 
 ### Academic signals
 
@@ -834,9 +845,10 @@ You may quote, embed, teach, translate and commercially use this material with a
 
 ### v1.0 · 2026-08-12 · Proposal — Review Board forming
 
-- First publication: twenty-three normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS instrument, the Hybrid Workforce Manager role and the transition playbooks.
+- First publication: twenty-four normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS instrument, the Hybrid Workforce Manager role and the transition playbooks.
 - Certification was deliberately excluded from scope. This standard scores no products and issues no seals.
 - The HWFS returns a structured argument rather than a 0–100 score, resolving a contradiction present in the source research.
+- HWF-24 makes a recorded human impact assessment a precondition of any material transformation of a post, in either direction. Eight dimensions — who is affected; work, autonomy and surveillance; deskilling; exception load; discrimination and accessibility; displacement and headcount; training and reassignment; customers and third parties — with affected workers and their representatives informed and consulted before the transformation. The gap was visible in the playbook itself, where people appeared once, as released capacity, in step ten; the assessment now runs before step one, and step ten executes against its training and reassignment plan. Consultation is not consent and no veto is granted; the clause is a floor interoperating with EU AI Act Article 26 without claiming legal equivalence. No favourable conclusion is required — an assessment obliged to bless the transition would be theatre. Adds G-37 and Article 26 to the sources.
 - HWF-23 reserves certain decisions to humans by subject matter: material effects on employment, health and safety, credit and essential services, legal rights, use of force, and vulnerable people. It exists because HWF-22 classifies by judgement and judgement can be motivated — the list is the floor no assessment can lower, and a reserved decision is Critical by definition. Artificial participation remains allowed: analysis, drafting, recommendation. The decision may not be delegated, and the clause defines what deciding means — an approval by a human who cannot restate the case and decide otherwise is a signature, not a decision — because human-in-the-loop degenerates into approval throughput by default. Interoperates with GDPR Article 22 and the EU AI Act’s oversight requirements without claiming legal equivalence. Adds G-36 and GDPR Article 22 to the sources.
 - HWF-22 defines the five-tier risk classification the document previously used without defining: Prohibited, Critical, High, Moderate, Low. HWF-05 spoke of high-risk actions and HWF-21 required a risk class in every conformance declaration, and neither term resolved anywhere. The class is judged on inherent risk across seven factors — rights, scale, reversibility, vulnerable people, data sensitivity, adversarial exposure, concentration of power — never on cost of error alone, and controls lower residual risk but never the class, so a guardrail cannot buy a better tier. Critical always terminates in a final human decision; Prohibited cannot be made conformant by any control and is a precondition of the HWFS rather than an output of it. The tiers interoperate with risk-based regimes such as the EU AI Act without claiming legal equivalence. Adds G-35, the classification table, and the EU AI Act to the sources.
 - The nine-property test became conjunctive. The caveat said a system “missing several” properties may still be an agent, which implied one or two absences were tolerable — indefensible for defining properties, all nine of which the clauses already require individually, and an open invitation to seven-of-nine marketing. Qualification now requires all nine, with presence binary and depth graded by the maturity model. The proposal’s second half — tying qualification to satisfying the clauses as well — was rejected for vacuity: if violating a clause removed the category, no deployment could ever violate the standard, because violators would exit it instead of breaching it. A deployment in breach is a non-conformant AI Employee, not a non-AI-Employee.

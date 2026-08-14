@@ -6,6 +6,7 @@ import {
   BACK_NOTE,
   FORWARD,
   FORWARD_INTRO,
+  FORWARD_PRECONDITION,
   FORWARD_RULE,
 } from '@/lib/transitions';
 import type { Locale } from '@/lib/site';
@@ -32,7 +33,10 @@ export default function TransitionsPage({ lang }: { lang: Locale }) {
           title={C.forwardTitle[lang]}
           lede={FORWARD_INTRO[lang]}
         />
-        <div className="mt-10 overflow-x-auto">
+        <p className="mt-8 max-w-3xl border-l-2 border-accent pl-5 text-[0.95rem] leading-relaxed text-fg">
+          {FORWARD_PRECONDITION[lang]}
+        </p>
+        <div className="mt-8 overflow-x-auto">
           <table className="table-x min-w-[40rem]">
             <thead>
               <tr>
