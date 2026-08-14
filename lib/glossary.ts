@@ -65,8 +65,8 @@ export const TERMS: Term[] = [
     id: 'G-06',
     term: { en: 'Context Provisioning', es: 'Context Provisioning' },
     definition: {
-      en: 'The onboarding equivalent for an artificial resource. Divided into must know, may consult and must not access — the third category is what keeps “more context” from becoming “more risk”.',
-      es: 'El equivalente al onboarding para un recurso artificial. Se divide en debe saber, puede consultar y no debe acceder — la tercera categoría es la que evita que «más contexto» se convierta en «más riesgo».',
+      en: 'The onboarding equivalent for an artificial resource. Divided into must know, may consult and must not access. The third category has two legitimate grounds: protecting the information from the resource, and protecting the resource’s judgement from the information (HWF-18); either way, the restriction is recorded, never silent.',
+      es: 'El equivalente al onboarding para un recurso artificial. Se divide en debe saber, puede consultar y no debe acceder. La tercera categoría tiene dos fundamentos legítimos: proteger la información del recurso, y proteger el criterio del recurso de la información (HWF-18); en ambos casos la restricción queda registrada, nunca silenciosa.',
     },
   },
   {
@@ -251,6 +251,14 @@ export const TERMS: Term[] = [
     definition: {
       en: 'Behaviour whose function is to make a person believe an artificial resource has an inner life it does not have: injected latency and typing indicators that stand in for thinking, verbal hesitation, or claims of feeling and care. Distinct from clear and courteous communication, which is competence. The test is purpose rather than surface: whether the behaviour exists to suggest a mind with something at stake. Prohibited by HWF-10 even where the system has disclosed that it is software.',
       es: 'Conducta cuya función es hacer creer a una persona que un recurso artificial tiene una vida interior que no tiene: latencia inyectada e indicadores de tipeo que hacen de pensamiento, vacilación verbal, o declaraciones de sentimiento y cuidado. Se distingue de la comunicación clara y cortés, que es competencia. La prueba es el propósito y no la superficie: si la conducta existe para sugerir una mente con algo en juego. Prohibida por HWF-10 incluso cuando el sistema haya declarado que es software.',
+    },
+  },
+  {
+    id: 'G-31',
+    term: { en: 'Deliberate opacity', es: 'Opacidad deliberada' },
+    definition: {
+      en: 'A recorded design decision to withhold context from an artificial resource, either to protect the information from the resource or to protect the resource\u2019s judgement from the information: anchoring, confirmation bias, operational overload. It differs from an omission by exactly one property \u2014 it is written in the role contract, versioned and available to the audit. An unrecorded restriction is not opacity but a gap, and responsibility for whatever it degrades lies with whoever withheld the context (HWF-18).',
+      es: 'Una decisi\u00f3n de dise\u00f1o registrada de retenerle contexto a un recurso artificial, sea para proteger la informaci\u00f3n del recurso o para proteger el criterio del recurso de la informaci\u00f3n: anclaje, sesgo de confirmaci\u00f3n, sobrecarga operativa. Se distingue de una omisi\u00f3n por exactamente una propiedad \u2014 est\u00e1 escrita en el contrato de rol, versionada y disponible para la auditor\u00eda. Una restricci\u00f3n sin registro no es opacidad sino un hueco, y la responsabilidad por lo que degrade recae en quien retuvo el contexto (HWF-18).',
     },
   },
   {

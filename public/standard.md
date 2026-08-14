@@ -174,6 +174,12 @@ The clause text is the citable unit; cite it by identifier, so HWF-07 rather tha
 
 *Note:* The most common defect in a role contract is not that it was written badly. It is that nobody has looked at it since the day of deployment, while the products, the policies, the customers and the exception patterns all moved. The resource sits closer to the work than its owner does and sees the divergence first, so requiring it to report what its own data shows costs little and prevents silent drift. A finding is not a petition: an AI Employee has no interests to advance, and treating its report as a negotiation would reintroduce exactly the confusion HWF-11 exists to prevent. The decision always rises to a human, and never to the artificial supervisor above it, because a system that can widen its own scope through another system does not have a bounded scope.
 
+### HWF-18
+
+**Context provisioning must be deliberate in both directions. Withholding context from an AI Employee is a legitimate design decision, whether to protect the information or to protect the quality of the resource’s judgement; it is not an omission and must not be treated as one. Every restriction must be recorded in the role contract, versioned like any other authority, and available to the audit. Responsibility for a decision degraded by withheld context lies with whoever withheld it.**
+
+*Note:* The risk justification was always here: context has been divided into must know, may consult and must not access since the first draft. What was missing was the second reason to restrict. A resource that sees every prior dispute anchors on them; one that reads the last diagnosis inherits it; one that is given everything relevant drowns the signal in the merely related. Confirmation bias and operational overload are failures of judgement rather than leaks of information, and a manager reading a risk-only clause has no ground to withhold anything that is not sensitive. The record is the price of the tool, because deliberate opacity is otherwise the perfect instrument for laundering accountability — “the system did not have that context” is the AI-native descendant of “nobody told me”. A restriction that is written down, versioned and auditable is design; the same restriction undocumented is a defence prepared in advance, and the closing sentence of the clause takes that defence away. None of this legitimises starving a resource of what its role needs: withholding the context required to escalate well is not opacity but sabotage of HWF-09.
+
 ## Maturity model
 
 | Level | Name | Definition |
@@ -262,7 +268,7 @@ The founding idea is to separate the post from its occupant. First there is an o
 3. Responsibility and authority must travel together: no result is demanded without granting the necessary faculties.
 4. All authority must be explicit, limited and revocable.
 5. Every resource must know its limits, its handoffs and when to escalate.
-6. Access is granted under least privilege and is separated from the identity of the model or the prompt.
+6. Access is granted under least privilege and is separated from the identity of the model or the prompt. Context is provisioned on the same basis: what is granted and what is withheld are both recorded design decisions.
 7. Every material action executed by an AI Employee must be traceable and auditable.
 8. Performance is measured by outcomes, quality, risk and cost — not by activity, hours, tokens or message count.
 9. A Human ↔ Artificial transition must remain reversible until stable performance is demonstrated.
@@ -347,7 +353,7 @@ The matrix is an original synthesis of organisational design, HR, performance ma
 | 54 | Update on policy change | Retrain when rules, products or context change. | Update policy/context immediately and verify comprehension with evals. | U |
 | 55 | Clear communication of expectations | Reduce ambiguity in objectives and standards. | Unambiguous Role Contract, prompts, policies and definitions of done. | U |
 | 56 | Defined official channels | The organisation determines where each type of communication happens. | Channels and tools authorised by type of interaction. | U |
-| 57 | Sufficient context to decide | The person needs relevant and timely information. | Context engineering, retrieval and memory sufficient, without overexposure. | U |
+| 57 | Sufficient context to decide | The person needs relevant and timely information. | Context engineering, retrieval and memory sufficient; anything withheld is a recorded design decision, never a silent gap. | U |
 | 58 | Right information, right actor | Need-to-know principle. | Need-to-know enforced by RBAC, retrieval filters and data scopes. | U |
 | 59 | Document important decisions | Record for continuity, control and audit. | Structured logs, tool traces and decision records. | U |
 | 60 | Clear handoffs | Explicit transfer between people or teams. | Agent-to-agent and AI-to-human handoffs with state, context and ownership. | U |
@@ -579,7 +585,7 @@ One term, two languages, one numbered definition. Where the English term is used
 
 **G-05 · Shadow mode** — A stage in which the artificial resource executes the work but its actions do not affect the operation. Results are compared against a human baseline. The operational equivalent of probation.
 
-**G-06 · Context Provisioning** — The onboarding equivalent for an artificial resource. Divided into must know, may consult and must not access — the third category is what keeps “more context” from becoming “more risk”.
+**G-06 · Context Provisioning** — The onboarding equivalent for an artificial resource. Divided into must know, may consult and must not access. The third category has two legitimate grounds: protecting the information from the resource, and protecting the resource’s judgement from the information (HWF-18); either way, the restriction is recorded, never silent.
 
 **G-07 · Authority Matrix** — The record of what a resource may read, write, decide, spend, communicate or execute, and which of those require approval. Autonomy without an authority matrix is an empty word.
 
@@ -626,6 +632,8 @@ One term, two languages, one numbered definition. Where the English term is used
 **G-29 · Decision determinants** — The state that produced a particular action: the policy in force, the knowledge retrieved and its provenance, the tool results returned, the authority in effect, and the versions of model and configuration running at that moment. Distinct from the outcome, which says what happened, and from a reasoning trace, which says what the system reports having thought. Determinants are what allow a failure to be attributed to a cause rather than merely recorded.
 
 **G-30 · Simulated interiority** — Behaviour whose function is to make a person believe an artificial resource has an inner life it does not have: injected latency and typing indicators that stand in for thinking, verbal hesitation, or claims of feeling and care. Distinct from clear and courteous communication, which is competence. The test is purpose rather than surface: whether the behaviour exists to suggest a mind with something at stake. Prohibited by HWF-10 even where the system has disclosed that it is software.
+
+**G-31 · Deliberate opacity** — A recorded design decision to withhold context from an artificial resource, either to protect the information from the resource or to protect the resource’s judgement from the information: anchoring, confirmation bias, operational overload. It differs from an omission by exactly one property — it is written in the role contract, versioned and available to the audit. An unrecorded restriction is not opacity but a gap, and responsibility for whatever it degrades lies with whoever withheld the context (HWF-18).
 
 **G-25 · Hybrid post** — A post whose responsibilities are split explicitly between a human and an artificial resource, with defined handoffs, context transfer and a single owner of the overall result. Badly designed, it produces two occupants each waiting for the other to answer.
 
@@ -745,9 +753,10 @@ You may quote, embed, teach, translate and commercially use this material with a
 
 ### v1.0 · 2026-08-12 · Proposal — Review Board forming
 
-- First publication: seventeen normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS instrument, the Hybrid Workforce Manager role and the transition playbooks.
+- First publication: eighteen normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS instrument, the Hybrid Workforce Manager role and the transition playbooks.
 - Certification was deliberately excluded from scope. This standard scores no products and issues no seals.
 - The HWFS returns a structured argument rather than a 0–100 score, resolving a contradiction present in the source research.
+- HWF-18 makes context provisioning deliberate in both directions. The restriction categories existed from the first draft, but every stated reason for them was informational risk, so nothing stopped a manager from granting all non-sensitive context even where it would degrade the resource’s judgement through anchoring, confirmation bias or overload. The proposal behind it asked for a new WRM domain of opacity; it entered as a clause instead, because opacity is a technique inside existing domains rather than a management function. The clause makes the record mandatory and assigns responsibility for decisions degraded by withheld context to whoever withheld it, because undocumented opacity is an accountability-laundering instrument. Adds G-31 and extends G-06, matrix principle 57 and WRM rule 6.
 - HWF-10 now prohibits simulating an interior state the system does not have, alongside deceiving anyone about its nature as software. Disclosure alone left a gap: a system could announce itself as software and still perform hesitation and warmth designed to lower the reader’s guard. The clause targets purpose rather than surface, so fluency and courtesy remain competence while injected latency, verbal hesitation and claims of feeling do not. The proposal behind it asked for communication to be functionally distinguishable from human interaction, which would have required AI Employees to write badly and would have been unauditable.
 - HWF-06 now requires an audit to reconstruct the determinants of a decision — policy, knowledge, tool results, authority and versions in force — and not only its outcome. A what-only audit leaves a wrong policy, stale knowledge, a bad tool result, a model error and a misassigned role looking identical, and those five need different remedies. The clause states in its citable text that a model’s account of its own reasoning supports the reconstruction without substituting for it, because stated reasoning is not reliable evidence of cause and a standard that accepted it would license confidently wrong postmortems.
 - HWF-17 requires a role contract to be revisable, to be reviewed on a stated cadence, and to have divergence between measured outcomes and stated mission reported upward by the resource itself. It is framed as a finding rather than a request: an AI Employee has no interests to advance, and a system able to argue for its own expanded authority is a privilege-escalation path dressed as an HR feature. The decision stays with the accountable owner and never with an artificial supervisor.

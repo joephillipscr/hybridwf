@@ -174,6 +174,12 @@ El texto de la cláusula es la unidad citable; citala por identificador, o sea H
 
 *Nota:* El defecto más común de un contrato de rol no es que esté mal escrito. Es que nadie lo miró desde el día del deployment, mientras los productos, las políticas, los clientes y los patrones de excepción se movieron todos. El recurso está más cerca del trabajo que su dueño y ve la divergencia primero, así que exigirle que reporte lo que sus propios datos muestran cuesta poco y evita la deriva silenciosa. Un hallazgo no es una petición: un AI Employee no tiene intereses que defender, y tratar su reporte como una negociación reintroduciría exactamente la confusión que HWF-11 existe para impedir. La decisión sube siempre a un humano, y nunca al supervisor artificial que tenga encima, porque un sistema capaz de ampliar su propio alcance a través de otro sistema no tiene un alcance acotado.
 
+### HWF-18
+
+**El aprovisionamiento de contexto debe ser deliberado en ambas direcciones. Retenerle contexto a un AI Employee es una decisión de diseño legítima, sea para proteger la información o para proteger la calidad del criterio del recurso; no es una omisión y no debe tratarse como tal. Toda restricción debe registrarse en el contrato de rol, versionarse como cualquier otra autoridad, y estar disponible para la auditoría. La responsabilidad por una decisión degradada por contexto retenido recae en quien lo retuvo.**
+
+*Nota:* La justificación de riesgo siempre estuvo: el contexto se divide en debe saber, puede consultar y no debe acceder desde el primer borrador. Lo que faltaba era la segunda razón para restringir. Un recurso que ve todas las disputas anteriores se ancla en ellas; uno que lee el último diagnóstico lo hereda; uno al que se le entrega todo lo relevante ahoga la señal en lo meramente relacionado. El sesgo de confirmación y la sobrecarga operativa son fallas de criterio y no fugas de información, y un manager que lee una cláusula de solo-riesgo no tiene motivo para retener nada que no sea sensible. El registro es el precio de la herramienta, porque la opacidad deliberada es, sin él, el instrumento perfecto para lavar accountability — «el sistema no tenía ese contexto» es el descendiente nativo de IA de «a mí nadie me avisó». Una restricción escrita, versionada y auditable es diseño; la misma restricción sin documentar es una defensa preparada de antemano, y la última oración de la cláusula le quita esa defensa. Nada de esto legitima matar de hambre a un recurso: retenerle el contexto que necesita para escalar bien no es opacidad sino sabotaje del HWF-09.
+
 ## Modelo de madurez
 
 | Nivel | Nombre | Definición |
@@ -262,7 +268,7 @@ La idea fundacional es separar el puesto del ocupante. Primero existe una necesi
 3. Responsabilidad y autoridad deben estar alineadas: no se exige un resultado sin entregar las facultades necesarias.
 4. Toda autoridad debe ser explícita, limitada y revocable.
 5. Todo recurso debe conocer sus límites, sus handoffs y cuándo escalar.
-6. Los accesos se otorgan bajo least privilege y se separan de la identidad del modelo o del prompt.
+6. Los accesos se otorgan bajo least privilege y se separan de la identidad del modelo o del prompt. El contexto se aprovisiona sobre la misma base: lo que se concede y lo que se retiene son ambas decisiones de diseño registradas.
 7. Toda acción material ejecutada por un AI Employee debe ser trazable y auditable.
 8. El desempeño se mide por outcomes, calidad, riesgo y costo; no por actividad, horas, tokens o cantidad de mensajes.
 9. Una transición Human ↔ Artificial debe ser reversible hasta demostrar performance estable.
@@ -347,7 +353,7 @@ La matriz es una síntesis propia de prácticas de diseño organizacional, RR. H
 | 54 | Actualizar ante cambios de políticas | Reentrenar cuando cambian reglas, productos o contexto. | Actualizar policy/context de forma inmediata y verificar comprensión con evals. | U |
 | 55 | Comunicación clara de expectativas | Reducir ambigüedad en objetivos y estándares. | Role Contract, prompts, policies y definitions of done inequívocos. | U |
 | 56 | Canales oficiales definidos | La organización determina dónde ocurre cada tipo de comunicación. | Channels y tools autorizados por tipo de interacción. | U |
-| 57 | Contexto suficiente para decidir | La persona necesita información relevante y oportuna. | Context engineering, retrieval y memory suficientes, sin sobreexposición. | U |
+| 57 | Contexto suficiente para decidir | La persona necesita información relevante y oportuna. | Context engineering, retrieval y memory suficientes; lo retenido es una decisión de diseño registrada, nunca un hueco silencioso. | U |
 | 58 | Right information, right actor | Principio need-to-know. | Need-to-know enforced por RBAC, retrieval filters y data scopes. | U |
 | 59 | Documentar decisiones importantes | Registro para continuidad, control y auditoría. | Logs estructurados, tool traces y decision records. | U |
 | 60 | Handoffs claros | Transferencia explícita entre personas o equipos. | Agent-to-agent y AI-to-human handoffs con estado, contexto y ownership. | U |
@@ -579,7 +585,7 @@ Un término, dos idiomas, una definición numerada. Cuando el término inglés s
 
 **G-05 · Shadow mode** — Etapa en la que el recurso artificial ejecuta el trabajo pero sus acciones no afectan la operación. Los resultados se comparan contra un baseline humano. Equivalente operativo del periodo de prueba.
 
-**G-06 · Context Provisioning** — El equivalente al onboarding para un recurso artificial. Se divide en debe saber, puede consultar y no debe acceder — la tercera categoría es la que evita que «más contexto» se convierta en «más riesgo».
+**G-06 · Context Provisioning** — El equivalente al onboarding para un recurso artificial. Se divide en debe saber, puede consultar y no debe acceder. La tercera categoría tiene dos fundamentos legítimos: proteger la información del recurso, y proteger el criterio del recurso de la información (HWF-18); en ambos casos la restricción queda registrada, nunca silenciosa.
 
 **G-07 · Matriz de autoridad** — El registro de qué puede leer, escribir, decidir, gastar, comunicar o ejecutar un recurso, y cuáles de esas acciones requieren aprobación. La autonomía sin matriz de autoridad es una palabra vacía.
 
@@ -626,6 +632,8 @@ Un término, dos idiomas, una definición numerada. Cuando el término inglés s
 **G-29 · Determinantes de la decisión** — El estado que produjo una acción concreta: la política vigente, el conocimiento recuperado y su procedencia, los resultados que devolvieron las herramientas, la autoridad en efecto, y las versiones de modelo y configuración corriendo en ese momento. Se distingue del resultado, que dice qué pasó, y de una traza de razonamiento, que dice qué reporta el sistema haber pensado. Los determinantes son lo que permite atribuir una falla a una causa en vez de solo registrarla.
 
 **G-30 · Interioridad simulada** — Conducta cuya función es hacer creer a una persona que un recurso artificial tiene una vida interior que no tiene: latencia inyectada e indicadores de tipeo que hacen de pensamiento, vacilación verbal, o declaraciones de sentimiento y cuidado. Se distingue de la comunicación clara y cortés, que es competencia. La prueba es el propósito y no la superficie: si la conducta existe para sugerir una mente con algo en juego. Prohibida por HWF-10 incluso cuando el sistema haya declarado que es software.
+
+**G-31 · Opacidad deliberada** — Una decisión de diseño registrada de retenerle contexto a un recurso artificial, sea para proteger la información del recurso o para proteger el criterio del recurso de la información: anclaje, sesgo de confirmación, sobrecarga operativa. Se distingue de una omisión por exactamente una propiedad — está escrita en el contrato de rol, versionada y disponible para la auditoría. Una restricción sin registro no es opacidad sino un hueco, y la responsabilidad por lo que degrade recae en quien retuvo el contexto (HWF-18).
 
 **G-25 · Puesto híbrido** — Puesto cuyas responsabilidades se reparten explícitamente entre un recurso humano y uno artificial, con handoffs definidos, transferencia de contexto y un único dueño del resultado completo. Mal diseñado, produce dos ocupantes esperando que responda el otro.
 
@@ -745,9 +753,10 @@ Podés citar, embeber, enseñar, traducir y usar comercialmente este material co
 
 ### v1.0 · 2026-08-12 · Propuesta — Review Board en formación
 
-- Primera publicación: diecisiete cláusulas normativas, el test de nueve propiedades, el marco WRM, la matriz de 120 principios, el modelo de madurez, el instrumento HWFS, el rol de Gerente de Fuerza Laboral Híbrida y los playbooks de transición.
+- Primera publicación: dieciocho cláusulas normativas, el test de nueve propiedades, el marco WRM, la matriz de 120 principios, el modelo de madurez, el instrumento HWFS, el rol de Gerente de Fuerza Laboral Híbrida y los playbooks de transición.
 - La certificación se excluyó deliberadamente del alcance. Este estándar no puntúa productos ni emite sellos.
 - El HWFS devuelve un argumento estructurado en lugar de un puntaje 0–100, resolviendo una contradicción presente en la investigación de origen.
+- HWF-18 hace que el aprovisionamiento de contexto sea deliberado en ambas direcciones. Las categorías de restricción existían desde el primer borrador, pero toda razón declarada era el riesgo informacional, así que nada impedía que un manager concediera todo el contexto no sensible incluso donde degradaría el criterio del recurso por anclaje, sesgo de confirmación o sobrecarga. La propuesta que la originó pedía un nuevo dominio de opacidad en el WRM; entró como cláusula, porque la opacidad es una técnica dentro de dominios existentes y no una función de administración. La cláusula vuelve obligatorio el registro y asigna la responsabilidad por decisiones degradadas por contexto retenido a quien lo retuvo, porque la opacidad sin documentar es un instrumento de lavado de accountability. Agrega G-31 y extiende G-06, el principio 57 de la matriz y la regla 6 del WRM.
 - HWF-10 ahora prohíbe simular un estado interior que el sistema no tiene, además de engañar sobre su naturaleza de software. La divulgación sola dejaba un hueco: un sistema podía anunciarse como software y aun así actuar vacilación y calidez diseñadas para bajarle la guardia a quien lee. La cláusula apunta al propósito y no a la superficie, así que la fluidez y la cortesía siguen siendo competencia mientras la latencia inyectada, las muletillas de vacilación y las declaraciones de sentimiento no lo son. La propuesta que la originó pedía que la comunicación fuera funcionalmente distinguible de una interacción humana, lo que habría obligado a los AI Employees a escribir mal y habría sido inauditable.
 - HWF-06 ahora exige que la auditoría reconstruya los determinantes de una decisión — política, conocimiento, resultados de herramientas, autoridad y versiones vigentes — y no solo su resultado. Una auditoría de solo-qué deja idénticos a una política equivocada, un conocimiento envejecido, un mal resultado de herramienta, un error de modelo y un rol mal asignado, y esos cinco necesitan remedios distintos. La cláusula dice en su texto citable que el relato del modelo sobre su propio razonamiento apoya la reconstrucción sin sustituirla, porque el razonamiento declarado no es evidencia confiable de causa y un estándar que lo aceptara habilitaría postmortems confiados y equivocados.
 - HWF-17 exige que un contrato de rol sea revisable, se revise con cadencia declarada, y que la divergencia entre outcomes medidos y misión declarada la reporte hacia arriba el propio recurso. Está formulada como hallazgo y no como solicitud: un AI Employee no tiene intereses que defender, y un sistema capaz de argumentar a favor de su propia autoridad ampliada es un camino de escalamiento de privilegios vestido de función de RR. HH. La decisión queda en el accountable owner y nunca en un supervisor artificial.

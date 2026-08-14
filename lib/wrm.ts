@@ -235,8 +235,8 @@ export const RULES: T[] = [
   { en: 'All authority must be explicit, limited and revocable.', es: 'Toda autoridad debe ser explícita, limitada y revocable.' },
   { en: 'Every resource must know its limits, its handoffs and when to escalate.', es: 'Todo recurso debe conocer sus límites, sus handoffs y cuándo escalar.' },
   {
-    en: 'Access is granted under least privilege and is separated from the identity of the model or the prompt.',
-    es: 'Los accesos se otorgan bajo least privilege y se separan de la identidad del modelo o del prompt.',
+    en: 'Access is granted under least privilege and is separated from the identity of the model or the prompt. Context is provisioned on the same basis: what is granted and what is withheld are both recorded design decisions.',
+    es: 'Los accesos se otorgan bajo least privilege y se separan de la identidad del modelo o del prompt. El contexto se aprovisiona sobre la misma base: lo que se concede y lo que se retiene son ambas decisiones de diseño registradas.',
   },
   { en: 'Every material action executed by an AI Employee must be traceable and auditable.', es: 'Toda acción material ejecutada por un AI Employee debe ser trazable y auditable.' },
   {
