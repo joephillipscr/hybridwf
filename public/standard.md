@@ -168,6 +168,12 @@ The clause text is the citable unit; cite it by identifier, so HWF-07 rather tha
 
 *Note:* Intervening without passing through the chain is the load-bearing part. If stopping an AI Employee three levels down requires asking the one above it, the accountable party holds a request rather than control. Depth is not forbidden and no fixed limit is set here, because the real limit is span of control: a principle this framework classifies as adapted rather than abolished, meaning scale may grow but only against tooling, dashboards and supervision limits that make the growth governable. A single human nominally accountable for a thousand AI Employees across six levels, with no instrument capable of showing what any of them did, has an organisational chart rather than accountability. Describing this architecture is not endorsing it: the standard states what must remain true if an organisation builds one.
 
+### HWF-17
+
+**A role contract must be revisable and must be reviewed at a stated cadence. Where an AI Employee’s own performance data shows divergence between measured outcomes and its stated mission, authority or KPIs, that divergence must be reported to the accountable owner as a finding. The decision to change a role contract is always human and belongs to the accountable owner; it is never taken by an artificial supervisor and never applied automatically.**
+
+*Note:* The most common defect in a role contract is not that it was written badly. It is that nobody has looked at it since the day of deployment, while the products, the policies, the customers and the exception patterns all moved. The resource sits closer to the work than its owner does and sees the divergence first, so requiring it to report what its own data shows costs little and prevents silent drift. A finding is not a petition: an AI Employee has no interests to advance, and treating its report as a negotiation would reintroduce exactly the confusion HWF-11 exists to prevent. The decision always rises to a human, and never to the artificial supervisor above it, because a system that can widen its own scope through another system does not have a bounded scope.
+
 ## Maturity model
 
 | Level | Name | Definition |
@@ -244,7 +250,7 @@ The founding idea is to separate the post from its occupant. First there is an o
 | 6 | Prove | Probation or shadow mode, simulations, evaluations and intensive approval. |
 | 7 | Operate | Recurring work with observability and management by exception. |
 | 8 | Measure | KPIs, quality, cost, incidents, interventions and outcomes. |
-| 9 | Develop | Coaching or updates to instructions, knowledge, models and tools. |
+| 9 | Develop | Coaching or updates to instructions, knowledge, models and tools. The signal may originate with the manager or with the resource reporting divergence from its own data. |
 | 10 | Reassign | Change scope, move Human ↔ Artificial, redesign the hybrid split. |
 | 11 | Suspend | Stop work or access on risk, incident or unacceptable performance. |
 | 12 | Retire | Offboarding, revocation, knowledge transfer and retention or deletion. |
@@ -615,6 +621,8 @@ One term, two languages, one numbered definition. Where the English term is used
 
 **G-27 · Supervision chain** — The path from an AI Employee upward through each supervisor to the accountable human or governance body. Chains of any depth are permitted, but each must terminate in a human, be traversable and observable end to end, and allow the accountable party to intervene at any point without going through the chain itself. Depth is bounded by span of control rather than by a fixed number: scale may grow only against tooling that makes it governable.
 
+**G-28 · Role divergence** — The gap between what an AI Employee actually produces and the mission, authority or KPIs its role contract states. Reported by the resource to its accountable owner as a finding, never as a request: the resource has no interests to advance, and the decision to revise the contract stays with the human. Divergence is the signal that a contract has aged, not evidence that the resource deserves more.
+
 **G-25 · Hybrid post** — A post whose responsibilities are split explicitly between a human and an artificial resource, with defined handoffs, context transfer and a single owner of the overall result. Badly designed, it produces two occupants each waiting for the other to answer.
 
 ## Governance
@@ -733,9 +741,10 @@ You may quote, embed, teach, translate and commercially use this material with a
 
 ### v1.0 · 2026-08-12 · Proposal — Review Board forming
 
-- First publication: sixteen normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS instrument, the Hybrid Workforce Manager role and the transition playbooks.
+- First publication: seventeen normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS instrument, the Hybrid Workforce Manager role and the transition playbooks.
 - Certification was deliberately excluded from scope. This standard scores no products and issues no seals.
 - The HWFS returns a structured argument rather than a 0–100 score, resolving a contradiction present in the source research.
+- HWF-17 requires a role contract to be revisable, to be reviewed on a stated cadence, and to have divergence between measured outcomes and stated mission reported upward by the resource itself. It is framed as a finding rather than a request: an AI Employee has no interests to advance, and a system able to argue for its own expanded authority is a privilege-escalation path dressed as an HR feature. The decision stays with the accountable owner and never with an artificial supervisor.
 - HWF-02 separates supervision from accountability. An AI Employee may supervise another; accountability terminates in an identified human or governance body no matter how deep the chain. HWF-16 was added alongside it, requiring that chain to be traversable, observable, and interruptible without passing through itself. Before publication these read as a single clause requiring a direct human manager, which would have made a deep artificial hierarchy non-conformant by wording rather than by intent.
 
 Clause text changes require a version bump and a Board vote. Notes, examples and commentary may be corrected between versions without amending the standard. Every published version stays at its own permanent address so that a citation made today still resolves in five years.

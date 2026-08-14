@@ -168,6 +168,12 @@ El texto de la cláusula es la unidad citable; citala por identificador, o sea H
 
 *Nota:* Intervenir sin pasar por la cadena es la parte que sostiene todo. Si detener a un AI Employee tres niveles abajo exige pedírselo al que está encima, quien responde tiene una petición y no control. La profundidad no está prohibida ni se fija un límite acá, porque el límite real es el span of control: un principio que este marco clasifica como adaptado y no como abolido, o sea que la escala puede crecer pero solo contra tooling, dashboards y límites de supervisión que hagan gobernable ese crecimiento. Un solo humano nominalmente accountable por mil AI Employees repartidos en seis niveles, sin un instrumento capaz de mostrar qué hizo cada uno, tiene un organigrama y no accountability. Describir esta arquitectura no es endosarla: el estándar dice qué debe seguir siendo cierto si una organización la construye.
 
+### HWF-17
+
+**Un contrato de rol debe ser revisable y debe revisarse con una cadencia declarada. Cuando los propios datos de desempeño de un AI Employee muestran divergencia entre los outcomes medidos y su misión, autoridad o KPIs declarados, esa divergencia debe reportarse al accountable owner como hallazgo. La decisión de cambiar un contrato de rol es siempre humana y le corresponde al accountable owner; nunca la toma un supervisor artificial y nunca se aplica automáticamente.**
+
+*Nota:* El defecto más común de un contrato de rol no es que esté mal escrito. Es que nadie lo miró desde el día del deployment, mientras los productos, las políticas, los clientes y los patrones de excepción se movieron todos. El recurso está más cerca del trabajo que su dueño y ve la divergencia primero, así que exigirle que reporte lo que sus propios datos muestran cuesta poco y evita la deriva silenciosa. Un hallazgo no es una petición: un AI Employee no tiene intereses que defender, y tratar su reporte como una negociación reintroduciría exactamente la confusión que HWF-11 existe para impedir. La decisión sube siempre a un humano, y nunca al supervisor artificial que tenga encima, porque un sistema capaz de ampliar su propio alcance a través de otro sistema no tiene un alcance acotado.
+
 ## Modelo de madurez
 
 | Nivel | Nombre | Definición |
@@ -244,7 +250,7 @@ La idea fundacional es separar el puesto del ocupante. Primero existe una necesi
 | 6 | Probar | Probation o shadow mode, simulaciones, evaluaciones y aprobación intensiva. |
 | 7 | Operar | Trabajo recurrente con observabilidad y management by exception. |
 | 8 | Medir | KPIs, calidad, costo, incidentes, intervenciones y outcomes. |
-| 9 | Desarrollar | Coaching o actualización de instrucciones, conocimiento, modelos y herramientas. |
+| 9 | Desarrollar | Coaching o actualización de instrucciones, conocimiento, modelos y herramientas. La señal puede originarse en el manager o en el recurso reportando divergencia a partir de sus propios datos. |
 | 10 | Reasignar | Cambiar scope, mover Human ↔ Artificial, rediseñar reparto híbrido. |
 | 11 | Suspender | Detener trabajo o accesos ante riesgo, incidente o desempeño inaceptable. |
 | 12 | Retirar | Offboarding, revocación, transferencia de conocimiento y retención/borrado. |
@@ -615,6 +621,8 @@ Un término, dos idiomas, una definición numerada. Cuando el término inglés s
 
 **G-27 · Cadena de supervisión** — El recorrido desde un AI Employee hacia arriba, a través de cada supervisor, hasta el humano o cuerpo de gobierno accountable. Se permiten cadenas de cualquier profundidad, pero cada una debe terminar en un humano, ser recorrible y observable de punta a punta, y permitir que quien responde intervenga en cualquier punto sin pasar por la cadena misma. La profundidad la acota el span of control y no un número fijo: la escala puede crecer solo contra tooling que la haga gobernable.
 
+**G-28 · Divergencia de rol** — La brecha entre lo que un AI Employee realmente produce y la misión, autoridad o KPIs que declara su contrato de rol. El recurso la reporta a su accountable owner como hallazgo, nunca como solicitud: el recurso no tiene intereses que defender, y la decisión de revisar el contrato queda en el humano. La divergencia es la señal de que un contrato envejeció, no la prueba de que el recurso merece más.
+
 **G-25 · Puesto híbrido** — Puesto cuyas responsabilidades se reparten explícitamente entre un recurso humano y uno artificial, con handoffs definidos, transferencia de contexto y un único dueño del resultado completo. Mal diseñado, produce dos ocupantes esperando que responda el otro.
 
 ## Gobierno
@@ -733,9 +741,10 @@ Podés citar, embeber, enseñar, traducir y usar comercialmente este material co
 
 ### v1.0 · 2026-08-12 · Propuesta — Review Board en formación
 
-- Primera publicación: dieciséis cláusulas normativas, el test de nueve propiedades, el marco WRM, la matriz de 120 principios, el modelo de madurez, el instrumento HWFS, el rol de Gerente de Fuerza Laboral Híbrida y los playbooks de transición.
+- Primera publicación: diecisiete cláusulas normativas, el test de nueve propiedades, el marco WRM, la matriz de 120 principios, el modelo de madurez, el instrumento HWFS, el rol de Gerente de Fuerza Laboral Híbrida y los playbooks de transición.
 - La certificación se excluyó deliberadamente del alcance. Este estándar no puntúa productos ni emite sellos.
 - El HWFS devuelve un argumento estructurado en lugar de un puntaje 0–100, resolviendo una contradicción presente en la investigación de origen.
+- HWF-17 exige que un contrato de rol sea revisable, se revise con cadencia declarada, y que la divergencia entre outcomes medidos y misión declarada la reporte hacia arriba el propio recurso. Está formulada como hallazgo y no como solicitud: un AI Employee no tiene intereses que defender, y un sistema capaz de argumentar a favor de su propia autoridad ampliada es un camino de escalamiento de privilegios vestido de función de RR. HH. La decisión queda en el accountable owner y nunca en un supervisor artificial.
 - HWF-02 separa supervisión de accountability. Un AI Employee puede supervisar a otro; la accountability termina en un humano o cuerpo de gobierno identificado por profunda que sea la cadena. HWF-16 se agregó junto con ella, exigiendo que esa cadena sea recorrible, observable e interrumpible sin pasar por sí misma. Antes de publicar, ambas eran una sola cláusula que exigía manager humano directo, lo que habría vuelto no conforme a una jerarquía artificial profunda por redacción y no por intención.
 
 Cambiar el texto de una cláusula exige subir de versión y una votación del Board. Notas, ejemplos y comentario pueden corregirse entre versiones sin enmendar el estándar. Toda versión publicada permanece en su propia dirección permanente para que una cita hecha hoy siga resolviendo en cinco años.

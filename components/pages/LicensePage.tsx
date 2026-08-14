@@ -31,8 +31,8 @@ const C = {
   legal: { en: 'Read the full legal code', es: 'Leer el texto legal completo' },
   covers: { en: 'What this covers', es: 'Qué cubre' },
   coversBody: {
-    en: 'The sixteen clauses, the definition and nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS dimensions, the Hybrid Workforce Manager role, the transition playbooks and the glossary — in both languages.',
-    es: 'Las dieciséis cláusulas, la definición y el test de nueve propiedades, el marco WRM, la matriz de 120 principios, el modelo de madurez, las dimensiones del HWFS, el rol de Gerente de Fuerza Laboral Híbrida, los playbooks de transición y el glosario — en ambos idiomas.',
+    en: 'The seventeen clauses, the definition and nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS dimensions, the Hybrid Workforce Manager role, the transition playbooks and the glossary — in both languages.',
+    es: 'Las diecisiete cláusulas, la definición y el test de nueve propiedades, el marco WRM, la matriz de 120 principios, el modelo de madurez, las dimensiones del HWFS, el rol de Gerente de Fuerza Laboral Híbrida, los playbooks de transición y el glosario — en ambos idiomas.',
   },
 };
 

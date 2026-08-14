@@ -230,6 +230,14 @@ export const TERMS: Term[] = [
     },
   },
   {
+    id: 'G-28',
+    term: { en: 'Role divergence', es: 'Divergencia de rol' },
+    definition: {
+      en: 'The gap between what an AI Employee actually produces and the mission, authority or KPIs its role contract states. Reported by the resource to its accountable owner as a finding, never as a request: the resource has no interests to advance, and the decision to revise the contract stays with the human. Divergence is the signal that a contract has aged, not evidence that the resource deserves more.',
+      es: 'La brecha entre lo que un AI Employee realmente produce y la misión, autoridad o KPIs que declara su contrato de rol. El recurso la reporta a su accountable owner como hallazgo, nunca como solicitud: el recurso no tiene intereses que defender, y la decisión de revisar el contrato queda en el humano. La divergencia es la señal de que un contrato envejeció, no la prueba de que el recurso merece más.',
+    },
+  },
+  {
     id: 'G-25',
     term: { en: 'Hybrid post', es: 'Puesto híbrido' },
     definition: {
