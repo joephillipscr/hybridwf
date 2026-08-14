@@ -286,6 +286,14 @@ export const TERMS: Term[] = [
     },
   },
   {
+    id: 'G-35',
+    term: { en: 'Risk class', es: 'Clase de riesgo' },
+    definition: {
+      en: 'One of five tiers — Prohibited, Critical, High, Moderate, Low — assigned to an AI Employee post by judging inherent risk across seven factors, before controls. Controls lower residual risk, never the class (HWF-22). Declared in every conformance claim (HWF-21); from Critical upward every action terminates in a final human decision, and a Prohibited use has no conformant configuration at all.',
+      es: 'Uno de cinco niveles — Prohibido, Crítico, Alto, Moderado, Bajo — asignado a un puesto de AI Employee juzgando el riesgo inherente a través de siete factores, antes de los controles. Los controles bajan el riesgo residual, nunca la clase (HWF-22). Se declara en toda declaración de conformidad (HWF-21); de Crítico hacia arriba toda acción termina en una decisión humana final, y un uso Prohibido no tiene configuración conforme alguna.',
+    },
+  },
+  {
     id: 'G-25',
     term: { en: 'Hybrid post', es: 'Puesto híbrido' },
     definition: {

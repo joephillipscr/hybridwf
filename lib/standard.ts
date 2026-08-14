@@ -9,7 +9,7 @@ export interface Clause {
 }
 
 /**
- * The Hybrid Workforce Standard v1.0 — twenty-one normative clauses.
+ * The Hybrid Workforce Standard v1.0 — twenty-two normative clauses.
  *
  * Clause text is the citable unit. Notes are commentary and may be revised
  * without a version bump; clause text may not.
@@ -66,8 +66,8 @@ export const CLAUSES: Clause[] = [
       es: 'Las acciones de alto riesgo deben soportar aprobación humana.',
     },
     note: {
-      en: 'Proportionality is the rule: the higher the cost of the error and the harder it is to reverse, the more approval the action carries. Separation of duties applies, so whoever initiates need not approve.',
-      es: 'La regla es proporcionalidad: a mayor costo del error y menor reversibilidad, más aprobación soporta la acción. Aplica separación de funciones, así que quien inicia no necesariamente aprueba.',
+      en: 'Proportionality is the rule: the higher the cost of the error and the harder it is to reverse, the more approval the action carries. Separation of duties applies, so whoever initiates need not approve. What counts as high-risk is not left to taste: it resolves against the risk classification of HWF-22.',
+      es: 'La regla es proporcionalidad: a mayor costo del error y menor reversibilidad, más aprobación soporta la acción. Aplica separación de funciones, así que quien inicia no necesariamente aprueba. Qué cuenta como alto riesgo no queda al gusto: se resuelve contra la clasificación de riesgo de HWF-22.',
     },
   },
   {
@@ -246,6 +246,17 @@ export const CLAUSES: Clause[] = [
       es: 'La conformidad autodeclarada sin unidad definida degenera en frase de marketing en cuestión de meses, y el remedio no es la certificación — excluida del alcance de este estándar y sin regreso — sino la falsificabilidad: una declaración que nombra su deployment, su dueño, sus cláusulas, su periodo, su evidencia y sus limitaciones puede ser verificada o refutada por cualquiera, lo que convierte al público en un auditor más barato que un certificador y más difícil de capturar. Una declaración vencida no es una declaración; la renovación puede compartir calendario con la revisión de existencia de HWF-19. La oración del proveedor es el candado anti-lavado, y la primera plataforma atada por ella es la del propio autor: AIEmpl.com puede declarar que habilita deployments conformes, y nunca puede llamarse a sí misma conforme. Un estándar que no gobierna cómo se lo invoca termina significando lo que el marketing necesite que signifique.',
     },
   },
+  {
+    id: 'HWF-22',
+    text: {
+      en: 'Every AI Employee post must carry a declared risk class from this standard’s scale, assessed twice: inherent risk before controls and residual risk after them. The class follows inherent risk — controls lower the residual, never the class. Autonomy, supervision and approval requirements scale with the class; a Critical action always terminates in a final human decision, and a Prohibited use cannot be made conformant by any control.',
+      es: 'Todo puesto de AI Employee debe portar una clase de riesgo declarada de la escala de este estándar, evaluada dos veces: riesgo inherente antes de los controles y riesgo residual después de ellos. La clase sigue al riesgo inherente — los controles bajan el residual, nunca la clase. La autonomía, la supervisión y los requisitos de aprobación escalan con la clase; una acción Crítica termina siempre en una decisión humana final, y un uso Prohibido no puede volverse conforme mediante ningún control.',
+    },
+    note: {
+      en: 'The class answers HWF-05’s open term: what counts as high-risk resolves against this scale rather than against taste. Judgement runs on seven factors — rights affected, scale of people touched, reversibility, presence of vulnerable people, data sensitivity, adversarial exposure and concentration of power — never on the cost of error alone, because a cheap error at scale against vulnerable people is not a cheap error. The lock in the citable text exists for one reason: without it, every vendor conversation becomes “we added a guardrail, so it is Low now”. Controls earn a better residual; they do not buy a better class. The HWFS derives a provisional class from cost of error and reversibility while allocating; the declared class of this clause weighs all seven factors and prevails, and Prohibited is not an instrument output but a precondition — the HWFS asks who should execute a use, and a Prohibited use has no who. The tiers are designed to interoperate with risk-based regimes such as the EU AI Act without claiming legal equivalence: mapping a class onto a legal category is an exercise for counsel, not a property of this document.',
+      es: 'La clase responde el término abierto de HWF-05: qué cuenta como alto riesgo se resuelve contra esta escala y no contra el gusto. El juicio corre sobre siete factores — derechos afectados, escala de personas alcanzadas, reversibilidad, presencia de personas vulnerables, sensibilidad de los datos, exposición adversarial y concentración de poder — nunca sobre el costo del error a solas, porque un error barato a escala contra personas vulnerables no es un error barato. El candado del texto citable existe por una razón: sin él, toda conversación con un vendor se convierte en «le pusimos un guardrail, así que ahora es Low». Los controles ganan un mejor residual; no compran una mejor clase. El HWFS deriva una clase provisional de costo del error y reversibilidad al asignar; la clase declarada de esta cláusula pesa los siete factores y prevalece, y Prohibido no es un output del instrumento sino una precondición — el HWFS pregunta quién debe ejecutar un uso, y un uso Prohibido no tiene quién. Los niveles están diseñados para interoperar con regímenes basados en riesgo como el EU AI Act sin afirmar equivalencia jurídica: mapear una clase a una categoría legal es un ejercicio de abogados, no una propiedad de este documento.',
+    },
+  },
 ];
 
 /** The nine-field conformance declaration (HWF-21). */
@@ -270,6 +281,81 @@ export const DECLARATION: { title: T; intro: T; fields: T[]; example: T } = {
     en: '“This deployment of the Accounts Receivable Coordinator conforms to the Hybrid Workforce Standard v1.0 for the stated scope and assessment period.”',
     es: '«Este deployment de la Coordinadora de Cobros conforma con el Hybrid Workforce Standard v1.0 para el alcance y periodo de evaluación declarados.»',
   },
+};
+
+/** The five-tier risk classification (HWF-22). */
+export const RISK_INTRO: T = {
+  en: 'A class is judged on inherent risk across seven factors — rights affected, scale of people touched, reversibility, presence of vulnerable people, data sensitivity, adversarial exposure and concentration of power — never on the cost of error alone. Controls lower residual risk; they never lower the class.',
+  es: 'La clase se juzga sobre el riesgo inherente a través de siete factores — derechos afectados, escala de personas alcanzadas, reversibilidad, presencia de personas vulnerables, sensibilidad de los datos, exposición adversarial y concentración de poder — nunca sobre el costo del error a solas. Los controles bajan el riesgo residual; nunca bajan la clase.',
+};
+
+export interface RiskTier {
+  name: T;
+  meaning: T;
+  regime: T;
+}
+
+export const RISK_CLASSES: RiskTier[] = [
+  {
+    name: { en: 'Prohibited', es: 'Prohibido' },
+    meaning: {
+      en: 'A use that cannot be made conformant by any control: it requires deceiving people about the system (HWF-10), overriding the constraints of HWF-20, or operating outside any accountable chain.',
+      es: 'Un uso que no puede volverse conforme mediante ningún control: exige engañar a las personas sobre el sistema (HWF-10), pasar sobre las restricciones de HWF-20, u operar fuera de toda cadena accountable.',
+    },
+    regime: {
+      en: 'Not performed under this standard, by any resource configuration.',
+      es: 'No se realiza bajo este estándar, con ninguna configuración de recursos.',
+    },
+  },
+  {
+    name: { en: 'Critical', es: 'Crítico' },
+    meaning: {
+      en: 'Severe or irreversible consequences for rights, safety, money at scale or the organisation itself.',
+      es: 'Consecuencias severas o irreversibles para derechos, seguridad, dinero a escala o la organización misma.',
+    },
+    regime: {
+      en: 'Mandatory final human decision on every action, separation of duties, autonomy capped at the assisted rungs, reinforced audit.',
+      es: 'Decisión humana final obligatoria en cada acción, separación de funciones, autonomía limitada a los peldaños asistidos, auditoría reforzada.',
+    },
+  },
+  {
+    name: { en: 'High', es: 'Alto' },
+    meaning: {
+      en: 'Serious but generally recoverable consequences, or moderate ones amplified by scale, data sensitivity or adversarial exposure.',
+      es: 'Consecuencias serias pero en general recuperables, o moderadas amplificadas por escala, sensibilidad de datos o exposición adversarial.',
+    },
+    regime: {
+      en: 'Impact assessment before deployment, independent validation, reinforced supervision, human approval on defined action classes.',
+      es: 'Evaluación de impacto previa al deployment, validación independiente, supervisión reforzada, aprobación humana en clases de acción definidas.',
+    },
+  },
+  {
+    name: { en: 'Moderate', es: 'Moderado' },
+    meaning: {
+      en: 'Contained consequences, reversible with rework and some friction.',
+      es: 'Consecuencias contenidas, reversibles con retrabajo y algo de fricción.',
+    },
+    regime: {
+      en: 'Bounded autonomy inside the authority matrix, continuous monitoring, sampled review.',
+      es: 'Autonomía acotada dentro de la matriz de autoridad, monitoreo continuo, revisión por muestreo.',
+    },
+  },
+  {
+    name: { en: 'Low', es: 'Bajo' },
+    meaning: {
+      en: 'Internal, easily absorbed consequences.',
+      es: 'Consecuencias internas y fácilmente absorbibles.',
+    },
+    regime: {
+      en: 'Management by exception with baseline controls: identity, audit trail, escalation.',
+      es: 'Operación por excepción con controles base: identidad, audit trail, escalamiento.',
+    },
+  },
+];
+
+export const RISK_NOTE: T = {
+  en: 'The HWFS derives a provisional class from cost of error and reversibility during allocation; the declared class of HWF-22 weighs all seven factors and prevails. The tiers are designed to interoperate with risk-based regimes such as the EU AI Act without claiming legal equivalence: mapping a class onto a legal category is an exercise for counsel, not a property of this document.',
+  es: 'El HWFS deriva una clase provisional de costo del error y reversibilidad al asignar; la clase declarada de HWF-22 pesa los siete factores y prevalece. Los niveles están diseñados para interoperar con regímenes basados en riesgo como el EU AI Act sin afirmar equivalencia jurídica: mapear una clase a una categoría legal es un ejercicio de abogados, no una propiedad de este documento.',
 };
 
 /** The author’s motivation. Signed and non-normative: it explains why the

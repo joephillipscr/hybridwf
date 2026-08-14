@@ -124,7 +124,7 @@ Every conformance claim publishes these nine fields (HWF-21). A claim missing an
 
 **High-risk actions must support human approval.**
 
-*Note:* Proportionality is the rule: the higher the cost of the error and the harder it is to reverse, the more approval the action carries. Separation of duties applies, so whoever initiates need not approve.
+*Note:* Proportionality is the rule: the higher the cost of the error and the harder it is to reverse, the more approval the action carries. Separation of duties applies, so whoever initiates need not approve. What counts as high-risk is not left to taste: it resolves against the risk classification of HWF-22.
 
 ### HWF-06
 
@@ -221,6 +221,26 @@ Every conformance claim publishes these nine fields (HWF-21). A claim missing an
 **Conformance belongs to a deployment, never to a product, a platform or an organisation in the abstract. A conformance claim must name its scope — the organisation and deployment, the role and role-contract version, the accountable owner, the risk class, the clauses assessed, the assessment period and its expiry — and must publish its evidence and known limitations. A vendor may state that its platform enables conformant deployments; it may never state that the platform itself conforms.**
 
 *Note:* Self-declared conformance without a defined unit degenerates into a marketing phrase within months, and the remedy is not certification — excluded from this standard’s scope and not returning — but falsifiability: a claim that names its deployment, owner, clauses, period, evidence and limitations can be verified or refuted by anyone, which makes the public a cheaper auditor than a certifier and a harder one to capture. An expired declaration is not a declaration; renewal may share its calendar with the existence review of HWF-19. The vendor sentence is the anti-laundering lock, and the first platform bound by it is the author’s own: AIEmpl.com may state that it enables conformant deployments, and may never call itself conformant. A standard that does not govern how it is invoked ends up meaning whatever marketing needs it to mean.
+
+### HWF-22
+
+**Every AI Employee post must carry a declared risk class from this standard’s scale, assessed twice: inherent risk before controls and residual risk after them. The class follows inherent risk — controls lower the residual, never the class. Autonomy, supervision and approval requirements scale with the class; a Critical action always terminates in a final human decision, and a Prohibited use cannot be made conformant by any control.**
+
+*Note:* The class answers HWF-05’s open term: what counts as high-risk resolves against this scale rather than against taste. Judgement runs on seven factors — rights affected, scale of people touched, reversibility, presence of vulnerable people, data sensitivity, adversarial exposure and concentration of power — never on the cost of error alone, because a cheap error at scale against vulnerable people is not a cheap error. The lock in the citable text exists for one reason: without it, every vendor conversation becomes “we added a guardrail, so it is Low now”. Controls earn a better residual; they do not buy a better class. The HWFS derives a provisional class from cost of error and reversibility while allocating; the declared class of this clause weighs all seven factors and prevails, and Prohibited is not an instrument output but a precondition — the HWFS asks who should execute a use, and a Prohibited use has no who. The tiers are designed to interoperate with risk-based regimes such as the EU AI Act without claiming legal equivalence: mapping a class onto a legal category is an exercise for counsel, not a property of this document.
+
+## Risk classification
+
+A class is judged on inherent risk across seven factors — rights affected, scale of people touched, reversibility, presence of vulnerable people, data sensitivity, adversarial exposure and concentration of power — never on the cost of error alone. Controls lower residual risk; they never lower the class.
+
+| Class | Meaning | Operating regime |
+| --- | --- | --- |
+| Prohibited | A use that cannot be made conformant by any control: it requires deceiving people about the system (HWF-10), overriding the constraints of HWF-20, or operating outside any accountable chain. | Not performed under this standard, by any resource configuration. |
+| Critical | Severe or irreversible consequences for rights, safety, money at scale or the organisation itself. | Mandatory final human decision on every action, separation of duties, autonomy capped at the assisted rungs, reinforced audit. |
+| High | Serious but generally recoverable consequences, or moderate ones amplified by scale, data sensitivity or adversarial exposure. | Impact assessment before deployment, independent validation, reinforced supervision, human approval on defined action classes. |
+| Moderate | Contained consequences, reversible with rework and some friction. | Bounded autonomy inside the authority matrix, continuous monitoring, sampled review. |
+| Low | Internal, easily absorbed consequences. | Management by exception with baseline controls: identity, audit trail, escalation. |
+
+The HWFS derives a provisional class from cost of error and reversibility during allocation; the declared class of HWF-22 weighs all seven factors and prevails. The tiers are designed to interoperate with risk-based regimes such as the EU AI Act without claiming legal equivalence: mapping a class onto a legal category is an exercise for counsel, not a property of this document.
 
 ## Maturity model
 
@@ -683,6 +703,8 @@ One term, two languages, one numbered definition. Where the English term is used
 
 **G-34 · Unit of conformance** — The thing a conformance claim can be about: one deployment — one role, one role-contract version, one accountable owner, one assessment period with an expiry. Products, platforms, models and organisations in the abstract cannot conform, whatever their marketing says; a vendor may only claim that it enables conformant deployments (HWF-21).
 
+**G-35 · Risk class** — One of five tiers — Prohibited, Critical, High, Moderate, Low — assigned to an AI Employee post by judging inherent risk across seven factors, before controls. Controls lower residual risk, never the class (HWF-22). Declared in every conformance claim (HWF-21); from Critical upward every action terminates in a final human decision, and a Prohibited use has no conformant configuration at all.
+
 **G-25 · Hybrid post** — A post whose responsibilities are split explicitly between a human and an artificial resource, with defined handoffs, context transfer and a single owner of the overall result. Badly designed, it produces two occupants each waiting for the other to answer.
 
 ## Governance
@@ -762,6 +784,7 @@ You may quote, embed, teach, translate and commercially use this material with a
 | S14 | [NIST — AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) |
 | S15 | [NIST — AI RMF Playbook](https://airc.nist.gov/airmf-resources/playbook/) |
 | S24 | [OECD — AI Principles (human-centred values: dignity, autonomy, social justice, labour rights)](https://oecd.ai/en/ai-principles) |
+| S25 | [EU — Artificial Intelligence Act: regulatory framework on AI (risk-based approach)](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai) |
 
 ### Academic signals
 
@@ -802,9 +825,10 @@ You may quote, embed, teach, translate and commercially use this material with a
 
 ### v1.0 · 2026-08-12 · Proposal — Review Board forming
 
-- First publication: twenty-one normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS instrument, the Hybrid Workforce Manager role and the transition playbooks.
+- First publication: twenty-two normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS instrument, the Hybrid Workforce Manager role and the transition playbooks.
 - Certification was deliberately excluded from scope. This standard scores no products and issues no seals.
 - The HWFS returns a structured argument rather than a 0–100 score, resolving a contradiction present in the source research.
+- HWF-22 defines the five-tier risk classification the document previously used without defining: Prohibited, Critical, High, Moderate, Low. HWF-05 spoke of high-risk actions and HWF-21 required a risk class in every conformance declaration, and neither term resolved anywhere. The class is judged on inherent risk across seven factors — rights, scale, reversibility, vulnerable people, data sensitivity, adversarial exposure, concentration of power — never on cost of error alone, and controls lower residual risk but never the class, so a guardrail cannot buy a better tier. Critical always terminates in a final human decision; Prohibited cannot be made conformant by any control and is a precondition of the HWFS rather than an output of it. The tiers interoperate with risk-based regimes such as the EU AI Act without claiming legal equivalence. Adds G-35, the classification table, and the EU AI Act to the sources.
 - The nine-property test became conjunctive. The caveat said a system “missing several” properties may still be an agent, which implied one or two absences were tolerable — indefensible for defining properties, all nine of which the clauses already require individually, and an open invitation to seven-of-nine marketing. Qualification now requires all nine, with presence binary and depth graded by the maturity model. The proposal’s second half — tying qualification to satisfying the clauses as well — was rejected for vacuity: if violating a clause removed the category, no deployment could ever violate the standard, because violators would exit it instead of breaching it. A deployment in breach is a non-conformant AI Employee, not a non-AI-Employee.
 - HWF-21 defines the unit of conformance: a deployment, never a product, platform or organisation in the abstract. Every claim publishes nine fields — organisation and deployment, role and contract version, accountable owner, risk class, clauses assessed, assessment period, evidence, known limitations, expiry — so that self-declaration stays falsifiable instead of decaying into a marketing phrase. A vendor may state that its platform enables conformant deployments and may never state that the platform conforms; the first platform bound is the author’s own. The declaration template names the standard in full: “HWFS conformance” was considered and rejected because HWFS already names the Hybrid Workforce Fit Score, and a conformance claim must not be confusable with the allocation instrument. Adds G-34 and the nine-field declaration template.
 - A proposal to split the document into five separately governed pieces — core standard, conformance specification, WRM framework, HWFS instrument, playbooks — and to rename it the Hybrid Workforce Governance Standard was declined. The editorial-regime separation it asked for already exists as layers under one cover, and is now stated explicitly in the reading section; five documents would multiply versions, citations and cross-reference drift for a one-editor project while fragmenting the single machine-readable file the standard is delivered as. The rename was declined on scope and position: clauses concentrate on AI Employees by subsidiarity — the human side of the workforce is already governed by labour law and existing HR standards — while the doctrine, the matrix, the transitions and HWF-20 govern the whole hybrid workforce; and “governance” would both narrow the document and shelve it against general AI-governance frameworks, the exact competition it does not seek. Extraction into separate pieces remains available to a future version and its Board if an ecosystem of auditors ever requires it.

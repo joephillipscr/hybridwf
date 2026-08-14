@@ -124,7 +124,7 @@ Toda declaración de conformidad publica estos nueve campos (HWF-21). Una declar
 
 **Las acciones de alto riesgo deben soportar aprobación humana.**
 
-*Nota:* La regla es proporcionalidad: a mayor costo del error y menor reversibilidad, más aprobación soporta la acción. Aplica separación de funciones, así que quien inicia no necesariamente aprueba.
+*Nota:* La regla es proporcionalidad: a mayor costo del error y menor reversibilidad, más aprobación soporta la acción. Aplica separación de funciones, así que quien inicia no necesariamente aprueba. Qué cuenta como alto riesgo no queda al gusto: se resuelve contra la clasificación de riesgo de HWF-22.
 
 ### HWF-06
 
@@ -221,6 +221,26 @@ Toda declaración de conformidad publica estos nueve campos (HWF-21). Una declar
 **La conformidad pertenece a un deployment, nunca a un producto, una plataforma ni una organización en abstracto. Una declaración de conformidad debe nombrar su alcance — la organización y el deployment, el rol y la versión del contrato de rol, el accountable owner, la clase de riesgo, las cláusulas evaluadas, el periodo de evaluación y su expiración — y debe publicar su evidencia y sus limitaciones conocidas. Un proveedor puede declarar que su plataforma habilita deployments conformes; nunca puede declarar que la plataforma misma conforma.**
 
 *Nota:* La conformidad autodeclarada sin unidad definida degenera en frase de marketing en cuestión de meses, y el remedio no es la certificación — excluida del alcance de este estándar y sin regreso — sino la falsificabilidad: una declaración que nombra su deployment, su dueño, sus cláusulas, su periodo, su evidencia y sus limitaciones puede ser verificada o refutada por cualquiera, lo que convierte al público en un auditor más barato que un certificador y más difícil de capturar. Una declaración vencida no es una declaración; la renovación puede compartir calendario con la revisión de existencia de HWF-19. La oración del proveedor es el candado anti-lavado, y la primera plataforma atada por ella es la del propio autor: AIEmpl.com puede declarar que habilita deployments conformes, y nunca puede llamarse a sí misma conforme. Un estándar que no gobierna cómo se lo invoca termina significando lo que el marketing necesite que signifique.
+
+### HWF-22
+
+**Todo puesto de AI Employee debe portar una clase de riesgo declarada de la escala de este estándar, evaluada dos veces: riesgo inherente antes de los controles y riesgo residual después de ellos. La clase sigue al riesgo inherente — los controles bajan el residual, nunca la clase. La autonomía, la supervisión y los requisitos de aprobación escalan con la clase; una acción Crítica termina siempre en una decisión humana final, y un uso Prohibido no puede volverse conforme mediante ningún control.**
+
+*Nota:* La clase responde el término abierto de HWF-05: qué cuenta como alto riesgo se resuelve contra esta escala y no contra el gusto. El juicio corre sobre siete factores — derechos afectados, escala de personas alcanzadas, reversibilidad, presencia de personas vulnerables, sensibilidad de los datos, exposición adversarial y concentración de poder — nunca sobre el costo del error a solas, porque un error barato a escala contra personas vulnerables no es un error barato. El candado del texto citable existe por una razón: sin él, toda conversación con un vendor se convierte en «le pusimos un guardrail, así que ahora es Low». Los controles ganan un mejor residual; no compran una mejor clase. El HWFS deriva una clase provisional de costo del error y reversibilidad al asignar; la clase declarada de esta cláusula pesa los siete factores y prevalece, y Prohibido no es un output del instrumento sino una precondición — el HWFS pregunta quién debe ejecutar un uso, y un uso Prohibido no tiene quién. Los niveles están diseñados para interoperar con regímenes basados en riesgo como el EU AI Act sin afirmar equivalencia jurídica: mapear una clase a una categoría legal es un ejercicio de abogados, no una propiedad de este documento.
+
+## Clasificación de riesgo
+
+La clase se juzga sobre el riesgo inherente a través de siete factores — derechos afectados, escala de personas alcanzadas, reversibilidad, presencia de personas vulnerables, sensibilidad de los datos, exposición adversarial y concentración de poder — nunca sobre el costo del error a solas. Los controles bajan el riesgo residual; nunca bajan la clase.
+
+| Clase | Significado | Régimen operativo |
+| --- | --- | --- |
+| Prohibido | Un uso que no puede volverse conforme mediante ningún control: exige engañar a las personas sobre el sistema (HWF-10), pasar sobre las restricciones de HWF-20, u operar fuera de toda cadena accountable. | No se realiza bajo este estándar, con ninguna configuración de recursos. |
+| Crítico | Consecuencias severas o irreversibles para derechos, seguridad, dinero a escala o la organización misma. | Decisión humana final obligatoria en cada acción, separación de funciones, autonomía limitada a los peldaños asistidos, auditoría reforzada. |
+| Alto | Consecuencias serias pero en general recuperables, o moderadas amplificadas por escala, sensibilidad de datos o exposición adversarial. | Evaluación de impacto previa al deployment, validación independiente, supervisión reforzada, aprobación humana en clases de acción definidas. |
+| Moderado | Consecuencias contenidas, reversibles con retrabajo y algo de fricción. | Autonomía acotada dentro de la matriz de autoridad, monitoreo continuo, revisión por muestreo. |
+| Bajo | Consecuencias internas y fácilmente absorbibles. | Operación por excepción con controles base: identidad, audit trail, escalamiento. |
+
+El HWFS deriva una clase provisional de costo del error y reversibilidad al asignar; la clase declarada de HWF-22 pesa los siete factores y prevalece. Los niveles están diseñados para interoperar con regímenes basados en riesgo como el EU AI Act sin afirmar equivalencia jurídica: mapear una clase a una categoría legal es un ejercicio de abogados, no una propiedad de este documento.
 
 ## Modelo de madurez
 
@@ -683,6 +703,8 @@ Un término, dos idiomas, una definición numerada. Cuando el término inglés s
 
 **G-34 · Unidad de conformidad** — Aquello sobre lo que puede tratar una declaración de conformidad: un deployment — un rol, una versión de contrato de rol, un accountable owner, un periodo de evaluación con expiración. Productos, plataformas, modelos y organizaciones en abstracto no pueden conformar, diga lo que diga su marketing; un proveedor solo puede declarar que habilita deployments conformes (HWF-21).
 
+**G-35 · Clase de riesgo** — Uno de cinco niveles — Prohibido, Crítico, Alto, Moderado, Bajo — asignado a un puesto de AI Employee juzgando el riesgo inherente a través de siete factores, antes de los controles. Los controles bajan el riesgo residual, nunca la clase (HWF-22). Se declara en toda declaración de conformidad (HWF-21); de Crítico hacia arriba toda acción termina en una decisión humana final, y un uso Prohibido no tiene configuración conforme alguna.
+
 **G-25 · Puesto híbrido** — Puesto cuyas responsabilidades se reparten explícitamente entre un recurso humano y uno artificial, con handoffs definidos, transferencia de contexto y un único dueño del resultado completo. Mal diseñado, produce dos ocupantes esperando que responda el otro.
 
 ## Gobierno
@@ -762,6 +784,7 @@ Podés citar, embeber, enseñar, traducir y usar comercialmente este material co
 | S14 | [NIST — AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) |
 | S15 | [NIST — AI RMF Playbook](https://airc.nist.gov/airmf-resources/playbook/) |
 | S24 | [OECD — AI Principles (human-centred values: dignity, autonomy, social justice, labour rights)](https://oecd.ai/en/ai-principles) |
+| S25 | [EU — Artificial Intelligence Act: regulatory framework on AI (risk-based approach)](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai) |
 
 ### Señales académicas
 
@@ -802,9 +825,10 @@ Podés citar, embeber, enseñar, traducir y usar comercialmente este material co
 
 ### v1.0 · 2026-08-12 · Propuesta — Review Board en formación
 
-- Primera publicación: veintiuna cláusulas normativas, el test de nueve propiedades, el marco WRM, la matriz de 120 principios, el modelo de madurez, el instrumento HWFS, el rol de Gerente de Fuerza Laboral Híbrida y los playbooks de transición.
+- Primera publicación: veintidós cláusulas normativas, el test de nueve propiedades, el marco WRM, la matriz de 120 principios, el modelo de madurez, el instrumento HWFS, el rol de Gerente de Fuerza Laboral Híbrida y los playbooks de transición.
 - La certificación se excluyó deliberadamente del alcance. Este estándar no puntúa productos ni emite sellos.
 - El HWFS devuelve un argumento estructurado en lugar de un puntaje 0–100, resolviendo una contradicción presente en la investigación de origen.
+- HWF-22 define la clasificación de riesgo de cinco niveles que el documento usaba sin definir: Prohibido, Crítico, Alto, Moderado, Bajo. HWF-05 hablaba de acciones de alto riesgo y HWF-21 exigía una clase de riesgo en toda declaración de conformidad, y ninguno de los dos términos resolvía en ninguna parte. La clase se juzga sobre el riesgo inherente a través de siete factores — derechos, escala, reversibilidad, personas vulnerables, sensibilidad de datos, exposición adversarial, concentración de poder — nunca sobre el costo del error a solas, y los controles bajan el riesgo residual pero nunca la clase, así que un guardrail no puede comprar un mejor nivel. Crítico termina siempre en una decisión humana final; Prohibido no puede volverse conforme mediante ningún control y es una precondición del HWFS, no un output suyo. Los niveles interoperan con regímenes basados en riesgo como el EU AI Act sin afirmar equivalencia jurídica. Agrega G-35, la tabla de clasificación, y el EU AI Act a las fuentes.
 - El test de nueve propiedades se volvió conjuntivo. La advertencia decía que un sistema al que le «faltan varias» propiedades puede seguir siendo un agente, lo que implicaba que una o dos ausencias eran tolerables — indefendible para propiedades definitorias, cuyas nueve las cláusulas ya exigen individualmente, y una invitación abierta al marketing de siete-de-nueve. La calificación ahora exige las nueve, con presencia binaria y profundidad graduada por el modelo de madurez. La segunda mitad de la propuesta — atar la calificación también al cumplimiento de las cláusulas — se rechazó por vacuidad: si violar una cláusula quitara la categoría, ningún deployment podría jamás violar el estándar, porque los infractores saldrían de él en vez de incumplirlo. Un deployment en falta es un AI Employee no conforme, no un no-AI-Employee.
 - HWF-21 define la unidad de conformidad: un deployment, nunca un producto, plataforma ni organización en abstracto. Toda declaración publica nueve campos — organización y deployment, rol y versión de contrato, accountable owner, clase de riesgo, cláusulas evaluadas, periodo de evaluación, evidencia, limitaciones conocidas, expiración — para que la autodeclaración siga siendo falsificable en vez de degenerar en frase de marketing. Un proveedor puede declarar que su plataforma habilita deployments conformes y nunca que la plataforma conforma; la primera plataforma atada es la del propio autor. La plantilla de declaración nombra el estándar completo: se consideró y rechazó «HWFS conformance» porque HWFS ya nombra el Hybrid Workforce Fit Score, y una declaración de conformidad no debe confundirse con el instrumento de asignación. Agrega G-34 y la plantilla de declaración de nueve campos.
 - Se declinó una propuesta de dividir el documento en cinco piezas gobernadas por separado — estándar central, especificación de conformidad, marco WRM, instrumento HWFS, playbooks — y de renombrarlo Hybrid Workforce Governance Standard. La separación de régimen editorial que pedía ya existe como capas bajo una sola portada, y ahora queda declarada explícitamente en la sección de lectura; cinco documentos multiplicarían versiones, citas y deriva de referencias cruzadas para un proyecto de un solo editor, fragmentando además el único archivo legible por máquinas en que el estándar se entrega. El renombre se declinó por alcance y posicionamiento: las cláusulas se concentran en AI Employees por subsidiariedad — el lado humano de la fuerza laboral ya está gobernado por el derecho laboral y los estándares de RR. HH. existentes — mientras la doctrina, la matriz, las transiciones y HWF-20 gobiernan la fuerza laboral híbrida completa; y «governance» estrecharía el documento y lo pondría en el estante de los marcos generales de gobernanza de IA, exactamente la competencia que no busca. La extracción en piezas separadas queda disponible para una versión futura y su Board si algún día un ecosistema de auditores la exige.

@@ -17,7 +17,7 @@ import { join } from 'node:path';
 
 import type { T } from '../lib/i18n';
 import { LOCALES, ROUTES, SITE_NAME, SITE_URL, STANDARD_DATE, STANDARD_VERSION, AUTHOR, type Locale } from '../lib/site';
-import { CLAUSES, CONFORMANCE, DECLARATION, MOTIVATION, OBJECTIVE } from '../lib/standard';
+import { CLAUSES, CONFORMANCE, DECLARATION, MOTIVATION, OBJECTIVE, RISK_CLASSES, RISK_INTRO, RISK_NOTE } from '../lib/standard';
 import { DEFINITION, FORMULA, GOVERNING_PRINCIPLE, LADDER, OWNERSHIP_BOUNDARY, PROPERTIES, PROPERTIES_CAVEAT, THESIS } from '../lib/definition';
 import { LEVELS, MATURITY_NOTE, THRESHOLD, DIAGNOSTIC } from '../lib/maturity';
 import { BOUNDARY_WARNING, DOMAINS, LIFECYCLE, PRINCIPLE_LAYERS, RULES as WRM_RULES, STACK, WRM_DEFINITION, WRM_PREMISE } from '../lib/wrm';
@@ -45,6 +45,8 @@ const table = (head: string[], rows: string[][]) =>
 const S = {
   contents: { en: 'Contents', es: 'Contenido' },
   howToCite: { en: 'How to cite', es: 'Cómo citar' },
+  risk: { en: 'Risk classification', es: 'Clasificación de riesgo' },
+  colRegime: { en: 'Operating regime', es: 'Régimen operativo' },
   citeBody: {
     en: 'Cite clauses by identifier, never by page or section number. The clause text is the citable unit; the notes beneath each clause are commentary and may be revised between versions without amending the standard.',
     es: 'Citá las cláusulas por identificador, nunca por página ni número de sección. El texto de la cláusula es la unidad citable; las notas bajo cada cláusula son comentario y pueden revisarse entre versiones sin enmendar el estándar.',
@@ -201,6 +203,12 @@ function build(lang: Locale): string {
     p(`*${t('note')}:* ${L(c.note, lang)}`);
   });
 
+  /* --- Risk classification ------------------------------------------ */
+  h(2, t('risk'));
+  p(L(RISK_INTRO, lang));
+  p(table([t('colClass'), t('colMeaning'), t('colRegime')], RISK_CLASSES.map((r) => [L(r.name, lang), L(r.meaning, lang), L(r.regime, lang)])));
+  p(L(RISK_NOTE, lang));
+
   /* --- Maturity ---------------------------------------------------- */
   h(2, t('maturity'));
   p(table([t('colLevel'), t('colName'), t('colDefinition')], LEVELS.map((l) => [String(l.n), L(l.name, lang), L(l.definition, lang)])));
@@ -345,7 +353,7 @@ function llmsTxt(): string {
   return [
     `# ${SITE_NAME}`,
     '',
-    `> An open administrative standard for AI Employees: twenty-one normative clauses, a nine-property test, the WRM (Work Resource Management) framework, a 120-principle matrix, a maturity model, and the HWFS decision instrument. Published under ${LICENSE.id}. Version ${STANDARD_VERSION}, ${STANDARD_DATE}.`,
+    `> An open administrative standard for AI Employees: twenty-two normative clauses, a nine-property test, the WRM (Work Resource Management) framework, a 120-principle matrix, a maturity model, and the HWFS decision instrument. Published under ${LICENSE.id}. Version ${STANDARD_VERSION}, ${STANDARD_DATE}.`,
     '',
     'A chatbot answers. A copilot helps. An agent executes a task. An AI Employee holds a role. A human answers for it.',
     '',

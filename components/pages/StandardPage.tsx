@@ -3,7 +3,7 @@ import { ArrowRight, FileText } from 'lucide-react';
 import CiteBox from '../CiteBox';
 import Reveal from '../Reveal';
 import { PageHeader, Section } from '../Section';
-import { CLAUSES, CONFORMANCE, DECLARATION, MOTIVATION, OBJECTIVE } from '@/lib/standard';
+import { CLAUSES, CONFORMANCE, DECLARATION, MOTIVATION, OBJECTIVE, RISK_CLASSES, RISK_INTRO, RISK_NOTE } from '@/lib/standard';
 import { UI } from '@/lib/i18n';
 import { AUTHOR, SITE_NAME, SITE_URL, STANDARD_VERSION, route, type Locale } from '@/lib/site';
 
@@ -11,10 +11,14 @@ const C = {
   eyebrow: { en: 'Normative text', es: 'Texto normativo' },
   title: { en: 'The Hybrid Workforce Standard', es: 'El Hybrid Workforce Standard' },
   lede: {
-    en: 'Twenty-one clauses that separate a governable work resource from a commercial metaphor. Conformance is self-declared: no product is scored here and no seal is issued.',
-    es: 'Veintiuna cláusulas que separan un recurso de trabajo gobernable de una metáfora comercial. La conformidad es autodeclarada: acá no se puntúa ningún producto ni se emite ningún sello.',
+    en: 'Twenty-two clauses that separate a governable work resource from a commercial metaphor. Conformance is self-declared: no product is scored here and no seal is issued.',
+    es: 'Veintidós cláusulas que separan un recurso de trabajo gobernable de una metáfora comercial. La conformidad es autodeclarada: acá no se puntúa ningún producto ni se emite ningún sello.',
   },
   next: { en: 'How the standard is governed', es: 'Cómo se gobierna el estándar' },
+  riskTitle: { en: 'Risk classification', es: 'Clasificación de riesgo' },
+  riskClass: { en: 'Class', es: 'Clase' },
+  riskMeaning: { en: 'Meaning', es: 'Significado' },
+  riskRegime: { en: 'Operating regime', es: 'Régimen operativo' },
   machineTitle: { en: 'Machine-readable', es: 'Legible por máquinas' },
   machineBody: {
     en: 'The whole standard as one Markdown file: every clause, the framework, the 120-principle matrix, the instrument and the glossary. Built for pasting into a model context window or ingesting into a retrieval index.',
@@ -134,6 +138,34 @@ export default function StandardPage({ lang }: { lang: Locale }) {
             </div>
           </aside>
         </div>
+      </Section>
+
+      <Section className="border-t border-border">
+        <Reveal>
+          <h2 className="font-display text-2xl font-semibold">{C.riskTitle[lang]}</h2>
+          <p className="prose-x mt-4 max-w-3xl">{RISK_INTRO[lang]}</p>
+          <div className="mt-6 overflow-x-auto">
+            <table className="table-x min-w-[40rem]">
+              <thead>
+                <tr>
+                  <th>{C.riskClass[lang]}</th>
+                  <th>{C.riskMeaning[lang]}</th>
+                  <th>{C.riskRegime[lang]}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {RISK_CLASSES.map((r, i) => (
+                  <tr key={i}>
+                    <td className={i === 0 ? 'font-semibold text-brand' : 'font-medium text-fg'}>{r.name[lang]}</td>
+                    <td>{r.meaning[lang]}</td>
+                    <td>{r.regime[lang]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted">{RISK_NOTE[lang]}</p>
+        </Reveal>
       </Section>
     </>
   );
