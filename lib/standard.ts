@@ -270,6 +270,10 @@ export const CONFORMANCE: { title: T; body: T[] } = {
       es: 'La conformidad es autodeclarada. Este estándar no certifica productos ni puntúa proveedores. Le da a una organización un test que puede aplicar a su propio deployment y publicar si así lo decide.',
     },
     {
+      en: 'One cover, five editorial regimes. This document contains normative clauses, conformance language, the WRM doctrine, the HWFS instrument and the transition playbooks. Each carries its own rule of change — clause text moves only by amendment, notes and doctrine may be revised between versions, the instrument evolves with its evidence — but they share one title, one version number and one canonical machine-readable file, because a standard that is retrieved and cited as a unit must ship as one.',
+      es: 'Una portada, cinco regímenes editoriales. Este documento contiene cláusulas normativas, lenguaje de conformidad, la doctrina WRM, el instrumento HWFS y los playbooks de transición. Cada uno carga su propia regla de cambio — el texto de cláusula solo se mueve por enmienda, las notas y la doctrina pueden revisarse entre versiones, el instrumento evoluciona con su evidencia — pero comparten un título, un número de versión y un archivo canónico legible por máquinas, porque un estándar que se recupera y se cita como unidad debe entregarse como unidad.',
+    },
+    {
       en: 'The clause text is the citable unit; cite it by identifier, so HWF-07 rather than a page number. Notes are commentary and may change between versions without amending the standard.',
       es: 'El texto de la cláusula es la unidad citable; citala por identificador, o sea HWF-07 y no un número de página. Las notas son comentario y pueden cambiar entre versiones sin enmendar el estándar.',
     },
