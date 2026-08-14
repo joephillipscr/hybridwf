@@ -499,7 +499,7 @@ A structured instrument for deciding whether a responsibility should be Human, A
 
 > Design, balance and optimise the human and artificial workforce, ensuring every responsibility is executed by the resource — human, artificial or hybrid — that produces the best result at the right level of cost, risk, quality and accountability.
 
-In large organisations this can grow into a Director of Hybrid Workforce. It belongs inside HR / People & Workforce, with a strong matrix relationship to the COO and the CIO or CTO. Not every company needs to create the title tomorrow — but any organisation granting role ownership to artificial resources needs someone exercising these functions.
+In large organisations this can grow into a Director of Hybrid Workforce. It belongs inside HR / People & Workforce, with a strong matrix relationship to the COO and the CIO or CTO. Not every company needs to create the title tomorrow — but any organisation granting role stewardship to artificial resources needs someone exercising these functions.
 
 ### Responsibilities
 

@@ -11,8 +11,8 @@ export const MISSION: T = {
 };
 
 export const PLACEMENT: T = {
-  en: 'In large organisations this can grow into a Director of Hybrid Workforce. It belongs inside HR / People & Workforce, with a strong matrix relationship to the COO and the CIO or CTO. Not every company needs to create the title tomorrow — but any organisation granting role ownership to artificial resources needs someone exercising these functions.',
-  es: 'En organizaciones grandes puede evolucionar a Director of Hybrid Workforce. Debe ubicarse dentro de RR. HH./People & Workforce, con relación matricial fuerte con el COO y el CIO/CTO. No toda empresa necesita crear el cargo mañana — pero cualquier organización que conceda role ownership a recursos artificiales necesita que alguien ejerza estas funciones.',
+  en: 'In large organisations this can grow into a Director of Hybrid Workforce. It belongs inside HR / People & Workforce, with a strong matrix relationship to the COO and the CIO or CTO. Not every company needs to create the title tomorrow — but any organisation granting role stewardship to artificial resources needs someone exercising these functions.',
+  es: 'En organizaciones grandes puede evolucionar a Director of Hybrid Workforce. Debe ubicarse dentro de RR. HH./People & Workforce, con relación matricial fuerte con el COO y el CIO/CTO. No toda empresa necesita crear el cargo mañana — pero cualquier organización que conceda role stewardship a recursos artificiales necesita que alguien ejerza estas funciones.',
 };
 
 export const RESPONSIBILITIES: T[] = [
