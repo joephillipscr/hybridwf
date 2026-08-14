@@ -19,7 +19,9 @@ disclosure: "The author also builds AIEmpl.com, a commercial platform in this ca
 
 > No existen, como punto de partida, puestos humanos y puestos de IA. Existen trabajos que deben realizarse. Después se decide cuál es la combinación de recursos humanos y artificiales que produce el mejor resultado con el nivel correcto de riesgo, responsabilidad y control.
 
-**Por qué existe este estándar.** Este estándar es una declaración de independencia de la organización frente a la anarquía del prompt. Al exigir un contrato de rol, obliga a los líderes a pensar antes de automatizar. — Master Joe Phillips
+**Por qué existe este estándar.** Este estándar es una declaración de independencia de la organización frente a la anarquía del prompt. Al exigir un contrato de rol, obliga a los líderes a pensar antes de automatizar.
+
+**El objetivo estratégico.** Este estándar es el primer paso para terminar con la era de la «IA juguetera». Al adoptarse, moverá a las empresas desde un modelo de desarrollo de software, centrado en la herramienta, hacia un modelo de arquitectura social, centrado en la responsabilidad. — Master Joe Phillips
 
 ## Cómo citar
 

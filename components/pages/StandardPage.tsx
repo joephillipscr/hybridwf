@@ -3,7 +3,7 @@ import { ArrowRight, FileText } from 'lucide-react';
 import CiteBox from '../CiteBox';
 import Reveal from '../Reveal';
 import { PageHeader, Section } from '../Section';
-import { CLAUSES, CONFORMANCE, MOTIVATION } from '@/lib/standard';
+import { CLAUSES, CONFORMANCE, MOTIVATION, OBJECTIVE } from '@/lib/standard';
 import { UI } from '@/lib/i18n';
 import { AUTHOR, SITE_NAME, SITE_URL, STANDARD_VERSION, route, type Locale } from '@/lib/site';
 
@@ -38,6 +38,10 @@ export default function StandardPage({ lang }: { lang: Locale }) {
             <figcaption className="eyebrow">{MOTIVATION.label[lang]}</figcaption>
             <blockquote className="mt-3 font-display text-xl leading-snug text-fg sm:text-[1.35rem]">
               {MOTIVATION.text[lang]}
+            </blockquote>
+            <figcaption className="eyebrow mt-8">{OBJECTIVE.label[lang]}</figcaption>
+            <blockquote className="mt-3 font-display text-xl leading-snug text-fg sm:text-[1.35rem]">
+              {OBJECTIVE.text[lang]}
             </blockquote>
             <p className="mt-3 text-sm text-muted">
               —{' '}

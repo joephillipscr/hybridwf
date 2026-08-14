@@ -19,7 +19,9 @@ disclosure: "The author also builds AIEmpl.com, a commercial platform in this ca
 
 > There are no human posts and AI posts as a starting point. There is work that needs to be done. Then you decide which combination of human and artificial resources produces the best result at the right level of risk, responsibility and control.
 
-**Why this standard exists.** This standard is a declaration of the organisation’s independence from the anarchy of the prompt. By demanding a role contract, it forces leaders to think before they automate. — Master Joe Phillips
+**Why this standard exists.** This standard is a declaration of the organisation’s independence from the anarchy of the prompt. By demanding a role contract, it forces leaders to think before they automate.
+
+**The strategic objective.** This standard is the first step toward ending the era of “toy AI”. As it is adopted, it will move companies from a software development model, centred on the tool, to a social architecture model, centred on accountability. — Master Joe Phillips
 
 ## How to cite
 
