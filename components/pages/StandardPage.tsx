@@ -3,7 +3,7 @@ import { ArrowRight, FileText } from 'lucide-react';
 import CiteBox from '../CiteBox';
 import Reveal from '../Reveal';
 import { PageHeader, Section } from '../Section';
-import { CLAUSES, CONFORMANCE, MOTIVATION, OBJECTIVE } from '@/lib/standard';
+import { CLAUSES, CONFORMANCE, DECLARATION, MOTIVATION, OBJECTIVE } from '@/lib/standard';
 import { UI } from '@/lib/i18n';
 import { AUTHOR, SITE_NAME, SITE_URL, STANDARD_VERSION, route, type Locale } from '@/lib/site';
 
@@ -11,8 +11,8 @@ const C = {
   eyebrow: { en: 'Normative text', es: 'Texto normativo' },
   title: { en: 'The Hybrid Workforce Standard', es: 'El Hybrid Workforce Standard' },
   lede: {
-    en: 'Twenty clauses that separate a governable work resource from a commercial metaphor. Conformance is self-declared: no product is scored here and no seal is issued.',
-    es: 'Veinte cláusulas que separan un recurso de trabajo gobernable de una metáfora comercial. La conformidad es autodeclarada: acá no se puntúa ningún producto ni se emite ningún sello.',
+    en: 'Twenty-one clauses that separate a governable work resource from a commercial metaphor. Conformance is self-declared: no product is scored here and no seal is issued.',
+    es: 'Veintiuna cláusulas que separan un recurso de trabajo gobernable de una metáfora comercial. La conformidad es autodeclarada: acá no se puntúa ningún producto ni se emite ningún sello.',
   },
   next: { en: 'How the standard is governed', es: 'Cómo se gobierna el estándar' },
   machineTitle: { en: 'Machine-readable', es: 'Legible por máquinas' },
@@ -84,6 +84,17 @@ export default function StandardPage({ lang }: { lang: Locale }) {
                   <p key={i}>{p[lang]}</p>
                 ))}
               </div>
+            </div>
+
+            <div className="card">
+              <h2 className="eyebrow">{DECLARATION.title[lang]}</h2>
+              <p className="mt-3 text-sm leading-relaxed text-muted">{DECLARATION.intro[lang]}</p>
+              <ol className="mt-3 list-decimal space-y-1 pl-5 text-sm text-muted">
+                {DECLARATION.fields.map((f, i) => (
+                  <li key={i}>{f[lang]}</li>
+                ))}
+              </ol>
+              <p className="mt-4 text-sm italic leading-relaxed text-fg">{DECLARATION.example[lang]}</p>
             </div>
 
             <CiteBox lang={lang} citation={citation} />

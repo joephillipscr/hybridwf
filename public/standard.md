@@ -80,6 +80,22 @@ One cover, five editorial regimes. This document contains normative clauses, con
 
 The clause text is the citable unit; cite it by identifier, so HWF-07 rather than a page number. Notes are commentary and may change between versions without amending the standard.
 
+### The conformance declaration
+
+Every conformance claim publishes these nine fields (HWF-21). A claim missing any of them is not a conformance claim under this standard.
+
+1. Organisation and deployment
+2. Role and role-contract version
+3. Accountable owner
+4. Risk class
+5. Clauses assessed
+6. Assessment period
+7. Evidence
+8. Known limitations
+9. Expiry date of the declaration
+
+*“This deployment of the Accounts Receivable Coordinator conforms to the Hybrid Workforce Standard v1.0 for the stated scope and assessment period.”*
+
 ### HWF-01
 
 **An AI Employee must hold a defined role, not merely a persona or a system prompt.**
@@ -199,6 +215,12 @@ The clause text is the citable unit; cite it by identifier, so HWF-07 rather tha
 **People are ends; software is a means. Optimisation of cost, speed or capacity must never override human rights, dignity, safety, meaningful human agency, accessibility or applicable labour protections. Resource neutrality begins only after those constraints are satisfied. This clause takes precedence over every other clause in this standard.**
 
 *Note:* The engine of the hybrid organisation is cost, and this standard does not pretend otherwise: displacement will happen, as it happened with the tractor, and a document that promised to prevent it would be ignored and would deserve to be. What a standard can do is what labour law did — govern the terms. This clause does not prohibit displacement: work moved lawfully, with dignity, within applicable protections and through the transition playbooks is still work moved. It draws the line between displacement and abuse, by making the constraints lexically prior: cost, speed and capacity optimise inside the space that rights, dignity, safety, meaningful human agency, accessibility and labour protections leave open, and never trade against them. Two provisions already leaned this way — the Hybrid Workforce Manager’s anti-KPI refuses to measure the role by humans replaced, and the HWFS hard gates cap allocation regardless of the economics. This clause names the hierarchy they were obeying. Its number is not its rank: it binds every other clause, and a conflict with any of them resolves in its favour. The lineage is explicit: the OECD’s human-centred AI principles place dignity, autonomy, social justice and labour rights inside the definition of trustworthy AI, not alongside it.
+
+### HWF-21
+
+**Conformance belongs to a deployment, never to a product, a platform or an organisation in the abstract. A conformance claim must name its scope — the organisation and deployment, the role and role-contract version, the accountable owner, the risk class, the clauses assessed, the assessment period and its expiry — and must publish its evidence and known limitations. A vendor may state that its platform enables conformant deployments; it may never state that the platform itself conforms.**
+
+*Note:* Self-declared conformance without a defined unit degenerates into a marketing phrase within months, and the remedy is not certification — excluded from this standard’s scope and not returning — but falsifiability: a claim that names its deployment, owner, clauses, period, evidence and limitations can be verified or refuted by anyone, which makes the public a cheaper auditor than a certifier and a harder one to capture. An expired declaration is not a declaration; renewal may share its calendar with the existence review of HWF-19. The vendor sentence is the anti-laundering lock, and the first platform bound by it is the author’s own: AIEmpl.com may state that it enables conformant deployments, and may never call itself conformant. A standard that does not govern how it is invoked ends up meaning whatever marketing needs it to mean.
 
 ## Maturity model
 
@@ -659,6 +681,8 @@ One term, two languages, one numbered definition. Where the English term is used
 
 **G-33 · Resource neutrality** — The allocation discipline of deciding who fills a post — human, artificial or hybrid — without a prior preference for either, judging only fit, outcome, cost, risk and control. It is a discipline, not a moral stance, and it is bounded: neutrality begins only after the constraints of HWF-20 — rights, dignity, safety, meaningful human agency, accessibility, labour protections — are satisfied. Cited without its boundary, the term is being misused.
 
+**G-34 · Unit of conformance** — The thing a conformance claim can be about: one deployment — one role, one role-contract version, one accountable owner, one assessment period with an expiry. Products, platforms, models and organisations in the abstract cannot conform, whatever their marketing says; a vendor may only claim that it enables conformant deployments (HWF-21).
+
 **G-25 · Hybrid post** — A post whose responsibilities are split explicitly between a human and an artificial resource, with defined handoffs, context transfer and a single owner of the overall result. Badly designed, it produces two occupants each waiting for the other to answer.
 
 ## Governance
@@ -778,9 +802,10 @@ You may quote, embed, teach, translate and commercially use this material with a
 
 ### v1.0 · 2026-08-12 · Proposal — Review Board forming
 
-- First publication: twenty normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS instrument, the Hybrid Workforce Manager role and the transition playbooks.
+- First publication: twenty-one normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS instrument, the Hybrid Workforce Manager role and the transition playbooks.
 - Certification was deliberately excluded from scope. This standard scores no products and issues no seals.
 - The HWFS returns a structured argument rather than a 0–100 score, resolving a contradiction present in the source research.
+- HWF-21 defines the unit of conformance: a deployment, never a product, platform or organisation in the abstract. Every claim publishes nine fields — organisation and deployment, role and contract version, accountable owner, risk class, clauses assessed, assessment period, evidence, known limitations, expiry — so that self-declaration stays falsifiable instead of decaying into a marketing phrase. A vendor may state that its platform enables conformant deployments and may never state that the platform conforms; the first platform bound is the author’s own. The declaration template names the standard in full: “HWFS conformance” was considered and rejected because HWFS already names the Hybrid Workforce Fit Score, and a conformance claim must not be confusable with the allocation instrument. Adds G-34 and the nine-field declaration template.
 - A proposal to split the document into five separately governed pieces — core standard, conformance specification, WRM framework, HWFS instrument, playbooks — and to rename it the Hybrid Workforce Governance Standard was declined. The editorial-regime separation it asked for already exists as layers under one cover, and is now stated explicitly in the reading section; five documents would multiply versions, citations and cross-reference drift for a one-editor project while fragmenting the single machine-readable file the standard is delivered as. The rename was declined on scope and position: clauses concentrate on AI Employees by subsidiarity — the human side of the workforce is already governed by labour law and existing HR standards — while the doctrine, the matrix, the transitions and HWF-20 govern the whole hybrid workforce; and “governance” would both narrow the document and shelve it against general AI-governance frameworks, the exact competition it does not seek. Extraction into separate pieces remains available to a future version and its Board if an ecosystem of auditors ever requires it.
 - HWF-20 declares the ethical hierarchy and takes precedence over every other clause: people are ends, software is a means, and optimisation of cost, speed or capacity never overrides human rights, dignity, safety, meaningful human agency, accessibility or applicable labour protections — resource neutrality begins only after those constraints are satisfied. Adopted nearly as proposed, with a supremacy sentence added so that its position in the list is not read as its rank. It does not promise that displacement will not happen; it draws the line between displacement and abuse, naming the hierarchy the anti-KPI and the HWFS hard gates already obeyed. Adds G-33, bounds the Hybrid Workforce Manager’s neutrality mandate, and adds the OECD AI Principles to the sources.
 - The WRM premise and the HWF-01 note now answer the Taylorism objection directly. A proposed rewrite would have replaced “the post exists before its occupant” with an authority-gating sentence plus co-evolution reserved for human roles. It was not adopted: the gating sentence restates HWF-03 and WRM rules 3–4, restricting co-evolution to human roles contradicts HWF-17, and deleting the premise would dissolve the allocation framework the HWFS depends on. What was adopted is the distinction the objection actually needed: the declaration governs the order of birth, not the rest of the life. Job crafting is legitimate and expected — Taylor fixed the person to the box; this standard versions the box — and every reshaping must be declared, because in a hybrid organisation the declared post is the interface: a human colleague can read an undeclared role from the corridor, an artificial one can only read the graph. No clause text changed.

@@ -80,6 +80,22 @@ Una portada, cinco regímenes editoriales. Este documento contiene cláusulas no
 
 El texto de la cláusula es la unidad citable; citala por identificador, o sea HWF-07 y no un número de página. Las notas son comentario y pueden cambiar entre versiones sin enmendar el estándar.
 
+### La declaración de conformidad
+
+Toda declaración de conformidad publica estos nueve campos (HWF-21). Una declaración a la que le falte cualquiera no es una declaración de conformidad bajo este estándar.
+
+1. Organización y deployment
+2. Rol y versión del contrato de rol
+3. Accountable owner
+4. Clase de riesgo
+5. Cláusulas evaluadas
+6. Periodo de evaluación
+7. Evidencia
+8. Limitaciones conocidas
+9. Fecha de expiración de la declaración
+
+*«Este deployment de la Coordinadora de Cobros conforma con el Hybrid Workforce Standard v1.0 para el alcance y periodo de evaluación declarados.»*
+
 ### HWF-01
 
 **Un AI Employee debe ocupar un rol definido, no solamente una personalidad o un system prompt.**
@@ -199,6 +215,12 @@ El texto de la cláusula es la unidad citable; citala por identificador, o sea H
 **Las personas son fines; el software es un medio. La optimización de costo, velocidad o capacidad nunca debe pasar por encima de los derechos humanos, la dignidad, la seguridad, la agencia humana significativa, la accesibilidad ni las protecciones laborales aplicables. La neutralidad de recurso comienza solo después de satisfechas esas restricciones. Esta cláusula tiene precedencia sobre toda otra cláusula de este estándar.**
 
 *Nota:* El motor de la organización híbrida es el costo, y este estándar no finge lo contrario: el desplazamiento va a ocurrir, como ocurrió con el tractor, y un documento que prometiera impedirlo sería ignorado y merecería serlo. Lo que un estándar puede hacer es lo que hizo la legislación laboral — gobernar los términos. Esta cláusula no prohíbe el desplazamiento: trabajo movido legalmente, con dignidad, dentro de las protecciones aplicables y a través de los playbooks de transición sigue siendo trabajo movido. Traza la línea entre desplazamiento y abuso, volviendo las restricciones léxicamente prioritarias: costo, velocidad y capacidad optimizan dentro del espacio que dejan abierto los derechos, la dignidad, la seguridad, la agencia humana significativa, la accesibilidad y las protecciones laborales, y nunca se intercambian contra ellos. Dos disposiciones ya apuntaban en esta dirección — el anti-KPI del Gerente de Fuerza Laboral Híbrida se niega a medir el rol por humanos reemplazados, y las compuertas duras del HWFS acotan la asignación sin importar la economía. Esta cláusula nombra la jerarquía que ambas obedecían. Su número no es su rango: obliga a toda otra cláusula, y un conflicto con cualquiera de ellas se resuelve a su favor. El linaje es explícito: los principios de IA humanocéntrica de la OCDE colocan la dignidad, la autonomía, la justicia social y los derechos laborales dentro de la definición de IA confiable, no junto a ella.
+
+### HWF-21
+
+**La conformidad pertenece a un deployment, nunca a un producto, una plataforma ni una organización en abstracto. Una declaración de conformidad debe nombrar su alcance — la organización y el deployment, el rol y la versión del contrato de rol, el accountable owner, la clase de riesgo, las cláusulas evaluadas, el periodo de evaluación y su expiración — y debe publicar su evidencia y sus limitaciones conocidas. Un proveedor puede declarar que su plataforma habilita deployments conformes; nunca puede declarar que la plataforma misma conforma.**
+
+*Nota:* La conformidad autodeclarada sin unidad definida degenera en frase de marketing en cuestión de meses, y el remedio no es la certificación — excluida del alcance de este estándar y sin regreso — sino la falsificabilidad: una declaración que nombra su deployment, su dueño, sus cláusulas, su periodo, su evidencia y sus limitaciones puede ser verificada o refutada por cualquiera, lo que convierte al público en un auditor más barato que un certificador y más difícil de capturar. Una declaración vencida no es una declaración; la renovación puede compartir calendario con la revisión de existencia de HWF-19. La oración del proveedor es el candado anti-lavado, y la primera plataforma atada por ella es la del propio autor: AIEmpl.com puede declarar que habilita deployments conformes, y nunca puede llamarse a sí misma conforme. Un estándar que no gobierna cómo se lo invoca termina significando lo que el marketing necesite que signifique.
 
 ## Modelo de madurez
 
@@ -659,6 +681,8 @@ Un término, dos idiomas, una definición numerada. Cuando el término inglés s
 
 **G-33 · Neutralidad de recurso** — La disciplina de asignación que decide quién ocupa un puesto — humano, artificial o híbrido — sin preferencia previa por ninguno, juzgando solo fit, resultado, costo, riesgo y control. Es una disciplina, no una postura moral, y está acotada: la neutralidad comienza solo después de satisfechas las restricciones de HWF-20 — derechos, dignidad, seguridad, agencia humana significativa, accesibilidad, protecciones laborales. Citado sin su frontera, el término está siendo mal usado.
 
+**G-34 · Unidad de conformidad** — Aquello sobre lo que puede tratar una declaración de conformidad: un deployment — un rol, una versión de contrato de rol, un accountable owner, un periodo de evaluación con expiración. Productos, plataformas, modelos y organizaciones en abstracto no pueden conformar, diga lo que diga su marketing; un proveedor solo puede declarar que habilita deployments conformes (HWF-21).
+
 **G-25 · Puesto híbrido** — Puesto cuyas responsabilidades se reparten explícitamente entre un recurso humano y uno artificial, con handoffs definidos, transferencia de contexto y un único dueño del resultado completo. Mal diseñado, produce dos ocupantes esperando que responda el otro.
 
 ## Gobierno
@@ -778,9 +802,10 @@ Podés citar, embeber, enseñar, traducir y usar comercialmente este material co
 
 ### v1.0 · 2026-08-12 · Propuesta — Review Board en formación
 
-- Primera publicación: veinte cláusulas normativas, el test de nueve propiedades, el marco WRM, la matriz de 120 principios, el modelo de madurez, el instrumento HWFS, el rol de Gerente de Fuerza Laboral Híbrida y los playbooks de transición.
+- Primera publicación: veintiuna cláusulas normativas, el test de nueve propiedades, el marco WRM, la matriz de 120 principios, el modelo de madurez, el instrumento HWFS, el rol de Gerente de Fuerza Laboral Híbrida y los playbooks de transición.
 - La certificación se excluyó deliberadamente del alcance. Este estándar no puntúa productos ni emite sellos.
 - El HWFS devuelve un argumento estructurado en lugar de un puntaje 0–100, resolviendo una contradicción presente en la investigación de origen.
+- HWF-21 define la unidad de conformidad: un deployment, nunca un producto, plataforma ni organización en abstracto. Toda declaración publica nueve campos — organización y deployment, rol y versión de contrato, accountable owner, clase de riesgo, cláusulas evaluadas, periodo de evaluación, evidencia, limitaciones conocidas, expiración — para que la autodeclaración siga siendo falsificable en vez de degenerar en frase de marketing. Un proveedor puede declarar que su plataforma habilita deployments conformes y nunca que la plataforma conforma; la primera plataforma atada es la del propio autor. La plantilla de declaración nombra el estándar completo: se consideró y rechazó «HWFS conformance» porque HWFS ya nombra el Hybrid Workforce Fit Score, y una declaración de conformidad no debe confundirse con el instrumento de asignación. Agrega G-34 y la plantilla de declaración de nueve campos.
 - Se declinó una propuesta de dividir el documento en cinco piezas gobernadas por separado — estándar central, especificación de conformidad, marco WRM, instrumento HWFS, playbooks — y de renombrarlo Hybrid Workforce Governance Standard. La separación de régimen editorial que pedía ya existe como capas bajo una sola portada, y ahora queda declarada explícitamente en la sección de lectura; cinco documentos multiplicarían versiones, citas y deriva de referencias cruzadas para un proyecto de un solo editor, fragmentando además el único archivo legible por máquinas en que el estándar se entrega. El renombre se declinó por alcance y posicionamiento: las cláusulas se concentran en AI Employees por subsidiariedad — el lado humano de la fuerza laboral ya está gobernado por el derecho laboral y los estándares de RR. HH. existentes — mientras la doctrina, la matriz, las transiciones y HWF-20 gobiernan la fuerza laboral híbrida completa; y «governance» estrecharía el documento y lo pondría en el estante de los marcos generales de gobernanza de IA, exactamente la competencia que no busca. La extracción en piezas separadas queda disponible para una versión futura y su Board si algún día un ecosistema de auditores la exige.
 - HWF-20 declara la jerarquía ética y tiene precedencia sobre toda otra cláusula: las personas son fines, el software es un medio, y la optimización de costo, velocidad o capacidad nunca pasa por encima de los derechos humanos, la dignidad, la seguridad, la agencia humana significativa, la accesibilidad ni las protecciones laborales aplicables — la neutralidad de recurso comienza solo después de satisfechas esas restricciones. Adoptada casi como fue propuesta, con una oración de supremacía agregada para que su posición en la lista no se lea como su rango. No promete que el desplazamiento no ocurrirá; traza la línea entre desplazamiento y abuso, nombrando la jerarquía que el anti-KPI y las compuertas duras del HWFS ya obedecían. Agrega G-33, acota el mandato de neutralidad del Gerente de Fuerza Laboral Híbrida, y agrega los Principios de IA de la OCDE a las fuentes.
 - La premisa del WRM y la nota de HWF-01 ahora responden directamente la objeción de taylorismo. Una reescritura propuesta habría reemplazado «el puesto existe antes que su ocupante» por una oración de compuerta de autoridad más co-evolución reservada a los roles humanos. No se adoptó: la compuerta reformula HWF-03 y las reglas 3–4 del WRM, restringir la co-evolución a roles humanos contradice HWF-17, y borrar la premisa disolvería el marco de asignación del que depende el HWFS. Se adoptó la distinción que la objeción realmente necesitaba: la declaración gobierna el orden del nacimiento, no el resto de la vida. El job crafting es legítimo y esperado — Taylor fijaba a la persona a la caja; este estándar versiona la caja — y toda remodelación debe declararse, porque en una organización híbrida el puesto declarado es la interfaz: un colega humano puede leer un rol no declarado desde el pasillo, uno artificial solo puede leer el grafo. Ningún texto de cláusula cambió.

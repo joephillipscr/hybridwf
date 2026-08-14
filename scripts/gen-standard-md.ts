@@ -17,7 +17,7 @@ import { join } from 'node:path';
 
 import type { T } from '../lib/i18n';
 import { LOCALES, ROUTES, SITE_NAME, SITE_URL, STANDARD_DATE, STANDARD_VERSION, AUTHOR, type Locale } from '../lib/site';
-import { CLAUSES, CONFORMANCE, MOTIVATION, OBJECTIVE } from '../lib/standard';
+import { CLAUSES, CONFORMANCE, DECLARATION, MOTIVATION, OBJECTIVE } from '../lib/standard';
 import { DEFINITION, FORMULA, GOVERNING_PRINCIPLE, LADDER, OWNERSHIP_BOUNDARY, PROPERTIES, PROPERTIES_CAVEAT, THESIS } from '../lib/definition';
 import { LEVELS, MATURITY_NOTE, THRESHOLD, DIAGNOSTIC } from '../lib/maturity';
 import { BOUNDARY_WARNING, DOMAINS, LIFECYCLE, PRINCIPLE_LAYERS, RULES as WRM_RULES, STACK, WRM_DEFINITION, WRM_PREMISE } from '../lib/wrm';
@@ -190,6 +190,11 @@ function build(lang: Locale): string {
   h(2, t('clauses'));
   h(3, t('reading'));
   CONFORMANCE.body.forEach((b) => p(L(b, lang)));
+  h(3, L(DECLARATION.title, lang));
+  p(L(DECLARATION.intro, lang));
+  DECLARATION.fields.forEach((f, i) => o.push(`${i + 1}. ${L(f, lang)}`));
+  o.push('');
+  p(`*${L(DECLARATION.example, lang)}*`);
   CLAUSES.forEach((c) => {
     h(3, c.id);
     p(`**${L(c.text, lang)}**`);
@@ -340,7 +345,7 @@ function llmsTxt(): string {
   return [
     `# ${SITE_NAME}`,
     '',
-    `> An open administrative standard for AI Employees: twenty normative clauses, a nine-property test, the WRM (Work Resource Management) framework, a 120-principle matrix, a maturity model, and the HWFS decision instrument. Published under ${LICENSE.id}. Version ${STANDARD_VERSION}, ${STANDARD_DATE}.`,
+    `> An open administrative standard for AI Employees: twenty-one normative clauses, a nine-property test, the WRM (Work Resource Management) framework, a 120-principle matrix, a maturity model, and the HWFS decision instrument. Published under ${LICENSE.id}. Version ${STANDARD_VERSION}, ${STANDARD_DATE}.`,
     '',
     'A chatbot answers. A copilot helps. An agent executes a task. An AI Employee holds a role. A human answers for it.',
     '',

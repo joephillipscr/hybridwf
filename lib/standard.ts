@@ -9,7 +9,7 @@ export interface Clause {
 }
 
 /**
- * The Hybrid Workforce Standard v1.0 — twenty normative clauses.
+ * The Hybrid Workforce Standard v1.0 — twenty-one normative clauses.
  *
  * Clause text is the citable unit. Notes are commentary and may be revised
  * without a version bump; clause text may not.
@@ -235,7 +235,42 @@ export const CLAUSES: Clause[] = [
       es: 'El motor de la organización híbrida es el costo, y este estándar no finge lo contrario: el desplazamiento va a ocurrir, como ocurrió con el tractor, y un documento que prometiera impedirlo sería ignorado y merecería serlo. Lo que un estándar puede hacer es lo que hizo la legislación laboral — gobernar los términos. Esta cláusula no prohíbe el desplazamiento: trabajo movido legalmente, con dignidad, dentro de las protecciones aplicables y a través de los playbooks de transición sigue siendo trabajo movido. Traza la línea entre desplazamiento y abuso, volviendo las restricciones léxicamente prioritarias: costo, velocidad y capacidad optimizan dentro del espacio que dejan abierto los derechos, la dignidad, la seguridad, la agencia humana significativa, la accesibilidad y las protecciones laborales, y nunca se intercambian contra ellos. Dos disposiciones ya apuntaban en esta dirección — el anti-KPI del Gerente de Fuerza Laboral Híbrida se niega a medir el rol por humanos reemplazados, y las compuertas duras del HWFS acotan la asignación sin importar la economía. Esta cláusula nombra la jerarquía que ambas obedecían. Su número no es su rango: obliga a toda otra cláusula, y un conflicto con cualquiera de ellas se resuelve a su favor. El linaje es explícito: los principios de IA humanocéntrica de la OCDE colocan la dignidad, la autonomía, la justicia social y los derechos laborales dentro de la definición de IA confiable, no junto a ella.',
     },
   },
+  {
+    id: 'HWF-21',
+    text: {
+      en: 'Conformance belongs to a deployment, never to a product, a platform or an organisation in the abstract. A conformance claim must name its scope — the organisation and deployment, the role and role-contract version, the accountable owner, the risk class, the clauses assessed, the assessment period and its expiry — and must publish its evidence and known limitations. A vendor may state that its platform enables conformant deployments; it may never state that the platform itself conforms.',
+      es: 'La conformidad pertenece a un deployment, nunca a un producto, una plataforma ni una organización en abstracto. Una declaración de conformidad debe nombrar su alcance — la organización y el deployment, el rol y la versión del contrato de rol, el accountable owner, la clase de riesgo, las cláusulas evaluadas, el periodo de evaluación y su expiración — y debe publicar su evidencia y sus limitaciones conocidas. Un proveedor puede declarar que su plataforma habilita deployments conformes; nunca puede declarar que la plataforma misma conforma.',
+    },
+    note: {
+      en: 'Self-declared conformance without a defined unit degenerates into a marketing phrase within months, and the remedy is not certification — excluded from this standard’s scope and not returning — but falsifiability: a claim that names its deployment, owner, clauses, period, evidence and limitations can be verified or refuted by anyone, which makes the public a cheaper auditor than a certifier and a harder one to capture. An expired declaration is not a declaration; renewal may share its calendar with the existence review of HWF-19. The vendor sentence is the anti-laundering lock, and the first platform bound by it is the author’s own: AIEmpl.com may state that it enables conformant deployments, and may never call itself conformant. A standard that does not govern how it is invoked ends up meaning whatever marketing needs it to mean.',
+      es: 'La conformidad autodeclarada sin unidad definida degenera en frase de marketing en cuestión de meses, y el remedio no es la certificación — excluida del alcance de este estándar y sin regreso — sino la falsificabilidad: una declaración que nombra su deployment, su dueño, sus cláusulas, su periodo, su evidencia y sus limitaciones puede ser verificada o refutada por cualquiera, lo que convierte al público en un auditor más barato que un certificador y más difícil de capturar. Una declaración vencida no es una declaración; la renovación puede compartir calendario con la revisión de existencia de HWF-19. La oración del proveedor es el candado anti-lavado, y la primera plataforma atada por ella es la del propio autor: AIEmpl.com puede declarar que habilita deployments conformes, y nunca puede llamarse a sí misma conforme. Un estándar que no gobierna cómo se lo invoca termina significando lo que el marketing necesite que signifique.',
+    },
+  },
 ];
+
+/** The nine-field conformance declaration (HWF-21). */
+export const DECLARATION: { title: T; intro: T; fields: T[]; example: T } = {
+  title: { en: 'The conformance declaration', es: 'La declaración de conformidad' },
+  intro: {
+    en: 'Every conformance claim publishes these nine fields (HWF-21). A claim missing any of them is not a conformance claim under this standard.',
+    es: 'Toda declaración de conformidad publica estos nueve campos (HWF-21). Una declaración a la que le falte cualquiera no es una declaración de conformidad bajo este estándar.',
+  },
+  fields: [
+    { en: 'Organisation and deployment', es: 'Organización y deployment' },
+    { en: 'Role and role-contract version', es: 'Rol y versión del contrato de rol' },
+    { en: 'Accountable owner', es: 'Accountable owner' },
+    { en: 'Risk class', es: 'Clase de riesgo' },
+    { en: 'Clauses assessed', es: 'Cláusulas evaluadas' },
+    { en: 'Assessment period', es: 'Periodo de evaluación' },
+    { en: 'Evidence', es: 'Evidencia' },
+    { en: 'Known limitations', es: 'Limitaciones conocidas' },
+    { en: 'Expiry date of the declaration', es: 'Fecha de expiración de la declaración' },
+  ],
+  example: {
+    en: '“This deployment of the Accounts Receivable Coordinator conforms to the Hybrid Workforce Standard v1.0 for the stated scope and assessment period.”',
+    es: '«Este deployment de la Coordinadora de Cobros conforma con el Hybrid Workforce Standard v1.0 para el alcance y periodo de evaluación declarados.»',
+  },
+};
 
 /** The author’s motivation. Signed and non-normative: it explains why the
  * document exists, and conformance never depends on agreeing with it. */
