@@ -270,6 +270,14 @@ export const TERMS: Term[] = [
     },
   },
   {
+    id: 'G-33',
+    term: { en: 'Resource neutrality', es: 'Neutralidad de recurso' },
+    definition: {
+      en: 'The allocation discipline of deciding who fills a post — human, artificial or hybrid — without a prior preference for either, judging only fit, outcome, cost, risk and control. It is a discipline, not a moral stance, and it is bounded: neutrality begins only after the constraints of HWF-20 — rights, dignity, safety, meaningful human agency, accessibility, labour protections — are satisfied. Cited without its boundary, the term is being misused.',
+      es: 'La disciplina de asignación que decide quién ocupa un puesto — humano, artificial o híbrido — sin preferencia previa por ninguno, juzgando solo fit, resultado, costo, riesgo y control. Es una disciplina, no una postura moral, y está acotada: la neutralidad comienza solo después de satisfechas las restricciones de HWF-20 — derechos, dignidad, seguridad, agencia humana significativa, accesibilidad, protecciones laborales. Citado sin su frontera, el término está siendo mal usado.',
+    },
+  },
+  {
     id: 'G-25',
     term: { en: 'Hybrid post', es: 'Puesto híbrido' },
     definition: {

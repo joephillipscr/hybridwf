@@ -31,6 +31,7 @@ export const SOURCES: Source[] = [
   { id: 'S21', label: 'GIZIN — AI Employee Starter Book', url: 'https://store.gizin.co.jp/en/ai-employee-book', kind: 'books' },
   { id: 'S22', label: 'GIZIN — AI Employee Master Book', url: 'https://store.gizin.co.jp/en/ai-employee-master', kind: 'books' },
   { id: 'S23', label: 'B. Jaiswal — AI EMPLOYEE: How One Person Does the Work of Ten (Jun 2026)', url: 'https://play.google.com/store/books/details/B_JAISWAL_AI_EMPLOYEE?id=0w3uEQAAQBAJ', kind: 'books' },
+  { id: 'S24', label: 'OECD — AI Principles (human-centred values: dignity, autonomy, social justice, labour rights)', url: 'https://oecd.ai/en/ai-principles', kind: 'standards' },
 ];
 
 export const KIND_LABEL: Record<Source['kind'], T> = {
