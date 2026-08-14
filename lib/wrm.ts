@@ -221,8 +221,8 @@ export const LIFECYCLE: Stage[] = [
 
 export const RULES: T[] = [
   {
-    en: 'Every post must exist before its occupant, with purpose, responsibilities, results and KPIs.',
-    es: 'Todo puesto debe existir antes que su ocupante, con propósito, responsabilidades, resultados y KPIs.',
+    en: 'Every post must exist before its occupant, with purpose, responsibilities, results and KPIs — and no post may outlive its purpose.',
+    es: 'Todo puesto debe existir antes que su ocupante, con propósito, responsabilidades, resultados y KPIs — y ningún puesto debe sobrevivir a su propósito.',
   },
   {
     en: 'Every work resource must have exactly one accountable owner, even when it collaborates with many people or areas and even when its supervision is delegated.',

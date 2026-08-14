@@ -184,6 +184,12 @@ The clause text is the citable unit; cite it by identifier, so HWF-07 rather tha
 
 *Note:* The risk justification was always here: context has been divided into must know, may consult and must not access since the first draft. What was missing was the second reason to restrict. A resource that sees every prior dispute anchors on them; one that reads the last diagnosis inherits it; one that is given everything relevant drowns the signal in the merely related. Confirmation bias and operational overload are failures of judgement rather than leaks of information, and a manager reading a risk-only clause has no ground to withhold anything that is not sensitive. The record is the price of the tool, because deliberate opacity is otherwise the perfect instrument for laundering accountability — “the system did not have that context” is the AI-native descendant of “nobody told me”. A restriction that is written down, versioned and auditable is design; the same restriction undocumented is a defence prepared in advance, and the closing sentence of the clause takes that defence away. None of this legitimises starving a resource of what its role needs: withholding the context required to escalate well is not opacity but sabotage of HWF-09.
 
+### HWF-19
+
+**An AI Employee post must not outlive its justification. At a stated cadence, the accountable owner must re-justify the post’s existence against current strategy — a question prior to and separate from performance, because a resource can meet every KPI in a post the organisation no longer needs. Continuation is never the default: a post whose existence cannot be re-justified proceeds to retirement, and its access ends with it.**
+
+*Note:* A pointless human post prunes itself: it costs salary every month and its occupant gets bored and leaves. Payroll and attrition are the pruning mechanism, and an artificial occupant has neither — it costs little, never complains and never resigns, so a pointless post persists by default. In this framework’s own classification that makes organisational pruning an adapted principle: the function survives, the mechanism must be replaced, and this clause is the replacement. What accumulates without it is organisational debt, and its most dangerous form is the digital zombie: credentials, data access and standing authority kept alive for work nobody needs — under HWF-04, risk surface with no return. The existence question comes before the performance question because a good answer to the second is the usual anaesthetic against the first. No cadence is fixed here, consistent with the rest of the standard; twelve months is a sensible outer bound for most organisations, and the cadence belongs in the role contract. This review may share its calendar with the HWF-17 review; it must never share its default.
+
 ## Maturity model
 
 | Level | Name | Definition |
@@ -267,7 +273,7 @@ The founding idea is to separate the post from its occupant. First there is an o
 
 ### Ten non-negotiable rules
 
-1. Every post must exist before its occupant, with purpose, responsibilities, results and KPIs.
+1. Every post must exist before its occupant, with purpose, responsibilities, results and KPIs — and no post may outlive its purpose.
 2. Every work resource must have exactly one accountable owner, even when it collaborates with many people or areas and even when its supervision is delegated.
 3. Responsibility and authority must travel together: no result is demanded without granting the necessary faculties.
 4. All authority must be explicit, limited and revocable.
@@ -421,7 +427,7 @@ The matrix is an original synthesis of organisational design, HR, performance ma
 | 98 | Succession plan | Prepare a replacement for critical talent. | Fallback agent/model/version and replacement runbook. | U |
 | 99 | Cross-training | Develop flexibility to cover other functions. | Multi-capability, backup agents or ensembles, minding separation of duties. | U |
 | 100 | Retention of critical talent and knowledge | Reduce loss of capabilities and know-how. | Reduce vendor/model lock-in; preserve prompts, policies, evals, memory and artifacts. | A |
-| 101 | Termination criteria | Underperformance, restructuring, breach or other causes. | Obsolescence, cost, risk, incidents, underperformance or architecture change. | U |
+| 101 | Termination criteria | Underperformance, restructuring, breach or other causes. | Obsolescence, cost, risk, incidents, underperformance or architecture change; existence is re-justified on a stated cadence (HWF-19). | U |
 | 102 | Offboarding | Recover equipment, access, obligations and responsibilities. | Revoke credentials, disable tools, remove schedules, queues and integrations. | U |
 | 103 | Knowledge transfer | Avoid loss of information on exit. | Export approved memory, context, artifacts, runbooks and outstanding tasks. | U |
 | 104 | Information protection after exit | Confidentiality and closing of access. | Retention/deletion policies, revocation and secret rotation. | U |
@@ -639,6 +645,8 @@ One term, two languages, one numbered definition. Where the English term is used
 
 **G-31 · Deliberate opacity** — A recorded design decision to withhold context from an artificial resource, either to protect the information from the resource or to protect the resource’s judgement from the information: anchoring, confirmation bias, operational overload. It differs from an omission by exactly one property — it is written in the role contract, versioned and available to the audit. An unrecorded restriction is not opacity but a gap, and responsibility for whatever it degrades lies with whoever withheld the context (HWF-18).
 
+**G-32 · Digital zombie** — An AI Employee whose post has lost its justification but which keeps operating with credentials, data access and standing authority intact. It is what accumulates when nothing forces the existence question: the mechanisms that prune pointless human posts — payroll and attrition — do not apply to a resource that costs little and never resigns. Prevented by the re-justification cadence of HWF-19; dismantled through lifecycle retirement, with offboarding and revocation.
+
 **G-25 · Hybrid post** — A post whose responsibilities are split explicitly between a human and an artificial resource, with defined handoffs, context transfer and a single owner of the overall result. Badly designed, it produces two occupants each waiting for the other to answer.
 
 ## Governance
@@ -757,9 +765,10 @@ You may quote, embed, teach, translate and commercially use this material with a
 
 ### v1.0 · 2026-08-12 · Proposal — Review Board forming
 
-- First publication: eighteen normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS instrument, the Hybrid Workforce Manager role and the transition playbooks.
+- First publication: nineteen normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS instrument, the Hybrid Workforce Manager role and the transition playbooks.
 - Certification was deliberately excluded from scope. This standard scores no products and issues no seals.
 - The HWFS returns a structured argument rather than a 0–100 score, resolving a contradiction present in the source research.
+- HWF-19 forbids a post from outliving its justification: at a stated cadence the accountable owner re-justifies its existence against current strategy, as a question prior to and separate from performance, and continuation is never the default. The clause replaces a pruning mechanism that artificial occupants lack — payroll and attrition remove pointless human posts, and a resource that costs little and never resigns persists by default, accumulating organisational debt in its most dangerous form: digital zombies holding access for work nobody needs. The proposed twelve-month period moved to the note as guidance, because the standard fixes mechanisms rather than calendars. Adds G-32 and extends WRM rule 1 and matrix principle 101.
 - HWF-18 makes context provisioning deliberate in both directions. The restriction categories existed from the first draft, but every stated reason for them was informational risk, so nothing stopped a manager from granting all non-sensitive context even where it would degrade the resource’s judgement through anchoring, confirmation bias or overload. The proposal behind it asked for a new WRM domain of opacity; it entered as a clause instead, because opacity is a technique inside existing domains rather than a management function. The clause makes the record mandatory and assigns responsibility for decisions degraded by withheld context to whoever withheld it, because undocumented opacity is an accountability-laundering instrument. Adds G-31 and extends G-06, matrix principle 57 and WRM rule 6.
 - HWF-10 now prohibits simulating an interior state the system does not have, alongside deceiving anyone about its nature as software. Disclosure alone left a gap: a system could announce itself as software and still perform hesitation and warmth designed to lower the reader’s guard. The clause targets purpose rather than surface, so fluency and courtesy remain competence while injected latency, verbal hesitation and claims of feeling do not. The proposal behind it asked for communication to be functionally distinguishable from human interaction, which would have required AI Employees to write badly and would have been unauditable.
 - HWF-06 now requires an audit to reconstruct the determinants of a decision — policy, knowledge, tool results, authority and versions in force — and not only its outcome. A what-only audit leaves a wrong policy, stale knowledge, a bad tool result, a model error and a misassigned role looking identical, and those five need different remedies. The clause states in its citable text that a model’s account of its own reasoning supports the reconstruction without substituting for it, because stated reasoning is not reliable evidence of cause and a standard that accepted it would license confidently wrong postmortems.

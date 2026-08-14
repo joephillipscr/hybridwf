@@ -262,6 +262,14 @@ export const TERMS: Term[] = [
     },
   },
   {
+    id: 'G-32',
+    term: { en: 'Digital zombie', es: 'Zombi digital' },
+    definition: {
+      en: 'An AI Employee whose post has lost its justification but which keeps operating with credentials, data access and standing authority intact. It is what accumulates when nothing forces the existence question: the mechanisms that prune pointless human posts — payroll and attrition — do not apply to a resource that costs little and never resigns. Prevented by the re-justification cadence of HWF-19; dismantled through lifecycle retirement, with offboarding and revocation.',
+      es: 'Un AI Employee cuyo puesto perdió su justificación pero que sigue operando con credenciales, accesos a datos y autoridad vigente intactos. Es lo que se acumula cuando nada fuerza la pregunta de existencia: los mecanismos que podan los puestos humanos sin sentido — payroll y attrition — no aplican a un recurso que cuesta poco y no renuncia jamás. Se previene con la cadencia de re-justificación de HWF-19; se desmonta con el retiro del lifecycle, con offboarding y revocación.',
+    },
+  },
+  {
     id: 'G-25',
     term: { en: 'Hybrid post', es: 'Puesto híbrido' },
     definition: {
