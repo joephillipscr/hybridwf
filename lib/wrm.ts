@@ -225,8 +225,8 @@ export const RULES: T[] = [
     es: 'Todo puesto debe existir antes que su ocupante, con propósito, responsabilidades, resultados y KPIs — y ningún puesto debe sobrevivir a su propósito.',
   },
   {
-    en: 'Every work resource must have exactly one accountable owner, even when it collaborates with many people or areas and even when its supervision is delegated.',
-    es: 'Todo recurso de trabajo debe tener exactamente un accountable owner, aunque colabore con múltiples personas o áreas y aunque su supervisión esté delegada.',
+    en: 'Every work resource must have exactly one accountable owner, even when it collaborates with many people or areas and even when its supervision is delegated. One owner is primary, not exclusive: data, security, compliance and vendor obligations survive intact.',
+    es: 'Todo recurso de trabajo debe tener exactamente un accountable owner, aunque colabore con múltiples personas o áreas y aunque su supervisión esté delegada. Un owner es primario, no exclusivo: las obligaciones de datos, seguridad, compliance y proveedor sobreviven intactas.',
   },
   {
     en: 'Responsibility and authority must travel together: no result is demanded without granting the necessary faculties.',
