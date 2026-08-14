@@ -17,7 +17,7 @@ import { join } from 'node:path';
 
 import type { T } from '../lib/i18n';
 import { LOCALES, ROUTES, SITE_NAME, SITE_URL, STANDARD_DATE, STANDARD_VERSION, AUTHOR, type Locale } from '../lib/site';
-import { CLAUSES, CONFORMANCE } from '../lib/standard';
+import { CLAUSES, CONFORMANCE, MOTIVATION } from '../lib/standard';
 import { DEFINITION, GOVERNING_PRINCIPLE, LADDER, OWNERSHIP_BOUNDARY, PROPERTIES, PROPERTIES_CAVEAT, THESIS } from '../lib/definition';
 import { LEVELS, MATURITY_NOTE, THRESHOLD, DIAGNOSTIC } from '../lib/maturity';
 import { BOUNDARY_WARNING, DOMAINS, LIFECYCLE, PRINCIPLE_LAYERS, RULES as WRM_RULES, STACK, WRM_DEFINITION, WRM_PREMISE } from '../lib/wrm';
@@ -164,6 +164,7 @@ function build(lang: Locale): string {
   h(1, SITE_NAME);
   p(`**${L(THESIS, lang)}**`);
   p(`> ${L(GOVERNING_PRINCIPLE, lang)}`);
+  p(`**${L(MOTIVATION.label, lang)}.** ${L(MOTIVATION.text, lang)} — ${AUTHOR.name}`);
 
   h(2, t('howToCite'));
   p(t('citeBody'));

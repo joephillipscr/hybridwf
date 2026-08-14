@@ -3,16 +3,16 @@ import { ArrowRight, FileText } from 'lucide-react';
 import CiteBox from '../CiteBox';
 import Reveal from '../Reveal';
 import { PageHeader, Section } from '../Section';
-import { CLAUSES, CONFORMANCE } from '@/lib/standard';
+import { CLAUSES, CONFORMANCE, MOTIVATION } from '@/lib/standard';
 import { UI } from '@/lib/i18n';
-import { SITE_NAME, SITE_URL, STANDARD_VERSION, route, type Locale } from '@/lib/site';
+import { AUTHOR, SITE_NAME, SITE_URL, STANDARD_VERSION, route, type Locale } from '@/lib/site';
 
 const C = {
   eyebrow: { en: 'Normative text', es: 'Texto normativo' },
   title: { en: 'The Hybrid Workforce Standard', es: 'El Hybrid Workforce Standard' },
   lede: {
-    en: 'Seventeen clauses that separate a governable work resource from a commercial metaphor. Conformance is self-declared: no product is scored here and no seal is issued.',
-    es: 'Diecisiete cláusulas que separan un recurso de trabajo gobernable de una metáfora comercial. La conformidad es autodeclarada: acá no se puntúa ningún producto ni se emite ningún sello.',
+    en: 'Eighteen clauses that separate a governable work resource from a commercial metaphor. Conformance is self-declared: no product is scored here and no seal is issued.',
+    es: 'Dieciocho cláusulas que separan un recurso de trabajo gobernable de una metáfora comercial. La conformidad es autodeclarada: acá no se puntúa ningún producto ni se emite ningún sello.',
   },
   next: { en: 'How the standard is governed', es: 'Cómo se gobierna el estándar' },
   machineTitle: { en: 'Machine-readable', es: 'Legible por máquinas' },
@@ -31,6 +31,23 @@ export default function StandardPage({ lang }: { lang: Locale }) {
   return (
     <>
       <PageHeader eyebrow={C.eyebrow[lang]} title={C.title[lang]} lede={C.lede[lang]} />
+
+      <Section>
+        <Reveal>
+          <figure className="max-w-3xl border-l-2 border-accent pl-6">
+            <figcaption className="eyebrow">{MOTIVATION.label[lang]}</figcaption>
+            <blockquote className="mt-3 font-display text-xl leading-snug text-fg sm:text-[1.35rem]">
+              {MOTIVATION.text[lang]}
+            </blockquote>
+            <p className="mt-3 text-sm text-muted">
+              —{' '}
+              <a href={AUTHOR.url} className="underline decoration-border underline-offset-4 hover:text-fg">
+                {AUTHOR.name}
+              </a>
+            </p>
+          </figure>
+        </Reveal>
+      </Section>
 
       <Section>
         <div className="grid gap-12 lg:grid-cols-[1fr_20rem] lg:items-start">

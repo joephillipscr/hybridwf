@@ -215,6 +215,16 @@ export const CLAUSES: Clause[] = [
   },
 ];
 
+/** The author’s motivation. Signed and non-normative: it explains why the
+ * document exists, and conformance never depends on agreeing with it. */
+export const MOTIVATION: { label: T; text: T } = {
+  label: { en: 'Why this standard exists', es: 'Por qué existe este estándar' },
+  text: {
+    en: 'This standard is a declaration of the organisation’s independence from the anarchy of the prompt. By demanding a role contract, it forces leaders to think before they automate.',
+    es: 'Este estándar es una declaración de independencia de la organización frente a la anarquía del prompt. Al exigir un contrato de rol, obliga a los líderes a pensar antes de automatizar.',
+  },
+};
+
 /** Conformance language, stated once so the clauses can stay short. */
 export const CONFORMANCE: { title: T; body: T[] } = {
   title: { en: 'Reading this standard', es: 'Cómo leer este estándar' },

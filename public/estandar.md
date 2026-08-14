@@ -19,6 +19,8 @@ disclosure: "The author also builds AIEmpl.com, a commercial platform in this ca
 
 > No existen, como punto de partida, puestos humanos y puestos de IA. Existen trabajos que deben realizarse. Después se decide cuál es la combinación de recursos humanos y artificiales que produce el mejor resultado con el nivel correcto de riesgo, responsabilidad y control.
 
+**Por qué existe este estándar.** Este estándar es una declaración de independencia de la organización frente a la anarquía del prompt. Al exigir un contrato de rol, obliga a los líderes a pensar antes de automatizar. — Master Joe Phillips
+
 ## Cómo citar
 
 Citá las cláusulas por identificador, nunca por página ni número de sección. El texto de la cláusula es la unidad citable; las notas bajo cada cláusula son comentario y pueden revisarse entre versiones sin enmendar el estándar.
