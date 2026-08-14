@@ -22,7 +22,7 @@ import { DEFINITION, FORMULA, GOVERNING_PRINCIPLE, LADDER, OWNERSHIP_BOUNDARY, P
 import { LEVELS, MATURITY_NOTE, THRESHOLD, DIAGNOSTIC } from '../lib/maturity';
 import { BOUNDARY_WARNING, DOMAINS, LIFECYCLE, PRINCIPLE_LAYERS, RULES as WRM_RULES, STACK, WRM_DEFINITION, WRM_PREMISE } from '../lib/wrm';
 import { COUNTS, MATRIX_CAVEAT, PRINCIPLES, P_DOMAINS } from '../lib/principles';
-import { AUTONOMY, AUTONOMY_NOTE, DIMENSIONS } from '../lib/hwfs';
+import { AUTONOMY, AUTONOMY_NOTE, DIMENSIONS } from '../lib/hwfa';
 import { ANTI_KPI, CAPACITY_ELEVATION, CEO_NOTE, KPIS, MISSION, PLACEMENT, RESPONSIBILITIES, ROLE_NAME } from '../lib/role';
 import { BACK, BACK_INTRO, BACK_NOTE, FORWARD, FORWARD_INTRO, FORWARD_PRECONDITION, FORWARD_RULE } from '../lib/transitions';
 import { ACRONYM_RULE, GLOSSARY_NOTE, TERMS as GLOSSARY_TERMS } from '../lib/glossary';
@@ -70,10 +70,10 @@ const S = {
   lifecycle: { en: 'Lifecycle of a work resource', es: 'Ciclo de vida del recurso de trabajo' },
   rules: { en: 'Ten non-negotiable rules', es: 'Diez reglas no negociables' },
   matrix: { en: 'The 120-principle matrix', es: 'La matriz de 120 principios' },
-  hwfs: { en: 'HWFS — Hybrid Workforce Fit Score', es: 'HWFS — Hybrid Workforce Fit Score' },
-  hwfsIntro: {
-    en: 'A structured instrument for deciding whether a responsibility should be Human, Artificial or Hybrid. It returns an argument, not a score: an allocation, a risk class, a starting autonomy rung, the answers that decided it, and the conditions that would change it. A numeric score is deliberately not produced, because it would let a decision already taken be laundered through arithmetic.',
-    es: 'Instrumento estructurado para decidir si una responsabilidad debe ser Humana, Artificial o Híbrida. Devuelve un argumento, no un puntaje: una asignación, una clase de riesgo, un peldaño inicial de autonomía, las respuestas que lo decidieron y las condiciones que lo cambiarían. Deliberadamente no produce un puntaje numérico, porque permitiría lavar a través de la aritmética una decisión ya tomada.',
+  hwfa: { en: 'HWFA — Hybrid Workforce Fit Assessment', es: 'HWFA — Hybrid Workforce Fit Assessment' },
+  hwfaIntro: {
+    en: 'A structured instrument in three stages — eligibility, then risk, then economics — for deciding whether a responsibility should be Human, Deterministic automation, Artificial or Hybrid. Constraints come first: reserved subjects and prohibited uses gate the answer, fully enumerable rule-following work exits to conventional software, risk caps what survives, and only then does the cost profile choose among the remainder. It returns an argument, not a number: an allocation, a risk class, a starting autonomy rung, the answers that decided it, and the conditions that would change it — a numeric score would let a decision already taken be laundered through arithmetic.',
+    es: 'Instrumento estructurado en tres etapas — elegibilidad, luego riesgo, luego economía — para decidir si una responsabilidad debe ser Humana, Automatización determinista, Artificial o Híbrida. Las restricciones van primero: las materias reservadas y los usos prohibidos compuertan la respuesta, el trabajo por reglas completamente enumerable sale hacia software convencional, el riesgo topa lo que sobrevive, y solo entonces el perfil de costos escoge entre lo restante. Devuelve un argumento, no un número: una asignación, una clase de riesgo, un peldaño inicial de autonomía, las respuestas que lo decidieron y las condiciones que lo cambiarían — un puntaje numérico permitiría lavar a través de la aritmética una decisión ya tomada.',
   },
   dimensions: { en: 'The twelve dimensions', es: 'Las doce dimensiones' },
   autonomy: { en: 'The autonomy ladder', es: 'La escalera de autonomía' },
@@ -249,9 +249,9 @@ function build(lang: Locale): string {
       PRINCIPLES.filter((x) => x.domain === d.n).map((x) => [String(x.n), L(x.principle, lang), L(x.human, lang), L(x.artificial, lang), x.cls])));
   });
 
-  /* --- HWFS -------------------------------------------------------- */
-  h(2, t('hwfs'));
-  p(t('hwfsIntro'));
+  /* --- HWFA -------------------------------------------------------- */
+  h(2, t('hwfa'));
+  p(t('hwfaIntro'));
   h(3, t('dimensions'));
   p(table([t('colDimension'), t('colQuestion'), t('colOptions')],
     DIMENSIONS.map((d) => [L(d.name, lang), L(d.question, lang), d.options.map((x) => L(x, lang)).join(' · ')])));
@@ -319,8 +319,8 @@ function build(lang: Locale): string {
   p(`${L(LICENSE.name, lang)} (\`${LICENSE.id}\`) — ${LICENSE.url}`);
   p(
     lang === 'en'
-      ? 'You may quote, embed, teach, translate and commercially use this material with attribution. A modified version must carry the same licence. The names "Hybrid Workforce Standard", "HybridWF", "WRM" and "HWFS" are reserved and are not licensed: you may state that your work conforms to the standard, but you may not publish a modified version under the same name.'
-      : 'Podés citar, embeber, enseñar, traducir y usar comercialmente este material con atribución. Una versión modificada debe llevar la misma licencia. Los nombres «Hybrid Workforce Standard», «HybridWF», «WRM» y «HWFS» quedan reservados y no están licenciados: podés declarar que tu trabajo conforma con el estándar, pero no publicar una versión modificada con el mismo nombre.',
+      ? 'You may quote, embed, teach, translate and commercially use this material with attribution. A modified version must carry the same licence. The names "Hybrid Workforce Standard", "HybridWF", "WRM" and "HWFA" (formerly HWFS) are reserved and are not licensed: you may state that your work conforms to the standard, but you may not publish a modified version under the same name.'
+      : 'Podés citar, embeber, enseñar, traducir y usar comercialmente este material con atribución. Una versión modificada debe llevar la misma licencia. Los nombres «Hybrid Workforce Standard», «HybridWF», «WRM» y «HWFA» (antes HWFS) quedan reservados y no están licenciados: podés declarar que tu trabajo conforma con el estándar, pero no publicar una versión modificada con el mismo nombre.',
   );
 
   /* --- Sources ----------------------------------------------------- */
@@ -354,7 +354,7 @@ function llmsTxt(): string {
   return [
     `# ${SITE_NAME}`,
     '',
-    `> An open administrative standard for AI Employees: twenty-seven normative clauses, a nine-property test, the WRM (Work Resource Management) framework, a 120-principle matrix, a maturity model, and the HWFS decision instrument. Published under ${LICENSE.id}. Version ${STANDARD_VERSION}, ${STANDARD_DATE}.`,
+    `> An open administrative standard for AI Employees: twenty-seven normative clauses, a nine-property test, the WRM (Work Resource Management) framework, a 120-principle matrix, a maturity model, and the HWFA decision instrument. Published under ${LICENSE.id}. Version ${STANDARD_VERSION}, ${STANDARD_DATE}.`,
     '',
     'A chatbot answers. A copilot helps. An agent executes a task. An AI Employee holds a role. A human answers for it.',
     '',
@@ -363,7 +363,7 @@ function llmsTxt(): string {
     '## Full text',
     '',
     `- [The standard, complete (English)](${SITE_URL}/standard.md): every clause, framework, matrix, instrument and glossary entry in one file.`,
-    `- [El estándar, completo (Spanish)](${SITE_URL}/estandar.md): the same document in Spanish. Acronyms (WRM, HWFS, HWF-nn) are identical in both editions.`,
+    `- [El estándar, completo (Spanish)](${SITE_URL}/estandar.md): the same document in Spanish. Acronyms (WRM, HWFA, HWF-nn) are identical in both editions.`,
     '',
     '## Pages',
     '',

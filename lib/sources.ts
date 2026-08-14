@@ -72,8 +72,8 @@ export const METHOD_NOTES: T[] = [
     es: 'Los papers de arXiv son preprints salvo que se indique otra cosa, y se usan como señales de investigación emergente, no como consenso científico definitivo.',
   },
   {
-    en: 'The definition, the nine-property test, the maturity model, the transition playbooks, the HWFS and this standard itself are conceptual proposals developed in this work. They are not official standards of ISO, NIST, the ILO or any cited vendor.',
-    es: 'La definición, el test de nueve propiedades, el modelo de madurez, los playbooks de transición, el HWFS y este mismo estándar son propuestas conceptuales desarrolladas en este trabajo. No son estándares oficiales de ISO, NIST, la OIT ni de ningún proveedor citado.',
+    en: 'The definition, the nine-property test, the maturity model, the transition playbooks, the HWFA and this standard itself are conceptual proposals developed in this work. They are not official standards of ISO, NIST, the ILO or any cited vendor.',
+    es: 'La definición, el test de nueve propiedades, el modelo de madurez, los playbooks de transición, el HWFA y este mismo estándar son propuestas conceptuales desarrolladas en este trabajo. No son estándares oficiales de ISO, NIST, la OIT ni de ningún proveedor citado.',
   },
 ];
 

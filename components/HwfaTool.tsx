@@ -10,7 +10,7 @@ import {
   evaluate,
   riskLabel,
   type Answers,
-} from '@/lib/hwfs';
+} from '@/lib/hwfa';
 import { UI } from '@/lib/i18n';
 import { SITE_URL, STANDARD_VERSION, type Locale } from '@/lib/site';
 
@@ -36,8 +36,8 @@ const COPY = {
   controls: { en: 'Controls this requires', es: 'Controles que exige' },
   change: { en: 'What would change the answer', es: 'Qué cambiaría la respuesta' },
   incomplete: {
-    en: 'Answer every dimension to get a result. The instrument is designed to make you look at all twelve, including the ones you would rather skip.',
-    es: 'Respondé todas las dimensiones para obtener un resultado. El instrumento está diseñado para obligarte a mirar las doce, incluidas las que preferirías saltarte.',
+    en: 'Answer every dimension to get a result. The instrument is designed to make you look at all thirteen, including the ones you would rather skip.',
+    es: 'Respondé todas las dimensiones para obtener un resultado. El instrumento está diseñado para obligarte a mirar las trece, incluidas las que preferirías saltarte.',
   },
   noScore: {
     en: 'This instrument returns no number. A score would let the decision be laundered through arithmetic — the point is to make the judgement visible, not to replace it.',
@@ -47,7 +47,7 @@ const COPY = {
   reset: { en: 'Start over', es: 'Empezar de nuevo' },
 };
 
-export default function HwfsTool({ lang }: { lang: Locale }) {
+export default function HwfaTool({ lang }: { lang: Locale }) {
   const [name, setName] = useState('');
   const [answers, setAnswers] = useState<Answers>({});
   const [copied, setCopied] = useState(false);
@@ -58,13 +58,13 @@ export default function HwfsTool({ lang }: { lang: Locale }) {
   const markdown = useMemo(() => {
     if (!result) return '';
     const L = (o: { en: string; es: string }) => o[lang];
-    const rung = AUTONOMY.find((a) => a.rung === result.startingRung)!;
+    const rung = AUTONOMY.find((a) => a.rung === result.startingRung);
     return [
-      `# HWFS — ${name || (lang === 'en' ? 'Untitled responsibility' : 'Responsabilidad sin título')}`,
+      `# HWFA — ${name || (lang === 'en' ? 'Untitled responsibility' : 'Responsabilidad sin título')}`,
       '',
       `**${COPY.allocation[lang]}:** ${L(ALLOCATION_LABEL[result.allocation])}`,
       `**${COPY.risk[lang]}:** ${L(riskLabel(result.risk))}`,
-      `**${COPY.autonomy[lang]}:** ${result.startingRung} — ${L(rung.name)}. ${L(rung.detail)}`,
+      ...(rung ? [`**${COPY.autonomy[lang]}:** ${result.startingRung} — ${L(rung.name)}. ${L(rung.detail)}`] : []),
       '',
       `## ${COPY.drove[lang]}`,
       ...result.determinative.map((d) => `- **${L(d.name)}** — ${L(d.reason)}`),
@@ -76,7 +76,7 @@ export default function HwfsTool({ lang }: { lang: Locale }) {
       ...result.wouldChange.map((c) => `- ${L(c)}`),
       '',
       '---',
-      `${lang === 'en' ? 'Produced with the Hybrid Workforce Fit Score' : 'Producido con el Hybrid Workforce Fit Score'}, ${SITE_URL}/hwfs/ · Hybrid Workforce Standard v${STANDARD_VERSION}`,
+      `${lang === 'en' ? 'Produced with the Hybrid Workforce Fit Assessment' : 'Producido con el Hybrid Workforce Fit Assessment'}, ${SITE_URL}/hwfa/ · Hybrid Workforce Standard v${STANDARD_VERSION}`,
     ].join('\n');
   }, [result, name, lang]);
 
@@ -168,16 +168,18 @@ export default function HwfsTool({ lang }: { lang: Locale }) {
                   <dt className="text-muted">{COPY.risk[lang]}</dt>
                   <dd className="font-semibold text-fg">{riskLabel(result.risk)[lang]}</dd>
                 </div>
-                <div className="border-b border-border pb-3">
-                  <dt className="text-muted">{COPY.autonomy[lang]}</dt>
-                  <dd className="mt-1 font-semibold text-fg">
-                    {result.startingRung} ·{' '}
-                    {AUTONOMY.find((a) => a.rung === result.startingRung)!.name[lang]}
-                  </dd>
-                  <dd className="mt-1 text-xs leading-relaxed text-muted">
-                    {AUTONOMY.find((a) => a.rung === result.startingRung)!.detail[lang]}
-                  </dd>
-                </div>
+                {result.allocation !== 'deterministic' && (
+                  <div className="border-b border-border pb-3">
+                    <dt className="text-muted">{COPY.autonomy[lang]}</dt>
+                    <dd className="mt-1 font-semibold text-fg">
+                      {result.startingRung} ·{' '}
+                      {AUTONOMY.find((a) => a.rung === result.startingRung)!.name[lang]}
+                    </dd>
+                    <dd className="mt-1 text-xs leading-relaxed text-muted">
+                      {AUTONOMY.find((a) => a.rung === result.startingRung)!.detail[lang]}
+                    </dd>
+                  </div>
+                )}
               </dl>
 
               <Block title={COPY.drove[lang]}>

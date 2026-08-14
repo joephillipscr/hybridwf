@@ -39,7 +39,7 @@ export type RouteKey =
   | 'maturity'
   | 'framework'
   | 'principles'
-  | 'hwfs'
+  | 'hwfa'
   | 'role'
   | 'transitions'
   | 'glossary'
@@ -55,7 +55,7 @@ export const ROUTES: Record<RouteKey, Record<Locale, string>> = {
   maturity: { en: '/maturity/', es: '/es/madurez/' },
   framework: { en: '/framework/', es: '/es/marco/' },
   principles: { en: '/framework/principles/', es: '/es/marco/principios/' },
-  hwfs: { en: '/hwfs/', es: '/es/hwfs/' },
+  hwfa: { en: '/hwfa/', es: '/es/hwfa/' },
   role: { en: '/role/', es: '/es/rol/' },
   transitions: { en: '/transitions/', es: '/es/transiciones/' },
   glossary: { en: '/glossary/', es: '/es/glosario/' },
@@ -72,7 +72,7 @@ export const ROUTE_TITLES: Record<RouteKey, Record<Locale, string>> = {
   maturity: { en: 'Maturity', es: 'Madurez' },
   framework: { en: 'WRM Framework', es: 'Marco WRM' },
   principles: { en: '120 Principles', es: '120 Principios' },
-  hwfs: { en: 'HWFS', es: 'HWFS' },
+  hwfa: { en: 'HWFA', es: 'HWFA' },
   role: { en: 'The Role', es: 'El Rol' },
   transitions: { en: 'Transitions', es: 'Transiciones' },
   glossary: { en: 'Glossary', es: 'Glosario' },
@@ -87,7 +87,7 @@ export const NAV: RouteKey[] = [
   'standard',
   'definition',
   'framework',
-  'hwfs',
+  'hwfa',
   'role',
   'governance',
 ];
@@ -103,7 +103,7 @@ export const FOOTER_NAV: { title: Record<Locale, string>; items: RouteKey[] }[] 
   },
   {
     title: { en: 'Use it', es: 'Usarlo' },
-    items: ['hwfs', 'glossary', 'governance', 'license', 'sources'],
+    items: ['hwfa', 'glossary', 'governance', 'license', 'sources'],
   },
 ];
 

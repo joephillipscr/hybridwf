@@ -1,7 +1,7 @@
 import type { T } from './i18n';
 
 /**
- * Hybrid Workforce Fit Score.
+ * Hybrid Workforce Fit Assessment.
  *
  * Deliberately NOT a 0–100 number. The framework's own warning is that a blind
  * formula lets a manager launder a decision they had already made. So the
@@ -10,7 +10,7 @@ import type { T } from './i18n';
  * controls that follow from it, and what would change the answer.
  */
 
-export type Allocation = 'human' | 'hybrid' | 'artificial';
+export type Allocation = 'human' | 'deterministic' | 'hybrid' | 'artificial';
 export type RiskClass = 'low' | 'moderate' | 'high' | 'critical';
 
 export interface Dimension {
@@ -22,6 +22,17 @@ export interface Dimension {
 }
 
 export const DIMENSIONS: Dimension[] = [
+  {
+    key: 'reserved',
+    name: { en: 'Reserved subjects', es: 'Materias reservadas' },
+    question: { en: 'Does the responsibility decide matters HWF-23 reserves to humans?', es: '¿La responsabilidad decide materias que HWF-23 reserva a humanos?' },
+    options: [
+      { en: 'Yes — its core decisions are reserved: employment, health and safety, credit or essential services, legal rights, force, vulnerable people', es: 'Sí — sus decisiones centrales son reservadas: empleo, salud y seguridad, crédito o servicios esenciales, derechos legales, fuerza, personas vulnerables' },
+      { en: 'Reserved matters appear regularly among its decisions', es: 'Las materias reservadas aparecen con regularidad entre sus decisiones' },
+      { en: 'It occasionally touches reserved matters, and they can be routed out', es: 'Toca materias reservadas ocasionalmente, y pueden rutearse fuera' },
+      { en: 'It never decides reserved matters', es: 'Nunca decide materias reservadas' },
+    ],
+  },
   {
     key: 'repeatability',
     name: { en: 'Repeatability', es: 'Repetibilidad' },
@@ -68,10 +79,10 @@ export const DIMENSIONS: Dimension[] = [
   },
   {
     key: 'empathy',
-    name: { en: 'Empathy and trust', es: 'Empatía y confianza' },
-    question: { en: 'Does the human relationship create material value?', es: '¿La relación humana crea valor material?' },
+    name: { en: 'Human significance', es: 'Significancia humana' },
+    question: { en: 'What does the interaction mean for the person on the other side?', es: '¿Qué significa la interacción para la persona del otro lado?' },
     options: [
-      { en: 'The relationship is the product', es: 'La relación es el producto' },
+      { en: 'Dignity, vulnerability or power over the person is at stake — or the relationship is the product', es: 'Hay dignidad, vulnerabilidad o poder sobre la persona en juego — o la relación es el producto' },
       { en: 'Trust materially affects the outcome', es: 'La confianza afecta materialmente el resultado' },
       { en: 'Courtesy matters, relationship does not decide', es: 'La cortesía importa, la relación no decide' },
       { en: 'Transactional, no relational component', es: 'Transaccional, sin componente relacional' },
@@ -102,7 +113,7 @@ export const DIMENSIONS: Dimension[] = [
   {
     key: 'volume',
     name: { en: 'Volume', es: 'Volumen' },
-    question: { en: 'Is there enough repetition to justify automation?', es: '¿Existe suficiente repetición para justificar automatización?' },
+    question: { en: 'How many cases flow through this responsibility?', es: '¿Cuántos casos fluyen por esta responsabilidad?' },
     options: [
       { en: 'A handful of cases per month', es: 'Un puñado de casos al mes' },
       { en: 'Steady but modest', es: 'Constante pero modesto' },
@@ -145,16 +156,16 @@ export const DIMENSIONS: Dimension[] = [
   },
   {
     key: 'economics',
-    name: { en: 'Economics', es: 'Economics' },
+    name: { en: 'Cost profile', es: 'Perfil de costos' },
     question: {
-      en: 'Which alternative offers a better cost per correct outcome, including supervision?',
-      es: '¿Qué alternativa ofrece mejor costo por outcome correcto, incluyendo supervisión?',
+      en: 'Where does the cost of this responsibility sit today?',
+      es: '¿Dónde está hoy el costo de esta responsabilidad?',
     },
     options: [
-      { en: 'Human, clearly', es: 'Humano, claramente' },
-      { en: 'Human, narrowly', es: 'Humano, por poco' },
-      { en: 'Artificial, narrowly', es: 'Artificial, por poco' },
-      { en: 'Artificial, clearly', es: 'Artificial, claramente' },
+      { en: 'In scarce senior judgement applied case by case', es: 'En criterio senior escaso aplicado caso por caso' },
+      { en: 'In relationship time that builds the outcome', es: 'En tiempo de relación que construye el resultado' },
+      { en: 'In skilled time consumed by repetitive cases', es: 'En tiempo calificado consumido por casos repetitivos' },
+      { en: 'In coverage: queues, waiting and out-of-hours demand', es: 'En cobertura: colas, espera y demanda fuera de horario' },
     ],
   },
 ];
@@ -226,6 +237,7 @@ export const riskLabel = (r: RiskClass) => RISK_LABEL[r];
 
 export const ALLOCATION_LABEL: Record<Allocation, T> = {
   human: { en: 'Human', es: 'Humano' },
+  deterministic: { en: 'Deterministic automation', es: 'Automatización determinista' },
   hybrid: { en: 'Hybrid', es: 'Híbrido' },
   artificial: { en: 'Artificial', es: 'Artificial' },
 };
@@ -242,47 +254,63 @@ export function evaluate(a: Answers): Result {
   const mark = (k: string, reason: T) =>
     determinative.push({ dimension: k, name: dim(k).name, reason });
 
-  /* Risk class from cost of error and reversibility. */
-  const risk: RiskClass =
-    v('risk') === 0 && v('reversibility') <= 1
-      ? 'critical'
-      : v('risk') <= 1 || v('reversibility') === 0
-        ? 'high'
-        : v('risk') === 2 || v('reversibility') === 1
-          ? 'moderate'
-          : 'low';
+  /* ================= Stage 1 · Eligibility =================
+     Constraints come first (HWF-20): what may not be delegated,
+     and what does not need an AI Employee at all. */
 
-  /* --- Hard gates: these cap the allocation regardless of everything else. */
+  const reservedCore = v('reserved') === 0;
   let ceiling: Allocation = 'artificial';
 
-  if (risk === 'critical') {
+  if (reservedCore) {
     ceiling = 'hybrid';
-    mark('risk', {
-      en: 'A severe and irreversible error caps this at hybrid: a human must own the decision even if the artificial resource does the work.',
-      es: 'Un error severo e irreversible topa esto en híbrido: un humano debe conservar la decisión aunque el recurso artificial haga el trabajo.',
+    mark('reserved', {
+      en: 'The core decisions are reserved subjects (HWF-23): an artificial resource may analyse, draft and recommend, and a human with authority to decide otherwise takes every decision. Reserved decisions are Critical by definition.',
+      es: 'Las decisiones centrales son materias reservadas (HWF-23): un recurso artificial puede analizar, redactar y recomendar, y un humano con autoridad para decidir distinto toma cada decisión. Las decisiones reservadas son Críticas por definición.',
     });
     controls.push({
-      en: 'Mandatory human approval before execution, with separation of duties — whoever initiates does not approve.',
-      es: 'Aprobación humana obligatoria antes de ejecutar, con separación de funciones: quien inicia no aprueba.',
+      en: 'Route every reserved decision to a named human who can restate the case and decide otherwise — approval throughput that forecloses understanding is a signature, not a decision.',
+      es: 'Ruteá toda decisión reservada a un humano con nombre que pueda reformular el caso y decidir distinto — aprobar a un ritmo que impide entender es una firma, no una decisión.',
+    });
+  } else if (v('reserved') === 1) {
+    if (ceiling === 'artificial') ceiling = 'hybrid';
+    controls.push({
+      en: 'Reserved matters appear regularly: define the routing rule that sends them to a human before deployment, and audit that it fires.',
+      es: 'Las materias reservadas aparecen con regularidad: definí la regla de ruteo que las envía a un humano antes del deployment, y auditá que dispare.',
     });
   }
 
-  if (v('empathy') === 0) {
-    ceiling = 'human';
-    mark('empathy', {
-      en: 'The relationship is the product. Ownership stays human; an artificial resource may prepare, never conclude.',
-      es: 'La relación es el producto. El ownership queda humano; un recurso artificial puede preparar, nunca concluir.',
+  /* Deterministic exit: fully enumerable, rule-following work with a thin
+     exception tail is software territory, not AI Employee territory. */
+  if (!reservedCore && v('predictability') === 3 && v('judgement') === 3 && v('exceptions') >= 2) {
+    const detRisk: RiskClass = v('risk') <= 1 ? 'high' : v('risk') === 2 ? 'moderate' : 'low';
+    mark('predictability', {
+      en: 'Fully enumerable inputs and outputs with rule-following execution is not a case for probabilistic AI: conventional software or RPA does this cheaper, faster and with zero stochastic risk.',
+      es: 'Inputs y outputs completamente enumerables con ejecución por reglas no es un caso para IA probabilística: el software convencional o RPA lo hace más barato, más rápido y con cero riesgo estocástico.',
     });
-  } else if (v('empathy') === 1 && ceiling === 'artificial') {
-    ceiling = 'hybrid';
-    mark('empathy', {
-      en: 'Trust materially affects the outcome, so a person keeps the conversation while the artificial resource prepares context.',
-      es: 'La confianza afecta materialmente el resultado, así que una persona conserva la conversación mientras el recurso artificial prepara contexto.',
+    controls.push({
+      en: 'Specify the flow and build it as deterministic software. If a residual exception tail appears in production, assess that tail — and only that tail — separately.',
+      es: 'Especificá el flujo y construílo como software determinista. Si aparece una cola residual de excepciones en producción, evaluá esa cola — y solo esa cola — por separado.',
     });
+    wouldChange.push({
+      en: 'If variation grows — new case types, judgement creeping in, exceptions rising — re-run this assessment: the boundary between a script and an AI Employee is the exception tail.',
+      es: 'Si la variación crece — tipos de caso nuevos, criterio filtrándose, excepciones subiendo — repetí esta evaluación: la frontera entre un script y un AI Employee es la cola de excepciones.',
+    });
+    return {
+      allocation: 'deterministic',
+      risk: detRisk,
+      startingRung: 0,
+      determinative,
+      controls,
+      wouldChange,
+      headline: {
+        en: 'Automate this deterministically — it does not need an AI Employee.',
+        es: 'Automatizá esto de forma determinista — no necesita un AI Employee.',
+      },
+    };
   }
 
   if (v('data') === 0) {
-    ceiling = ceiling === 'human' ? 'human' : 'hybrid';
+    ceiling = 'hybrid';
     mark('data', {
       en: 'The criteria are not written down anywhere. Nothing can be delegated to software that the organisation has never managed to explain to itself.',
       es: 'El criterio no está escrito en ninguna parte. No se puede delegar a software aquello que la organización nunca logró explicarse a sí misma.',
@@ -298,10 +326,60 @@ export function evaluate(a: Answers): Result {
   }
 
   if (v('judgement') === 0) {
-    ceiling = ceiling === 'human' ? 'human' : 'hybrid';
+    ceiling = 'hybrid';
     mark('judgement', {
       en: 'Strategic judgement with competing priorities is not a delegation problem; it is a management one.',
       es: 'El juicio estratégico con prioridades en conflicto no es un problema de delegación; es de dirección.',
+    });
+  }
+
+  /* ================= Stage 2 · Risk =================
+     The class caps autonomy and allocation. Volume amplifies it:
+     at scale, the same error rate lands on many more people. */
+
+  let risk: RiskClass =
+    v('risk') === 0 && v('reversibility') <= 1
+      ? 'critical'
+      : v('risk') <= 1 || v('reversibility') === 0
+        ? 'high'
+        : v('risk') === 2 || v('reversibility') === 1
+          ? 'moderate'
+          : 'low';
+
+  if (v('volume') === 3 && (risk === 'low' || risk === 'moderate')) {
+    risk = risk === 'low' ? 'moderate' : 'high';
+    mark('volume', {
+      en: 'Volume multiplies whatever can go wrong: at this scale the same error rate lands on many more people, so the class rises — scale is one of HWF-22’s seven factors, and it never argues for automation by itself.',
+      es: 'El volumen multiplica todo lo que puede salir mal: a esta escala la misma tasa de error alcanza a muchas más personas, así que la clase sube — la escala es uno de los siete factores de HWF-22, y por sí sola nunca es argumento para automatizar.',
+    });
+  }
+  if (reservedCore) risk = 'critical';
+
+  if (risk === 'critical' && ceiling === 'artificial') {
+    ceiling = 'hybrid';
+    mark('risk', {
+      en: 'A severe and irreversible error caps this at hybrid: a human must own the decision even if the artificial resource does the work.',
+      es: 'Un error severo e irreversible topa esto en híbrido: un humano debe conservar la decisión aunque el recurso artificial haga el trabajo.',
+    });
+  }
+  if (risk === 'critical') {
+    controls.push({
+      en: 'Mandatory human approval before execution, with separation of duties — whoever initiates does not approve.',
+      es: 'Aprobación humana obligatoria antes de ejecutar, con separación de funciones: quien inicia no aprueba.',
+    });
+  }
+
+  if (v('empathy') === 0) {
+    ceiling = 'human';
+    mark('empathy', {
+      en: 'Dignity, vulnerability or power over the person is at stake, or the relationship is the product. Ownership stays human; an artificial resource may prepare, never conclude.',
+      es: 'Hay dignidad, vulnerabilidad o poder sobre la persona en juego, o la relación es el producto. El ownership queda humano; un recurso artificial puede preparar, nunca concluir.',
+    });
+  } else if (v('empathy') === 1 && ceiling === 'artificial') {
+    ceiling = 'hybrid';
+    mark('empathy', {
+      en: 'Trust materially affects the outcome, so a person keeps the conversation while the artificial resource prepares context.',
+      es: 'La confianza afecta materialmente el resultado, así que una persona conserva la conversación mientras el recurso artificial prepara contexto.',
     });
   }
 
@@ -317,37 +395,40 @@ export function evaluate(a: Answers): Result {
     });
   }
 
-  /* --- Positive pull toward an artificial resource. */
+  /* ================= Stage 3 · Economics =================
+     Only chooses among what survived the first two stages. Volume no
+     longer pulls toward automation, and the cost profile is a fact
+     about the work, not a verdict about the alternatives. */
+
   const pull =
     (v('repeatability') >= 2 ? 1 : 0) +
     (v('predictability') >= 2 ? 1 : 0) +
-    (v('volume') >= 2 ? 1 : 0) +
     (v('speed') >= 2 ? 1 : 0) +
     (v('exceptions') >= 2 ? 1 : 0) +
-    (v('auditability') >= 2 ? 1 : 0) +
-    (v('economics') >= 2 ? 1 : 0);
+    (v('auditability') >= 2 ? 1 : 0);
 
   const humanPull =
     (v('repeatability') <= 1 ? 1 : 0) +
     (v('volume') <= 1 ? 1 : 0) +
     (v('judgement') <= 1 ? 1 : 0) +
-    (v('empathy') <= 1 ? 1 : 0) +
-    (v('economics') <= 1 ? 1 : 0);
+    (v('empathy') <= 1 ? 1 : 0);
+
+  const econ = v('economics'); // 0-1: judgement/relationship cost · 2-3: repetition/coverage cost
 
   let allocation: Allocation;
   if (ceiling === 'human') {
     allocation = 'human';
-  } else if (humanPull >= 4 && pull <= 3) {
+  } else if (humanPull >= 3 && pull <= 2 && econ <= 1) {
     allocation = 'human';
     mark('economics', {
-      en: 'Low repetition, low volume and heavy judgement: there is not enough recurring work here to justify designing an artificial occupant.',
-      es: 'Poca repetición, poco volumen y mucho criterio: no hay suficiente trabajo recurrente para justificar diseñar un ocupante artificial.',
+      en: 'The cost sits in judgement and relationships, with little recurring work: there is not enough repetition here to justify designing an artificial occupant.',
+      es: 'El costo está en el criterio y las relaciones, con poco trabajo recurrente: no hay suficiente repetición para justificar diseñar un ocupante artificial.',
     });
-  } else if (pull >= 6 && ceiling === 'artificial') {
+  } else if (pull >= 4 && econ >= 2 && ceiling === 'artificial') {
     allocation = 'artificial';
     mark('repeatability', {
-      en: 'Repetitive, predictable, high-volume and verifiable work with a low exception rate — the case where an artificial resource can hold role stewardship.',
-      es: 'Trabajo repetitivo, predecible, de alto volumen y verificable, con baja tasa de excepciones — el caso donde un recurso artificial puede sostener role stewardship.',
+      en: 'Repetitive, predictable, verifiable work whose cost sits in repetition and coverage — the case where an artificial resource can hold role stewardship.',
+      es: 'Trabajo repetitivo, predecible y verificable cuyo costo está en la repetición y la cobertura — el caso donde un recurso artificial puede sostener role stewardship.',
     });
   } else {
     allocation = 'hybrid';
@@ -375,8 +456,8 @@ export function evaluate(a: Answers): Result {
   }
   if (v('reversibility') <= 1) {
     controls.push({
-      en: 'Every irreversible action needs an explicit approval gate and a named person who owns the kill switch.',
-      es: 'Toda acción irreversible necesita un approval gate explícito y una persona con nombre que sea dueña del kill switch.',
+      en: 'Every irreversible action needs an explicit approval gate and a named person who owns the kill switch — exercised on a stated cadence (HWF-26).',
+      es: 'Toda acción irreversible necesita un approval gate explícito y una persona con nombre dueña del kill switch — ejercitado con cadencia declarada (HWF-26).',
     });
   }
   if (allocation !== 'human') {

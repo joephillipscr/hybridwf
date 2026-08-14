@@ -1,7 +1,7 @@
 # HybridWF — Hybrid Workforce Standard
 
 The site for the **Hybrid Workforce Standard**: an open administrative standard for
-AI Employees, plus the WRM framework, the 120-principle matrix and the HWFS
+AI Employees, plus the WRM framework, the 120-principle matrix and the HWFA
 self-assessment instrument.
 
 English at the root, Spanish under `/es/` with translated slugs.
@@ -40,7 +40,7 @@ is `{ en, es }`, so the two language trees cannot drift apart.
 | `lib/wrm.ts` | WRM framework: layers, ten domains, lifecycle, ten rules |
 | `lib/principles.ts` | The 120-principle matrix (87 U / 20 A / 13 H) |
 | `lib/maturity.ts` | Levels 0–6 and the category threshold |
-| `lib/hwfs.ts` | The twelve dimensions and the evaluation logic |
+| `lib/hwfa.ts` | The twelve dimensions and the evaluation logic |
 | `lib/role.ts` | Hybrid Workforce Manager, scorecard, anti-KPI |
 | `lib/transitions.ts` | Human → Artificial and Artificial → Human playbooks |
 | `lib/glossary.ts` | Canonical bilingual glossary |
@@ -58,7 +58,7 @@ Add a page there, not by hand, so both languages stay in parity.
 
 ## Two decisions worth not reversing by accident
 
-**The HWFS returns no score.** `lib/hwfs.ts` produces an allocation, a risk class, a
+**The HWFA returns no score.** `lib/hwfa.ts` produces an allocation, a risk class, a
 starting autonomy rung and the reasoning behind them — never a 0–100 number. A score
 lets a manager who has already decided pick weights until the arithmetic agrees. The
 hard gates in `evaluate()` (critical risk, relationship-as-product, undocumented
@@ -75,7 +75,7 @@ See `/governance/`.
 | What | Licence | File |
 | --- | --- | --- |
 | **The standard and its text** (the content in `lib/`, and the pages that render it) | **CC BY-SA 4.0** | `LICENSE-CONTENT.md` |
-| **The site's source code** (components, config, build scripts, HWFS evaluation logic) | ⚠️ **Not yet decided** — see below | `LICENSE` |
+| **The site's source code** (components, config, build scripts, HWFA evaluation logic) | ⚠️ **Not yet decided** — see below | `LICENSE` |
 
 Do not infer one from the other. The content licence is deliberate and settled:
 anyone may cite, embed, translate, teach or commercially use the standard, and any

@@ -16,8 +16,8 @@ export const GLOSSARY_NOTE: T = {
 
 /** The rule that keeps a translated edition citable against the original. */
 export const ACRONYM_RULE: T = {
-  en: 'Acronyms do not translate. WRM, HWFS and the HWF- clause identifiers stay identical in every edition of this standard, present and future; only the words they expand to are localised. A reader who cites WRM or HWF-07 in any language is pointing at the same thing.',
-  es: 'Los acrónimos no se traducen. WRM, HWFS y los identificadores de cláusula HWF- se mantienen idénticos en toda edición de este estándar, presente y futura; solo se localizan las palabras que expanden. Quien cite WRM o HWF-07 en cualquier idioma está señalando lo mismo.',
+  en: 'Acronyms do not translate. WRM, HWFA and the HWF- clause identifiers stay identical in every edition of this standard, present and future; only the words they expand to are localised. A reader who cites WRM or HWF-07 in any language is pointing at the same thing.',
+  es: 'Los acrónimos no se traducen. WRM, HWFA y los identificadores de cláusula HWF- se mantienen idénticos en toda edición de este estándar, presente y futura; solo se localizan las palabras que expanden. Quien cite WRM o HWF-07 en cualquier idioma está señalando lo mismo.',
 };
 
 export const TERMS: Term[] = [
@@ -119,10 +119,10 @@ export const TERMS: Term[] = [
   },
   {
     id: 'G-13',
-    term: { en: 'HWFS — Hybrid Workforce Fit Score', es: 'HWFS — Hybrid Workforce Fit Score' },
+    term: { en: 'HWFA — Hybrid Workforce Fit Assessment', es: 'HWFA — Hybrid Workforce Fit Assessment' },
     definition: {
-      en: 'A structured instrument for deciding whether a responsibility should be Human, Artificial or Hybrid. It returns an argument, not a number: an allocation, a risk class, a starting autonomy rung and the conditions that would change the answer.',
-      es: 'Instrumento estructurado para decidir si una responsabilidad debe ser Humana, Artificial o Híbrida. Devuelve un argumento, no un número: una asignación, una clase de riesgo, un peldaño inicial de autonomía y las condiciones que cambiarían la respuesta.',
+      en: 'A structured instrument in three stages — eligibility, risk, economics — for deciding whether a responsibility should be Human, Deterministic automation, Artificial or Hybrid. It returns an argument, not a number: an allocation, a risk class, a starting autonomy rung and the conditions that would change the answer. Formerly the Fit Score; renamed because an instrument that refuses to produce a number should not be called one.',
+      es: 'Instrumento estructurado en tres etapas — elegibilidad, riesgo, economía — para decidir si una responsabilidad debe ser Humana, Automatización determinista, Artificial o Híbrida. Devuelve un argumento, no un número: una asignación, una clase de riesgo, un peldaño inicial de autonomía y las condiciones que cambiarían la respuesta. Antes Fit Score; renombrado porque un instrumento que se niega a producir un número no debería llamarse así.',
     },
   },
   {

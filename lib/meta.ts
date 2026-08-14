@@ -33,9 +33,9 @@ const DESCRIPTIONS: Record<RouteKey, Record<Locale, string>> = {
     en: '120 administrative principles classified as Universal, Adapted or Exclusively Human, with their human and artificial expressions side by side.',
     es: '120 principios administrativos clasificados como Universal, Adaptado o Exclusivamente Humano, con su expresión humana y artificial lado a lado.',
   },
-  hwfs: {
-    en: 'Hybrid Workforce Fit Score — a structured self-assessment that returns an argument, not a score. Decide whether a responsibility should be Human, Artificial or Hybrid.',
-    es: 'Hybrid Workforce Fit Score — una autoevaluación estructurada que devuelve un argumento, no un puntaje. Decidí si una responsabilidad debe ser Humana, Artificial o Híbrida.',
+  hwfa: {
+    en: 'Hybrid Workforce Fit Assessment — a structured self-assessment in three stages: eligibility, risk, economics. Decide whether a responsibility should be Human, Deterministic automation, Artificial or Hybrid.',
+    es: 'Hybrid Workforce Fit Assessment — una autoevaluación estructurada en tres etapas: elegibilidad, riesgo, economía. Decidí si una responsabilidad debe ser Humana, Automatización determinista, Artificial o Híbrida.',
   },
   role: {
     en: 'The Hybrid Workforce Manager — mission, responsibilities, scorecard, and the anti-KPI that must never be used.',
@@ -74,7 +74,7 @@ const TITLES: Record<RouteKey, Record<Locale, string>> = {
   maturity: { en: 'Maturity model', es: 'Modelo de madurez' },
   framework: { en: 'WRM — Work Resource Management', es: 'WRM — Administración de Recursos de Trabajo' },
   principles: { en: '120 principles', es: '120 principios' },
-  hwfs: { en: 'Hybrid Workforce Fit Score', es: 'Hybrid Workforce Fit Score' },
+  hwfa: { en: 'Hybrid Workforce Fit Assessment', es: 'Hybrid Workforce Fit Assessment' },
   role: { en: 'The Hybrid Workforce Manager', es: 'El Gerente de Fuerza Laboral Híbrida' },
   transitions: { en: 'Transitions', es: 'Transiciones' },
   glossary: { en: 'Glossary', es: 'Glosario' },

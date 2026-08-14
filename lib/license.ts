@@ -54,8 +54,8 @@ export const PERMITTED: T[] = [
     es: 'Reproducir el estándar dentro de un documento mayor, como un manual de políticas o una evaluación de proveedores. Incluir esta obra en una colección no convierte a la colección entera en una adaptación, así que CompartirIgual no alcanza al resto de tu documento.',
   },
   {
-    en: 'Run the HWFS assessment and use its output however you like. The results describe your responsibilities rather than ours, so they belong to you with no licence obligation attached.',
-    es: 'Ejecutar la evaluación HWFS y usar su resultado como quieras. Los resultados describen tus responsabilidades y no las nuestras, así que son tuyos y no arrastran ninguna obligación de licencia.',
+    en: 'Run the HWFA assessment and use its output however you like. The results describe your responsibilities rather than ours, so they belong to you with no licence obligation attached.',
+    es: 'Ejecutar la evaluación HWFA y usar su resultado como quieras. Los resultados describen tus responsabilidades y no las nuestras, así que son tuyos y no arrastran ninguna obligación de licencia.',
   },
   {
     en: 'Teach it, train on it, and use it inside a product. Commercial use costs nothing and needs no separate agreement.',
@@ -73,8 +73,8 @@ export const BOUNDARIES: { title: T; body: T }[] = [
   {
     title: { en: 'The name is not licensed', es: 'El nombre no está licenciado' },
     body: {
-      en: 'A Creative Commons licence covers copyright, never trademarks. “Hybrid Workforce Standard”, “HybridWF”, “WRM — Work Resource Management”, “HWFS” and the mark are reserved. You may state that your work is based on or conforms to the standard; you may not publish a modified version under the same name, or present it as an official edition.',
-      es: 'Una licencia Creative Commons cubre derechos de autor, nunca marcas. «Hybrid Workforce Standard», «HybridWF», «WRM — Administración de Recursos de Trabajo», «HWFS» y el símbolo quedan reservados. Podés declarar que tu trabajo se basa en el estándar o que conforma con él; no podés publicar una versión modificada con el mismo nombre ni presentarla como edición oficial.',
+      en: 'A Creative Commons licence covers copyright, never trademarks. “Hybrid Workforce Standard”, “HybridWF”, “WRM — Work Resource Management”, “HWFA” (formerly HWFS) and the mark are reserved. You may state that your work is based on or conforms to the standard; you may not publish a modified version under the same name, or present it as an official edition.',
+      es: 'Una licencia Creative Commons cubre derechos de autor, nunca marcas. «Hybrid Workforce Standard», «HybridWF», «WRM — Administración de Recursos de Trabajo», «HWFA» (antes HWFS) y el símbolo quedan reservados. Podés declarar que tu trabajo se basa en el estándar o que conforma con él; no podés publicar una versión modificada con el mismo nombre ni presentarla como edición oficial.',
     },
   },
   {

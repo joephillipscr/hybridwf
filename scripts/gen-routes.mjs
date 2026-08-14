@@ -18,7 +18,7 @@ const PAGES = [
   ['maturity', 'MaturityPage', 'maturity', 'madurez'],
   ['framework', 'FrameworkPage', 'framework', 'marco'],
   ['principles', 'PrinciplesPage', 'framework/principles', 'marco/principios'],
-  ['hwfs', 'HwfsPage', 'hwfs', 'hwfs'],
+  ['hwfa', 'HwfaPage', 'hwfa', 'hwfa'],
   ['role', 'RolePage', 'role', 'rol'],
   ['transitions', 'TransitionsPage', 'transitions', 'transiciones'],
   ['glossary', 'GlossaryPage', 'glossary', 'glosario'],

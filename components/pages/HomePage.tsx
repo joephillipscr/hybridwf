@@ -97,7 +97,7 @@ export default function HomePage({ lang }: { lang: Locale }) {
               <ScrollText size={17} />
               {C.readStandard[lang]}
             </Link>
-            <Link href={route('hwfs', lang)} className="btn-outline">
+            <Link href={route('hwfa', lang)} className="btn-outline">
               <SlidersHorizontal size={17} />
               {C.runAssessment[lang]}
             </Link>
@@ -275,12 +275,12 @@ export default function HomePage({ lang }: { lang: Locale }) {
       <Section className="border-t border-border">
         <Reveal>
           <div className="aurora rounded-3xl border border-border p-10 sm:p-14">
-            <p className="eyebrow">HWFS</p>
+            <p className="eyebrow">HWFA</p>
             <h2 className="mt-3 max-w-2xl text-3xl font-semibold sm:text-4xl">
               {C.toolTitle[lang]}
             </h2>
             <p className="lede mt-4 max-w-2xl">{C.toolLede[lang]}</p>
-            <Link href={route('hwfs', lang)} className="btn-primary mt-8">
+            <Link href={route('hwfa', lang)} className="btn-primary mt-8">
               <SlidersHorizontal size={17} />
               {C.runAssessment[lang]}
             </Link>
