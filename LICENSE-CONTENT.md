@@ -17,7 +17,7 @@ Everything that constitutes the standard, in both English and Spanish:
 | --- | --- |
 | `lib/standard.ts` | The fifteen normative clauses and conformance language |
 | `lib/definition.ts` | Definition, nine-property test, vocabulary ladder |
-| `lib/art.ts` | ART framework: layers, domains, lifecycle, non-negotiable rules |
+| `lib/wrm.ts` | WRM framework: layers, domains, lifecycle, non-negotiable rules |
 | `lib/principles.ts` | The 120-principle matrix |
 | `lib/maturity.ts` | Maturity model 0–6 |
 | `lib/hwfs.ts` | The twelve HWFS dimensions and the autonomy ladder (prose content) |
@@ -38,8 +38,8 @@ configuration, build scripts, and the evaluation logic in `lib/hwfs.ts` — is
 licence from the other.
 
 **Names and marks.** A Creative Commons licence covers copyright, never
-trademarks. *Hybrid Workforce Standard*, *HybridWF*, *ART — Work Resource
-Administration*, *HWFS*, and the mark are reserved. You may state that your work
+trademarks. *Hybrid Workforce Standard*, *HybridWF*, *WRM — Work Resource
+Management*, *HWFS*, and the mark are reserved. You may state that your work
 is based on or conforms to the standard. You may not publish a modified version
 under the same name, or present it as an official edition.
 

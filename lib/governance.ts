@@ -155,7 +155,7 @@ export const RELEASES: Release[] = [
     date: '2026-08-12',
     status: { en: 'Proposal — Review Board forming', es: 'Propuesta — Review Board en formación' },
     notes: [
-      { en: 'First publication: fifteen normative clauses, the nine-property test, the ART framework, the 120-principle matrix, the maturity model, the HWFS instrument, the Hybrid Workforce Manager role and the transition playbooks.', es: 'Primera publicación: quince cláusulas normativas, el test de nueve propiedades, el marco ART, la matriz de 120 principios, el modelo de madurez, el instrumento HWFS, el rol de Gerente de Fuerza Laboral Híbrida y los playbooks de transición.' },
+      { en: 'First publication: fifteen normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS instrument, the Hybrid Workforce Manager role and the transition playbooks.', es: 'Primera publicación: quince cláusulas normativas, el test de nueve propiedades, el marco WRM, la matriz de 120 principios, el modelo de madurez, el instrumento HWFS, el rol de Gerente de Fuerza Laboral Híbrida y los playbooks de transición.' },
       { en: 'Certification was deliberately excluded from scope. This standard scores no products and issues no seals.', es: 'La certificación se excluyó deliberadamente del alcance. Este estándar no puntúa productos ni emite sellos.' },
       { en: 'The HWFS returns a structured argument rather than a 0–100 score, resolving a contradiction present in the source research.', es: 'El HWFS devuelve un argumento estructurado en lugar de un puntaje 0–100, resolviendo una contradicción presente en la investigación de origen.' },
     ],

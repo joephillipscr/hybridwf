@@ -3,7 +3,7 @@ import { ArrowRight, Ban, ScrollText, SlidersHorizontal } from 'lucide-react';
 import Reveal from '../Reveal';
 import { Section, SectionHeading } from '../Section';
 import { DEFINITION, LADDER, PROPERTIES, THESIS } from '@/lib/definition';
-import { ART_DEFINITION, PRINCIPLE_LAYERS } from '@/lib/art';
+import { WRM_DEFINITION, PRINCIPLE_LAYERS } from '@/lib/wrm';
 import { CLAUSES } from '@/lib/standard';
 import { COUNTS } from '@/lib/principles';
 import { LEVELS, THRESHOLD } from '@/lib/maturity';
@@ -67,8 +67,8 @@ const C = {
   allClauses: { en: 'All fifteen clauses', es: 'Las quince cláusulas' },
   artTitle: { en: 'The framework underneath', es: 'El marco que lo sostiene' },
   artLede: {
-    en: 'The standard governs the occupant. ART governs the work — and it comes first.',
-    es: 'El estándar gobierna al ocupante. ART gobierna el trabajo — y va primero.',
+    en: 'The standard governs the occupant. WRM governs the work — and it comes first.',
+    es: 'El estándar gobierna al ocupante. WRM gobierna el trabajo — y va primero.',
   },
   toolTitle: { en: 'The instrument', es: 'El instrumento' },
   toolLede: {
@@ -231,15 +231,15 @@ export default function HomePage({ lang }: { lang: Locale }) {
         </Link>
       </Section>
 
-      {/* ---------- ART ---------- */}
+      {/* ---------- WRM ---------- */}
       <Section>
         <SectionHeading
-          eyebrow="ART"
+          eyebrow="WRM"
           title={C.artTitle[lang]}
           lede={C.artLede[lang]}
         />
         <Reveal>
-          <p className="prose-x mt-8">{ART_DEFINITION[lang]}</p>
+          <p className="prose-x mt-8">{WRM_DEFINITION[lang]}</p>
         </Reveal>
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {PRINCIPLE_LAYERS.map((l, i) => (
@@ -264,7 +264,7 @@ export default function HomePage({ lang }: { lang: Locale }) {
               {LEVELS[THRESHOLD].name[lang]}
             </span>
             <Link href={route('framework', lang)} className="btn-ghost">
-              {lang === 'en' ? 'The ART framework' : 'El marco ART'}
+              {lang === 'en' ? 'The WRM framework' : 'El marco WRM'}
               <ArrowRight size={15} />
             </Link>
           </div>

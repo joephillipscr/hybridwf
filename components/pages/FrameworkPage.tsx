@@ -3,26 +3,26 @@ import { ArrowRight } from 'lucide-react';
 import Reveal from '../Reveal';
 import { PageHeader, Section, SectionHeading } from '../Section';
 import {
-  ART_DEFINITION,
-  ART_PREMISE,
+  WRM_DEFINITION,
+  WRM_PREMISE,
   BOUNDARY_WARNING,
   DOMAINS,
   LIFECYCLE,
   PRINCIPLE_LAYERS,
   RULES,
   STACK,
-} from '@/lib/art';
+} from '@/lib/wrm';
 import { COUNTS } from '@/lib/principles';
 import { route, type Locale } from '@/lib/site';
 
 const C = {
   eyebrow: { en: 'Framework', es: 'Marco' },
-  title: { en: 'ART — Work Resource Administration', es: 'ART — Administración de Recursos de Trabajo' },
+  title: { en: 'WRM — Work Resource Management', es: 'WRM — Administración de Recursos de Trabajo' },
   lede: {
     en: 'Design the work first. Decide whether a human, an artificial resource or a hybrid should do it second. The post exists before its occupant.',
     es: 'Primero se diseña el trabajo. Después se decide si lo ejecuta un humano, un recurso artificial o un híbrido. El puesto existe antes que su ocupante.',
   },
-  stackTitle: { en: 'Where ART sits', es: 'Dónde se ubica ART' },
+  stackTitle: { en: 'Where WRM sits', es: 'Dónde se ubica WRM' },
   stackLede: {
     en: 'Human resources and artificial resources should not be designed as isolated disciplines. Both live inside a higher one.',
     es: 'Recursos humanos y recursos artificiales no deberían diseñarse como disciplinas aisladas. Ambos viven dentro de una superior.',
@@ -50,9 +50,9 @@ export default function FrameworkPage({ lang }: { lang: Locale }) {
       <Section>
         <Reveal>
           <blockquote className="max-w-4xl border-l-2 border-accent pl-6 font-display text-xl leading-relaxed sm:text-2xl">
-            {ART_DEFINITION[lang]}
+            {WRM_DEFINITION[lang]}
           </blockquote>
-          <p className="prose-x mt-8">{ART_PREMISE[lang]}</p>
+          <p className="prose-x mt-8">{WRM_PREMISE[lang]}</p>
         </Reveal>
       </Section>
 
@@ -67,12 +67,12 @@ export default function FrameworkPage({ lang }: { lang: Locale }) {
             <Reveal key={l.key} delay={i * 0.05}>
               <div
                 className={`grid gap-3 rounded-2xl border p-6 sm:grid-cols-3 sm:gap-6 ${
-                  l.key === 'art' ? 'border-accent bg-accent/5' : 'border-border bg-surface'
+                  l.key === 'wrm' ? 'border-accent bg-accent/5' : 'border-border bg-surface'
                 }`}
               >
                 <h3
                   className={`font-display text-lg font-semibold ${
-                    l.key === 'art' ? 'text-brand' : ''
+                    l.key === 'wrm' ? 'text-brand' : ''
                   }`}
                 >
                   {l.name[lang]}

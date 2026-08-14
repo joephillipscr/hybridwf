@@ -73,8 +73,8 @@ export const BOUNDARIES: { title: T; body: T }[] = [
   {
     title: { en: 'The name is not licensed', es: 'El nombre no está licenciado' },
     body: {
-      en: 'A Creative Commons licence covers copyright, never trademarks. “Hybrid Workforce Standard”, “HybridWF”, “ART — Work Resource Administration”, “HWFS” and the mark are reserved. You may state that your work is based on or conforms to the standard; you may not publish a modified version under the same name, or present it as an official edition.',
-      es: 'Una licencia Creative Commons cubre derechos de autor, nunca marcas. «Hybrid Workforce Standard», «HybridWF», «ART — Administración de Recursos de Trabajo», «HWFS» y el símbolo quedan reservados. Podés declarar que tu trabajo se basa en el estándar o que conforma con él; no podés publicar una versión modificada con el mismo nombre ni presentarla como edición oficial.',
+      en: 'A Creative Commons licence covers copyright, never trademarks. “Hybrid Workforce Standard”, “HybridWF”, “WRM — Work Resource Management”, “HWFS” and the mark are reserved. You may state that your work is based on or conforms to the standard; you may not publish a modified version under the same name, or present it as an official edition.',
+      es: 'Una licencia Creative Commons cubre derechos de autor, nunca marcas. «Hybrid Workforce Standard», «HybridWF», «WRM — Administración de Recursos de Trabajo», «HWFS» y el símbolo quedan reservados. Podés declarar que tu trabajo se basa en el estándar o que conforma con él; no podés publicar una versión modificada con el mismo nombre ni presentarla como edición oficial.',
     },
   },
   {

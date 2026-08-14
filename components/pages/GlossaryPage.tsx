@@ -1,6 +1,6 @@
 import Reveal from '../Reveal';
 import { PageHeader, Section } from '../Section';
-import { GLOSSARY_NOTE, TERMS } from '@/lib/glossary';
+import { ACRONYM_RULE, GLOSSARY_NOTE, TERMS } from '@/lib/glossary';
 import type { Locale } from '@/lib/site';
 
 const C = {
@@ -23,6 +23,9 @@ export default function GlossaryPage({ lang }: { lang: Locale }) {
       <Section>
         <Reveal>
           <p className="prose-x max-w-3xl">{GLOSSARY_NOTE[lang]}</p>
+          <p className="card-raised mt-6 max-w-3xl border-l-2 border-l-accent text-[1.0625rem] leading-relaxed">
+            {ACRONYM_RULE[lang]}
+          </p>
         </Reveal>
 
         <dl className="mt-12 space-y-8">

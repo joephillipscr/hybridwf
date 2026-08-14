@@ -1,7 +1,7 @@
 # HybridWF — Hybrid Workforce Standard
 
 The site for the **Hybrid Workforce Standard**: an open administrative standard for
-AI Employees, plus the ART framework, the 120-principle matrix and the HWFS
+AI Employees, plus the WRM framework, the 120-principle matrix and the HWFS
 self-assessment instrument.
 
 English at the root, Spanish under `/es/` with translated slugs.
@@ -37,7 +37,7 @@ is `{ en, es }`, so the two language trees cannot drift apart.
 | `lib/site.ts` | Identity, version, routes, navigation, locale counterparts |
 | `lib/standard.ts` | The fifteen normative clauses — the citable text |
 | `lib/definition.ts` | Formal definition, nine-property test, vocabulary ladder |
-| `lib/art.ts` | ART framework: layers, ten domains, lifecycle, ten rules |
+| `lib/wrm.ts` | WRM framework: layers, ten domains, lifecycle, ten rules |
 | `lib/principles.ts` | The 120-principle matrix (87 U / 20 A / 13 H) |
 | `lib/maturity.ts` | Levels 0–6 and the category threshold |
 | `lib/hwfs.ts` | The twelve dimensions and the evaluation logic |

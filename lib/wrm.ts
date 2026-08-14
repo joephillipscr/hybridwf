@@ -1,11 +1,11 @@
 import type { T } from './i18n';
 
-export const ART_DEFINITION: T = {
-  en: 'ART — Work Resource Administration — is the discipline that designs, assigns, governs and optimises work regardless of whether the resource executing it is human, artificial or hybrid.',
-  es: 'ART — Administración de Recursos de Trabajo — es la disciplina que diseña, asigna, gobierna y optimiza el trabajo independientemente de si el recurso que lo ejecuta es humano, artificial o híbrido.',
+export const WRM_DEFINITION: T = {
+  en: 'WRM — Work Resource Management — is the discipline that designs, assigns, governs and optimises work regardless of whether the resource executing it is human, artificial or hybrid.',
+  es: 'WRM — Administración de Recursos de Trabajo — es la disciplina que diseña, asigna, gobierna y optimiza el trabajo independientemente de si el recurso que lo ejecuta es humano, artificial o híbrido.',
 };
 
-export const ART_PREMISE: T = {
+export const WRM_PREMISE: T = {
   en: 'The founding idea is to separate the post from its occupant. First there is an organisational need; from it a post or responsibility is born, with purpose, ownership, results, KPIs, authority, limits, relationships, tools and escalation. Only then do you decide which resource should fill it.',
   es: 'La idea fundacional es separar el puesto del ocupante. Primero existe una necesidad organizacional; de ella nace un puesto o responsabilidad, con propósito, ownership, resultados, KPIs, autoridad, límites, relaciones, herramientas y escalamiento. Después se decide cuál es el recurso correcto para ocuparlo.',
 };
@@ -13,7 +13,7 @@ export const ART_PREMISE: T = {
 /* --- The stack ---------------------------------------------------- */
 
 export interface Layer {
-  key: 'art' | 'hrm' | 'arm' | 'hwm';
+  key: 'wrm' | 'hrm' | 'arm' | 'hwm';
   name: T;
   manages: T;
   outcome: T;
@@ -21,8 +21,8 @@ export interface Layer {
 
 export const STACK: Layer[] = [
   {
-    key: 'art',
-    name: { en: 'ART — Work Resource Administration', es: 'ART — Administración de Recursos de Trabajo' },
+    key: 'wrm',
+    name: { en: 'WRM — Work Resource Management', es: 'WRM — Administración de Recursos de Trabajo' },
     manages: { en: 'The work, its posts, results, authority and controls', es: 'El trabajo, sus puestos, resultados, autoridad y controles' },
     outcome: { en: 'Optimal workforce architecture', es: 'Arquitectura óptima del workforce' },
   },

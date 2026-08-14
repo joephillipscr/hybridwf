@@ -70,7 +70,7 @@ export const ROUTE_TITLES: Record<RouteKey, Record<Locale, string>> = {
   standard: { en: 'The Standard', es: 'El Estándar' },
   definition: { en: 'Definition', es: 'Definición' },
   maturity: { en: 'Maturity', es: 'Madurez' },
-  framework: { en: 'ART Framework', es: 'Marco ART' },
+  framework: { en: 'WRM Framework', es: 'Marco WRM' },
   principles: { en: '120 Principles', es: '120 Principios' },
   hwfs: { en: 'HWFS', es: 'HWFS' },
   role: { en: 'The Role', es: 'El Rol' },

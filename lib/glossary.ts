@@ -14,6 +14,12 @@ export const GLOSSARY_NOTE: T = {
   es: 'Un término, dos idiomas, una definición numerada. Cuando el término inglés se usa sin traducir en la práctica en español, ambas entradas llevan la misma palabra — es una decisión deliberada para impedir que el vocabulario se fragmente entre las dos ediciones de este estándar.',
 };
 
+/** The rule that keeps a translated edition citable against the original. */
+export const ACRONYM_RULE: T = {
+  en: 'Acronyms do not translate. WRM, HWFS and the HWF- clause identifiers stay identical in every edition of this standard, present and future; only the words they expand to are localised. A reader who cites WRM or HWF-07 in any language is pointing at the same thing.',
+  es: 'Los acrónimos no se traducen. WRM, HWFS y los identificadores de cláusula HWF- se mantienen idénticos en toda edición de este estándar, presente y futura; solo se localizan las palabras que expanden. Quien cite WRM o HWF-07 en cualquier idioma está señalando lo mismo.',
+};
+
 export const TERMS: Term[] = [
   {
     id: 'G-01',
@@ -25,7 +31,7 @@ export const TERMS: Term[] = [
   },
   {
     id: 'G-02',
-    term: { en: 'ART — Work Resource Administration', es: 'ART — Administración de Recursos de Trabajo' },
+    term: { en: 'WRM — Work Resource Management', es: 'WRM — Administración de Recursos de Trabajo' },
     definition: {
       en: 'The discipline that designs, assigns, governs and optimises work regardless of whether the resource executing it is human, artificial or hybrid.',
       es: 'La disciplina que diseña, asigna, gobierna y optimiza el trabajo independientemente de si el recurso que lo ejecuta es humano, artificial o híbrido.',

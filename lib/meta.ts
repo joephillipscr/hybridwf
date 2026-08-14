@@ -26,8 +26,8 @@ const DESCRIPTIONS: Record<RouteKey, Record<Locale, string>> = {
     es: 'Siete niveles, de Herramienta a Empresa Híbrida. No todo agente merece llamarse AI Employee.',
   },
   framework: {
-    en: 'ART — Work Resource Administration. Design the work first; decide whether a human, an artificial resource or a hybrid should do it second.',
-    es: 'ART — Administración de Recursos de Trabajo. Primero se diseña el trabajo; después se decide si lo ejecuta un humano, un recurso artificial o un híbrido.',
+    en: 'WRM — Work Resource Management. Design the work first; decide whether a human, an artificial resource or a hybrid should do it second.',
+    es: 'WRM — Administración de Recursos de Trabajo. Primero se diseña el trabajo; después se decide si lo ejecuta un humano, un recurso artificial o un híbrido.',
   },
   principles: {
     en: '120 administrative principles classified as Universal, Adapted or Exclusively Human, with their human and artificial expressions side by side.',
@@ -72,7 +72,7 @@ const TITLES: Record<RouteKey, Record<Locale, string>> = {
   standard: { en: 'The Standard', es: 'El Estándar' },
   definition: { en: 'What counts as an AI Employee', es: 'Qué califica como AI Employee' },
   maturity: { en: 'Maturity model', es: 'Modelo de madurez' },
-  framework: { en: 'ART — Work Resource Administration', es: 'ART — Administración de Recursos de Trabajo' },
+  framework: { en: 'WRM — Work Resource Management', es: 'WRM — Administración de Recursos de Trabajo' },
   principles: { en: '120 principles', es: '120 principios' },
   hwfs: { en: 'Hybrid Workforce Fit Score', es: 'Hybrid Workforce Fit Score' },
   role: { en: 'The Hybrid Workforce Manager', es: 'El Gerente de Fuerza Laboral Híbrida' },
