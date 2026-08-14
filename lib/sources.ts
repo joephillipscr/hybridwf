@@ -28,6 +28,7 @@ export const SOURCES: Source[] = [
   { id: 'S18', label: 'Agentic Business Process Management: A Research Manifesto (2026)', url: 'https://arxiv.org/html/2603.18916v3', kind: 'academic' },
   { id: 'S19', label: 'Alenezi — Human-AI Collaboration and the Transformation of Software Engineering Work (2026)', url: 'https://arxiv.org/abs/2606.03394', kind: 'academic' },
   { id: 'S20', label: 'Intelligent AI Delegation (2026)', url: 'https://arxiv.org/html/2602.11865v1', kind: 'academic' },
+  { id: 'S29', label: 'Elish — Moral Crumple Zones: Cautionary Tales in Human-Robot Interaction (2019)', url: 'https://estsjournal.org/index.php/ests/article/view/260', kind: 'academic' },
   { id: 'S21', label: 'GIZIN — AI Employee Starter Book', url: 'https://store.gizin.co.jp/en/ai-employee-book', kind: 'books' },
   { id: 'S22', label: 'GIZIN — AI Employee Master Book', url: 'https://store.gizin.co.jp/en/ai-employee-master', kind: 'books' },
   { id: 'S23', label: 'B. Jaiswal — AI EMPLOYEE: How One Person Does the Work of Ten (Jun 2026)', url: 'https://play.google.com/store/books/details/B_JAISWAL_AI_EMPLOYEE?id=0w3uEQAAQBAJ', kind: 'books' },

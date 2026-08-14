@@ -318,6 +318,14 @@ export const TERMS: Term[] = [
     },
   },
   {
+    id: 'G-39',
+    term: { en: 'Moral crumple zone', es: 'Zona de absorción moral' },
+    definition: {
+      en: 'The human placed at the end of an automated process who absorbs the blame for failures whose determinants lie upstream in policy, design, tooling or deployment. Named by Elish, who showed that blame in automated systems lands on the nearest human while control sat elsewhere. Prohibited by HWF-26: blame follows the determinants (HWF-06), not the proximity, and the supervising human answers only for what they controlled.',
+      es: 'El humano colocado al final de un proceso automatizado que absorbe la culpa de fallas cuyos determinantes están aguas arriba, en la política, el diseño, el tooling o el deployment. Nombrada por Elish, quien mostró que la culpa en sistemas automatizados aterriza en el humano más cercano mientras el control estaba en otra parte. Prohibida por HWF-26: la culpa sigue a los determinantes (HWF-06), no a la proximidad, y el humano que supervisa responde solo por lo que controló.',
+    },
+  },
+  {
     id: 'G-25',
     term: { en: 'Hybrid post', es: 'Puesto híbrido' },
     definition: {

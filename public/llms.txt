@@ -1,6 +1,6 @@
 # Hybrid Workforce Standard
 
-> An open administrative standard for AI Employees: twenty-five normative clauses, a nine-property test, the WRM (Work Resource Management) framework, a 120-principle matrix, a maturity model, and the HWFS decision instrument. Published under CC-BY-SA-4.0. Version 1.0, 2026-08-12.
+> An open administrative standard for AI Employees: twenty-six normative clauses, a nine-property test, the WRM (Work Resource Management) framework, a 120-principle matrix, a maturity model, and the HWFS decision instrument. Published under CC-BY-SA-4.0. Version 1.0, 2026-08-12.
 
 A chatbot answers. A copilot helps. An agent executes a task. An AI Employee holds a role. A human answers for it.
 
