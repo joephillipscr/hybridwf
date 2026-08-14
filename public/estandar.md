@@ -15,7 +15,7 @@ disclosure: "The author also builds AIEmpl.com, a commercial platform in this ca
 
 # Hybrid Workforce Standard
 
-**Un chatbot responde. Un copiloto ayuda. Un agente actúa. Un AI Employee es responsable de un rol.**
+**Un chatbot responde. Un copiloto ayuda. Un agente ejecuta una tarea. Un AI Employee ocupa un rol. Un humano responde por él.**
 
 > No existen, como punto de partida, puestos humanos y puestos de IA. Existen trabajos que deben realizarse. Después se decide cuál es la combinación de recursos humanos y artificiales que produce el mejor resultado con el nivel correcto de riesgo, responsabilidad y control.
 
@@ -60,11 +60,13 @@ Un sistema que carece de varias de estas propiedades puede seguir siendo un exce
 | Automation / RPA | Ejecución determinista | Corre flujos predefinidos | Frágil ante casos no previstos |
 | AI agent | Acción orientada a objetivos | Razona, usa herramientas y ejecuta | Suele estar centrado en tareas u objetivos |
 | AI teammate / coworker | Colaboración | Comparte contexto y ejecuta trabajo | Semántica organizacional variable según proveedor |
-| AI Employee | Propiedad de un rol | Asume trabajo recurrente bajo gobierno | La categoría aún no tiene estándar — de ahí este documento |
+| AI Employee | Custodia de un rol | Asume trabajo recurrente bajo gobierno | La categoría aún no tiene estándar — de ahí este documento |
 
-### Task ownership frente a role ownership
+### Task execution frente a role stewardship
 
-La frontera conceptual está entre task ownership y role ownership. Un agente puede ejecutar «enviá estos veinte seguimientos». Un AI Employee que ocupa el rol de SDR debe sostener el proceso recurrente dentro de límites definidos: identificar leads, investigar, contactar, seguir, registrar, escalar y reportar desempeño.
+La frontera conceptual está entre ejecutar una tarea y custodiar un rol. Un agente puede ejecutar «enviá estos veinte seguimientos». Un AI Employee que ocupa el rol de SDR debe sostener el proceso recurrente dentro de límites definidos: identificar leads, investigar, contactar, seguir, registrar, escalar y reportar desempeño. La custodia no es propiedad: el puesto, su autoridad y su accountability tienen dueño humano. Lo que el recurso carga es la responsabilidad continua de sostener el proceso; lo que nunca puede cargar es la consecuencia.
+
+**La IA ejecuta. La organización responde. Un humano gobierna.**
 
 ## Las cláusulas normativas
 
@@ -619,7 +621,7 @@ Un término, dos idiomas, una definición numerada. Cuando el término inglés s
 
 **G-17 · Least privilege / least authority** — Least privilege limita a qué puede acceder un recurso; least authority limita qué puede decidir o comprometer. Son controles distintos y ambos son necesarios.
 
-**G-18 · Role ownership vs. task ownership** — «Enviá estos veinte seguimientos» es una tarea. «Administrá el seguimiento comercial de esta cartera» es un rol: priorizar, respetar restricciones, conservar contexto, reconocer excepciones y escalar. El paso de una a otro es lo que justifica la categoría.
+**G-18 · Role stewardship vs. task execution** — «Enviá estos veinte seguimientos» es una tarea. «Administrá el seguimiento comercial de esta cartera» es un rol: priorizar, respetar restricciones, conservar contexto, reconocer excepciones y escalar. El paso de una a otro es lo que justifica la categoría.
 
 **G-19 · Plan de remediación** — El equivalente artificial de un plan de mejora: reducir scope, aumentar aprobaciones, corregir configuración o contexto, y validar nuevamente antes de restituir autoridad.
 
@@ -768,6 +770,7 @@ Podés citar, embeber, enseñar, traducir y usar comercialmente este material co
 - Primera publicación: diecinueve cláusulas normativas, el test de nueve propiedades, el marco WRM, la matriz de 120 principios, el modelo de madurez, el instrumento HWFS, el rol de Gerente de Fuerza Laboral Híbrida y los playbooks de transición.
 - La certificación se excluyó deliberadamente del alcance. Este estándar no puntúa productos ni emite sellos.
 - El HWFS devuelve un argumento estructurado en lugar de un puntaje 0–100, resolviendo una contradicción presente en la investigación de origen.
+- La línea de tesis y la escalera de vocabulario se corrigieron por consistencia con la propia arquitectura de accountability del estándar. La edición en inglés decía «an AI Employee is accountable for a role» y la escalera prometía «propiedad de un rol», mientras la nota de HWF-02 define la accountability como la capacidad de cargar una consecuencia legal, financiera o reputacional y el accountable owner es humano por definición. La tesis ahora termina donde termina toda cadena del estándar — un AI Employee ocupa un rol; un humano responde por él — la escalera promete custodia en vez de propiedad, y el invariante queda enunciado como fórmula: la IA ejecuta, la organización responde, un humano gobierna. Ningún texto de cláusula cambió.
 - HWF-19 prohíbe que un puesto sobreviva a su justificación: con cadencia declarada el accountable owner re-justifica su existencia frente a la estrategia vigente, como pregunta previa y separada del desempeño, y la continuidad nunca es el default. La cláusula reemplaza un mecanismo de poda que los ocupantes artificiales no tienen — payroll y attrition eliminan los puestos humanos sin sentido, y un recurso que cuesta poco y no renuncia jamás persiste por defecto, acumulando deuda organizacional en su forma más peligrosa: zombis digitales con accesos para trabajo que nadie necesita. El periodo de doce meses propuesto pasó a la nota como orientación, porque el estándar fija mecanismos y no calendarios. Agrega G-32 y extiende la regla 1 del WRM y el principio 101 de la matriz.
 - HWF-18 hace que el aprovisionamiento de contexto sea deliberado en ambas direcciones. Las categorías de restricción existían desde el primer borrador, pero toda razón declarada era el riesgo informacional, así que nada impedía que un manager concediera todo el contexto no sensible incluso donde degradaría el criterio del recurso por anclaje, sesgo de confirmación o sobrecarga. La propuesta que la originó pedía un nuevo dominio de opacidad en el WRM; entró como cláusula, porque la opacidad es una técnica dentro de dominios existentes y no una función de administración. La cláusula vuelve obligatorio el registro y asigna la responsabilidad por decisiones degradadas por contexto retenido a quien lo retuvo, porque la opacidad sin documentar es un instrumento de lavado de accountability. Agrega G-31 y extiende G-06, el principio 57 de la matriz y la regla 6 del WRM.
 - HWF-10 ahora prohíbe simular un estado interior que el sistema no tiene, además de engañar sobre su naturaleza de software. La divulgación sola dejaba un hueco: un sistema podía anunciarse como software y aun así actuar vacilación y calidez diseñadas para bajarle la guardia a quien lee. La cláusula apunta al propósito y no a la superficie, así que la fluidez y la cortesía siguen siendo competencia mientras la latencia inyectada, las muletillas de vacilación y las declaraciones de sentimiento no lo son. La propuesta que la originó pedía que la comunicación fuera funcionalmente distinguible de una interacción humana, lo que habría obligado a los AI Employees a escribir mal y habría sido inauditable.

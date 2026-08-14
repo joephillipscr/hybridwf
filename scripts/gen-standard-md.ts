@@ -18,7 +18,7 @@ import { join } from 'node:path';
 import type { T } from '../lib/i18n';
 import { LOCALES, ROUTES, SITE_NAME, SITE_URL, STANDARD_DATE, STANDARD_VERSION, AUTHOR, type Locale } from '../lib/site';
 import { CLAUSES, CONFORMANCE, MOTIVATION, OBJECTIVE } from '../lib/standard';
-import { DEFINITION, GOVERNING_PRINCIPLE, LADDER, OWNERSHIP_BOUNDARY, PROPERTIES, PROPERTIES_CAVEAT, THESIS } from '../lib/definition';
+import { DEFINITION, FORMULA, GOVERNING_PRINCIPLE, LADDER, OWNERSHIP_BOUNDARY, PROPERTIES, PROPERTIES_CAVEAT, THESIS } from '../lib/definition';
 import { LEVELS, MATURITY_NOTE, THRESHOLD, DIAGNOSTIC } from '../lib/maturity';
 import { BOUNDARY_WARNING, DOMAINS, LIFECYCLE, PRINCIPLE_LAYERS, RULES as WRM_RULES, STACK, WRM_DEFINITION, WRM_PREMISE } from '../lib/wrm';
 import { COUNTS, MATRIX_CAVEAT, PRINCIPLES, P_DOMAINS } from '../lib/principles';
@@ -54,7 +54,7 @@ const S = {
   definition: { en: 'Definition', es: 'Definición' },
   nineTest: { en: 'The nine-property test', es: 'El test de nueve propiedades' },
   ladder: { en: 'The vocabulary ladder', es: 'La escalera de vocabulario' },
-  ownership: { en: 'Task ownership versus role ownership', es: 'Task ownership frente a role ownership' },
+  ownership: { en: 'Task execution versus role stewardship', es: 'Task execution frente a role stewardship' },
   clauses: { en: 'The normative clauses', es: 'Las cláusulas normativas' },
   reading: { en: 'Reading this standard', es: 'Cómo leer este estándar' },
   note: { en: 'Note', es: 'Nota' },
@@ -184,6 +184,7 @@ function build(lang: Locale): string {
 
   h(3, t('ownership'));
   p(L(OWNERSHIP_BOUNDARY, lang));
+  p(`**${L(FORMULA, lang)}**`);
 
   /* --- Clauses ----------------------------------------------------- */
   h(2, t('clauses'));
@@ -341,7 +342,7 @@ function llmsTxt(): string {
     '',
     `> An open administrative standard for AI Employees: nineteen normative clauses, a nine-property test, the WRM (Work Resource Management) framework, a 120-principle matrix, a maturity model, and the HWFS decision instrument. Published under ${LICENSE.id}. Version ${STANDARD_VERSION}, ${STANDARD_DATE}.`,
     '',
-    'A chatbot answers. A copilot helps. An agent acts. An AI Employee is accountable for a role.',
+    'A chatbot answers. A copilot helps. An agent executes a task. An AI Employee holds a role. A human answers for it.',
     '',
     'This standard certifies no products, scores no vendors and issues no seals. Conformance is self-declared by the organisation running the deployment. The author also builds AIEmpl.com, a commercial platform in this category; that interest is disclosed on every page.',
     '',

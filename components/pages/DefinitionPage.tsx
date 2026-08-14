@@ -6,6 +6,7 @@ import {
   DEFINITION,
   GOVERNING_PRINCIPLE,
   LADDER,
+  FORMULA,
   OWNERSHIP_BOUNDARY,
   PROPERTIES,
   PROPERTIES_CAVEAT,
@@ -25,7 +26,7 @@ const C = {
     en: 'Every rung below is useful. None of them needs to pretend to a maturity it does not have.',
     es: 'Todos los peldaños de abajo son útiles. Ninguno necesita fingir una madurez que no tiene.',
   },
-  ownershipTitle: { en: 'Task ownership versus role ownership', es: 'Task ownership frente a role ownership' },
+  ownershipTitle: { en: 'Task execution versus role stewardship', es: 'Task execution frente a role stewardship' },
   maturity: { en: 'The maturity model', es: 'El modelo de madurez' },
 };
 
@@ -104,6 +105,9 @@ export default function DefinitionPage({ lang }: { lang: Locale }) {
           <Reveal>
             <h2 className="font-display text-2xl font-semibold">{C.ownershipTitle[lang]}</h2>
             <p className="prose-x mt-4">{OWNERSHIP_BOUNDARY[lang]}</p>
+            <p className="mt-6 border-l-2 border-accent pl-5 font-display text-lg font-semibold text-fg">
+              {FORMULA[lang]}
+            </p>
           </Reveal>
           <Reveal delay={0.08}>
             <div className="card-raised">

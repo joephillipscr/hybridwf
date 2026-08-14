@@ -15,7 +15,7 @@ disclosure: "The author also builds AIEmpl.com, a commercial platform in this ca
 
 # Hybrid Workforce Standard
 
-**A chatbot answers. A copilot helps. An agent acts. An AI Employee is accountable for a role.**
+**A chatbot answers. A copilot helps. An agent executes a task. An AI Employee holds a role. A human answers for it.**
 
 > There are no human posts and AI posts as a starting point. There is work that needs to be done. Then you decide which combination of human and artificial resources produces the best result at the right level of risk, responsibility and control.
 
@@ -60,11 +60,13 @@ A system missing several of these properties may still be an excellent agent or 
 | Automation / RPA | Deterministic execution | Runs predefined flows | Brittle against unforeseen cases |
 | AI agent | Goal-directed action | Reasons, uses tools, executes | Usually centred on tasks or objectives |
 | AI teammate / coworker | Collaboration | Shares context and executes work | Organisational semantics vary by vendor |
-| AI Employee | Ownership of a role | Holds recurring work under governance | The category still has no standard — hence this document |
+| AI Employee | Stewardship of a role | Holds recurring work under governance | The category still has no standard — hence this document |
 
-### Task ownership versus role ownership
+### Task execution versus role stewardship
 
-The conceptual boundary is between task ownership and role ownership. An agent can execute “send these twenty follow-ups”. An AI Employee holding an SDR role must sustain the recurring process within defined limits: identify leads, research, contact, follow up, record, escalate and report performance.
+The conceptual boundary is between executing a task and stewarding a role. An agent can execute “send these twenty follow-ups”. An AI Employee holding an SDR role must sustain the recurring process within defined limits: identify leads, research, contact, follow up, record, escalate and report performance. Stewardship is not ownership: the post, its authority and its accountability have a human owner. What the resource carries is the continuing responsibility to sustain the process; what it can never carry is the consequence.
+
+**The AI executes. The organisation answers. A human governs.**
 
 ## The normative clauses
 
@@ -619,7 +621,7 @@ One term, two languages, one numbered definition. Where the English term is used
 
 **G-17 · Least privilege / least authority** — Least privilege limits what a resource can access; least authority limits what it can decide or commit. They are separate controls and both are required.
 
-**G-18 · Role ownership vs task ownership** — “Send these twenty follow-ups” is a task. “Manage commercial follow-up for this portfolio” is a role: prioritising, respecting constraints, keeping context, recognising exceptions and escalating. The move from one to the other is what justifies the category.
+**G-18 · Role stewardship vs task execution** — “Send these twenty follow-ups” is a task. “Manage commercial follow-up for this portfolio” is a role: prioritising, respecting constraints, keeping context, recognising exceptions and escalating. The move from one to the other is what justifies the category.
 
 **G-19 · Remediation plan** — The artificial equivalent of a performance improvement plan: reduce scope, increase approvals, correct configuration or context, and validate again before restoring authority.
 
@@ -768,6 +770,7 @@ You may quote, embed, teach, translate and commercially use this material with a
 - First publication: nineteen normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFS instrument, the Hybrid Workforce Manager role and the transition playbooks.
 - Certification was deliberately excluded from scope. This standard scores no products and issues no seals.
 - The HWFS returns a structured argument rather than a 0–100 score, resolving a contradiction present in the source research.
+- The thesis line and the vocabulary ladder were corrected for consistency with the standard’s own accountability architecture. The English edition read “an AI Employee is accountable for a role” and the ladder promised “ownership of a role”, while HWF-02’s note defines accountability as requiring the capacity to bear a legal, financial or reputational consequence and the accountable owner is human by definition. The thesis now ends where every chain in the standard ends — an AI Employee holds a role; a human answers for it — the ladder promises stewardship rather than ownership, and the invariant is stated as a formula: the AI executes, the organisation answers, a human governs. No clause text changed.
 - HWF-19 forbids a post from outliving its justification: at a stated cadence the accountable owner re-justifies its existence against current strategy, as a question prior to and separate from performance, and continuation is never the default. The clause replaces a pruning mechanism that artificial occupants lack — payroll and attrition remove pointless human posts, and a resource that costs little and never resigns persists by default, accumulating organisational debt in its most dangerous form: digital zombies holding access for work nobody needs. The proposed twelve-month period moved to the note as guidance, because the standard fixes mechanisms rather than calendars. Adds G-32 and extends WRM rule 1 and matrix principle 101.
 - HWF-18 makes context provisioning deliberate in both directions. The restriction categories existed from the first draft, but every stated reason for them was informational risk, so nothing stopped a manager from granting all non-sensitive context even where it would degrade the resource’s judgement through anchoring, confirmation bias or overload. The proposal behind it asked for a new WRM domain of opacity; it entered as a clause instead, because opacity is a technique inside existing domains rather than a management function. The clause makes the record mandatory and assigns responsibility for decisions degraded by withheld context to whoever withheld it, because undocumented opacity is an accountability-laundering instrument. Adds G-31 and extends G-06, matrix principle 57 and WRM rule 6.
 - HWF-10 now prohibits simulating an interior state the system does not have, alongside deceiving anyone about its nature as software. Disclosure alone left a gap: a system could announce itself as software and still perform hesitation and warmth designed to lower the reader’s guard. The clause targets purpose rather than surface, so fluency and courtesy remain competence while injected latency, verbal hesitation and claims of feeling do not. The proposal behind it asked for communication to be functionally distinguishable from human interaction, which would have required AI Employees to write badly and would have been unauditable.

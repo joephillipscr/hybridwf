@@ -7,8 +7,14 @@ export const DEFINITION: T = {
 };
 
 export const THESIS: T = {
-  en: 'A chatbot answers. A copilot helps. An agent acts. An AI Employee is accountable for a role.',
-  es: 'Un chatbot responde. Un copiloto ayuda. Un agente actúa. Un AI Employee es responsable de un rol.',
+  en: 'A chatbot answers. A copilot helps. An agent executes a task. An AI Employee holds a role. A human answers for it.',
+  es: 'Un chatbot responde. Un copiloto ayuda. Un agente ejecuta una tarea. Un AI Employee ocupa un rol. Un humano responde por él.',
+};
+
+/** The invariant. Stated once, in this order, and never varied. */
+export const FORMULA: T = {
+  en: 'The AI executes. The organisation answers. A human governs.',
+  es: 'La IA ejecuta. La organización responde. Un humano gobierna.',
 };
 
 export const GOVERNING_PRINCIPLE: T = {
@@ -148,13 +154,13 @@ export const LADDER: Rung[] = [
   },
   {
     term: 'AI Employee',
-    promise: { en: 'Ownership of a role', es: 'Propiedad de un rol' },
+    promise: { en: 'Stewardship of a role', es: 'Custodia de un rol' },
     behaviour: { en: 'Holds recurring work under governance', es: 'Asume trabajo recurrente bajo gobierno' },
     limit: { en: 'The category still has no standard — hence this document', es: 'La categoría aún no tiene estándar — de ahí este documento' },
   },
 ];
 
 export const OWNERSHIP_BOUNDARY: T = {
-  en: 'The conceptual boundary is between task ownership and role ownership. An agent can execute “send these twenty follow-ups”. An AI Employee holding an SDR role must sustain the recurring process within defined limits: identify leads, research, contact, follow up, record, escalate and report performance.',
-  es: 'La frontera conceptual está entre task ownership y role ownership. Un agente puede ejecutar «enviá estos veinte seguimientos». Un AI Employee que ocupa el rol de SDR debe sostener el proceso recurrente dentro de límites definidos: identificar leads, investigar, contactar, seguir, registrar, escalar y reportar desempeño.',
+  en: 'The conceptual boundary is between executing a task and stewarding a role. An agent can execute “send these twenty follow-ups”. An AI Employee holding an SDR role must sustain the recurring process within defined limits: identify leads, research, contact, follow up, record, escalate and report performance. Stewardship is not ownership: the post, its authority and its accountability have a human owner. What the resource carries is the continuing responsibility to sustain the process; what it can never carry is the consequence.',
+  es: 'La frontera conceptual está entre ejecutar una tarea y custodiar un rol. Un agente puede ejecutar «enviá estos veinte seguimientos». Un AI Employee que ocupa el rol de SDR debe sostener el proceso recurrente dentro de límites definidos: identificar leads, investigar, contactar, seguir, registrar, escalar y reportar desempeño. La custodia no es propiedad: el puesto, su autoridad y su accountability tienen dueño humano. Lo que el recurso carga es la responsabilidad continua de sostener el proceso; lo que nunca puede cargar es la consecuencia.',
 };

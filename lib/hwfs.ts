@@ -346,8 +346,8 @@ export function evaluate(a: Answers): Result {
   } else if (pull >= 6 && ceiling === 'artificial') {
     allocation = 'artificial';
     mark('repeatability', {
-      en: 'Repetitive, predictable, high-volume and verifiable work with a low exception rate — the case where an artificial resource can hold role ownership.',
-      es: 'Trabajo repetitivo, predecible, de alto volumen y verificable, con baja tasa de excepciones — el caso donde un recurso artificial puede sostener role ownership.',
+      en: 'Repetitive, predictable, high-volume and verifiable work with a low exception rate — the case where an artificial resource can hold role stewardship.',
+      es: 'Trabajo repetitivo, predecible, de alto volumen y verificable, con baja tasa de excepciones — el caso donde un recurso artificial puede sostener role stewardship.',
     });
   } else {
     allocation = 'hybrid';
@@ -414,13 +414,13 @@ export function evaluate(a: Answers): Result {
         ? 'Keep this responsibility human.'
         : allocation === 'hybrid'
           ? 'Design this as an explicitly split hybrid responsibility.'
-          : 'This responsibility can carry artificial role ownership within limits.',
+          : 'This responsibility can carry artificial role stewardship within limits.',
     es:
       allocation === 'human'
         ? 'Mantené esta responsabilidad humana.'
         : allocation === 'hybrid'
           ? 'Diseñá esto como una responsabilidad híbrida con reparto explícito.'
-          : 'Esta responsabilidad puede sostener role ownership artificial dentro de límites.',
+          : 'Esta responsabilidad puede sostener role stewardship artificial dentro de límites.',
   };
 
   return { allocation, risk, startingRung, determinative, controls, wouldChange, headline };

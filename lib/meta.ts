@@ -10,8 +10,8 @@ import {
 
 const DESCRIPTIONS: Record<RouteKey, Record<Locale, string>> = {
   home: {
-    en: 'A chatbot answers. A copilot helps. An agent acts. An AI Employee is accountable for a role. An open administrative standard for designing, staffing, governing and retiring work across human and artificial resources.',
-    es: 'Un chatbot responde. Un copiloto ayuda. Un agente actúa. Un AI Employee es responsable de un rol. Un estándar administrativo abierto para diseñar, asignar, gobernar y retirar trabajo entre recursos humanos y artificiales.',
+    en: 'A chatbot answers. A copilot helps. An agent executes a task. An AI Employee holds a role. A human answers for it. An open administrative standard for designing, staffing, governing and retiring work across human and artificial resources.',
+    es: 'Un chatbot responde. Un copiloto ayuda. Un agente ejecuta una tarea. Un AI Employee ocupa un rol. Un humano responde por él. Un estándar administrativo abierto para diseñar, asignar, gobernar y retirar trabajo entre recursos humanos y artificiales.',
   },
   standard: {
     en: `The Hybrid Workforce Standard v${STANDARD_VERSION} — nineteen normative clauses that separate a governable work resource from a commercial metaphor.`,
