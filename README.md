@@ -70,6 +70,28 @@ site is not a funnel for AIEmpl.com. The link to the platform exists once, in th
 disclosure, because the author's commercial interest belongs stated rather than found.
 See `/governance/`.
 
+## Licensing — two licences, one repository
+
+| What | Licence | File |
+| --- | --- | --- |
+| **The standard and its text** (the content in `lib/`, and the pages that render it) | **CC BY-SA 4.0** | `LICENSE-CONTENT.md` |
+| **The site's source code** (components, config, build scripts, HWFS evaluation logic) | ⚠️ **Not yet decided** — see below | `LICENSE` |
+
+Do not infer one from the other. The content licence is deliberate and settled:
+anyone may cite, embed, translate, teach or commercially use the standard, and any
+*modified* version must stay open under the same terms. A fork can exist; a closed fork
+cannot. Full reasoning at `/license/` and in `LICENSE-CONTENT.md`.
+
+**Open decision — the code licence.** The repository ships no `LICENSE` file yet, which
+means the code is under default copyright (all rights reserved). Pick one before the
+repo goes public:
+
+- **MIT** — anyone can reuse the site's components. Fine if the code has no strategic value.
+- **All rights reserved** — the standard is open, the implementation is not. Also fine, and
+  the more common posture for a reference site.
+
+Either is defensible; leaving it unstated in a public repo is not.
+
 ## Authorship
 
 Written by Master Joe Phillips, who also builds AIEmpl.com. The conflict of interest is

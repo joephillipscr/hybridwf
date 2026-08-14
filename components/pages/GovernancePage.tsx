@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Reveal from '../Reveal';
 import { PageHeader, Section, SectionHeading } from '../Section';
 import {
@@ -8,7 +9,7 @@ import {
   SEATS,
   STATUS_NOTE,
 } from '@/lib/governance';
-import { AUTHOR, PLATFORM_DISCLOSURE, type Locale } from '@/lib/site';
+import { AUTHOR, PLATFORM_DISCLOSURE, route, type Locale } from '@/lib/site';
 
 const C = {
   eyebrow: { en: 'Governance', es: 'Gobierno' },
@@ -72,6 +73,18 @@ export default function GovernancePage({ lang }: { lang: Locale }) {
             {MODEL.rule[lang]}
           </blockquote>
           <p className="prose-x mt-6">{MODEL.body[lang]}</p>
+          <p className="prose-x mt-4">
+            {lang === 'en'
+              ? 'The second guarantee is the licence. The standard is published under CC BY-SA 4.0: anyone may cite, embed, translate or build on it, and any modified version must stay open under the same terms. A fork can exist; a closed fork cannot. '
+              : 'La segunda garantía es la licencia. El estándar se publica bajo CC BY-SA 4.0: cualquiera puede citarlo, embeberlo, traducirlo o construir sobre él, y toda versión modificada debe quedar abierta bajo los mismos términos. Un fork puede existir; un fork cerrado no. '}
+            <Link
+              href={route('license', lang)}
+              className="font-medium text-brand underline underline-offset-2"
+            >
+              {lang === 'en' ? 'Licence terms' : 'Términos de la licencia'}
+            </Link>
+            .
+          </p>
         </Reveal>
       </Section>
 

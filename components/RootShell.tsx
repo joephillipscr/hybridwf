@@ -1,7 +1,16 @@
 import Header from './Header';
 import Footer from './Footer';
 import { UI } from '@/lib/i18n';
-import type { Locale } from '@/lib/site';
+import { LICENSE } from '@/lib/license';
+import {
+  AUTHOR,
+  ROUTES,
+  SITE_NAME,
+  SITE_URL,
+  STANDARD_DATE,
+  STANDARD_VERSION,
+  type Locale,
+} from '@/lib/site';
 
 /**
  * Runs before paint so the theme never flashes. Dark is the default and lives
@@ -18,10 +27,31 @@ export default function RootShell({
   fontVars: string;
   children: React.ReactNode;
 }) {
+  /* Machine-readable licence, so crawlers and reuse tools can see the terms
+     without parsing the footer prose. */
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CreativeWork',
+    name: SITE_NAME,
+    version: STANDARD_VERSION,
+    datePublished: STANDARD_DATE,
+    inLanguage: lang,
+    url: `${SITE_URL}${ROUTES.home[lang]}`,
+    license: LICENSE.url,
+    creditText: SITE_NAME,
+    author: { '@type': 'Person', name: AUTHOR.name, url: AUTHOR.url },
+    copyrightHolder: { '@type': 'Person', name: AUTHOR.name, url: AUTHOR.url },
+  };
+
   return (
     <html lang={lang} suppressHydrationWarning>
       <head>
+        <link rel="license" href={LICENSE.url} />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body className={`${fontVars} font-sans`}>
         <a

@@ -23,6 +23,7 @@ const PAGES = [
   ['transitions', 'TransitionsPage', 'transitions', 'transiciones'],
   ['glossary', 'GlossaryPage', 'glossary', 'glosario'],
   ['governance', 'GovernancePage', 'governance', 'gobierno'],
+  ['license', 'LicensePage', 'license', 'licencia'],
   ['sources', 'SourcesPage', 'sources', 'fuentes'],
   ['changelog', 'ChangelogPage', 'changelog', 'cambios'],
 ];

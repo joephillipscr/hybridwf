@@ -44,6 +44,7 @@ export type RouteKey =
   | 'transitions'
   | 'glossary'
   | 'governance'
+  | 'license'
   | 'sources'
   | 'changelog';
 
@@ -59,6 +60,7 @@ export const ROUTES: Record<RouteKey, Record<Locale, string>> = {
   transitions: { en: '/transitions/', es: '/es/transiciones/' },
   glossary: { en: '/glossary/', es: '/es/glosario/' },
   governance: { en: '/governance/', es: '/es/gobierno/' },
+  license: { en: '/license/', es: '/es/licencia/' },
   sources: { en: '/sources/', es: '/es/fuentes/' },
   changelog: { en: '/changelog/', es: '/es/cambios/' },
 };
@@ -75,6 +77,7 @@ export const ROUTE_TITLES: Record<RouteKey, Record<Locale, string>> = {
   transitions: { en: 'Transitions', es: 'Transiciones' },
   glossary: { en: 'Glossary', es: 'Glosario' },
   governance: { en: 'Governance', es: 'Gobierno' },
+  license: { en: 'Licence', es: 'Licencia' },
   sources: { en: 'Sources', es: 'Fuentes' },
   changelog: { en: 'Changelog', es: 'Cambios' },
 };
@@ -100,7 +103,7 @@ export const FOOTER_NAV: { title: Record<Locale, string>; items: RouteKey[] }[] 
   },
   {
     title: { en: 'Use it', es: 'Usarlo' },
-    items: ['hwfs', 'glossary', 'governance', 'sources'],
+    items: ['hwfs', 'glossary', 'governance', 'license', 'sources'],
   },
 ];
 

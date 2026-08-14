@@ -53,6 +53,10 @@ const DESCRIPTIONS: Record<RouteKey, Record<Locale, string>> = {
     en: 'Who wrote this standard, what commercial interest the author holds, how the Standard Review Board works, and how anyone can propose a change.',
     es: 'Quién escribió este estándar, qué interés comercial tiene el autor, cómo funciona el Standard Review Board y cómo cualquiera puede proponer un cambio.',
   },
+  license: {
+    en: 'The standard is published under CC BY-SA 4.0 — free to cite, embed, teach and use commercially. Modify it and your version stays open too.',
+    es: 'El estándar se publica bajo CC BY-SA 4.0 — libre para citar, embeber, enseñar y usar comercialmente. Si lo modificás, tu versión también queda abierta.',
+  },
   sources: {
     en: 'Sources, methodological notes and the limits of what this document claims.',
     es: 'Fuentes, notas metodológicas y los límites de lo que este documento afirma.',
@@ -75,6 +79,7 @@ const TITLES: Record<RouteKey, Record<Locale, string>> = {
   transitions: { en: 'Transitions', es: 'Transiciones' },
   glossary: { en: 'Glossary', es: 'Glosario' },
   governance: { en: 'Governance', es: 'Gobierno' },
+  license: { en: 'Licence', es: 'Licencia' },
   sources: { en: 'Sources', es: 'Fuentes' },
   changelog: { en: 'Changelog', es: 'Cambios' },
 };

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Mark from './Mark';
 import { UI } from '@/lib/i18n';
+import { LICENSE } from '@/lib/license';
 import {
   AUTHOR,
   FOOTER_NAV,
@@ -86,12 +87,34 @@ export default function Footer({ lang }: { lang: Locale }) {
           </p>
         </div>
 
-        <p className="mt-8 text-xs text-muted">
-          © {year} {AUTHOR.name}.{' '}
+        <p className="mt-8 text-xs leading-relaxed text-muted">
+          {lang === 'en' ? 'The ' : 'El '}
+          <strong className="font-semibold text-fg">{SITE_NAME}</strong>
+          {lang === 'en' ? ' by ' : ' de '}
+          <a href={AUTHOR.url} className="text-brand underline underline-offset-2" rel="author">
+            {AUTHOR.name}
+          </a>
+          {lang === 'en' ? ' is licensed under ' : ' está bajo licencia '}
+          <a
+            href={LICENSE.url}
+            className="text-brand underline underline-offset-2"
+            rel="license noopener noreferrer"
+            target="_blank"
+          >
+            CC BY-SA 4.0
+          </a>
+          {'. '}
+          <Link
+            href={route('license', lang)}
+            className="text-brand underline underline-offset-2"
+          >
+            {lang === 'en' ? 'What that allows' : 'Qué permite eso'}
+          </Link>
           {lang === 'en'
-            ? 'Published openly. This standard certifies no products and issues no seals.'
-            : 'Publicado abiertamente. Este estándar no certifica productos ni emite sellos.'}
+            ? '. Site code is licensed separately. This standard certifies no products and issues no seals.'
+            : '. El código del sitio se licencia por separado. Este estándar no certifica productos ni emite sellos.'}
         </p>
+        <p className="mt-3 text-xs text-muted">© {year} {AUTHOR.name}.</p>
       </div>
     </footer>
   );
