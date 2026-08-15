@@ -9,7 +9,7 @@ const C = {
   title: { en: 'What this is built on, and what it does not claim', es: 'Sobre qué se construye esto, y qué no afirma' },
   lede: {
     en: 'The sources below were used to validate the state of the market and the adjacent principles. What is proposed here is proposed here — it is not endorsed by any of them.',
-    es: 'Las fuentes siguientes se utilizaron para validar el estado del mercado y los principios adyacentes. Lo que se propone acá se propone acá — no está respaldado por ninguna de ellas.',
+    es: 'Las fuentes siguientes se utilizaron para validar el estado del mercado y los principios adyacentes. Lo que se propone aquí se propone aquí — no está respaldado por ninguna de ellas.',
   },
   methodTitle: { en: 'Methodological notes', es: 'Notas metodológicas' },
   conceptualTitle: { en: 'Conceptual lineage', es: 'Linaje conceptual' },

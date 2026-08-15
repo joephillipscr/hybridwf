@@ -7,7 +7,7 @@ export const DISCLOSURE: { title: T; body: T[] } = {
   body: [
     {
       en: 'This standard was written by Master Joe Phillips, who also builds AIEmpl.com, a commercial platform in this category. That is a real conflict of interest and it is stated here rather than discovered later.',
-      es: 'Este estándar fue escrito por Master Joe Phillips, quien también construye AIEmpl.com, una plataforma comercial en esta categoría. Eso es un conflicto de interés real y se declara acá en lugar de descubrirse después.',
+      es: 'Este estándar fue escrito por Master Joe Phillips, quien también construye AIEmpl.com, una plataforma comercial en esta categoría. Eso es un conflicto de interés real y se declara aquí en lugar de descubrirse después.',
     },
     {
       en: 'Three commitments follow from it, and all three are structural rather than promised. This standard does not certify products and does not score vendors, and under HWF-71 the author’s platform can never claim conformance — a deployment can, a platform cannot. The licence is irrevocable, so the text cannot be pulled back behind a product. And the normative text moves without the author’s vote: the Editor drafts and argues, and does not vote. Independence is demonstrated by structure, not asserted by a sentence.',
@@ -196,7 +196,7 @@ export const OPEN_FINDINGS: { title: T; intro: T; items: T[] } = {
   title: { en: 'Open findings — held for the Board', es: 'Hallazgos abiertos — en espera del Board' },
   intro: {
     en: 'Findings from the Candidate 1.0 adversarial review that survived verification in part but were not amended by the Editor alone. They are published rather than filed, because a standard that hides its known gaps is marketing: each is Board agenda, and each stays listed here until a version resolves it.',
-    es: 'Hallazgos de la revisión adversarial de Candidate 1.0 que sobrevivieron la verificación en parte pero no fueron enmendados por el Editor en solitario. Se publican en vez de archivarse, porque un estándar que esconde sus huecos conocidos es marketing: cada uno es agenda del Board, y cada uno sigue listado acá hasta que una versión lo resuelva.',
+    es: 'Hallazgos de la revisión adversarial de Candidate 1.0 que sobrevivieron la verificación en parte pero no fueron enmendados por el Editor en solitario. Se publican en vez de archivarse, porque un estándar que esconde sus huecos conocidos es marketing: cada uno es agenda del Board, y cada uno sigue listado aquí hasta que una versión lo resuelva.',
   },
   items: [
     {

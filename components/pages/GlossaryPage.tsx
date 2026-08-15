@@ -8,7 +8,7 @@ const C = {
   title: { en: 'Glossary', es: 'Glosario' },
   lede: {
     en: 'A standard fragments when the same idea travels under two names. Every term is fixed here in both languages with one numbered definition.',
-    es: 'Un estándar se fragmenta cuando la misma idea viaja bajo dos nombres. Cada término queda fijado acá en ambos idiomas con una definición numerada.',
+    es: 'Un estándar se fragmenta cuando la misma idea viaja bajo dos nombres. Cada término queda fijado aquí en ambos idiomas con una definición numerada.',
   },
   other: { en: 'Spanish', es: 'English' },
 };

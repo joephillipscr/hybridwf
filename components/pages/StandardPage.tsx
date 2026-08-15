@@ -4,6 +4,7 @@ import CiteBox from '../CiteBox';
 import Reveal from '../Reveal';
 import { PageHeader, Section } from '../Section';
 import { BLOCKS, CLAUSES, CONFORMANCE, DECLARATION, MOTIVATION, OBJECTIVE, PREAMBLE, RISK_CLASSES, RISK_INTRO, RISK_NOTE } from '@/lib/standard';
+import { SOURCES } from '@/lib/sources';
 import { UI } from '@/lib/i18n';
 import { AUTHOR, SITE_NAME, SITE_URL, STANDARD_LABEL, route, type Locale } from '@/lib/site';
 
@@ -12,7 +13,7 @@ const C = {
   title: { en: 'The Hybrid Workforce Standard', es: 'El Hybrid Workforce Standard' },
   lede: {
     en: 'Twenty-seven clauses that separate a governable work resource from a commercial metaphor. Conformance is self-declared: no product is scored here and no seal is issued.',
-    es: 'Veintisiete cláusulas que separan un recurso de trabajo gobernable de una metáfora comercial. La conformidad es autodeclarada: acá no se puntúa ningún producto ni se emite ningún sello.',
+    es: 'Veintisiete cláusulas que separan un recurso de trabajo gobernable de una metáfora comercial. La conformidad es autodeclarada: aquí no se puntúa ningún producto ni se emite ningún sello.',
   },
   next: { en: 'How the standard is governed', es: 'Cómo se gobierna el estándar' },
   riskTitle: { en: 'Risk classification', es: 'Clasificación de riesgo' },
@@ -31,6 +32,7 @@ const C = {
   },
   archBlock: { en: 'Block', es: 'Bloque' },
   archClauses: { en: 'Clauses', es: 'Cláusulas' },
+  builtAgainst: { en: 'Built against', es: 'Construida contra' },
 };
 
 export default function StandardPage({ lang }: { lang: Locale }) {
@@ -127,6 +129,31 @@ export default function StandardPage({ lang }: { lang: Locale }) {
                     <p className="mt-3 max-w-prose text-[0.95rem] leading-relaxed text-muted">
                       {c.note[lang]}
                     </p>
+                    {c.sources?.length ? (
+                      <p className="mt-3 max-w-prose text-[0.8rem] leading-relaxed text-muted">
+                        <span className="font-mono text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-brand">
+                          {C.builtAgainst[lang]}
+                        </span>{' '}
+                        {c.sources.map((sid, i) => {
+                          const s = SOURCES.find((x) => x.id === sid);
+                          if (!s) return null;
+                          return (
+                            <span key={sid}>
+                              {i > 0 ? ' · ' : ''}
+                              <a
+                                href={s.url}
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                className="underline decoration-border underline-offset-2 hover:text-brand"
+                              >
+                                {s.id}
+                              </a>{' '}
+                              {s.label}
+                            </span>
+                          );
+                        })}
+                      </p>
+                    ) : null}
                   </Reveal>
                 </li>
                     ))}

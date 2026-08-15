@@ -60,6 +60,7 @@ const S = {
   clauses: { en: 'The normative clauses', es: 'Las cláusulas normativas' },
   reading: { en: 'Reading this standard', es: 'Cómo leer este estándar' },
   note: { en: 'Note', es: 'Nota' },
+  builtAgainst: { en: 'Built against', es: 'Construida contra' },
   maturity: { en: 'Maturity model', es: 'Modelo de madurez' },
   threshold: { en: 'Category threshold', es: 'Umbral de la categoría' },
   diagnostic: { en: 'Self-diagnosis', es: 'Autodiagnóstico' },
@@ -206,6 +207,13 @@ function build(lang: Locale): string {
       h(4, c.id);
       p(`**${L(c.text, lang)}**`);
       p(`*${t('note')}:* ${L(c.note, lang)}`);
+      if (c.sources?.length) {
+        const labels = c.sources
+          .map((id) => SOURCES.find((s) => s.id === id))
+          .filter(Boolean)
+          .map((s) => `${s!.id} · ${s!.label}`);
+        p(`*${t('builtAgainst')}:* ${labels.join(' — ')}`);
+      }
     });
   });
 

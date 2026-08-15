@@ -289,7 +289,7 @@ export function evaluate(a: Answers): Result {
     });
     controls.push({
       en: 'Specify the flow and build it as deterministic software. If a residual exception tail appears in production, assess that tail — and only that tail — separately.',
-      es: 'Especificá el flujo y construílo como software determinista. Si aparece una cola residual de excepciones en producción, evaluá esa cola — y solo esa cola — por separado.',
+      es: 'Especifique el flujo y constrúyalo como software determinista. Si aparece una cola residual de excepciones en producción, evalúe esa cola — y solo esa cola — por separado.',
     });
     wouldChange.push({
       en: 'If variation grows — new case types, judgement creeping in, exceptions rising — re-run this assessment: the boundary between a script and an AI Employee is the exception tail.',
@@ -387,7 +387,7 @@ export function evaluate(a: Answers): Result {
     ceiling = ceiling === 'human' ? 'human' : 'hybrid';
     mark('auditability', {
       en: 'You cannot govern what you cannot verify, and the cost of error here is too high to run unverifiable work.',
-      es: 'No se puede gobernar lo que no se puede verificar, y el costo del error acá es demasiado alto para operar trabajo no verificable.',
+      es: 'No se puede gobernar lo que no se puede verificar, y el costo del error aquí es demasiado alto para operar trabajo no verificable.',
     });
     controls.push({
       en: 'Define a quality bar and a sampling regime before granting any autonomy.',
