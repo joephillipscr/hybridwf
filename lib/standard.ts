@@ -413,6 +413,16 @@ export const RISK_NOTE: T = {
   es: 'El HWFA deriva una clase provisional de costo del error y reversibilidad al asignar; la clase declarada de HWF-22 pesa los siete factores y prevalece. Los niveles están diseñados para interoperar con regímenes basados en riesgo como el EU AI Act sin afirmar equivalencia jurídica: mapear una clase a una categoría legal es un ejercicio de abogados, no una propiedad de este documento.',
 };
 
+/** The preamble. The document’s own declaration — unsigned, unlike the
+ * author’s motivation below — and the sentence every clause descends from. */
+export const PREAMBLE: { label: T; text: T } = {
+  label: { en: 'Preamble', es: 'Preámbulo' },
+  text: {
+    en: 'AI exists in the service of legitimate human purposes. Efficiency never justifies degrading human dignity, agency, rights or capability. All artificial authority remains limited, contestable, reversible and subordinate to real human accountability.',
+    es: 'La IA existe al servicio de propósitos humanos legítimos. La eficiencia no justifica degradar dignidad, agencia, derechos ni capacidad humana. Toda autoridad artificial permanece limitada, impugnable, reversible y subordinada a responsabilidad humana real.',
+  },
+};
+
 /** The author’s motivation. Signed and non-normative: it explains why the
  * document exists, and conformance never depends on agreeing with it. */
 export const MOTIVATION: { label: T; text: T } = {

@@ -3,7 +3,7 @@ import { ArrowRight, FileText } from 'lucide-react';
 import CiteBox from '../CiteBox';
 import Reveal from '../Reveal';
 import { PageHeader, Section } from '../Section';
-import { CLAUSES, CONFORMANCE, DECLARATION, MOTIVATION, OBJECTIVE, RISK_CLASSES, RISK_INTRO, RISK_NOTE } from '@/lib/standard';
+import { CLAUSES, CONFORMANCE, DECLARATION, MOTIVATION, OBJECTIVE, PREAMBLE, RISK_CLASSES, RISK_INTRO, RISK_NOTE } from '@/lib/standard';
 import { UI } from '@/lib/i18n';
 import { AUTHOR, SITE_NAME, SITE_URL, STANDARD_LABEL, route, type Locale } from '@/lib/site';
 
@@ -38,7 +38,15 @@ export default function StandardPage({ lang }: { lang: Locale }) {
 
       <Section>
         <Reveal>
-          <figure className="max-w-3xl border-l-2 border-accent pl-6">
+          <div className="max-w-3xl">
+            <p className="eyebrow">{PREAMBLE.label[lang]}</p>
+            <p className="mt-3 font-display text-xl leading-snug text-fg sm:text-[1.35rem]">
+              {PREAMBLE.text[lang]}
+            </p>
+          </div>
+        </Reveal>
+        <Reveal delay={0.08}>
+          <figure className="mt-12 max-w-3xl border-l-2 border-accent pl-6">
             <figcaption className="eyebrow">{MOTIVATION.label[lang]}</figcaption>
             <blockquote className="mt-3 font-display text-xl leading-snug text-fg sm:text-[1.35rem]">
               {MOTIVATION.text[lang]}

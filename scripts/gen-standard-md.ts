@@ -17,7 +17,7 @@ import { join } from 'node:path';
 
 import type { T } from '../lib/i18n';
 import { LOCALES, ROUTES, SITE_NAME, SITE_URL, STANDARD_DATE, STANDARD_LABEL, STANDARD_VERSION, AUTHOR, type Locale } from '../lib/site';
-import { CLAUSES, CONFORMANCE, DECLARATION, MOTIVATION, OBJECTIVE, RISK_CLASSES, RISK_INTRO, RISK_NOTE } from '../lib/standard';
+import { CLAUSES, CONFORMANCE, DECLARATION, MOTIVATION, OBJECTIVE, PREAMBLE, RISK_CLASSES, RISK_INTRO, RISK_NOTE } from '../lib/standard';
 import { DEFINITION, FORMULA, GOVERNING_PRINCIPLE, LADDER, OWNERSHIP_BOUNDARY, PROPERTIES, PROPERTIES_CAVEAT, THESIS } from '../lib/definition';
 import { LEVELS, MATURITY_NOTE, THRESHOLD, DIAGNOSTIC } from '../lib/maturity';
 import { BOUNDARY_WARNING, DOMAINS, LIFECYCLE, PRINCIPLE_LAYERS, RULES as WRM_RULES, STACK, WRM_DEFINITION, WRM_PREMISE } from '../lib/wrm';
@@ -167,6 +167,7 @@ function build(lang: Locale): string {
   h(1, SITE_NAME);
   p(`**${L(THESIS, lang)}**`);
   p(`> ${L(GOVERNING_PRINCIPLE, lang)}`);
+  p(`**${L(PREAMBLE.label, lang)}.** ${L(PREAMBLE.text, lang)}`);
   p(`**${L(MOTIVATION.label, lang)}.** ${L(MOTIVATION.text, lang)}`);
   p(`**${L(OBJECTIVE.label, lang)}.** ${L(OBJECTIVE.text, lang)} — ${AUTHOR.name}`);
 
