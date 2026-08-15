@@ -19,12 +19,17 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: accelerometer=(), autoplay=(), camera=(), display-capture=(), encrypted-media=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=()
   Cross-Origin-Opener-Policy: same-origin
+
+# Resource policy is scoped to the build assets rather than set globally.
+# Cloudflare Pages accumulates every matching rule instead of overriding,
+# so a global same-site here would emit a second, conflicting value on the
+# machine-readable editions below and leave their policy ambiguous.
+/_next/*
   Cross-Origin-Resource-Policy: same-site
 
 # The machine-readable editions are meant to be fetched cross-origin — by
-# models, retrieval indexes and citation tools. They keep the open CORS
-# header the rest of the site does not need, and must override the
-# same-site resource policy above or the fetch would be blocked despite it.
+# models, retrieval indexes and citation tools — so they carry open CORS
+# and an explicit cross-origin resource policy.
 /standard.md
   Access-Control-Allow-Origin: *
   Cross-Origin-Resource-Policy: cross-origin
