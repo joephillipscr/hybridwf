@@ -75,7 +75,7 @@ const S = {
     en: 'A structured instrument in three stages — eligibility, then risk, then economics — for deciding whether a responsibility should be Human, Deterministic automation, Artificial or Hybrid. Constraints come first: reserved subjects and prohibited uses gate the answer, fully enumerable rule-following work exits to conventional software, risk caps what survives, and only then does the cost profile choose among the remainder. It returns an argument, not a number: an allocation, a risk class, a starting autonomy rung, the answers that decided it, and the conditions that would change it — a numeric score would let a decision already taken be laundered through arithmetic.',
     es: 'Instrumento estructurado en tres etapas — elegibilidad, luego riesgo, luego economía — para decidir si una responsabilidad debe ser Humana, Automatización determinista, Artificial o Híbrida. Las restricciones van primero: las materias reservadas y los usos prohibidos compuertan la respuesta, el trabajo por reglas completamente enumerable sale hacia software convencional, el riesgo topa lo que sobrevive, y solo entonces el perfil de costos escoge entre lo restante. Devuelve un argumento, no un número: una asignación, una clase de riesgo, un peldaño inicial de autonomía, las respuestas que lo decidieron y las condiciones que lo cambiarían — un puntaje numérico permitiría lavar a través de la aritmética una decisión ya tomada.',
   },
-  dimensions: { en: 'The twelve dimensions', es: 'Las doce dimensiones' },
+  dimensions: { en: 'The thirteen dimensions', es: 'Las trece dimensiones' },
   autonomy: { en: 'The autonomy ladder', es: 'La escalera de autonomía' },
   role: { en: 'The role', es: 'El rol' },
   mission: { en: 'Mission', es: 'Misión' },
@@ -89,7 +89,7 @@ const S = {
   glossary: { en: 'Glossary', es: 'Glosario' },
   governance: { en: 'Governance', es: 'Gobierno' },
   disclosure: { en: 'Disclosure', es: 'Divulgación' },
-  seats: { en: 'The five seats', es: 'Los cinco asientos' },
+  seats: { en: 'The nine seats', es: 'Los nueve asientos' },
   open: { en: 'Open', es: 'Abierto' },
   process: { en: 'Amendment process', es: 'Proceso de enmienda' },
   status: { en: 'Current status', es: 'Estado actual' },
@@ -173,6 +173,7 @@ function build(lang: Locale): string {
 
   h(2, t('howToCite'));
   p(t('citeBody'));
+  p('`' + `Phillips, J. (2026). ${SITE_NAME}, ${STANDARD_LABEL}, ${lang === 'en' ? 'clause' : 'cláusula'} HWF-nn.` + '`');
   p('```', attributionPlain(canonical, AUTHOR.name, lang), '```');
 
   /* --- Definition -------------------------------------------------- */

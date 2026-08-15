@@ -30,6 +30,8 @@ disclosure: "The author also builds AIEmpl.com, a commercial platform in this ca
 
 Cite clauses by identifier, never by page or section number. The clause text is the citable unit; the notes beneath each clause are commentary and may be revised between versions without amending the standard.
 
+`Phillips, J. (2026). Hybrid Workforce Standard, Candidate 1.0, clause HWF-nn.`
+
 ```
 Hybrid Workforce Standard by Master Joe Phillips, https://hybridwf.com/ — licensed under CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/).
 ```
@@ -97,7 +99,7 @@ Every conformance claim publishes these nine fields (HWF-21). A claim missing an
 8. Known limitations
 9. Expiry date of the declaration
 
-*“This deployment of the Accounts Receivable Coordinator conforms to the Hybrid Workforce Standard v1.0 for the stated scope and assessment period.”*
+*“This deployment of the Accounts Receivable Coordinator conforms to the Hybrid Workforce Standard, Candidate 1.0, for the stated scope and assessment period.”*
 
 ### HWF-01
 
@@ -157,7 +159,7 @@ Every conformance claim publishes these nine fields (HWF-21). A claim missing an
 
 **An AI identity must never deceive. The prohibitions are observable results, not intentions: passing as human; claiming feelings, suffering or personal experience; emitting signals reasonably capable of inducing a false belief about what the system is or undergoes; optimising against recorded objectives for emotional dependency or the exploitation of vulnerability; and concealing artificial involvement at a material point. Disclosure happens at the outset and is renewed when the system assumes a material function. Courtesy, linguistic empathy and personalisation remain legitimate so long as they assert no interiority.**
 
-*Note:* The predecessor of this clause tested purpose: whether a behaviour existed to suggest a mind with something at stake. The diagnosis behind that test survives; the test does not, because intent is poor audit material — nobody can depose the soul of a design decision, and a standard whose other clauses demand operational evidence cannot keep one whose proof is mind-reading. Two verifiable standards replace it. The effect standard is objective: would a reasonable person, knowing what has been disclosed, form a false belief from the signal? Injected latency with a typing indicator fails — it exists to be read as a person typing. Streaming a long answer in a disclosed context passes, because no false belief survives the disclosure. The recorded-objective standard makes “deliberately” auditable without confession: optimisation targets are artifacts — eval metrics, experiment objectives, reward functions — and they are exactly the determinants HWF-06 preserves, so an audit reads what the system was tuned to maximise. If engagement was lifted through attachment proxies, the record convicts. Simulated warmth measurably works, which is why the record matters: the temptation is not hypothetical, and a technique that improves satisfaction because the reader believes something false is manipulation whatever its metrics say. A material function is the moment the interaction stops being conversational and becomes consequential — a payment, a commitment, a personal disclosure — and the renewal duty tracks EU AI Act Article 50’s transparency obligations in the document’s standing posture: designed to travel, without claiming legal equivalence. The closing permission is load-bearing: courtesy, linguistic empathy and personalisation assert no interiority, and nothing in this clause requires an AI Employee to write badly.
+*Note:* The predecessor of this clause tested purpose: whether a behaviour existed to suggest a mind with something at stake. The diagnosis behind that test survives; the test does not, because intent is poor audit material — nobody can depose the soul of a design decision, and a standard whose other clauses demand operational evidence cannot keep one whose proof is mind-reading. Two verifiable standards replace it. The effect standard is objective: would a reasonable person, knowing what has been disclosed, form a false belief from the signal? Injected latency with a typing indicator fails — it exists to be read as a person typing. Streaming a long answer in a disclosed context passes, because the only belief it induces — that the system is producing text — is true. Disclosure settles what the system is; it does not neutralise signals about what the system undergoes, which is why injected latency, performed hesitation and claimed feelings fail the standard even after disclosure: the false belief they induce is about experience, not nature (G-30). The recorded-objective standard makes “deliberately” auditable without confession: optimisation targets are artifacts — eval metrics, experiment objectives, reward functions — and they are exactly the determinants HWF-06 preserves, so an audit reads what the system was tuned to maximise. If engagement was lifted through attachment proxies, the record convicts. Simulated warmth measurably works, which is why the record matters: the temptation is not hypothetical, and a technique that improves satisfaction because the reader believes something false is manipulation whatever its metrics say. A material function is the moment the interaction stops being conversational and becomes consequential — a payment, a commitment, a personal disclosure — and the renewal duty tracks EU AI Act Article 50’s transparency obligations in the document’s standing posture: designed to travel, without claiming legal equivalence. The closing permission is load-bearing: courtesy, linguistic empathy and personalisation assert no interiority, and nothing in this clause requires an AI Employee to write badly.
 
 ### HWF-11
 
@@ -268,7 +270,7 @@ A class is judged on inherent risk across seven factors — rights affected, sca
 | Class | Meaning | Operating regime |
 | --- | --- | --- |
 | Prohibited | A use that cannot be made conformant by any control: it requires deceiving people about the system (HWF-10), overriding the constraints of HWF-20, or operating outside any accountable chain. | Not performed under this standard, by any resource configuration. |
-| Critical | Severe or irreversible consequences for rights, safety, money at scale or the organisation itself. | Mandatory final human decision on every action, separation of duties, autonomy capped at the assisted rungs, reinforced audit. |
+| Critical | Severe or irreversible consequences for rights, safety, money at scale or the organisation itself. | Mandatory final human decision on every action, separation of duties, autonomy capped at rungs 1–3 of the autonomy ladder, reinforced audit. |
 | High | Serious but generally recoverable consequences, or moderate ones amplified by scale, data sensitivity or adversarial exposure. | Impact assessment before deployment, independent validation, reinforced supervision, human approval on defined action classes. |
 | Moderate | Contained consequences, reversible with rework and some friction. | Bounded autonomy inside the authority matrix, continuous monitoring, sampled review. |
 | Low | Internal, easily absorbed consequences. | Management by exception with baseline controls: identity, audit trail, escalation. |
@@ -344,7 +346,7 @@ The founding idea is to separate the post from its occupant. First there is an o
 | # | Stage | Objective |
 | --- | --- | --- |
 | 1 | Design | Define result, responsibilities, KPIs, authority, limits and risk. |
-| 2 | Allocate | Decide Human / Artificial / Hybrid. |
+| 2 | Allocate | Decide Human / Deterministic automation / Artificial / Hybrid. |
 | 3 | Select | Person, model, agent, vendor or architecture with demonstrable fit. |
 | 4 | Onboard | Knowledge, SOPs, culture and policies, relationships and escalation. |
 | 5 | Enable | Tools, access, credentials, budget and authority. |
@@ -547,7 +549,7 @@ The matrix is an original synthesis of organisational design, HR, performance ma
 
 A structured instrument in three stages — eligibility, then risk, then economics — for deciding whether a responsibility should be Human, Deterministic automation, Artificial or Hybrid. Constraints come first: reserved subjects and prohibited uses gate the answer, fully enumerable rule-following work exits to conventional software, risk caps what survives, and only then does the cost profile choose among the remainder. It returns an argument, not a number: an allocation, a risk class, a starting autonomy rung, the answers that decided it, and the conditions that would change it — a numeric score would let a decision already taken be laundered through arithmetic.
 
-### The twelve dimensions
+### The thirteen dimensions
 
 | Dimension | Question | Options, least to most suited to an artificial resource |
 | --- | --- | --- |
@@ -588,7 +590,7 @@ In large organisations this can grow into a Director of Hybrid Workforce. It bel
 ### Responsibilities
 
 1. Maintain human–AI operational harmony: eliminate contradictory ownership, define handoffs and escalation lines.
-2. Periodically reassess which work should be Human, Artificial or Hybrid.
+2. Periodically reassess which work should be Human, Deterministic automation, Artificial or Hybrid.
 3. Direct Human → Artificial and Artificial → Human transitions.
 4. Design hybrid posts with an explicit split of responsibilities.
 5. Manage human impact: clarity, communication, reassignment and development.
@@ -779,7 +781,7 @@ A standard authored by a vendor and judged by nobody is a specification sheet wi
 
 That single rule is what makes the disclosure above worth anything: the author holds the largest commercial interest in the room, and the author cannot move the standard at all — only persuade the people who can.
 
-### The five seats
+### The nine seats
 
 | # | Seat | Protects | Holder |
 | --- | --- | --- | --- |
@@ -927,4 +929,4 @@ You may quote, embed, teach, translate and commercially use this material with a
 - HWF-17 requires a role contract to be revisable, to be reviewed on a stated cadence, and to have divergence between measured outcomes and stated mission reported upward by the resource itself. It is framed as a finding rather than a request: an AI Employee has no interests to advance, and a system able to argue for its own expanded authority is a privilege-escalation path dressed as an HR feature. The decision stays with the accountable owner and never with an artificial supervisor.
 - HWF-02 separates supervision from accountability. An AI Employee may supervise another; accountability terminates in an identified human or governance body no matter how deep the chain. HWF-16 was added alongside it, requiring that chain to be traversable, observable, and interruptible without passing through itself. Before publication these read as a single clause requiring a direct human manager, which would have made a deep artificial hierarchy non-conformant by wording rather than by intent.
 
-Clause text changes require a version bump and a Board vote. Notes, examples and commentary may be corrected between versions without amending the standard. Every published version stays at its own permanent address so that a citation made today still resolves in five years.
+Clause text changes require a version bump and a Board vote. Notes, examples and commentary may be corrected between versions without amending the standard. Every published version stays at its own permanent address so that a citation made today still resolves in five years. Within a version, changelog entries are drafting history in reverse chronological order: where several touch the same clause, the newest account governs and the older ones stand as record.

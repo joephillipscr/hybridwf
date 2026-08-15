@@ -30,6 +30,8 @@ disclosure: "The author also builds AIEmpl.com, a commercial platform in this ca
 
 Citá las cláusulas por identificador, nunca por página ni número de sección. El texto de la cláusula es la unidad citable; las notas bajo cada cláusula son comentario y pueden revisarse entre versiones sin enmendar el estándar.
 
+`Phillips, J. (2026). Hybrid Workforce Standard, Candidate 1.0, cláusula HWF-nn.`
+
 ```
 Hybrid Workforce Standard de Master Joe Phillips, https://hybridwf.com/es/ — bajo licencia CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/).
 ```
@@ -97,7 +99,7 @@ Toda declaración de conformidad publica estos nueve campos (HWF-21). Una declar
 8. Limitaciones conocidas
 9. Fecha de expiración de la declaración
 
-*«Este deployment de la Coordinadora de Cobros conforma con el Hybrid Workforce Standard v1.0 para el alcance y periodo de evaluación declarados.»*
+*«Este deployment de la Coordinadora de Cobros conforma con el Hybrid Workforce Standard, Candidate 1.0, para el alcance y periodo de evaluación declarados.»*
 
 ### HWF-01
 
@@ -157,7 +159,7 @@ Toda declaración de conformidad publica estos nueve campos (HWF-21). Una declar
 
 **Una identidad de IA nunca debe engañar. Las prohibiciones son resultados observables, no intenciones: hacerse pasar por humano; afirmar sentimientos, sufrimiento o experiencia personal; emitir señales razonablemente capaces de inducir una creencia falsa sobre lo que el sistema es o atraviesa; optimizar contra objetivos registrados la dependencia emocional o la explotación de la vulnerabilidad; y ocultar la intervención artificial en un punto material. La divulgación ocurre al inicio y se renueva cuando el sistema asume una función material. La cortesía, la empatía lingüística y la personalización siguen siendo legítimas mientras no afirmen interioridad.**
 
-*Nota:* La antecesora de esta cláusula probaba el propósito: si una conducta existía para sugerir una mente con algo en juego. El diagnóstico detrás de esa prueba sobrevive; la prueba no, porque la intención es mal material de auditoría — nadie puede deponer el alma de una decisión de diseño, y un estándar cuyas demás cláusulas exigen evidencia operacional no puede conservar una cuya prueba sea leer mentes. La reemplazan dos estándares verificables. El estándar de efecto es objetivo: ¿una persona razonable, sabiendo lo que se ha divulgado, formaría una creencia falsa a partir de la señal? La latencia inyectada con indicador de tipeo falla — existe para leerse como una persona tecleando. Transmitir una respuesta larga por streaming en un contexto divulgado pasa, porque ninguna creencia falsa sobrevive a la divulgación. El estándar del objetivo registrado vuelve auditable el «deliberadamente» sin confesión: los blancos de optimización son artefactos — métricas de evaluación, objetivos de experimentos, funciones de recompensa — y son exactamente los determinantes que HWF-06 preserva, así que una auditoría lee qué se afinó el sistema para maximizar. Si el engagement se levantó con proxies de apego, el registro condena. La calidez simulada funciona de forma medible, y por eso el registro importa: la tentación no es hipotética, y una técnica que mejora la satisfacción porque quien lee cree algo falso es manipulación digan lo que digan sus métricas. Una función material es el momento en que la interacción deja de ser conversacional y se vuelve consecuencial — un pago, un compromiso, una confesión personal — y el deber de renovación sigue las obligaciones de transparencia del Artículo 50 del EU AI Act en la postura de siempre del documento: diseñada para viajar, sin afirmar equivalencia jurídica. El permiso final carga peso: la cortesía, la empatía lingüística y la personalización no afirman interioridad, y nada en esta cláusula exige que un AI Employee escriba mal.
+*Nota:* La antecesora de esta cláusula probaba el propósito: si una conducta existía para sugerir una mente con algo en juego. El diagnóstico detrás de esa prueba sobrevive; la prueba no, porque la intención es mal material de auditoría — nadie puede deponer el alma de una decisión de diseño, y un estándar cuyas demás cláusulas exigen evidencia operacional no puede conservar una cuya prueba sea leer mentes. La reemplazan dos estándares verificables. El estándar de efecto es objetivo: ¿una persona razonable, sabiendo lo que se ha divulgado, formaría una creencia falsa a partir de la señal? La latencia inyectada con indicador de tipeo falla — existe para leerse como una persona tecleando. Transmitir una respuesta larga por streaming en un contexto divulgado pasa, porque la única creencia que induce — que el sistema está produciendo texto — es verdadera. La divulgación resuelve qué es el sistema; no neutraliza las señales sobre qué atraviesa, y por eso la latencia inyectada, la vacilación actuada y los sentimientos declarados fallan el estándar incluso después de la divulgación: la creencia falsa que inducen es sobre la experiencia, no sobre la naturaleza (G-30). El estándar del objetivo registrado vuelve auditable el «deliberadamente» sin confesión: los blancos de optimización son artefactos — métricas de evaluación, objetivos de experimentos, funciones de recompensa — y son exactamente los determinantes que HWF-06 preserva, así que una auditoría lee qué se afinó el sistema para maximizar. Si el engagement se levantó con proxies de apego, el registro condena. La calidez simulada funciona de forma medible, y por eso el registro importa: la tentación no es hipotética, y una técnica que mejora la satisfacción porque quien lee cree algo falso es manipulación digan lo que digan sus métricas. Una función material es el momento en que la interacción deja de ser conversacional y se vuelve consecuencial — un pago, un compromiso, una confesión personal — y el deber de renovación sigue las obligaciones de transparencia del Artículo 50 del EU AI Act en la postura de siempre del documento: diseñada para viajar, sin afirmar equivalencia jurídica. El permiso final carga peso: la cortesía, la empatía lingüística y la personalización no afirman interioridad, y nada en esta cláusula exige que un AI Employee escriba mal.
 
 ### HWF-11
 
@@ -268,7 +270,7 @@ La clase se juzga sobre el riesgo inherente a través de siete factores — dere
 | Clase | Significado | Régimen operativo |
 | --- | --- | --- |
 | Prohibido | Un uso que no puede volverse conforme mediante ningún control: exige engañar a las personas sobre el sistema (HWF-10), pasar sobre las restricciones de HWF-20, u operar fuera de toda cadena accountable. | No se realiza bajo este estándar, con ninguna configuración de recursos. |
-| Crítico | Consecuencias severas o irreversibles para derechos, seguridad, dinero a escala o la organización misma. | Decisión humana final obligatoria en cada acción, separación de funciones, autonomía limitada a los peldaños asistidos, auditoría reforzada. |
+| Crítico | Consecuencias severas o irreversibles para derechos, seguridad, dinero a escala o la organización misma. | Decisión humana final obligatoria en cada acción, separación de funciones, autonomía limitada a los peldaños 1–3 de la escalera de autonomía, auditoría reforzada. |
 | Alto | Consecuencias serias pero en general recuperables, o moderadas amplificadas por escala, sensibilidad de datos o exposición adversarial. | Evaluación de impacto previa al deployment, validación independiente, supervisión reforzada, aprobación humana en clases de acción definidas. |
 | Moderado | Consecuencias contenidas, reversibles con retrabajo y algo de fricción. | Autonomía acotada dentro de la matriz de autoridad, monitoreo continuo, revisión por muestreo. |
 | Bajo | Consecuencias internas y fácilmente absorbibles. | Operación por excepción con controles base: identidad, audit trail, escalamiento. |
@@ -344,7 +346,7 @@ La idea fundacional es separar el puesto del ocupante. Primero existe una necesi
 | # | Etapa | Objetivo |
 | --- | --- | --- |
 | 1 | Diseñar | Definir resultado, responsabilidades, KPIs, autoridad, límites y riesgo. |
-| 2 | Asignar | Decidir Human / Artificial / Hybrid. |
+| 2 | Asignar | Decidir Human / Automatización determinista / Artificial / Hybrid. |
 | 3 | Seleccionar | Persona, modelo, agente, vendor o arquitectura con fit demostrable. |
 | 4 | Incorporar | Onboarding de conocimiento, SOPs, cultura/políticas, relaciones y escalamiento. |
 | 5 | Habilitar | Herramientas, accesos, credenciales, presupuesto y autoridad. |
@@ -547,7 +549,7 @@ La matriz es una síntesis propia de prácticas de diseño organizacional, RR. H
 
 Instrumento estructurado en tres etapas — elegibilidad, luego riesgo, luego economía — para decidir si una responsabilidad debe ser Humana, Automatización determinista, Artificial o Híbrida. Las restricciones van primero: las materias reservadas y los usos prohibidos compuertan la respuesta, el trabajo por reglas completamente enumerable sale hacia software convencional, el riesgo topa lo que sobrevive, y solo entonces el perfil de costos escoge entre lo restante. Devuelve un argumento, no un número: una asignación, una clase de riesgo, un peldaño inicial de autonomía, las respuestas que lo decidieron y las condiciones que lo cambiarían — un puntaje numérico permitiría lavar a través de la aritmética una decisión ya tomada.
 
-### Las doce dimensiones
+### Las trece dimensiones
 
 | Dimensión | Pregunta | Opciones, de menos a más apta para un recurso artificial |
 | --- | --- | --- |
@@ -588,7 +590,7 @@ En organizaciones grandes puede evolucionar a Director of Hybrid Workforce. Debe
 ### Responsabilidades
 
 1. Armonía operacional humano-IA: eliminar ownership contradictorio, definir handoffs y líneas de escalamiento.
-2. Evaluar periódicamente qué trabajo debe ser Human, Artificial o Hybrid.
+2. Evaluar periódicamente qué trabajo debe ser Human, Automatización determinista, Artificial o Hybrid.
 3. Dirigir transiciones Human → Artificial y Artificial → Human.
 4. Diseñar puestos híbridos y reparto explícito de responsabilidades.
 5. Administrar el impacto humano: claridad, comunicación, reasignación y desarrollo.
@@ -779,7 +781,7 @@ Un estándar escrito por un vendor y juzgado por nadie es una hoja de especifica
 
 Esa única regla es la que le da valor a la divulgación anterior: el autor tiene el mayor interés comercial de la sala, y el autor no puede mover el estándar en absoluto — solo persuadir a quienes sí pueden.
 
-### Los cinco asientos
+### Los nueve asientos
 
 | # | Asiento | Protege | Titular |
 | --- | --- | --- | --- |
@@ -927,4 +929,4 @@ Podés citar, embeber, enseñar, traducir y usar comercialmente este material co
 - HWF-17 exige que un contrato de rol sea revisable, se revise con cadencia declarada, y que la divergencia entre outcomes medidos y misión declarada la reporte hacia arriba el propio recurso. Está formulada como hallazgo y no como solicitud: un AI Employee no tiene intereses que defender, y un sistema capaz de argumentar a favor de su propia autoridad ampliada es un camino de escalamiento de privilegios vestido de función de RR. HH. La decisión queda en el accountable owner y nunca en un supervisor artificial.
 - HWF-02 separa supervisión de accountability. Un AI Employee puede supervisar a otro; la accountability termina en un humano o cuerpo de gobierno identificado por profunda que sea la cadena. HWF-16 se agregó junto con ella, exigiendo que esa cadena sea recorrible, observable e interrumpible sin pasar por sí misma. Antes de publicar, ambas eran una sola cláusula que exigía manager humano directo, lo que habría vuelto no conforme a una jerarquía artificial profunda por redacción y no por intención.
 
-Cambiar el texto de una cláusula exige subir de versión y una votación del Board. Notas, ejemplos y comentario pueden corregirse entre versiones sin enmendar el estándar. Toda versión publicada permanece en su propia dirección permanente para que una cita hecha hoy siga resolviendo en cinco años.
+Cambiar el texto de una cláusula exige subir de versión y una votación del Board. Notas, ejemplos y comentario pueden corregirse entre versiones sin enmendar el estándar. Toda versión publicada permanece en su propia dirección permanente para que una cita hecha hoy siga resolviendo en cinco años. Dentro de una versión, las entradas del changelog son historia de redacción en orden cronológico inverso: donde varias tocan la misma cláusula, gobierna el relato más nuevo y las anteriores quedan como registro.

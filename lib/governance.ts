@@ -229,6 +229,6 @@ export const RELEASES: Release[] = [
 ];
 
 export const VERSIONING_POLICY: T = {
-  en: 'Clause text changes require a version bump and a Board vote. Notes, examples and commentary may be corrected between versions without amending the standard. Every published version stays at its own permanent address so that a citation made today still resolves in five years.',
-  es: 'Cambiar el texto de una cláusula exige subir de versión y una votación del Board. Notas, ejemplos y comentario pueden corregirse entre versiones sin enmendar el estándar. Toda versión publicada permanece en su propia dirección permanente para que una cita hecha hoy siga resolviendo en cinco años.',
+  en: 'Clause text changes require a version bump and a Board vote. Notes, examples and commentary may be corrected between versions without amending the standard. Every published version stays at its own permanent address so that a citation made today still resolves in five years. Within a version, changelog entries are drafting history in reverse chronological order: where several touch the same clause, the newest account governs and the older ones stand as record.',
+  es: 'Cambiar el texto de una cláusula exige subir de versión y una votación del Board. Notas, ejemplos y comentario pueden corregirse entre versiones sin enmendar el estándar. Toda versión publicada permanece en su propia dirección permanente para que una cita hecha hoy siga resolviendo en cinco años. Dentro de una versión, las entradas del changelog son historia de redacción en orden cronológico inverso: donde varias tocan la misma cláusula, gobierna el relato más nuevo y las anteriores quedan como registro.',
 };
