@@ -12,7 +12,7 @@ import {
   type Answers,
 } from '@/lib/hwfa';
 import { UI } from '@/lib/i18n';
-import { SITE_URL, STANDARD_VERSION, type Locale } from '@/lib/site';
+import { SITE_URL, STANDARD_LABEL, type Locale } from '@/lib/site';
 
 const COPY = {
   responsibility: {
@@ -76,7 +76,7 @@ export default function HwfaTool({ lang }: { lang: Locale }) {
       ...result.wouldChange.map((c) => `- ${L(c)}`),
       '',
       '---',
-      `${lang === 'en' ? 'Produced with the Hybrid Workforce Fit Assessment' : 'Producido con el Hybrid Workforce Fit Assessment'}, ${SITE_URL}/hwfa/ · Hybrid Workforce Standard v${STANDARD_VERSION}`,
+      `${lang === 'en' ? 'Produced with the Hybrid Workforce Fit Assessment' : 'Producido con el Hybrid Workforce Fit Assessment'}, ${SITE_URL}/hwfa/ · Hybrid Workforce Standard, ${STANDARD_LABEL}`,
     ].join('\n');
   }, [result, name, lang]);
 

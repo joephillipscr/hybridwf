@@ -9,7 +9,7 @@ import {
   ROUTE_TITLES,
   SITE_NAME,
   STANDARD_DATE,
-  STANDARD_VERSION,
+  STANDARD_LABEL,
   route,
   type Locale,
 } from '@/lib/site';
@@ -30,7 +30,7 @@ export default function Footer({ lang }: { lang: Locale }) {
             </div>
             <p className="mt-3 text-sm leading-relaxed text-muted">{SITE_NAME}</p>
             <p className="mt-3 font-mono text-xs text-muted">
-              v{STANDARD_VERSION} · {STANDARD_DATE}
+              {STANDARD_LABEL} · {STANDARD_DATE}
             </p>
           </div>
 

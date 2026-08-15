@@ -16,7 +16,7 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 import type { T } from '../lib/i18n';
-import { LOCALES, ROUTES, SITE_NAME, SITE_URL, STANDARD_DATE, STANDARD_VERSION, AUTHOR, type Locale } from '../lib/site';
+import { LOCALES, ROUTES, SITE_NAME, SITE_URL, STANDARD_DATE, STANDARD_LABEL, STANDARD_VERSION, AUTHOR, type Locale } from '../lib/site';
 import { CLAUSES, CONFORMANCE, DECLARATION, MOTIVATION, OBJECTIVE, RISK_CLASSES, RISK_INTRO, RISK_NOTE } from '../lib/standard';
 import { DEFINITION, FORMULA, GOVERNING_PRINCIPLE, LADDER, OWNERSHIP_BOUNDARY, PROPERTIES, PROPERTIES_CAVEAT, THESIS } from '../lib/definition';
 import { LEVELS, MATURITY_NOTE, THRESHOLD, DIAGNOSTIC } from '../lib/maturity';
@@ -150,7 +150,8 @@ function build(lang: Locale): string {
     '---',
     `title: ${SITE_NAME}`,
     `version: "${STANDARD_VERSION}"`,
-    `status: proposal`,
+    `label: "${STANDARD_LABEL}"`,
+    `status: candidate`,
     `date: ${STANDARD_DATE}`,
     `language: ${lang}`,
     `canonical: ${canonical}`,
@@ -355,7 +356,7 @@ function llmsTxt(): string {
   return [
     `# ${SITE_NAME}`,
     '',
-    `> An open administrative standard for AI Employees: twenty-seven normative clauses, a nine-property test, the WRM (Work Resource Management) framework, a 120-principle matrix, a maturity model, and the HWFA decision instrument. Published under ${LICENSE.id}. Version ${STANDARD_VERSION}, ${STANDARD_DATE}.`,
+    `> An open administrative standard for AI Employees: twenty-seven normative clauses, a nine-property test, the WRM (Work Resource Management) framework, a 120-principle matrix, a maturity model, and the HWFA decision instrument. Published under ${LICENSE.id}. ${STANDARD_LABEL}, ${STANDARD_DATE}.`,
     '',
     'A chatbot answers. A copilot helps. An agent executes a task. An AI Employee holds a role. A human answers for it.',
     '',

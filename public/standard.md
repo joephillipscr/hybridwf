@@ -1,7 +1,8 @@
 ---
 title: Hybrid Workforce Standard
 version: "1.0"
-status: proposal
+label: "Candidate 1.0"
+status: candidate
 date: 2026-08-12
 language: en
 canonical: https://hybridwf.com/
@@ -72,7 +73,7 @@ The conceptual boundary is between executing a task and stewarding a role. An ag
 
 ### Reading this standard
 
-“Must” marks a requirement: a deployment that fails it does not conform, whatever it is called commercially. There are no optional clauses in version 1.0, because a shorter standard that is fully binding is more useful than a long one that is mostly advisory.
+“Must” marks a requirement: a deployment that fails it does not conform, whatever it is called commercially. There are no optional clauses in Candidate 1.0, because a shorter standard that is fully binding is more useful than a long one that is mostly advisory.
 
 Conformance is self-declared. This standard does not certify products and does not score vendors. It gives an organisation a test it can run on its own deployment and publish if it chooses.
 
@@ -808,7 +809,7 @@ That single rule is what makes the disclosure above worth anything: the author h
 
 ### Current status
 
-Version 1.0 is a proposal by a single author. The Standard Review Board is forming and every one of the nine seats is currently open. Publishing that honestly is a deliberate choice: a standard that admits to being a proposal is more credible than one that implies an institution it does not yet have. And it stays a proposal until a Board constituted under these rules ratifies it — the author cannot ratify his own standard. If one of the nine seats describes you, the invitation is open.
+Candidate 1.0 is a proposal by a single author. The Standard Review Board is forming and every one of the nine seats is currently open. Publishing that honestly is a deliberate choice: a standard that admits to being a proposal is more credible than one that implies an institution it does not yet have. And it stays a candidate until a Board constituted under these rules ratifies it as version 1.0 — the author cannot ratify his own standard. If one of the nine seats describes you, the invitation is open.
 
 ## Licence
 
@@ -890,11 +891,12 @@ You may quote, embed, teach, translate and commercially use this material with a
 
 ## Changelog
 
-### v1.0 · 2026-08-12 · Proposal — Review Board forming
+### v1.0 · 2026-08-12 · Candidate — pending Board ratification
 
 - First publication: twenty-seven normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFA instrument, the Hybrid Workforce Manager role and the transition playbooks.
 - Certification was deliberately excluded from scope. This standard scores no products and issues no seals.
 - The HWFS returns a structured argument rather than a 0–100 score, resolving a contradiction present in the source research.
+- At the author’s direction the publication is designated Candidate 1.0. It carries the full text — twenty-seven clauses, the frameworks, the instruments — and it is not version 1.0: that name is reserved for the text a Board constituted under the governance rules ratifies. The candidate designation appears in the header, the citation format, the conformance language and the machine-readable front matter, so that nobody cites a proposal as a settled standard.
 - The governance was reformed before any seat was filled, on an external review the author largely accepted. The Board grows from five seats to nine, adding workers’ representation, affected persons and civil society, accessibility, and one independent academic — the constituencies the standard now protects were not at its table. The vendor blacklist became a symmetric cap: commercial interest in the category, the author’s competitors included, may hold up to two of nine seats with published disclosure and recusal, because what disqualifies is hidden interest, never interest — and at the author’s direction a practitioner-majority rule was added: skin in the game is a requirement for this Board, not a disqualifier. Unpaid seats gave way to a transparent, identical, published honorarium, since unpaid selects for those who can afford to donate time. Procedure gained a two-thirds quorum, published minutes, minority opinions published in full, a ninety-day response deadline for the Editor, and a sponsorship path: three members can carry a proposal to vote without an Editor draft — a decline is not a veto. The deepest change is the author’s own: the Editor now has a voice, not a vote. The unverifiable “this site is not a funnel” was replaced by the structure that makes it true — HWF-21, the irrevocable licence, the voteless Editor — and v1.0 remains a proposal until a Board constituted under these rules ratifies it: the author cannot ratify his own standard. Independence is demonstrated by structure, not asserted by a sentence.
 - The Hybrid Workforce Manager’s scorecard was rebalanced because two of its metrics contradicted HWF-09: AI Exception Rate and Human Intervention Rate read as lower-is-better, and a system rewarded for fewer escalations learns silence — it improves its number by producing exactly the failure the clause exists to prevent. Escalation is now judged by quality, never by volume: six metrics were added — Missed Escalation Rate, Unnecessary Escalation Rate, Correction Severity, Human Review Burden by Risk Class, Unresolved High-Risk Exceptions, Harmful Outcome Severity — the two originals were re-described with direction, HWF-09’s note carries the lock, and the HWFA warns that a falling intervention rate is not automatically good. The executive dashboard grew from three flagged metrics to six, and its note now names what other clauses already generate for it: complaints and appeals, residual risk, drift, and recorded labour consequences. A dashboard showing only performance and cost is the one a CFO wants; this is the one a board needs.
 - HWF-17, HWF-18 and HWF-19 were corrected together. HWF-17 no longer trusts the resource to detect its own divergence: a system whose model or configuration is the problem shares the blind spot, so independent monitoring against the contract is now the primary control and the self-report a supplementary signal. HWF-18’s vocabulary was operationalised — restrictions prevent measurable degradation of the decision (anchoring, contamination, saturation) rather than protect “the resource’s judgement” — and G-31 was renamed from deliberate opacity, which read as legitimised opacity and quoted badly out of context, to context boundary record, naming the artifact as the glossary’s other instrument terms do. HWF-19’s note dropped the claim that pointless human posts prune themselves — empirically false, bureaucracies carry dead posts for decades — for the stronger and honest version: human pruning triggers are weak and fail often, and an artificial post removes even those, losing the last occasions on which anyone would notice it. And a lapsed review no longer reads as automatic retirement: it escalates and restricts or suspends in proportion while the review is forced — retirement is the outcome of a failed justification, never of a missed calendar, matching the lifecycle’s Suspend-before-Retire order. No counts changed.

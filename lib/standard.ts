@@ -9,7 +9,7 @@ export interface Clause {
 }
 
 /**
- * The Hybrid Workforce Standard v1.0 — twenty-seven normative clauses.
+ * The Hybrid Workforce Standard, Candidate 1.0 — twenty-seven normative clauses.
  *
  * Clause text is the citable unit. Notes are commentary and may be revised
  * without a version bump; clause text may not.
@@ -438,8 +438,8 @@ export const CONFORMANCE: { title: T; body: T[] } = {
   title: { en: 'Reading this standard', es: 'Cómo leer este estándar' },
   body: [
     {
-      en: '“Must” marks a requirement: a deployment that fails it does not conform, whatever it is called commercially. There are no optional clauses in version 1.0, because a shorter standard that is fully binding is more useful than a long one that is mostly advisory.',
-      es: '«Debe» marca un requisito: un deployment que lo incumple no conforma, sin importar cómo se lo llame comercialmente. En la versión 1.0 no hay cláusulas opcionales, porque un estándar corto y enteramente vinculante es más útil que uno largo y mayormente sugerido.',
+      en: '“Must” marks a requirement: a deployment that fails it does not conform, whatever it is called commercially. There are no optional clauses in Candidate 1.0, because a shorter standard that is fully binding is more useful than a long one that is mostly advisory.',
+      es: '«Debe» marca un requisito: un deployment que lo incumple no conforma, sin importar cómo se lo llame comercialmente. En la Candidate 1.0 no hay cláusulas opcionales, porque un estándar corto y enteramente vinculante es más útil que uno largo y mayormente sugerido.',
     },
     {
       en: 'Conformance is self-declared. This standard does not certify products and does not score vendors. It gives an organisation a test it can run on its own deployment and publish if it chooses.',

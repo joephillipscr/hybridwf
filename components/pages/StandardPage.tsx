@@ -5,7 +5,7 @@ import Reveal from '../Reveal';
 import { PageHeader, Section } from '../Section';
 import { CLAUSES, CONFORMANCE, DECLARATION, MOTIVATION, OBJECTIVE, RISK_CLASSES, RISK_INTRO, RISK_NOTE } from '@/lib/standard';
 import { UI } from '@/lib/i18n';
-import { AUTHOR, SITE_NAME, SITE_URL, STANDARD_VERSION, route, type Locale } from '@/lib/site';
+import { AUTHOR, SITE_NAME, SITE_URL, STANDARD_LABEL, route, type Locale } from '@/lib/site';
 
 const C = {
   eyebrow: { en: 'Normative text', es: 'Texto normativo' },
@@ -29,8 +29,8 @@ const C = {
 export default function StandardPage({ lang }: { lang: Locale }) {
   const citation =
     lang === 'en'
-      ? `Phillips, J. (2026). ${SITE_NAME} v${STANDARD_VERSION}, clause HWF-nn. ${SITE_URL}/standard/`
-      : `Phillips, J. (2026). ${SITE_NAME} v${STANDARD_VERSION}, cláusula HWF-nn. ${SITE_URL}/es/estandar/`;
+      ? `Phillips, J. (2026). ${SITE_NAME}, ${STANDARD_LABEL}, clause HWF-nn. ${SITE_URL}/standard/`
+      : `Phillips, J. (2026). ${SITE_NAME}, ${STANDARD_LABEL}, cláusula HWF-nn. ${SITE_URL}/es/estandar/`;
 
   return (
     <>
@@ -122,7 +122,7 @@ export default function StandardPage({ lang }: { lang: Locale }) {
               <dl className="space-y-2.5 text-sm">
                 <div className="flex justify-between gap-3">
                   <dt className="text-muted">{UI.version[lang]}</dt>
-                  <dd className="font-mono font-semibold text-fg">{STANDARD_VERSION}</dd>
+                  <dd className="font-mono font-semibold text-fg">{STANDARD_LABEL}</dd>
                 </div>
                 <div className="flex justify-between gap-3">
                   <dt className="text-muted">{UI.status[lang]}</dt>

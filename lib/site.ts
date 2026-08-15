@@ -5,7 +5,8 @@ export const SITE_NAME = 'Hybrid Workforce Standard';
 export const SITE_SHORT = 'HybridWF';
 
 export const STANDARD_VERSION = '1.0';
-export const STANDARD_STATUS = 'proposal'; // proposal → review → adopted
+export const STANDARD_LABEL = 'Candidate 1.0'; // becomes 'v1.0' only when a Board constituted under the governance rules ratifies it
+export const STANDARD_STATUS = 'candidate'; // candidate → ratified
 export const STANDARD_DATE = '2026-08-12';
 
 export const AUTHOR = {

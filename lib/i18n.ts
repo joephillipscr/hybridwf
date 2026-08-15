@@ -14,7 +14,7 @@ export const UI = {
   onThisPage: { en: 'On this page', es: 'En esta página' },
   version: { en: 'Version', es: 'Versión' },
   status: { en: 'Status', es: 'Estado' },
-  statusProposal: { en: 'Proposal — Review Board forming', es: 'Propuesta — Review Board en formación' },
+  statusProposal: { en: 'Candidate — pending Board ratification', es: 'Candidata — pendiente de ratificación del Board' },
   published: { en: 'Published', es: 'Publicado' },
   citeThis: { en: 'How to cite', es: 'Cómo citar' },
   copy: { en: 'Copy', es: 'Copiar' },

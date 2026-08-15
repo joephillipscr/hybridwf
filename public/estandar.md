@@ -1,7 +1,8 @@
 ---
 title: Hybrid Workforce Standard
 version: "1.0"
-status: proposal
+label: "Candidate 1.0"
+status: candidate
 date: 2026-08-12
 language: es
 canonical: https://hybridwf.com/es/
@@ -72,7 +73,7 @@ La frontera conceptual está entre ejecutar una tarea y custodiar un rol. Un age
 
 ### Cómo leer este estándar
 
-«Debe» marca un requisito: un deployment que lo incumple no conforma, sin importar cómo se lo llame comercialmente. En la versión 1.0 no hay cláusulas opcionales, porque un estándar corto y enteramente vinculante es más útil que uno largo y mayormente sugerido.
+«Debe» marca un requisito: un deployment que lo incumple no conforma, sin importar cómo se lo llame comercialmente. En la Candidate 1.0 no hay cláusulas opcionales, porque un estándar corto y enteramente vinculante es más útil que uno largo y mayormente sugerido.
 
 La conformidad es autodeclarada. Este estándar no certifica productos ni puntúa proveedores. Le da a una organización un test que puede aplicar a su propio deployment y publicar si así lo decide.
 
@@ -808,7 +809,7 @@ Esa única regla es la que le da valor a la divulgación anterior: el autor tien
 
 ### Estado actual
 
-La versión 1.0 es una propuesta de un solo autor. El Standard Review Board está en formación y cada uno de los nueve asientos está abierto. Publicarlo así es una decisión deliberada: un estándar que admite ser una propuesta es más creíble que uno que insinúa una institución que todavía no tiene. Y sigue siendo una propuesta hasta que un Board constituido bajo estas reglas la ratifique — el autor no puede ratificar su propio estándar. Si alguno de los nueve asientos te describe, la invitación está abierta.
+La Candidate 1.0 es una propuesta de un solo autor. El Standard Review Board está en formación y cada uno de los nueve asientos está abierto. Publicarlo así es una decisión deliberada: un estándar que admite ser una propuesta es más creíble que uno que insinúa una institución que todavía no tiene. Y sigue siendo candidata hasta que un Board constituido bajo estas reglas la ratifique como versión 1.0 — el autor no puede ratificar su propio estándar. Si alguno de los nueve asientos te describe, la invitación está abierta.
 
 ## Licencia
 
@@ -890,11 +891,12 @@ Podés citar, embeber, enseñar, traducir y usar comercialmente este material co
 
 ## Cambios
 
-### v1.0 · 2026-08-12 · Propuesta — Review Board en formación
+### v1.0 · 2026-08-12 · Candidata — pendiente de ratificación del Board
 
 - Primera publicación: veintisiete cláusulas normativas, el test de nueve propiedades, el marco WRM, la matriz de 120 principios, el modelo de madurez, el instrumento HWFA, el rol de Gerente de Fuerza Laboral Híbrida y los playbooks de transición.
 - La certificación se excluyó deliberadamente del alcance. Este estándar no puntúa productos ni emite sellos.
 - El HWFS devuelve un argumento estructurado en lugar de un puntaje 0–100, resolviendo una contradicción presente en la investigación de origen.
+- Por dirección del autor la publicación se designa Candidate 1.0. Carga el texto completo — veintisiete cláusulas, los marcos, los instrumentos — y no es la versión 1.0: ese nombre queda reservado para el texto que ratifique un Board constituido bajo las reglas de gobernanza. La designación de candidata aparece en el encabezado, el formato de citación, el lenguaje de conformidad y el front matter legible por máquinas, para que nadie cite una propuesta como estándar asentado.
 - La gobernanza se reformó antes de llenar asiento alguno, sobre una revisión externa que el autor aceptó en su mayoría. El Board crece de cinco asientos a nueve, agregando representación de trabajadores, personas afectadas y sociedad civil, accesibilidad, y un académico independiente — las constituencies que el estándar ahora protege no estaban en su mesa. La lista negra de vendors se volvió tope simétrico: el interés comercial en la categoría, competidores del autor incluidos, puede ocupar hasta dos de nueve asientos con divulgación publicada y recusación, porque lo que descalifica es el interés oculto, nunca el interés — y por dirección del autor se agregó la regla de mayoría practicante: el skin in the game es un requisito de este Board, no un descalificador. Los asientos sin pago dieron paso a un honorario transparente, idéntico y publicado, porque lo gratuito selecciona a quienes pueden donar su tiempo. El procedimiento ganó quorum de dos tercios, actas publicadas, opiniones minoritarias íntegras, un plazo de respuesta de noventa días para el Editor, y una vía de patrocinio: tres miembros pueden llevar una propuesta a voto sin borrador del Editor — la negativa no es veto. El cambio más profundo es del propio autor: el Editor ahora tiene voz, mas no voto. El inverificable «this site is not a funnel» se reemplazó por la estructura que lo vuelve cierto — HWF-21, la licencia irrevocable, el Editor sin voto — y la v1.0 sigue siendo propuesta hasta que un Board constituido bajo estas reglas la ratifique: el autor no puede ratificar su propio estándar. La independencia se demuestra con estructura, no se afirma con una frase.
 - El scorecard del Gerente de Fuerza Laboral Híbrida se rebalanceó porque dos de sus métricas contradecían HWF-09: AI Exception Rate y Human Intervention Rate se leían como menos-es-mejor, y un sistema premiado por escalar menos aprende silencio — mejora su número produciendo exactamente la falla que la cláusula existe para impedir. La escalación ahora se juzga por calidad, nunca por volumen: se agregaron seis métricas — Missed Escalation Rate, Unnecessary Escalation Rate, Correction Severity, Human Review Burden by Risk Class, Unresolved High-Risk Exceptions, Harmful Outcome Severity — las dos originales se re-describieron con dirección, la nota de HWF-09 carga el candado, y el HWFA advierte que una tasa de intervención decreciente no es automáticamente buena. El dashboard ejecutivo creció de tres métricas con bandera a seis, y su nota ahora nombra lo que otras cláusulas ya generan para él: quejas y apelaciones, riesgo residual, drift, y consecuencias laborales registradas. Un dashboard que solo muestra performance y costo es el que quiere un CFO; este es el que necesita un board.
 - HWF-17, HWF-18 y HWF-19 se corrigieron juntas. HWF-17 ya no confía en que el recurso detecte su propia divergencia: un sistema cuyo modelo o configuración son el problema comparte el punto ciego, así que el monitoreo independiente contra el contrato es ahora el control primario y el auto-reporte una señal complementaria. El vocabulario de HWF-18 se operacionalizó — las restricciones previenen la degradación medible de la decisión (anclaje, contaminación, saturación) en vez de proteger «el criterio del recurso» — y G-31 se renombró de opacidad deliberada, que se leía como opacidad legitimada y citaba mal fuera de contexto, a registro de frontera de contexto, nombrando el artefacto como lo hacen los demás términos de instrumento del glosario. La nota de HWF-19 abandonó la afirmación de que los puestos humanos sin sentido se podan solos — empíricamente falsa, las burocracias cargan puestos muertos por décadas — por la versión más fuerte y honesta: los disparadores humanos de poda son débiles y fallan seguido, y un puesto artificial elimina hasta esos, perdiendo las últimas ocasiones en que alguien lo notaría. Y una revisión vencida ya no se lee como retiro automático: escala y restringe o suspende en proporción mientras se fuerza la revisión — el retiro es el resultado de una justificación fallida, nunca de un calendario perdido, calzando con el orden Suspender-antes-de-Retirar del lifecycle. Ningún conteo cambió.

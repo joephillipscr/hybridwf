@@ -8,7 +8,7 @@ import {
   SITE_NAME,
   SITE_URL,
   STANDARD_DATE,
-  STANDARD_VERSION,
+  STANDARD_LABEL,
   type Locale,
 } from '@/lib/site';
 
@@ -33,7 +33,7 @@ export default function RootShell({
     '@context': 'https://schema.org',
     '@type': 'CreativeWork',
     name: SITE_NAME,
-    version: STANDARD_VERSION,
+    version: STANDARD_LABEL,
     datePublished: STANDARD_DATE,
     inLanguage: lang,
     url: `${SITE_URL}${ROUTES.home[lang]}`,

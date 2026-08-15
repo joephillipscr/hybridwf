@@ -12,7 +12,7 @@ import {
   NAV,
   ROUTE_TITLES,
   SITE_SHORT,
-  STANDARD_VERSION,
+  STANDARD_LABEL,
   route,
   type Locale,
 } from '@/lib/site';
@@ -37,7 +37,7 @@ export default function Header({ lang }: { lang: Locale }) {
             {SITE_SHORT}
           </span>
           <span className="hidden font-mono text-[0.68rem] font-semibold text-muted sm:inline">
-            v{STANDARD_VERSION}
+            {STANDARD_LABEL}
           </span>
         </Link>
 
