@@ -18,7 +18,7 @@ const C = {
     en: 'A standard is only worth what its governance is worth. Here is the conflict of interest, stated first, and the mechanism meant to contain it.',
     es: 'Un estándar vale lo que vale su gobierno. Acá está el conflicto de interés, declarado primero, y el mecanismo que debería contenerlo.',
   },
-  seatsTitle: { en: 'The five seats', es: 'Los cinco asientos' },
+  seatsTitle: { en: 'The nine seats', es: 'Los nueve asientos' },
   seatsLede: {
     en: 'One per discipline, and each one blocks a different way this standard could fail.',
     es: 'Uno por disciplina, y cada uno bloquea una forma distinta en que este estándar podría fallar.',

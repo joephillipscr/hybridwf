@@ -10,8 +10,8 @@ export const DISCLOSURE: { title: T; body: T[] } = {
       es: 'Este estándar fue escrito por Master Joe Phillips, quien también construye AIEmpl.com, una plataforma comercial en esta categoría. Eso es un conflicto de interés real y se declara acá en lugar de descubrirse después.',
     },
     {
-      en: 'Three commitments follow from it. This standard does not certify products and does not score vendors; conformance is self-declared by the organisation running the deployment. This site is not a funnel, so the link to the platform above is disclosure rather than an offer. The normative text cannot be changed by its author alone.',
-      es: 'De ahí se derivan tres compromisos. Este estándar no certifica productos ni puntúa proveedores; la conformidad la autodeclara la organización que opera el deployment. Este sitio no es un embudo, así que el enlace a la plataforma es divulgación y no una oferta. El texto normativo no puede ser modificado por su autor en solitario.',
+      en: 'Three commitments follow from it, and all three are structural rather than promised. This standard does not certify products and does not score vendors, and under HWF-21 the author’s platform can never claim conformance — a deployment can, a platform cannot. The licence is irrevocable, so the text cannot be pulled back behind a product. And the normative text moves without the author’s vote: the Editor drafts and argues, and does not vote. Independence is demonstrated by structure, not asserted by a sentence.',
+      es: 'De ahí se derivan tres compromisos, y los tres son estructurales y no prometidos. Este estándar no certifica productos ni puntúa proveedores, y bajo HWF-21 la plataforma del autor no puede jamás reclamar conformidad — un deployment puede, una plataforma no. La licencia es irrevocable, así que el texto no puede retirarse detrás de un producto. Y el texto normativo se mueve sin el voto del autor: el Editor redacta y argumenta, y no vota. La independencia se demuestra con estructura, no se afirma con una frase.',
     },
     {
       en: 'A standard authored by a vendor and judged by nobody is a specification sheet with a formal name. The mechanism below is what is meant to keep this one from becoming that.',
@@ -25,16 +25,16 @@ export const DISCLOSURE: { title: T; body: T[] } = {
 export const MODEL: { title: T; rule: T; body: T } = {
   title: { en: 'Editor and Review Board', es: 'Editor y Review Board' },
   rule: {
-    en: 'The Editor writes, proposes and decides everything editorial. The normative text changes only with a majority of the Board. The Editor’s vote is worth no more than anyone else’s in that vote.',
-    es: 'El Editor escribe, propone y decide todo lo editorial. El texto normativo solo cambia con mayoría del Board. El voto del Editor no vale más que el de nadie en esa votación.',
+    en: 'The Editor writes, proposes and decides everything editorial. The normative text changes only by vote of the Board — and the Editor has a voice, not a vote.',
+    es: 'El Editor escribe, propone y decide todo lo editorial. El texto normativo cambia solo por votación del Board — y el Editor tiene voz, mas no voto.',
   },
   body: {
-    en: 'That single rule is what makes the disclosure above worth anything: the author has a commercial interest, and the author cannot move the standard alone.',
-    es: 'Esa única regla es la que le da valor a la divulgación anterior: el autor tiene un interés comercial, y el autor no puede mover el estándar solo.',
+    en: 'That single rule is what makes the disclosure above worth anything: the author holds the largest commercial interest in the room, and the author cannot move the standard at all — only persuade the people who can.',
+    es: 'Esa única regla es la que le da valor a la divulgación anterior: el autor tiene el mayor interés comercial de la sala, y el autor no puede mover el estándar en absoluto — solo persuadir a quienes sí pueden.',
   },
 };
 
-/* --- The five seats -------------------------------------------------- */
+/* --- The nine seats -------------------------------------------------- */
 
 export interface Seat {
   n: number;
@@ -90,22 +90,58 @@ export const SEATS: Seat[] = [
     },
     holder: null,
   },
+  {
+    n: 6,
+    discipline: { en: 'Workers’ representation', es: 'Representación de trabajadores' },
+    protects: {
+      en: 'The floor of HWF-23 and HWF-24: that reserved decisions stay human and that impact assessments consult workers before the transformation, not after it. Works-council or union floor experience, not a theorist.',
+      es: 'El piso de HWF-23 y HWF-24: que las decisiones reservadas sigan humanas y que las evaluaciones de impacto consulten a los trabajadores antes de la transformación, no después. Experiencia de piso en comités o sindicatos, no un teórico.',
+    },
+    holder: null,
+  },
+  {
+    n: 7,
+    discipline: { en: 'Affected persons and civil society', es: 'Personas afectadas y sociedad civil' },
+    protects: {
+      en: 'That the rights of HWF-25 work as mechanisms rather than words: explanation, correction, contest and redress. Someone who operates recourse in the real world — ombudsman, consumer protection, appeals practice.',
+      es: 'Que los derechos de HWF-25 funcionen como mecanismos y no como palabras: explicación, corrección, impugnación y reparación. Alguien que opere recursos en el mundo real — ombudsman, protección al consumidor, práctica de apelaciones.',
+    },
+    holder: null,
+  },
+  {
+    n: 8,
+    discipline: { en: 'Accessibility and inclusion', es: 'Accesibilidad e inclusión' },
+    protects: {
+      en: 'The accessibility constraint of HWF-20 and the vulnerable-people factor of HWF-22 and HWF-23. A practitioner of accessible systems, not an auditor of documents.',
+      es: 'La restricción de accesibilidad de HWF-20 y el factor de personas vulnerables de HWF-22 y HWF-23. Un practicante de sistemas accesibles, no un auditor de documentos.',
+    },
+    holder: null,
+  },
+  {
+    n: 9,
+    discipline: { en: 'Independent academic', es: 'Académico independiente' },
+    protects: {
+      en: 'The evidence base: that the standard’s claims survive contact with research, and that its sources stay honest. Organisational theory, labour economics or human-computer interaction, with no commercial stake in the category.',
+      es: 'La base de evidencia: que las afirmaciones del estándar sobrevivan el contacto con la investigación, y que sus fuentes se mantengan honestas. Teoría organizacional, economía laboral o interacción humano-computadora, sin interés comercial en la categoría.',
+    },
+    holder: null,
+  },
 ];
 
 /* --- The hard rules -------------------------------------------------- */
 
 export const RULES: T[] = [
   {
-    en: 'Unpaid. Honorary, credited on this site. The moment there is money, there is a question about whom the Board serves.',
-    es: 'Sin pago. Honorífico, con crédito en este sitio. En cuanto hay dinero, hay una pregunta sobre a quién sirve el Board.',
+    en: 'A majority of the Board must be people currently operating in the field — deploying, building or governing hybrid workforces. Skin in the game is a requirement for this Board, not a disqualifier: what disqualifies is hidden interest, never interest.',
+    es: 'La mayoría del Board deben ser personas operando hoy en el campo — desplegando, construyendo o gobernando fuerzas laborales híbridas. El skin in the game es un requisito de este Board, no un descalificador: lo que descalifica es el interés oculto, nunca el interés.',
   },
   {
-    en: 'At least two of the five seats sit outside the Editor’s commercial orbit, so not customers, employees or suppliers. A board of the author’s friends is detectable in one search.',
-    es: 'Al menos dos de los cinco asientos quedan fuera de la órbita comercial del Editor, así que no clientes, empleados ni proveedores. Un board de amigos del autor se detecta en una sola búsqueda.',
+    en: 'Commercial interest in the category — the author’s competitors included — may hold at most two of the nine seats, each with a published disclosure and recusal from any vote where the interest is direct. The Board is neither a vendor lobby nor a vendor blacklist.',
+    es: 'El interés comercial en la categoría — competidores del autor incluidos — puede ocupar como máximo dos de los nueve asientos, cada uno con divulgación publicada y recusación en todo voto donde el interés sea directo. El Board no es un lobby de vendors ni una lista negra de vendors.',
   },
   {
-    en: 'No member holds a competing platform, the Editor’s included. The Board is not a vendor lobby.',
-    es: 'Ningún miembro tiene una plataforma competidora, incluida la del Editor. El Board no es un lobby de proveedores.',
+    en: 'Compensated transparently or not at all: an identical, published honorarium from disclosed sources. Unpaid seats select for people who can afford to donate time; hidden pay selects for people someone else is paying. Both are capture — transparency is the control.',
+    es: 'Compensación transparente o ninguna: un honorario idéntico, publicado y de fuentes divulgadas. Los asientos sin pago seleccionan a quienes pueden donar su tiempo; el pago oculto selecciona a quienes alguien más les paga. Ambos son captura — la transparencia es el control.',
   },
   {
     en: 'Each member publishes their own disclosure, exactly as the Editor does.',
@@ -116,8 +152,8 @@ export const RULES: T[] = [
     es: 'Términos de doce meses renovables, para que salir sea algo ordinario y no un escándalo.',
   },
   {
-    en: 'Changes follow a public process: anyone proposes, the Editor drafts, the Board votes, and the changelog records what happened. Four lines do more work here than ten pages of bylaws would.',
-    es: 'Los cambios siguen un proceso público: cualquiera propone, el Editor redacta, el Board vota y el changelog registra lo que pasó. Cuatro líneas hacen más trabajo acá que diez páginas de estatutos.',
+    en: 'A vote is valid only with two thirds of the seats participating. Minutes are published, and a minority opinion is published in full in the changelog — a dissent the public can read is worth more than a unanimity it cannot check.',
+    es: 'Un voto es válido solo con dos tercios de los asientos participando. Las actas se publican, y una opinión minoritaria se publica íntegra en el changelog — un disenso que el público puede leer vale más que una unanimidad que no puede verificar.',
   },
 ];
 
@@ -125,9 +161,11 @@ export const RULES: T[] = [
 
 export const PROCESS: { n: number; step: T }[] = [
   { n: 1, step: { en: 'Anyone proposes a change, publicly, with the reasoning and the case that motivated it.', es: 'Cualquiera propone un cambio, públicamente, con el razonamiento y el caso que lo motivó.' } },
-  { n: 2, step: { en: 'The Editor drafts the amended clause text and publishes the draft.', es: 'El Editor redacta el texto enmendado de la cláusula y publica el borrador.' } },
-  { n: 3, step: { en: 'The Board votes. A majority carries; the Editor holds one vote.', es: 'El Board vota. Decide la mayoría; el Editor tiene un voto.' } },
-  { n: 4, step: { en: 'The changelog records what changed, who proposed it, how the Board voted and why.', es: 'El changelog registra qué cambió, quién lo propuso, cómo votó el Board y por qué.' } },
+  { n: 2, step: { en: 'The Editor responds within ninety days: a drafted amendment or a reasoned decline, both published.', es: 'El Editor responde en noventa días: un borrador de enmienda o una negativa razonada, ambos publicados.' } },
+  { n: 3, step: { en: 'A decline is not a veto. Any three Board members may sponsor a proposal directly to consultation and vote, without an Editor draft.', es: 'La negativa no es veto. Tres miembros del Board pueden patrocinar una propuesta directo a consulta y voto, sin borrador del Editor.' } },
+  { n: 4, step: { en: 'Public consultation runs for at least thirty days before any vote on normative text.', es: 'La consulta pública corre al menos treinta días antes de cualquier voto sobre texto normativo.' } },
+  { n: 5, step: { en: 'The Board votes: two-thirds quorum, majority carries — and the Editor has a voice, not a vote.', es: 'El Board vota: quorum de dos tercios, decide la mayoría — y el Editor tiene voz, mas no voto.' } },
+  { n: 6, step: { en: 'The changelog records what changed, who proposed it, the vote count, and any minority opinion in full.', es: 'El changelog registra qué cambió, quién lo propuso, el conteo del voto, y toda opinión minoritaria íntegra.' } },
 ];
 
 /* --- Current status ---------------------------------------------------- */
@@ -135,8 +173,8 @@ export const PROCESS: { n: number; step: T }[] = [
 export const STATUS_NOTE: { title: T; body: T } = {
   title: { en: 'Where this stands today', es: 'En qué punto está esto hoy' },
   body: {
-    en: 'Version 1.0 is a proposal by a single author. The Standard Review Board is forming and every seat is currently open. Publishing that honestly is a deliberate choice: a standard that admits to being a proposal is more credible than one that implies an institution it does not yet have. If one of the five seats describes you, the invitation is open.',
-    es: 'La versión 1.0 es una propuesta de un solo autor. El Standard Review Board está en formación y todos los asientos están abiertos. Publicarlo así es una decisión deliberada: un estándar que admite ser una propuesta es más creíble que uno que insinúa una institución que todavía no tiene. Si alguno de los cinco asientos te describe, la invitación está abierta.',
+    en: 'Version 1.0 is a proposal by a single author. The Standard Review Board is forming and every one of the nine seats is currently open. Publishing that honestly is a deliberate choice: a standard that admits to being a proposal is more credible than one that implies an institution it does not yet have. And it stays a proposal until a Board constituted under these rules ratifies it — the author cannot ratify his own standard. If one of the nine seats describes you, the invitation is open.',
+    es: 'La versión 1.0 es una propuesta de un solo autor. El Standard Review Board está en formación y cada uno de los nueve asientos está abierto. Publicarlo así es una decisión deliberada: un estándar que admite ser una propuesta es más creíble que uno que insinúa una institución que todavía no tiene. Y sigue siendo una propuesta hasta que un Board constituido bajo estas reglas la ratifique — el autor no puede ratificar su propio estándar. Si alguno de los nueve asientos te describe, la invitación está abierta.',
   },
 };
 
@@ -158,6 +196,7 @@ export const RELEASES: Release[] = [
       { en: 'First publication: twenty-seven normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFA instrument, the Hybrid Workforce Manager role and the transition playbooks.', es: 'Primera publicación: veintisiete cláusulas normativas, el test de nueve propiedades, el marco WRM, la matriz de 120 principios, el modelo de madurez, el instrumento HWFA, el rol de Gerente de Fuerza Laboral Híbrida y los playbooks de transición.' },
       { en: 'Certification was deliberately excluded from scope. This standard scores no products and issues no seals.', es: 'La certificación se excluyó deliberadamente del alcance. Este estándar no puntúa productos ni emite sellos.' },
       { en: 'The HWFS returns a structured argument rather than a 0–100 score, resolving a contradiction present in the source research.', es: 'El HWFS devuelve un argumento estructurado en lugar de un puntaje 0–100, resolviendo una contradicción presente en la investigación de origen.' },
+      { en: 'The governance was reformed before any seat was filled, on an external review the author largely accepted. The Board grows from five seats to nine, adding workers’ representation, affected persons and civil society, accessibility, and one independent academic — the constituencies the standard now protects were not at its table. The vendor blacklist became a symmetric cap: commercial interest in the category, the author’s competitors included, may hold up to two of nine seats with published disclosure and recusal, because what disqualifies is hidden interest, never interest — and at the author’s direction a practitioner-majority rule was added: skin in the game is a requirement for this Board, not a disqualifier. Unpaid seats gave way to a transparent, identical, published honorarium, since unpaid selects for those who can afford to donate time. Procedure gained a two-thirds quorum, published minutes, minority opinions published in full, a ninety-day response deadline for the Editor, and a sponsorship path: three members can carry a proposal to vote without an Editor draft — a decline is not a veto. The deepest change is the author’s own: the Editor now has a voice, not a vote. The unverifiable “this site is not a funnel” was replaced by the structure that makes it true — HWF-21, the irrevocable licence, the voteless Editor — and v1.0 remains a proposal until a Board constituted under these rules ratifies it: the author cannot ratify his own standard. Independence is demonstrated by structure, not asserted by a sentence.', es: 'La gobernanza se reformó antes de llenar asiento alguno, sobre una revisión externa que el autor aceptó en su mayoría. El Board crece de cinco asientos a nueve, agregando representación de trabajadores, personas afectadas y sociedad civil, accesibilidad, y un académico independiente — las constituencies que el estándar ahora protege no estaban en su mesa. La lista negra de vendors se volvió tope simétrico: el interés comercial en la categoría, competidores del autor incluidos, puede ocupar hasta dos de nueve asientos con divulgación publicada y recusación, porque lo que descalifica es el interés oculto, nunca el interés — y por dirección del autor se agregó la regla de mayoría practicante: el skin in the game es un requisito de este Board, no un descalificador. Los asientos sin pago dieron paso a un honorario transparente, idéntico y publicado, porque lo gratuito selecciona a quienes pueden donar su tiempo. El procedimiento ganó quorum de dos tercios, actas publicadas, opiniones minoritarias íntegras, un plazo de respuesta de noventa días para el Editor, y una vía de patrocinio: tres miembros pueden llevar una propuesta a voto sin borrador del Editor — la negativa no es veto. El cambio más profundo es del propio autor: el Editor ahora tiene voz, mas no voto. El inverificable «this site is not a funnel» se reemplazó por la estructura que lo vuelve cierto — HWF-21, la licencia irrevocable, el Editor sin voto — y la v1.0 sigue siendo propuesta hasta que un Board constituido bajo estas reglas la ratifique: el autor no puede ratificar su propio estándar. La independencia se demuestra con estructura, no se afirma con una frase.' },
       { en: 'The Hybrid Workforce Manager’s scorecard was rebalanced because two of its metrics contradicted HWF-09: AI Exception Rate and Human Intervention Rate read as lower-is-better, and a system rewarded for fewer escalations learns silence — it improves its number by producing exactly the failure the clause exists to prevent. Escalation is now judged by quality, never by volume: six metrics were added — Missed Escalation Rate, Unnecessary Escalation Rate, Correction Severity, Human Review Burden by Risk Class, Unresolved High-Risk Exceptions, Harmful Outcome Severity — the two originals were re-described with direction, HWF-09’s note carries the lock, and the HWFA warns that a falling intervention rate is not automatically good. The executive dashboard grew from three flagged metrics to six, and its note now names what other clauses already generate for it: complaints and appeals, residual risk, drift, and recorded labour consequences. A dashboard showing only performance and cost is the one a CFO wants; this is the one a board needs.', es: 'El scorecard del Gerente de Fuerza Laboral Híbrida se rebalanceó porque dos de sus métricas contradecían HWF-09: AI Exception Rate y Human Intervention Rate se leían como menos-es-mejor, y un sistema premiado por escalar menos aprende silencio — mejora su número produciendo exactamente la falla que la cláusula existe para impedir. La escalación ahora se juzga por calidad, nunca por volumen: se agregaron seis métricas — Missed Escalation Rate, Unnecessary Escalation Rate, Correction Severity, Human Review Burden by Risk Class, Unresolved High-Risk Exceptions, Harmful Outcome Severity — las dos originales se re-describieron con dirección, la nota de HWF-09 carga el candado, y el HWFA advierte que una tasa de intervención decreciente no es automáticamente buena. El dashboard ejecutivo creció de tres métricas con bandera a seis, y su nota ahora nombra lo que otras cláusulas ya generan para él: quejas y apelaciones, riesgo residual, drift, y consecuencias laborales registradas. Un dashboard que solo muestra performance y costo es el que quiere un CFO; este es el que necesita un board.' },
       { en: 'HWF-17, HWF-18 and HWF-19 were corrected together. HWF-17 no longer trusts the resource to detect its own divergence: a system whose model or configuration is the problem shares the blind spot, so independent monitoring against the contract is now the primary control and the self-report a supplementary signal. HWF-18’s vocabulary was operationalised — restrictions prevent measurable degradation of the decision (anchoring, contamination, saturation) rather than protect “the resource’s judgement” — and G-31 was renamed from deliberate opacity, which read as legitimised opacity and quoted badly out of context, to context boundary record, naming the artifact as the glossary’s other instrument terms do. HWF-19’s note dropped the claim that pointless human posts prune themselves — empirically false, bureaucracies carry dead posts for decades — for the stronger and honest version: human pruning triggers are weak and fail often, and an artificial post removes even those, losing the last occasions on which anyone would notice it. And a lapsed review no longer reads as automatic retirement: it escalates and restricts or suspends in proportion while the review is forced — retirement is the outcome of a failed justification, never of a missed calendar, matching the lifecycle’s Suspend-before-Retire order. No counts changed.', es: 'HWF-17, HWF-18 y HWF-19 se corrigieron juntas. HWF-17 ya no confía en que el recurso detecte su propia divergencia: un sistema cuyo modelo o configuración son el problema comparte el punto ciego, así que el monitoreo independiente contra el contrato es ahora el control primario y el auto-reporte una señal complementaria. El vocabulario de HWF-18 se operacionalizó — las restricciones previenen la degradación medible de la decisión (anclaje, contaminación, saturación) en vez de proteger «el criterio del recurso» — y G-31 se renombró de opacidad deliberada, que se leía como opacidad legitimada y citaba mal fuera de contexto, a registro de frontera de contexto, nombrando el artefacto como lo hacen los demás términos de instrumento del glosario. La nota de HWF-19 abandonó la afirmación de que los puestos humanos sin sentido se podan solos — empíricamente falsa, las burocracias cargan puestos muertos por décadas — por la versión más fuerte y honesta: los disparadores humanos de poda son débiles y fallan seguido, y un puesto artificial elimina hasta esos, perdiendo las últimas ocasiones en que alguien lo notaría. Y una revisión vencida ya no se lee como retiro automático: escala y restringe o suspende en proporción mientras se fuerza la revisión — el retiro es el resultado de una justificación fallida, nunca de un calendario perdido, calzando con el orden Suspender-antes-de-Retirar del lifecycle. Ningún conteo cambió.' },
       { en: 'The Fit Score became the Fit Assessment — HWFA — and was rebuilt in three stages. The rename first: an instrument that deliberately refuses to produce a number should not be called a Score, and retiring the old acronym also dissolves any residual confusion between the instrument and the standard. The redesign fixes three defects a review caught against the running code: the economics dimension was circular — it asked which alternative wins and returned the answer as analysis — and is now a factual cost profile consulted only in the final stage; full enumerability scored toward probabilistic AI when it is the signature of deterministic-software territory, and the instrument now has a fourth outcome — deterministic automation — for rule-following work with a thin exception tail, because a standard about AI Employees whose instrument can say “you do not need one” is harder to dismiss as hype; and volume pulled toward automation when scale multiplies harm, so it now amplifies the risk class instead. The stages embody HWF-20’s order — eligibility, then risk, then economics — opening with a new reserved-subjects dimension wired to HWF-23, and the empathy dimension widened to human significance: dignity, vulnerability and power over the person, not only relationship value. The proposal’s five flat outcomes were not adopted: assisted grades are what the allocation crossed with the autonomy ladder already expresses. Thirteen dimensions; still no number.', es: 'El Fit Score se convirtió en el Fit Assessment — HWFA — y se reconstruyó en tres etapas. Primero el renombre: un instrumento que deliberadamente se niega a producir un número no debería llamarse Score, y retirar el acrónimo viejo disuelve además cualquier confusión residual entre el instrumento y el estándar. El rediseño corrige tres defectos que una revisión atrapó contra el código en ejecución: la dimensión de economía era circular — preguntaba qué alternativa gana y devolvía la respuesta como análisis — y ahora es un perfil de costos factual consultado solo en la etapa final; la enumerabilidad completa puntuaba hacia la IA probabilística cuando es la firma del territorio del software determinista, y el instrumento ahora tiene un cuarto resultado — automatización determinista — para trabajo por reglas con cola de excepciones delgada, porque un estándar de AI Employees cuyo instrumento sabe decir «no necesitás uno» es más difícil de descartar como hype; y el volumen jalaba hacia la automatización cuando la escala multiplica el daño, así que ahora amplifica la clase de riesgo. Las etapas encarnan el orden de HWF-20 — elegibilidad, luego riesgo, luego economía — abriendo con una dimensión nueva de materias reservadas cableada a HWF-23, y la dimensión de empatía ampliada a significancia humana: dignidad, vulnerabilidad y poder sobre la persona, no solo valor de la relación. Los cinco resultados planos de la propuesta no se adoptaron: los grados asistidos son lo que la asignación cruzada con la escalera de autonomía ya expresa. Trece dimensiones; sigue sin haber número.' },

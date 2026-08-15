@@ -766,15 +766,15 @@ One term, two languages, one numbered definition. Where the English term is used
 
 This standard was written by Master Joe Phillips, who also builds AIEmpl.com, a commercial platform in this category. That is a real conflict of interest and it is stated here rather than discovered later.
 
-Three commitments follow from it. This standard does not certify products and does not score vendors; conformance is self-declared by the organisation running the deployment. This site is not a funnel, so the link to the platform above is disclosure rather than an offer. The normative text cannot be changed by its author alone.
+Three commitments follow from it, and all three are structural rather than promised. This standard does not certify products and does not score vendors, and under HWF-21 the author’s platform can never claim conformance — a deployment can, a platform cannot. The licence is irrevocable, so the text cannot be pulled back behind a product. And the normative text moves without the author’s vote: the Editor drafts and argues, and does not vote. Independence is demonstrated by structure, not asserted by a sentence.
 
 A standard authored by a vendor and judged by nobody is a specification sheet with a formal name. The mechanism below is what is meant to keep this one from becoming that.
 
 ### Editor and Review Board
 
-> The Editor writes, proposes and decides everything editorial. The normative text changes only with a majority of the Board. The Editor’s vote is worth no more than anyone else’s in that vote.
+> The Editor writes, proposes and decides everything editorial. The normative text changes only by vote of the Board — and the Editor has a voice, not a vote.
 
-That single rule is what makes the disclosure above worth anything: the author has a commercial interest, and the author cannot move the standard alone.
+That single rule is what makes the disclosure above worth anything: the author holds the largest commercial interest in the room, and the author cannot move the standard at all — only persuade the people who can.
 
 ### The five seats
 
@@ -785,24 +785,30 @@ That single rule is what makes the disclosure above worth anything: the author h
 | 3 | AI engineering | That the nine properties and the controls are technically honest and implementable. | *Open* |
 | 4 | Security and risk | Least privilege, auditability, incident handling and the kill switch: the governance domain. | *Open* |
 | 5 | Legal and labour | The boundary that says this is not an employee in any legal sense. It is the line where the category is most likely to burn. | *Open* |
+| 6 | Workers’ representation | The floor of HWF-23 and HWF-24: that reserved decisions stay human and that impact assessments consult workers before the transformation, not after it. Works-council or union floor experience, not a theorist. | *Open* |
+| 7 | Affected persons and civil society | That the rights of HWF-25 work as mechanisms rather than words: explanation, correction, contest and redress. Someone who operates recourse in the real world — ombudsman, consumer protection, appeals practice. | *Open* |
+| 8 | Accessibility and inclusion | The accessibility constraint of HWF-20 and the vulnerable-people factor of HWF-22 and HWF-23. A practitioner of accessible systems, not an auditor of documents. | *Open* |
+| 9 | Independent academic | The evidence base: that the standard’s claims survive contact with research, and that its sources stay honest. Organisational theory, labour economics or human-computer interaction, with no commercial stake in the category. | *Open* |
 
-1. Unpaid. Honorary, credited on this site. The moment there is money, there is a question about whom the Board serves.
-2. At least two of the five seats sit outside the Editor’s commercial orbit, so not customers, employees or suppliers. A board of the author’s friends is detectable in one search.
-3. No member holds a competing platform, the Editor’s included. The Board is not a vendor lobby.
+1. A majority of the Board must be people currently operating in the field — deploying, building or governing hybrid workforces. Skin in the game is a requirement for this Board, not a disqualifier: what disqualifies is hidden interest, never interest.
+2. Commercial interest in the category — the author’s competitors included — may hold at most two of the nine seats, each with a published disclosure and recusal from any vote where the interest is direct. The Board is neither a vendor lobby nor a vendor blacklist.
+3. Compensated transparently or not at all: an identical, published honorarium from disclosed sources. Unpaid seats select for people who can afford to donate time; hidden pay selects for people someone else is paying. Both are capture — transparency is the control.
 4. Each member publishes their own disclosure, exactly as the Editor does.
 5. Twelve-month renewable terms, so that leaving is ordinary rather than a scandal.
-6. Changes follow a public process: anyone proposes, the Editor drafts, the Board votes, and the changelog records what happened. Four lines do more work here than ten pages of bylaws would.
+6. A vote is valid only with two thirds of the seats participating. Minutes are published, and a minority opinion is published in full in the changelog — a dissent the public can read is worth more than a unanimity it cannot check.
 
 ### Amendment process
 
 1. Anyone proposes a change, publicly, with the reasoning and the case that motivated it.
-2. The Editor drafts the amended clause text and publishes the draft.
-3. The Board votes. A majority carries; the Editor holds one vote.
-4. The changelog records what changed, who proposed it, how the Board voted and why.
+2. The Editor responds within ninety days: a drafted amendment or a reasoned decline, both published.
+3. A decline is not a veto. Any three Board members may sponsor a proposal directly to consultation and vote, without an Editor draft.
+4. Public consultation runs for at least thirty days before any vote on normative text.
+5. The Board votes: two-thirds quorum, majority carries — and the Editor has a voice, not a vote.
+6. The changelog records what changed, who proposed it, the vote count, and any minority opinion in full.
 
 ### Current status
 
-Version 1.0 is a proposal by a single author. The Standard Review Board is forming and every seat is currently open. Publishing that honestly is a deliberate choice: a standard that admits to being a proposal is more credible than one that implies an institution it does not yet have. If one of the five seats describes you, the invitation is open.
+Version 1.0 is a proposal by a single author. The Standard Review Board is forming and every one of the nine seats is currently open. Publishing that honestly is a deliberate choice: a standard that admits to being a proposal is more credible than one that implies an institution it does not yet have. And it stays a proposal until a Board constituted under these rules ratifies it — the author cannot ratify his own standard. If one of the nine seats describes you, the invitation is open.
 
 ## Licence
 
@@ -889,6 +895,7 @@ You may quote, embed, teach, translate and commercially use this material with a
 - First publication: twenty-seven normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFA instrument, the Hybrid Workforce Manager role and the transition playbooks.
 - Certification was deliberately excluded from scope. This standard scores no products and issues no seals.
 - The HWFS returns a structured argument rather than a 0–100 score, resolving a contradiction present in the source research.
+- The governance was reformed before any seat was filled, on an external review the author largely accepted. The Board grows from five seats to nine, adding workers’ representation, affected persons and civil society, accessibility, and one independent academic — the constituencies the standard now protects were not at its table. The vendor blacklist became a symmetric cap: commercial interest in the category, the author’s competitors included, may hold up to two of nine seats with published disclosure and recusal, because what disqualifies is hidden interest, never interest — and at the author’s direction a practitioner-majority rule was added: skin in the game is a requirement for this Board, not a disqualifier. Unpaid seats gave way to a transparent, identical, published honorarium, since unpaid selects for those who can afford to donate time. Procedure gained a two-thirds quorum, published minutes, minority opinions published in full, a ninety-day response deadline for the Editor, and a sponsorship path: three members can carry a proposal to vote without an Editor draft — a decline is not a veto. The deepest change is the author’s own: the Editor now has a voice, not a vote. The unverifiable “this site is not a funnel” was replaced by the structure that makes it true — HWF-21, the irrevocable licence, the voteless Editor — and v1.0 remains a proposal until a Board constituted under these rules ratifies it: the author cannot ratify his own standard. Independence is demonstrated by structure, not asserted by a sentence.
 - The Hybrid Workforce Manager’s scorecard was rebalanced because two of its metrics contradicted HWF-09: AI Exception Rate and Human Intervention Rate read as lower-is-better, and a system rewarded for fewer escalations learns silence — it improves its number by producing exactly the failure the clause exists to prevent. Escalation is now judged by quality, never by volume: six metrics were added — Missed Escalation Rate, Unnecessary Escalation Rate, Correction Severity, Human Review Burden by Risk Class, Unresolved High-Risk Exceptions, Harmful Outcome Severity — the two originals were re-described with direction, HWF-09’s note carries the lock, and the HWFA warns that a falling intervention rate is not automatically good. The executive dashboard grew from three flagged metrics to six, and its note now names what other clauses already generate for it: complaints and appeals, residual risk, drift, and recorded labour consequences. A dashboard showing only performance and cost is the one a CFO wants; this is the one a board needs.
 - HWF-17, HWF-18 and HWF-19 were corrected together. HWF-17 no longer trusts the resource to detect its own divergence: a system whose model or configuration is the problem shares the blind spot, so independent monitoring against the contract is now the primary control and the self-report a supplementary signal. HWF-18’s vocabulary was operationalised — restrictions prevent measurable degradation of the decision (anchoring, contamination, saturation) rather than protect “the resource’s judgement” — and G-31 was renamed from deliberate opacity, which read as legitimised opacity and quoted badly out of context, to context boundary record, naming the artifact as the glossary’s other instrument terms do. HWF-19’s note dropped the claim that pointless human posts prune themselves — empirically false, bureaucracies carry dead posts for decades — for the stronger and honest version: human pruning triggers are weak and fail often, and an artificial post removes even those, losing the last occasions on which anyone would notice it. And a lapsed review no longer reads as automatic retirement: it escalates and restricts or suspends in proportion while the review is forced — retirement is the outcome of a failed justification, never of a missed calendar, matching the lifecycle’s Suspend-before-Retire order. No counts changed.
 - The Fit Score became the Fit Assessment — HWFA — and was rebuilt in three stages. The rename first: an instrument that deliberately refuses to produce a number should not be called a Score, and retiring the old acronym also dissolves any residual confusion between the instrument and the standard. The redesign fixes three defects a review caught against the running code: the economics dimension was circular — it asked which alternative wins and returned the answer as analysis — and is now a factual cost profile consulted only in the final stage; full enumerability scored toward probabilistic AI when it is the signature of deterministic-software territory, and the instrument now has a fourth outcome — deterministic automation — for rule-following work with a thin exception tail, because a standard about AI Employees whose instrument can say “you do not need one” is harder to dismiss as hype; and volume pulled toward automation when scale multiplies harm, so it now amplifies the risk class instead. The stages embody HWF-20’s order — eligibility, then risk, then economics — opening with a new reserved-subjects dimension wired to HWF-23, and the empathy dimension widened to human significance: dignity, vulnerability and power over the person, not only relationship value. The proposal’s five flat outcomes were not adopted: assisted grades are what the allocation crossed with the autonomy ladder already expresses. Thirteen dimensions; still no number.
