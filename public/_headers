@@ -1,0 +1,50 @@
+# Cloudflare Pages headers. Applied at the edge to every response.
+#
+# The site is a static export with no backend, no forms that submit, no
+# third-party scripts and no analytics unless NEXT_PUBLIC_GA_ID is set.
+# The policy below states that in a form a scanner can verify: the page
+# cannot post data anywhere, cannot be framed, and cannot load code from
+# any origin but its own.
+#
+# 'unsafe-inline' for scripts is unavoidable in a static export: Next.js
+# emits inline hydration payloads and the pre-paint theme script, and a
+# nonce would need a server to vary per request. The meaningful controls
+# here are the origin restrictions, form-action and frame-ancestors.
+
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; form-action 'none'; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: accelerometer=(), autoplay=(), camera=(), display-capture=(), encrypted-media=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=()
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-site
+
+# The machine-readable editions are meant to be fetched cross-origin — by
+# models, retrieval indexes and citation tools. They keep the open CORS
+# header the rest of the site does not need, and must override the
+# same-site resource policy above or the fetch would be blocked despite it.
+/standard.md
+  Access-Control-Allow-Origin: *
+  Cross-Origin-Resource-Policy: cross-origin
+  Content-Type: text/markdown; charset=utf-8
+
+/estandar.md
+  Access-Control-Allow-Origin: *
+  Cross-Origin-Resource-Policy: cross-origin
+  Content-Type: text/markdown; charset=utf-8
+
+/llms.txt
+  Access-Control-Allow-Origin: *
+  Cross-Origin-Resource-Policy: cross-origin
+  Content-Type: text/plain; charset=utf-8
+
+# ---------------------------------------------------------------------
+# If analytics is switched on (NEXT_PUBLIC_GA_ID set), the CSP above will
+# block it. Replace the three directives with these:
+#
+#   script-src 'self' 'unsafe-inline' https://www.googletagmanager.com;
+#   connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com;
+#   img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com;
+# ---------------------------------------------------------------------
