@@ -3,7 +3,7 @@ import { ArrowRight, FileText } from 'lucide-react';
 import CiteBox from '../CiteBox';
 import Reveal from '../Reveal';
 import { PageHeader, Section } from '../Section';
-import { CLAUSES, CONFORMANCE, DECLARATION, MOTIVATION, OBJECTIVE, PREAMBLE, RISK_CLASSES, RISK_INTRO, RISK_NOTE } from '@/lib/standard';
+import { BLOCKS, CLAUSES, CONFORMANCE, DECLARATION, MOTIVATION, OBJECTIVE, PREAMBLE, RISK_CLASSES, RISK_INTRO, RISK_NOTE } from '@/lib/standard';
 import { UI } from '@/lib/i18n';
 import { AUTHOR, SITE_NAME, SITE_URL, STANDARD_LABEL, route, type Locale } from '@/lib/site';
 
@@ -68,9 +68,13 @@ export default function StandardPage({ lang }: { lang: Locale }) {
       <Section>
         <div className="grid gap-12 lg:grid-cols-[1fr_20rem] lg:items-start">
           <div>
-            <ol className="space-y-10">
-              {CLAUSES.map((c) => (
-                <li key={c.id} id={c.id.toLowerCase()} className="scroll-mt-24">
+            <div className="space-y-16">
+              {BLOCKS.map((b) => (
+                <section key={b.numeral}>
+                  <h2 className="eyebrow mb-8">{b.numeral} · {b.title[lang]}</h2>
+                  <ol className="space-y-10">
+                    {CLAUSES.slice(b.from - 1, b.to).map((c) => (
+                      <li key={c.id} id={c.id.toLowerCase()} className="scroll-mt-24">
                   <Reveal>
                     <div className="flex items-baseline gap-4">
                       <span className="clause-id">{c.id}</span>
@@ -84,8 +88,11 @@ export default function StandardPage({ lang }: { lang: Locale }) {
                     </p>
                   </Reveal>
                 </li>
+                    ))}
+                  </ol>
+                </section>
               ))}
-            </ol>
+            </div>
           </div>
 
           <aside className="space-y-6 lg:sticky lg:top-24">

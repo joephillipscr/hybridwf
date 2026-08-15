@@ -17,7 +17,7 @@ import { join } from 'node:path';
 
 import type { T } from '../lib/i18n';
 import { LOCALES, ROUTES, SITE_NAME, SITE_URL, STANDARD_DATE, STANDARD_LABEL, STANDARD_VERSION, AUTHOR, type Locale } from '../lib/site';
-import { CLAUSES, CONFORMANCE, DECLARATION, MOTIVATION, OBJECTIVE, PREAMBLE, RISK_CLASSES, RISK_INTRO, RISK_NOTE } from '../lib/standard';
+import { BLOCKS, CLAUSES, CONFORMANCE, DECLARATION, MOTIVATION, OBJECTIVE, PREAMBLE, RISK_CLASSES, RISK_INTRO, RISK_NOTE } from '../lib/standard';
 import { DEFINITION, FORMULA, GOVERNING_PRINCIPLE, LADDER, OWNERSHIP_BOUNDARY, PROPERTIES, PROPERTIES_CAVEAT, THESIS } from '../lib/definition';
 import { LEVELS, MATURITY_NOTE, THRESHOLD, DIAGNOSTIC } from '../lib/maturity';
 import { BOUNDARY_WARNING, DOMAINS, LIFECYCLE, PRINCIPLE_LAYERS, RULES as WRM_RULES, STACK, WRM_DEFINITION, WRM_PREMISE } from '../lib/wrm';
@@ -26,7 +26,7 @@ import { AUTONOMY, AUTONOMY_NOTE, DIMENSIONS } from '../lib/hwfa';
 import { ANTI_KPI, CAPACITY_ELEVATION, CEO_NOTE, DIRECTION_NOTE, KPIS, MISSION, PLACEMENT, RESPONSIBILITIES, ROLE_NAME } from '../lib/role';
 import { BACK, BACK_INTRO, BACK_NOTE, FORWARD, FORWARD_INTRO, FORWARD_PRECONDITION, FORWARD_RULE } from '../lib/transitions';
 import { ACRONYM_RULE, GLOSSARY_NOTE, TERMS as GLOSSARY_TERMS } from '../lib/glossary';
-import { DISCLOSURE, MODEL, OPEN_FINDINGS, PROCESS, RELEASES, RULES as GOV_RULES, SEATS, STATUS_NOTE, VERSIONING_POLICY } from '../lib/governance';
+import { DISCLOSURE, MAPPING, MODEL, OPEN_FINDINGS, PROCESS, RELEASES, RULES as GOV_RULES, SEATS, STATUS_NOTE, VERSIONING_POLICY } from '../lib/governance';
 import { LICENSE, attributionPlain } from '../lib/license';
 import { CONCEPTUAL, KIND_LABEL, METHOD_NOTES, SOURCES, type Source } from '../lib/sources';
 
@@ -200,10 +200,13 @@ function build(lang: Locale): string {
   DECLARATION.fields.forEach((f, i) => o.push(`${i + 1}. ${L(f, lang)}`));
   o.push('');
   p(`*${L(DECLARATION.example, lang)}*`);
-  CLAUSES.forEach((c) => {
-    h(3, c.id);
-    p(`**${L(c.text, lang)}**`);
-    p(`*${t('note')}:* ${L(c.note, lang)}`);
+  BLOCKS.forEach((b) => {
+    h(3, `${b.numeral} · ${L(b.title, lang)}`);
+    CLAUSES.slice(b.from - 1, b.to).forEach((c) => {
+      h(4, c.id);
+      p(`**${L(c.text, lang)}**`);
+      p(`*${t('note')}:* ${L(c.note, lang)}`);
+    });
   });
 
   /* --- Risk classification ------------------------------------------ */
@@ -352,6 +355,9 @@ function build(lang: Locale): string {
     o.push('');
   });
   p(L(VERSIONING_POLICY, lang));
+  h(3, L(MAPPING.title, lang));
+  p(L(MAPPING.intro, lang));
+  p(MAPPING.rows.map((r) => `${r.now} ← ${r.was}`).join(' · '));
 
   return o.join('\n').replace(/\n{3,}/g, '\n\n').trimEnd() + '\n';
 }
@@ -381,7 +387,7 @@ function llmsTxt(): string {
     '',
     '## Citing',
     '',
-    'Cite clauses by identifier (HWF-07), glossary entries by identifier (G-13) and principles by number (#44). Never cite by page or section number. Clause text is frozen between versions; the notes beneath each clause are commentary and may change without amending the standard.',
+    'Cite clauses by identifier (HWF-20), glossary entries by identifier (G-13) and principles by number (#44). Never cite by page or section number. Clause text is frozen between versions; the notes beneath each clause are commentary and may change without amending the standard.',
     '',
   ].join('\n');
 }

@@ -25,7 +25,7 @@ export const DIMENSIONS: Dimension[] = [
   {
     key: 'reserved',
     name: { en: 'Reserved subjects', es: 'Materias reservadas' },
-    question: { en: 'Does the responsibility decide matters HWF-23 reserves to humans?', es: '¿La responsabilidad decide materias que HWF-23 reserva a humanos?' },
+    question: { en: 'Does the responsibility decide matters HWF-02 reserves to humans?', es: '¿La responsabilidad decide materias que HWF-02 reserva a humanos?' },
     options: [
       { en: 'Yes — its core decisions are reserved: employment, health and safety, credit or essential services, legal rights, force, vulnerable people', es: 'Sí — sus decisiones centrales son reservadas: empleo, salud y seguridad, crédito o servicios esenciales, derechos legales, fuerza, personas vulnerables' },
       { en: 'Reserved matters appear regularly among its decisions', es: 'Las materias reservadas aparecen con regularidad entre sus decisiones' },
@@ -255,7 +255,7 @@ export function evaluate(a: Answers): Result {
     determinative.push({ dimension: k, name: dim(k).name, reason });
 
   /* ================= Stage 1 · Eligibility =================
-     Constraints come first (HWF-20): what may not be delegated,
+     Constraints come first (HWF-01): what may not be delegated,
      and what does not need an AI Employee at all. */
 
   const reservedCore = v('reserved') === 0;
@@ -264,8 +264,8 @@ export function evaluate(a: Answers): Result {
   if (reservedCore) {
     ceiling = 'hybrid';
     mark('reserved', {
-      en: 'The core decisions are reserved subjects (HWF-23): an artificial resource may analyse, draft and recommend, and a human with authority to decide otherwise takes every decision. Reserved decisions are Critical by definition.',
-      es: 'Las decisiones centrales son materias reservadas (HWF-23): un recurso artificial puede analizar, redactar y recomendar, y un humano con autoridad para decidir distinto toma cada decisión. Las decisiones reservadas son Críticas por definición.',
+      en: 'The core decisions are reserved subjects (HWF-02): an artificial resource may analyse, draft and recommend, and a human with authority to decide otherwise takes every decision. Reserved decisions are Critical by definition.',
+      es: 'Las decisiones centrales son materias reservadas (HWF-02): un recurso artificial puede analizar, redactar y recomendar, y un humano con autoridad para decidir distinto toma cada decisión. Las decisiones reservadas son Críticas por definición.',
     });
     controls.push({
       en: 'Route every reserved decision to a named human who can restate the case and decide otherwise — approval throughput that forecloses understanding is a signature, not a decision.',
@@ -349,8 +349,8 @@ export function evaluate(a: Answers): Result {
   if (v('volume') === 3 && (risk === 'low' || risk === 'moderate')) {
     risk = risk === 'low' ? 'moderate' : 'high';
     mark('volume', {
-      en: 'Volume multiplies whatever can go wrong: at this scale the same error rate lands on many more people, so the class rises — scale is one of HWF-22’s seven factors, and it never argues for automation by itself.',
-      es: 'El volumen multiplica todo lo que puede salir mal: a esta escala la misma tasa de error alcanza a muchas más personas, así que la clase sube — la escala es uno de los siete factores de HWF-22, y por sí sola nunca es argumento para automatizar.',
+      en: 'Volume multiplies whatever can go wrong: at this scale the same error rate lands on many more people, so the class rises — scale is one of HWF-21’s seven factors, and it never argues for automation by itself.',
+      es: 'El volumen multiplica todo lo que puede salir mal: a esta escala la misma tasa de error alcanza a muchas más personas, así que la clase sube — la escala es uno de los siete factores de HWF-21, y por sí sola nunca es argumento para automatizar.',
     });
   }
   if (reservedCore) risk = 'critical';
@@ -456,8 +456,8 @@ export function evaluate(a: Answers): Result {
   }
   if (v('reversibility') <= 1) {
     controls.push({
-      en: 'Every irreversible action needs an explicit approval gate and a named person who owns the kill switch — exercised on a stated cadence (HWF-26).',
-      es: 'Toda acción irreversible necesita un approval gate explícito y una persona con nombre dueña del kill switch — ejercitado con cadencia declarada (HWF-26).',
+      en: 'Every irreversible action needs an explicit approval gate and a named person who owns the kill switch — exercised on a stated cadence (HWF-11).',
+      es: 'Toda acción irreversible necesita un approval gate explícito y una persona con nombre dueña del kill switch — ejercitado con cadencia declarada (HWF-11).',
     });
   }
   if (allocation !== 'human') {

@@ -10,8 +10,8 @@ export const DISCLOSURE: { title: T; body: T[] } = {
       es: 'Este estándar fue escrito por Master Joe Phillips, quien también construye AIEmpl.com, una plataforma comercial en esta categoría. Eso es un conflicto de interés real y se declara acá en lugar de descubrirse después.',
     },
     {
-      en: 'Three commitments follow from it, and all three are structural rather than promised. This standard does not certify products and does not score vendors, and under HWF-21 the author’s platform can never claim conformance — a deployment can, a platform cannot. The licence is irrevocable, so the text cannot be pulled back behind a product. And the normative text moves without the author’s vote: the Editor drafts and argues, and does not vote. Independence is demonstrated by structure, not asserted by a sentence.',
-      es: 'De ahí se derivan tres compromisos, y los tres son estructurales y no prometidos. Este estándar no certifica productos ni puntúa proveedores, y bajo HWF-21 la plataforma del autor no puede jamás reclamar conformidad — un deployment puede, una plataforma no. La licencia es irrevocable, así que el texto no puede retirarse detrás de un producto. Y el texto normativo se mueve sin el voto del autor: el Editor redacta y argumenta, y no vota. La independencia se demuestra con estructura, no se afirma con una frase.',
+      en: 'Three commitments follow from it, and all three are structural rather than promised. This standard does not certify products and does not score vendors, and under HWF-27 the author’s platform can never claim conformance — a deployment can, a platform cannot. The licence is irrevocable, so the text cannot be pulled back behind a product. And the normative text moves without the author’s vote: the Editor drafts and argues, and does not vote. Independence is demonstrated by structure, not asserted by a sentence.',
+      es: 'De ahí se derivan tres compromisos, y los tres son estructurales y no prometidos. Este estándar no certifica productos ni puntúa proveedores, y bajo HWF-27 la plataforma del autor no puede jamás reclamar conformidad — un deployment puede, una plataforma no. La licencia es irrevocable, así que el texto no puede retirarse detrás de un producto. Y el texto normativo se mueve sin el voto del autor: el Editor redacta y argumenta, y no vota. La independencia se demuestra con estructura, no se afirma con una frase.',
     },
     {
       en: 'A standard authored by a vendor and judged by nobody is a specification sheet with a formal name. The mechanism below is what is meant to keep this one from becoming that.',
@@ -94,8 +94,8 @@ export const SEATS: Seat[] = [
     n: 6,
     discipline: { en: 'Workers’ representation', es: 'Representación de trabajadores' },
     protects: {
-      en: 'The floor of HWF-23 and HWF-24: that reserved decisions stay human and that impact assessments consult workers before the transformation, not after it. Works-council or union floor experience, not a theorist.',
-      es: 'El piso de HWF-23 y HWF-24: que las decisiones reservadas sigan humanas y que las evaluaciones de impacto consulten a los trabajadores antes de la transformación, no después. Experiencia de piso en comités o sindicatos, no un teórico.',
+      en: 'The floor of HWF-02 and HWF-03: that reserved decisions stay human and that impact assessments consult workers before the transformation, not after it. Works-council or union floor experience, not a theorist.',
+      es: 'El piso de HWF-02 y HWF-03: que las decisiones reservadas sigan humanas y que las evaluaciones de impacto consulten a los trabajadores antes de la transformación, no después. Experiencia de piso en comités o sindicatos, no un teórico.',
     },
     holder: null,
   },
@@ -103,8 +103,8 @@ export const SEATS: Seat[] = [
     n: 7,
     discipline: { en: 'Affected persons and civil society', es: 'Personas afectadas y sociedad civil' },
     protects: {
-      en: 'That the rights of HWF-25 work as mechanisms rather than words: explanation, correction, contest and redress. Someone who operates recourse in the real world — ombudsman, consumer protection, appeals practice.',
-      es: 'Que los derechos de HWF-25 funcionen como mecanismos y no como palabras: explicación, corrección, impugnación y reparación. Alguien que opere recursos en el mundo real — ombudsman, protección al consumidor, práctica de apelaciones.',
+      en: 'That the rights of HWF-04 work as mechanisms rather than words: explanation, correction, contest and redress. Someone who operates recourse in the real world — ombudsman, consumer protection, appeals practice.',
+      es: 'Que los derechos de HWF-04 funcionen como mecanismos y no como palabras: explicación, corrección, impugnación y reparación. Alguien que opere recursos en el mundo real — ombudsman, protección al consumidor, práctica de apelaciones.',
     },
     holder: null,
   },
@@ -112,8 +112,8 @@ export const SEATS: Seat[] = [
     n: 8,
     discipline: { en: 'Accessibility and inclusion', es: 'Accesibilidad e inclusión' },
     protects: {
-      en: 'The accessibility constraint of HWF-20 and the vulnerable-people factor of HWF-22 and HWF-23. A practitioner of accessible systems, not an auditor of documents.',
-      es: 'La restricción de accesibilidad de HWF-20 y el factor de personas vulnerables de HWF-22 y HWF-23. Un practicante de sistemas accesibles, no un auditor de documentos.',
+      en: 'The accessibility constraint of HWF-01 and the vulnerable-people factor of HWF-21 and HWF-02. A practitioner of accessible systems, not an auditor of documents.',
+      es: 'La restricción de accesibilidad de HWF-01 y el factor de personas vulnerables de HWF-21 y HWF-02. Un practicante de sistemas accesibles, no un auditor de documentos.',
     },
     holder: null,
   },
@@ -204,33 +204,72 @@ export const OPEN_FINDINGS: { title: T; intro: T; items: T[] } = {
       es: 'Un piso legal para la clasificación de riesgo: los usos prohibidos o enumerados como de alto riesgo por la ley aplicable deberían entrar al nivel correspondiente como un piso que los siete factores pueden subir pero nunca bajar.',
     },
     {
-      en: 'Independent balancing of explanation withholdings: where data-protection law applies, trade-secret material goes to an authority or court for balancing (CJEU C-203/22) — the recorded withholding of HWF-25 is this standard’s mechanism, not a discharge of that law.',
-      es: 'Ponderación independiente de las retenciones de explicación: donde aplica la ley de protección de datos, el material de secreto comercial va a una autoridad o corte para ponderarse (CJEU C-203/22) — la retención registrada de HWF-25 es el mecanismo de este estándar, no un cumplimiento de esa ley.',
+      en: 'Independent balancing of explanation withholdings: where data-protection law applies, trade-secret material goes to an authority or court for balancing (CJEU C-203/22) — the recorded withholding of HWF-04 is this standard’s mechanism, not a discharge of that law.',
+      es: 'Ponderación independiente de las retenciones de explicación: donde aplica la ley de protección de datos, el material de secreto comercial va a una autoridad o corte para ponderarse (CJEU C-203/22) — la retención registrada de HWF-04 es el mecanismo de este estándar, no un cumplimiento de esa ley.',
     },
     {
-      en: 'A materiality test with worked examples for the reserved subjects of HWF-23, so that routine operations touching reserved accounts are distinguishable from reserved decisions.',
-      es: 'Una prueba de materialidad con ejemplos resueltos para las materias reservadas de HWF-23, para distinguir operaciones rutinarias que tocan cuentas reservadas de decisiones reservadas.',
+      en: 'A materiality test with worked examples for the reserved subjects of HWF-02, so that routine operations touching reserved accounts are distinguishable from reserved decisions.',
+      es: 'Una prueba de materialidad con ejemplos resueltos para las materias reservadas de HWF-02, para distinguir operaciones rutinarias que tocan cuentas reservadas de decisiones reservadas.',
     },
     {
-      en: 'An intake clause: a complaint channel, a response window and a severity-graded incident process with a named owner, as preconditions of go-live — the rights of HWF-25 need a door to knock on.',
-      es: 'Una cláusula de recepción: un canal de quejas, una ventana de respuesta y un proceso de incidentes graduado por severidad con dueño con nombre, como precondiciones del go-live — los derechos de HWF-25 necesitan una puerta donde tocar.',
+      en: 'An intake clause: a complaint channel, a response window and a severity-graded incident process with a named owner, as preconditions of go-live — the rights of HWF-04 need a door to knock on.',
+      es: 'Una cláusula de recepción: un canal de quejas, una ventana de respuesta y un proceso de incidentes graduado por severidad con dueño con nombre, como precondiciones del go-live — los derechos de HWF-04 necesitan una puerta donde tocar.',
     },
     {
       en: 'A defined source for the escalation-quality metrics: a sampled review of non-escalated cases with a minimum rate and a named reviewer set by risk class, so that zero reported misses means something.',
       es: 'Una fuente definida para las métricas de calidad de escalación: una revisión por muestreo de casos no escalados con tasa mínima y revisor con nombre fijados por clase de riesgo, para que cero fallas reportadas signifique algo.',
     },
     {
-      en: 'Cross-references to statutory impact assessments — EU AI Act Article 27’s fundamental-rights assessment and analogous regimes — stating expressly that HWF-24 does not discharge them.',
-      es: 'Referencias cruzadas a las evaluaciones de impacto legales — la de derechos fundamentales del Artículo 27 del EU AI Act y regímenes análogos — declarando expresamente que HWF-24 no las satisface.',
+      en: 'Cross-references to statutory impact assessments — EU AI Act Article 27’s fundamental-rights assessment and analogous regimes — stating expressly that HWF-03 does not discharge them.',
+      es: 'Referencias cruzadas a las evaluaciones de impacto legales — la de derechos fundamentales del Artículo 27 del EU AI Act y regímenes análogos — declarando expresamente que HWF-03 no las satisface.',
     },
     {
       en: 'Missed Escalation Rate normalised by audit sampling depth, reported as a pair, with severity grading by a party independent of the review budget it justifies.',
       es: 'Missed Escalation Rate normalizado por profundidad de muestreo de auditoría, reportado como par, con la graduación de severidad a cargo de una parte independiente del presupuesto de revisión que justifica.',
     },
     {
-      en: 'Aggregate-only computation of scorecard metrics that touch named humans, with individual-level access gated under HWF-08’s new-purpose test.',
-      es: 'Cómputo solo agregado de las métricas del scorecard que tocan humanos con nombre, con el acceso a nivel individual compuertado bajo la prueba de propósito nuevo de HWF-08.',
+      en: 'Aggregate-only computation of scorecard metrics that touch named humans, with individual-level access gated under HWF-18’s new-purpose test.',
+      es: 'Cómputo solo agregado de las métricas del scorecard que tocan humanos con nombre, con el acceso a nivel individual compuertado bajo la prueba de propósito nuevo de HWF-18.',
     },
+  ],
+};
+
+/* --- Renumbering map: Candidate 1.0 reorder --------------------------- */
+
+export const MAPPING: { title: T; intro: T; rows: { now: string; was: string }[] } = {
+  title: { en: 'Clause renumbering map', es: 'Mapa de renumeración de cláusulas' },
+  intro: {
+    en: 'During the Candidate 1.0 phase the clauses were reordered into eight thematic blocks, the last free moment to do so: no ratified version and no external citations existed. Changelog entries older than the reorder cite the pre-reorder numbering; this table translates. Future clauses append at the end of the numbering regardless of block.',
+    es: 'Durante la fase Candidate 1.0 las cláusulas se reordenaron en ocho bloques temáticos, el último momento libre para hacerlo: no existía versión ratificada ni citas externas. Las entradas del changelog anteriores al reorden citan la numeración previa; esta tabla traduce. Las cláusulas futuras se agregan al final de la numeración sin importar el bloque.',
+  },
+  rows: [
+  { now: 'HWF-01', was: 'HWF-20' },
+  { now: 'HWF-02', was: 'HWF-23' },
+  { now: 'HWF-03', was: 'HWF-24' },
+  { now: 'HWF-04', was: 'HWF-25' },
+  { now: 'HWF-05', was: 'HWF-01' },
+  { now: 'HWF-06', was: 'HWF-15' },
+  { now: 'HWF-07', was: 'HWF-11' },
+  { now: 'HWF-08', was: 'HWF-10' },
+  { now: 'HWF-09', was: 'HWF-02' },
+  { now: 'HWF-10', was: 'HWF-16' },
+  { now: 'HWF-11', was: 'HWF-26' },
+  { now: 'HWF-12', was: 'HWF-03' },
+  { now: 'HWF-13', was: 'HWF-04' },
+  { now: 'HWF-14', was: 'HWF-05' },
+  { now: 'HWF-15', was: 'HWF-09' },
+  { now: 'HWF-16', was: 'HWF-18' },
+  { now: 'HWF-17', was: 'HWF-06' },
+  { now: 'HWF-18', was: 'HWF-08' },
+  { now: 'HWF-19', was: 'HWF-14' },
+  { now: 'HWF-20', was: 'HWF-07' },
+  { now: 'HWF-21', was: 'HWF-22' },
+  { now: 'HWF-22', was: 'HWF-27' },
+  { now: 'HWF-23', was: 'HWF-17' },
+  { now: 'HWF-24', was: 'HWF-13' },
+  { now: 'HWF-25', was: 'HWF-19' },
+  { now: 'HWF-26', was: 'HWF-12' },
+  { now: 'HWF-27', was: 'HWF-21' }
   ],
 };
 
@@ -252,6 +291,7 @@ export const RELEASES: Release[] = [
       { en: 'First publication: twenty-seven normative clauses, the nine-property test, the WRM framework, the 120-principle matrix, the maturity model, the HWFA instrument, the Hybrid Workforce Manager role and the transition playbooks.', es: 'Primera publicación: veintisiete cláusulas normativas, el test de nueve propiedades, el marco WRM, la matriz de 120 principios, el modelo de madurez, el instrumento HWFA, el rol de Gerente de Fuerza Laboral Híbrida y los playbooks de transición.' },
       { en: 'Certification was deliberately excluded from scope. This standard scores no products and issues no seals.', es: 'La certificación se excluyó deliberadamente del alcance. Este estándar no puntúa productos ni emite sellos.' },
       { en: 'The HWFS returns a structured argument rather than a 0–100 score, resolving a contradiction present in the source research.', es: 'El HWFS devuelve un argumento estructurado en lugar de un puntaje 0–100, resolviendo una contradicción presente en la investigación de origen.' },
+      { en: 'The twenty-seven clauses were reordered into eight thematic blocks — Human foundation, The category, Accountability, Authority and operational control, Evidence and data, Risk and validation, Lifecycle, Conformance — in the last free moment such a reorder will ever have: no ratified version, no seated Board, no external citations. The numbering had been archaeological, recording the order in which review cycles produced the clauses; it now records the architecture, and the supreme clause opens the document as HWF-01, making its precedence visible in its position. Numbering stays flat and citable as HWF-nn; blocks are named presentation. Changelog entries older than this one cite the previous numbering, translated by the published renumbering map, and the versioning policy now fixes the future convention: new clauses append at the end of the numbering regardless of block — citation stability outranks thematic purity.', es: 'Las veintisiete cláusulas se reordenaron en ocho bloques temáticos — Fundamento humano, La categoría, Accountability, Autoridad y control operativo, Evidencia y datos, Riesgo y validación, Ciclo de vida, Conformidad — en el último momento libre que un reorden así tendrá jamás: sin versión ratificada, sin Board sentado, sin citas externas. La numeración era arqueológica — registraba el orden en que los ciclos de revisión produjeron las cláusulas —; ahora registra la arquitectura, y la cláusula suprema abre el documento como HWF-01, con su precedencia visible en su posición. La numeración sigue plana y citable como HWF-nn; los bloques son presentación con nombre. Las entradas del changelog anteriores a esta citan la numeración previa, traducida por el mapa de renumeración publicado, y la política de versionado fija la convención futura: las cláusulas nuevas se agregan al final de la numeración sin importar el bloque — la estabilidad de las citas vale más que la pureza temática.' },
       { en: 'Candidate 1.0 passed through an adversarial council review — five advisors with distinct methods (deductive logic, red-team exploitation, operator practicality, legal defensibility, systems dynamics), forty findings, an anonymous peer round that refuted seven and qualified fourteen. The refutations are their own record: the artificial-resource wording of HWF-23 killed the deterministic-threshold laundering attack, the signature test killed three separate attacks and turned out to encode the SCHUFA doctrine, HWF-20’s supremacy over labour protections absorbed the co-determination objection, and HWF-27 killed the swarm-facade. The confirmed findings were amended: the nine-property test now binds in both directions, so exhibiting the properties in operation makes a deployment an AI Employee whatever it is called, with the burden of non-qualification on the deployer — the conjunctive test had created a paper exit its own anti-vacuity lock did not cover. Conformance hardened: full-scope assessment or the claim is styled partial, twelve-month maximum validity, the enabling claim requires a live linked customer declaration, the risk-class field carries its reasoning, declarants are warned that a published declaration is an actionable commercial representation, “HWF” and the identifier schemes joined the reserved names, third-party certification programs are prohibited, and modified versions renumber their clauses. Cadences gained citable ceilings — twelve months everywhere, shorter for High and Critical drills — and every clocked obligation now lives in one governance calendar with one named owner, because “stated cadence: every ten years” had satisfied the letter. HWF-06 gained a feasibility floor by risk class, so log correlation against the version manifest is conformant reconstruction for Low and Moderate posts. Governance gained public nomination with the Editor appointing nobody, recusal judged by the non-conflicted seats, quorum over filled seats with a five-seat floor, normative majorities counted over all seats, Board reversal of note revisions, and Editor succession and removal — the founder wrote the standard; the office outlives him. Eight findings confirmed in part were not amended by the Editor alone: they are published as open findings, Board agenda until a version resolves them.', es: 'Candidate 1.0 pasó por una revisión adversarial de concilio — cinco asesores con métodos distintos (lógica deductiva, explotación red-team, practicidad de operador, defensibilidad legal, dinámica de sistemas), cuarenta hallazgos, una ronda de pares anónima que refutó siete y calificó catorce. Las refutaciones son registro propio: la redacción «recurso artificial» de HWF-23 mató el ataque de lavado por umbral determinista, la prueba de la firma mató tres ataques distintos y resultó codificar la doctrina SCHUFA, la supremacía de HWF-20 sobre las protecciones laborales absorbió la objeción de cogestión, y HWF-27 mató la fachada-sobre-enjambre. Los hallazgos confirmados se enmendaron: el test de nueve propiedades ahora obliga en ambas direcciones, así que exhibir las propiedades en operación hace del deployment un AI Employee sin importar cómo se lo llame, con la carga de la no-calificación en el deployer — el test conjuntivo había creado una salida de papel que su propio candado anti-vacuidad no cubría. La conformidad se endureció: evaluación de alcance completo o el claim se rotula parcial, validez máxima de doce meses, el claim de habilitación exige una declaración viva y enlazada de cliente, el campo de clase de riesgo carga su razonamiento, se advierte al declarante que una declaración publicada es una representación comercial accionable, «HWF» y los esquemas de identificadores se sumaron a los nombres reservados, los programas de certificación de terceros quedan prohibidos, y las versiones modificadas renumeran sus cláusulas. Las cadencias ganaron techos citables — doce meses en todas, menos para simulacros High y Critical — y toda obligación con reloj vive ahora en un calendario de gobernanza con un dueño con nombre, porque «cadencia declarada: cada diez años» satisfacía la letra. HWF-06 ganó un piso de factibilidad por clase de riesgo: correlacionar logs contra el manifiesto de versiones es reconstrucción conforme para puestos Bajos y Moderados. La gobernanza ganó nominación pública con un Editor que no nombra a nadie, recusación juzgada por los asientos no conflictuados, quorum sobre asientos ocupados con piso de cinco, mayorías normativas contadas sobre todos los asientos, reversión por el Board de revisiones de notas, y sucesión y remoción del Editor — el fundador escribió el estándar; el cargo lo sobrevive. Ocho hallazgos confirmados en parte no se enmendaron por el Editor en solitario: se publican como hallazgos abiertos, agenda del Board hasta que una versión los resuelva.' },
       { en: 'A preamble was added at the author’s direction, standing above the signed epigraph as the document’s own declaration: AI exists in the service of legitimate human purposes; efficiency never justifies degrading human dignity, agency, rights or capability; all artificial authority remains limited, contestable, reversible and subordinate to real human accountability. Nothing in it is new obligation — it compresses what HWF-02, HWF-03, HWF-20, HWF-23 and HWF-25 already bind — which is precisely why it belongs at the top: it is the sentence every clause descends from.', es: 'Se agregó un preámbulo por dirección del autor, colocado encima del epígrafe firmado como declaración del documento mismo: la IA existe al servicio de propósitos humanos legítimos; la eficiencia no justifica degradar dignidad, agencia, derechos ni capacidad humana; toda autoridad artificial permanece limitada, impugnable, reversible y subordinada a responsabilidad humana real. Nada en él es obligación nueva — comprime lo que HWF-02, HWF-03, HWF-20, HWF-23 y HWF-25 ya obligan — y precisamente por eso pertenece arriba: es la oración de la que desciende cada cláusula.' },
       { en: 'At the author’s direction the publication is designated Candidate 1.0. It carries the full text — twenty-seven clauses, the frameworks, the instruments — and it is not version 1.0: that name is reserved for the text a Board constituted under the governance rules ratifies. The candidate designation appears in the header, the citation format, the conformance language and the machine-readable front matter, so that nobody cites a proposal as a settled standard.', es: 'Por dirección del autor la publicación se designa Candidate 1.0. Carga el texto completo — veintisiete cláusulas, los marcos, los instrumentos — y no es la versión 1.0: ese nombre queda reservado para el texto que ratifique un Board constituido bajo las reglas de gobernanza. La designación de candidata aparece en el encabezado, el formato de citación, el lenguaje de conformidad y el front matter legible por máquinas, para que nadie cite una propuesta como estándar asentado.' },
@@ -286,6 +326,6 @@ export const RELEASES: Release[] = [
 ];
 
 export const VERSIONING_POLICY: T = {
-  en: 'Clause text changes require a version bump and a Board vote. Notes, examples and commentary may be corrected between versions without amending the standard. Every published version stays at its own permanent address so that a citation made today still resolves in five years. Within a version, changelog entries are drafting history in reverse chronological order: where several touch the same clause, the newest account governs and the older ones stand as record.',
-  es: 'Cambiar el texto de una cláusula exige subir de versión y una votación del Board. Notas, ejemplos y comentario pueden corregirse entre versiones sin enmendar el estándar. Toda versión publicada permanece en su propia dirección permanente para que una cita hecha hoy siga resolviendo en cinco años. Dentro de una versión, las entradas del changelog son historia de redacción en orden cronológico inverso: donde varias tocan la misma cláusula, gobierna el relato más nuevo y las anteriores quedan como registro.',
+  en: 'Clause text changes require a version bump and a Board vote. Notes, examples and commentary may be corrected between versions without amending the standard. Every published version stays at its own permanent address so that a citation made today still resolves in five years. Future clauses append at the end of the numbering even when they belong thematically to an earlier block: citation stability outranks thematic purity, and a future Board may re-block at a major version. Within a version, changelog entries are drafting history in reverse chronological order: where several touch the same clause, the newest account governs and the older ones stand as record.',
+  es: 'Cambiar el texto de una cláusula exige subir de versión y una votación del Board. Notas, ejemplos y comentario pueden corregirse entre versiones sin enmendar el estándar. Toda versión publicada permanece en su propia dirección permanente para que una cita hecha hoy siga resolviendo en cinco años. Las cláusulas futuras se agregan al final de la numeración aunque pertenezcan temáticamente a un bloque anterior: la estabilidad de las citas vale más que la pureza temática, y un Board futuro puede re-bloquear en una versión mayor. Dentro de una versión, las entradas del changelog son historia de redacción en orden cronológico inverso: donde varias tocan la misma cláusula, gobierna el relato más nuevo y las anteriores quedan como registro.',
 };

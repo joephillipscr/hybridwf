@@ -1,6 +1,6 @@
 import Reveal from '../Reveal';
 import { PageHeader, Section, SectionHeading } from '../Section';
-import { RELEASES, VERSIONING_POLICY } from '@/lib/governance';
+import { MAPPING, RELEASES, VERSIONING_POLICY } from '@/lib/governance';
 import type { Locale } from '@/lib/site';
 
 const C = {
@@ -49,6 +49,18 @@ export default function ChangelogPage({ lang }: { lang: Locale }) {
         />
         <Reveal>
           <p className="prose-x mt-6">{VERSIONING_POLICY[lang]}</p>
+
+        <div className="mt-10 max-w-2xl">
+          <p className="eyebrow">{MAPPING.title[lang]}</p>
+          <p className="mt-3 text-sm leading-relaxed text-muted">{MAPPING.intro[lang]}</p>
+          <div className="mt-4 grid grid-cols-3 gap-x-6 gap-y-1.5 font-mono text-xs text-muted sm:grid-cols-4 md:grid-cols-5">
+            {MAPPING.rows.map((r) => (
+              <span key={r.now}>
+                <span className="text-fg">{r.now}</span> ← {r.was}
+              </span>
+            ))}
+          </div>
+        </div>
         </Reveal>
       </Section>
     </>
