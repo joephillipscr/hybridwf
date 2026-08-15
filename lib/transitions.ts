@@ -54,5 +54,5 @@ export const BACK: T[] = [
 
 export const BACK_NOTE: T = {
   en: 'Define the return conditions before the pilot, not after the results are known. What error rate is unacceptable? How much human intervention destroys the economics? Which incident forces suspension? Written in advance, these rules reduce the bias of defending an implementation out of pride.',
-  es: 'Definí las condiciones de regreso antes del piloto, no después de conocer los resultados. ¿Qué tasa de error es inaceptable? ¿Cuánta intervención humana destruye la economía? ¿Qué incidente obliga a suspender? Escritas de antemano, estas reglas reducen el sesgo de defender una implementación por orgullo.',
+  es: 'Defina las condiciones de regreso antes del piloto, no después de conocer los resultados. ¿Qué tasa de error es inaceptable? ¿Cuánta intervención humana destruye la economía? ¿Qué incidente obliga a suspender? Escritas de antemano, estas reglas reducen el sesgo de defender una implementación por orgullo.',
 };

@@ -22,7 +22,7 @@ const C = {
     es: 'Libre de usar, imposible de cerrar',
   },
   termsTitle: { en: 'Two obligations', es: 'Dos obligaciones' },
-  permittedTitle: { en: 'What you can do without asking', es: 'Qué podés hacer sin pedir permiso' },
+  permittedTitle: { en: 'What you can do without asking', es: 'Qué puede hacer sin pedir permiso' },
   boundariesTitle: { en: 'Where the licence stops', es: 'Dónde termina la licencia' },
   attributionTitle: { en: 'Attribution', es: 'Atribución' },
   plain: { en: 'Plain text', es: 'Texto plano' },

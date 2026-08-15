@@ -55,7 +55,7 @@ const DESCRIPTIONS: Record<RouteKey, Record<Locale, string>> = {
   },
   license: {
     en: 'The standard is published under CC BY-SA 4.0 — free to cite, embed, teach and use commercially. Modify it and your version stays open too.',
-    es: 'El estándar se publica bajo CC BY-SA 4.0 — libre para citar, embeber, enseñar y usar comercialmente. Si lo modificás, tu versión también queda abierta.',
+    es: 'El estándar se publica bajo CC BY-SA 4.0 — libre para citar, embeber, enseñar y usar comercialmente. Toda versión modificada queda igual de abierta.',
   },
   sources: {
     en: 'Sources, methodological notes and the limits of what this document claims.',

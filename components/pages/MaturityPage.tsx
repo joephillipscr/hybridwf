@@ -11,14 +11,14 @@ const C = {
     es: 'De Herramienta a Empresa Híbrida. Los niveles 0 a 3 son destinos legítimos, no fracasos — un asistente bien ubicado puede producir más valor que un supuesto AI Employee al que nadie supervisa.',
   },
   threshold: { en: 'Category threshold', es: 'Umbral de la categoría' },
-  diagTitle: { en: 'Diagnose what you actually have', es: 'Diagnosticá qué tenés realmente' },
+  diagTitle: { en: 'Diagnose what you actually have', es: 'Diagnostique qué tiene realmente' },
   diagLede: {
     en: 'Take your most important AI implementations and examine them without the name the vendor gave them. Five questions, answered honestly.',
-    es: 'Tomá tus implementaciones de IA más importantes y examinálas sin el nombre que les dio el proveedor. Cinco preguntas, respondidas con honestidad.',
+    es: 'Tome sus implementaciones de IA más importantes y examínelas sin el nombre que les dio el proveedor. Cinco preguntas, respondidas con honestidad.',
   },
   diagClose: {
     en: 'You may find twenty agents and zero AI Employees. That does not invalidate the work done — it shows what is missing before responsibility can be widened: contract, context, authority, metrics, observability or a manager.',
-    es: 'Quizá descubras veinte agentes y cero AI Employees. Eso no invalida el trabajo realizado — muestra qué falta antes de ampliar responsabilidad: contrato, contexto, autoridad, métricas, observabilidad o manager.',
+    es: 'Quizá descubra veinte agentes y cero AI Employees. Eso no invalida el trabajo realizado — muestra qué falta antes de ampliar responsabilidad: contrato, contexto, autoridad, métricas, observabilidad o manager.',
   },
 };
 

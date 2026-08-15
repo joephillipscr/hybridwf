@@ -49,7 +49,7 @@ const S = {
   colRegime: { en: 'Operating regime', es: 'Régimen operativo' },
   citeBody: {
     en: 'Cite clauses by identifier, never by page or section number. The clause text is the citable unit; the notes beneath each clause are commentary and may be revised between versions without amending the standard.',
-    es: 'Citá las cláusulas por identificador, nunca por página ni número de sección. El texto de la cláusula es la unidad citable; las notas bajo cada cláusula son comentario y pueden revisarse entre versiones sin enmendar el estándar.',
+    es: 'Cite las cláusulas por identificador, nunca por página ni número de sección. El texto de la cláusula es la unidad citable; las notas bajo cada cláusula son comentario y pueden revisarse entre versiones sin enmendar el estándar.',
   },
   thesis: { en: 'Thesis', es: 'Tesis' },
   governing: { en: 'Governing principle', es: 'Principio rector' },
@@ -331,7 +331,7 @@ function build(lang: Locale): string {
   p(
     lang === 'en'
       ? 'You may quote, embed, teach, translate and commercially use this material with attribution. A modified version must carry the same licence. The names "Hybrid Workforce Standard", "HybridWF", "HWF", "WRM" and "HWFA" (formerly HWFS) and the HWF-/G- identifier schemes are reserved and are not licensed: you may state that your work conforms to the standard, but you may not publish a modified version under the same name, operate a certification or badge program invoking it, or reuse its clause identifiers for altered text — a modified version renumbers its clauses.'
-      : 'Podés citar, embeber, enseñar, traducir y usar comercialmente este material con atribución. Una versión modificada debe llevar la misma licencia. Los nombres «Hybrid Workforce Standard», «HybridWF», «HWF», «WRM» y «HWFA» (antes HWFS) y los esquemas de identificadores HWF-/G- quedan reservados y no están licenciados: podés declarar que tu trabajo conforma con el estándar, pero no publicar una versión modificada con el mismo nombre, operar un programa de certificación o insignias invocándolo, ni reutilizar sus identificadores de cláusula para texto alterado — una versión modificada renumera sus cláusulas.',
+      : 'Puede citar, embeber, enseñar, traducir y usar comercialmente este material con atribución. Una versión modificada debe llevar la misma licencia. Los nombres «Hybrid Workforce Standard», «HybridWF», «HWF», «WRM» y «HWFA» (antes HWFS) y los esquemas de identificadores HWF-/G- quedan reservados y no están licenciados: puede declarar que su trabajo conforma con el estándar, pero no publicar una versión modificada con el mismo nombre, operar un programa de certificación o insignias invocándolo, ni reutilizar sus identificadores de cláusula para texto alterado — una versión modificada renumera sus cláusulas.',
   );
 
   /* --- Sources ----------------------------------------------------- */

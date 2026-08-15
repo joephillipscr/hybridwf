@@ -275,7 +275,7 @@ export function evaluate(a: Answers): Result {
     if (ceiling === 'artificial') ceiling = 'hybrid';
     controls.push({
       en: 'Reserved matters appear regularly: define the routing rule that sends them to a human before deployment, and audit that it fires.',
-      es: 'Las materias reservadas aparecen con regularidad: definí la regla de ruteo que las envía a un humano antes del deployment, y auditá que dispare.',
+      es: 'Las materias reservadas aparecen con regularidad: defina la regla de ruteo que las envía a un humano antes del deployment, y audite que dispare.',
     });
   }
 
@@ -463,14 +463,14 @@ export function evaluate(a: Answers): Result {
   if (allocation !== 'human') {
     controls.push({
       en: 'Record the human baseline — quality, cycle time, cost, error rate, exception volume — before anything changes. Without it you cannot prove improvement or justify rollback.',
-      es: 'Registrá el baseline humano — calidad, tiempo de ciclo, costo, tasa de error, volumen de excepciones — antes de cambiar nada. Sin él no podés demostrar mejora ni justificar rollback.',
+      es: 'Registre el baseline humano — calidad, tiempo de ciclo, costo, tasa de error, volumen de excepciones — antes de cambiar nada. Sin él no puede demostrarse mejora ni justificarse un rollback.',
     });
   }
 
   /* --- What would change the answer. */
   wouldChange.push({
     en: 'A rising Human Intervention Rate over the first weeks means the autonomy on paper is not real — drop a rung and find out why. A falling one is not automatically good: check the Missed Escalation Rate before celebrating.',
-    es: 'Un Human Intervention Rate creciente en las primeras semanas significa que la autonomía del papel no es real — bajá un peldaño y averiguá por qué. Uno decreciente no es automáticamente bueno: revisá el Missed Escalation Rate antes de celebrar.',
+    es: 'Un Human Intervention Rate creciente en las primeras semanas significa que la autonomía del papel no es real — baje un peldaño y averigüe por qué. Uno decreciente no es automáticamente bueno: revise el Missed Escalation Rate antes de celebrar.',
   });
   if (allocation === 'artificial') {
     wouldChange.push({

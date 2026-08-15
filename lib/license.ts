@@ -20,7 +20,7 @@ export const LICENSE = {
 
 export const LEDE: T = {
   en: 'The standard is published openly so it can be read, cited, translated and built on without asking permission. The one condition that matters: if you modify it, your version stays open too.',
-  es: 'El estándar se publica abiertamente para que pueda leerse, citarse, traducirse y construirse encima sin pedir permiso. La única condición que importa: si lo modificás, tu versión también queda abierta.',
+  es: 'El estándar se publica abiertamente para que pueda leerse, citarse, traducirse y construirse encima sin pedir permiso. La única condición que importa: toda versión modificada queda igual de abierta.',
 };
 
 /* --- The two obligations ------------------------------------------- */
@@ -30,14 +30,14 @@ export const TERMS: { title: T; body: T }[] = [
     title: { en: 'Attribution (BY)', es: 'Atribución (BY)' },
     body: {
       en: 'Credit the author, link to the licence, and indicate whether you made changes. You may do so in any reasonable manner, but not in a way that suggests the author endorses you or your use.',
-      es: 'Dale crédito al autor, enlazá la licencia e indicá si hiciste cambios. Podés hacerlo de cualquier forma razonable, pero no de un modo que sugiera que el autor te respalda a vos o a tu uso.',
+      es: 'Dé crédito al autor, enlace la licencia e indique si hizo cambios. Puede hacerlo de cualquier forma razonable, pero no de un modo que sugiera que el autor lo respalda a usted o a su uso.',
     },
   },
   {
     title: { en: 'ShareAlike (SA)', es: 'CompartirIgual (SA)' },
     body: {
       en: 'If you remix, transform or build upon the material, you must distribute your contribution under the same licence. This is the clause that keeps a modified version of this standard from becoming a closed one.',
-      es: 'Si remezclás, transformás o construís sobre el material, debés distribuir tu contribución bajo la misma licencia. Esta es la cláusula que impide que una versión modificada de este estándar se convierta en una cerrada.',
+      es: 'Si remezcla, transforma o construye sobre el material, debe distribuir su contribución bajo la misma licencia. Esta es la cláusula que impide que una versión modificada de este estándar se convierta en una cerrada.',
     },
   },
 ];
@@ -51,11 +51,11 @@ export const PERMITTED: T[] = [
   },
   {
     en: 'Reproduce the standard inside a larger document, such as a policy manual or a vendor evaluation. Including this work in a collection does not make the whole collection an adaptation, so ShareAlike does not reach the rest of your document.',
-    es: 'Reproducir el estándar dentro de un documento mayor, como un manual de políticas o una evaluación de proveedores. Incluir esta obra en una colección no convierte a la colección entera en una adaptación, así que CompartirIgual no alcanza al resto de tu documento.',
+    es: 'Reproducir el estándar dentro de un documento mayor, como un manual de políticas o una evaluación de proveedores. Incluir esta obra en una colección no convierte a la colección entera en una adaptación, así que CompartirIgual no alcanza al resto de su documento.',
   },
   {
     en: 'Run the HWFA assessment and use its output however you like. The results describe your responsibilities rather than ours, so they belong to you with no licence obligation attached.',
-    es: 'Ejecutar la evaluación HWFA y usar su resultado como quieras. Los resultados describen tus responsabilidades y no las nuestras, así que son tuyos y no arrastran ninguna obligación de licencia.',
+    es: 'Ejecutar la evaluación HWFA y usar su resultado como quiera. Los resultados describen sus responsabilidades y no las nuestras, así que son suyos y no arrastran ninguna obligación de licencia.',
   },
   {
     en: 'Teach it, train on it, and use it inside a product. Commercial use costs nothing and needs no separate agreement.',
@@ -74,21 +74,21 @@ export const BOUNDARIES: { title: T; body: T }[] = [
     title: { en: 'The name is not licensed', es: 'El nombre no está licenciado' },
     body: {
       en: 'A Creative Commons licence covers copyright, never trademarks. “Hybrid Workforce Standard”, “HybridWF”, “HWF”, “WRM — Work Resource Management”, “HWFA” (formerly HWFS), the HWF- and G- identifier schemes and the mark are reserved. You may state that your work is based on or conforms to the standard; you may not publish a modified version under the same name, present it as an official edition, or operate a certification, seal or badge program invoking this standard — it certifies nothing and licenses nobody to certify in its name. A modified version renumbers its clauses: HWF-nn identifiers cite this text only.',
-      es: 'Una licencia Creative Commons cubre derechos de autor, nunca marcas. «Hybrid Workforce Standard», «HybridWF», «HWF», «WRM — Administración de Recursos de Trabajo», «HWFA» (antes HWFS), los esquemas de identificadores HWF- y G- y el símbolo quedan reservados. Podés declarar que tu trabajo se basa en el estándar o que conforma con él; no podés publicar una versión modificada con el mismo nombre, presentarla como edición oficial, ni operar un programa de certificación, sello o insignia invocando este estándar — no certifica nada y no licencia a nadie para certificar en su nombre. Una versión modificada renumera sus cláusulas: los identificadores HWF-nn citan solo este texto.',
+      es: 'Una licencia Creative Commons cubre derechos de autor, nunca marcas. «Hybrid Workforce Standard», «HybridWF», «HWF», «WRM — Administración de Recursos de Trabajo», «HWFA» (antes HWFS), los esquemas de identificadores HWF- y G- y el símbolo quedan reservados. Puede declarar que su trabajo se basa en el estándar o que conforma con él; no puede publicar una versión modificada con el mismo nombre, presentarla como edición oficial, ni operar un programa de certificación, sello o insignia invocando este estándar — no certifica nada y no licencia a nadie para certificar en su nombre. Una versión modificada renumera sus cláusulas: los identificadores HWF-nn citan solo este texto.',
     },
   },
   {
-    title: { en: 'Conformance is a claim about you', es: 'La conformidad es una afirmación sobre vos' },
+    title: { en: 'Conformance is a claim about you', es: 'La conformidad es una afirmación sobre usted' },
     body: {
       en: 'The licence lets you use the text. It does not let you claim endorsement. Saying “this deployment conforms to the Hybrid Workforce Standard v1.0” is a self-declaration about your own system, which the standard invites. Saying the standard certifies, approves or endorses your product is not permitted. No product is certified here.',
-      es: 'La licencia te permite usar el texto. No te permite afirmar respaldo. Decir «este deployment conforma con el Hybrid Workforce Standard v1.0» es una autodeclaración sobre tu propio sistema, que el estándar invita. Decir que el estándar certifica, aprueba o respalda tu producto no está permitido. Acá no se certifica ningún producto.',
+      es: 'La licencia le permite usar el texto. No le permite afirmar respaldo. Decir «este deployment conforma con el Hybrid Workforce Standard v1.0» es una autodeclaración sobre su propio sistema, que el estándar invita. Decir que el estándar certifica, aprueba o respalda su producto no está permitido. Acá no se certifica ningún producto.',
     },
   },
   {
     title: { en: 'Site code is separate', es: 'El código del sitio es aparte' },
     body: {
       en: 'This licence covers the standard and its supporting text: the clauses, the framework, the matrix, the glossary and the playbooks. The source code that renders this site is licensed separately in the repository. Do not assume one licence from the other.',
-      es: 'Esta licencia cubre el estándar y su texto de apoyo: las cláusulas, el marco, la matriz, el glosario y los playbooks. El código fuente que renderiza este sitio se licencia por separado en el repositorio. No asumas una licencia a partir de la otra.',
+      es: 'Esta licencia cubre el estándar y su texto de apoyo: las cláusulas, el marco, la matriz, el glosario y los playbooks. El código fuente que renderiza este sitio se licencia por separado en el repositorio. No asuma una licencia a partir de la otra.',
     },
   },
 ];
@@ -127,5 +127,5 @@ export function attributionPlain(url: string, author: string, lang: 'en' | 'es')
 
 export const ATTRIBUTION_NOTE: T = {
   en: 'Copy one of these when you reuse the material. Add “Changes were made.” if you modified it. The licence requires you to say so.',
-  es: 'Copiá uno de estos cuando reutilices el material. Agregá «Se hicieron cambios.» si lo modificaste. La licencia exige decirlo.',
+  es: 'Copie uno de estos cuando reutilice el material. Agregue «Se hicieron cambios.» si lo modificó. La licencia exige decirlo.',
 };

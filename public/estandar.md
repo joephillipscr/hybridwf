@@ -28,7 +28,7 @@ disclosure: "The author also builds AIEmpl.com, a commercial platform in this ca
 
 ## Cómo citar
 
-Citá las cláusulas por identificador, nunca por página ni número de sección. El texto de la cláusula es la unidad citable; las notas bajo cada cláusula son comentario y pueden revisarse entre versiones sin enmendar el estándar.
+Cite las cláusulas por identificador, nunca por página ni número de sección. El texto de la cláusula es la unidad citable; las notas bajo cada cláusula son comentario y pueden revisarse entre versiones sin enmendar el estándar.
 
 `Phillips, J. (2026). Hybrid Workforce Standard, Candidate 1.0, cláusula HWF-nn.`
 
@@ -69,7 +69,7 @@ El test es conjuntivo: un deployment califica como AI Employee solo cuando las n
 
 ### Task execution frente a role stewardship
 
-La frontera conceptual está entre ejecutar una tarea y custodiar un rol. Un agente puede ejecutar «enviá estos veinte seguimientos». Un AI Employee que ocupa el rol de SDR debe sostener el proceso recurrente dentro de límites definidos: identificar leads, investigar, contactar, seguir, registrar, escalar y reportar desempeño. La custodia no es propiedad: el puesto, su autoridad y su accountability tienen dueño humano. Lo que el recurso carga es la responsabilidad continua de sostener el proceso; lo que nunca puede cargar es la consecuencia.
+La frontera conceptual está entre ejecutar una tarea y custodiar un rol. Un agente puede ejecutar «envía estos veinte seguimientos». Un AI Employee que ocupa el rol de SDR debe sostener el proceso recurrente dentro de límites definidos: identificar leads, investigar, contactar, seguir, registrar, escalar y reportar desempeño. La custodia no es propiedad: el puesto, su autoridad y su accountability tienen dueño humano. Lo que el recurso carga es la responsabilidad continua de sostener el proceso; lo que nunca puede cargar es la consecuencia.
 
 **La IA ejecuta. La organización responde. Un humano gobierna.**
 
@@ -211,7 +211,7 @@ Toda declaración de conformidad publica estos nueve campos (HWF-71). Una declar
 
 **Toda acción material debe ser auditable, y la auditoría debe reconstruir los determinantes de la decisión además de su resultado: la política, el conocimiento, los resultados de herramientas, la autoridad y las versiones vigentes al momento de ejecutarse la acción. El relato que el propio modelo haga de su razonamiento puede apoyar esa reconstrucción pero nunca la sustituye. Qué cuenta como material lo fija la clase de riesgo del puesto: de Alto hacia arriba los determinantes se atan a cada acción, y para puestos Bajos y Moderados, correlacionar event logs contra el manifiesto de versiones de HWF-43 es reconstrucción conforme.**
 
-*Nota:* Actor, input, herramienta, acción, aprobación, resultado y timestamp te dicen que algo pasó. No te dicen por qué, y sin el porqué una organización no puede atribuir una falla a su causa: una política equivocada, un conocimiento que envejeció, una herramienta que devolvió datos malos, un modelo que erró, o un rol que nunca debió asignarse a un recurso artificial. Esos cinco exigen remedios distintos y dejan registros idénticos bajo una auditoría de solo-qué. La cláusula que más protege es HWF-34: con solo el resultado ves que el sistema respondió, nunca que debió dudar. El material ya está exigido en buena parte en otro lado — HWF-42 gobierna la procedencia de lo que el recurso sabía, HWF-43 las versiones de modelo, política, herramientas y knowledge base — así que lo que esta cláusula agrega es la obligación de ligarlas a una acción concreta en vez de sostenerlas como inventario general. El razonamiento declarado por un modelo es admisible como evidencia de apoyo y no es prueba de causa: lo que un sistema reporta haber pensado puede no ser lo que produjo su salida, y una organización que tome esa narración por el porqué va a escribir postmortems confiados y equivocados. Cuando se retengan trazas de razonamiento, su alcance, retención y borrado caen bajo HWF-42 como cualquier otra memoria, porque suelen contener datos de clientes recuperados.
+*Nota:* Actor, input, herramienta, acción, aprobación, resultado y timestamp dicen que algo pasó. No dicen por qué, y sin el porqué una organización no puede atribuir una falla a su causa: una política equivocada, un conocimiento que envejeció, una herramienta que devolvió datos malos, un modelo que erró, o un rol que nunca debió asignarse a un recurso artificial. Esos cinco exigen remedios distintos y dejan registros idénticos bajo una auditoría de solo-qué. La cláusula que más protege es HWF-34: con solo el resultado se ve que el sistema respondió, nunca que debió dudar. El material ya está exigido en buena parte en otro lado — HWF-42 gobierna la procedencia de lo que el recurso sabía, HWF-43 las versiones de modelo, política, herramientas y knowledge base — así que lo que esta cláusula agrega es la obligación de ligarlas a una acción concreta en vez de sostenerlas como inventario general. El razonamiento declarado por un modelo es admisible como evidencia de apoyo y no es prueba de causa: lo que un sistema reporta haber pensado puede no ser lo que produjo su salida, y una organización que tome esa narración por el porqué va a escribir postmortems confiados y equivocados. Cuando se retengan trazas de razonamiento, su alcance, retención y borrado caen bajo HWF-42 como cualquier otra memoria, porque suelen contener datos de clientes recuperados.
 
 #### HWF-42
 
@@ -314,7 +314,7 @@ El valor del modelo es el umbral que crea. No todo agente merece llamarse AI Emp
 1. ¿Actúa, o solo produce output?
 2. ¿Sostiene un rol recurrente, o solo tareas discretas?
 3. ¿Siguiendo su cadena de supervisión hacia arriba, se llega a un humano con nombre?
-4. ¿Podés reconstruir qué hizo el martes pasado y bajo qué autoridad?
+4. ¿Puede reconstruir qué hizo el martes pasado y bajo qué autoridad?
 5. ¿Puede suspenderse hoy, por alguien que sabe que esa decisión es suya?
 
 ## WRM — el marco
@@ -691,7 +691,7 @@ El framework debe ser reversible. Si el recurso artificial produce demasiado rie
 6. Ejecutar root-cause analysis: modelo, proceso, conocimiento, herramientas o mala asignación del rol.
 7. Decidir si el futuro del puesto es Human o Hybrid, no asumir que debe volver a ser 100% humano.
 
-Definí las condiciones de regreso antes del piloto, no después de conocer los resultados. ¿Qué tasa de error es inaceptable? ¿Cuánta intervención humana destruye la economía? ¿Qué incidente obliga a suspender? Escritas de antemano, estas reglas reducen el sesgo de defender una implementación por orgullo.
+Defina las condiciones de regreso antes del piloto, no después de conocer los resultados. ¿Qué tasa de error es inaceptable? ¿Cuánta intervención humana destruye la economía? ¿Qué incidente obliga a suspender? Escritas de antemano, estas reglas reducen el sesgo de defender una implementación por orgullo.
 
 ## Glosario
 
@@ -733,7 +733,7 @@ Un término, dos idiomas, una definición numerada. Cuando el término inglés s
 
 **G-17 · Least privilege / least authority** — Least privilege limita a qué puede acceder un recurso; least authority limita qué puede decidir o comprometer. Son controles distintos y ambos son necesarios.
 
-**G-18 · Role stewardship vs. task execution** — «Enviá estos veinte seguimientos» es una tarea. «Administrá el seguimiento comercial de esta cartera» es un rol: priorizar, respetar restricciones, conservar contexto, reconocer excepciones y escalar. El paso de una a otro es lo que justifica la categoría.
+**G-18 · Role stewardship vs. task execution** — «Envía estos veinte seguimientos» es una tarea. «Administra el seguimiento comercial de esta cartera» es un rol: priorizar, respetar restricciones, conservar contexto, reconocer excepciones y escalar. El paso de una a otro es lo que justifica la categoría.
 
 **G-19 · Plan de remediación** — El equivalente artificial de un plan de mejora: reducir scope, aumentar aprobaciones, corregir configuración o contexto, y validar nuevamente antes de restituir autoridad.
 
@@ -832,7 +832,7 @@ Esa única regla es la que le da valor a la divulgación anterior: el autor tien
 
 ### Estado actual
 
-La Candidate 1.0 es una propuesta de un solo autor. El Standard Review Board está en formación y cada uno de los nueve asientos está abierto. Publicarlo así es una decisión deliberada: un estándar que admite ser una propuesta es más creíble que uno que insinúa una institución que todavía no tiene. Y sigue siendo candidata hasta que un Board constituido bajo estas reglas la ratifique como versión 1.0 — el autor no puede ratificar su propio estándar. Si alguno de los nueve asientos te describe, la invitación está abierta.
+La Candidate 1.0 es una propuesta de un solo autor. El Standard Review Board está en formación y cada uno de los nueve asientos está abierto. Publicarlo así es una decisión deliberada: un estándar que admite ser una propuesta es más creíble que uno que insinúa una institución que todavía no tiene. Y sigue siendo candidata hasta que un Board constituido bajo estas reglas la ratifique como versión 1.0 — el autor no puede ratificar su propio estándar. Si alguno de los nueve asientos lo describe, la invitación está abierta.
 
 ### Hallazgos abiertos — en espera del Board
 
@@ -851,7 +851,7 @@ Hallazgos de la revisión adversarial de Candidate 1.0 que sobrevivieron la veri
 
 Creative Commons Atribución-CompartirIgual 4.0 Internacional (`CC-BY-SA-4.0`) — https://creativecommons.org/licenses/by-sa/4.0/
 
-Podés citar, embeber, enseñar, traducir y usar comercialmente este material con atribución. Una versión modificada debe llevar la misma licencia. Los nombres «Hybrid Workforce Standard», «HybridWF», «HWF», «WRM» y «HWFA» (antes HWFS) y los esquemas de identificadores HWF-/G- quedan reservados y no están licenciados: podés declarar que tu trabajo conforma con el estándar, pero no publicar una versión modificada con el mismo nombre, operar un programa de certificación o insignias invocándolo, ni reutilizar sus identificadores de cláusula para texto alterado — una versión modificada renumera sus cláusulas.
+Puede citar, embeber, enseñar, traducir y usar comercialmente este material con atribución. Una versión modificada debe llevar la misma licencia. Los nombres «Hybrid Workforce Standard», «HybridWF», «HWF», «WRM» y «HWFA» (antes HWFS) y los esquemas de identificadores HWF-/G- quedan reservados y no están licenciados: puede declarar que su trabajo conforma con el estándar, pero no publicar una versión modificada con el mismo nombre, operar un programa de certificación o insignias invocándolo, ni reutilizar sus identificadores de cláusula para texto alterado — una versión modificada renumera sus cláusulas.
 
 ## Fuentes
 
@@ -933,7 +933,7 @@ Podés citar, embeber, enseñar, traducir y usar comercialmente este material co
 - La certificación está deliberadamente fuera del alcance y no regresa: el autor tiene un interés comercial en la categoría, así que el estándar no puntúa productos, no emite sellos, y convierte la conformidad en una autodeclaración que cualquiera puede verificar o refutar — el público como auditor, estructura en vez de confianza.
 - El frente carga el preámbulo — la declaración del documento mismo —, la motivación y el objetivo estratégico firmados por el autor, la tesis corregida durante la redacción para que termine donde termina toda cadena (un AI Employee ocupa un rol; un humano responde por él), y la fórmula invariante: la IA ejecuta, la organización responde, un humano gobierna.
 - La gobernanza se reformó antes de llenar asiento alguno: nueve asientos con mayoría practicante y un solo académico; interés comercial con tope de dos asientos, con divulgación y recusación juzgada por los no conflictuados; honorario transparente, idéntico y publicado; nominación pública donde el Editor propone y no nombra a nadie; quorum de dos tercios sobre asientos ocupados y mayorías normativas contadas sobre todos los asientos; reversión por el Board de revisiones de notas; sucesión y remoción del Editor — y la regla más profunda: el Editor tiene voz, mas no voto. La publicación sigue siendo candidata hasta que un Board constituido bajo estas reglas la ratifique; el autor no puede ratificar su propio estándar.
-- El instrumento de asignación es el HWFA — antes Fit Score, renombrado porque un instrumento que deliberadamente se niega a producir un número no debería llamarse Score. Corre en tres etapas que encarnan el orden de HWF-01 (elegibilidad, luego riesgo, luego economía), puede responder automatización determinista — no necesitás un AI Employee — y devuelve un argumento en vez de un número, porque un puntaje permitiría lavar por aritmética una decisión ya tomada.
+- El instrumento de asignación es el HWFA — antes Fit Score, renombrado porque un instrumento que deliberadamente se niega a producir un número no debería llamarse Score. Corre en tres etapas que encarnan el orden de HWF-01 (elegibilidad, luego riesgo, luego economía), puede responder automatización determinista — no se necesita un AI Employee — y devuelve un argumento en vez de un número, porque un puntaje permitiría lavar por aritmética una decisión ya tomada.
 - Los números de cláusula cargan la arquitectura: el primer dígito nombra el bloque, el bloque 0 es el fundamento humano, y HWF-01 es la cláusula suprema — número y rango alineados. Una cláusula nueva toma el siguiente número libre en la decena de su bloque; un bloque que llega a nueve cláusulas está pidiendo partirse en una versión mayor, no extenderse.
 - Candidate 1.0 se revisó adversarialmente antes de que existiera Board alguno: veinte recomendaciones externas y un concilio de cinco asesores con refutación de pares anónima — cuarenta hallazgos. Todo lo confirmado se enmendó; siete ataques murieron contra texto existente; y ocho hallazgos confirmados en parte se publican como hallazgos abiertos, agenda del Board hasta que una versión los resuelva — porque un estándar que esconde sus huecos conocidos es marketing. Las consideraciones por cláusula que sobrevivieron ese proceso quedan registradas abajo.
 

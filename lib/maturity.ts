@@ -78,6 +78,6 @@ export const DIAGNOSTIC: { q: T }[] = [
   { q: { en: 'Does it act, or only produce output?', es: '¿Actúa, o solo produce output?' } },
   { q: { en: 'Does it hold a recurring role, or only discrete tasks?', es: '¿Sostiene un rol recurrente, o solo tareas discretas?' } },
   { q: { en: 'Following its supervision chain upward, does it reach a named human?', es: '¿Siguiendo su cadena de supervisión hacia arriba, se llega a un humano con nombre?' } },
-  { q: { en: 'Can you reconstruct what it did last Tuesday and under whose authority?', es: '¿Podés reconstruir qué hizo el martes pasado y bajo qué autoridad?' } },
+  { q: { en: 'Can you reconstruct what it did last Tuesday and under whose authority?', es: '¿Puede reconstruir qué hizo el martes pasado y bajo qué autoridad?' } },
   { q: { en: 'Can it be suspended today, by someone who knows they own that decision?', es: '¿Puede suspenderse hoy, por alguien que sabe que esa decisión es suya?' } },
 ];

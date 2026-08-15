@@ -73,7 +73,7 @@ const C = {
   toolTitle: { en: 'The instrument', es: 'El instrumento' },
   toolLede: {
     en: 'Thirteen dimensions, one responsibility at a time. It returns an argument you can defend in a meeting rather than a number you can hide behind.',
-    es: 'Trece dimensiones, una responsabilidad por vez. Devuelve un argumento que podés defender en una reunión, no un número detrás del cual esconderte.',
+    es: 'Trece dimensiones, una responsabilidad por vez. Devuelve un argumento defendible en una reunión, no un número detrás del cual esconderse.',
   },
   levelNote: { en: 'The category threshold sits at level', es: 'El umbral de la categoría está en el nivel' },
 };

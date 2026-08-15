@@ -17,7 +17,7 @@ import { SITE_URL, STANDARD_LABEL, type Locale } from '@/lib/site';
 const COPY = {
   responsibility: {
     en: 'Name the responsibility you are assessing',
-    es: 'Nombrá la responsabilidad que estás evaluando',
+    es: 'Nombre la responsabilidad que está evaluando',
   },
   placeholder: {
     en: 'e.g. Chasing overdue invoices under 30 days',
@@ -37,7 +37,7 @@ const COPY = {
   change: { en: 'What would change the answer', es: 'Qué cambiaría la respuesta' },
   incomplete: {
     en: 'Answer every dimension to get a result. The instrument is designed to make you look at all thirteen, including the ones you would rather skip.',
-    es: 'Respondé todas las dimensiones para obtener un resultado. El instrumento está diseñado para obligarte a mirar las trece, incluidas las que preferirías saltarte.',
+    es: 'Responda todas las dimensiones para obtener un resultado. El instrumento está diseñado para obligar a mirar las trece, incluidas las que preferiría saltarse.',
   },
   noScore: {
     en: 'This instrument returns no number. A score would let the decision be laundered through arithmetic — the point is to make the judgement visible, not to replace it.',

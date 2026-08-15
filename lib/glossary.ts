@@ -162,7 +162,7 @@ export const TERMS: Term[] = [
     term: { en: 'Role stewardship vs task execution', es: 'Role stewardship vs. task execution' },
     definition: {
       en: '“Send these twenty follow-ups” is a task. “Manage commercial follow-up for this portfolio” is a role: prioritising, respecting constraints, keeping context, recognising exceptions and escalating. The move from one to the other is what justifies the category.',
-      es: '«Enviá estos veinte seguimientos» es una tarea. «Administrá el seguimiento comercial de esta cartera» es un rol: priorizar, respetar restricciones, conservar contexto, reconocer excepciones y escalar. El paso de una a otro es lo que justifica la categoría.',
+      es: '«Envía estos veinte seguimientos» es una tarea. «Administra el seguimiento comercial de esta cartera» es un rol: priorizar, respetar restricciones, conservar contexto, reconocer excepciones y escalar. El paso de una a otro es lo que justifica la categoría.',
     },
   },
   {
