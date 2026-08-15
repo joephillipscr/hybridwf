@@ -25,8 +25,8 @@ const C = {
   antiTitle: { en: 'The anti-KPI', es: 'El anti-KPI' },
   scorecardTitle: { en: 'Scorecard', es: 'Scorecard' },
   scorecardLede: {
-    en: 'Fifteen indicators. Three of them belong on an executive dashboard; the rest belong to the person running the workforce.',
-    es: 'Quince indicadores. Tres pertenecen a un dashboard ejecutivo; el resto pertenecen a quien dirige el workforce.',
+    en: 'Twenty-one indicators. Six of them belong on an executive dashboard; the rest belong to the person running the workforce.',
+    es: 'Veintiún indicadores. Seis pertenecen a un dashboard ejecutivo; el resto pertenecen a quien dirige el workforce.',
   },
   ceo: { en: 'To the CEO', es: 'Al CEO' },
 };

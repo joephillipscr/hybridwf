@@ -29,13 +29,13 @@ const C = {
   is: {
     en: [
       'A test an organisation can run on its own deployment.',
-      'Seventeen normative clauses, cited by identifier.',
+      'Twenty-seven normative clauses, cited by identifier.',
       'A framework for deciding Human, Artificial or Hybrid before choosing a tool.',
       'Self-declared conformance, published if the organisation chooses.',
     ],
     es: [
       'Un test que una organización puede aplicar a su propio deployment.',
-      'Diecisiete cláusulas normativas, citables por identificador.',
+      'Veintisiete cláusulas normativas, citables por identificador.',
       'Un marco para decidir Humano, Artificial o Híbrido antes de elegir herramienta.',
       'Conformidad autodeclarada, publicable si la organización lo decide.',
     ],
@@ -61,8 +61,8 @@ const C = {
   },
   clausesTitle: { en: 'The standard', es: 'El estándar' },
   clausesLede: {
-    en: 'Seventeen clauses, none of them optional. A short standard that fully binds is more useful than a long one that mostly suggests.',
-    es: 'Diecisiete cláusulas, ninguna opcional. Un estándar corto que obliga del todo es más útil que uno largo que mayormente sugiere.',
+    en: 'Twenty-seven clauses in eight blocks, none of them optional. A short standard that fully binds is more useful than a long one that mostly suggests.',
+    es: 'Veintisiete cláusulas en ocho bloques, ninguna opcional. Un estándar corto que obliga del todo es más útil que uno largo que mayormente sugiere.',
   },
   allClauses: { en: 'All twenty-seven clauses', es: 'Las veintisiete cláusulas' },
   artTitle: { en: 'The framework underneath', es: 'El marco que lo sostiene' },
@@ -72,8 +72,8 @@ const C = {
   },
   toolTitle: { en: 'The instrument', es: 'El instrumento' },
   toolLede: {
-    en: 'Twelve dimensions, one responsibility at a time. It returns an argument you can defend in a meeting rather than a number you can hide behind.',
-    es: 'Doce dimensiones, una responsabilidad por vez. Devuelve un argumento que podés defender en una reunión, no un número detrás del cual esconderte.',
+    en: 'Thirteen dimensions, one responsibility at a time. It returns an argument you can defend in a meeting rather than a number you can hide behind.',
+    es: 'Trece dimensiones, una responsabilidad por vez. Devuelve un argumento que podés defender en una reunión, no un número detrás del cual esconderte.',
   },
   levelNote: { en: 'The category threshold sits at level', es: 'El umbral de la categoría está en el nivel' },
 };

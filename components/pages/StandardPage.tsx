@@ -24,6 +24,13 @@ const C = {
     en: 'The whole standard as one Markdown file: every clause, the framework, the 120-principle matrix, the instrument and the glossary. Built for pasting into a model context window or ingesting into a retrieval index.',
     es: 'El estándar entero en un archivo Markdown: cada cláusula, el marco, la matriz de 120 principios, el instrumento y el glosario. Pensado para pegarlo en la ventana de contexto de un modelo o ingerirlo en un índice de recuperación.',
   },
+  archTitle: { en: 'Eight blocks, one architecture', es: 'Ocho bloques, una arquitectura' },
+  archLede: {
+    en: 'The first digit of every clause identifier names its block; the second is its position within it. A short standard is easier to hold in memory when it is also easy to hold in view.',
+    es: 'El primer dígito de cada identificador de cláusula nombra su bloque; el segundo es su posición dentro de él. Un estándar corto es más fácil de retener cuando también es fácil de ver de un vistazo.',
+  },
+  archBlock: { en: 'Block', es: 'Bloque' },
+  archClauses: { en: 'Clauses', es: 'Cláusulas' },
 };
 
 export default function StandardPage({ lang }: { lang: Locale }) {
@@ -62,6 +69,40 @@ export default function StandardPage({ lang }: { lang: Locale }) {
               </a>
             </p>
           </figure>
+        </Reveal>
+      </Section>
+
+      <Section className="border-y border-border bg-raised">
+        <Reveal>
+          <h2 className="font-display text-2xl font-semibold">{C.archTitle[lang]}</h2>
+          <p className="prose-x mt-4 max-w-3xl">{C.archLede[lang]}</p>
+          <div className="mt-8 overflow-x-auto">
+            <table className="table-x min-w-[32rem]">
+              <thead>
+                <tr>
+                  <th>{C.archBlock[lang]}</th>
+                  <th>{C.archClauses[lang]}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {BLOCKS.map((b) => {
+                  const first = CLAUSES[b.from - 1];
+                  const last = CLAUSES[b.to - 1];
+                  const range = first.id === last.id ? first.id : `${first.id}–${last.id.split('-')[1]}`;
+                  return (
+                    <tr key={b.numeral}>
+                      <td className="font-medium text-fg">
+                        <a href={`#${first.id.toLowerCase()}`} className="hover:text-brand">
+                          {b.numeral} · {b.title[lang]}
+                        </a>
+                      </td>
+                      <td className="clause-id font-mono">{range}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
         </Reveal>
       </Section>
 
