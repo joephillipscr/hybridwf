@@ -26,7 +26,7 @@ import { AUTONOMY, AUTONOMY_NOTE, DIMENSIONS } from '../lib/hwfa';
 import { ANTI_KPI, CAPACITY_ELEVATION, CEO_NOTE, DIRECTION_NOTE, KPIS, MISSION, PLACEMENT, RESPONSIBILITIES, ROLE_NAME } from '../lib/role';
 import { BACK, BACK_INTRO, BACK_NOTE, FORWARD, FORWARD_INTRO, FORWARD_PRECONDITION, FORWARD_RULE } from '../lib/transitions';
 import { ACRONYM_RULE, GLOSSARY_NOTE, TERMS as GLOSSARY_TERMS } from '../lib/glossary';
-import { DISCLOSURE, MAPPING, MODEL, OPEN_FINDINGS, PROCESS, RELEASES, RULES as GOV_RULES, SEATS, STATUS_NOTE, VERSIONING_POLICY } from '../lib/governance';
+import { DISCLOSURE, MODEL, OPEN_FINDINGS, PROCESS, RATIONALE, RELEASES, RULES as GOV_RULES, SEATS, STATUS_NOTE, VERSIONING_POLICY } from '../lib/governance';
 import { LICENSE, attributionPlain } from '../lib/license';
 import { CONCEPTUAL, KIND_LABEL, METHOD_NOTES, SOURCES, type Source } from '../lib/sources';
 
@@ -355,9 +355,13 @@ function build(lang: Locale): string {
     o.push('');
   });
   p(L(VERSIONING_POLICY, lang));
-  h(3, L(MAPPING.title, lang));
-  p(L(MAPPING.intro, lang));
-  p(MAPPING.rows.map((r) => `${r.now} ← ${r.was}`).join(' · '));
+  h(3, L(RATIONALE.title, lang));
+  p(L(RATIONALE.intro, lang));
+  RATIONALE.blocks.forEach((b) => {
+    o.push(`**${b.numeral} · ${L(b.title, lang)}**`, '');
+    b.items.forEach((it) => o.push(`- **${it.id}** — ${L(it.note, lang)}`));
+    o.push('');
+  });
 
   return o.join('\n').replace(/\n{3,}/g, '\n\n').trimEnd() + '\n';
 }

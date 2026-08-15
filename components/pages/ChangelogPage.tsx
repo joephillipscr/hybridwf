@@ -1,6 +1,6 @@
 import Reveal from '../Reveal';
 import { PageHeader, Section, SectionHeading } from '../Section';
-import { MAPPING, RELEASES, VERSIONING_POLICY } from '@/lib/governance';
+import { RATIONALE, RELEASES, VERSIONING_POLICY } from '@/lib/governance';
 import type { Locale } from '@/lib/site';
 
 const C = {
@@ -42,6 +42,31 @@ export default function ChangelogPage({ lang }: { lang: Locale }) {
         </div>
       </Section>
 
+      <Section className="border-t border-border">
+        <SectionHeading
+          eyebrow={lang === 'en' ? 'Record' : 'Registro'}
+          title={RATIONALE.title[lang]}
+        />
+        <p className="prose-x mt-6 max-w-3xl">{RATIONALE.intro[lang]}</p>
+        <div className="mt-10 space-y-12">
+          {RATIONALE.blocks.map((b) => (
+            <Reveal key={b.numeral}>
+              <div>
+                <h3 className="eyebrow mb-5">{b.numeral} · {b.title[lang]}</h3>
+                <dl className="space-y-5">
+                  {b.items.map((it) => (
+                    <div key={it.id} className="max-w-3xl">
+                      <dt className="clause-id">{it.id}</dt>
+                      <dd className="mt-1.5 text-[0.95rem] leading-relaxed text-muted">{it.note[lang]}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </Section>
+
       <Section className="border-t border-border bg-raised">
         <SectionHeading
           eyebrow={lang === 'en' ? 'Policy' : 'Política'}
@@ -49,18 +74,6 @@ export default function ChangelogPage({ lang }: { lang: Locale }) {
         />
         <Reveal>
           <p className="prose-x mt-6">{VERSIONING_POLICY[lang]}</p>
-
-        <div className="mt-10 max-w-2xl">
-          <p className="eyebrow">{MAPPING.title[lang]}</p>
-          <p className="mt-3 text-sm leading-relaxed text-muted">{MAPPING.intro[lang]}</p>
-          <div className="mt-4 grid grid-cols-3 gap-x-6 gap-y-1.5 font-mono text-xs text-muted sm:grid-cols-4 md:grid-cols-5">
-            {MAPPING.rows.map((r) => (
-              <span key={r.now}>
-                <span className="text-fg">{r.now}</span> ← {r.was}
-              </span>
-            ))}
-          </div>
-        </div>
         </Reveal>
       </Section>
     </>
