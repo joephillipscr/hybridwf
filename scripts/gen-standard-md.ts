@@ -387,7 +387,7 @@ function llmsTxt(): string {
     '',
     '## Citing',
     '',
-    'Cite clauses by identifier (HWF-20), glossary entries by identifier (G-13) and principles by number (#44). Never cite by page or section number. Clause text is frozen between versions; the notes beneath each clause are commentary and may change without amending the standard.',
+    'Cite clauses by identifier (HWF-44), glossary entries by identifier (G-13) and principles by number (#44). Never cite by page or section number. Clause text is frozen between versions; the notes beneath each clause are commentary and may change without amending the standard.',
     '',
   ].join('\n');
 }

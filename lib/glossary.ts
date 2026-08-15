@@ -16,8 +16,8 @@ export const GLOSSARY_NOTE: T = {
 
 /** The rule that keeps a translated edition citable against the original. */
 export const ACRONYM_RULE: T = {
-  en: 'Acronyms do not translate. WRM, HWFA and the HWF- clause identifiers stay identical in every edition of this standard, present and future; only the words they expand to are localised. A reader who cites WRM or HWF-20 in any language is pointing at the same thing.',
-  es: 'Los acrónimos no se traducen. WRM, HWFA y los identificadores de cláusula HWF- se mantienen idénticos en toda edición de este estándar, presente y futura; solo se localizan las palabras que expanden. Quien cite WRM o HWF-20 en cualquier idioma está señalando lo mismo.',
+  en: 'Acronyms do not translate. WRM, HWFA and the HWF- clause identifiers stay identical in every edition of this standard, present and future; only the words they expand to are localised. A reader who cites WRM or HWF-44 in any language is pointing at the same thing.',
+  es: 'Los acrónimos no se traducen. WRM, HWFA y los identificadores de cláusula HWF- se mantienen idénticos en toda edición de este estándar, presente y futura; solo se localizan las palabras que expanden. Quien cite WRM o HWF-44 en cualquier idioma está señalando lo mismo.',
 };
 
 export const TERMS: Term[] = [
@@ -49,8 +49,8 @@ export const TERMS: Term[] = [
     id: 'G-04',
     term: { en: 'Accountable owner', es: 'Accountable owner' },
     definition: {
-      en: 'The single identified human, or human governance body, that answers for an AI Employee’s configuration, authority, performance and exceptions. Exactly one, even when the resource receives work from several areas and even when its day-to-day supervision has been delegated. Accountability is never delegable to an artificial resource, because answering for an outcome requires the capacity to bear a consequence. Primary, not exclusive: system, data, security, compliance, vendor and director obligations survive intact (HWF-09). A governance body qualifies as owner only with an identified chair, stated decision rules and emergency capacity.',
-      es: 'El único humano identificado, o cuerpo humano de gobierno, que responde por la configuración, autoridad, desempeño y excepciones de un AI Employee. Exactamente uno, aunque el recurso reciba trabajo de varias áreas y aunque su supervisión cotidiana esté delegada. La accountability nunca es delegable a un recurso artificial, porque responder por un resultado exige capacidad de soportar una consecuencia. Primario, no exclusivo: las obligaciones de sistema, datos, seguridad, compliance, proveedor y directores sobreviven intactas (HWF-09). Un cuerpo de gobierno califica como owner solo con presidente identificado, reglas de decisión declaradas y capacidad de emergencia.',
+      en: 'The single identified human, or human governance body, that answers for an AI Employee’s configuration, authority, performance and exceptions. Exactly one, even when the resource receives work from several areas and even when its day-to-day supervision has been delegated. Accountability is never delegable to an artificial resource, because answering for an outcome requires the capacity to bear a consequence. Primary, not exclusive: system, data, security, compliance, vendor and director obligations survive intact (HWF-21). A governance body qualifies as owner only with an identified chair, stated decision rules and emergency capacity.',
+      es: 'El único humano identificado, o cuerpo humano de gobierno, que responde por la configuración, autoridad, desempeño y excepciones de un AI Employee. Exactamente uno, aunque el recurso reciba trabajo de varias áreas y aunque su supervisión cotidiana esté delegada. La accountability nunca es delegable a un recurso artificial, porque responder por un resultado exige capacidad de soportar una consecuencia. Primario, no exclusivo: las obligaciones de sistema, datos, seguridad, compliance, proveedor y directores sobreviven intactas (HWF-21). Un cuerpo de gobierno califica como owner solo con presidente identificado, reglas de decisión declaradas y capacidad de emergencia.',
     },
   },
   {
@@ -65,8 +65,8 @@ export const TERMS: Term[] = [
     id: 'G-06',
     term: { en: 'Context Provisioning', es: 'Context Provisioning' },
     definition: {
-      en: 'The onboarding equivalent for an artificial resource. Divided into must know, may consult and must not access. The third category has two legitimate grounds: protecting the information from the resource, and protecting the decision from the information (HWF-16); either way, the restriction is recorded, never silent.',
-      es: 'El equivalente al onboarding para un recurso artificial. Se divide en debe saber, puede consultar y no debe acceder. La tercera categoría tiene dos fundamentos legítimos: proteger la información del recurso, y proteger la decisión de la información (HWF-16); en ambos casos la restricción queda registrada, nunca silenciosa.',
+      en: 'The onboarding equivalent for an artificial resource. Divided into must know, may consult and must not access. The third category has two legitimate grounds: protecting the information from the resource, and protecting the decision from the information (HWF-35); either way, the restriction is recorded, never silent.',
+      es: 'El equivalente al onboarding para un recurso artificial. Se divide en debe saber, puede consultar y no debe acceder. La tercera categoría tiene dos fundamentos legítimos: proteger la información del recurso, y proteger la decisión de la información (HWF-35); en ambos casos la restricción queda registrada, nunca silenciosa.',
     },
   },
   {
@@ -249,24 +249,24 @@ export const TERMS: Term[] = [
     id: 'G-30',
     term: { en: 'Simulated interiority', es: 'Interioridad simulada' },
     definition: {
-      en: 'Behaviour whose result is that a person believes an artificial resource undergoes an inner life, when nothing warrants the attribution: injected latency and typing indicators that stand in for thinking, verbal hesitation, or claims of feeling and care. Distinct from clear and courteous communication, which is competence. The tests are HWF-08’s two verifiable standards — whether a reasonable person, knowing what was disclosed, would form a false belief from the signal, and whether recorded optimisation objectives targeted emotional dependency or vulnerability. Prohibited even where the system has disclosed that it is software.',
-      es: 'Conducta cuyo resultado es que una persona crea que un recurso artificial atraviesa una vida interior, cuando nada garantiza la atribución: latencia inyectada e indicadores de tipeo que hacen de pensamiento, vacilación verbal, o declaraciones de sentimiento y cuidado. Se distingue de la comunicación clara y cortés, que es competencia. Las pruebas son los dos estándares verificables de HWF-08 — si una persona razonable, sabiendo lo divulgado, formaría una creencia falsa a partir de la señal, y si los objetivos registrados de optimización apuntaron a la dependencia emocional o la vulnerabilidad. Prohibida incluso cuando el sistema haya declarado que es software.',
+      en: 'Behaviour whose result is that a person believes an artificial resource undergoes an inner life, when nothing warrants the attribution: injected latency and typing indicators that stand in for thinking, verbal hesitation, or claims of feeling and care. Distinct from clear and courteous communication, which is competence. The tests are HWF-14’s two verifiable standards — whether a reasonable person, knowing what was disclosed, would form a false belief from the signal, and whether recorded optimisation objectives targeted emotional dependency or vulnerability. Prohibited even where the system has disclosed that it is software.',
+      es: 'Conducta cuyo resultado es que una persona crea que un recurso artificial atraviesa una vida interior, cuando nada garantiza la atribución: latencia inyectada e indicadores de tipeo que hacen de pensamiento, vacilación verbal, o declaraciones de sentimiento y cuidado. Se distingue de la comunicación clara y cortés, que es competencia. Las pruebas son los dos estándares verificables de HWF-14 — si una persona razonable, sabiendo lo divulgado, formaría una creencia falsa a partir de la señal, y si los objetivos registrados de optimización apuntaron a la dependencia emocional o la vulnerabilidad. Prohibida incluso cuando el sistema haya declarado que es software.',
     },
   },
   {
     id: 'G-31',
     term: { en: 'Context boundary record', es: 'Registro de frontera de contexto' },
     definition: {
-      en: 'The recorded artifact behind every context restriction (HWF-16): what is withheld from an artificial resource, on which of the two legitimate grounds — protecting the information, or preventing measurable degradation of the decision through anchoring, contamination or saturation — decided by whom, and versioned like any other authority. It differs from an omission by exactly one property: it is written. An unrecorded restriction is a gap, and responsibility for whatever it degrades lies with whoever withheld the context.',
-      es: 'El artefacto registrado detrás de toda restricción de contexto (HWF-16): qué se le retiene a un recurso artificial, bajo cuál de los dos fundamentos legítimos — proteger la información, o prevenir la degradación medible de la decisión por anclaje, contaminación o saturación — decidido por quién, y versionado como cualquier otra autoridad. Se distingue de una omisión por exactamente una propiedad: está escrito. Una restricción sin registro es un hueco, y la responsabilidad por lo que degrade recae en quien retuvo el contexto.',
+      en: 'The recorded artifact behind every context restriction (HWF-35): what is withheld from an artificial resource, on which of the two legitimate grounds — protecting the information, or preventing measurable degradation of the decision through anchoring, contamination or saturation — decided by whom, and versioned like any other authority. It differs from an omission by exactly one property: it is written. An unrecorded restriction is a gap, and responsibility for whatever it degrades lies with whoever withheld the context.',
+      es: 'El artefacto registrado detrás de toda restricción de contexto (HWF-35): qué se le retiene a un recurso artificial, bajo cuál de los dos fundamentos legítimos — proteger la información, o prevenir la degradación medible de la decisión por anclaje, contaminación o saturación — decidido por quién, y versionado como cualquier otra autoridad. Se distingue de una omisión por exactamente una propiedad: está escrito. Una restricción sin registro es un hueco, y la responsabilidad por lo que degrade recae en quien retuvo el contexto.',
     },
   },
   {
     id: 'G-32',
     term: { en: 'Digital zombie', es: 'Zombi digital' },
     definition: {
-      en: 'An AI Employee whose post has lost its justification but which keeps operating with credentials, data access and standing authority intact. It is what accumulates when nothing forces the existence question: even the weak triggers that sometimes prune human posts — a salary line under budget review, a resignation forcing a backfill decision — do not exist for a resource that costs little and never resigns. Prevented by the re-justification cadence of HWF-25; dismantled through lifecycle retirement, with offboarding and revocation.',
-      es: 'Un AI Employee cuyo puesto perdió su justificación pero que sigue operando con credenciales, accesos a datos y autoridad vigente intactos. Es lo que se acumula cuando nada fuerza la pregunta de existencia: hasta los disparadores débiles que a veces podan puestos humanos — una línea de salario bajo revisión de presupuesto, una renuncia que fuerza la decisión de reemplazo — no existen para un recurso que cuesta poco y no renuncia jamás. Se previene con la cadencia de re-justificación de HWF-25; se desmonta con el retiro del lifecycle, con offboarding y revocación.',
+      en: 'An AI Employee whose post has lost its justification but which keeps operating with credentials, data access and standing authority intact. It is what accumulates when nothing forces the existence question: even the weak triggers that sometimes prune human posts — a salary line under budget review, a resignation forcing a backfill decision — do not exist for a resource that costs little and never resigns. Prevented by the re-justification cadence of HWF-63; dismantled through lifecycle retirement, with offboarding and revocation.',
+      es: 'Un AI Employee cuyo puesto perdió su justificación pero que sigue operando con credenciales, accesos a datos y autoridad vigente intactos. Es lo que se acumula cuando nada fuerza la pregunta de existencia: hasta los disparadores débiles que a veces podan puestos humanos — una línea de salario bajo revisión de presupuesto, una renuncia que fuerza la decisión de reemplazo — no existen para un recurso que cuesta poco y no renuncia jamás. Se previene con la cadencia de re-justificación de HWF-63; se desmonta con el retiro del lifecycle, con offboarding y revocación.',
     },
   },
   {
@@ -281,16 +281,16 @@ export const TERMS: Term[] = [
     id: 'G-34',
     term: { en: 'Unit of conformance', es: 'Unidad de conformidad' },
     definition: {
-      en: 'The thing a conformance claim can be about: one deployment — one role, one role-contract version, one accountable owner, one assessment period with an expiry. Products, platforms, models and organisations in the abstract cannot conform, whatever their marketing says; a vendor may only claim that it enables conformant deployments (HWF-27).',
-      es: 'Aquello sobre lo que puede tratar una declaración de conformidad: un deployment — un rol, una versión de contrato de rol, un accountable owner, un periodo de evaluación con expiración. Productos, plataformas, modelos y organizaciones en abstracto no pueden conformar, diga lo que diga su marketing; un proveedor solo puede declarar que habilita deployments conformes (HWF-27).',
+      en: 'The thing a conformance claim can be about: one deployment — one role, one role-contract version, one accountable owner, one assessment period with an expiry. Products, platforms, models and organisations in the abstract cannot conform, whatever their marketing says; a vendor may only claim that it enables conformant deployments (HWF-71).',
+      es: 'Aquello sobre lo que puede tratar una declaración de conformidad: un deployment — un rol, una versión de contrato de rol, un accountable owner, un periodo de evaluación con expiración. Productos, plataformas, modelos y organizaciones en abstracto no pueden conformar, diga lo que diga su marketing; un proveedor solo puede declarar que habilita deployments conformes (HWF-71).',
     },
   },
   {
     id: 'G-35',
     term: { en: 'Risk class', es: 'Clase de riesgo' },
     definition: {
-      en: 'One of five tiers — Prohibited, Critical, High, Moderate, Low — assigned to an AI Employee post by judging inherent risk across seven factors, before controls. Controls lower residual risk, never the class (HWF-21). Declared in every conformance claim (HWF-27); from Critical upward every action terminates in a final human decision, and a Prohibited use has no conformant configuration at all.',
-      es: 'Uno de cinco niveles — Prohibido, Crítico, Alto, Moderado, Bajo — asignado a un puesto de AI Employee juzgando el riesgo inherente a través de siete factores, antes de los controles. Los controles bajan el riesgo residual, nunca la clase (HWF-21). Se declara en toda declaración de conformidad (HWF-27); de Crítico hacia arriba toda acción termina en una decisión humana final, y un uso Prohibido no tiene configuración conforme alguna.',
+      en: 'One of five tiers — Prohibited, Critical, High, Moderate, Low — assigned to an AI Employee post by judging inherent risk across seven factors, before controls. Controls lower residual risk, never the class (HWF-51). Declared in every conformance claim (HWF-71); from Critical upward every action terminates in a final human decision, and a Prohibited use has no conformant configuration at all.',
+      es: 'Uno de cinco niveles — Prohibido, Crítico, Alto, Moderado, Bajo — asignado a un puesto de AI Employee juzgando el riesgo inherente a través de siete factores, antes de los controles. Los controles bajan el riesgo residual, nunca la clase (HWF-51). Se declara en toda declaración de conformidad (HWF-71); de Crítico hacia arriba toda acción termina en una decisión humana final, y un uso Prohibido no tiene configuración conforme alguna.',
     },
   },
   {
@@ -305,8 +305,8 @@ export const TERMS: Term[] = [
     id: 'G-37',
     term: { en: 'Human impact assessment', es: 'Evaluación de impacto humano' },
     definition: {
-      en: 'The recorded assessment HWF-03 requires before any material transformation of a post: who is affected; changes to work, autonomy and surveillance; deskilling; exception load; discrimination and accessibility; displacement and headcount; training and reassignment; effects on customers and third parties. Completed, informed and consulted before the transition begins — not after. It is not obliged to be favourable; it is obliged to be honest. Distinct from the risk-class impact assessment of HWF-21, which protects the operation: this one protects the people.',
-      es: 'La evaluación registrada que HWF-03 exige antes de cualquier transformación material de un puesto: a quiénes afecta; cambios en trabajo, autonomía y vigilancia; deskilling; carga de excepciones; discriminación y accesibilidad; desplazamiento y reducción de personal; capacitación y reasignación; efectos sobre clientes y terceros. Completada, informada y consultada antes de que la transición comience — no después. No está obligada a ser favorable; está obligada a ser honesta. Distinta de la evaluación de impacto por clase de riesgo de HWF-21, que protege la operación: esta protege a las personas.',
+      en: 'The recorded assessment HWF-03 requires before any material transformation of a post: who is affected; changes to work, autonomy and surveillance; deskilling; exception load; discrimination and accessibility; displacement and headcount; training and reassignment; effects on customers and third parties. Completed, informed and consulted before the transition begins — not after. It is not obliged to be favourable; it is obliged to be honest. Distinct from the risk-class impact assessment of HWF-51, which protects the operation: this one protects the people.',
+      es: 'La evaluación registrada que HWF-03 exige antes de cualquier transformación material de un puesto: a quiénes afecta; cambios en trabajo, autonomía y vigilancia; deskilling; carga de excepciones; discriminación y accesibilidad; desplazamiento y reducción de personal; capacitación y reasignación; efectos sobre clientes y terceros. Completada, informada y consultada antes de que la transición comience — no después. No está obligada a ser favorable; está obligada a ser honesta. Distinta de la evaluación de impacto por clase de riesgo de HWF-51, que protege la operación: esta protege a las personas.',
     },
   },
   {
@@ -321,24 +321,24 @@ export const TERMS: Term[] = [
     id: 'G-39',
     term: { en: 'Moral crumple zone', es: 'Zona de absorción moral' },
     definition: {
-      en: 'The human placed at the end of an automated process who absorbs the blame for failures whose determinants lie upstream in policy, design, tooling or deployment. Named by Elish, who showed that blame in automated systems lands on the nearest human while control sat elsewhere. Prohibited by HWF-11: blame follows the determinants (HWF-17), not the proximity, and the supervising human answers only for what they controlled.',
-      es: 'El humano colocado al final de un proceso automatizado que absorbe la culpa de fallas cuyos determinantes están aguas arriba, en la política, el diseño, el tooling o el deployment. Nombrada por Elish, quien mostró que la culpa en sistemas automatizados aterriza en el humano más cercano mientras el control estaba en otra parte. Prohibida por HWF-11: la culpa sigue a los determinantes (HWF-17), no a la proximidad, y el humano que supervisa responde solo por lo que controló.',
+      en: 'The human placed at the end of an automated process who absorbs the blame for failures whose determinants lie upstream in policy, design, tooling or deployment. Named by Elish, who showed that blame in automated systems lands on the nearest human while control sat elsewhere. Prohibited by HWF-23: blame follows the determinants (HWF-41), not the proximity, and the supervising human answers only for what they controlled.',
+      es: 'El humano colocado al final de un proceso automatizado que absorbe la culpa de fallas cuyos determinantes están aguas arriba, en la política, el diseño, el tooling o el deployment. Nombrada por Elish, quien mostró que la culpa en sistemas automatizados aterriza en el humano más cercano mientras el control estaba en otra parte. Prohibida por HWF-23: la culpa sigue a los determinantes (HWF-41), no a la proximidad, y el humano que supervisa responde solo por lo que controló.',
     },
   },
   {
     id: 'G-40',
     term: { en: 'Derived inference', es: 'Inferencia derivada' },
     definition: {
-      en: 'Data the deployment manufactures about a person rather than collects from them: a probability of financial distress, an inferred health condition, a predicted intent. Governed under HWF-18 as if collected — purpose, basis, minimisation, deletion — and often more sensitive than anything the person actually provided. An inference the person never handed over is still their data.',
-      es: 'Un dato que el deployment fabrica sobre una persona en vez de recolectarlo de ella: una probabilidad de apuros financieros, una condición de salud inferida, una intención predicha. Gobernado bajo HWF-18 como si se hubiera recolectado — finalidad, base, minimización, eliminación — y con frecuencia más sensible que todo lo que la persona sí entregó. Una inferencia que la persona nunca entregó sigue siendo su dato.',
+      en: 'Data the deployment manufactures about a person rather than collects from them: a probability of financial distress, an inferred health condition, a predicted intent. Governed under HWF-42 as if collected — purpose, basis, minimisation, deletion — and often more sensitive than anything the person actually provided. An inference the person never handed over is still their data.',
+      es: 'Un dato que el deployment fabrica sobre una persona en vez de recolectarlo de ella: una probabilidad de apuros financieros, una condición de salud inferida, una intención predicha. Gobernado bajo HWF-42 como si se hubiera recolectado — finalidad, base, minimización, eliminación — y con frecuencia más sensible que todo lo que la persona sí entregó. Una inferencia que la persona nunca entregó sigue siendo su dato.',
     },
   },
   {
     id: 'G-41',
     term: { en: 'Correlated failure', es: 'Falla correlacionada' },
     definition: {
-      en: 'The failure mode of model monoculture: a hundred humans err in a hundred different ways, while a hundred AI Employees running the same model or vendor stack err identically and simultaneously, sharing blind spots, biases and exploits. The one risk classical administration never had. Mitigated by diversity of models and vendors, fallback resources and succession planning; named as a validation item for AI teams by HWF-22.',
-      es: 'El modo de falla de la monocultura de modelo: cien humanos se equivocan de cien maneras distintas, mientras cien AI Employees corriendo el mismo modelo o stack de proveedor se equivocan idénticamente y a la vez, compartiendo puntos ciegos, sesgos y exploits. El único riesgo que la administración clásica nunca tuvo. Se mitiga con diversidad de modelos y proveedores, recursos de fallback y planes de sucesión; nombrado como ítem de validación para equipos de IA por HWF-22.',
+      en: 'The failure mode of model monoculture: a hundred humans err in a hundred different ways, while a hundred AI Employees running the same model or vendor stack err identically and simultaneously, sharing blind spots, biases and exploits. The one risk classical administration never had. Mitigated by diversity of models and vendors, fallback resources and succession planning; named as a validation item for AI teams by HWF-52.',
+      es: 'El modo de falla de la monocultura de modelo: cien humanos se equivocan de cien maneras distintas, mientras cien AI Employees corriendo el mismo modelo o stack de proveedor se equivocan idénticamente y a la vez, compartiendo puntos ciegos, sesgos y exploits. El único riesgo que la administración clásica nunca tuvo. Se mitiga con diversidad de modelos y proveedores, recursos de fallback y planes de sucesión; nombrado como ítem de validación para equipos de IA por HWF-52.',
     },
   },
   {

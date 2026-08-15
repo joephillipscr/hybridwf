@@ -44,13 +44,13 @@ const C = {
     en: [
       'A certification. No product is scored, no seal is issued.',
       'A vendor ranking or a maturity assessment sold to competitors.',
-      'A funnel for the author’s platform — which, under HWF-27, can never claim conformance with this standard.',
+      'A funnel for the author’s platform — which, under HWF-71, can never claim conformance with this standard.',
       'A legal claim that software can be employed.',
     ],
     es: [
       'Una certificación. Ningún producto se puntúa, ningún sello se emite.',
       'Un ranking de vendors ni un assessment vendido a competidores.',
-      'Un embudo hacia la plataforma del autor — que, bajo HWF-27, no puede jamás reclamar conformidad con este estándar.',
+      'Un embudo hacia la plataforma del autor — que, bajo HWF-71, no puede jamás reclamar conformidad con este estándar.',
       'Una afirmación jurídica de que el software puede ser empleado.',
     ],
   },

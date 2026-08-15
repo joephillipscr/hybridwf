@@ -349,8 +349,8 @@ export function evaluate(a: Answers): Result {
   if (v('volume') === 3 && (risk === 'low' || risk === 'moderate')) {
     risk = risk === 'low' ? 'moderate' : 'high';
     mark('volume', {
-      en: 'Volume multiplies whatever can go wrong: at this scale the same error rate lands on many more people, so the class rises — scale is one of HWF-21’s seven factors, and it never argues for automation by itself.',
-      es: 'El volumen multiplica todo lo que puede salir mal: a esta escala la misma tasa de error alcanza a muchas más personas, así que la clase sube — la escala es uno de los siete factores de HWF-21, y por sí sola nunca es argumento para automatizar.',
+      en: 'Volume multiplies whatever can go wrong: at this scale the same error rate lands on many more people, so the class rises — scale is one of HWF-51’s seven factors, and it never argues for automation by itself.',
+      es: 'El volumen multiplica todo lo que puede salir mal: a esta escala la misma tasa de error alcanza a muchas más personas, así que la clase sube — la escala es uno de los siete factores de HWF-51, y por sí sola nunca es argumento para automatizar.',
     });
   }
   if (reservedCore) risk = 'critical';
@@ -456,8 +456,8 @@ export function evaluate(a: Answers): Result {
   }
   if (v('reversibility') <= 1) {
     controls.push({
-      en: 'Every irreversible action needs an explicit approval gate and a named person who owns the kill switch — exercised on a stated cadence (HWF-11).',
-      es: 'Toda acción irreversible necesita un approval gate explícito y una persona con nombre dueña del kill switch — ejercitado con cadencia declarada (HWF-11).',
+      en: 'Every irreversible action needs an explicit approval gate and a named person who owns the kill switch — exercised on a stated cadence (HWF-23).',
+      es: 'Toda acción irreversible necesita un approval gate explícito y una persona con nombre dueña del kill switch — ejercitado con cadencia declarada (HWF-23).',
     });
   }
   if (allocation !== 'human') {
