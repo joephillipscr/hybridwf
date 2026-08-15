@@ -7,6 +7,7 @@ import {
   PROCESS,
   RULES,
   SEATS,
+  OPEN_FINDINGS,
   STATUS_NOTE,
 } from '@/lib/governance';
 import { AUTHOR, PLATFORM_DISCLOSURE, route, type Locale } from '@/lib/site';
@@ -165,6 +166,21 @@ export default function GovernancePage({ lang }: { lang: Locale }) {
           <div className="max-w-3xl">
             <p className="eyebrow">{STATUS_NOTE.title[lang]}</p>
             <p className="prose-x mt-4">{STATUS_NOTE.body[lang]}</p>
+          </div>
+        </Reveal>
+      </Section>
+
+      {/* ---------- Open findings ---------- */}
+      <Section>
+        <Reveal>
+          <div className="max-w-3xl">
+            <p className="eyebrow">{OPEN_FINDINGS.title[lang]}</p>
+            <p className="prose-x mt-4">{OPEN_FINDINGS.intro[lang]}</p>
+            <ol className="mt-5 list-decimal space-y-2.5 pl-5 text-[0.95rem] leading-relaxed text-muted">
+              {OPEN_FINDINGS.items.map((f, i) => (
+                <li key={i}>{f[lang]}</li>
+              ))}
+            </ol>
           </div>
         </Reveal>
       </Section>

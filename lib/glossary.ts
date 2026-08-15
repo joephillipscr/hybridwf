@@ -41,8 +41,8 @@ export const TERMS: Term[] = [
     id: 'G-03',
     term: { en: 'AI Role Contract', es: 'AI Role Contract' },
     definition: {
-      en: 'The operational contract of an artificial post: mission, responsibilities, results, KPIs, authority, exclusions, tools, access, service level, escalation, suspension criteria and accountable owner. Versioned. The equivalent of a job description plus an explicit operating agreement — a prompt gives instructions, a role contract gives responsibility.',
-      es: 'El contrato operacional de un puesto artificial: misión, responsabilidades, resultados, KPIs, autoridad, exclusiones, herramientas, accesos, nivel de servicio, escalamiento, criterios de suspensión y accountable owner. Versionado. Equivale a una descripción de puesto más un acuerdo explícito de operación — un prompt da instrucciones, un contrato de rol da responsabilidad.',
+      en: 'The operational contract of an artificial post: mission, responsibilities, results, KPIs, authority, exclusions, tools, access, service level, escalation, suspension criteria, governance calendar and accountable owner. Versioned. The equivalent of a job description plus an explicit operating agreement — a prompt gives instructions, a role contract gives responsibility.',
+      es: 'El contrato operacional de un puesto artificial: misión, responsabilidades, resultados, KPIs, autoridad, exclusiones, herramientas, accesos, nivel de servicio, escalamiento, criterios de suspensión, calendario de gobernanza y accountable owner. Versionado. Equivale a una descripción de puesto más un acuerdo explícito de operación — un prompt da instrucciones, un contrato de rol da responsabilidad.',
     },
   },
   {

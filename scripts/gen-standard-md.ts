@@ -26,7 +26,7 @@ import { AUTONOMY, AUTONOMY_NOTE, DIMENSIONS } from '../lib/hwfa';
 import { ANTI_KPI, CAPACITY_ELEVATION, CEO_NOTE, DIRECTION_NOTE, KPIS, MISSION, PLACEMENT, RESPONSIBILITIES, ROLE_NAME } from '../lib/role';
 import { BACK, BACK_INTRO, BACK_NOTE, FORWARD, FORWARD_INTRO, FORWARD_PRECONDITION, FORWARD_RULE } from '../lib/transitions';
 import { ACRONYM_RULE, GLOSSARY_NOTE, TERMS as GLOSSARY_TERMS } from '../lib/glossary';
-import { DISCLOSURE, MODEL, PROCESS, RELEASES, RULES as GOV_RULES, SEATS, STATUS_NOTE, VERSIONING_POLICY } from '../lib/governance';
+import { DISCLOSURE, MODEL, OPEN_FINDINGS, PROCESS, RELEASES, RULES as GOV_RULES, SEATS, STATUS_NOTE, VERSIONING_POLICY } from '../lib/governance';
 import { LICENSE, attributionPlain } from '../lib/license';
 import { CONCEPTUAL, KIND_LABEL, METHOD_NOTES, SOURCES, type Source } from '../lib/sources';
 
@@ -317,14 +317,18 @@ function build(lang: Locale): string {
   o.push('');
   h(3, t('status'));
   p(L(STATUS_NOTE.body, lang));
+  h(3, L(OPEN_FINDINGS.title, lang));
+  p(L(OPEN_FINDINGS.intro, lang));
+  OPEN_FINDINGS.items.forEach((f, i) => o.push(`${i + 1}. ${L(f, lang)}`));
+  o.push('');
 
   /* --- Licence ----------------------------------------------------- */
   h(2, t('licence'));
   p(`${L(LICENSE.name, lang)} (\`${LICENSE.id}\`) — ${LICENSE.url}`);
   p(
     lang === 'en'
-      ? 'You may quote, embed, teach, translate and commercially use this material with attribution. A modified version must carry the same licence. The names "Hybrid Workforce Standard", "HybridWF", "WRM" and "HWFA" (formerly HWFS) are reserved and are not licensed: you may state that your work conforms to the standard, but you may not publish a modified version under the same name.'
-      : 'Podés citar, embeber, enseñar, traducir y usar comercialmente este material con atribución. Una versión modificada debe llevar la misma licencia. Los nombres «Hybrid Workforce Standard», «HybridWF», «WRM» y «HWFA» (antes HWFS) quedan reservados y no están licenciados: podés declarar que tu trabajo conforma con el estándar, pero no publicar una versión modificada con el mismo nombre.',
+      ? 'You may quote, embed, teach, translate and commercially use this material with attribution. A modified version must carry the same licence. The names "Hybrid Workforce Standard", "HybridWF", "HWF", "WRM" and "HWFA" (formerly HWFS) and the HWF-/G- identifier schemes are reserved and are not licensed: you may state that your work conforms to the standard, but you may not publish a modified version under the same name, operate a certification or badge program invoking it, or reuse its clause identifiers for altered text — a modified version renumbers its clauses.'
+      : 'Podés citar, embeber, enseñar, traducir y usar comercialmente este material con atribución. Una versión modificada debe llevar la misma licencia. Los nombres «Hybrid Workforce Standard», «HybridWF», «HWF», «WRM» y «HWFA» (antes HWFS) y los esquemas de identificadores HWF-/G- quedan reservados y no están licenciados: podés declarar que tu trabajo conforma con el estándar, pero no publicar una versión modificada con el mismo nombre, operar un programa de certificación o insignias invocándolo, ni reutilizar sus identificadores de cláusula para texto alterado — una versión modificada renumera sus cláusulas.',
   );
 
   /* --- Sources ----------------------------------------------------- */
