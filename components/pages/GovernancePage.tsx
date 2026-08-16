@@ -7,6 +7,7 @@ import {
   PROCESS,
   RULES,
   SEATS,
+  FREEZE,
   OPEN_FINDINGS,
   STATUS_NOTE,
 } from '@/lib/governance';
@@ -167,6 +168,26 @@ export default function GovernancePage({ lang }: { lang: Locale }) {
             <p className="eyebrow">{STATUS_NOTE.title[lang]}</p>
             <p className="prose-x mt-4">{STATUS_NOTE.body[lang]}</p>
           </div>
+        </Reveal>
+      </Section>
+
+      {/* ---------- Freeze ---------- */}
+      <Section className="border-t border-border bg-raised">
+        <SectionHeading
+          eyebrow={lang === 'en' ? 'Mechanism' : 'Mecanismo'}
+          title={FREEZE.title[lang]}
+        />
+        <Reveal>
+          <p className="prose-x mt-6 max-w-3xl">{FREEZE.intro[lang]}</p>
+          <div className="mt-10 space-y-6">
+            {FREEZE.rules.map((r, i) => (
+              <div key={i} className="max-w-3xl rounded-2xl border border-border bg-surface p-6">
+                <p className="eyebrow">{r.label[lang]}</p>
+                <p className="mt-2.5 text-[0.95rem] leading-relaxed text-muted">{r.body[lang]}</p>
+              </div>
+            ))}
+          </div>
+          <p className="prose-x mt-8 max-w-3xl">{FREEZE.closing[lang]}</p>
         </Reveal>
       </Section>
 

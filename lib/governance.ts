@@ -190,6 +190,50 @@ export const STATUS_NOTE: { title: T; body: T } = {
   },
 };
 
+/* --- Freeze: the moment the author stops editing ----------------------- */
+
+export const FREEZE: { title: T; intro: T; rules: { label: T; body: T }[]; closing: T } = {
+  title: { en: 'The freeze', es: 'El congelamiento' },
+  intro: {
+    en: 'Candidate 1.0 freezes on a stated date, whether or not a Board has been seated by then. From that moment the author stops editing the normative text — not "stops except for small corrections", but stops. A standard whose author keeps quietly patching it is not a standard; it is a personal document with pretensions. What follows is the mechanism that makes the freeze checkable rather than rhetorical.',
+    es: 'La Candidate 1.0 se congela en una fecha declarada, haya o no un Board constituido para entonces. Desde ese momento el autor deja de editar el texto normativo — no «deja de editarlo salvo correcciones menores», sino deja de editarlo. Un estándar cuyo autor lo sigue parchando en silencio no es un estándar: es un documento personal con pretensiones. Lo que sigue es el mecanismo que vuelve el congelamiento verificable en lugar de retórico.',
+  },
+  rules: [
+    {
+      label: { en: 'What identifies the frozen version', es: 'Qué identifica la versión congelada' },
+      body: {
+        en: 'A date and time in UTC, a version label, and a content hash of the canonical machine-readable edition, all published on this page. Release of the companion book is not the trigger: a book carries different dates by format and by market, and a normative event cannot depend on a retailer.',
+        es: 'Una fecha y hora en UTC, una etiqueta de versión y un hash del contenido de la edición canónica legible por máquinas, publicados en esta página. La salida del libro que lo acompaña no es el disparador: un libro tiene fechas distintas por formato y por mercado, y un evento normativo no puede depender de una tienda.',
+      },
+    },
+    {
+      label: { en: 'Errata, which never change an obligation', es: 'Erratas, que nunca cambian una obligación' },
+      body: {
+        en: 'Typographical slips, broken links, mistranslations and factual errors in notes are recorded in a public errata register with their date. The frozen text is not edited: the register sits beside it. Anything that would alter what a deployment must do is not an erratum — it is an amendment, and amendments wait for the Board.',
+        es: 'Erratas tipográficas, enlaces rotos, errores de traducción y errores de hecho en las notas se registran en una lista pública de erratas con su fecha. El texto congelado no se edita: el registro vive al lado. Todo lo que alteraría lo que un deployment debe hacer no es errata — es enmienda, y las enmiendas esperan al Board.',
+      },
+    },
+    {
+      label: { en: 'Emergency deprecation', es: 'Deprecación de emergencia' },
+      body: {
+        en: 'If a defect in the frozen text would cause material harm — a security, legal or safety error — the Editor may deprecate the whole version, publicly and with reasons, and mark it as not to be used for new conformance claims. Deprecation is the only unilateral lever, and it is blunt on purpose: it can withdraw a version, never rewrite one. Surgical unilateral edits are exactly what the freeze exists to prevent.',
+        es: 'Si un defecto del texto congelado pudiera causar daño material — un error de seguridad, jurídico o de integridad —, el Editor puede deprecar la versión completa, en público y con motivos, y marcarla como no utilizable para nuevas declaraciones de conformidad. La deprecación es la única palanca unilateral, y es tosca a propósito: puede retirar una versión, nunca reescribirla. Las ediciones unilaterales quirúrgicas son justamente lo que el congelamiento existe para impedir.',
+      },
+    },
+    {
+      label: { en: 'If the Board never reaches quorum', es: 'Si el Board nunca alcanza quórum' },
+      body: {
+        en: 'The frozen text stays valid and citable, and stays Candidate. It does not silently become 1.0 through the passage of time, and it does not revert to the author. A standard nobody ratified is still a usable specification — it simply never earns the word that says a body examined it.',
+        es: 'El texto congelado sigue siendo válido y citable, y sigue siendo Candidate. No se convierte en 1.0 en silencio por el paso del tiempo, y no vuelve a manos del autor. Un estándar que nadie ratificó sigue siendo una especificación utilizable — solo que nunca gana la palabra que dice que un cuerpo lo examinó.',
+      },
+    },
+  ],
+  closing: {
+    en: 'The asymmetry is deliberate. Withdrawing a version needs one person and a public reason; changing one needs a Board. Making it easy to stop and hard to alter is what keeps the freeze from being a pose.',
+    es: 'La asimetría es deliberada. Retirar una versión exige una persona y un motivo público; cambiarla exige un Board. Que sea fácil detener y difícil alterar es lo que impide que el congelamiento sea una pose.',
+  },
+};
+
 /* --- Open findings: confirmed-in-part, held for the Board -------------- */
 
 export const OPEN_FINDINGS: { title: T; intro: T; items: T[] } = {

@@ -42,10 +42,10 @@ export const PROPERTIES: Property[] = [
   },
   {
     n: 2,
-    name: { en: 'Role contract', es: 'Contrato de rol' },
+    name: { en: 'Defined operational role', es: 'Rol operacional definido' },
     criterion: {
-      en: 'Mission, responsibilities, results, exclusions and service expectations.',
-      es: 'Misión, responsabilidades, resultados, exclusiones y expectativas de servicio.',
+      en: 'Mission, responsibilities, results, exclusions and service expectations exist in operation. Writing and versioning them as an AI Role Contract is what conformance requires; the property itself is about the role existing, not about the document proving it.',
+      es: 'Misión, responsabilidades, resultados, exclusiones y expectativas de servicio existen en la operación. Escribirlas y versionarlas como AI Role Contract es lo que exige la conformidad; la propiedad se refiere a que el rol exista, no al documento que lo demuestra.',
     },
   },
   {

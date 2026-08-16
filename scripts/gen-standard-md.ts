@@ -26,7 +26,7 @@ import { AUTONOMY, AUTONOMY_NOTE, DIMENSIONS } from '../lib/hwfa';
 import { ANTI_KPI, CAPACITY_ELEVATION, CEO_NOTE, DIRECTION_NOTE, KPIS, MISSION, PLACEMENT, RESPONSIBILITIES, ROLE_NAME } from '../lib/role';
 import { BACK, BACK_INTRO, BACK_NOTE, FORWARD, FORWARD_INTRO, FORWARD_PRECONDITION, FORWARD_RULE } from '../lib/transitions';
 import { ACRONYM_RULE, GLOSSARY_NOTE, TERMS as GLOSSARY_TERMS } from '../lib/glossary';
-import { DISCLOSURE, MODEL, OPEN_FINDINGS, PROCESS, RATIONALE, RELEASES, RULES as GOV_RULES, SEATS, STATUS_NOTE, VERSIONING_POLICY } from '../lib/governance';
+import { DISCLOSURE, FREEZE, MODEL, OPEN_FINDINGS, PROCESS, RATIONALE, RELEASES, RULES as GOV_RULES, SEATS, STATUS_NOTE, VERSIONING_POLICY } from '../lib/governance';
 import { LICENSE, attributionPlain } from '../lib/license';
 import { CONCEPTUAL, KIND_LABEL, METHOD_NOTES, SOURCES, type Source } from '../lib/sources';
 
@@ -332,6 +332,13 @@ function build(lang: Locale): string {
   o.push('');
   h(3, t('status'));
   p(L(STATUS_NOTE.body, lang));
+  h(3, L(FREEZE.title, lang));
+  p(L(FREEZE.intro, lang));
+  FREEZE.rules.forEach((r) => {
+    p(`**${L(r.label, lang)}.** ${L(r.body, lang)}`);
+  });
+  p(L(FREEZE.closing, lang));
+
   h(3, L(OPEN_FINDINGS.title, lang));
   p(L(OPEN_FINDINGS.intro, lang));
   OPEN_FINDINGS.items.forEach((f, i) => o.push(`${i + 1}. ${L(f, lang)}`));
