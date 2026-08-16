@@ -61,6 +61,8 @@ const S = {
   reading: { en: 'Reading this standard', es: 'Cómo leer este estándar' },
   note: { en: 'Note', es: 'Nota' },
   builtAgainst: { en: 'Built against', es: 'Construida contra' },
+  builtFrom: { en: 'Built from', es: 'Construida desde' },
+  ownDoctrine: { en: 'original WRM doctrine', es: 'doctrina propia WRM' },
   maturity: { en: 'Maturity model', es: 'Modelo de madurez' },
   threshold: { en: 'Category threshold', es: 'Umbral de la categoría' },
   diagnostic: { en: 'Self-diagnosis', es: 'Autodiagnóstico' },
@@ -213,6 +215,8 @@ function build(lang: Locale): string {
           .filter(Boolean)
           .map((s) => `${s!.id} · ${s!.label}`);
         p(`*${t('builtAgainst')}:* ${labels.join(' — ')}`);
+      } else if (c.ownDoctrine) {
+        p(`*${t('builtFrom')}:* ${t('ownDoctrine')}.`);
       }
     });
   });

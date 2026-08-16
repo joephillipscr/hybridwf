@@ -13,6 +13,12 @@ export interface Clause {
    * where the debt is specific enough to check.
    */
   sources?: string[];
+  /**
+   * True where the clause has no external instrument behind it. Stating this
+   * is the honest alternative to inventing lineage: most of the standard is
+   * original doctrine, and a reader deserves to know which parts.
+   */
+  ownDoctrine?: boolean;
 }
 
 /**
@@ -80,6 +86,7 @@ export const CLAUSES: Clause[] = [
       en: 'The post exists before its occupant. A name, a tone of voice and a set of instructions describe a persona; a role states what result must be produced, with what authority, measured how. Before does not mean frozen: a post may be reshaped by whoever holds it — Taylor fixed the person to the box, this standard versions the box — and HWF-61 exists so that the reshaping happens as declared revision rather than tacit drift.',
       es: 'El puesto existe antes que su ocupante. Un nombre, un tono y un conjunto de instrucciones describen una personalidad; un rol establece qué resultado debe producirse, con qué autoridad y medido cómo. Antes no significa congelado: un puesto puede ser remodelado por quien lo ocupa — Taylor fijaba a la persona a la caja, este estándar versiona la caja — y HWF-61 existe para que la remodelación ocurra como revisión declarada y no como deriva tácita.',
     },
+    ownDoctrine: true,
   },
   {
     id: 'HWF-12',
@@ -91,6 +98,7 @@ export const CLAUSES: Clause[] = [
       en: 'This clause is what makes the category worth anything. If the label applies to everything, it distinguishes nothing. An organisation with twenty excellent agents and zero AI Employees has clarity rather than a problem — provided none of the twenty exhibits the nine properties in operation.',
       es: 'Esta cláusula es lo que le da valor a la categoría. Si la etiqueta aplica a todo, no distingue nada. Una organización con veinte agentes excelentes y cero AI Employees tiene claridad y no un problema — siempre que ninguno de los veinte exhiba las nueve propiedades en operación.',
     },
+    ownDoctrine: true,
   },
   {
     id: 'HWF-13',
@@ -126,6 +134,7 @@ export const CLAUSES: Clause[] = [
       en: 'Supervision and accountability are different jobs and this clause separates them. Supervision directs work: routing, review, prioritising, receiving exceptions. An artificial resource can do that. Accountability means answering for the outcome, which requires the capacity to bear a consequence that is legal, financial or reputational. A chain of responsibility ending in something that cannot bear a consequence has not delegated responsibility; it has lost it. An AI Employee may receive work from many people, but unity of command still applies: a resource with two owners has none, and a resource with no owner is administratively orphaned no matter how well it is integrated technically. Exactly one answers the question of who answers for this resource; it was never meant to answer who else has obligations. A deployment carries a map of them — the data controller’s duties under privacy law, the security and compliance owners’, the vendor’s contractual and product liabilities, the directors’ legal responsibility — and unity of ownership locates the operational terminus while extinguishing none of these; HWF-23 already routes blame to the determinants wherever they sit on that map. The committee sentence exists because a governance body without a chair, decision rules and emergency capacity is not an owner but a diffusion mechanism: everyone’s responsibility is no one’s, and a body that needs a meeting to act cannot hold the power to suspend that HWF-23 requires. The chair does not replace the body; it makes the body able to act between its own meetings, with ratification after.',
       es: 'Supervisión y accountability son trabajos distintos y esta cláusula los separa. La supervisión dirige el trabajo: rutear, revisar, priorizar, recibir excepciones. Un recurso artificial puede hacerlo. La accountability es responder por el resultado, y eso exige capacidad de soportar una consecuencia jurídica, económica o reputacional. Una cadena de responsabilidad que termina en algo incapaz de soportar consecuencia no delegó responsabilidad: la perdió. Un AI Employee puede recibir trabajo de muchas personas, pero la unidad de mando sigue aplicando: un recurso con dos dueños no tiene ninguno, y un recurso sin dueño queda huérfano administrativamente por bien integrado que esté. Exactamente uno responde la pregunta de quién responde por este recurso; nunca pretendió responder quién más tiene obligaciones. Un deployment carga un mapa de ellas — los deberes del controller de datos bajo la ley de privacidad, los de los dueños de seguridad y compliance, las responsabilidades contractuales y de producto del proveedor, la responsabilidad legal de los directores — y la unicidad de la ownership ubica el terminus operativo sin extinguir ninguna; HWF-23 ya rutea la culpa a los determinantes donde sea que estén en ese mapa. La oración del comité existe porque un cuerpo de gobierno sin presidente, reglas de decisión y capacidad de emergencia no es un owner sino un mecanismo de difusión: la responsabilidad de todos es la de nadie, y un cuerpo que necesita una reunión para actuar no puede sostener el poder de suspender que HWF-23 exige. El presidente no reemplaza al cuerpo; lo vuelve capaz de actuar entre sus propias sesiones, con ratificación posterior.',
     },
+    ownDoctrine: true,
   },
   {
     id: 'HWF-22',
@@ -137,6 +146,7 @@ export const CLAUSES: Clause[] = [
       en: 'Intervening without passing through the chain is the load-bearing part. If stopping an AI Employee three levels down requires asking the one above it, the accountable party holds a request rather than control. Depth is not forbidden and no fixed limit is set here, because the real limit is span of control: a principle this framework classifies as adapted rather than abolished, meaning scale may grow but only against tooling, dashboards and supervision limits that make the growth governable. A single human nominally accountable for a thousand AI Employees across six levels, with no instrument capable of showing what any of them did, has an organisational chart rather than accountability. Describing this architecture is not endorsing it: the standard states what must remain true if an organisation builds one.',
       es: 'Intervenir sin pasar por la cadena es la parte que sostiene todo. Si detener a un AI Employee tres niveles abajo exige pedírselo al que está encima, quien responde tiene una petición y no control. La profundidad no está prohibida ni se fija un límite aquí, porque el límite real es el span of control: un principio que este marco clasifica como adaptado y no como abolido, o sea que la escala puede crecer pero solo contra tooling, dashboards y límites de supervisión que hagan gobernable ese crecimiento. Un solo humano nominalmente accountable por mil AI Employees repartidos en seis niveles, sin un instrumento capaz de mostrar qué hizo cada uno, tiene un organigrama y no accountability. Describir esta arquitectura no es endosarla: el estándar dice qué debe seguir siendo cierto si una organización la construye.',
     },
+    ownDoctrine: true,
   },
   {
     id: 'HWF-23',
@@ -160,6 +170,7 @@ export const CLAUSES: Clause[] = [
       en: 'What the resource may decide without approval has to be written down before it operates, not inferred afterwards from what it happened to do.',
       es: 'Lo que el recurso puede decidir sin aprobación debe estar escrito antes de que opere, no inferido después a partir de lo que resultó haciendo.',
     },
+    ownDoctrine: true,
   },
   {
     id: 'HWF-32',
@@ -171,6 +182,7 @@ export const CLAUSES: Clause[] = [
       en: 'Context is capability, but it is also risk surface. More access is not more competence; it is a larger blast radius.',
       es: 'El contexto es capacidad, pero también es superficie de riesgo. Más acceso no es más competencia; es un blast radius mayor.',
     },
+    ownDoctrine: true,
   },
   {
     id: 'HWF-33',
@@ -182,6 +194,7 @@ export const CLAUSES: Clause[] = [
       en: 'Proportionality is the rule: the higher the cost of the error and the harder it is to reverse, the more approval the action carries. Separation of duties applies, so whoever initiates need not approve. What counts as high-risk is not left to taste: it resolves against the risk classification of HWF-51.',
       es: 'La regla es proporcionalidad: a mayor costo del error y menor reversibilidad, más aprobación soporta la acción. Aplica separación de funciones, así que quien inicia no necesariamente aprueba. Qué cuenta como alto riesgo no queda al gusto: se resuelve contra la clasificación de riesgo de HWF-51.',
     },
+    ownDoctrine: true,
   },
   {
     id: 'HWF-34',
@@ -193,6 +206,7 @@ export const CLAUSES: Clause[] = [
       en: 'A resource that produces a convincing answer instead of raising a doubt is more dangerous than a less capable one that is better governed. Every exception needs a destination — and no metric may punish the journey: a system measured on fewer escalations learns silence, so escalation is judged by the missed-versus-unnecessary pair on the Hybrid Workforce Manager’s scorecard, never by volume alone.',
       es: 'Un recurso que produce una respuesta convincente en vez de escalar una duda es más peligroso que uno menos brillante pero mejor gobernado. Toda excepción necesita un destino — y ninguna métrica puede castigar el viaje: un sistema medido por escalar menos aprende silencio, así que la escalación se juzga por el par perdidas-versus-innecesarias del scorecard del Gerente de Fuerza Laboral Híbrida, nunca por volumen a solas.',
     },
+    ownDoctrine: true,
   },
   {
     id: 'HWF-35',
@@ -204,6 +218,7 @@ export const CLAUSES: Clause[] = [
       en: 'The risk justification was always here: context has been divided into must know, may consult and must not access since the first draft. What was missing was the second reason to restrict. A resource that sees every prior dispute anchors on them; one that reads the last diagnosis inherits it; one that is given everything relevant drowns the signal in the merely related. Anchoring, confirmation bias and operational overload are degradations of the decision rather than leaks of information, and a manager reading a risk-only clause has no ground to withhold anything that is not sensitive. The record is the price of the tool, because deliberate opacity is otherwise the perfect instrument for laundering accountability \u2014 \u201cthe system did not have that context\u201d is the AI-native descendant of \u201cnobody told me\u201d. A restriction that is written down, versioned and auditable is design; the same restriction undocumented is a defence prepared in advance, and the closing sentence of the clause takes that defence away. None of this legitimises depriving a resource of the context its role requires: withholding what it needs to escalate well is not opacity but sabotage of HWF-34.',
       es: 'La justificaci\u00f3n de riesgo siempre estuvo: el contexto se divide en debe saber, puede consultar y no debe acceder desde el primer borrador. Lo que faltaba era la segunda raz\u00f3n para restringir. Un recurso que ve todas las disputas anteriores se ancla en ellas; uno que lee el \u00faltimo diagn\u00f3stico lo hereda; uno al que se le entrega todo lo relevante ahoga la se\u00f1al en lo meramente relacionado. El anclaje, el sesgo de confirmación y la sobrecarga operativa son degradaciones de la decisión y no fugas de información, y un manager que lee una cl\u00e1usula de solo-riesgo no tiene motivo para retener nada que no sea sensible. El registro es el precio de la herramienta, porque la opacidad deliberada es, sin \u00e9l, el instrumento perfecto para lavar accountability \u2014 \u00abel sistema no ten\u00eda ese contexto\u00bb es el descendiente nativo de IA de \u00aba m\u00ed nadie me avis\u00f3\u00bb. Una restricci\u00f3n escrita, versionada y auditable es dise\u00f1o; la misma restricci\u00f3n sin documentar es una defensa preparada de antemano, y la \u00faltima oraci\u00f3n de la cl\u00e1usula le quita esa defensa. Nada de esto legitima privar al recurso del contexto que su rol necesita: retenerle el que requiere para escalar bien no es opacidad sino sabotaje del HWF-34.',
     },
+    ownDoctrine: true,
   },
   {
     id: 'HWF-41',
@@ -215,6 +230,7 @@ export const CLAUSES: Clause[] = [
       en: 'Actor, input, tool, action, approval, result and timestamp tell you that something happened. They do not tell you why, and without the why an organisation cannot attribute a failure to its cause: a policy that was wrong, knowledge that had gone stale, a tool that returned bad data, a model that erred, or a role that should never have been assigned to an artificial resource at all. Those five demand different remedies, and they leave identical records under a what-only audit. The clause it most protects is HWF-34: with outcomes alone you can see that the system answered, never that it should have doubted. The material is largely already required elsewhere — HWF-42 governs the provenance of what the resource knew, HWF-43 the versions of model, policy, tools and knowledge base — so what this clause adds is the obligation to bind them to a specific action rather than hold them as a general inventory. A model’s stated reasoning is admissible as supporting evidence and is not proof of cause: what a system reports having thought may not be what produced its output, and an organisation that treats that narration as the why will write confident and wrong postmortems. Where reasoning traces are retained, their scope, retention and deletion fall under HWF-42 like any other memory, because they routinely contain retrieved customer data.',
       es: 'Actor, input, herramienta, acción, aprobación, resultado y timestamp dicen que algo pasó. No dicen por qué, y sin el porqué una organización no puede atribuir una falla a su causa: una política equivocada, un conocimiento que envejeció, una herramienta que devolvió datos malos, un modelo que erró, o un rol que nunca debió asignarse a un recurso artificial. Esos cinco exigen remedios distintos y dejan registros idénticos bajo una auditoría de solo-qué. La cláusula que más protege es HWF-34: con solo el resultado se ve que el sistema respondió, nunca que debió dudar. El material ya está exigido en buena parte en otro lado — HWF-42 gobierna la procedencia de lo que el recurso sabía, HWF-43 las versiones de modelo, política, herramientas y knowledge base — así que lo que esta cláusula agrega es la obligación de ligarlas a una acción concreta en vez de sostenerlas como inventario general. El razonamiento declarado por un modelo es admisible como evidencia de apoyo y no es prueba de causa: lo que un sistema reporta haber pensado puede no ser lo que produjo su salida, y una organización que tome esa narración por el porqué va a escribir postmortems confiados y equivocados. Cuando se retengan trazas de razonamiento, su alcance, retención y borrado caen bajo HWF-42 como cualquier otra memoria, porque suelen contener datos de clientes recuperados.',
     },
+    ownDoctrine: true,
   },
   {
     id: 'HWF-42',
@@ -238,6 +254,7 @@ export const CLAUSES: Clause[] = [
       en: 'Without versioning it is impossible to say what authority existed at a given moment, or which change produced an improvement or a regression.',
       es: 'Sin versionado es imposible saber qué autoridad existía en un momento dado, ni qué cambio produjo una mejora o un deterioro.',
     },
+    ownDoctrine: true,
   },
   {
     id: 'HWF-44',
@@ -249,6 +266,7 @@ export const CLAUSES: Clause[] = [
       en: 'Speed makes activity look like value. A badly designed process that produced ten errors will produce a hundred once automated, and the dashboard will call it throughput.',
       es: 'La velocidad hace que la actividad parezca valor. Un proceso mal diseñado que producía diez errores producirá cien al automatizarse, y el dashboard lo llamará productividad.',
     },
+    ownDoctrine: true,
   },
   {
     id: 'HWF-51',
@@ -296,6 +314,7 @@ export const CLAUSES: Clause[] = [
       en: 'Without a baseline recorded before the change, the organisation can celebrate an improvement it never made. Rollback criteria written after the results are known are not criteria; they are justification.',
       es: 'Sin un baseline registrado antes del cambio, la organización puede celebrar una mejora que nunca ocurrió. Criterios de rollback escritos después de conocer los resultados no son criterios; son justificación.',
     },
+    ownDoctrine: true,
   },
   {
     id: 'HWF-63',
@@ -307,6 +326,7 @@ export const CLAUSES: Clause[] = [
       en: 'Human pruning pressures are weak and fail often — bureaucracies carry dead posts for decades. But they exist: a salary line that a budget review questions, an occupant who leaves and forces a backfill decision. An artificial post removes even those weak triggers — its marginal cost is too small to surface in the budget conversation, and nobody ever resigns from it — so a pointless post does not merely persist by default; it loses the last occasions on which anyone would notice it. In this framework’s own classification that makes organisational pruning an adapted principle: a mechanism that was already unreliable for humans disappears entirely for artificial occupants, and this clause is the replacement. What accumulates without it is organisational debt, and its most dangerous form is the digital zombie: credentials, data access and standing authority kept alive for work nobody needs — under HWF-32, risk surface with no return. The existence question comes before the performance question because a good answer to the second is the usual anaesthetic against the first. The cadence belongs in the role contract, and the twelve-month ceiling in the citable text is a maximum rather than a recommendation: high-volume and high-risk posts deserve shorter. This review may share its calendar with the HWF-61 review; it must never share its default.',
       es: 'Las presiones humanas de poda son débiles y fallan seguido — las burocracias cargan puestos muertos por décadas. Pero existen: una línea de salario que una revisión de presupuesto cuestiona, un ocupante que se va y fuerza la decisión de reemplazo. Un puesto artificial elimina hasta esos disparadores débiles — su costo marginal es demasiado pequeño para aparecer en la conversación presupuestaria, y nadie renuncia jamás de él — así que un puesto sin sentido no solo persiste por defecto; pierde las últimas ocasiones en que alguien lo notaría. En la propia clasificación de este marco, eso convierte a la poda organizacional en un principio adaptado: un mecanismo que ya era poco confiable para humanos desaparece por completo para ocupantes artificiales, y esta cláusula es el reemplazo. Lo que se acumula sin ella es deuda organizacional, y su forma más peligrosa es el zombi digital: credenciales, accesos a datos y autoridad vigente mantenidos vivos para trabajo que nadie necesita — con HWF-32 en mano, superficie de riesgo sin retorno. La pregunta de existencia va antes que la de desempeño porque una buena respuesta a la segunda es el anestésico habitual contra la primera. La cadencia pertenece al contrato de rol, y el techo de doce meses del texto citable es un máximo y no una recomendación: los puestos de alto volumen y alto riesgo merecen menos. Esta revisión puede compartir calendario con la de HWF-61; nunca debe compartir su default.',
     },
+    ownDoctrine: true,
   },
   {
     id: 'HWF-64',
@@ -318,6 +338,7 @@ export const CLAUSES: Clause[] = [
       en: 'Revoke credentials, disable tools, stop schedules and queues, rotate secrets, transfer outstanding work, preserve evidence. Offboarding is as important as onboarding and is almost always skipped.',
       es: 'Revocar credenciales, deshabilitar herramientas, detener schedules y colas, rotar secretos, transferir trabajo pendiente, preservar evidencia. El offboarding es tan importante como el onboarding y casi siempre se omite.',
     },
+    ownDoctrine: true,
   },
   {
     id: 'HWF-71',

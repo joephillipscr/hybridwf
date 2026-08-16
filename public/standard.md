@@ -143,11 +143,15 @@ Every conformance claim publishes these nine fields (HWF-71). A claim missing an
 
 *Note:* The post exists before its occupant. A name, a tone of voice and a set of instructions describe a persona; a role states what result must be produced, with what authority, measured how. Before does not mean frozen: a post may be reshaped by whoever holds it — Taylor fixed the person to the box, this standard versions the box — and HWF-61 exists so that the reshaping happens as declared revision rather than tacit drift.
 
+*Built from:* original WRM doctrine.
+
 #### HWF-12
 
 **Not every agent qualifies as an AI Employee. It must clear a threshold of maturity and governance. The test works in both directions: a deployment that exhibits the nine properties in operation is an AI Employee whatever the organisation calls it, and the burden of demonstrating non-qualification lies with the deployer. The properties are facts about the deployment, not paperwork — an unwritten role contract is a governance failure, not a category exit.**
 
 *Note:* This clause is what makes the category worth anything. If the label applies to everything, it distinguishes nothing. An organisation with twenty excellent agents and zero AI Employees has clarity rather than a problem — provided none of the twenty exhibits the nine properties in operation.
+
+*Built from:* original WRM doctrine.
 
 #### HWF-13
 
@@ -173,11 +177,15 @@ Every conformance claim publishes these nine fields (HWF-71). A claim missing an
 
 *Note:* Supervision and accountability are different jobs and this clause separates them. Supervision directs work: routing, review, prioritising, receiving exceptions. An artificial resource can do that. Accountability means answering for the outcome, which requires the capacity to bear a consequence that is legal, financial or reputational. A chain of responsibility ending in something that cannot bear a consequence has not delegated responsibility; it has lost it. An AI Employee may receive work from many people, but unity of command still applies: a resource with two owners has none, and a resource with no owner is administratively orphaned no matter how well it is integrated technically. Exactly one answers the question of who answers for this resource; it was never meant to answer who else has obligations. A deployment carries a map of them — the data controller’s duties under privacy law, the security and compliance owners’, the vendor’s contractual and product liabilities, the directors’ legal responsibility — and unity of ownership locates the operational terminus while extinguishing none of these; HWF-23 already routes blame to the determinants wherever they sit on that map. The committee sentence exists because a governance body without a chair, decision rules and emergency capacity is not an owner but a diffusion mechanism: everyone’s responsibility is no one’s, and a body that needs a meeting to act cannot hold the power to suspend that HWF-23 requires. The chair does not replace the body; it makes the body able to act between its own meetings, with ratification after.
 
+*Built from:* original WRM doctrine.
+
 #### HWF-22
 
 **A supervision chain must be traversable and observable end to end. The accountable human or body must be able to identify every AI Employee beneath it, reconstruct any action taken in its name, and intervene at any point in the chain without passing through it.**
 
 *Note:* Intervening without passing through the chain is the load-bearing part. If stopping an AI Employee three levels down requires asking the one above it, the accountable party holds a request rather than control. Depth is not forbidden and no fixed limit is set here, because the real limit is span of control: a principle this framework classifies as adapted rather than abolished, meaning scale may grow but only against tooling, dashboards and supervision limits that make the growth governable. A single human nominally accountable for a thousand AI Employees across six levels, with no instrument capable of showing what any of them did, has an organisational chart rather than accountability. Describing this architecture is not endorsing it: the standard states what must remain true if an organisation builds one.
+
+*Built from:* original WRM doctrine.
 
 #### HWF-23
 
@@ -195,11 +203,15 @@ Every conformance claim publishes these nine fields (HWF-71). A claim missing an
 
 *Note:* What the resource may decide without approval has to be written down before it operates, not inferred afterwards from what it happened to do.
 
+*Built from:* original WRM doctrine.
+
 #### HWF-32
 
 **Access must follow least privilege.**
 
 *Note:* Context is capability, but it is also risk surface. More access is not more competence; it is a larger blast radius.
+
+*Built from:* original WRM doctrine.
 
 #### HWF-33
 
@@ -207,17 +219,23 @@ Every conformance claim publishes these nine fields (HWF-71). A claim missing an
 
 *Note:* Proportionality is the rule: the higher the cost of the error and the harder it is to reverse, the more approval the action carries. Separation of duties applies, so whoever initiates need not approve. What counts as high-risk is not left to taste: it resolves against the risk classification of HWF-51.
 
+*Built from:* original WRM doctrine.
+
 #### HWF-34
 
 **The system must know when to escalate rather than improvise.**
 
 *Note:* A resource that produces a convincing answer instead of raising a doubt is more dangerous than a less capable one that is better governed. Every exception needs a destination — and no metric may punish the journey: a system measured on fewer escalations learns silence, so escalation is judged by the missed-versus-unnecessary pair on the Hybrid Workforce Manager’s scorecard, never by volume alone.
 
+*Built from:* original WRM doctrine.
+
 #### HWF-35
 
 **Context provisioning must be deliberate in both directions. Withholding context from an AI Employee is a legitimate design decision, whether to protect the information or to prevent measurable degradation of the decision — anchoring, context contamination, saturation; it is not an omission and must not be treated as one. Every restriction must be recorded in the role contract as a context boundary record, versioned like any other authority, and available to the audit. Responsibility for a decision degraded by withheld context lies with whoever withheld it.**
 
 *Note:* The risk justification was always here: context has been divided into must know, may consult and must not access since the first draft. What was missing was the second reason to restrict. A resource that sees every prior dispute anchors on them; one that reads the last diagnosis inherits it; one that is given everything relevant drowns the signal in the merely related. Anchoring, confirmation bias and operational overload are degradations of the decision rather than leaks of information, and a manager reading a risk-only clause has no ground to withhold anything that is not sensitive. The record is the price of the tool, because deliberate opacity is otherwise the perfect instrument for laundering accountability — “the system did not have that context” is the AI-native descendant of “nobody told me”. A restriction that is written down, versioned and auditable is design; the same restriction undocumented is a defence prepared in advance, and the closing sentence of the clause takes that defence away. None of this legitimises depriving a resource of the context its role requires: withholding what it needs to escalate well is not opacity but sabotage of HWF-34.
+
+*Built from:* original WRM doctrine.
 
 ### 4 · Evidence and data
 
@@ -226,6 +244,8 @@ Every conformance claim publishes these nine fields (HWF-71). A claim missing an
 **Every material action must be auditable, and the audit must reconstruct the determinants of the decision as well as its outcome: the policy, knowledge, tool results, authority and versions in force when the action was taken. A model’s own account of its reasoning may support that reconstruction but never substitutes for it. What counts as material is set by the post’s risk class: from High upward the determinants are bound to each action, and for Low and Moderate posts, correlating event logs against the version manifest of HWF-43 is conformant reconstruction.**
 
 *Note:* Actor, input, tool, action, approval, result and timestamp tell you that something happened. They do not tell you why, and without the why an organisation cannot attribute a failure to its cause: a policy that was wrong, knowledge that had gone stale, a tool that returned bad data, a model that erred, or a role that should never have been assigned to an artificial resource at all. Those five demand different remedies, and they leave identical records under a what-only audit. The clause it most protects is HWF-34: with outcomes alone you can see that the system answered, never that it should have doubted. The material is largely already required elsewhere — HWF-42 governs the provenance of what the resource knew, HWF-43 the versions of model, policy, tools and knowledge base — so what this clause adds is the obligation to bind them to a specific action rather than hold them as a general inventory. A model’s stated reasoning is admissible as supporting evidence and is not proof of cause: what a system reports having thought may not be what produced its output, and an organisation that treats that narration as the why will write confident and wrong postmortems. Where reasoning traces are retained, their scope, retention and deletion fall under HWF-42 like any other memory, because they routinely contain retrieved customer data.
+
+*Built from:* original WRM doctrine.
 
 #### HWF-42
 
@@ -241,11 +261,15 @@ Every conformance claim publishes these nine fields (HWF-71). A claim missing an
 
 *Note:* Without versioning it is impossible to say what authority existed at a given moment, or which change produced an improvement or a regression.
 
+*Built from:* original WRM doctrine.
+
 #### HWF-44
 
 **Performance must be measured by outcomes, quality, risk and cost — never by activity, hours, tokens or message volume.**
 
 *Note:* Speed makes activity look like value. A badly designed process that produced ten errors will produce a hundred once automated, and the dashboard will call it throughput.
+
+*Built from:* original WRM doctrine.
 
 ### 5 · Risk and validation
 
@@ -281,17 +305,23 @@ Every conformance claim publishes these nine fields (HWF-71). A claim missing an
 
 *Note:* Without a baseline recorded before the change, the organisation can celebrate an improvement it never made. Rollback criteria written after the results are known are not criteria; they are justification.
 
+*Built from:* original WRM doctrine.
+
 #### HWF-63
 
 **An AI Employee post must not outlive its justification. At a stated cadence, never longer than twelve months, the accountable owner must re-justify the post’s existence against current strategy — a question prior to and separate from performance, because a resource can meet every KPI in a post the organisation no longer needs. Continuation is never the default: a post whose existence cannot be re-justified proceeds to retirement, and its access ends with it. A lapsed review is not a failed one: it escalates to the accountable owner and restricts or suspends the post in proportion while the review is forced — retirement is the outcome of a failed justification, never of a missed calendar.**
 
 *Note:* Human pruning pressures are weak and fail often — bureaucracies carry dead posts for decades. But they exist: a salary line that a budget review questions, an occupant who leaves and forces a backfill decision. An artificial post removes even those weak triggers — its marginal cost is too small to surface in the budget conversation, and nobody ever resigns from it — so a pointless post does not merely persist by default; it loses the last occasions on which anyone would notice it. In this framework’s own classification that makes organisational pruning an adapted principle: a mechanism that was already unreliable for humans disappears entirely for artificial occupants, and this clause is the replacement. What accumulates without it is organisational debt, and its most dangerous form is the digital zombie: credentials, data access and standing authority kept alive for work nobody needs — under HWF-32, risk surface with no return. The existence question comes before the performance question because a good answer to the second is the usual anaesthetic against the first. The cadence belongs in the role contract, and the twelve-month ceiling in the citable text is a maximum rather than a recommendation: high-volume and high-risk posts deserve shorter. This review may share its calendar with the HWF-61 review; it must never share its default.
 
+*Built from:* original WRM doctrine.
+
 #### HWF-64
 
 **Offboarding must revoke access and transfer or destroy context safely.**
 
 *Note:* Revoke credentials, disable tools, stop schedules and queues, rotate secrets, transfer outstanding work, preserve evidence. Offboarding is as important as onboarding and is almost always skipped.
+
+*Built from:* original WRM doctrine.
 
 ### 7 · Conformance
 
@@ -771,6 +801,8 @@ One term, two languages, one numbered definition. Where the English term is used
 
 **G-24 · Management by exception** — The operating mode in which the resource resolves routine work inside its limits and the manager intervenes on deviations and exceptions. Rung 4 of the autonomy ladder.
 
+**G-25 · Hybrid post** — A post whose responsibilities are split explicitly between a human and an artificial resource, with defined handoffs, context transfer and a single owner of the overall result. Badly designed, it produces two occupants each waiting for the other to answer.
+
 **G-26 · Supervisor** — Whoever directs an AI Employee’s work day to day: routing tasks, reviewing output, setting priorities and receiving exceptions. A supervisor may be human or artificial. Distinct from the accountable owner, which is always human — an AI Employee can supervise another and still answer to a person somewhere above it.
 
 **G-27 · Supervision chain** — The path from an AI Employee upward through each supervisor to the accountable human or governance body. Chains of any depth are permitted, but each must terminate in a human, be traversable and observable end to end, and allow the accountable party to intervene at any point without going through the chain itself. Depth is bounded by span of control rather than by a fixed number: scale may grow only against tooling that makes it governable.
@@ -802,8 +834,6 @@ One term, two languages, one numbered definition. Where the English term is used
 **G-40 · Derived inference** — Data the deployment manufactures about a person rather than collects from them: a probability of financial distress, an inferred health condition, a predicted intent. Governed under HWF-42 as if collected — purpose, basis, minimisation, deletion — and often more sensitive than anything the person actually provided. An inference the person never handed over is still their data.
 
 **G-41 · Correlated failure** — The failure mode of model monoculture. Human teams do not fail independently either, but diversity of experience and judgement tends to distribute some blind spots; instances sharing a model, vendor, context or configuration concentrate them, and can fail in the same way at the same time. The precedent is common-cause failure, long known to reliability engineering and continuity planning; what is new is the speed, reach and opacity with which it propagates through an artificial workforce. Mitigated by diversity of models and vendors, fallback resources and succession planning; named as a validation item for AI teams by HWF-52.
-
-**G-25 · Hybrid post** — A post whose responsibilities are split explicitly between a human and an artificial resource, with defined handoffs, context transfer and a single owner of the overall result. Badly designed, it produces two occupants each waiting for the other to answer.
 
 ## Governance
 

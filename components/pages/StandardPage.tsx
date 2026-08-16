@@ -33,6 +33,8 @@ const C = {
   archBlock: { en: 'Block', es: 'Bloque' },
   archClauses: { en: 'Clauses', es: 'Cláusulas' },
   builtAgainst: { en: 'Built against', es: 'Construida contra' },
+  builtFrom: { en: 'Built from', es: 'Construida desde' },
+  ownDoctrine: { en: 'original WRM doctrine', es: 'doctrina propia WRM' },
 };
 
 export default function StandardPage({ lang }: { lang: Locale }) {
@@ -152,6 +154,13 @@ export default function StandardPage({ lang }: { lang: Locale }) {
                             </span>
                           );
                         })}
+                      </p>
+                    ) : c.ownDoctrine ? (
+                      <p className="mt-3 max-w-prose text-[0.8rem] leading-relaxed text-muted">
+                        <span className="font-mono text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-brand">
+                          {C.builtFrom[lang]}
+                        </span>{' '}
+                        {C.ownDoctrine[lang]}.
                       </p>
                     ) : null}
                   </Reveal>

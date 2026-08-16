@@ -214,6 +214,14 @@ export const TERMS: Term[] = [
     },
   },
   {
+    id: 'G-25',
+    term: { en: 'Hybrid post', es: 'Puesto híbrido' },
+    definition: {
+      en: 'A post whose responsibilities are split explicitly between a human and an artificial resource, with defined handoffs, context transfer and a single owner of the overall result. Badly designed, it produces two occupants each waiting for the other to answer.',
+      es: 'Puesto cuyas responsabilidades se reparten explícitamente entre un recurso humano y uno artificial, con handoffs definidos, transferencia de contexto y un único dueño del resultado completo. Mal diseñado, produce dos ocupantes esperando que responda el otro.',
+    },
+  },
+  {
     id: 'G-26',
     term: { en: 'Supervisor', es: 'Supervisor' },
     definition: {
@@ -339,14 +347,6 @@ export const TERMS: Term[] = [
     definition: {
       en: 'The failure mode of model monoculture. Human teams do not fail independently either, but diversity of experience and judgement tends to distribute some blind spots; instances sharing a model, vendor, context or configuration concentrate them, and can fail in the same way at the same time. The precedent is common-cause failure, long known to reliability engineering and continuity planning; what is new is the speed, reach and opacity with which it propagates through an artificial workforce. Mitigated by diversity of models and vendors, fallback resources and succession planning; named as a validation item for AI teams by HWF-52.',
       es: 'El modo de falla de la monocultura de modelo. Los equipos humanos tampoco fallan de forma independiente, pero la diversidad de experiencia y criterio tiende a distribuir algunos puntos ciegos; las instancias que comparten modelo, proveedor, contexto o configuración los concentran, y pueden fallar del mismo modo al mismo tiempo. El precedente es la falla de causa común, conocida desde hace décadas en ingeniería de confiabilidad y en planes de continuidad; lo nuevo es la velocidad, el alcance y la opacidad con que se propaga dentro de una fuerza laboral artificial. Se mitiga con diversidad de modelos y proveedores, recursos de fallback y planes de sucesión; nombrado como ítem de validación para equipos de IA por HWF-52.',
-    },
-  },
-  {
-    id: 'G-25',
-    term: { en: 'Hybrid post', es: 'Puesto híbrido' },
-    definition: {
-      en: 'A post whose responsibilities are split explicitly between a human and an artificial resource, with defined handoffs, context transfer and a single owner of the overall result. Badly designed, it produces two occupants each waiting for the other to answer.',
-      es: 'Puesto cuyas responsabilidades se reparten explícitamente entre un recurso humano y uno artificial, con handoffs definidos, transferencia de contexto y un único dueño del resultado completo. Mal diseñado, produce dos ocupantes esperando que responda el otro.',
     },
   },
 ];

@@ -143,11 +143,15 @@ Toda declaración de conformidad publica estos nueve campos (HWF-71). Una declar
 
 *Nota:* El puesto existe antes que su ocupante. Un nombre, un tono y un conjunto de instrucciones describen una personalidad; un rol establece qué resultado debe producirse, con qué autoridad y medido cómo. Antes no significa congelado: un puesto puede ser remodelado por quien lo ocupa — Taylor fijaba a la persona a la caja, este estándar versiona la caja — y HWF-61 existe para que la remodelación ocurra como revisión declarada y no como deriva tácita.
 
+*Construida desde:* doctrina propia WRM.
+
 #### HWF-12
 
 **No todo agente califica como AI Employee. Debe superar un umbral de madurez y gobierno. El test funciona en ambas direcciones: un deployment que exhibe las nueve propiedades en operación es un AI Employee sin importar cómo lo llame la organización, y la carga de demostrar la no-calificación recae en el deployer. Las propiedades son hechos del deployment, no papeleo — un contrato de rol sin escribir es una falla de gobierno, no una salida de la categoría.**
 
 *Nota:* Esta cláusula es lo que le da valor a la categoría. Si la etiqueta aplica a todo, no distingue nada. Una organización con veinte agentes excelentes y cero AI Employees tiene claridad y no un problema — siempre que ninguno de los veinte exhiba las nueve propiedades en operación.
+
+*Construida desde:* doctrina propia WRM.
 
 #### HWF-13
 
@@ -173,11 +177,15 @@ Toda declaración de conformidad publica estos nueve campos (HWF-71). Una declar
 
 *Nota:* Supervisión y accountability son trabajos distintos y esta cláusula los separa. La supervisión dirige el trabajo: rutear, revisar, priorizar, recibir excepciones. Un recurso artificial puede hacerlo. La accountability es responder por el resultado, y eso exige capacidad de soportar una consecuencia jurídica, económica o reputacional. Una cadena de responsabilidad que termina en algo incapaz de soportar consecuencia no delegó responsabilidad: la perdió. Un AI Employee puede recibir trabajo de muchas personas, pero la unidad de mando sigue aplicando: un recurso con dos dueños no tiene ninguno, y un recurso sin dueño queda huérfano administrativamente por bien integrado que esté. Exactamente uno responde la pregunta de quién responde por este recurso; nunca pretendió responder quién más tiene obligaciones. Un deployment carga un mapa de ellas — los deberes del controller de datos bajo la ley de privacidad, los de los dueños de seguridad y compliance, las responsabilidades contractuales y de producto del proveedor, la responsabilidad legal de los directores — y la unicidad de la ownership ubica el terminus operativo sin extinguir ninguna; HWF-23 ya rutea la culpa a los determinantes donde sea que estén en ese mapa. La oración del comité existe porque un cuerpo de gobierno sin presidente, reglas de decisión y capacidad de emergencia no es un owner sino un mecanismo de difusión: la responsabilidad de todos es la de nadie, y un cuerpo que necesita una reunión para actuar no puede sostener el poder de suspender que HWF-23 exige. El presidente no reemplaza al cuerpo; lo vuelve capaz de actuar entre sus propias sesiones, con ratificación posterior.
 
+*Construida desde:* doctrina propia WRM.
+
 #### HWF-22
 
 **Una cadena de supervisión debe ser recorrible y observable de punta a punta. El humano o cuerpo accountable debe poder identificar a cada AI Employee por debajo suyo, reconstruir cualquier acción ejecutada en su nombre, e intervenir en cualquier punto de la cadena sin pasar por ella.**
 
 *Nota:* Intervenir sin pasar por la cadena es la parte que sostiene todo. Si detener a un AI Employee tres niveles abajo exige pedírselo al que está encima, quien responde tiene una petición y no control. La profundidad no está prohibida ni se fija un límite aquí, porque el límite real es el span of control: un principio que este marco clasifica como adaptado y no como abolido, o sea que la escala puede crecer pero solo contra tooling, dashboards y límites de supervisión que hagan gobernable ese crecimiento. Un solo humano nominalmente accountable por mil AI Employees repartidos en seis niveles, sin un instrumento capaz de mostrar qué hizo cada uno, tiene un organigrama y no accountability. Describir esta arquitectura no es endosarla: el estándar dice qué debe seguir siendo cierto si una organización la construye.
+
+*Construida desde:* doctrina propia WRM.
 
 #### HWF-23
 
@@ -195,11 +203,15 @@ Toda declaración de conformidad publica estos nueve campos (HWF-71). Una declar
 
 *Nota:* Lo que el recurso puede decidir sin aprobación debe estar escrito antes de que opere, no inferido después a partir de lo que resultó haciendo.
 
+*Construida desde:* doctrina propia WRM.
+
 #### HWF-32
 
 **El acceso debe cumplir least privilege.**
 
 *Nota:* El contexto es capacidad, pero también es superficie de riesgo. Más acceso no es más competencia; es un blast radius mayor.
+
+*Construida desde:* doctrina propia WRM.
 
 #### HWF-33
 
@@ -207,17 +219,23 @@ Toda declaración de conformidad publica estos nueve campos (HWF-71). Una declar
 
 *Nota:* La regla es proporcionalidad: a mayor costo del error y menor reversibilidad, más aprobación soporta la acción. Aplica separación de funciones, así que quien inicia no necesariamente aprueba. Qué cuenta como alto riesgo no queda al gusto: se resuelve contra la clasificación de riesgo de HWF-51.
 
+*Construida desde:* doctrina propia WRM.
+
 #### HWF-34
 
 **El sistema debe saber cuándo escalar en vez de improvisar.**
 
 *Nota:* Un recurso que produce una respuesta convincente en vez de escalar una duda es más peligroso que uno menos brillante pero mejor gobernado. Toda excepción necesita un destino — y ninguna métrica puede castigar el viaje: un sistema medido por escalar menos aprende silencio, así que la escalación se juzga por el par perdidas-versus-innecesarias del scorecard del Gerente de Fuerza Laboral Híbrida, nunca por volumen a solas.
 
+*Construida desde:* doctrina propia WRM.
+
 #### HWF-35
 
 **El aprovisionamiento de contexto debe ser deliberado en ambas direcciones. Retenerle contexto a un AI Employee es una decisión de diseño legítima, sea para proteger la información o para prevenir la degradación medible de la decisión — anclaje, contaminación de contexto, saturación; no es una omisión y no debe tratarse como tal. Toda restricción debe registrarse en el contrato de rol como un registro de frontera de contexto, versionarse como cualquier otra autoridad, y estar disponible para la auditoría. La responsabilidad por una decisión degradada por contexto retenido recae en quien lo retuvo.**
 
 *Nota:* La justificación de riesgo siempre estuvo: el contexto se divide en debe saber, puede consultar y no debe acceder desde el primer borrador. Lo que faltaba era la segunda razón para restringir. Un recurso que ve todas las disputas anteriores se ancla en ellas; uno que lee el último diagnóstico lo hereda; uno al que se le entrega todo lo relevante ahoga la señal en lo meramente relacionado. El anclaje, el sesgo de confirmación y la sobrecarga operativa son degradaciones de la decisión y no fugas de información, y un manager que lee una cláusula de solo-riesgo no tiene motivo para retener nada que no sea sensible. El registro es el precio de la herramienta, porque la opacidad deliberada es, sin él, el instrumento perfecto para lavar accountability — «el sistema no tenía ese contexto» es el descendiente nativo de IA de «a mí nadie me avisó». Una restricción escrita, versionada y auditable es diseño; la misma restricción sin documentar es una defensa preparada de antemano, y la última oración de la cláusula le quita esa defensa. Nada de esto legitima privar al recurso del contexto que su rol necesita: retenerle el que requiere para escalar bien no es opacidad sino sabotaje del HWF-34.
+
+*Construida desde:* doctrina propia WRM.
 
 ### 4 · Evidencia y datos
 
@@ -226,6 +244,8 @@ Toda declaración de conformidad publica estos nueve campos (HWF-71). Una declar
 **Toda acción material debe ser auditable, y la auditoría debe reconstruir los determinantes de la decisión además de su resultado: la política, el conocimiento, los resultados de herramientas, la autoridad y las versiones vigentes al momento de ejecutarse la acción. El relato que el propio modelo haga de su razonamiento puede apoyar esa reconstrucción pero nunca la sustituye. Qué cuenta como material lo fija la clase de riesgo del puesto: de Alto hacia arriba los determinantes se atan a cada acción, y para puestos Bajos y Moderados, correlacionar event logs contra el manifiesto de versiones de HWF-43 es reconstrucción conforme.**
 
 *Nota:* Actor, input, herramienta, acción, aprobación, resultado y timestamp dicen que algo pasó. No dicen por qué, y sin el porqué una organización no puede atribuir una falla a su causa: una política equivocada, un conocimiento que envejeció, una herramienta que devolvió datos malos, un modelo que erró, o un rol que nunca debió asignarse a un recurso artificial. Esos cinco exigen remedios distintos y dejan registros idénticos bajo una auditoría de solo-qué. La cláusula que más protege es HWF-34: con solo el resultado se ve que el sistema respondió, nunca que debió dudar. El material ya está exigido en buena parte en otro lado — HWF-42 gobierna la procedencia de lo que el recurso sabía, HWF-43 las versiones de modelo, política, herramientas y knowledge base — así que lo que esta cláusula agrega es la obligación de ligarlas a una acción concreta en vez de sostenerlas como inventario general. El razonamiento declarado por un modelo es admisible como evidencia de apoyo y no es prueba de causa: lo que un sistema reporta haber pensado puede no ser lo que produjo su salida, y una organización que tome esa narración por el porqué va a escribir postmortems confiados y equivocados. Cuando se retengan trazas de razonamiento, su alcance, retención y borrado caen bajo HWF-42 como cualquier otra memoria, porque suelen contener datos de clientes recuperados.
+
+*Construida desde:* doctrina propia WRM.
 
 #### HWF-42
 
@@ -241,11 +261,15 @@ Toda declaración de conformidad publica estos nueve campos (HWF-71). Una declar
 
 *Nota:* Sin versionado es imposible saber qué autoridad existía en un momento dado, ni qué cambio produjo una mejora o un deterioro.
 
+*Construida desde:* doctrina propia WRM.
+
 #### HWF-44
 
 **El desempeño debe medirse por outcomes, calidad, riesgo y costo — nunca por actividad, horas, tokens o cantidad de mensajes.**
 
 *Nota:* La velocidad hace que la actividad parezca valor. Un proceso mal diseñado que producía diez errores producirá cien al automatizarse, y el dashboard lo llamará productividad.
+
+*Construida desde:* doctrina propia WRM.
 
 ### 5 · Riesgo y validación
 
@@ -281,17 +305,23 @@ Toda declaración de conformidad publica estos nueve campos (HWF-71). Una declar
 
 *Nota:* Sin un baseline registrado antes del cambio, la organización puede celebrar una mejora que nunca ocurrió. Criterios de rollback escritos después de conocer los resultados no son criterios; son justificación.
 
+*Construida desde:* doctrina propia WRM.
+
 #### HWF-63
 
 **Un puesto de AI Employee no debe sobrevivir a su justificación. Con una cadencia declarada, nunca mayor a doce meses, el accountable owner debe re-justificar la existencia del puesto frente a la estrategia vigente — una pregunta previa y separada del desempeño, porque un recurso puede cumplir todos sus KPIs en un puesto que la organización ya no necesita. La continuidad nunca es el default: un puesto cuya existencia no puede re-justificarse pasa a retiro, y sus accesos terminan con él. Una revisión vencida no es una revisión reprobada: escala al accountable owner y restringe o suspende el puesto en proporción mientras se fuerza la revisión — el retiro es el resultado de una justificación fallida, nunca de un calendario perdido.**
 
 *Nota:* Las presiones humanas de poda son débiles y fallan seguido — las burocracias cargan puestos muertos por décadas. Pero existen: una línea de salario que una revisión de presupuesto cuestiona, un ocupante que se va y fuerza la decisión de reemplazo. Un puesto artificial elimina hasta esos disparadores débiles — su costo marginal es demasiado pequeño para aparecer en la conversación presupuestaria, y nadie renuncia jamás de él — así que un puesto sin sentido no solo persiste por defecto; pierde las últimas ocasiones en que alguien lo notaría. En la propia clasificación de este marco, eso convierte a la poda organizacional en un principio adaptado: un mecanismo que ya era poco confiable para humanos desaparece por completo para ocupantes artificiales, y esta cláusula es el reemplazo. Lo que se acumula sin ella es deuda organizacional, y su forma más peligrosa es el zombi digital: credenciales, accesos a datos y autoridad vigente mantenidos vivos para trabajo que nadie necesita — con HWF-32 en mano, superficie de riesgo sin retorno. La pregunta de existencia va antes que la de desempeño porque una buena respuesta a la segunda es el anestésico habitual contra la primera. La cadencia pertenece al contrato de rol, y el techo de doce meses del texto citable es un máximo y no una recomendación: los puestos de alto volumen y alto riesgo merecen menos. Esta revisión puede compartir calendario con la de HWF-61; nunca debe compartir su default.
 
+*Construida desde:* doctrina propia WRM.
+
 #### HWF-64
 
 **El offboarding debe revocar accesos y transferir o destruir contexto de forma segura.**
 
 *Nota:* Revocar credenciales, deshabilitar herramientas, detener schedules y colas, rotar secretos, transferir trabajo pendiente, preservar evidencia. El offboarding es tan importante como el onboarding y casi siempre se omite.
+
+*Construida desde:* doctrina propia WRM.
 
 ### 7 · Conformidad
 
@@ -771,6 +801,8 @@ Un término, dos idiomas, una definición numerada. Cuando el término inglés s
 
 **G-24 · Management by exception** — El modo de operación en que el recurso resuelve la rutina dentro de sus límites y el manager interviene en desviaciones y excepciones. Peldaño 4 de la escalera de autonomía.
 
+**G-25 · Puesto híbrido** — Puesto cuyas responsabilidades se reparten explícitamente entre un recurso humano y uno artificial, con handoffs definidos, transferencia de contexto y un único dueño del resultado completo. Mal diseñado, produce dos ocupantes esperando que responda el otro.
+
 **G-26 · Supervisor** — Quien dirige el trabajo cotidiano de un AI Employee: rutear tareas, revisar output, fijar prioridades y recibir excepciones. Un supervisor puede ser humano o artificial. Se distingue del accountable owner, que siempre es humano: un AI Employee puede supervisar a otro y aun así responder ante una persona en algún punto por encima.
 
 **G-27 · Cadena de supervisión** — El recorrido desde un AI Employee hacia arriba, a través de cada supervisor, hasta el humano o cuerpo de gobierno accountable. Se permiten cadenas de cualquier profundidad, pero cada una debe terminar en un humano, ser recorrible y observable de punta a punta, y permitir que quien responde intervenga en cualquier punto sin pasar por la cadena misma. La profundidad la acota el span of control y no un número fijo: la escala puede crecer solo contra tooling que la haga gobernable.
@@ -802,8 +834,6 @@ Un término, dos idiomas, una definición numerada. Cuando el término inglés s
 **G-40 · Inferencia derivada** — Un dato que el deployment fabrica sobre una persona en vez de recolectarlo de ella: una probabilidad de apuros financieros, una condición de salud inferida, una intención predicha. Gobernado bajo HWF-42 como si se hubiera recolectado — finalidad, base, minimización, eliminación — y con frecuencia más sensible que todo lo que la persona sí entregó. Una inferencia que la persona nunca entregó sigue siendo su dato.
 
 **G-41 · Falla correlacionada** — El modo de falla de la monocultura de modelo. Los equipos humanos tampoco fallan de forma independiente, pero la diversidad de experiencia y criterio tiende a distribuir algunos puntos ciegos; las instancias que comparten modelo, proveedor, contexto o configuración los concentran, y pueden fallar del mismo modo al mismo tiempo. El precedente es la falla de causa común, conocida desde hace décadas en ingeniería de confiabilidad y en planes de continuidad; lo nuevo es la velocidad, el alcance y la opacidad con que se propaga dentro de una fuerza laboral artificial. Se mitiga con diversidad de modelos y proveedores, recursos de fallback y planes de sucesión; nombrado como ítem de validación para equipos de IA por HWF-52.
-
-**G-25 · Puesto híbrido** — Puesto cuyas responsabilidades se reparten explícitamente entre un recurso humano y uno artificial, con handoffs definidos, transferencia de contexto y un único dueño del resultado completo. Mal diseñado, produce dos ocupantes esperando que responda el otro.
 
 ## Gobierno
 
