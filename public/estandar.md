@@ -65,7 +65,7 @@ El test es conjuntivo: un deployment califica como AI Employee solo cuando las n
 | Automation / RPA | Ejecución determinista | Corre flujos predefinidos | Frágil ante casos no previstos |
 | AI agent | Acción orientada a objetivos | Razona, usa herramientas y ejecuta | Suele estar centrado en tareas u objetivos |
 | AI teammate / coworker | Colaboración | Comparte contexto y ejecuta trabajo | Semántica organizacional variable según proveedor |
-| AI Employee | Custodia de un rol | Asume trabajo recurrente bajo gobierno | La categoría aún no tiene estándar — de ahí este documento |
+| AI Employee | Custodia de un rol | Asume trabajo recurrente bajo gobierno | La categoría carecía de un estándar operacional compartido; este documento propone uno |
 
 ### Task execution frente a role stewardship
 

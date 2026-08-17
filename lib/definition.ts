@@ -156,7 +156,7 @@ export const LADDER: Rung[] = [
     term: 'AI Employee',
     promise: { en: 'Stewardship of a role', es: 'Custodia de un rol' },
     behaviour: { en: 'Holds recurring work under governance', es: 'Asume trabajo recurrente bajo gobierno' },
-    limit: { en: 'The category still has no standard — hence this document', es: 'La categoría aún no tiene estándar — de ahí este documento' },
+    limit: { en: 'The category lacked a shared operational standard; this document proposes one', es: 'La categoría carecía de un estándar operacional compartido; este documento propone uno' },
   },
 ];
 

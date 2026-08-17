@@ -65,7 +65,7 @@ The test is conjunctive: a deployment qualifies as an AI Employee only when all 
 | Automation / RPA | Deterministic execution | Runs predefined flows | Brittle against unforeseen cases |
 | AI agent | Goal-directed action | Reasons, uses tools, executes | Usually centred on tasks or objectives |
 | AI teammate / coworker | Collaboration | Shares context and executes work | Organisational semantics vary by vendor |
-| AI Employee | Stewardship of a role | Holds recurring work under governance | The category still has no standard — hence this document |
+| AI Employee | Stewardship of a role | Holds recurring work under governance | The category lacked a shared operational standard; this document proposes one |
 
 ### Task execution versus role stewardship
 
