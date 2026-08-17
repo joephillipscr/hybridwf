@@ -83,7 +83,7 @@ La conformidad es autodeclarada. Este estándar no certifica productos ni puntú
 
 Una portada, cinco regímenes editoriales. Este documento contiene cláusulas normativas, lenguaje de conformidad, la doctrina WRM, el instrumento HWFA y los playbooks de transición. Cada uno carga su propia regla de cambio — el texto de cláusula solo se mueve por enmienda, las notas y la doctrina pueden revisarse entre versiones, el instrumento evoluciona con su evidencia — pero comparten un título, un número de versión y un archivo canónico legible por máquinas, porque un estándar que se recupera y se cita como unidad debe entregarse como unidad.
 
-El texto de la cláusula es la unidad citable; citala por identificador, o sea HWF-44 y no un número de página. Las notas son comentario y pueden cambiar entre versiones sin enmendar el estándar.
+El texto de la cláusula es la unidad citable; cítela por identificador, o sea HWF-44 y no un número de página. Las notas son comentario y pueden cambiar entre versiones sin enmendar el estándar.
 
 ### La declaración de conformidad
 
@@ -121,7 +121,7 @@ Toda declaración de conformidad publica estos nueve campos (HWF-71). Una declar
 
 #### HWF-03
 
-**Ningún puesto puede transformarse materialmente — automatizarse, hibridarse o revertirse — sin una evaluación de impacto humano registrada, completada antes de que la transición comience. La evaluación debe nombrar a quiénes afecta y cómo: cambios en el trabajo, la autonomía y la vigilancia; el riesgo de deskilling; la carga intensificada de quienes absorben las excepciones; discriminación y accesibilidad; desplazamiento y reducción de personal; capacitación y reasignación; efectos sobre clientes y terceros. Los trabajadores afectados y sus representantes deben ser informados y consultados antes de la transformación, no después. La evaluación no está obligada a llegar a una conclusión favorable; está obligada a nombrar, medir y gobernar las consecuencias.**
+**Ningún puesto puede transformarse materialmente — automatizarse, pasar a humano asistido o dejar de serlo, revertirse a una persona o retirarse — sin una evaluación de impacto humano registrada, completada antes de que la transición comience. La evaluación debe nombrar a quiénes afecta y cómo: cambios en el trabajo, la autonomía y la vigilancia; el riesgo de deskilling; la carga intensificada de quienes absorben las excepciones; discriminación y accesibilidad; desplazamiento y reducción de personal; capacitación y reasignación; efectos sobre clientes y terceros. Los trabajadores afectados y sus representantes deben ser informados y consultados antes de la transformación, no después. La evaluación no está obligada a llegar a una conclusión favorable; está obligada a nombrar, medir y gobernar las consecuencias.**
 
 *Nota:* Esto es HWF-01 con un instrumento. Una jerarquía de restricciones vale poco si nada la verifica en el momento en que se pone a prueba, y ese momento es la transición: el playbook tal como se escribió primero iba de baseline a handoff con las personas apareciendo una vez, como capacidad liberada, en el paso diez. La evaluación corre antes del paso uno. Dos de sus dimensiones merecen atención porque nadie las reporta voluntariamente. El deskilling es la silenciosa: la organización que automatiza su trabajo junior deja de producir seniors, y lo descubre el año en que los seniors se van. La carga de excepciones es la cruel: la automatización absorbe los casos fáciles y le deja a los humanos un flujo de puros casos difíciles, y luego los mide contra un throughput fijado en la era de los casos fáciles. La consulta es obligatoria y no es consentimiento: este estándar no otorga veto, y la ley laboral de cada jurisdicción puede otorgar más — la cláusula es piso, en la misma postura hacia el Artículo 26 del EU AI Act que el resto del documento, diseñada para viajar sin afirmar equivalencia jurídica. La última oración conserva la honestidad de HWF-01: una evaluación obligada a bendecir la transición sería teatro, y las consecuencias nombradas, medidas y gobernadas son la diferencia entre desplazamiento y abuso.
 
@@ -301,7 +301,7 @@ Toda declaración de conformidad publica estos nueve campos (HWF-71). Una declar
 
 #### HWF-62
 
-**Toda transición Human ↔ Artificial debe poder evaluarse contra un baseline y tener criterios de rollback explícitos.**
+**Toda transición entre tipos de ocupante — humano, humano asistido o artificial — y todo paso hacia o desde automatización determinista debe poder evaluarse contra un baseline y tener criterios de rollback explícitos.**
 
 *Nota:* Sin un baseline registrado antes del cambio, la organización puede celebrar una mejora que nunca ocurrió. Criterios de rollback escritos después de conocer los resultados no son criterios; son justificación.
 
@@ -424,7 +424,7 @@ La idea fundacional es separar el puesto del ocupante. Primero existe una necesi
 | 7 | Operar | Trabajo recurrente con observabilidad y management by exception. |
 | 8 | Medir | KPIs, calidad, costo, incidentes, intervenciones y outcomes. |
 | 9 | Desarrollar | Coaching o actualización de instrucciones, conocimiento, modelos y herramientas. La señal puede originarse en el manager o en el recurso reportando divergencia a partir de sus propios datos. |
-| 10 | Reasignar | Cambiar scope, mover Human ↔ Artificial, rediseñar reparto híbrido. |
+| 10 | Reasignar | Cambiar scope, mover entre tipos de ocupante, revisar qué funciones se ejecutan con asistencia. |
 | 11 | Suspender | Detener trabajo o accesos ante riesgo, incidente o desempeño inaceptable. |
 | 12 | Retirar | Offboarding, revocación, transferencia de conocimiento y retención/borrado. |
 
@@ -438,7 +438,7 @@ La idea fundacional es separar el puesto del ocupante. Primero existe una necesi
 6. Los accesos se otorgan bajo least privilege y se separan de la identidad del modelo o del prompt. El contexto se aprovisiona sobre la misma base: lo que se concede y lo que se retiene son ambas decisiones de diseño registradas.
 7. Toda acción material ejecutada por un AI Employee debe ser trazable y auditable.
 8. El desempeño se mide por outcomes, calidad, riesgo y costo; no por actividad, horas, tokens o cantidad de mensajes.
-9. Una transición Human ↔ Artificial debe ser reversible hasta demostrar performance estable.
+9. Una transición entre tipos de ocupante debe ser reversible hasta demostrar performance estable.
 10. La responsabilidad final sobre un AI Employee permanece en una persona identificada o cuerpo humano de gobierno, sin importar cuántos supervisores artificiales haya en el medio.
 
 ## La matriz de 120 principios
@@ -597,7 +597,7 @@ La matriz es una síntesis propia de prácticas de diseño organizacional, RR. H
 | 106 | Planificar capacidad futura | Headcount, skills y carga requeridos para la estrategia. | Human + AI capacity planning, concurrency y workload forecasting. | U |
 | 107 | Make vs. buy | Contratar, tercerizar o desarrollar capacidad internamente. | Build agent vs. SaaS/vendor vs. managed service vs. open source. | U |
 | 108 | Dimensionamiento | Número y mezcla de personas necesarias. | Instances, concurrency, model tiers y capacity requerida. | U |
-| 109 | Diseñar el workforce mix | Full-time, part-time, contractors, outsourcing. | Human, AI y hybrid role allocation según riesgo, costo y ventaja comparativa. | U |
+| 109 | Diseñar el workforce mix | Full-time, part-time, contractors, outsourcing. | Asignación Human, Assisted human o Artificial según riesgo, costo y ventaja comparativa. | U |
 | 110 | Productividad por recurso | Output/FTE y valor generado. | Outcome/AI Employee, cost per outcome y human review load. | U |
 
 ### 10. Analítica y mejora continua
@@ -679,7 +679,7 @@ En organizaciones grandes puede evolucionar a Director of Hybrid Workforce. Debe
 | KPI | Qué mide |  |
 | --- | --- | --- |
 | Workforce Performance Index | Resultado global del workforce vs. objetivos. |  |
-| Role Allocation Accuracy | % de roles cuya asignación Human/AI/Hybrid se mantiene válida tras revisión. |  |
+| Role Allocation Accuracy | % de roles cuya asignación — Human, Assisted human, Deterministic automation o Artificial — se mantiene válida tras revisión. |  |
 | Transition Success Rate | Transiciones que alcanzan criterios de éxito sobre el total. |  |
 | Time to Stable Performance | Días hasta alcanzar KPIs y nivel de riesgo esperado. |  |
 | Post-Transition Performance Delta | Cambio de performance después de la transición. ¿El trabajo funciona mejor que antes? | **al CEO** |

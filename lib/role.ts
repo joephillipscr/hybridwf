@@ -43,7 +43,7 @@ export interface Kpi {
 
 export const KPIS: Kpi[] = [
   { name: 'Workforce Performance Index', measures: { en: 'Overall workforce result against objectives.', es: 'Resultado global del workforce vs. objetivos.' } },
-  { name: 'Role Allocation Accuracy', measures: { en: 'Share of roles whose Human/AI/Hybrid allocation survives review.', es: '% de roles cuya asignación Human/AI/Hybrid se mantiene válida tras revisión.' } },
+  { name: 'Role Allocation Accuracy', measures: { en: 'Share of roles whose allocation — Human, Assisted human, Deterministic automation or Artificial — survives review.', es: '% de roles cuya asignación — Human, Assisted human, Deterministic automation o Artificial — se mantiene válida tras revisión.' } },
   { name: 'Transition Success Rate', measures: { en: 'Transitions meeting their success criteria over total attempted.', es: 'Transiciones que alcanzan criterios de éxito sobre el total.' } },
   { name: 'Time to Stable Performance', measures: { en: 'Days until KPIs and expected risk level are reached.', es: 'Días hasta alcanzar KPIs y nivel de riesgo esperado.' } },
   { name: 'Post-Transition Performance Delta', measures: { en: 'Change in performance after the transition. Does the work function better than before?', es: 'Cambio de performance después de la transición. ¿El trabajo funciona mejor que antes?' }, ceo: true },

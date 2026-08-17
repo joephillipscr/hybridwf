@@ -30,13 +30,13 @@ const C = {
     en: [
       'A test an organisation can run on its own deployment.',
       'Twenty-seven normative clauses, cited by identifier.',
-      'A framework for deciding Human, Artificial or Hybrid before choosing a tool.',
+      'A framework for deciding who holds the post — human, assisted human or artificial — before choosing a tool.',
       'Self-declared conformance, published if the organisation chooses.',
     ],
     es: [
       'Un test que una organización puede aplicar a su propio deployment.',
       'Veintisiete cláusulas normativas, citables por identificador.',
-      'Un marco para decidir Humano, Artificial o Híbrido antes de elegir herramienta.',
+      'Un marco para decidir quién ocupa el puesto — humano, humano asistido o artificial — antes de elegir herramienta.',
       'Conformidad autodeclarada, publicable si la organización lo decide.',
     ],
   },

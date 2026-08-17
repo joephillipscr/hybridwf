@@ -121,7 +121,7 @@ Every conformance claim publishes these nine fields (HWF-71). A claim missing an
 
 #### HWF-03
 
-**No post may be materially transformed — automated, hybridised or returned — without a recorded human impact assessment, completed before the transition begins. The assessment must name who is affected and how: changes to work, autonomy and surveillance; the risk of deskilling; the intensified load on those who absorb the exceptions; discrimination and accessibility; displacement and headcount; training and reassignment; effects on customers and third parties. Affected workers and their representatives must be informed and consulted before the transformation, not after it. The assessment is not required to reach a favourable conclusion; it is required to name, measure and govern the consequences.**
+**No post may be materially transformed — automated, moved to or from assisted human, returned to a person, or retired — without a recorded human impact assessment, completed before the transition begins. The assessment must name who is affected and how: changes to work, autonomy and surveillance; the risk of deskilling; the intensified load on those who absorb the exceptions; discrimination and accessibility; displacement and headcount; training and reassignment; effects on customers and third parties. Affected workers and their representatives must be informed and consulted before the transformation, not after it. The assessment is not required to reach a favourable conclusion; it is required to name, measure and govern the consequences.**
 
 *Note:* This is HWF-01 given an instrument. A hierarchy of constraints means little if nothing checks it at the moment it is tested, and the moment is the transition: the playbook as first written moved from baseline to handoff with people appearing once, as released capacity, in step ten. The assessment runs before step one. Two of its dimensions repay attention because nobody volunteers them. Deskilling is the quiet one: the organisation that automates its junior work stops producing seniors, and discovers it the year the seniors leave. The exception load is the cruel one: automation absorbs the easy cases and leaves humans a stream of nothing but hard ones, then measures them against throughput set in the era of easy cases. Consultation is mandatory and is not consent: this standard grants no veto, and labour law in each jurisdiction may grant more — the clause is a floor, in the same posture toward EU AI Act Article 26 as the rest of the document, designed to travel without claiming legal equivalence. The closing sentence keeps HWF-01’s honesty: an assessment obliged to bless the transition would be theatre, and consequences that are named, measured and governed are the difference between displacement and abuse.
 
@@ -301,7 +301,7 @@ Every conformance claim publishes these nine fields (HWF-71). A claim missing an
 
 #### HWF-62
 
-**Every Human ↔ Artificial transition must be evaluable against a baseline and carry explicit rollback criteria.**
+**Every transition between occupant types — human, assisted human or artificial — and every move to or from deterministic automation must be evaluable against a baseline and carry explicit rollback criteria.**
 
 *Note:* Without a baseline recorded before the change, the organisation can celebrate an improvement it never made. Rollback criteria written after the results are known are not criteria; they are justification.
 
@@ -424,7 +424,7 @@ The founding idea is to separate the post from its occupant. First there is an o
 | 7 | Operate | Recurring work with observability and management by exception. |
 | 8 | Measure | KPIs, quality, cost, incidents, interventions and outcomes. |
 | 9 | Develop | Coaching or updates to instructions, knowledge, models and tools. The signal may originate with the manager or with the resource reporting divergence from its own data. |
-| 10 | Reassign | Change scope, move Human ↔ Artificial, redesign the hybrid split. |
+| 10 | Reassign | Change scope, move between occupant types, revise which functions run with assistance. |
 | 11 | Suspend | Stop work or access on risk, incident or unacceptable performance. |
 | 12 | Retire | Offboarding, revocation, knowledge transfer and retention or deletion. |
 
@@ -438,7 +438,7 @@ The founding idea is to separate the post from its occupant. First there is an o
 6. Access is granted under least privilege and is separated from the identity of the model or the prompt. Context is provisioned on the same basis: what is granted and what is withheld are both recorded design decisions.
 7. Every material action executed by an AI Employee must be traceable and auditable.
 8. Performance is measured by outcomes, quality, risk and cost — not by activity, hours, tokens or message count.
-9. A Human ↔ Artificial transition must remain reversible until stable performance is demonstrated.
+9. A transition between occupant types must remain reversible until stable performance is demonstrated.
 10. Final responsibility for an AI Employee stays with an identified person or human governance body, however many artificial supervisors sit between them.
 
 ## The 120-principle matrix
@@ -597,7 +597,7 @@ The matrix is an original synthesis of organisational design, HR, performance ma
 | 106 | Plan future capacity | Headcount, skills and load required by the strategy. | Human + AI capacity planning, concurrency and workload forecasting. | U |
 | 107 | Make vs. buy | Hire, outsource or develop capability internally. | Build agent vs. SaaS/vendor vs. managed service vs. open source. | U |
 | 108 | Sizing | Number and mix of people required. | Instances, concurrency, model tiers and required capacity. | U |
-| 109 | Design the workforce mix | Full-time, part-time, contractors, outsourcing. | Human, AI and hybrid role allocation by risk, cost and comparative advantage. | U |
+| 109 | Design the workforce mix | Full-time, part-time, contractors, outsourcing. | Human, assisted human or artificial allocation by risk, cost and comparative advantage. | U |
 | 110 | Productivity per resource | Output/FTE and value generated. | Outcome/AI Employee, cost per outcome and human review load. | U |
 
 ### 10. Analytics and continuous improvement
@@ -679,7 +679,7 @@ In large organisations this can grow into a Director of Hybrid Workforce. It bel
 | KPI | What it measures |  |
 | --- | --- | --- |
 | Workforce Performance Index | Overall workforce result against objectives. |  |
-| Role Allocation Accuracy | Share of roles whose Human/AI/Hybrid allocation survives review. |  |
+| Role Allocation Accuracy | Share of roles whose allocation — Human, Assisted human, Deterministic automation or Artificial — survives review. |  |
 | Transition Success Rate | Transitions meeting their success criteria over total attempted. |  |
 | Time to Stable Performance | Days until KPIs and expected risk level are reached. |  |
 | Post-Transition Performance Delta | Change in performance after the transition. Does the work function better than before? | **to CEO** |
