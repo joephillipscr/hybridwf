@@ -54,7 +54,7 @@ Hybrid Workforce Standard by Master Joe Phillips, https://hybridwf.com/ — lice
 | 8 | Observability | Actions, tool calls, costs, decisions and results are traceable. |
 | 9 | Human accountability | An identified human, or human governance body, answers for configuration, controls, performance and exceptions, however many artificial supervisors sit in between. |
 
-The test is conjunctive: a deployment qualifies as an AI Employee only when all nine properties are present. Presence is binary; depth is not — how far each property is developed is measured by the maturity model, not by this test. A system missing any one of them may still be an excellent agent or automation; calling it an AI Employee is a commercial metaphor rather than a verifiable administrative category. Conformance is a separate question: the clauses bind AI Employees, and a deployment that violates them is a non-conformant AI Employee, not a non-AI-Employee — a definition that expelled violators would leave the standard with nothing to bind. And the test binds in both directions: all nine properties present in operation make the deployment an AI Employee whatever it is called, with the burden of demonstrating non-qualification on the deployer (HWF-12).
+The test is conjunctive: a deployment qualifies as an AI Employee only when all nine properties are present. Presence is binary; membership is decided by this test and by nothing else. Depth and scale evolve, and the maturity ladder describes that evolution — it never decides membership. A system missing any one of them may still be an excellent agent or automation; calling it an AI Employee is a commercial metaphor rather than a verifiable administrative category. Conformance is a separate question: the clauses bind AI Employees, and a deployment that violates them is a non-conformant AI Employee, not a non-AI-Employee — a definition that expelled violators would leave the standard with nothing to bind. And the test binds in both directions: all nine properties present in operation make the deployment an AI Employee whatever it is called, with the burden of demonstrating non-qualification on the deployer (HWF-12).
 
 ### The vocabulary ladder
 
@@ -355,13 +355,13 @@ The HWFA derives a provisional class from cost of error and reversibility during
 | 1 | Assistant | Uses context to help a human. |
 | 2 | Agent | Executes bounded tasks with tools. |
 | 3 | Role agent | Owns the recurring workflows of a defined role. |
-| 4 | AI Employee | Identity, role contract, memory, authority, KPIs, manager and audit. |
+| 4 | AI Employee | The nine properties of the definition, exhibited in operation. |
 | 5 | AI Team | Multiple AI Employees coordinated with shared context. |
 | 6 | Hybrid Enterprise | Humans and AI Employees under one integrated model of organisation, permissions and governance. |
 
 **Category threshold: 4 — AI Employee.**
 
-The value of the model is the threshold it creates. Not every agent deserves to be called an AI Employee, and the category should be auditable against minimum requirements rather than asserted in a product page. Levels 0 to 3 are legitimate destinations, not failures — a well-placed assistant can produce more value than a supposed AI Employee nobody supervises.
+The ladder maps evolution of capacity and scale; it does not decide membership. Level 4 names the point where a deployment can exhibit the nine properties of the definition — whether it actually does is decided by the test, never by the level. Levels 0 to 3 are legitimate destinations, not failures — a well-placed assistant can produce more value than a supposed AI Employee nobody supervises.
 
 ### Self-diagnosis
 
@@ -849,7 +849,7 @@ A standard authored by a vendor and judged by nobody is a specification sheet wi
 
 ### Editor and Review Board
 
-> The Editor writes, proposes and decides everything editorial. The normative text changes only by vote of the Board — and the Editor has a voice, not a vote.
+> The Editor writes, proposes and decides everything editorial. From the freeze, the normative text changes only by vote of the Board — and the Editor has a voice, not a vote. Until the freeze, the Candidate is a working draft under the Editor’s custody, and its drafting history is public, commit by commit, in the repository.
 
 That single rule is what makes the disclosure above worth anything: the author holds the largest commercial interest in the room. Until the freeze he holds editorial custody, and says so; from the freeze he cannot move the standard — only persuade the people who will be able to, once the Board exists.
 
@@ -997,17 +997,17 @@ You may quote, embed, teach, translate and commercially use this material with a
 
 ## Changelog
 
-### v1.0 · 2026-08-12 · Candidate — pending Board ratification
+### vCandidate 1.0 · 2026-08-12 · Working draft under editorial custody until the freeze on 1 September 2026 — pending Board ratification
 
 - Candidate 1.0: twenty-seven normative clauses in eight blocks — 0x human foundation to 7x conformance — plus the nine-property test, the WRM framework with its 120-principle matrix, the maturity model, the HWFA allocation instrument, the five-tier risk classification, the Hybrid Workforce Manager role, the transition playbooks and a forty-one-term glossary. Published bilingually, with the complete text as one machine-readable file per language.
-- Certification is deliberately outside the scope and does not return: the author holds a commercial interest in the category, so the standard scores no products, issues no seals, and makes conformance a self-declaration anyone can verify or refute — the public as auditor, structure instead of trust.
+- Certification is deliberately outside the scope and does not return: the author holds a commercial interest in the category, so the standard scores no products, issues no seals, and makes conformance a self-declaration anyone can verify or refute — public scrutiny, structure instead of trust.
 - The front matter carries the preamble — the document’s own declaration — the author’s signed motivation and strategic objective, the thesis corrected during drafting so that it ends where every chain ends (an AI Employee holds a role; a human answers for it), and the invariant formula: the AI executes, the organisation answers, a human governs.
 - Governance was reformed before any seat was filled: nine seats with a practitioner majority and a single academic; commercial interest capped at two seats, with disclosure and recusal judged by the non-conflicted; a transparent, identical, published honorarium; public nomination in which the Editor proposes and appoints nobody; two-thirds quorum over filled seats and normative majorities counted over all seats; Board reversal of note revisions; Editor succession and removal — and the deepest rule: the Editor has a voice, not a vote. The publication remains a candidate until a Board constituted under these rules ratifies it; the author cannot ratify his own standard.
 - The allocation instrument is the HWFA — formerly the Fit Score, renamed because an instrument that deliberately refuses to produce a number should not be called a Score. It runs in three stages embodying HWF-01’s order (eligibility, then risk, then economics), can answer deterministic automation — you do not need an AI Employee — and returns an argument rather than a number, because a score would let a decision already taken be laundered through arithmetic.
 - Clause numbers carry the architecture: the first digit names the block, block 0 is the human foundation, and HWF-01 is the supreme clause — number and rank aligned. A new clause takes the next free number in its block’s decade; a block that reaches nine clauses is asking to be split at a major version, not extended.
 - Candidate 1.0 was reviewed adversarially before any Board existed: twenty external recommendations and a five-advisor council with anonymous peer refutation — forty findings. Everything confirmed was amended; seven attacks died against existing text; and eight findings confirmed in part are published as open findings, Board agenda until a version resolves them — because a standard that hides its known gaps is marketing. The per-clause considerations that survived this process are recorded below.
 
-Clause text changes require a version bump and a Board vote. Notes, examples and commentary may be corrected between versions without amending the standard. Every published version stays at its own permanent address so that a citation made today still resolves in five years. The first digit of a clause number names its block, so a new clause takes the next free number inside its block’s decade — thematic order and citation stability no longer trade against each other. A block that reaches nine clauses is not asking for a tenth; it is asking to be split, and splitting blocks is major-version work for the Board. Within a version, changelog entries are drafting history in reverse chronological order: where several touch the same clause, the newest account governs and the older ones stand as record.
+From the freeze, clause text changes require a version bump and a Board vote, and every frozen version stays at its own permanent address so that a citation made then still resolves in five years. Until the freeze, the Candidate is a working draft: its text may be amended under editorial custody, and the authoritative record of every amendment — date, prior text, new text and reason — is the public commit history of the repository. Notes, examples and commentary may be corrected between versions without amending the standard. The first digit of a clause number names its block, so a new clause takes the next free number inside its block’s decade — thematic order and citation stability no longer trade against each other. A block that reaches nine clauses is not asking for a tenth; it is asking to be split, and splitting blocks is major-version work for the Board. Within a version, changelog entries are drafting history in reverse chronological order: where several touch the same clause, the newest account governs and the older ones stand as record.
 
 ### Considerations by clause
 

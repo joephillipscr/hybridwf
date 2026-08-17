@@ -5,12 +5,12 @@ import type { Locale } from '@/lib/site';
 
 const C = {
   eyebrow: { en: 'Maturity', es: 'Madurez' },
-  title: { en: 'Seven levels, one threshold', es: 'Siete niveles, un umbral' },
+  title: { en: 'Seven levels, one ladder', es: 'Siete niveles, una escalera' },
   lede: {
     en: 'From Tool to Hybrid Enterprise. Levels 0 to 3 are legitimate destinations, not failures — a well-placed assistant can produce more value than a supposed AI Employee nobody supervises.',
     es: 'De Herramienta a Empresa Híbrida. Los niveles 0 a 3 son destinos legítimos, no fracasos — un asistente bien ubicado puede producir más valor que un supuesto AI Employee al que nadie supervisa.',
   },
-  threshold: { en: 'Category threshold', es: 'Umbral de la categoría' },
+  threshold: { en: 'Where the test can be met', es: 'Donde el test puede cumplirse' },
   diagTitle: { en: 'Diagnose what you actually have', es: 'Diagnostique qué tiene realmente' },
   diagLede: {
     en: 'Take your most important AI implementations and examine them without the name the vendor gave them. Five questions, answered honestly.',

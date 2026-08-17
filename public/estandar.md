@@ -54,7 +54,7 @@ Hybrid Workforce Standard de Master Joe Phillips, https://hybridwf.com/es/ — b
 | 8 | Observabilidad | Acciones, tool calls, costos, decisiones y resultados trazables. |
 | 9 | Accountability humano | Un humano identificado, o cuerpo humano de gobierno, responde por configuración, controles, desempeño y excepciones, sin importar cuántos supervisores artificiales haya en el medio. |
 
-El test es conjuntivo: un deployment califica como AI Employee solo cuando las nueve propiedades están presentes. La presencia es binaria; la profundidad no — cuánto está desarrollada cada propiedad lo mide el modelo de madurez, no este test. Un sistema al que le falte cualquiera de ellas puede seguir siendo un excelente agente o automatización; llamarlo AI Employee es una metáfora comercial más que una categoría administrativa verificable. La conformidad es una pregunta separada: las cláusulas obligan a los AI Employees, y un deployment que las viola es un AI Employee no conforme, no un no-AI-Employee — una definición que expulsara a los infractores dejaría al estándar sin nada que obligar. Y el test obliga en ambas direcciones: las nueve propiedades presentes en operación hacen del deployment un AI Employee sin importar cómo se lo llame, con la carga de demostrar la no-calificación en el deployer (HWF-12).
+El test es conjuntivo: un deployment califica como AI Employee solo cuando las nueve propiedades están presentes. La presencia es binaria; la membresía la decide este test y nada más. La profundidad y la escala evolucionan, y la escalera de madurez describe esa evolución — nunca decide la membresía. Un sistema al que le falte cualquiera de ellas puede seguir siendo un excelente agente o automatización; llamarlo AI Employee es una metáfora comercial más que una categoría administrativa verificable. La conformidad es una pregunta separada: las cláusulas obligan a los AI Employees, y un deployment que las viola es un AI Employee no conforme, no un no-AI-Employee — una definición que expulsara a los infractores dejaría al estándar sin nada que obligar. Y el test obliga en ambas direcciones: las nueve propiedades presentes en operación hacen del deployment un AI Employee sin importar cómo se lo llame, con la carga de demostrar la no-calificación en el deployer (HWF-12).
 
 ### La escalera de vocabulario
 
@@ -355,13 +355,13 @@ El HWFA deriva una clase provisional de costo del error y reversibilidad al asig
 | 1 | Asistente | Usa contexto para ayudar a un humano. |
 | 2 | Agente | Ejecuta tareas acotadas con herramientas. |
 | 3 | Agente de rol | Posee los workflows recurrentes de un rol definido. |
-| 4 | AI Employee | Identidad, Role Contract, memoria, autoridad, KPIs, manager y auditoría. |
+| 4 | AI Employee | Las nueve propiedades de la definición, exhibidas en operación. |
 | 5 | AI Team | Múltiples AI Employees coordinados con contexto compartido. |
 | 6 | Empresa Híbrida | Humanos y AI Employees bajo un modelo integrado de organización, permisos y gobierno. |
 
 **Umbral de la categoría: 4 — AI Employee.**
 
-El valor del modelo es el umbral que crea. No todo agente merece llamarse AI Employee, y la categoría debería poder auditarse contra requisitos mínimos en lugar de afirmarse en una página de producto. Los niveles 0 a 3 son destinos legítimos, no fracasos — un asistente bien ubicado puede producir más valor que un supuesto AI Employee al que nadie supervisa.
+La escalera mapea la evolución de capacidad y escala; no decide la membresía. El nivel 4 nombra el punto donde un deployment puede exhibir las nueve propiedades de la definición — si de verdad las exhibe lo decide el test, nunca el nivel. Los niveles 0 a 3 son destinos legítimos, no fracasos — un asistente bien ubicado puede producir más valor que un supuesto AI Employee al que nadie supervisa.
 
 ### Autodiagnóstico
 
@@ -661,7 +661,7 @@ En organizaciones grandes puede evolucionar a Director of Hybrid Workforce. Debe
 
 1. Armonía operacional humano-IA: eliminar ownership contradictorio, definir handoffs y líneas de escalamiento.
 2. Evaluar periódicamente qué trabajo debe ser Humano, Humano asistido, Automatización determinista o Artificial.
-3. Dirigir transiciones Human → Artificial y Artificial → Human.
+3. Dirigir transiciones entre tipos de ocupante, en ambas direcciones.
 4. Diseñar puestos híbridos y reparto explícito de responsabilidades.
 5. Administrar el impacto humano: claridad, comunicación, reasignación y desarrollo.
 6. Garantizar que todo AI Employee tenga Role Contract, manager, KPIs, permisos, límites, audit trail, performance review, y un kill switch ejercitado con cadencia declarada (HWF-23).
@@ -849,7 +849,7 @@ Un estándar escrito por un vendor y juzgado por nadie es una hoja de especifica
 
 ### Editor y Review Board
 
-> El Editor escribe, propone y decide todo lo editorial. El texto normativo cambia solo por votación del Board — y el Editor tiene voz, mas no voto.
+> El Editor escribe, propone y decide todo lo editorial. Desde el congelamiento, el texto normativo cambia solo por votación del Board — y el Editor tiene voz, mas no voto. Hasta el congelamiento, la Candidate es un borrador bajo custodia del Editor, y su historial de redacción es público, commit por commit, en el repositorio.
 
 Esa única regla es la que le da valor a la divulgación anterior: el autor tiene el mayor interés comercial de la sala. Hasta el congelamiento conserva la custodia editorial, y lo dice; desde el congelamiento no puede mover el estándar — solo persuadir a quienes sí podrán, cuando el Board exista.
 
@@ -997,17 +997,17 @@ Puede citar, embeber, enseñar, traducir y usar comercialmente este material con
 
 ## Cambios
 
-### v1.0 · 2026-08-12 · Candidata — pendiente de ratificación del Board
+### vCandidate 1.0 · 2026-08-12 · Borrador en curso bajo custodia editorial hasta el congelamiento del 1 de septiembre de 2026 — pendiente de ratificación del Board
 
 - Candidate 1.0: veintisiete cláusulas normativas en ocho bloques — 0x fundamento humano a 7x conformidad — más el test de nueve propiedades, el marco WRM con su matriz de 120 principios, el modelo de madurez, el instrumento de asignación HWFA, la clasificación de riesgo de cinco niveles, el rol de Gerente de Fuerza Laboral Híbrida, los playbooks de transición y un glosario de cuarenta y un términos. Publicado bilingüe, con el texto completo como un archivo legible por máquinas por idioma.
-- La certificación está deliberadamente fuera del alcance y no regresa: el autor tiene un interés comercial en la categoría, así que el estándar no puntúa productos, no emite sellos, y convierte la conformidad en una autodeclaración que cualquiera puede verificar o refutar — el público como auditor, estructura en vez de confianza.
+- La certificación está deliberadamente fuera del alcance y no regresa: el autor tiene un interés comercial en la categoría, así que el estándar no puntúa productos, no emite sellos, y convierte la conformidad en una autodeclaración que cualquiera puede verificar o refutar — escrutinio público, estructura en vez de confianza.
 - El frente carga el preámbulo — la declaración del documento mismo —, la motivación y el objetivo estratégico firmados por el autor, la tesis corregida durante la redacción para que termine donde termina toda cadena (un AI Employee ocupa un rol; un humano responde por él), y la fórmula invariante: la IA ejecuta, la organización responde, un humano gobierna.
 - La gobernanza se reformó antes de llenar asiento alguno: nueve asientos con mayoría practicante y un solo académico; interés comercial con tope de dos asientos, con divulgación y recusación juzgada por los no conflictuados; honorario transparente, idéntico y publicado; nominación pública donde el Editor propone y no nombra a nadie; quorum de dos tercios sobre asientos ocupados y mayorías normativas contadas sobre todos los asientos; reversión por el Board de revisiones de notas; sucesión y remoción del Editor — y la regla más profunda: el Editor tiene voz, mas no voto. La publicación sigue siendo candidata hasta que un Board constituido bajo estas reglas la ratifique; el autor no puede ratificar su propio estándar.
 - El instrumento de asignación es el HWFA — antes Fit Score, renombrado porque un instrumento que deliberadamente se niega a producir un número no debería llamarse Score. Corre en tres etapas que encarnan el orden de HWF-01 (elegibilidad, luego riesgo, luego economía), puede responder automatización determinista — no se necesita un AI Employee — y devuelve un argumento en vez de un número, porque un puntaje permitiría lavar por aritmética una decisión ya tomada.
 - Los números de cláusula cargan la arquitectura: el primer dígito nombra el bloque, el bloque 0 es el fundamento humano, y HWF-01 es la cláusula suprema — número y rango alineados. Una cláusula nueva toma el siguiente número libre en la decena de su bloque; un bloque que llega a nueve cláusulas está pidiendo partirse en una versión mayor, no extenderse.
 - Candidate 1.0 se revisó adversarialmente antes de que existiera Board alguno: veinte recomendaciones externas y un concilio de cinco asesores con refutación de pares anónima — cuarenta hallazgos. Todo lo confirmado se enmendó; siete ataques murieron contra texto existente; y ocho hallazgos confirmados en parte se publican como hallazgos abiertos, agenda del Board hasta que una versión los resuelva — porque un estándar que esconde sus huecos conocidos es marketing. Las consideraciones por cláusula que sobrevivieron ese proceso quedan registradas abajo.
 
-Cambiar el texto de una cláusula exige subir de versión y una votación del Board. Notas, ejemplos y comentario pueden corregirse entre versiones sin enmendar el estándar. Toda versión publicada permanece en su propia dirección permanente para que una cita hecha hoy siga resolviendo en cinco años. El primer dígito del número de una cláusula nombra su bloque, así que una cláusula nueva toma el siguiente número libre dentro de la decena de su bloque — el orden temático y la estabilidad de citas ya no se intercambian. Un bloque que llega a nueve cláusulas no está pidiendo una décima; está pidiendo partirse, y partir bloques es trabajo de versión mayor para el Board. Dentro de una versión, las entradas del changelog son historia de redacción en orden cronológico inverso: donde varias tocan la misma cláusula, gobierna el relato más nuevo y las anteriores quedan como registro.
+Desde el congelamiento, cambiar el texto de una cláusula exige subir de versión y una votación del Board, y toda versión congelada permanece en su propia dirección permanente para que una cita hecha entonces siga resolviendo en cinco años. Hasta el congelamiento, la Candidate es un borrador: su texto puede enmendarse bajo custodia editorial, y el registro con autoridad de cada enmienda — fecha, texto anterior, texto nuevo y motivo — es el historial público de commits del repositorio. Notas, ejemplos y comentario pueden corregirse entre versiones sin enmendar el estándar. El primer dígito del número de una cláusula nombra su bloque, así que una cláusula nueva toma el siguiente número libre dentro de la decena de su bloque — el orden temático y la estabilidad de citas ya no se intercambian. Un bloque que llega a nueve cláusulas no está pidiendo una décima; está pidiendo partirse, y partir bloques es trabajo de versión mayor para el Board. Dentro de una versión, las entradas del changelog son historia de redacción en orden cronológico inverso: donde varias tocan la misma cláusula, gobierna el relato más nuevo y las anteriores quedan como registro.
 
 ### Consideraciones por cláusula
 

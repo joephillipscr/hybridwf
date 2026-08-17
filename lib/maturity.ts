@@ -6,7 +6,7 @@ export interface Level {
   definition: T;
 }
 
-/** Seven levels. The threshold for the category sits at level 4. */
+/** Seven levels. Level 4 names where a deployment can exhibit the nine properties; membership is decided by the definition test, never by the level. */
 export const LEVELS: Level[] = [
   {
     n: 0,
@@ -44,8 +44,8 @@ export const LEVELS: Level[] = [
     n: 4,
     name: { en: 'AI Employee', es: 'AI Employee' },
     definition: {
-      en: 'Identity, role contract, memory, authority, KPIs, manager and audit.',
-      es: 'Identidad, Role Contract, memoria, autoridad, KPIs, manager y auditoría.',
+      en: 'The nine properties of the definition, exhibited in operation.',
+      es: 'Las nueve propiedades de la definición, exhibidas en operación.',
     },
   },
   {
@@ -69,8 +69,8 @@ export const LEVELS: Level[] = [
 export const THRESHOLD = 4;
 
 export const MATURITY_NOTE: T = {
-  en: 'The value of the model is the threshold it creates. Not every agent deserves to be called an AI Employee, and the category should be auditable against minimum requirements rather than asserted in a product page. Levels 0 to 3 are legitimate destinations, not failures — a well-placed assistant can produce more value than a supposed AI Employee nobody supervises.',
-  es: 'El valor del modelo es el umbral que crea. No todo agente merece llamarse AI Employee, y la categoría debería poder auditarse contra requisitos mínimos en lugar de afirmarse en una página de producto. Los niveles 0 a 3 son destinos legítimos, no fracasos — un asistente bien ubicado puede producir más valor que un supuesto AI Employee al que nadie supervisa.',
+  en: 'The ladder maps evolution of capacity and scale; it does not decide membership. Level 4 names the point where a deployment can exhibit the nine properties of the definition — whether it actually does is decided by the test, never by the level. Levels 0 to 3 are legitimate destinations, not failures — a well-placed assistant can produce more value than a supposed AI Employee nobody supervises.',
+  es: 'La escalera mapea la evolución de capacidad y escala; no decide la membresía. El nivel 4 nombra el punto donde un deployment puede exhibir las nueve propiedades de la definición — si de verdad las exhibe lo decide el test, nunca el nivel. Los niveles 0 a 3 son destinos legítimos, no fracasos — un asistente bien ubicado puede producir más valor que un supuesto AI Employee al que nadie supervisa.',
 };
 
 /** Self-diagnosis prompts, one per level boundary. */

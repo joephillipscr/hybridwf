@@ -18,7 +18,7 @@ export const PLACEMENT: T = {
 export const RESPONSIBILITIES: T[] = [
   { en: 'Maintain human–AI operational harmony: eliminate contradictory ownership, define handoffs and escalation lines.', es: 'Armonía operacional humano-IA: eliminar ownership contradictorio, definir handoffs y líneas de escalamiento.' },
   { en: 'Periodically reassess which work should be Human, Assisted human, Deterministic automation or Artificial.', es: 'Evaluar periódicamente qué trabajo debe ser Humano, Humano asistido, Automatización determinista o Artificial.' },
-  { en: 'Direct Human → Artificial and Artificial → Human transitions.', es: 'Dirigir transiciones Human → Artificial y Artificial → Human.' },
+  { en: 'Direct Human → Artificial and Artificial → Human transitions.', es: 'Dirigir transiciones entre tipos de ocupante, en ambas direcciones.' },
   { en: 'Design hybrid posts with an explicit split of responsibilities.', es: 'Diseñar puestos híbridos y reparto explícito de responsabilidades.' },
   { en: 'Manage human impact: clarity, communication, reassignment and development.', es: 'Administrar el impacto humano: claridad, comunicación, reasignación y desarrollo.' },
   { en: 'Guarantee every AI Employee has a Role Contract, manager, KPIs, permissions, limits, audit trail, performance review, and a kill switch exercised on a stated cadence (HWF-23).', es: 'Garantizar que todo AI Employee tenga Role Contract, manager, KPIs, permisos, límites, audit trail, performance review, y un kill switch ejercitado con cadencia declarada (HWF-23).' },
