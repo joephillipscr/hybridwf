@@ -65,7 +65,7 @@ export default function TransitionsPage({ lang }: { lang: Locale }) {
 
       <Section className="border-t border-border bg-raised">
         <SectionHeading
-          eyebrow={lang === 'en' ? 'Seven triggers' : 'Siete disparadores'}
+          eyebrow={lang === 'en' ? 'Seven steps' : 'Siete pasos'}
           title={C.backTitle[lang]}
           lede={BACK_INTRO[lang]}
         />

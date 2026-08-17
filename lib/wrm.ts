@@ -204,7 +204,7 @@ export interface Stage {
 
 export const LIFECYCLE: Stage[] = [
   { n: 1, name: { en: 'Design', es: 'Diseñar' }, objective: { en: 'Define result, responsibilities, KPIs, authority, limits and risk.', es: 'Definir resultado, responsabilidades, KPIs, autoridad, límites y riesgo.' } },
-  { n: 2, name: { en: 'Allocate', es: 'Asignar' }, objective: { en: 'Decide Human / Deterministic automation / Artificial / Hybrid.', es: 'Decidir Human / Automatización determinista / Artificial / Hybrid.' } },
+  { n: 2, name: { en: 'Allocate', es: 'Asignar' }, objective: { en: 'Decide Human / Assisted human / Deterministic automation / Artificial.', es: 'Decidir Human / Assisted human / Automatización determinista / Artificial.' } },
   { n: 3, name: { en: 'Select', es: 'Seleccionar' }, objective: { en: 'Person, model, agent, vendor or architecture with demonstrable fit.', es: 'Persona, modelo, agente, vendor o arquitectura con fit demostrable.' } },
   { n: 4, name: { en: 'Onboard', es: 'Incorporar' }, objective: { en: 'Knowledge, SOPs, culture and policies, relationships and escalation.', es: 'Onboarding de conocimiento, SOPs, cultura/políticas, relaciones y escalamiento.' } },
   { n: 5, name: { en: 'Enable', es: 'Habilitar' }, objective: { en: 'Tools, access, credentials, budget and authority.', es: 'Herramientas, accesos, credenciales, presupuesto y autoridad.' } },

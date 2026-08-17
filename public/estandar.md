@@ -416,7 +416,7 @@ La idea fundacional es separar el puesto del ocupante. Primero existe una necesi
 | # | Etapa | Objetivo |
 | --- | --- | --- |
 | 1 | Diseñar | Definir resultado, responsabilidades, KPIs, autoridad, límites y riesgo. |
-| 2 | Asignar | Decidir Human / Automatización determinista / Artificial / Hybrid. |
+| 2 | Asignar | Decidir Human / Assisted human / Automatización determinista / Artificial. |
 | 3 | Seleccionar | Persona, modelo, agente, vendor o arquitectura con fit demostrable. |
 | 4 | Incorporar | Onboarding de conocimiento, SOPs, cultura/políticas, relaciones y escalamiento. |
 | 5 | Habilitar | Herramientas, accesos, credenciales, presupuesto y autoridad. |

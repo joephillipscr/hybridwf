@@ -416,7 +416,7 @@ The founding idea is to separate the post from its occupant. First there is an o
 | # | Stage | Objective |
 | --- | --- | --- |
 | 1 | Design | Define result, responsibilities, KPIs, authority, limits and risk. |
-| 2 | Allocate | Decide Human / Deterministic automation / Artificial / Hybrid. |
+| 2 | Allocate | Decide Human / Assisted human / Deterministic automation / Artificial. |
 | 3 | Select | Person, model, agent, vendor or architecture with demonstrable fit. |
 | 4 | Onboard | Knowledge, SOPs, culture and policies, relationships and escalation. |
 | 5 | Enable | Tools, access, credentials, budget and authority. |

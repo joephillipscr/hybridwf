@@ -42,8 +42,8 @@ const DESCRIPTIONS: Record<RouteKey, Record<Locale, string>> = {
     es: 'El Gerente de Fuerza Laboral Híbrida — misión, responsabilidades, scorecard y el anti-KPI que nunca debe usarse.',
   },
   transitions: {
-    en: 'Human to Artificial in twelve controlled steps, and the seven triggers that send work back to people. The road runs both ways.',
-    es: 'De Humano a Artificial en doce pasos controlados, y los siete disparadores que devuelven el trabajo a las personas. La carretera tiene dos direcciones.',
+    en: 'Human to Artificial in twelve controlled steps, and the seven steps that send work back to people. The road runs both ways.',
+    es: 'De Humano a Artificial en doce pasos controlados, y los siete pasos que devuelven el trabajo a las personas. La carretera tiene dos direcciones.',
   },
   glossary: {
     en: 'Canonical bilingual glossary. One term, two languages, one numbered definition.',
