@@ -10,7 +10,7 @@ import type { T } from './i18n';
  * controls that follow from it, and what would change the answer.
  */
 
-export type Allocation = 'human' | 'deterministic' | 'hybrid' | 'artificial';
+export type Allocation = 'human' | 'human_assisted' | 'deterministic' | 'artificial';
 export type RiskClass = 'low' | 'moderate' | 'high' | 'critical';
 
 export interface Dimension {
@@ -238,7 +238,7 @@ export const riskLabel = (r: RiskClass) => RISK_LABEL[r];
 export const ALLOCATION_LABEL: Record<Allocation, T> = {
   human: { en: 'Human', es: 'Humano' },
   deterministic: { en: 'Deterministic automation', es: 'Automatización determinista' },
-  hybrid: { en: 'Hybrid', es: 'Híbrido' },
+  human_assisted: { en: 'Assisted human', es: 'Humano asistido' },
   artificial: { en: 'Artificial', es: 'Artificial' },
 };
 
@@ -262,17 +262,18 @@ export function evaluate(a: Answers): Result {
   let ceiling: Allocation = 'artificial';
 
   if (reservedCore) {
-    ceiling = 'hybrid';
+    ceiling = 'human_assisted';
     mark('reserved', {
       en: 'The core decisions are reserved subjects (HWF-02): an artificial resource may analyse, draft and recommend, and a human with authority to decide otherwise takes every decision. Reserved decisions are Critical by definition.',
       es: 'Las decisiones centrales son materias reservadas (HWF-02): un recurso artificial puede analizar, redactar y recomendar, y un humano con autoridad para decidir distinto toma cada decisión. Las decisiones reservadas son Críticas por definición.',
     });
     controls.push({
       en: 'Route every reserved decision to a named human who can restate the case and decide otherwise — approval throughput that forecloses understanding is a signature, not a decision.',
-      es: 'Ruteá toda decisión reservada a un humano con nombre que pueda reformular el caso y decidir distinto — aprobar a un ritmo que impide entender es una firma, no una decisión.',
+      es: 'Rutee toda decisión reservada a un humano con nombre que pueda reformular el caso y decidir distinto — aprobar a un ritmo que impide entender es una firma, no una decisión.',
     });
   } else if (v('reserved') === 1) {
-    if (ceiling === 'artificial') ceiling = 'hybrid';
+    /* Routing a reserved decision to a person is a control, not a change of
+       occupant: the artificial resource is still the counterparty. */
     controls.push({
       en: 'Reserved matters appear regularly: define the routing rule that sends them to a human before deployment, and audit that it fires.',
       es: 'Las materias reservadas aparecen con regularidad: defina la regla de ruteo que las envía a un humano antes del deployment, y audite que dispare.',
@@ -293,7 +294,7 @@ export function evaluate(a: Answers): Result {
     });
     wouldChange.push({
       en: 'If variation grows — new case types, judgement creeping in, exceptions rising — re-run this assessment: the boundary between a script and an AI Employee is the exception tail.',
-      es: 'Si la variación crece — tipos de caso nuevos, criterio filtrándose, excepciones subiendo — repetí esta evaluación: la frontera entre un script y un AI Employee es la cola de excepciones.',
+      es: 'Si la variación crece — tipos de caso nuevos, criterio filtrándose, excepciones subiendo — repita esta evaluación: la frontera entre un script y un AI Employee es la cola de excepciones.',
     });
     return {
       allocation: 'deterministic',
@@ -304,13 +305,13 @@ export function evaluate(a: Answers): Result {
       wouldChange,
       headline: {
         en: 'Automate this deterministically — it does not need an AI Employee.',
-        es: 'Automatizá esto de forma determinista — no necesita un AI Employee.',
+        es: 'Automatice esto de forma determinista — no necesita un AI Employee.',
       },
     };
   }
 
   if (v('data') === 0) {
-    ceiling = 'hybrid';
+    ceiling = 'human_assisted';
     mark('data', {
       en: 'The criteria are not written down anywhere. Nothing can be delegated to software that the organisation has never managed to explain to itself.',
       es: 'El criterio no está escrito en ninguna parte. No se puede delegar a software aquello que la organización nunca logró explicarse a sí misma.',
@@ -321,12 +322,12 @@ export function evaluate(a: Answers): Result {
     });
     wouldChange.push({
       en: 'If context provisioning is completed and the criteria become queryable, re-run this assessment — the ceiling may lift.',
-      es: 'Si se completa el context provisioning y el criterio se vuelve consultable, repetí esta evaluación — el techo puede subir.',
+      es: 'Si se completa el context provisioning y el criterio se vuelve consultable, repita esta evaluación — el techo puede subir.',
     });
   }
 
   if (v('judgement') === 0) {
-    ceiling = 'hybrid';
+    ceiling = 'human_assisted';
     mark('judgement', {
       en: 'Strategic judgement with competing priorities is not a delegation problem; it is a management one.',
       es: 'El juicio estratégico con prioridades en conflicto no es un problema de delegación; es de dirección.',
@@ -356,10 +357,10 @@ export function evaluate(a: Answers): Result {
   if (reservedCore) risk = 'critical';
 
   if (risk === 'critical' && ceiling === 'artificial') {
-    ceiling = 'hybrid';
+    ceiling = 'human_assisted';
     mark('risk', {
-      en: 'A severe and irreversible error caps this at hybrid: a human must own the decision even if the artificial resource does the work.',
-      es: 'Un error severo e irreversible topa esto en híbrido: un humano debe conservar la decisión aunque el recurso artificial haga el trabajo.',
+      en: 'A severe and irreversible error caps this at an assisted human: a person holds the post and the decision, even if the artificial resource does the preparatory work.',
+      es: 'Un error severo e irreversible topa esto en humano asistido: una persona conserva el puesto y la decisión, aunque el recurso artificial haga el trabajo preparatorio.',
     });
   }
   if (risk === 'critical') {
@@ -376,7 +377,7 @@ export function evaluate(a: Answers): Result {
       es: 'Hay dignidad, vulnerabilidad o poder sobre la persona en juego, o la relación es el producto. El ownership queda humano; un recurso artificial puede preparar, nunca concluir.',
     });
   } else if (v('empathy') === 1 && ceiling === 'artificial') {
-    ceiling = 'hybrid';
+    ceiling = 'human_assisted';
     mark('empathy', {
       en: 'Trust materially affects the outcome, so a person keeps the conversation while the artificial resource prepares context.',
       es: 'La confianza afecta materialmente el resultado, así que una persona conserva la conversación mientras el recurso artificial prepara contexto.',
@@ -384,7 +385,7 @@ export function evaluate(a: Answers): Result {
   }
 
   if (v('auditability') === 0 && v('risk') <= 1) {
-    ceiling = ceiling === 'human' ? 'human' : 'hybrid';
+    ceiling = ceiling === 'human' ? 'human' : 'human_assisted';
     mark('auditability', {
       en: 'You cannot govern what you cannot verify, and the cost of error here is too high to run unverifiable work.',
       es: 'No se puede gobernar lo que no se puede verificar, y el costo del error aquí es demasiado alto para operar trabajo no verificable.',
@@ -431,11 +432,11 @@ export function evaluate(a: Answers): Result {
       es: 'Trabajo repetitivo, predecible y verificable cuyo costo está en la repetición y la cobertura — el caso donde un recurso artificial puede sostener role stewardship.',
     });
   } else {
-    allocation = 'hybrid';
+    allocation = 'human_assisted';
     if (determinative.length === 0) {
       mark('exceptions', {
-        en: 'The happy path is automatable but the exception tail is not. Split the responsibility explicitly rather than assigning it whole.',
-        es: 'El camino normal es automatizable pero la cola de excepciones no. Repartí la responsabilidad explícitamente en vez de asignarla entera.',
+        en: 'The happy path is automatable but the exception tail is not. A person holds the post and an artificial resource assists on the automatable part — the post does not change hands.',
+        es: 'El camino normal es automatizable pero la cola de excepciones no. Una persona conserva el puesto y un recurso artificial la asiste en la parte automatizable — el puesto no cambia de manos.',
       });
     }
   }
@@ -451,7 +452,7 @@ export function evaluate(a: Answers): Result {
   if (v('exceptions') <= 1) {
     controls.push({
       en: 'Design the escalation path first: with this exception rate, most of the value depends on how the tail is handled, not the happy path.',
-      es: 'Diseñá primero la ruta de escalamiento: con esta tasa de excepciones, la mayor parte del valor depende de cómo se maneja la cola, no el camino normal.',
+      es: 'Diseñe primero la ruta de escalamiento: con esta tasa de excepciones, la mayor parte del valor depende de cómo se maneja la cola, no el camino normal.',
     });
   }
   if (v('reversibility') <= 1) {
@@ -474,14 +475,14 @@ export function evaluate(a: Answers): Result {
   });
   if (allocation === 'artificial') {
     wouldChange.push({
-      en: 'A single incident with customer or financial impact returns this to hybrid until the cause is understood and the control is added.',
-      es: 'Un solo incidente con impacto en cliente o dinero devuelve esto a híbrido hasta entender la causa y agregar el control.',
+      en: 'A single incident with customer or financial impact returns the post to an assisted human until the cause is understood and the control is added.',
+      es: 'Un solo incidente con impacto en cliente o dinero devuelve el puesto a humano asistido hasta entender la causa y agregar el control.',
     });
   }
   if (allocation === 'human' && v('volume') >= 2) {
     wouldChange.push({
-      en: 'Volume is already high. If the criteria get documented, the hybrid split becomes worth reassessing.',
-      es: 'El volumen ya es alto. Si el criterio se documenta, vale la pena reevaluar el reparto híbrido.',
+      en: 'Volume is already high. If the criteria get documented, artificial role stewardship becomes worth reassessing.',
+      es: 'El volumen ya es alto. Si el criterio se documenta, vale la pena reevaluar si el puesto puede sostener role stewardship artificial.',
     });
   }
   wouldChange.push({
@@ -493,14 +494,14 @@ export function evaluate(a: Answers): Result {
     en:
       allocation === 'human'
         ? 'Keep this responsibility human.'
-        : allocation === 'hybrid'
-          ? 'Design this as an explicitly split hybrid responsibility.'
+        : allocation === 'human_assisted'
+          ? 'Keep this post human, with artificial assistance on the automatable part.'
           : 'This responsibility can carry artificial role stewardship within limits.',
     es:
       allocation === 'human'
-        ? 'Mantené esta responsabilidad humana.'
-        : allocation === 'hybrid'
-          ? 'Diseñá esto como una responsabilidad híbrida con reparto explícito.'
+        ? 'Mantenga esta responsabilidad humana.'
+        : allocation === 'human_assisted'
+          ? 'Conserve este puesto humano, con asistencia artificial en la parte automatizable.'
           : 'Esta responsabilidad puede sostener role stewardship artificial dentro de límites.',
   };
 

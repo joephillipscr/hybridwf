@@ -34,8 +34,8 @@ const DESCRIPTIONS: Record<RouteKey, Record<Locale, string>> = {
     es: '120 principios administrativos clasificados como Universal, Adaptado o Exclusivamente Humano, con su expresión humana y artificial lado a lado.',
   },
   hwfa: {
-    en: 'Hybrid Workforce Fit Assessment — a structured self-assessment in three stages: eligibility, risk, economics. Decide whether a responsibility should be Human, Deterministic automation, Artificial or Hybrid.',
-    es: 'Hybrid Workforce Fit Assessment — una autoevaluación estructurada en tres etapas: elegibilidad, riesgo, economía. Decidí si una responsabilidad debe ser Humana, Automatización determinista, Artificial o Híbrida.',
+    en: 'Hybrid Workforce Fit Assessment — a structured self-assessment in three stages: eligibility, risk, economics. Decide whether a responsibility should be Human, Assisted human, Deterministic automation or Artificial.',
+    es: 'Hybrid Workforce Fit Assessment — una autoevaluación estructurada en tres etapas: elegibilidad, riesgo, economía. Decida si una responsabilidad debe ser Humana, Humano asistido, Automatización determinista o Artificial.',
   },
   role: {
     en: 'The Hybrid Workforce Manager — mission, responsibilities, scorecard, and the anti-KPI that must never be used.',

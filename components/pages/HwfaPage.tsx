@@ -8,8 +8,8 @@ const C = {
   eyebrow: { en: 'Instrument', es: 'Instrumento' },
   title: { en: 'Hybrid Workforce Fit Assessment', es: 'Hybrid Workforce Fit Assessment' },
   lede: {
-    en: 'Decide whether a responsibility should be Human, Deterministic automation, Artificial or Hybrid — and at what autonomy it should start. Thirteen dimensions in three stages — eligibility, then risk, then economics — one responsibility at a time.',
-    es: 'Decidí si una responsabilidad debe ser Humana, Automatización determinista, Artificial o Híbrida — y en qué autonomía debería empezar. Trece dimensiones en tres etapas — elegibilidad, luego riesgo, luego economía — una responsabilidad por vez.',
+    en: 'Decide whether a responsibility should be Human, Assisted human, Deterministic automation or Artificial — and at what autonomy it should start. Thirteen dimensions in three stages — eligibility, then risk, then economics — one responsibility at a time.',
+    es: 'Decida si una responsabilidad debe ser Humana, Humano asistido, Automatización determinista o Artificial — y en qué autonomía debería empezar. Trece dimensiones en tres etapas — elegibilidad, luego riesgo, luego economía — una responsabilidad por vez.',
   },
   whyTitle: { en: 'Why there is no score', es: 'Por qué no hay puntaje' },
   why: {

@@ -33,8 +33,8 @@ export const TERMS: Term[] = [
     id: 'G-02',
     term: { en: 'WRM — Work Resource Management', es: 'WRM — Administración de Recursos de Trabajo' },
     definition: {
-      en: 'The discipline that designs, assigns, governs and optimises work regardless of whether the resource executing it is human, artificial or hybrid.',
-      es: 'La disciplina que diseña, asigna, gobierna y optimiza el trabajo independientemente de si el recurso que lo ejecuta es humano, artificial o híbrido.',
+      en: 'The discipline that designs, assigns, governs and optimises work regardless of whether the resource executing it is human or artificial.',
+      es: 'La disciplina que diseña, asigna, gobierna y optimiza el trabajo independientemente de si el recurso que lo ejecuta es humano o artificial.',
     },
   },
   {
@@ -121,8 +121,8 @@ export const TERMS: Term[] = [
     id: 'G-13',
     term: { en: 'HWFA — Hybrid Workforce Fit Assessment', es: 'HWFA — Hybrid Workforce Fit Assessment' },
     definition: {
-      en: 'A structured instrument in three stages — eligibility, risk, economics — for deciding whether a responsibility should be Human, Deterministic automation, Artificial or Hybrid. It returns an argument, not a number: an allocation, a risk class, a starting autonomy rung and the conditions that would change the answer. Formerly the Fit Score; renamed because an instrument that refuses to produce a number should not be called one.',
-      es: 'Instrumento estructurado en tres etapas — elegibilidad, riesgo, economía — para decidir si una responsabilidad debe ser Humana, Automatización determinista, Artificial o Híbrida. Devuelve un argumento, no un número: una asignación, una clase de riesgo, un peldaño inicial de autonomía y las condiciones que cambiarían la respuesta. Antes Fit Score; renombrado porque un instrumento que se niega a producir un número no debería llamarse así.',
+      en: 'A structured instrument in three stages — eligibility, risk, economics — for deciding whether a responsibility should be Human, Assisted human, Deterministic automation or Artificial. It returns an argument, not a number: an allocation, a risk class, a starting autonomy rung and the conditions that would change the answer. Formerly the Fit Score; renamed because an instrument that refuses to produce a number should not be called one.',
+      es: 'Instrumento estructurado en tres etapas — elegibilidad, riesgo, economía — para decidir si una responsabilidad debe ser Humana, Humano asistido, Automatización determinista o Artificial. Devuelve un argumento, no un número: una asignación, una clase de riesgo, un peldaño inicial de autonomía y las condiciones que cambiarían la respuesta. Antes Fit Score; renombrado porque un instrumento que se niega a producir un número no debería llamarse así.',
     },
   },
   {
@@ -215,10 +215,10 @@ export const TERMS: Term[] = [
   },
   {
     id: 'G-25',
-    term: { en: 'Hybrid post', es: 'Puesto híbrido' },
+    term: { en: 'Assisted human', es: 'Humano asistido' },
     definition: {
-      en: 'A post whose responsibilities are split explicitly between a human and an artificial resource, with defined handoffs, context transfer and a single owner of the overall result. Badly designed, it produces two occupants each waiting for the other to answer.',
-      es: 'Puesto cuyas responsabilidades se reparten explícitamente entre un recurso humano y uno artificial, con handoffs definidos, transferencia de contexto y un único dueño del resultado completo. Mal diseñado, produce dos ocupantes esperando que responda el otro.',
+      en: 'A post held by a person, some of whose functions are executed with artificial assistance. The occupant is human: accountability, the decisions and the counterparty relationship stay with the person, while the artificial resource prepares, drafts, analyses or recommends. This is not a third type of employee — it is a human employee, assisted. What is hybrid is the workforce, not the person.',
+      es: 'Puesto ocupado por una persona, algunas de cuyas funciones se ejecutan con asistencia artificial. El ocupante es humano: la accountability, las decisiones y la relación con la contraparte quedan en la persona, mientras el recurso artificial prepara, redacta, analiza o recomienda. No es un tercer tipo de empleado — es un empleado humano, asistido. Lo híbrido es la fuerza laboral, no la persona.',
     },
   },
   {
@@ -281,8 +281,8 @@ export const TERMS: Term[] = [
     id: 'G-33',
     term: { en: 'Resource neutrality', es: 'Neutralidad de recurso' },
     definition: {
-      en: 'The allocation discipline of deciding who fills a post — human, artificial or hybrid — without a prior preference for either, judging only fit, outcome, cost, risk and control. It is a discipline, not a moral stance, and it is bounded: neutrality begins only after the constraints of HWF-01 — rights, dignity, safety, meaningful human agency, accessibility, labour protections — are satisfied. Cited without its boundary, the term is being misused.',
-      es: 'La disciplina de asignación que decide quién ocupa un puesto — humano, artificial o híbrido — sin preferencia previa por ninguno, juzgando solo fit, resultado, costo, riesgo y control. Es una disciplina, no una postura moral, y está acotada: la neutralidad comienza solo después de satisfechas las restricciones de HWF-01 — derechos, dignidad, seguridad, agencia humana significativa, accesibilidad, protecciones laborales. Citado sin su frontera, el término está siendo mal usado.',
+      en: 'The allocation discipline of deciding who fills a post — human or artificial — without a prior preference for either, judging only fit, outcome, cost, risk and control. It is a discipline, not a moral stance, and it is bounded: neutrality begins only after the constraints of HWF-01 — rights, dignity, safety, meaningful human agency, accessibility, labour protections — are satisfied. Cited without its boundary, the term is being misused.',
+      es: 'La disciplina de asignación que decide quién ocupa un puesto — humano o artificial — sin preferencia previa por ninguno, juzgando solo fit, resultado, costo, riesgo y control. Es una disciplina, no una postura moral, y está acotada: la neutralidad comienza solo después de satisfechas las restricciones de HWF-01 — derechos, dignidad, seguridad, agencia humana significativa, accesibilidad, protecciones laborales. Citado sin su frontera, el término está siendo mal usado.',
     },
   },
   {
@@ -347,6 +347,14 @@ export const TERMS: Term[] = [
     definition: {
       en: 'The failure mode of model monoculture. Human teams do not fail independently either, but diversity of experience and judgement tends to distribute some blind spots; instances sharing a model, vendor, context or configuration concentrate them, and can fail in the same way at the same time. The precedent is common-cause failure, long known to reliability engineering and continuity planning; what is new is the speed, reach and opacity with which it propagates through an artificial workforce. Mitigated by diversity of models and vendors, fallback resources and succession planning; named as a validation item for AI teams by HWF-52.',
       es: 'El modo de falla de la monocultura de modelo. Los equipos humanos tampoco fallan de forma independiente, pero la diversidad de experiencia y criterio tiende a distribuir algunos puntos ciegos; las instancias que comparten modelo, proveedor, contexto o configuración los concentran, y pueden fallar del mismo modo al mismo tiempo. El precedente es la falla de causa común, conocida desde hace décadas en ingeniería de confiabilidad y en planes de continuidad; lo nuevo es la velocidad, el alcance y la opacidad con que se propaga dentro de una fuerza laboral artificial. Se mitiga con diversidad de modelos y proveedores, recursos de fallback y planes de sucesión; nombrado como ítem de validación para equipos de IA por HWF-52.',
+    },
+  },
+  {
+    id: 'G-42',
+    term: { en: 'Entity (as against interface)', es: 'Entidad (frente a interfaz)' },
+    definition: {
+      en: 'What separates an employee — human or artificial — from a channel. An interface is a surface through which something is reached; an entity is a party that others deal with. An AI Employee holds conversations with clients, suppliers and colleagues, and can state the position of the organisation it belongs to. Nobody is half a counterparty, which is why an occupant is human or artificial and never both: splitting work between two occupants produces two posts, not one post of a third kind.',
+      es: 'Lo que separa a un empleado — humano o artificial — de un canal. Una interfaz es una superficie a través de la cual se alcanza algo; una entidad es una parte con la que se trata. Un AI Employee sostiene conversaciones con clientes, proveedores y colegas, y puede fijar la posición de la organización a la que pertenece. Nadie es media contraparte, y por eso un ocupante es humano o artificial y nunca ambos: repartir el trabajo entre dos ocupantes produce dos puestos, no un puesto de un tercer tipo.',
     },
   },
 ];

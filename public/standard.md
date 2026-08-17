@@ -373,7 +373,7 @@ The value of the model is the threshold it creates. Not every agent deserves to 
 
 ## WRM — the framework
 
-> WRM — Work Resource Management — is the discipline that designs, assigns, governs and optimises work regardless of whether the resource executing it is human, artificial or hybrid.
+> WRM — Work Resource Management — is the discipline that designs, assigns, governs and optimises work regardless of whether the resource executing it is human or artificial.
 
 The founding idea is to separate the post from its occupant. First there is an organisational need; from it a post or responsibility is born, with purpose, ownership, results, KPIs, authority, limits, relationships, tools and escalation. Only then do you decide which resource should fill it. The declaration governs the order of birth, not the rest of the life: occupants — human occupants above all — reshape their posts, and a framework that denied job crafting would be Taylorism with better vocabulary. What the framework requires is that every reshaping be declared and versioned, because in a hybrid organisation the declared post is the interface: a human colleague can read an undeclared role from the corridor; an artificial one can only read the graph.
 
@@ -617,7 +617,7 @@ The matrix is an original synthesis of organisational design, HR, performance ma
 
 ## HWFA — Hybrid Workforce Fit Assessment
 
-A structured instrument in three stages — eligibility, then risk, then economics — for deciding whether a responsibility should be Human, Deterministic automation, Artificial or Hybrid. Constraints come first: reserved subjects and prohibited uses gate the answer, fully enumerable rule-following work exits to conventional software, risk caps what survives, and only then does the cost profile choose among the remainder. It returns an argument, not a number: an allocation, a risk class, a starting autonomy rung, the answers that decided it, and the conditions that would change it — a numeric score would let a decision already taken be laundered through arithmetic.
+A structured instrument in three stages — eligibility, then risk, then economics — for deciding whether a responsibility should be Human, Assisted human, Deterministic automation or Artificial. Constraints come first: reserved subjects and prohibited uses gate the answer, fully enumerable rule-following work exits to conventional software, risk caps what survives, and only then does the cost profile choose among the remainder. It returns an argument, not a number: an allocation, a risk class, a starting autonomy rung, the answers that decided it, and the conditions that would change it — a numeric score would let a decision already taken be laundered through arithmetic.
 
 ### The thirteen dimensions
 
@@ -653,14 +653,14 @@ A structured instrument in three stages — eligibility, then risk, then economi
 
 ### Mission
 
-> Design, balance and optimise the human and artificial workforce, ensuring every responsibility is executed by the resource — human, artificial or hybrid — that produces the best result at the right level of cost, risk, quality and accountability.
+> Design, balance and optimise the human and artificial workforce, ensuring every responsibility is executed by the resource — human or artificial — that produces the best result at the right level of cost, risk, quality and accountability.
 
 In large organisations this can grow into a Director of Hybrid Workforce. It belongs inside HR / People & Workforce, with a strong matrix relationship to the COO and the CIO or CTO. Not every company needs to create the title tomorrow — but any organisation granting role stewardship to artificial resources needs someone exercising these functions.
 
 ### Responsibilities
 
 1. Maintain human–AI operational harmony: eliminate contradictory ownership, define handoffs and escalation lines.
-2. Periodically reassess which work should be Human, Deterministic automation, Artificial or Hybrid.
+2. Periodically reassess which work should be Human, Assisted human, Deterministic automation or Artificial.
 3. Direct Human → Artificial and Artificial → Human transitions.
 4. Design hybrid posts with an explicit split of responsibilities.
 5. Manage human impact: clarity, communication, reassignment and development.
@@ -743,7 +743,7 @@ The framework must be reversible. If the artificial resource produces too much r
 4. Reassign ownership and escalation channels.
 5. Revoke artificial access that no longer corresponds.
 6. Run root-cause analysis: model, process, knowledge, tools or bad role allocation.
-7. Decide whether the future of the post is Human or Hybrid — do not assume it must return to being fully human.
+7. Decide whether the future of the post is Human or Assisted human — do not assume it must return to being unassisted.
 
 Define the return conditions before the pilot, not after the results are known. What error rate is unacceptable? How much human intervention destroys the economics? Which incident forces suspension? Written in advance, these rules reduce the bias of defending an implementation out of pride.
 
@@ -755,7 +755,7 @@ One term, two languages, one numbered definition. Where the English term is used
 
 **G-01 · AI Employee** — A persistent, role-bound software worker that autonomously executes recurring business responsibilities within explicit limits, with traceable identity, measurable performance, escalation paths and human accountability.
 
-**G-02 · WRM — Work Resource Management** — The discipline that designs, assigns, governs and optimises work regardless of whether the resource executing it is human, artificial or hybrid.
+**G-02 · WRM — Work Resource Management** — The discipline that designs, assigns, governs and optimises work regardless of whether the resource executing it is human or artificial.
 
 **G-03 · AI Role Contract** — The operational contract of an artificial post: mission, responsibilities, results, KPIs, authority, exclusions, tools, access, service level, escalation, suspension criteria, governance calendar and accountable owner. Versioned. The equivalent of a job description plus an explicit operating agreement — a prompt gives instructions, a role contract gives responsibility.
 
@@ -777,7 +777,7 @@ One term, two languages, one numbered definition. Where the English term is used
 
 **G-12 · Post-Transition Performance Delta** — The change in performance after switching resource or configuration. It does not ask whether the agent is fast; it asks whether the post got better. Without a baseline, an organisation can celebrate an improvement that never happened.
 
-**G-13 · HWFA — Hybrid Workforce Fit Assessment** — A structured instrument in three stages — eligibility, risk, economics — for deciding whether a responsibility should be Human, Deterministic automation, Artificial or Hybrid. It returns an argument, not a number: an allocation, a risk class, a starting autonomy rung and the conditions that would change the answer. Formerly the Fit Score; renamed because an instrument that refuses to produce a number should not be called one.
+**G-13 · HWFA — Hybrid Workforce Fit Assessment** — A structured instrument in three stages — eligibility, risk, economics — for deciding whether a responsibility should be Human, Assisted human, Deterministic automation or Artificial. It returns an argument, not a number: an allocation, a risk class, a starting autonomy rung and the conditions that would change the answer. Formerly the Fit Score; renamed because an instrument that refuses to produce a number should not be called one.
 
 **G-14 · Hybrid Workforce Manager** — The role accountable for ensuring each responsibility is executed by the configuration that produces the best result. Neutral by design: never measured by humans replaced or posts converted.
 
@@ -801,7 +801,7 @@ One term, two languages, one numbered definition. Where the English term is used
 
 **G-24 · Management by exception** — The operating mode in which the resource resolves routine work inside its limits and the manager intervenes on deviations and exceptions. Rung 4 of the autonomy ladder.
 
-**G-25 · Hybrid post** — A post whose responsibilities are split explicitly between a human and an artificial resource, with defined handoffs, context transfer and a single owner of the overall result. Badly designed, it produces two occupants each waiting for the other to answer.
+**G-25 · Assisted human** — A post held by a person, some of whose functions are executed with artificial assistance. The occupant is human: accountability, the decisions and the counterparty relationship stay with the person, while the artificial resource prepares, drafts, analyses or recommends. This is not a third type of employee — it is a human employee, assisted. What is hybrid is the workforce, not the person.
 
 **G-26 · Supervisor** — Whoever directs an AI Employee’s work day to day: routing tasks, reviewing output, setting priorities and receiving exceptions. A supervisor may be human or artificial. Distinct from the accountable owner, which is always human — an AI Employee can supervise another and still answer to a person somewhere above it.
 
@@ -817,7 +817,7 @@ One term, two languages, one numbered definition. Where the English term is used
 
 **G-32 · Digital zombie** — An AI Employee whose post has lost its justification but which keeps operating with credentials, data access and standing authority intact. It is what accumulates when nothing forces the existence question: even the weak triggers that sometimes prune human posts — a salary line under budget review, a resignation forcing a backfill decision — do not exist for a resource that costs little and never resigns. Prevented by the re-justification cadence of HWF-63; dismantled through lifecycle retirement, with offboarding and revocation.
 
-**G-33 · Resource neutrality** — The allocation discipline of deciding who fills a post — human, artificial or hybrid — without a prior preference for either, judging only fit, outcome, cost, risk and control. It is a discipline, not a moral stance, and it is bounded: neutrality begins only after the constraints of HWF-01 — rights, dignity, safety, meaningful human agency, accessibility, labour protections — are satisfied. Cited without its boundary, the term is being misused.
+**G-33 · Resource neutrality** — The allocation discipline of deciding who fills a post — human or artificial — without a prior preference for either, judging only fit, outcome, cost, risk and control. It is a discipline, not a moral stance, and it is bounded: neutrality begins only after the constraints of HWF-01 — rights, dignity, safety, meaningful human agency, accessibility, labour protections — are satisfied. Cited without its boundary, the term is being misused.
 
 **G-34 · Unit of conformance** — The thing a conformance claim can be about: one deployment — one role, one role-contract version, one accountable owner, one assessment period with an expiry. Products, platforms, models and organisations in the abstract cannot conform, whatever their marketing says; a vendor may only claim that it enables conformant deployments (HWF-71).
 
@@ -834,6 +834,8 @@ One term, two languages, one numbered definition. Where the English term is used
 **G-40 · Derived inference** — Data the deployment manufactures about a person rather than collects from them: a probability of financial distress, an inferred health condition, a predicted intent. Governed under HWF-42 as if collected — purpose, basis, minimisation, deletion — and often more sensitive than anything the person actually provided. An inference the person never handed over is still their data.
 
 **G-41 · Correlated failure** — The failure mode of model monoculture. Human teams do not fail independently either, but diversity of experience and judgement tends to distribute some blind spots; instances sharing a model, vendor, context or configuration concentrate them, and can fail in the same way at the same time. The precedent is common-cause failure, long known to reliability engineering and continuity planning; what is new is the speed, reach and opacity with which it propagates through an artificial workforce. Mitigated by diversity of models and vendors, fallback resources and succession planning; named as a validation item for AI teams by HWF-52.
+
+**G-42 · Entity (as against interface)** — What separates an employee — human or artificial — from a channel. An interface is a surface through which something is reached; an entity is a party that others deal with. An AI Employee holds conversations with clients, suppliers and colleagues, and can state the position of the organisation it belongs to. Nobody is half a counterparty, which is why an occupant is human or artificial and never both: splitting work between two occupants produces two posts, not one post of a third kind.
 
 ## Governance
 
@@ -890,7 +892,7 @@ Candidate 1.0 is a proposal by a single author. The Standard Review Board is for
 
 ### The freeze
 
-Candidate 1.0 freezes on a stated date, whether or not a Board has been seated by then. From that moment the author stops editing the normative text — not "stops except for small corrections", but stops. A standard whose author keeps quietly patching it is not a standard; it is a personal document with pretensions. What follows is the mechanism that makes the freeze checkable rather than rhetorical.
+Candidate 1.0 freezes on 1 September 2026 at 00:00 UTC, whether or not a Board has been seated by then. From that moment the author stops editing the normative text — not "stops except for small corrections", but stops. A standard whose author keeps quietly patching it is not a standard; it is a personal document with pretensions. What follows is the mechanism that makes the freeze checkable rather than rhetorical.
 
 **What identifies the frozen version.** A date and time in UTC, a version label, and a content hash of the canonical machine-readable edition, all published on this page. Release of the companion book is not the trigger: a book carries different dates by format and by market, and a normative event cannot depend on a retailer.
 

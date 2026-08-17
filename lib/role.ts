@@ -6,8 +6,8 @@ export const ROLE_NAME: T = {
 };
 
 export const MISSION: T = {
-  en: 'Design, balance and optimise the human and artificial workforce, ensuring every responsibility is executed by the resource — human, artificial or hybrid — that produces the best result at the right level of cost, risk, quality and accountability.',
-  es: 'Diseñar, equilibrar y optimizar la fuerza laboral humana y artificial, asegurando que cada responsabilidad sea ejecutada por el recurso — humano, artificial o híbrido — que genere el mejor resultado con el nivel adecuado de costo, riesgo, calidad y accountability.',
+  en: 'Design, balance and optimise the human and artificial workforce, ensuring every responsibility is executed by the resource — human or artificial — that produces the best result at the right level of cost, risk, quality and accountability.',
+  es: 'Diseñar, equilibrar y optimizar la fuerza laboral humana y artificial, asegurando que cada responsabilidad sea ejecutada por el recurso — humano o artificial — que genere el mejor resultado con el nivel adecuado de costo, riesgo, calidad y accountability.',
 };
 
 export const PLACEMENT: T = {
@@ -17,7 +17,7 @@ export const PLACEMENT: T = {
 
 export const RESPONSIBILITIES: T[] = [
   { en: 'Maintain human–AI operational harmony: eliminate contradictory ownership, define handoffs and escalation lines.', es: 'Armonía operacional humano-IA: eliminar ownership contradictorio, definir handoffs y líneas de escalamiento.' },
-  { en: 'Periodically reassess which work should be Human, Deterministic automation, Artificial or Hybrid.', es: 'Evaluar periódicamente qué trabajo debe ser Human, Automatización determinista, Artificial o Hybrid.' },
+  { en: 'Periodically reassess which work should be Human, Assisted human, Deterministic automation or Artificial.', es: 'Evaluar periódicamente qué trabajo debe ser Human, Assisted human, Automatización determinista o Artificial.' },
   { en: 'Direct Human → Artificial and Artificial → Human transitions.', es: 'Dirigir transiciones Human → Artificial y Artificial → Human.' },
   { en: 'Design hybrid posts with an explicit split of responsibilities.', es: 'Diseñar puestos híbridos y reparto explícito de responsabilidades.' },
   { en: 'Manage human impact: clarity, communication, reassignment and development.', es: 'Administrar el impacto humano: claridad, comunicación, reasignación y desarrollo.' },

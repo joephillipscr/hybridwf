@@ -1,8 +1,8 @@
 import type { T } from './i18n';
 
 export const WRM_DEFINITION: T = {
-  en: 'WRM — Work Resource Management — is the discipline that designs, assigns, governs and optimises work regardless of whether the resource executing it is human, artificial or hybrid.',
-  es: 'WRM — Administración de Recursos de Trabajo — es la disciplina que diseña, asigna, gobierna y optimiza el trabajo independientemente de si el recurso que lo ejecuta es humano, artificial o híbrido.',
+  en: 'WRM — Work Resource Management — is the discipline that designs, assigns, governs and optimises work regardless of whether the resource executing it is human or artificial.',
+  es: 'WRM — Administración de Recursos de Trabajo — es la disciplina que diseña, asigna, gobierna y optimiza el trabajo independientemente de si el recurso que lo ejecuta es humano o artificial.',
 };
 
 export const WRM_PREMISE: T = {

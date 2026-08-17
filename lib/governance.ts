@@ -195,8 +195,8 @@ export const STATUS_NOTE: { title: T; body: T } = {
 export const FREEZE: { title: T; intro: T; rules: { label: T; body: T }[]; closing: T } = {
   title: { en: 'The freeze', es: 'El congelamiento' },
   intro: {
-    en: 'Candidate 1.0 freezes on a stated date, whether or not a Board has been seated by then. From that moment the author stops editing the normative text — not "stops except for small corrections", but stops. A standard whose author keeps quietly patching it is not a standard; it is a personal document with pretensions. What follows is the mechanism that makes the freeze checkable rather than rhetorical.',
-    es: 'La Candidate 1.0 se congela en una fecha declarada, haya o no un Board constituido para entonces. Desde ese momento el autor deja de editar el texto normativo — no «deja de editarlo salvo correcciones menores», sino deja de editarlo. Un estándar cuyo autor lo sigue parchando en silencio no es un estándar: es un documento personal con pretensiones. Lo que sigue es el mecanismo que vuelve el congelamiento verificable en lugar de retórico.',
+    en: 'Candidate 1.0 freezes on 1 September 2026 at 00:00 UTC, whether or not a Board has been seated by then. From that moment the author stops editing the normative text — not "stops except for small corrections", but stops. A standard whose author keeps quietly patching it is not a standard; it is a personal document with pretensions. What follows is the mechanism that makes the freeze checkable rather than rhetorical.',
+    es: 'La Candidate 1.0 se congela el 1 de septiembre de 2026 a las 00:00 UTC, haya o no un Board constituido para entonces. Desde ese momento el autor deja de editar el texto normativo — no «deja de editarlo salvo correcciones menores», sino deja de editarlo. Un estándar cuyo autor lo sigue parchando en silencio no es un estándar: es un documento personal con pretensiones. Lo que sigue es el mecanismo que vuelve el congelamiento verificable en lugar de retórico.',
   },
   rules: [
     {

@@ -373,7 +373,7 @@ El valor del modelo es el umbral que crea. No todo agente merece llamarse AI Emp
 
 ## WRM — el marco
 
-> WRM — Administración de Recursos de Trabajo — es la disciplina que diseña, asigna, gobierna y optimiza el trabajo independientemente de si el recurso que lo ejecuta es humano, artificial o híbrido.
+> WRM — Administración de Recursos de Trabajo — es la disciplina que diseña, asigna, gobierna y optimiza el trabajo independientemente de si el recurso que lo ejecuta es humano o artificial.
 
 La idea fundacional es separar el puesto del ocupante. Primero existe una necesidad organizacional; de ella nace un puesto o responsabilidad, con propósito, ownership, resultados, KPIs, autoridad, límites, relaciones, herramientas y escalamiento. Después se decide cuál es el recurso correcto para ocuparlo. La declaración gobierna el orden del nacimiento, no el resto de la vida: los ocupantes — los humanos sobre todo — remodelan sus puestos, y un marco que negara el job crafting sería taylorismo con mejor vocabulario. Lo que el marco exige es que toda remodelación se declare y se versione, porque en una organización híbrida el puesto declarado es la interfaz: un colega humano puede leer un rol no declarado desde el pasillo; uno artificial solo puede leer el grafo.
 
@@ -617,7 +617,7 @@ La matriz es una síntesis propia de prácticas de diseño organizacional, RR. H
 
 ## HWFA — Hybrid Workforce Fit Assessment
 
-Instrumento estructurado en tres etapas — elegibilidad, luego riesgo, luego economía — para decidir si una responsabilidad debe ser Humana, Automatización determinista, Artificial o Híbrida. Las restricciones van primero: las materias reservadas y los usos prohibidos compuertan la respuesta, el trabajo por reglas completamente enumerable sale hacia software convencional, el riesgo topa lo que sobrevive, y solo entonces el perfil de costos escoge entre lo restante. Devuelve un argumento, no un número: una asignación, una clase de riesgo, un peldaño inicial de autonomía, las respuestas que lo decidieron y las condiciones que lo cambiarían — un puntaje numérico permitiría lavar a través de la aritmética una decisión ya tomada.
+Instrumento estructurado en tres etapas — elegibilidad, luego riesgo, luego economía — para decidir si una responsabilidad debe ser Humana, Humano asistido, Automatización determinista o Artificial. Las restricciones van primero: las materias reservadas y los usos prohibidos compuertan la respuesta, el trabajo por reglas completamente enumerable sale hacia software convencional, el riesgo topa lo que sobrevive, y solo entonces el perfil de costos escoge entre lo restante. Devuelve un argumento, no un número: una asignación, una clase de riesgo, un peldaño inicial de autonomía, las respuestas que lo decidieron y las condiciones que lo cambiarían — un puntaje numérico permitiría lavar a través de la aritmética una decisión ya tomada.
 
 ### Las trece dimensiones
 
@@ -653,14 +653,14 @@ Instrumento estructurado en tres etapas — elegibilidad, luego riesgo, luego ec
 
 ### Misión
 
-> Diseñar, equilibrar y optimizar la fuerza laboral humana y artificial, asegurando que cada responsabilidad sea ejecutada por el recurso — humano, artificial o híbrido — que genere el mejor resultado con el nivel adecuado de costo, riesgo, calidad y accountability.
+> Diseñar, equilibrar y optimizar la fuerza laboral humana y artificial, asegurando que cada responsabilidad sea ejecutada por el recurso — humano o artificial — que genere el mejor resultado con el nivel adecuado de costo, riesgo, calidad y accountability.
 
 En organizaciones grandes puede evolucionar a Director of Hybrid Workforce. Debe ubicarse dentro de RR. HH./People & Workforce, con relación matricial fuerte con el COO y el CIO/CTO. No toda empresa necesita crear el cargo mañana — pero cualquier organización que conceda role stewardship a recursos artificiales necesita que alguien ejerza estas funciones.
 
 ### Responsabilidades
 
 1. Armonía operacional humano-IA: eliminar ownership contradictorio, definir handoffs y líneas de escalamiento.
-2. Evaluar periódicamente qué trabajo debe ser Human, Automatización determinista, Artificial o Hybrid.
+2. Evaluar periódicamente qué trabajo debe ser Human, Assisted human, Automatización determinista o Artificial.
 3. Dirigir transiciones Human → Artificial y Artificial → Human.
 4. Diseñar puestos híbridos y reparto explícito de responsabilidades.
 5. Administrar el impacto humano: claridad, comunicación, reasignación y desarrollo.
@@ -743,7 +743,7 @@ El framework debe ser reversible. Si el recurso artificial produce demasiado rie
 4. Reasignar ownership y canales de escalamiento.
 5. Revocar accesos artificiales que ya no correspondan.
 6. Ejecutar root-cause analysis: modelo, proceso, conocimiento, herramientas o mala asignación del rol.
-7. Decidir si el futuro del puesto es Human o Hybrid, no asumir que debe volver a ser 100% humano.
+7. Decidir si el futuro del puesto es Human o Assisted human, no asumir que debe volver a ser humano sin asistencia.
 
 Defina las condiciones de regreso antes del piloto, no después de conocer los resultados. ¿Qué tasa de error es inaceptable? ¿Cuánta intervención humana destruye la economía? ¿Qué incidente obliga a suspender? Escritas de antemano, estas reglas reducen el sesgo de defender una implementación por orgullo.
 
@@ -755,7 +755,7 @@ Un término, dos idiomas, una definición numerada. Cuando el término inglés s
 
 **G-01 · AI Employee** — Trabajador de software persistente y ligado a un rol, que ejecuta de forma autónoma responsabilidades recurrentes dentro de límites explícitos, con identidad trazable, desempeño medible, rutas de escalamiento y accountability humano.
 
-**G-02 · WRM — Administración de Recursos de Trabajo** — La disciplina que diseña, asigna, gobierna y optimiza el trabajo independientemente de si el recurso que lo ejecuta es humano, artificial o híbrido.
+**G-02 · WRM — Administración de Recursos de Trabajo** — La disciplina que diseña, asigna, gobierna y optimiza el trabajo independientemente de si el recurso que lo ejecuta es humano o artificial.
 
 **G-03 · AI Role Contract** — El contrato operacional de un puesto artificial: misión, responsabilidades, resultados, KPIs, autoridad, exclusiones, herramientas, accesos, nivel de servicio, escalamiento, criterios de suspensión, calendario de gobernanza y accountable owner. Versionado. Equivale a una descripción de puesto más un acuerdo explícito de operación — un prompt da instrucciones, un contrato de rol da responsabilidad.
 
@@ -777,7 +777,7 @@ Un término, dos idiomas, una definición numerada. Cuando el término inglés s
 
 **G-12 · Post-Transition Performance Delta** — El cambio de desempeño después de cambiar el recurso o la configuración. No pregunta si el agente es rápido; pregunta si el puesto mejoró. Sin baseline, una organización puede celebrar una mejora que nunca ocurrió.
 
-**G-13 · HWFA — Hybrid Workforce Fit Assessment** — Instrumento estructurado en tres etapas — elegibilidad, riesgo, economía — para decidir si una responsabilidad debe ser Humana, Automatización determinista, Artificial o Híbrida. Devuelve un argumento, no un número: una asignación, una clase de riesgo, un peldaño inicial de autonomía y las condiciones que cambiarían la respuesta. Antes Fit Score; renombrado porque un instrumento que se niega a producir un número no debería llamarse así.
+**G-13 · HWFA — Hybrid Workforce Fit Assessment** — Instrumento estructurado en tres etapas — elegibilidad, riesgo, economía — para decidir si una responsabilidad debe ser Humana, Humano asistido, Automatización determinista o Artificial. Devuelve un argumento, no un número: una asignación, una clase de riesgo, un peldaño inicial de autonomía y las condiciones que cambiarían la respuesta. Antes Fit Score; renombrado porque un instrumento que se niega a producir un número no debería llamarse así.
 
 **G-14 · Gerente de Fuerza Laboral Híbrida** — El rol responsable de asegurar que cada responsabilidad sea ejecutada por la configuración que produce el mejor resultado. Neutral por diseño: nunca se mide por humanos reemplazados ni puestos convertidos.
 
@@ -801,7 +801,7 @@ Un término, dos idiomas, una definición numerada. Cuando el término inglés s
 
 **G-24 · Management by exception** — El modo de operación en que el recurso resuelve la rutina dentro de sus límites y el manager interviene en desviaciones y excepciones. Peldaño 4 de la escalera de autonomía.
 
-**G-25 · Puesto híbrido** — Puesto cuyas responsabilidades se reparten explícitamente entre un recurso humano y uno artificial, con handoffs definidos, transferencia de contexto y un único dueño del resultado completo. Mal diseñado, produce dos ocupantes esperando que responda el otro.
+**G-25 · Humano asistido** — Puesto ocupado por una persona, algunas de cuyas funciones se ejecutan con asistencia artificial. El ocupante es humano: la accountability, las decisiones y la relación con la contraparte quedan en la persona, mientras el recurso artificial prepara, redacta, analiza o recomienda. No es un tercer tipo de empleado — es un empleado humano, asistido. Lo híbrido es la fuerza laboral, no la persona.
 
 **G-26 · Supervisor** — Quien dirige el trabajo cotidiano de un AI Employee: rutear tareas, revisar output, fijar prioridades y recibir excepciones. Un supervisor puede ser humano o artificial. Se distingue del accountable owner, que siempre es humano: un AI Employee puede supervisar a otro y aun así responder ante una persona en algún punto por encima.
 
@@ -817,7 +817,7 @@ Un término, dos idiomas, una definición numerada. Cuando el término inglés s
 
 **G-32 · Zombi digital** — Un AI Employee cuyo puesto perdió su justificación pero que sigue operando con credenciales, accesos a datos y autoridad vigente intactos. Es lo que se acumula cuando nada fuerza la pregunta de existencia: hasta los disparadores débiles que a veces podan puestos humanos — una línea de salario bajo revisión de presupuesto, una renuncia que fuerza la decisión de reemplazo — no existen para un recurso que cuesta poco y no renuncia jamás. Se previene con la cadencia de re-justificación de HWF-63; se desmonta con el retiro del lifecycle, con offboarding y revocación.
 
-**G-33 · Neutralidad de recurso** — La disciplina de asignación que decide quién ocupa un puesto — humano, artificial o híbrido — sin preferencia previa por ninguno, juzgando solo fit, resultado, costo, riesgo y control. Es una disciplina, no una postura moral, y está acotada: la neutralidad comienza solo después de satisfechas las restricciones de HWF-01 — derechos, dignidad, seguridad, agencia humana significativa, accesibilidad, protecciones laborales. Citado sin su frontera, el término está siendo mal usado.
+**G-33 · Neutralidad de recurso** — La disciplina de asignación que decide quién ocupa un puesto — humano o artificial — sin preferencia previa por ninguno, juzgando solo fit, resultado, costo, riesgo y control. Es una disciplina, no una postura moral, y está acotada: la neutralidad comienza solo después de satisfechas las restricciones de HWF-01 — derechos, dignidad, seguridad, agencia humana significativa, accesibilidad, protecciones laborales. Citado sin su frontera, el término está siendo mal usado.
 
 **G-34 · Unidad de conformidad** — Aquello sobre lo que puede tratar una declaración de conformidad: un deployment — un rol, una versión de contrato de rol, un accountable owner, un periodo de evaluación con expiración. Productos, plataformas, modelos y organizaciones en abstracto no pueden conformar, diga lo que diga su marketing; un proveedor solo puede declarar que habilita deployments conformes (HWF-71).
 
@@ -834,6 +834,8 @@ Un término, dos idiomas, una definición numerada. Cuando el término inglés s
 **G-40 · Inferencia derivada** — Un dato que el deployment fabrica sobre una persona en vez de recolectarlo de ella: una probabilidad de apuros financieros, una condición de salud inferida, una intención predicha. Gobernado bajo HWF-42 como si se hubiera recolectado — finalidad, base, minimización, eliminación — y con frecuencia más sensible que todo lo que la persona sí entregó. Una inferencia que la persona nunca entregó sigue siendo su dato.
 
 **G-41 · Falla correlacionada** — El modo de falla de la monocultura de modelo. Los equipos humanos tampoco fallan de forma independiente, pero la diversidad de experiencia y criterio tiende a distribuir algunos puntos ciegos; las instancias que comparten modelo, proveedor, contexto o configuración los concentran, y pueden fallar del mismo modo al mismo tiempo. El precedente es la falla de causa común, conocida desde hace décadas en ingeniería de confiabilidad y en planes de continuidad; lo nuevo es la velocidad, el alcance y la opacidad con que se propaga dentro de una fuerza laboral artificial. Se mitiga con diversidad de modelos y proveedores, recursos de fallback y planes de sucesión; nombrado como ítem de validación para equipos de IA por HWF-52.
+
+**G-42 · Entidad (frente a interfaz)** — Lo que separa a un empleado — humano o artificial — de un canal. Una interfaz es una superficie a través de la cual se alcanza algo; una entidad es una parte con la que se trata. Un AI Employee sostiene conversaciones con clientes, proveedores y colegas, y puede fijar la posición de la organización a la que pertenece. Nadie es media contraparte, y por eso un ocupante es humano o artificial y nunca ambos: repartir el trabajo entre dos ocupantes produce dos puestos, no un puesto de un tercer tipo.
 
 ## Gobierno
 
@@ -890,7 +892,7 @@ La Candidate 1.0 es una propuesta de un solo autor. El Standard Review Board est
 
 ### El congelamiento
 
-La Candidate 1.0 se congela en una fecha declarada, haya o no un Board constituido para entonces. Desde ese momento el autor deja de editar el texto normativo — no «deja de editarlo salvo correcciones menores», sino deja de editarlo. Un estándar cuyo autor lo sigue parchando en silencio no es un estándar: es un documento personal con pretensiones. Lo que sigue es el mecanismo que vuelve el congelamiento verificable en lugar de retórico.
+La Candidate 1.0 se congela el 1 de septiembre de 2026 a las 00:00 UTC, haya o no un Board constituido para entonces. Desde ese momento el autor deja de editar el texto normativo — no «deja de editarlo salvo correcciones menores», sino deja de editarlo. Un estándar cuyo autor lo sigue parchando en silencio no es un estándar: es un documento personal con pretensiones. Lo que sigue es el mecanismo que vuelve el congelamiento verificable en lugar de retórico.
 
 **Qué identifica la versión congelada.** Una fecha y hora en UTC, una etiqueta de versión y un hash del contenido de la edición canónica legible por máquinas, publicados en esta página. La salida del libro que lo acompaña no es el disparador: un libro tiene fechas distintas por formato y por mercado, y un evento normativo no puede depender de una tienda.
 
