@@ -122,7 +122,7 @@ export const TERMS: Term[] = [
     term: { en: 'HWFA — Hybrid Workforce Fit Assessment', es: 'HWFA — Hybrid Workforce Fit Assessment' },
     definition: {
       en: 'A structured instrument in three stages — eligibility, risk, economics — for deciding whether a responsibility should be Human, Assisted human, Deterministic automation or Artificial. It returns an argument, not a number: an allocation, a risk class, a starting autonomy rung and the conditions that would change the answer. Formerly the Fit Score; renamed because an instrument that refuses to produce a number should not be called one.',
-      es: 'Instrumento estructurado en tres etapas — elegibilidad, riesgo, economía — para decidir si una responsabilidad debe ser Humana, Humano asistido, Automatización determinista o Artificial. Devuelve un argumento, no un número: una asignación, una clase de riesgo, un peldaño inicial de autonomía y las condiciones que cambiarían la respuesta. Antes Fit Score; renombrado porque un instrumento que se niega a producir un número no debería llamarse así.',
+      es: 'Instrumento estructurado en tres etapas — elegibilidad, riesgo, economía — para decidir si una responsabilidad debe ser Humano, Humano asistido, Automatización determinista o Artificial. Devuelve un argumento, no un número: una asignación, una clase de riesgo, un peldaño inicial de autonomía y las condiciones que cambiarían la respuesta. Antes Fit Score; renombrado porque un instrumento que se niega a producir un número no debería llamarse así.',
     },
   },
   {

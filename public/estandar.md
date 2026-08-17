@@ -147,7 +147,7 @@ Toda declaración de conformidad publica estos nueve campos (HWF-71). Una declar
 
 #### HWF-12
 
-**No todo agente califica como AI Employee. Debe superar un umbral de madurez y gobierno. El test funciona en ambas direcciones: un deployment que exhibe las nueve propiedades en operación es un AI Employee sin importar cómo lo llame la organización, y la carga de demostrar la no-calificación recae en el deployer. Las propiedades son hechos del deployment, no papeleo — un contrato de rol sin escribir es una falla de gobierno, no una salida de la categoría.**
+**No todo agente califica como AI Employee. El umbral es la categoría misma: las nueve propiedades de la definición, exhibidas en operación. El test funciona en ambas direcciones: un deployment que exhibe las nueve propiedades en operación es un AI Employee sin importar cómo lo llame la organización, y la carga de demostrar la no-calificación recae en el deployer. Las propiedades son hechos del deployment, no papeleo — un contrato de rol sin escribir es una falla de gobierno, no una salida de la categoría.**
 
 *Nota:* Esta cláusula es lo que le da valor a la categoría. Si la etiqueta aplica a todo, no distingue nada. Una organización con veinte agentes excelentes y cero AI Employees tiene claridad y no un problema — siempre que ninguno de los veinte exhiba las nueve propiedades en operación.
 
@@ -329,7 +329,7 @@ Toda declaración de conformidad publica estos nueve campos (HWF-71). Una declar
 
 **La conformidad pertenece a un deployment, nunca a un producto, una plataforma ni una organización en abstracto. Una declaración de conformidad debe nombrar su alcance — la organización y el deployment, el rol y la versión del contrato de rol, el accountable owner, la clase de riesgo, las cláusulas evaluadas, el periodo de evaluación y su expiración — y debe publicar su evidencia y sus limitaciones conocidas. Un proveedor puede declarar que su plataforma habilita deployments conformes; nunca puede declarar que la plataforma misma conforma, y el claim de habilitación exige al menos una declaración viva y no vencida de un cliente, enlazada públicamente. Una declaración de conformidad con el estándar evalúa todas sus cláusulas; algo más estrecho se rotula conformidad parcial y nombra las cláusulas evaluadas. Ninguna declaración es válida por más de doce meses.**
 
-*Nota:* La conformidad autodeclarada sin unidad definida degenera en frase de marketing en cuestión de meses, y el remedio no es la certificación — excluida del alcance de este estándar y sin regreso — sino la falsificabilidad: una declaración que nombra su deployment, su dueño, sus cláusulas, su periodo, su evidencia y sus limitaciones puede ser verificada o refutada por cualquiera, lo que convierte al público en un auditor más barato que un certificador y más difícil de capturar. Una declaración vencida no es una declaración; la renovación puede compartir calendario con la revisión de existencia de HWF-63. La oración del proveedor es el candado anti-lavado, y la primera plataforma atada por ella es la del propio autor: AIEmpl.com puede declarar que habilita deployments conformes, y nunca puede llamarse a sí misma conforme. Un estándar que no gobierna cómo se lo invoca termina significando lo que el marketing necesite que signifique.
+*Nota:* La conformidad autodeclarada sin unidad definida degenera en frase de marketing en cuestión de meses, y el remedio no es la certificación — excluida del alcance de este estándar y sin regreso — sino la falsificabilidad: una declaración que nombra su deployment, su dueño, sus cláusulas, su periodo, su evidencia y sus limitaciones puede ser verificada o refutada por cualquiera, y el escrutinio público es más barato que un esquema de certificación y más difícil de capturar — habilita la verificación y la refutación; no sustituye una auditoría independiente. Una declaración vencida no es una declaración; la renovación puede compartir calendario con la revisión de existencia de HWF-63. La oración del proveedor es el candado anti-lavado, y la primera plataforma atada por ella es la del propio autor: AIEmpl.com puede declarar que habilita deployments conformes, y nunca puede llamarse a sí misma conforme. Un estándar que no gobierna cómo se lo invoca termina significando lo que el marketing necesite que signifique.
 
 *Construida contra:* S9 · ISO 30414:2025 — Human resource management, HCRD
 
@@ -416,7 +416,7 @@ La idea fundacional es separar el puesto del ocupante. Primero existe una necesi
 | # | Etapa | Objetivo |
 | --- | --- | --- |
 | 1 | Diseñar | Definir resultado, responsabilidades, KPIs, autoridad, límites y riesgo. |
-| 2 | Asignar | Decidir Human / Assisted human / Automatización determinista / Artificial. |
+| 2 | Asignar | Decidir Humano / Humano asistido / Automatización determinista / Artificial. |
 | 3 | Seleccionar | Persona, modelo, agente, vendor o arquitectura con fit demostrable. |
 | 4 | Incorporar | Onboarding de conocimiento, SOPs, cultura/políticas, relaciones y escalamiento. |
 | 5 | Habilitar | Herramientas, accesos, credenciales, presupuesto y autoridad. |
@@ -597,7 +597,7 @@ La matriz es una síntesis propia de prácticas de diseño organizacional, RR. H
 | 106 | Planificar capacidad futura | Headcount, skills y carga requeridos para la estrategia. | Human + AI capacity planning, concurrency y workload forecasting. | U |
 | 107 | Make vs. buy | Contratar, tercerizar o desarrollar capacidad internamente. | Build agent vs. SaaS/vendor vs. managed service vs. open source. | U |
 | 108 | Dimensionamiento | Número y mezcla de personas necesarias. | Instances, concurrency, model tiers y capacity requerida. | U |
-| 109 | Diseñar el workforce mix | Full-time, part-time, contractors, outsourcing. | Asignación Human, Assisted human o Artificial según riesgo, costo y ventaja comparativa. | U |
+| 109 | Diseñar el workforce mix | Full-time, part-time, contractors, outsourcing. | Asignación entre las cuatro salidas — Humano, Humano asistido, Automatización determinista o Artificial — según riesgo, costo y ventaja comparativa. | U |
 | 110 | Productividad por recurso | Output/FTE y valor generado. | Outcome/AI Employee, cost per outcome y human review load. | U |
 
 ### 10. Analítica y mejora continua
@@ -617,7 +617,7 @@ La matriz es una síntesis propia de prácticas de diseño organizacional, RR. H
 
 ## HWFA — Hybrid Workforce Fit Assessment
 
-Instrumento estructurado en tres etapas — elegibilidad, luego riesgo, luego economía — para decidir si una responsabilidad debe ser Humana, Humano asistido, Automatización determinista o Artificial. Las restricciones van primero: las materias reservadas y los usos prohibidos compuertan la respuesta, el trabajo por reglas completamente enumerable sale hacia software convencional, el riesgo topa lo que sobrevive, y solo entonces el perfil de costos escoge entre lo restante. Devuelve un argumento, no un número: una asignación, una clase de riesgo, un peldaño inicial de autonomía, las respuestas que lo decidieron y las condiciones que lo cambiarían — un puntaje numérico permitiría lavar a través de la aritmética una decisión ya tomada.
+Instrumento estructurado en tres etapas — elegibilidad, luego riesgo, luego economía — para decidir si una responsabilidad debe ser Humano, Humano asistido, Automatización determinista o Artificial. Las restricciones van primero: las materias reservadas y los usos prohibidos compuertan la respuesta, el trabajo por reglas completamente enumerable sale hacia software convencional, el riesgo topa lo que sobrevive, y solo entonces el perfil de costos escoge entre lo restante. Devuelve un argumento, no un número: una asignación, una clase de riesgo, un peldaño inicial de autonomía, las respuestas que lo decidieron y las condiciones que lo cambiarían — un puntaje numérico permitiría lavar a través de la aritmética una decisión ya tomada.
 
 ### Las trece dimensiones
 
@@ -660,7 +660,7 @@ En organizaciones grandes puede evolucionar a Director of Hybrid Workforce. Debe
 ### Responsabilidades
 
 1. Armonía operacional humano-IA: eliminar ownership contradictorio, definir handoffs y líneas de escalamiento.
-2. Evaluar periódicamente qué trabajo debe ser Human, Assisted human, Automatización determinista o Artificial.
+2. Evaluar periódicamente qué trabajo debe ser Humano, Humano asistido, Automatización determinista o Artificial.
 3. Dirigir transiciones Human → Artificial y Artificial → Human.
 4. Diseñar puestos híbridos y reparto explícito de responsabilidades.
 5. Administrar el impacto humano: claridad, comunicación, reasignación y desarrollo.
@@ -679,7 +679,7 @@ En organizaciones grandes puede evolucionar a Director of Hybrid Workforce. Debe
 | KPI | Qué mide |  |
 | --- | --- | --- |
 | Workforce Performance Index | Resultado global del workforce vs. objetivos. |  |
-| Role Allocation Accuracy | % de roles cuya asignación — Human, Assisted human, Deterministic automation o Artificial — se mantiene válida tras revisión. |  |
+| Role Allocation Accuracy | % de roles cuya asignación — Humano, Humano asistido, Automatización determinista o Artificial — se mantiene válida tras revisión. |  |
 | Transition Success Rate | Transiciones que alcanzan criterios de éxito sobre el total. |  |
 | Time to Stable Performance | Días hasta alcanzar KPIs y nivel de riesgo esperado. |  |
 | Post-Transition Performance Delta | Cambio de performance después de la transición. ¿El trabajo funciona mejor que antes? | **al CEO** |
@@ -743,7 +743,7 @@ El framework debe ser reversible. Si el recurso artificial produce demasiado rie
 4. Reasignar ownership y canales de escalamiento.
 5. Revocar accesos artificiales que ya no correspondan.
 6. Ejecutar root-cause analysis: modelo, proceso, conocimiento, herramientas o mala asignación del rol.
-7. Decidir si el futuro del puesto es Human o Assisted human, no asumir que debe volver a ser humano sin asistencia.
+7. Decidir si el futuro del puesto es Humano o Humano asistido, no asumir que debe volver a ser humano sin asistencia.
 
 Defina las condiciones de regreso antes del piloto, no después de conocer los resultados. ¿Qué tasa de error es inaceptable? ¿Cuánta intervención humana destruye la economía? ¿Qué incidente obliga a suspender? Escritas de antemano, estas reglas reducen el sesgo de defender una implementación por orgullo.
 
@@ -777,7 +777,7 @@ Un término, dos idiomas, una definición numerada. Cuando el término inglés s
 
 **G-12 · Post-Transition Performance Delta** — El cambio de desempeño después de cambiar el recurso o la configuración. No pregunta si el agente es rápido; pregunta si el puesto mejoró. Sin baseline, una organización puede celebrar una mejora que nunca ocurrió.
 
-**G-13 · HWFA — Hybrid Workforce Fit Assessment** — Instrumento estructurado en tres etapas — elegibilidad, riesgo, economía — para decidir si una responsabilidad debe ser Humana, Humano asistido, Automatización determinista o Artificial. Devuelve un argumento, no un número: una asignación, una clase de riesgo, un peldaño inicial de autonomía y las condiciones que cambiarían la respuesta. Antes Fit Score; renombrado porque un instrumento que se niega a producir un número no debería llamarse así.
+**G-13 · HWFA — Hybrid Workforce Fit Assessment** — Instrumento estructurado en tres etapas — elegibilidad, riesgo, economía — para decidir si una responsabilidad debe ser Humano, Humano asistido, Automatización determinista o Artificial. Devuelve un argumento, no un número: una asignación, una clase de riesgo, un peldaño inicial de autonomía y las condiciones que cambiarían la respuesta. Antes Fit Score; renombrado porque un instrumento que se niega a producir un número no debería llamarse así.
 
 **G-14 · Gerente de Fuerza Laboral Híbrida** — El rol responsable de asegurar que cada responsabilidad sea ejecutada por la configuración que produce el mejor resultado. Neutral por diseño: nunca se mide por humanos reemplazados ni puestos convertidos.
 
@@ -843,7 +843,7 @@ Un término, dos idiomas, una definición numerada. Cuando el término inglés s
 
 Este estándar fue escrito por Master Joe Phillips, quien también construye AIEmpl.com, una plataforma comercial en esta categoría. Eso es un conflicto de interés real y se declara aquí en lugar de descubrirse después.
 
-De ahí se derivan tres compromisos, y los tres son estructurales y no prometidos. Este estándar no certifica productos ni puntúa proveedores, y bajo HWF-71 la plataforma del autor no puede jamás reclamar conformidad — un deployment puede, una plataforma no. La licencia es irrevocable, así que el texto no puede retirarse detrás de un producto. Y el texto normativo se mueve sin el voto del autor: el Editor redacta y argumenta, y no vota. La independencia se demuestra con estructura, no se afirma con una frase.
+De ahí se derivan tres compromisos, y los tres son estructurales y no prometidos. Este estándar no certifica productos ni puntúa proveedores, y bajo HWF-71 la plataforma del autor no puede jamás reclamar conformidad — un deployment puede, una plataforma no. La licencia es irrevocable, así que el texto no puede retirarse detrás de un producto. Y el texto normativo se mueve sin el voto del autor: el Editor redacta y argumenta, y no vota. Esa independencia está diseñada en la estructura y entra en vigor por etapas — custodia editorial hasta el congelamiento del 1 de septiembre de 2026 a las 00:00 UTC, texto inmóvil desde esa fecha salvo por el proceso aquí descrito, y autoridad colegiada cuando un Board se constituya con quórum. Diseñada hoy; lograda cuando los asientos estén ocupados.
 
 Un estándar escrito por un vendor y juzgado por nadie es una hoja de especificaciones con nombre formal. El mecanismo de abajo es lo que debería impedir que este se convierta en eso.
 
@@ -851,7 +851,7 @@ Un estándar escrito por un vendor y juzgado por nadie es una hoja de especifica
 
 > El Editor escribe, propone y decide todo lo editorial. El texto normativo cambia solo por votación del Board — y el Editor tiene voz, mas no voto.
 
-Esa única regla es la que le da valor a la divulgación anterior: el autor tiene el mayor interés comercial de la sala, y el autor no puede mover el estándar en absoluto — solo persuadir a quienes sí pueden.
+Esa única regla es la que le da valor a la divulgación anterior: el autor tiene el mayor interés comercial de la sala. Hasta el congelamiento conserva la custodia editorial, y lo dice; desde el congelamiento no puede mover el estándar — solo persuadir a quienes sí podrán, cuando el Board exista.
 
 ### Los nueve asientos
 

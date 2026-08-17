@@ -147,7 +147,7 @@ Every conformance claim publishes these nine fields (HWF-71). A claim missing an
 
 #### HWF-12
 
-**Not every agent qualifies as an AI Employee. It must clear a threshold of maturity and governance. The test works in both directions: a deployment that exhibits the nine properties in operation is an AI Employee whatever the organisation calls it, and the burden of demonstrating non-qualification lies with the deployer. The properties are facts about the deployment, not paperwork — an unwritten role contract is a governance failure, not a category exit.**
+**Not every agent qualifies as an AI Employee. The threshold is the category itself: the nine properties of the definition, exhibited in operation. The test works in both directions: a deployment that exhibits the nine properties in operation is an AI Employee whatever the organisation calls it, and the burden of demonstrating non-qualification lies with the deployer. The properties are facts about the deployment, not paperwork — an unwritten role contract is a governance failure, not a category exit.**
 
 *Note:* This clause is what makes the category worth anything. If the label applies to everything, it distinguishes nothing. An organisation with twenty excellent agents and zero AI Employees has clarity rather than a problem — provided none of the twenty exhibits the nine properties in operation.
 
@@ -329,7 +329,7 @@ Every conformance claim publishes these nine fields (HWF-71). A claim missing an
 
 **Conformance belongs to a deployment, never to a product, a platform or an organisation in the abstract. A conformance claim must name its scope — the organisation and deployment, the role and role-contract version, the accountable owner, the risk class, the clauses assessed, the assessment period and its expiry — and must publish its evidence and known limitations. A vendor may state that its platform enables conformant deployments; it may never state that the platform itself conforms, and the enabling claim requires at least one live, unexpired customer declaration, publicly linked. A claim of conformance to the standard assesses all of its clauses; anything narrower is styled partial conformance and names the clauses assessed. No declaration is valid for more than twelve months.**
 
-*Note:* Self-declared conformance without a defined unit degenerates into a marketing phrase within months, and the remedy is not certification — excluded from this standard’s scope and not returning — but falsifiability: a claim that names its deployment, owner, clauses, period, evidence and limitations can be verified or refuted by anyone, which makes the public a cheaper auditor than a certifier and a harder one to capture. An expired declaration is not a declaration; renewal may share its calendar with the existence review of HWF-63. The vendor sentence is the anti-laundering lock, and the first platform bound by it is the author’s own: AIEmpl.com may state that it enables conformant deployments, and may never call itself conformant. A standard that does not govern how it is invoked ends up meaning whatever marketing needs it to mean.
+*Note:* Self-declared conformance without a defined unit degenerates into a marketing phrase within months, and the remedy is not certification — excluded from this standard’s scope and not returning — but falsifiability: a claim that names its deployment, owner, clauses, period, evidence and limitations can be verified or refuted by anyone, and public scrutiny is cheaper than a certification scheme and harder to capture — it enables verification and refutation; it does not substitute for an independent audit. An expired declaration is not a declaration; renewal may share its calendar with the existence review of HWF-63. The vendor sentence is the anti-laundering lock, and the first platform bound by it is the author’s own: AIEmpl.com may state that it enables conformant deployments, and may never call itself conformant. A standard that does not govern how it is invoked ends up meaning whatever marketing needs it to mean.
 
 *Built against:* S9 · ISO 30414:2025 — Human resource management, HCRD
 
@@ -597,7 +597,7 @@ The matrix is an original synthesis of organisational design, HR, performance ma
 | 106 | Plan future capacity | Headcount, skills and load required by the strategy. | Human + AI capacity planning, concurrency and workload forecasting. | U |
 | 107 | Make vs. buy | Hire, outsource or develop capability internally. | Build agent vs. SaaS/vendor vs. managed service vs. open source. | U |
 | 108 | Sizing | Number and mix of people required. | Instances, concurrency, model tiers and required capacity. | U |
-| 109 | Design the workforce mix | Full-time, part-time, contractors, outsourcing. | Human, assisted human or artificial allocation by risk, cost and comparative advantage. | U |
+| 109 | Design the workforce mix | Full-time, part-time, contractors, outsourcing. | Allocation across the four outcomes — Human, Assisted human, Deterministic automation or Artificial — by risk, cost and comparative advantage. | U |
 | 110 | Productivity per resource | Output/FTE and value generated. | Outcome/AI Employee, cost per outcome and human review load. | U |
 
 ### 10. Analytics and continuous improvement
@@ -843,7 +843,7 @@ One term, two languages, one numbered definition. Where the English term is used
 
 This standard was written by Master Joe Phillips, who also builds AIEmpl.com, a commercial platform in this category. That is a real conflict of interest and it is stated here rather than discovered later.
 
-Three commitments follow from it, and all three are structural rather than promised. This standard does not certify products and does not score vendors, and under HWF-71 the author’s platform can never claim conformance — a deployment can, a platform cannot. The licence is irrevocable, so the text cannot be pulled back behind a product. And the normative text moves without the author’s vote: the Editor drafts and argues, and does not vote. Independence is demonstrated by structure, not asserted by a sentence.
+Three commitments follow from it, and all three are structural rather than promised. This standard does not certify products and does not score vendors, and under HWF-71 the author’s platform can never claim conformance — a deployment can, a platform cannot. The licence is irrevocable, so the text cannot be pulled back behind a product. And the normative text moves without the author’s vote: the Editor drafts and argues, and does not vote. That independence is designed into the structure and comes into force in stages — editorial custody until the freeze on 1 September 2026 at 00:00 UTC, an immovable text from that date except through the process described here, and collegiate authority once a Board is seated with quorum. Designed today; achieved when the seats are filled.
 
 A standard authored by a vendor and judged by nobody is a specification sheet with a formal name. The mechanism below is what is meant to keep this one from becoming that.
 
@@ -851,7 +851,7 @@ A standard authored by a vendor and judged by nobody is a specification sheet wi
 
 > The Editor writes, proposes and decides everything editorial. The normative text changes only by vote of the Board — and the Editor has a voice, not a vote.
 
-That single rule is what makes the disclosure above worth anything: the author holds the largest commercial interest in the room, and the author cannot move the standard at all — only persuade the people who can.
+That single rule is what makes the disclosure above worth anything: the author holds the largest commercial interest in the room. Until the freeze he holds editorial custody, and says so; from the freeze he cannot move the standard — only persuade the people who will be able to, once the Board exists.
 
 ### The nine seats
 

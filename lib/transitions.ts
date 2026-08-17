@@ -49,7 +49,7 @@ export const BACK: T[] = [
   { en: 'Reassign ownership and escalation channels.', es: 'Reasignar ownership y canales de escalamiento.' },
   { en: 'Revoke artificial access that no longer corresponds.', es: 'Revocar accesos artificiales que ya no correspondan.' },
   { en: 'Run root-cause analysis: model, process, knowledge, tools or bad role allocation.', es: 'Ejecutar root-cause analysis: modelo, proceso, conocimiento, herramientas o mala asignación del rol.' },
-  { en: 'Decide whether the future of the post is Human or Assisted human — do not assume it must return to being unassisted.', es: 'Decidir si el futuro del puesto es Human o Assisted human, no asumir que debe volver a ser humano sin asistencia.' },
+  { en: 'Decide whether the future of the post is Human or Assisted human — do not assume it must return to being unassisted.', es: 'Decidir si el futuro del puesto es Humano o Humano asistido, no asumir que debe volver a ser humano sin asistencia.' },
 ];
 
 export const BACK_NOTE: T = {
