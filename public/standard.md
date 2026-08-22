@@ -16,7 +16,7 @@ disclosure: "The author also builds AIEmpl.com, a commercial platform in this ca
 
 # Hybrid Workforce Standard
 
-**A chatbot answers. A copilot helps. An agent executes a task. An AI Employee holds a role. A human answers for it.**
+**A chatbot answers. A copilot helps. An agent executes a task. An AI Employee holds a role. A human remains accountable.**
 
 > There are no human posts and AI posts as a starting point. There is work that needs to be done. Then you decide which combination of human and artificial resources produces the best result at the right level of risk, responsibility and control.
 

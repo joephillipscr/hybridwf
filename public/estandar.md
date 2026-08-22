@@ -16,7 +16,7 @@ disclosure: "The author also builds AIEmpl.com, a commercial platform in this ca
 
 # Hybrid Workforce Standard
 
-**Un chatbot responde. Un copiloto ayuda. Un agente ejecuta una tarea. Un AI Employee ocupa un rol. Un humano responde por él.**
+**Un chatbot responde. Un copiloto ayuda. Un agente ejecuta una tarea. Un AI Employee ocupa un puesto. La responsabilidad final sigue siendo humana.**
 
 > No existen, como punto de partida, puestos humanos y puestos de IA. Existen trabajos que deben realizarse. Después se decide cuál es la combinación de recursos humanos y artificiales que produce el mejor resultado con el nivel correcto de riesgo, responsabilidad y control.
 

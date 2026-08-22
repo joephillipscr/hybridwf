@@ -7,8 +7,8 @@ export const DEFINITION: T = {
 };
 
 export const THESIS: T = {
-  en: 'A chatbot answers. A copilot helps. An agent executes a task. An AI Employee holds a role. A human answers for it.',
-  es: 'Un chatbot responde. Un copiloto ayuda. Un agente ejecuta una tarea. Un AI Employee ocupa un rol. Un humano responde por él.',
+  en: 'A chatbot answers. A copilot helps. An agent executes a task. An AI Employee holds a role. A human remains accountable.',
+  es: 'Un chatbot responde. Un copiloto ayuda. Un agente ejecuta una tarea. Un AI Employee ocupa un puesto. La responsabilidad final sigue siendo humana.',
 };
 
 /** The invariant. Stated once, in this order, and never varied. */
